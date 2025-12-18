@@ -21,6 +21,8 @@
       --radius: 14px;
       --border: rgba(0,0,0,.12);
       --muted: rgba(0,0,0,.72);
+      --bg: #fff;
+      --fg: #111;
     }
 
     body{
@@ -28,8 +30,8 @@
       line-height: 1.6;
       margin: 0;
       padding: 24px;
-      background: #fff;
-      color: #111;
+      background: var(--bg);
+      color: var(--fg);
     }
 
     .wrap{
@@ -61,6 +63,12 @@
       color: var(--muted);
     }
 
+    hr{
+      border: 0;
+      border-top: 1px solid var(--border);
+      margin: 18px 0;
+    }
+
     .track{
       border: 1px solid var(--border);
       border-radius: var(--radius);
@@ -87,15 +95,22 @@
       overflow: hidden;
     }
 
-    .footer{
-      margin-top: 26px;
-      padding-top: 14px;
-      border-top: 1px solid var(--border);
+    .small-link{
+      margin-top: 10px;
       font-size: .92rem;
       color: var(--muted);
     }
 
-    .small-link{
+    .note{
+      margin-top: 10px;
+      font-size: .92rem;
+      color: var(--muted);
+    }
+
+    .footer{
+      margin-top: 26px;
+      padding-top: 14px;
+      border-top: 1px solid var(--border);
       font-size: .92rem;
       color: var(--muted);
     }
@@ -130,17 +145,18 @@
       </iframe>
 
       <p class="small-link">
-        <a href="https://suno.com/s/2196bb04-4f3a-464a-a95c-dd4c19d3331e" target="_blank" rel="noopener">
+        <a href="https://suno.com/embed/2196bb04-4f3a-464a-a95c-dd4c19d3331e" target="_blank" rel="noopener">
           Open on Suno →
         </a>
       </p>
     </section>
 
-    <!-- Track 2 -->
+    <!-- Track 2 (embed may be blocked by Suno visibility; provide fallback link) -->
     <section class="track">
       <h3>New Creation Proclamation — Part II</h3>
       <p class="meta">Presence · Rest · Finished Work</p>
 
+      <!-- Keep the embed attempt (works if Suno allows it) -->
       <iframe
         src="https://suno.com/embed/fmuJ491m1woeOjQr"
         height="190"
@@ -148,9 +164,13 @@
         allow="autoplay">
       </iframe>
 
+      <p class="note">
+        If the player doesn’t load here, Suno is blocking embedding for this track. Use the direct link below.
+      </p>
+
       <p class="small-link">
         <a href="https://suno.com/s/fmuJ491m1woeOjQr" target="_blank" rel="noopener">
-          Open on Suno →
+          Listen on Suno →
         </a>
       </p>
     </section>
