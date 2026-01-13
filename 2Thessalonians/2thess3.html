@@ -1,430 +1,218 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title>2 Thessalonians 3 — Fulfilled Paraphrase</title>
+  <meta charset="UTF-8" />
+  <title>2 Thessalonians 3 — Quiet Work, Strong Love, Real Peace</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="2 Thessalonians 3 — Steady life after panic (FPBible, WEB text + Fulfilled Paraphrase commentary)." />
-
   <style>
-    :root{
-      --maxw: 980px;
-      --pad: 18px;
-      --radius: 14px;
-
-      --bg: #ffffff;
-      --panel: #f6f7f9;
-      --text: #111827;
-      --muted: #6b7280;
-      --rule: #e5e7eb;
-      --link: #0b63ce;
-
-      --shadow: 0 8px 24px rgba(0,0,0,.08);
-    }
-
-    *{ box-sizing:border-box; }
-    body{
-      margin:0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.55;
-    }
-
-    a{ color: var(--link); text-decoration: none; }
-    a:hover{ text-decoration: underline; }
-
-    .wrap{
-      max-width: var(--maxw);
-      margin: 0 auto;
-      padding: 0 var(--pad) 64px;
-    }
-
-    .topnav{
-      margin: 14px 0 18px;
-      padding: 10px 12px;
-      border: 1px solid var(--rule);
-      border-radius: 12px;
-      background: #fff;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .topnav .left,
-    .topnav .right{
-      display:flex;
-      flex-wrap:wrap;
-      gap: 10px;
-      align-items:center;
-    }
-
-    .badge{
-      font-size: 12px;
-      color: var(--muted);
-      border: 1px solid var(--rule);
-      padding: 4px 10px;
-      border-radius: 999px;
-      background: #fff;
-    }
-
-    header h1{
-      margin: 10px 0 4px;
-      font-size: 34px;
-      letter-spacing: -0.02em;
-    }
-    header .sub{
-      margin: 0 0 18px;
-      color: var(--muted);
-    }
-
-    .card{
-      background: #fff;
-      border: 1px solid var(--rule);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      padding: 16px 16px 10px;
-      margin: 14px 0;
-    }
-
-    .card h2{
-      margin: 0 0 10px;
-      font-size: 18px;
-      letter-spacing: -0.01em;
-    }
-
-    .meta{
-      color: var(--muted);
-      font-size: 13px;
-      margin-top: -2px;
-    }
-
-    .verses{
-      margin: 10px 0 0;
-      padding: 0;
-      list-style: none;
-    }
-
-    .verses li{
-      padding: 10px 10px;
-      border-top: 1px solid var(--rule);
-      display: grid;
-      grid-template-columns: 56px 1fr;
-      gap: 10px;
-    }
-    .verses li:first-child{ border-top: 0; }
-
-    .vnum{
-      font-weight: 700;
-      color: #111827;
-      font-size: 14px;
-      line-height: 1.2;
-      opacity: .85;
-    }
-
-    .vtext{
-      font-size: 16px;
-    }
-
-    .note{
-      background: var(--panel);
-      border: 1px solid var(--rule);
-      border-radius: 12px;
-      padding: 12px 12px;
-      margin: 12px 0 0;
-    }
-
-    .note h3{
-      margin: 0 0 8px;
-      font-size: 15px;
-    }
-
-    .note p{ margin: 10px 0; }
-    .note ul{ margin: 8px 0 0 20px; }
-    .note li{ margin: 6px 0; }
-
-    .xref{
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 8px;
-    }
-    .pill{
-      display:inline-block;
-      border:1px solid var(--rule);
-      border-radius: 999px;
-      padding: 6px 10px;
-      background:#fff;
-      font-size: 13px;
-      color: var(--text);
-      white-space: nowrap;
-    }
-
-    footer{
-      margin-top: 26px;
-      padding-top: 18px;
-      border-top: 1px solid var(--rule);
-      color: var(--muted);
-      font-size: 13px;
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px;
-      align-items:center;
-      justify-content: space-between;
-    }
+    body{ font-family: system-ui, sans-serif; line-height: 1.6; margin: 1.5em; max-width: 900px; }
+    h1,h2,h3{ margin-top: 1.4em; margin-bottom: 0.4em; }
+    nav{ margin: 1em 0; font-size: 0.95em; }
+    nav a{ margin-right: 0.6em; text-decoration: underline; }
+    p{ margin: 0.6em 0; }
+    hr{ margin: 2em 0; }
+    ul{ margin: 0.6em 0 0.8em 1.2em; }
+    li{ margin: 0.35em 0; }
+    .note{ font-size: 0.95em; opacity: 0.9; }
   </style>
 </head>
-
 <body>
-  <a id="top"></a>
-  <div class="wrap">
 
-    <nav class="topnav" aria-label="Primary">
-      <div class="left">
-        <a href="../index.html">FPBible Index</a>
-        <span class="badge">2 Thessalonians</span>
-        <a href="./index.html">Book Index</a>
-        <a href="./preface.html">Preface</a>
-        <a href="./appendix.html">Appendix</a>
-        <a href="../Prophecy/index.html">Prophecy Hub</a>
-      </div>
-      <div class="right">
-        <a href="./2thess2.html">← Prev</a>
-        <a href="#top">Top</a>
-      </div>
-    </nav>
+<a id="top"></a>
 
-    <header>
-      <h1>2 Thessalonians 3</h1>
-      <p class="sub">Fulfilled Paraphrase · Steady life after panic · Work, order, endurance · New Creation continuity</p>
-    </header>
+<nav>
+  <a href="/Bible/index.html">FPBible Index</a> |
+  <a href="index.html">Book Index</a> |
+  <a href="preface.html">Preface</a> |
+  <a href="appendix.html">Appendix</a> |
+  <a href="2thess2.html">Previous</a> |
+  <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> |
+  <a href="#top">Top</a>
+</nav>
 
-    <section class="card" id="text">
-      <h2>Text (WEB)</h2>
-      <p class="meta">World English Bible (public domain)</p>
+<h1>2 Thessalonians 3</h1>
+<h2>Quiet Work, Strong Love, Real Peace</h2>
 
-      <ol class="verses">
-        <li id="v1"><div class="vnum">1</div><div class="vtext">Finally, brothers, pray for us, that the word of the Lord may spread rapidly and be glorified, even as also with you;</div></li>
-        <li id="v2"><div class="vnum">2</div><div class="vtext">and that we may be delivered from unreasonable and evil men; for not all have faith.</div></li>
-        <li id="v3"><div class="vnum">3</div><div class="vtext">But the Lord is faithful, who will establish you and guard you from the evil one.</div></li>
-        <li id="v4"><div class="vnum">4</div><div class="vtext">We have confidence in the Lord concerning you, that you do and will do the things we command.</div></li>
-        <li id="v5"><div class="vnum">5</div><div class="vtext">May the Lord direct your hearts into the love of God, and into the patience of Christ.</div></li>
-        <li id="v6"><div class="vnum">6</div><div class="vtext">Now we command you, brothers, in the name of our Lord Jesus Christ, that you withdraw yourselves from every brother who walks in rebellion, and not after the tradition which they received from us.</div></li>
-        <li id="v7"><div class="vnum">7</div><div class="vtext">For you know how you ought to imitate us. For we didn’t behave ourselves rebelliously among you,</div></li>
-        <li id="v8"><div class="vnum">8</div><div class="vtext">neither did we eat bread from anyone’s hand without paying for it, but in labor and travail worked night and day, that we might not burden any of you;</div></li>
-        <li id="v9"><div class="vnum">9</div><div class="vtext">not because we don’t have the right, but to make ourselves an example to you, that you should imitate us.</div></li>
-        <li id="v10"><div class="vnum">10</div><div class="vtext">For even when we were with you, we commanded you this: “If anyone will not work, don’t let him eat.”</div></li>
-        <li id="v11"><div class="vnum">11</div><div class="vtext">For we hear of some who walk among you in rebellion, who don’t work at all, but are busybodies.</div></li>
-        <li id="v12"><div class="vnum">12</div><div class="vtext">Now those who are such, we command and exhort in the Lord Jesus Christ, that with quietness they work and eat their own bread.</div></li>
-        <li id="v13"><div class="vnum">13</div><div class="vtext">But you, brothers, don’t be weary in doing well.</div></li>
-        <li id="v14"><div class="vnum">14</div><div class="vtext">If any man doesn’t obey our word in this letter, note that man, that you have no company with him, to the end that he may be ashamed.</div></li>
-        <li id="v15"><div class="vnum">15</div><div class="vtext">Don’t count him as an enemy, but admonish him as a brother.</div></li>
-        <li id="v16"><div class="vnum">16</div><div class="vtext">Now may the Lord of peace himself give you peace at all times in all ways. The Lord be with you all.</div></li>
-        <li id="v17"><div class="vnum">17</div><div class="vtext">The greeting of me, Paul, with my own hand, which is the sign in every letter. This is how I write.</div></li>
-        <li id="v18"><div class="vnum">18</div><div class="vtext">The grace of our Lord Jesus Christ be with you all. Amen.</div></li>
-      </ol>
-    </section>
+<p class="note">
+Original text:
+<a href="https://ebible.org/eng-web/2TH03.htm" target="_blank">2 Thessalonians 3 — WEB</a>
+</p>
 
-    <section class="card" id="commentary">
-      <h2>Fulfilled Paraphrase Commentary (Deep, Locked)</h2>
+<hr />
 
-      <div class="note">
-        <h3>1) The pivot: after panic comes steadiness (vv. 1–2)</h3>
-        <p>
-          Chapter 2 dealt with instability: forged authority, panic claims, shaken minds. Chapter 3 proves what Paul expects next:
-          <strong>continued life</strong>, continued mission, continued community formation.
-        </p>
-        <p>
-          That matters. If Paul believed the story ends in immediate world-termination, the opening request would be strange:
-          “pray that the word spreads rapidly.” He prays for momentum, not an ending. This chapter is the practical proof that the gospel
-          creates durable communities, not temporary waiting rooms.
-        </p>
-      </div>
+<h2>Immediate Context</h2>
+<p>
+After correcting fear and deception (chapter 2), Paul lands the letter where real faith lives:
+prayer, endurance, work, boundaries, and peace. This is what a fulfilled people look like:
+not frantic, not waiting-room religion—steady New Creation life under Christ’s present reign.
+</p>
 
-      <div class="note">
-        <h3>2) “Delivered from unreasonable and evil men” is present-pressure language (v. 2)</h3>
-        <p>
-          Paul is not fighting an abstract “age to come” enemy. He is dealing with real hostility: people opposing the message,
-          distorting it, and threatening the mission. “Not all have faith” is simply realism: the gospel meets resistance in history.
-        </p>
-        <p>
-          This aligns with the whole letter: the Thessalonians are pressured, and Paul’s response is not escapism. It is courage,
-          prayer, and forward movement.
-        </p>
-      </div>
+<hr />
 
-      <div class="note">
-        <h3>3) “The Lord… will guard you from the evil one” is protection, not paranoia (v. 3)</h3>
-        <p>
-          “The evil one” here functions as the adversarial force working through deception and opposition — the same conflict pattern
-          Paul just described in chapter 2 (“deception,” “lie,” “working”). Paul’s pastoral aim is stability:
-          God is faithful, and the community will be established.
-        </p>
-        <p>
-          This is not demon-obsession. It’s a claim about the steadiness of Christ’s reign: even under pressure, the community can be guarded
-          and grounded without being swallowed by fear.
-        </p>
-      </div>
+<h2>Fulfilled Paraphrase</h2>
 
-      <div class="note">
-        <h3>4) “Direct your hearts into the love of God and the patience of Christ” (v. 5)</h3>
-        <p>
-          Paul is not aiming for mere rule-keeping. He is aiming for inner orientation:
-        </p>
-        <ul>
-          <li><strong>Love of God</strong> — covenant loyalty expressed as real care, not religious performance.</li>
-          <li><strong>Patience of Christ</strong> — endurance shaped by Christ’s own steadiness under hostility.</li>
-        </ul>
-        <p>
-          This line is the heart of the chapter: the New Covenant is not built by panic, urgency, or hysteria. It is built by love and endurance.
-        </p>
-      </div>
+<h3>Pray for the Mission, Not a Timeline (3:1–5)</h3>
+<p>
+Finally, brothers and sisters, pray for us: that the Lord’s word spreads quickly and is honoured,
+just as it did among you.
+</p>
+<p>
+Pray that we are rescued from unreasonable and corrupt people—because not everyone has faith.
+But the Lord is faithful: He will strengthen you and guard you from the adversarial force at work.
+</p>
+<p>
+We have confidence in the Lord about you: you are doing what we taught, and you will keep doing it.
+May the Lord direct your hearts into God’s love and into Christ’s endurance—steady, not shaken.
+</p>
 
-      <div class="note">
-        <h3>5) The “rebellion” problem: disorder masquerading as spirituality (vv. 6–11)</h3>
-        <p>
-          Paul now addresses a concrete community issue: some believers are walking “in rebellion,” refusing normal responsibility,
-          and living off the community while stirring disruption.
-        </p>
-        <p>
-          This matters because it reveals what panic theology does to people. When minds are shaken, some stop building, stop working,
-          and start feeding on chaos. That is not spirituality. That is disorder.
-        </p>
-        <p>
-          Paul’s command to withdraw is not cruelty. It is boundary-setting to protect the community from a pattern that spreads.
-          “Rebellion” here is not honest struggle; it is persistent refusal to live in a way that supports communal health.
-        </p>
-      </div>
+<hr />
 
-      <div class="note">
-        <h3>6) Paul’s model: the gospel creates workers, not dependents (vv. 7–9)</h3>
-        <p>
-          Paul reminds them of his own behavior: he worked to avoid burdening anyone, even when he had the right to receive support.
-          He does this to remove excuses. The point is not “never support ministers.” The point is:
-          <strong>no one should weaponize the gospel as a cover for idleness.</strong>
-        </p>
-        <p>
-          In other words: New Creation life is not withdrawal from the world. It is engagement with it — with integrity.
-        </p>
-      </div>
+<h3>Disorder is Not Spiritual (3:6–12)</h3>
+<p>
+In the name of the Lord Jesus Christ, we instruct you:
+step back from any brother who insists on disorder and refuses the pattern you received from us.
+</p>
+<p>
+You know how to imitate us. We did not live off you. We didn’t eat anyone’s bread for free.
+We worked—hard—day and night, so we wouldn’t burden you,
+not because we lacked the right, but to leave you a clear example.
+</p>
+<p>
+Even when we were with you, we gave you this rule:
+if someone refuses to work, don’t let him eat.
+</p>
+<p>
+We hear some are doing no work at all—yet they stay busy in everyone else’s business.
+To such people we command and urge in the Lord:
+work quietly, and eat your own bread.
+</p>
 
-      <div class="note">
-        <h3>7) “If anyone will not work, don’t let him eat” is governance, not a slogan (v. 10)</h3>
-        <p>
-          Paul is dealing with a specific pattern: people who <em>will not</em> work (not people who <em>cannot</em> work).
-          This is not a weapon against the poor. It is a rule against parasitic disorder inside a pressured community.
-        </p>
-        <p>
-          The distinction is crucial: Paul is not attacking weakness. He is confronting refusal.
-        </p>
-      </div>
+<p class="note">
+<strong>Zero futurism:</strong> Paul expects ongoing community life—work, order, growth—because the gospel is not an evacuation plan.
+</p>
 
-      <div class="note">
-        <h3>8) Busy bodies are the fruit of instability (v. 11)</h3>
-        <p>
-          Paul names the behavior plainly: “don’t work at all, but are busybodies.” That is a picture of energy without direction:
-          lots of motion, no substance; lots of talk, no contribution.
-        </p>
-        <p>
-          This is what happens when people live off excitement rather than truth. Paul’s cure is quietness and responsibility:
-          steady work, steady provision, steady life.
-        </p>
-      </div>
+<hr />
 
-      <div class="note">
-        <h3>9) Quietness is not weakness — it is strength under control (v. 12)</h3>
-        <p>
-          “With quietness they work and eat their own bread” is not an insult. It is stability. Quietness is not passivity.
-          Quietness is a settled, non-chaotic life that refuses to feed on drama and refuses to destabilize others.
-        </p>
-        <p>
-          This is New Covenant maturity: people who can live, build, and love without needing constant crisis.
-        </p>
-      </div>
+<h3>Correction Without Hostility (3:13–15)</h3>
+<p>
+But you, brothers and sisters, don’t grow tired of doing good.
+If anyone refuses to obey what we’ve written, take note of him:
+not to destroy him, but to wake him up.
+</p>
+<p>
+Don’t treat him as an enemy. Treat him as a brother—correct him with truth and love.
+</p>
 
-      <div class="note">
-        <h3>10) Discipline has a goal: restoration, not destruction (vv. 14–15)</h3>
-        <p>
-          Paul’s discipline is social and corrective: “no company… that he may be ashamed.” Shame here means recognition:
-          the person finally sees the pattern for what it is.
-        </p>
-        <p>
-          And Paul draws a hard line: do not treat him as an enemy. Treat him as a brother. That locks the purpose:
-          discipline is for recovery, not humiliation.
-        </p>
-      </div>
+<hr />
 
-      <div class="note">
-        <h3>11) The Lord of peace: the letter ends the opposite of panic (vv. 16–18)</h3>
-        <p>
-          Paul ends with peace “at all times in all ways.” That is the opposite of shaken minds and troubled hearts.
-          The presence of Christ is not an alarm bell. It is peace. And it produces communities that can function:
-          working, loving, correcting, enduring.
-        </p>
-        <p>
-          The signed greeting also loops back to the letter-forgery problem in chapter 2: Paul marks authentic authority so they are not deceived.
-          Stability requires clarity.
-        </p>
-      </div>
+<h3>The Letter Ends in Peace (3:16–18)</h3>
+<p>
+May the Lord of peace Himself give you peace at all times, in every way.
+The Lord be with you all.
+</p>
+<p>
+This greeting is in my own hand—Paul’s mark in every letter. This is how I write.
+Grace to you all in the Lord Jesus Christ.
+</p>
 
-      <div class="note">
-        <h3>What this chapter proves</h3>
-        <ul>
-          <li><strong>Life continues</strong> after the crisis. The gospel is not a waiting room.</li>
-          <li><strong>Panic theology creates disorder.</strong> Paul cuts it off.</li>
-          <li><strong>New Covenant communities require responsibility.</strong> Work is not secular; it is human faithfulness.</li>
-          <li><strong>Discipline is restorative.</strong> Boundaries exist to heal, not to crush.</li>
-          <li><strong>Christ’s presence produces peace.</strong> Not hysteria, not escapism, not collapse.</li>
-        </ul>
-      </div>
-    </section>
+<hr />
 
-    <section class="card" id="hub">
-      <h2>Prophecy Hub Links</h2>
-      <p class="meta">This chapter is mostly practical, but these help maintain continuity with Chapters 1–2.</p>
-      <div class="xref">
-        <a class="pill" href="../Prophecy/index.html">Prophecy Hub Index</a>
-        <a class="pill" href="../Prophecy/parousia.html">Parousia — Presence, Not Delay</a>
-        <a class="pill" href="../Prophecy/matthew-24.html">Matthew 24 — Covenant Judgment (AD 70)</a>
-        <a class="pill" href="../Prophecy/luke-21.html">Luke 21 — Days of Vengeance</a>
-      </div>
-    </section>
+<h2>Fulfillment Commentary</h2>
 
-    <section class="card" id="xref">
-      <h2>Cross References (Quick)</h2>
-      <div class="xref">
-        <span class="pill">Acts 18 — Paul’s work pattern</span>
-        <span class="pill">1 Thess 4–5 — steady sobriety, not hysteria</span>
-        <span class="pill">1 Cor 5 — corrective separation with restoration aim</span>
-        <span class="pill">Eph 4 — work, build, share</span>
-        <span class="pill">Prov — diligence vs idle talk (wisdom pattern)</span>
-      </div>
-    </section>
+<h3>1) Chapter 3 proves what Paul expects after “the Day” confusion: life</h3>
+<p>
+After chapter 2, Paul doesn’t tell them to stop living. He tells them to pray, labour, correct, endure.
+That’s the opposite of apocalyptic paralysis. It’s New Creation continuity.
+</p>
 
-    <nav class="topnav" aria-label="Footer">
-      <div class="left">
-        <a href="./index.html">← Book Index</a>
-        <a href="./preface.html">Preface</a>
-        <a href="./appendix.html">Appendix</a>
-        <a href="../Prophecy/index.html">Prophecy Hub</a>
-      </div>
-      <div class="right">
-        <a href="./2thess2.html">← Prev</a>
-        <a href="#top">Top</a>
-        <a href="https://ko-fi.com/">ko-fi</a>
-      </div>
-    </nav>
+<h3>2) “Guard you from the evil one” is stability language</h3>
+<p>
+Paul is not teaching paranoia. He’s describing an adversarial pressure that works through deception,
+conflict, and disorder. His answer is faithfulness: “the Lord is faithful… He will strengthen you.”
+</p>
 
-    <footer>
-      <div>
-        FPBible · 2 Thessalonians 3 · WEB text + Fulfilled Paraphrase commentary
-      </div>
-      <div>
-        <a href="../index.html">fpbible.github.io/Bible/</a>
-      </div>
-    </footer>
-  </div>
+<h3>3) Disorder spreads when it is subsidised</h3>
+<p>
+Paul’s boundary is practical: if someone refuses responsibility and lives off others while stirring chaos,
+the community must not reward it. Withdrawal here is containment—protecting the whole body.
+</p>
+
+<h3>4) “Will not work” targets refusal, not inability</h3>
+<p>
+Paul is not attacking the weak. He is confronting the willing parasite: the person who can work,
+won’t work, and then consumes the community’s resources while disrupting the peace.
+</p>
+
+<h3>5) Discipline aims at restoration</h3>
+<p>
+Paul’s line is clear: don’t treat him as an enemy. That locks the goal.
+Correction is meant to recover a brother, not crush a person.
+</p>
+
+<h3>6) The letter’s last word is peace</h3>
+<p>
+Fulfilled faith is not frantic. Presence produces peace.
+If you want the shape of New Creation life, Paul gives it: steadiness, responsibility, love with backbone.
+</p>
+
+<hr />
+
+<h2>Prophecy Hub Links</h2>
+<ul>
+  <li><strong>Presence framework behind Thessalonians</strong> — <a href="/Bible/Prophecy/1thess4.html">1 Thessalonians 4 — Presence, Not Escape</a></li>
+  <li><strong>Day / judgment language in the letters</strong> — <a href="/Bible/Prophecy/day-of-the-lord.html">Day of the Lord</a></li>
+</ul>
+
+<hr />
+
+<h2>Cross-References</h2>
+<ul>
+  <li><strong>Work and integrity in ministry</strong> — <a href="https://ebible.org/eng-web/ACT18.htm" target="_blank">Acts 18</a></li>
+  <li><strong>Order, correction, restoration</strong> — <a href="https://ebible.org/eng-web/1CO05.htm" target="_blank">1 Corinthians 5</a></li>
+  <li><strong>Quiet strength and daily faithfulness</strong> — <a href="https://ebible.org/eng-web/EPH04.htm" target="_blank">Ephesians 4</a></li>
+</ul>
+
+<hr />
+
+<h2>New Creation Reality</h2>
+<p>
+New Creation life is not hype. It is steadiness:
+</p>
+<ul>
+  <li>prayer that fuels mission</li>
+  <li>work that carries dignity</li>
+  <li>boundaries that protect peace</li>
+  <li>correction that restores, not crushes</li>
+</ul>
+<p>
+If fear tries to make you frantic, and gossip tries to make you restless, come back to Paul’s pattern:
+quiet work, strong love, real peace.
+</p>
+
+<hr />
+
+<h2>Reflection</h2>
+<p>
+Where am I tempted toward “busybodyness”—noise, interference, restless reaction—rather than quiet strength and faithful work?
+</p>
+
+<hr />
+
+<nav>
+  <a href="/Bible/index.html">FPBible Index</a> |
+  <a href="index.html">Book Index</a> |
+  <a href="preface.html">Preface</a> |
+  <a href="appendix.html">Appendix</a> |
+  <a href="2thess2.html">Previous</a> |
+  <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> |
+  <a href="#top">Top</a>
+</nav>
+
+<a href="https://ko-fi.com/B0B61QC1BU" target="_blank">
+  <img height="36" style="border:0px;height:36px;"
+    src="https://storage.ko-fi.com/cdn/kofi5.png?v=6"
+    border="0" alt="Buy Me a Coffee at ko-fi.com" />
+</a>
+
 </body>
 </html>
