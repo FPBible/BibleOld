@@ -1,296 +1,479 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>2 Thessalonians 2 — No Panic: The Day and the Lawless System</title>
+  <meta charset="utf-8" />
+  <title>2 Thessalonians 2 — Fulfilled Paraphrase</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="2 Thessalonians 2 — The Day, the Lawless One, and the Restrainer (FPBible, WEB text + Fulfilled Paraphrase commentary)." />
+
   <style>
-    body{
-      font-family: system-ui, sans-serif;
-      line-height: 1.6;
-      margin: 1.5em;
-      max-width: 900px;
+    :root{
+      --maxw: 980px;
+      --pad: 18px;
+      --radius: 14px;
+
+      --bg: #ffffff;
+      --panel: #f6f7f9;
+      --text: #111827;
+      --muted: #6b7280;
+      --rule: #e5e7eb;
+      --link: #0b63ce;
+
+      --shadow: 0 8px 24px rgba(0,0,0,.08);
     }
-    h1,h2,h3{ margin-top: 1.4em; margin-bottom: 0.4em; }
-    nav{ margin: 1em 0; font-size: 0.95em; }
-    nav a{ margin-right: 0.6em; text-decoration: underline; }
-    p{ margin: 0.6em 0; }
-    hr{ margin: 2em 0; }
-    ul{ margin: 0.6em 0 0.8em 1.2em; }
-    li{ margin: 0.35em 0; }
-    .note{ font-size: 0.95em; opacity: 0.9; }
+
+    *{ box-sizing:border-box; }
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+
+    a{ color: var(--link); text-decoration: none; }
+    a:hover{ text-decoration: underline; }
+
+    .wrap{
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 0 var(--pad) 64px;
+    }
+
+    .topnav{
+      margin: 14px 0 18px;
+      padding: 10px 12px;
+      border: 1px solid var(--rule);
+      border-radius: 12px;
+      background: #fff;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .topnav .left,
+    .topnav .right{
+      display:flex;
+      flex-wrap:wrap;
+      gap: 10px;
+      align-items:center;
+    }
+
+    .badge{
+      font-size: 12px;
+      color: var(--muted);
+      border: 1px solid var(--rule);
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: #fff;
+    }
+
+    header h1{
+      margin: 10px 0 4px;
+      font-size: 34px;
+      letter-spacing: -0.02em;
+    }
+    header .sub{
+      margin: 0 0 18px;
+      color: var(--muted);
+    }
+
+    .card{
+      background: #fff;
+      border: 1px solid var(--rule);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 16px 16px 10px;
+      margin: 14px 0;
+    }
+
+    .card h2{
+      margin: 0 0 10px;
+      font-size: 18px;
+      letter-spacing: -0.01em;
+    }
+
+    .meta{
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: -2px;
+    }
+
+    .verses{
+      margin: 10px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .verses li{
+      padding: 10px 10px;
+      border-top: 1px solid var(--rule);
+      display: grid;
+      grid-template-columns: 56px 1fr;
+      gap: 10px;
+    }
+    .verses li:first-child{ border-top: 0; }
+
+    .vnum{
+      font-weight: 700;
+      color: #111827;
+      font-size: 14px;
+      line-height: 1.2;
+      opacity: .85;
+    }
+
+    .vtext{
+      font-size: 16px;
+    }
+
+    .note{
+      background: var(--panel);
+      border: 1px solid var(--rule);
+      border-radius: 12px;
+      padding: 12px 12px;
+      margin: 12px 0 0;
+    }
+
+    .note h3{
+      margin: 0 0 8px;
+      font-size: 15px;
+    }
+
+    .note p{ margin: 10px 0; }
+    .note ul{ margin: 8px 0 0 20px; }
+    .note li{ margin: 6px 0; }
+
+    .xref{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 8px;
+    }
+    .pill{
+      display:inline-block;
+      border:1px solid var(--rule);
+      border-radius: 999px;
+      padding: 6px 10px;
+      background:#fff;
+      font-size: 13px;
+      color: var(--text);
+      white-space: nowrap;
+    }
+
+    footer{
+      margin-top: 26px;
+      padding-top: 18px;
+      border-top: 1px solid var(--rule);
+      color: var(--muted);
+      font-size: 13px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      align-items:center;
+      justify-content: space-between;
+    }
   </style>
 </head>
+
 <body>
+  <a id="top"></a>
+  <div class="wrap">
 
-<a id="top"></a>
+    <nav class="topnav" aria-label="Primary">
+      <div class="left">
+        <a href="../index.html">FPBible Index</a>
+        <span class="badge">2 Thessalonians</span>
+        <a href="./index.html">Book Index</a>
+        <a href="./preface.html">Preface</a>
+        <a href="./appendix.html">Appendix</a>
+        <a href="../Prophecy/index.html">Prophecy Hub</a>
+      </div>
+      <div class="right">
+        <a href="./2thess1.html">← Prev</a>
+        <a href="./2thess3.html">Next →</a>
+        <a href="#top">Top</a>
+      </div>
+    </nav>
 
-<nav>
-  <a href="/Bible/index.html">FPBible Index</a> |
-  <a href="index.html">Book Index</a> |
-  <a href="preface.html">Preface</a> |
-  <a href="appendix.html">Appendix</a> |
-  <a href="2thess1.html">Previous</a> |
-  <a href="2thess3.html">Next</a> |
-  <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> |
-  <a href="#top">Top</a>
-</nav>
+    <header>
+      <h1>2 Thessalonians 2</h1>
+      <p class="sub">Fulfilled Paraphrase · “The Day” correction · Lawlessness exposed · First-century bounded · No futurist drift</p>
+    </header>
 
-<h1>2 Thessalonians 2</h1>
-<h2>No Panic: The Day and the Lawless System</h2>
+    <section class="card" id="text">
+      <h2>Text (WEB)</h2>
+      <p class="meta">World English Bible (public domain)</p>
 
-<p class="note">
-Original text:
-<a href="https://ebible.org/eng-web/2TH02.htm" target="_blank">2 Thessalonians 2 — WEB</a>
-</p>
+      <ol class="verses">
+        <li id="v1"><div class="vnum">1</div><div class="vtext">Now, brothers, concerning the coming of our Lord Jesus Christ and our gathering together to him, we ask you</div></li>
+        <li id="v2"><div class="vnum">2</div><div class="vtext">not to be quickly shaken in mind, nor yet be troubled, either by spirit, or by word, or by letter as from us, as that the day of the Lord is at hand.</div></li>
+        <li id="v3"><div class="vnum">3</div><div class="vtext">Let no one deceive you in any way. For it will not be, unless the departure comes first, and the man of sin is revealed, the son of destruction,</div></li>
+        <li id="v4"><div class="vnum">4</div><div class="vtext">he who opposes and exalts himself against all that is called God or that is worshiped, so that he sits as God in the temple of God, setting himself up as God.</div></li>
+        <li id="v5"><div class="vnum">5</div><div class="vtext">Don’t you remember that, when I was still with you, I told you these things?</div></li>
+        <li id="v6"><div class="vnum">6</div><div class="vtext">Now you know what is restraining him, to the end that he may be revealed in his own season.</div></li>
+        <li id="v7"><div class="vnum">7</div><div class="vtext">For the mystery of lawlessness already works. Only there is one who restrains now, until he is taken out of the way.</div></li>
+        <li id="v8"><div class="vnum">8</div><div class="vtext">Then the lawless one will be revealed, whom the Lord will kill with the breath of his mouth and destroy by the manifestation of his coming;</div></li>
+        <li id="v9"><div class="vnum">9</div><div class="vtext">even he whose coming is according to the working of Satan with all power and signs and lying wonders,</div></li>
+        <li id="v10"><div class="vnum">10</div><div class="vtext">and with all deception of unrighteousness for those who are perishing; because they didn’t receive the love of the truth, that they might be saved.</div></li>
+        <li id="v11"><div class="vnum">11</div><div class="vtext">Because of this, God sends them a working of error, that they should believe a lie;</div></li>
+        <li id="v12"><div class="vnum">12</div><div class="vtext">that they all might be judged who didn’t believe the truth, but had pleasure in unrighteousness.</div></li>
+        <li id="v13"><div class="vnum">13</div><div class="vtext">But we are bound to always give thanks to God for you, brothers beloved by the Lord, because God chose you from the beginning for salvation through sanctification of the Spirit and belief in the truth;</div></li>
+        <li id="v14"><div class="vnum">14</div><div class="vtext">to which he called you through our Good News, for the obtaining of the glory of our Lord Jesus Christ.</div></li>
+        <li id="v15"><div class="vnum">15</div><div class="vtext">So then, brothers, stand firm and hold the traditions which you were taught, whether by word or by letter from us.</div></li>
+        <li id="v16"><div class="vnum">16</div><div class="vtext">Now our Lord Jesus Christ himself, and God our Father who loved us and gave us eternal comfort and good hope through grace,</div></li>
+        <li id="v17"><div class="vnum">17</div><div class="vtext">comfort your hearts and establish you in every good work and word.</div></li>
+      </ol>
+    </section>
 
-<hr />
+    <section class="card" id="commentary">
+      <h2>Fulfilled Paraphrase Commentary (Deep, Locked)</h2>
 
-<h2>Immediate Context</h2>
-<p>
-This chapter exists to <strong>stop panic</strong>.
-False claims had unsettled the Thessalonians, suggesting the “day of the Lord”
-had arrived in a way that contradicted apostolic teaching.
-</p>
+      <div class="note">
+        <h3>1) What this chapter is: anti-panic correction, not end-times forecasting (vv. 1–2)</h3>
+        <p>
+          Paul is dealing with a specific crisis: the Thessalonians have been rattled by claims that “the Day of the Lord is at hand.”
+          The issue is not curiosity. It’s destabilization. People are being mentally shaken and spiritually manipulated.
+        </p>
+        <p>
+          That alone tells you the timeframe is near. If Paul believed “the Day” was thousands of years away, the whole panic makes no sense.
+          His pastoral move is not “calm down, it won’t happen for ages.” His move is: <strong>don’t be deceived</strong> — and here are the
+          near-horizon markers you already heard from me.
+        </p>
+        <p>
+          This chapter is therefore bounded: it lives inside the first-century covenant transition (AD 30–70). Read it outside that window and
+          you create contradictions Paul never intended.
+        </p>
+      </div>
 
-<p>
-Paul does not introduce new prophecy.
-He corrects distortion.
-His concern is pastoral stability, not timeline speculation.
-</p>
+      <div class="note">
+        <h3>2) “Coming” and “gathering” here are not escape language (v. 1)</h3>
+        <p>
+          Paul pairs “the coming of the Lord” with “our gathering to him.” In prophetic idiom, “coming” is the disclosure of royal authority,
+          and “gathering” is covenantal belonging — the community being gathered to the reigning Christ.
+        </p>
+        <p>
+          This is not a rapture blueprint. It’s a reassurance that the Thessalonians’ identity and future are secured in Christ’s reign, even while
+          confusion spreads. The question Paul addresses is timing and deception, not evacuation from earth.
+        </p>
+      </div>
 
-<hr />
+      <div class="note">
+        <h3>3) “The Day of the Lord” is covenant judgment language (v. 2)</h3>
+        <p>
+          “The Day of the Lord” is not a generic label for the end of the universe. In the prophets it refers to decisive covenant action:
+          God judging, exposing, removing, and re-ordering within history.
+        </p>
+        <p>
+          In the New Testament, that prophetic “Day” converges on the judgment that ended the old covenant order and publicly confirmed
+          Christ’s kingship in that generation. Paul is protecting the Thessalonians from counterfeit announcements of that Day and from
+          forged authority claims “as from us.”
+        </p>
+      </div>
 
-<h2>Fulfilled Paraphrase</h2>
+      <div class="note">
+        <h3>4) “It will not be unless…” means sequence, not postponement (vv. 3–4)</h3>
+        <p>
+          Paul gives sequence markers to stop deception. He is not pushing the event into the distant future; he is saying:
+          <strong>don’t accept a claim that the Day has arrived unless the known markers have surfaced.</strong>
+        </p>
+        <p>
+          Two markers are named:
+        </p>
+        <ul>
+          <li><strong>“The departure”</strong> — a covenantal falling-away / rebellion that reaches a decisive point.</li>
+          <li><strong>“The man of sin… the son of destruction”</strong> — lawlessness coming to a head in an identifiable form.</li>
+        </ul>
+        <p>
+          The “man of sin” is not a 21st-century politician. Paul speaks of a figure/system tied to the first-century temple world:
+          <strong>he sits “in the temple of God.”</strong> That locks the context to the temple era and the covenant crisis surrounding it.
+        </p>
+      </div>
 
-<h3>Do Not Be Shaken or Alarmed (2:1–3)</h3>
+      <div class="note">
+        <h3>5) “Sits in the temple” is covenant usurpation, not sci-fi (v. 4)</h3>
+        <p>
+          The point is not furniture placement. The point is usurpation: an authority within the covenant sphere exalting itself against God.
+          Temple language is about who “has standing,” who claims the right to define worship, purity, access, and legitimacy.
+        </p>
+        <p>
+          In the first century, the temple leadership represented the visible center of the old covenant order. Lawlessness “in the temple”
+          describes a covenant leadership crisis: a system claiming divine authority while resisting and persecuting the Messiah’s people.
+        </p>
+        <p>
+          Paul is describing the same kind of arrogance the prophets condemned: religious power presenting itself as final and untouchable —
+          right before judgment collapses it.
+        </p>
+      </div>
 
-<p>
-Now concerning the presence of our Lord Jesus Christ
-and our gathering to Him,
-we ask you, brothers and sisters,
-not to be quickly shaken in mind or alarmed—
-whether by a spirit, a message, or a letter supposedly from us—
-claiming that the day of the Lord has arrived.
-</p>
+      <div class="note">
+        <h3>6) “I told you these things” proves this is not remote (v. 5)</h3>
+        <p>
+          Paul assumes they already know the framework because he taught it when he was with them. This is not coded for a far-off generation.
+          It’s local instruction for a near-horizon crisis. That’s why he can say, “you know what restrains him.”
+        </p>
+        <p>
+          If the Thessalonians could not possibly recognize the restrainer, then Paul’s sentence collapses into nonsense. But Paul says they
+          <strong>know</strong>. That is audience relevance in plain form.
+        </p>
+      </div>
 
-<p>
-Do not let anyone deceive you in any way.
-Because that day does not arrive
-unless the rebellion comes first
-and the lawless one is revealed—
-the one destined for removal.
-</p>
+      <div class="note">
+        <h3>7) The restrainer: bounded historical restraint, not mysticism (vv. 6–7)</h3>
+        <p>
+          The restrainer is whatever was holding lawlessness back from reaching full public expression “in his own season.”
+          Paul doesn’t name it explicitly in writing, but he treats it as known.
+        </p>
+        <p>
+          The simplest bounded reading is that a form of public/legal order (Roman authority and its governance mechanisms) was restraining
+          an outbreak of lawless covenant revolt from reaching its full, exposed form too early. When restraint shifted, lawlessness surfaced openly.
+        </p>
+        <p>
+          The key is not guessing every detail; the key is the shape of the logic:
+        </p>
+        <ul>
+          <li>Lawlessness is <strong>already working</strong> (present tense).</li>
+          <li>It is being <strong>restrained</strong> (present restraint).</li>
+          <li>It will be revealed <strong>in its season</strong> (near-horizon, time-bounded).</li>
+        </ul>
+        <p>
+          This is not an eternal chess match. It is a first-century sequence moving toward covenant collapse.
+        </p>
+      </div>
 
-<p class="note">
-<strong>Zero futurism:</strong>
-Paul is correcting a false claim about timing in <em>their generation</em>.
-He does not push the “day” thousands of years forward.
-</p>
+      <div class="note">
+        <h3>8) “Mystery of lawlessness already works” means it’s in motion right now (v. 7)</h3>
+        <p>
+          Paul is explicit: the lawlessness is not future-only. It is already operating beneath the surface — a “mystery” because it is real
+          but not yet fully exposed. This fits the whole New Testament tension: rejection of the Messiah is hardening into organized resistance,
+          persecution, and covenant violence.
+        </p>
+        <p>
+          When Paul says “until he is taken out of the way,” he is describing the removal/shift of restraint, not the removal of the planet.
+          The result is exposure: lawlessness becomes public, identifiable, and ripe for judgment.
+        </p>
+      </div>
 
-<hr />
+      <div class="note">
+        <h3>9) “Destroyed by the manifestation of his coming” is judgment-as-unveiling (v. 8)</h3>
+        <p>
+          Paul does not say Christ arrives physically and fights a human with a sword. He says the Lord destroys by “the breath of his mouth”
+          and by “the manifestation” (the appearing/disclosure) of his coming.
+        </p>
+        <p>
+          This is prophetic idiom: the Word/authority of the reigning Christ exposes, collapses, and ends a lawless covenant order.
+          “Coming” here functions as <strong>royal presence made visible through judgment</strong>.
+        </p>
+        <p>
+          The effect is decisive: the lawless one does not continue indefinitely. He is brought to an end within the same covenant season in which
+          he is revealed.
+        </p>
+      </div>
 
-<h3>The Lawless System Exposed (2:4–7)</h3>
+      <div class="note">
+        <h3>10) “Working of Satan” = adversarial covenant system, not Hollywood demons (vv. 9–12)</h3>
+        <p>
+          “Satan” in the New Testament often functions as an adversarial power operating through a system that resists God’s purpose.
+          In this context the deception is religious and covenantal: “signs and lying wonders,” propaganda, and manipulation that seduces those
+          already bent toward unrighteousness.
+        </p>
+        <p>
+          Paul’s emphasis is moral and judicial: people perish because they refuse “the love of the truth.” The deception is not neutral information
+          they accidentally misunderstood. It is a chosen lie that matches a chosen appetite.
+        </p>
+        <p>
+          “God sends a working of error” describes judicial hardening: when truth is rejected, delusion becomes the pathway people walk into.
+          This is the same pattern seen in the prophets and in Jesus’ warnings to that generation.
+        </p>
+      </div>
 
-<p>
-This lawless one opposes and exalts himself
-against everything called “god” or object of worship,
-so that he takes his seat in God’s temple,
-displaying himself as if he were divine.
-</p>
+      <div class="note">
+        <h3>11) This chapter closes in stability: stand firm, keep the apostolic teaching (vv. 13–17)</h3>
+        <p>
+          Paul ends where the chapter began: not in timelines, but in steadiness. They are “beloved,” chosen, sanctified by the Spirit,
+          and grounded in truth. The antidote to panic is not a chart; it is <strong>clarity + endurance</strong>.
+        </p>
+        <p>
+          “Traditions” here means apostolic teaching handed to them directly — the interpretive framework that prevents being shaken by forged letters,
+          false claims, and spiritual theatrics.
+        </p>
+      </div>
 
-<p>
-Do you not remember that while I was still with you,
-I told you these things?
-</p>
+      <div class="note">
+        <h3>12) Lock statement: nothing here is still pending</h3>
+        <p>
+          This entire chapter assumes a near-horizon covenant crisis:
+          lawlessness already working, restraint currently operating, a coming revelation “in its season,” and a decisive end.
+          That framework belongs to the first-century transition and culminates in the judgment that ended the old covenant order.
+        </p>
+        <p>
+          This is not a template for a future Antichrist cycle. It is not repeatable end-times theatre. It is Paul stabilizing a church
+          in the middle of an approaching covenant reckoning — and anchoring them in the reigning Christ.
+        </p>
+      </div>
 
-<p>
-And you know what is restraining him now,
-so that he may be revealed in his proper time.
-</p>
+      <div class="note">
+        <h3>What this chapter does (and does not) do</h3>
+        <ul>
+          <li><strong>It does:</strong> shut down panic and forged “Day has arrived” claims.</li>
+          <li><strong>It does:</strong> place lawlessness inside the first-century temple world.</li>
+          <li><strong>It does:</strong> describe restraint → revelation → collapse as a time-bounded sequence.</li>
+          <li><strong>It does not:</strong> teach a 2,000-years-later Antichrist.</li>
+          <li><strong>It does not:</strong> describe the end of the physical universe.</li>
+          <li><strong>It does not:</strong> support escape theology.</li>
+        </ul>
+      </div>
+    </section>
 
-<p>
-For the mystery of lawlessness is already at work—
-only the restraining force remains
-until it is taken out of the way.
-</p>
+    <section class="card" id="hub">
+      <h2>Prophecy Hub Links</h2>
+      <p class="meta">Use these when “Day / coming / lawlessness / temple” language gets read futuristically.</p>
+      <div class="xref">
+        <a class="pill" href="../Prophecy/index.html">Prophecy Hub Index</a>
+        <a class="pill" href="../Prophecy/matthew-24.html">Matthew 24 — Covenant Judgment (AD 70)</a>
+        <a class="pill" href="../Prophecy/luke-21.html">Luke 21 — Days of Vengeance</a>
+        <a class="pill" href="../Prophecy/daniel.html">Daniel — Time, Kingdom, Son of Man</a>
+        <a class="pill" href="../Prophecy/parousia.html">Parousia — Presence, Not Delay</a>
+        <a class="pill" href="../Prophecy/2-peter-3.html">2 Peter 3 — Heavens & Earth (Covenant)</a>
+      </div>
+    </section>
 
-<p class="note">
-<strong>Critical anchor:</strong>
-“Already at work” locks this into the first-century covenant world.
-This is not a future global villain.
-</p>
+    <section class="card" id="xref">
+      <h2>Cross References (Quick)</h2>
+      <div class="xref">
+        <span class="pill">Dan 7 — Son of Man authority (coming imagery)</span>
+        <span class="pill">Dan 9 — covenant crisis window</span>
+        <span class="pill">Matt 23 — judgment on that generation</span>
+        <span class="pill">Matt 24 — coming / gathering / temple context</span>
+        <span class="pill">Acts 17 — Thessalonian context</span>
+        <span class="pill">1 John 2:18 — “many antichrists” (first-century conflict)</span>
+      </div>
+    </section>
 
-<hr />
+    <nav class="topnav" aria-label="Footer">
+      <div class="left">
+        <a href="./index.html">← Book Index</a>
+        <a href="./preface.html">Preface</a>
+        <a href="./appendix.html">Appendix</a>
+        <a href="../Prophecy/index.html">Prophecy Hub</a>
+      </div>
+      <div class="right">
+        <a href="./2thess1.html">← Prev</a>
+        <a href="./2thess3.html">Next →</a>
+        <a href="#top">Top</a>
+        <a href="https://ko-fi.com/">ko-fi</a>
+      </div>
+    </nav>
 
-<h3>Removal by Truth, Not Combat (2:8–12)</h3>
-
-<p>
-Then the lawless one will be revealed,
-whom the Lord Jesus will remove
-by the breath of His mouth
-and bring to nothing
-by the appearance of His presence.
-</p>
-
-<p>
-The arrival of this lawless activity
-is according to the working of the adversary,
-with all false power, signs, and wonders,
-and with every deception of unrighteousness
-for those who are perishing—
-because they refused to love the truth
-so as to be delivered.
-</p>
-
-<p>
-For this reason God allows them a deluding influence,
-so that they believe the lie,
-in order that all may be judged
-who did not believe the truth
-but took pleasure in unrighteousness.
-</p>
-
-<p class="note">
-<strong>Key clarification:</strong>
-The lawless system is undone by exposure and truth,
-not by military force or cosmic catastrophe.
-</p>
-
-<hr />
-
-<h3>Stand Firm in What You Were Taught (2:13–17)</h3>
-
-<p>
-But we ought always to give thanks to God for you,
-brothers and sisters loved by the Lord,
-because God chose you from the beginning
-for deliverance through sanctification by the Spirit
-and belief in the truth.
-</p>
-
-<p>
-To this He called you through our gospel,
-so that you may obtain the glory of our Lord Jesus Christ.
-</p>
-
-<p>
-So then, stand firm
-and hold to the traditions you were taught—
-whether by word or by our letter.
-</p>
-
-<p>
-Now may our Lord Jesus Christ Himself,
-and God our Father who loved us
-and gave us eternal encouragement and good hope by grace,
-encourage your hearts
-and strengthen you in every good work and word.
-</p>
-
-<hr />
-
-<h2>Fulfillment Commentary</h2>
-
-<h3>1) This chapter forbids panic theology</h3>
-<p>
-Paul’s command is explicit: do not be shaken.
-Any theology that produces fear, urgency manipulation,
-or obsession with signs violates the purpose of this chapter.
-</p>
-
-<h3>2) The “lawless one” is covenantal, not mythical</h3>
-<p>
-Temple imagery places this within Israel’s covenant world.
-This is a corrupt authority structure claiming divine status,
-operating within the religious system—not a future sci-fi antichrist.
-</p>
-
-<h3>3) “Breath of His mouth” = truth exposed</h3>
-<p>
-This echoes Isaiah’s language.
-Christ defeats lawlessness by proclamation and presence,
-not by spectacle.
-The gospel unmasks the system.
-</p>
-
-<h3>4) Judgment comes through rejection of truth</h3>
-<p>
-Those judged are not innocent victims.
-They refuse truth, prefer unrighteousness,
-and embrace deception.
-Judgment is covenant consequence, not random punishment.
-</p>
-
-<hr />
-
-<h2>Prophecy Hub Links</h2>
-<ul>
-  <li><strong>Day of the Lord clarified</strong> —
-    <a href="/Bible/Prophecy/day-of-the-lord.html">Day of the Lord</a>
-  </li>
-  <li><strong>Lawlessness and covenant opposition</strong> —
-    <a href="/Bible/Prophecy/satan.html">Satan / Adversary Language</a>
-  </li>
-  <li><strong>Temple-world judgment framework</strong> —
-    <a href="/Bible/Prophecy/matt24.html">Matthew 24</a>,
-    <a href="/Bible/Prophecy/luke21.html">Luke 21</a>
-  </li>
-  <li><strong>Isaianic background</strong> —
-    <a href="/Bible/Prophecy/isaiah.html">Isaiah</a>
-  </li>
-</ul>
-
-<hr />
-
-<h2>Key Idioms & Language Notes</h2>
-<ul>
-  <li><strong>“Day of the Lord”</strong>: covenant judgment and vindication within history.</li>
-  <li><strong>“Temple”</strong>: Israel’s covenant center, not a future building.</li>
-  <li><strong>“Lawless one”</strong>: a system/personification of covenant rebellion.</li>
-  <li><strong>“Already at work”</strong>: present reality in Paul’s time.</li>
-  <li><strong>“Breath of His mouth”</strong>: truth proclaimed, not physical violence.</li>
-</ul>
-
-<hr />
-
-<h2>New Creation Reality</h2>
-<p>
-New Creation people are not panic-driven.
-They are grounded, discerning, and steady.
-</p>
-
-<p>
-Christ’s reign does not require fear,
-and truth does not need hype to win.
-</p>
-
-<hr />
-
-<h2>Reflection</h2>
-<p>
-Where have I allowed urgency, fear, or speculation
-to displace steadiness and trust in Christ’s present reign?
-</p>
-
-<hr />
-
-<nav>
-  <a href="/Bible/index.html">FPBible Index</a> |
-  <a href="index.html">Book Index</a> |
-  <a href="preface.html">Preface</a> |
-  <a href="appendix.html">Appendix</a> |
-  <a href="2thess1.html">Previous</a> |
-  <a href="2thess3.html">Next</a> |
-  <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> |
-  <a href="#top">Top</a>
-</nav>
-
-<a href="https://ko-fi.com/B0B61QC1BU" target="_blank">
-  <img height="36" style="border:0px;height:36px;"
-    src="https://storage.ko-fi.com/cdn/kofi5.png?v=6"
-    border="0" alt="Buy Me a Coffee at ko-fi.com" />
-</a>
-
+    <footer>
+      <div>
+        FPBible · 2 Thessalonians 2 · WEB text + Fulfilled Paraphrase commentary
+      </div>
+      <div>
+        <a href="../index.html">fpbible.github.io/Bible/</a>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>
