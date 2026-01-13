@@ -110,6 +110,21 @@
       margin: 0 6px 6px 0;
       background: var(--soft2);
     }
+
+    /* Video styling */
+    .video{
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 14px 16px;
+      background: var(--soft2);
+    }
+    .video .frame{
+      width: 100%;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      display: block;
+      background: #fff;
+    }
   </style>
 </head>
 
@@ -122,6 +137,7 @@
     <a href="/Bible/index.html">FPBible Index</a><span class="sep">|</span>
     <a href="/Bible/Prophecy/index.html">Prophecy Hub</a><span class="sep">|</span>
     <a href="/Bible/Prophecy/new-creation.html">New Creation (Hub)</a><span class="sep">|</span>
+    <a href="#video">Video</a><span class="sep">|</span>
     <a href="#start">Start</a><span class="sep">|</span>
     <a href="#manifesto">Manifesto</a><span class="sep">|</span>
     <a href="#top">Top</a>
@@ -142,29 +158,26 @@
     <span class="pill">Zero Futurism</span>
   </div>
 
-  <hr /><section class="softbox" id="video">
-  <h2>New Creation — Fulfilled</h2>
+  <hr />
 
-  <p class="note">
-    A short visual orientation to the New Creation framework used throughout FPBible.
-  </p>
+  <!-- VIDEO (NEW) -->
+  <section id="video" class="video">
+    <h2>New Creation — Fulfilled (Video)</h2>
+    <p class="note">
+      Short visual orientation to the New Creation framework used throughout FPBible.
+    </p>
 
-  <video
-    controls
-    preload="metadata"
-    style="width:100%; max-width:100%; border-radius:14px; border:1px solid rgba(0,0,0,0.12);"
-  >
-    <source src="/Bible/Media/New_Creation__Fulfilled_.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+    <video class="frame" controls preload="metadata">
+      <source src="/Bible/Media/New_Creation__Fulfilled_.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
 
-  <p class="note">
-    This video introduces the same lens explained below — presence over delay,
-    fulfillment over anticipation, life lived now.
-  </p>
-</section>
+    <p class="note">
+      If the video doesn’t load, check the file path and that the mp4 is committed to the repo.
+    </p>
+  </section>
 
-<hr />
+  <hr />
 
   <section id="start">
     <h2>Start Here</h2>
@@ -332,6 +345,7 @@
 
   <nav class="note">
     <a href="#top">Top</a> ·
+    <a href="#video">Video</a> ·
     <a href="#start">Start</a> ·
     <a href="#manifesto">Manifesto</a> ·
     <a href="/Bible/index.html">FPBible Index</a> ·
