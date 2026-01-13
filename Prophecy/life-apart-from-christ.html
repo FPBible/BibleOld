@@ -2,208 +2,162 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>FPBible — Life Apart from Christ (What the New Covenant Actually Says)</title>
-  <meta name="description" content="FPBible topical page: Life apart from Christ, framed in New Covenant / New Creation terms without futurist fear language." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FPBible — Life Apart from Christ</title>
+  <meta name="description" content="What the New Covenant actually says about life apart from Christ — without futurist fear language." />
+  <link rel="canonical" href="https://fpbible.github.io/Bible/Prophecy/life-apart-from-christ.html" />
 
   <style>
     :root{
-      --bg:#0b0d10;
-      --panel:#10141a;
-      --panel2:#0e1217;
-      --text:#e9eef5;
-      --muted:#b4c0cf;
-      --faint:#8a97a8;
-      --line:rgba(255,255,255,.10);
-      --brand:#9ad7ff;
-      --brand2:#a7ffcf;
-      --warn:#ffd39a;
-      --radius:16px;
-      --maxw:980px;
-      --pad:18px;
-      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --maxw: 980px;
+      --pad: 18px;
+      --radius: 14px;
+
+      --bg: #ffffff;
+      --ink: #111111;
+      --muted: #555555;
+
+      --card: #f6f7f9;
+      --border: #e6e8ee;
+
+      --link: #0b57d0;
+      --linkHover: #063a8c;
     }
 
-    *{box-sizing:border-box}
+    *{ box-sizing:border-box; }
+
     body{
       margin:0;
       font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      background: radial-gradient(1200px 800px at 20% 0%, rgba(154,215,255,.10), transparent 55%),
-                  radial-gradient(900px 700px at 90% 20%, rgba(167,255,207,.07), transparent 55%),
-                  var(--bg);
-      color:var(--text);
-      line-height:1.55;
+      background:var(--bg);
+      color:var(--ink);
+      line-height:1.6;
     }
 
-    a{color:var(--brand); text-decoration:none}
-    a:hover{text-decoration:underline}
+    a{ color:var(--link); text-decoration:none; }
+    a:hover{ color:var(--linkHover); text-decoration:underline; }
 
     header{
-      border-bottom:1px solid var(--line);
-      background: linear-gradient(180deg, rgba(16,20,26,.92), rgba(16,20,26,.70));
-      position:sticky; top:0; z-index:20;
-      backdrop-filter: blur(10px);
+      border-bottom:1px solid var(--border);
+      background:#fff;
     }
 
-    .wrap{max-width:var(--maxw); margin:0 auto; padding:0 var(--pad)}
-    .topbar{
-      display:flex; align-items:center; justify-content:space-between;
-      padding:14px 0;
-      gap:12px;
+    .wrap{
+      max-width:var(--maxw);
+      margin:0 auto;
+      padding:var(--pad);
     }
-    .brand{
-      display:flex; flex-direction:column; gap:2px;
+
+    .topline{
+      margin:0 0 10px 0;
+      font-size:13px;
+      color:var(--muted);
     }
-    .brand .site{font-weight:800; letter-spacing:.2px}
-    .brand .tag{font-size:13px; color:var(--muted)}
-    nav{
-      display:flex; flex-wrap:wrap; gap:10px;
-      justify-content:flex-end;
+
+    nav.site{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin:10px 0 0 0;
+      padding:0;
+      list-style:none;
       font-size:14px;
     }
-    nav a{
-      padding:8px 10px;
-      border:1px solid var(--line);
+    nav.site a{
+      display:inline-block;
+      padding:6px 10px;
+      border:1px solid var(--border);
       border-radius:999px;
-      background:rgba(255,255,255,.03);
-    }
-    nav a:hover{background:rgba(255,255,255,.06); text-decoration:none}
-
-    main{padding:22px 0 44px}
-
-    .hero{
-      padding:18px;
-      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
-      border:1px solid var(--line);
-      border-radius:var(--radius);
-      box-shadow: var(--shadow);
+      background:#fff;
     }
 
     h1{
-      margin:0 0 8px;
+      margin:10px 0 6px 0;
       font-size:30px;
-      line-height:1.15;
-      letter-spacing:-.2px;
+      letter-spacing:-0.2px;
+      line-height:1.2;
     }
-    .subtitle{
+
+    .lead{
       margin:0;
       color:var(--muted);
       font-size:15px;
-      max-width:78ch;
-    }
-
-    .thesis{
-      margin-top:14px;
-      padding:14px 14px;
-      border-radius:14px;
-      border:1px solid rgba(154,215,255,.22);
-      background: linear-gradient(180deg, rgba(154,215,255,.09), rgba(154,215,255,.03));
-    }
-    .thesis .label{
-      font-size:12px;
-      letter-spacing:.12em;
-      text-transform:uppercase;
-      color:var(--muted);
-      margin-bottom:8px;
-    }
-    .thesis .lines{
-      font-size:18px;
-      line-height:1.35;
-      margin:0;
-    }
-    .thesis .lines strong{color:#ffffff}
-
-    .grid{
-      display:grid;
-      grid-template-columns: 1fr;
-      gap:16px;
-      margin-top:18px;
+      max-width:72ch;
     }
 
     .card{
-      border:1px solid var(--line);
+      background:var(--card);
+      border:1px solid var(--border);
       border-radius:var(--radius);
-      background:rgba(255,255,255,.03);
       padding:16px;
+      margin:18px 0;
     }
-    .card h2{
-      margin:0 0 8px;
-      font-size:20px;
-      letter-spacing:-.1px;
-    }
-    .card p{margin:10px 0; color:var(--text)}
-    .muted{color:var(--muted)}
-    .faint{color:var(--faint)}
-    .bullets{margin:10px 0 0 0; padding-left:18px}
-    .bullets li{margin:6px 0; color:var(--text)}
-    .key{
-      margin-top:12px;
-      padding:12px 12px;
-      border-radius:14px;
-      border:1px dashed rgba(255,255,255,.18);
-      background:rgba(0,0,0,.18);
-    }
-    .key .klabel{
-      font-size:12px;
-      color:var(--muted);
-      letter-spacing:.10em;
-      text-transform:uppercase;
-      margin:0 0 6px 0;
-    }
-    blockquote{
-      margin:12px 0 0;
-      padding:12px 14px;
-      border-left:3px solid rgba(167,255,207,.35);
-      background:rgba(167,255,207,.05);
-      border-radius:12px;
-      color:var(--text);
-    }
-    .refs{
-      margin-top:10px;
-      padding-top:10px;
-      border-top:1px solid var(--line);
-      font-size:14px;
-      color:var(--muted);
+
+    .toc{
       display:flex;
       flex-wrap:wrap;
-      gap:8px 10px;
-    }
-    .refs a{
-      border:1px solid var(--line);
-      padding:6px 9px;
-      border-radius:999px;
-      background:rgba(255,255,255,.03);
-    }
-
-    .note{
-      margin-top:16px;
-      padding:14px 14px;
-      border-radius:14px;
-      border:1px solid rgba(255,211,154,.25);
-      background:rgba(255,211,154,.06);
-      color:var(--text);
-    }
-    .note strong{color:#fff}
-
-    footer{
-      border-top:1px solid var(--line);
-      padding:18px 0 26px;
-      color:var(--muted);
+      gap:10px 12px;
+      padding:0;
+      margin:10px 0 0 0;
+      list-style:none;
       font-size:14px;
     }
-    .small{font-size:13px; color:var(--faint)}
-    .pill{
-      display:inline-block;
-      padding:4px 8px;
-      border:1px solid var(--line);
-      border-radius:999px;
-      background:rgba(255,255,255,.03);
-      margin-right:6px;
+
+    h2{
+      margin:0 0 10px 0;
+      font-size:20px;
+      letter-spacing:-0.1px;
     }
 
-    @media (min-width: 900px){
-      .grid{grid-template-columns: 1fr 1fr}
-      .span2{grid-column: 1 / -1}
+    p{ margin:0 0 12px 0; }
+    ul{ margin:0 0 12px 18px; }
+    li{ margin:6px 0; }
+
+    .rule{
+      border-left:4px solid var(--border);
+      padding-left:12px;
+      margin:12px 0;
+      color:var(--muted);
+    }
+
+    .callout{
+      background:#fff;
+      border:1px solid var(--border);
+      border-radius:12px;
+      padding:14px;
+      margin-top:12px;
+    }
+
+    .label{
+      font-size:12px;
+      letter-spacing:0.2px;
+      text-transform:uppercase;
+      color:var(--muted);
+      margin:0 0 6px 0;
+    }
+
+    .quote{
+      margin:10px 0 0 0;
+      padding:12px 14px;
+      background:#fff;
+      border:1px solid var(--border);
+      border-radius:12px;
+      color:var(--ink);
+    }
+
+    .refs{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:10px;
+      font-size:14px;
+    }
+
+    footer{
+      border-top:1px solid var(--border);
+      padding:18px 0 30px 0;
+      color:var(--muted);
+      font-size:13px;
     }
   </style>
 </head>
@@ -211,262 +165,235 @@
 <body>
 <header>
   <div class="wrap">
-    <div class="topbar">
-      <div class="brand">
-        <div class="site">FPBible</div>
-        <div class="tag">New Creation reading — clarity, fulfillment, presence</div>
-      </div>
+    <p class="topline">New Creation reading — clarity, fulfillment, presence</p>
 
-      <nav aria-label="FPBible Navigation">
-        <a href="https://fpbible.github.io/Bible/">Bible Index</a>
-        <a href="https://fpbible.github.io/Bible/Prophecy/">Prophecy Hub</a>
-        <a href="https://fpbible.github.io/Bible/NewCreation/">New Creation</a>
-        <a href="https://fpbible.github.io/Bible/Audio/">Audio</a>
-      </nav>
+    <nav class="site" aria-label="Site navigation">
+      <a href="../index.html">Bible Index</a>
+      <a href="../Prophecy/index.html">Prophecy Hub</a>
+      <a href="../NewCreation/index.html">New Creation</a>
+      <a href="../Audio/index.html">Audio</a>
+    </nav>
+
+    <h1>Life Apart from Christ</h1>
+    <p class="lead">
+      What the New Covenant actually says — without future-punishment framing.
+      In FPBible terms, the New Covenant is not a threat-based system. It’s life offered as participation in Christ.
+    </p>
+
+    <div class="card" style="margin-top:14px;">
+      <h2 style="margin-bottom:6px;">Core thesis</h2>
+      <p class="rule">
+        <strong>Christ is not a future rescue from punishment.</strong><br />
+        <strong>He is present participation in life.</strong><br />
+        To reject Christ is to remain in death — not to incur wrath.
+      </p>
+      <p class="rule" style="margin-bottom:0;">
+        This page refuses fear-motivation and avoids futurist “pending tribunal” assumptions.
+        It stays inside New Covenant categories: life, light, union, restoration, presence.
+      </p>
+
+      <ul class="toc" aria-label="On this page">
+        <li><a href="#judgment">1) Judgment has already occurred</a></li>
+        <li><a href="#what-christ-brings">2) What Christ brings</a></li>
+        <li><a href="#rejecting">3) What rejecting Christ means</a></li>
+        <li><a href="#descriptions">4) Life apart from Christ</a></li>
+        <li><a href="#fire">5) Fire, darkness, exclusion</a></li>
+        <li><a href="#not-say">6) What Scripture does not say</a></li>
+        <li><a href="#invitation">7) The invitation that remains</a></li>
+      </ul>
     </div>
   </div>
 </header>
 
-<main>
-  <div class="wrap">
+<main class="wrap">
 
-    <section class="hero">
-      <h1>Life Apart from Christ <span class="faint">(What the New Covenant Actually Says)</span></h1>
-      <p class="subtitle">
-        This page is deliberately not framed in “future punishment” language. In FPBible terms,
-        the New Covenant is not a threat-based system. It’s life offered as participation in Christ.
+  <section class="card" id="judgment">
+    <h2>1. Judgment Has Already Occurred</h2>
+    <p>
+      New Testament “judgment” language belongs to the end of the age — the covenantal transition that culminated in the first century.
+      In FPBible terms, there is no future judicial event hanging over humanity as an end-times mechanism.
+    </p>
+    <ul>
+      <li>Judgment language is covenantal (about Israel’s age and its close).</li>
+      <li>It culminated historically (AD 30–70), not perpetually as a future threat.</li>
+      <li>Post-fulfillment faith is not fear of sentencing — it’s participation in life.</li>
+    </ul>
+    <div class="callout">
+      <p class="label">Prophecy Hub</p>
+      <p style="margin:0;">
+        → <a href="../Prophecy/judgment-ad70.html">Judgment / AD 70</a> <span style="color:var(--muted);">(if available)</span>
       </p>
+    </div>
+  </section>
 
-      <div class="thesis" role="note" aria-label="Core thesis">
-        <div class="label">Core thesis</div>
-        <p class="lines">
-          <strong>Christ is not a future rescue from punishment.</strong><br/>
-          <strong>He is present participation in life.</strong><br/>
-          To reject Christ is to remain in death — <strong>not</strong> to incur wrath.
-        </p>
-      </div>
+  <section class="card" id="what-christ-brings">
+    <h2>2. What Christ Actually Brings</h2>
+    <p>
+      The New Covenant doesn’t market Jesus as “escape.” It presents Him as life itself:
+      life, light, union, restoration of humanity, participation in God.
+    </p>
+    <ul>
+      <li><strong>Life</strong> — not mere survival, but shared life with God.</li>
+      <li><strong>Light</strong> — clarity, exposure of illusion, restored sight.</li>
+      <li><strong>Union</strong> — participation, not distance.</li>
+      <li><strong>Restoration</strong> — humanity made whole in Christ.</li>
+    </ul>
+    <div class="refs">
+      <a href="https://www.biblegateway.com/passage/?search=John+1&version=WEB">John 1 (WEB)</a>
+      <a href="https://www.biblegateway.com/passage/?search=John+5%3A24&version=WEB">John 5:24 (WEB)</a>
+      <a href="https://www.biblegateway.com/passage/?search=John+10%3A10&version=WEB">John 10:10 (WEB)</a>
+      <a href="https://www.biblegateway.com/passage/?search=1+John+5%3A12&version=WEB">1 John 5:12 (WEB)</a>
+    </div>
+  </section>
 
-      <div class="note">
-        <strong>What this page refuses to do:</strong>
-        It does not motivate faith through fear, nor does it import futurist “pending tribunal” assumptions.
-        It stays inside New Covenant categories: life, light, union, restoration, and presence.
-      </div>
-    </section>
+  <section class="card" id="rejecting">
+    <h2>3. What “Rejecting Christ” Means</h2>
+    <p>
+      In New Covenant terms, rejecting Christ is not mainly “failing a theology exam” or “refusing a doctrine.”
+      It is refusing participation in life itself.
+    </p>
 
-    <section class="grid" aria-label="Content sections">
+    <div class="callout">
+      <p class="label">Key phrase</p>
+      <p style="margin:0;">
+        <strong>Rejection does not trigger punishment.</strong><br />
+        It leaves a person unchanged.
+      </p>
+    </div>
 
-      <!-- 1 -->
-      <article class="card">
-        <h2>1. Judgment Has Already Occurred</h2>
-        <p>
-          New Testament “judgment” language belongs to the end of the age — the covenantal transition that culminated
-          in the first century. In FPBible terms, <strong>there is no future judicial event hanging over humanity</strong>
-          as an end-times mechanism.
-        </p>
-        <ul class="bullets">
-          <li>Judgment language is covenantal (about Israel’s age and its close).</li>
-          <li>It culminated historically (AD 30–70), not perpetually as a future threat.</li>
-          <li>Post-fulfillment faith is not fear of sentencing — it’s participation in life.</li>
-        </ul>
+    <p style="margin-top:12px;">
+      That’s why the New Testament often describes people as already in darkness or death —
+      not as people who will be tortured later if they don’t comply now.
+    </p>
 
-        <div class="key">
-          <div class="klabel">Prophecy Hub link</div>
-          <div class="muted">
-            → <a href="https://fpbible.github.io/Bible/Prophecy/judgment-ad70.html">Judgment / AD 70</a>
-            <span class="faint">(create this page if it doesn’t exist yet)</span>
-          </div>
-        </div>
-      </article>
+    <div class="refs">
+      <a href="https://www.biblegateway.com/passage/?search=John+3%3A19-21&version=WEB">John 3:19–21 (WEB)</a>
+      <a href="https://www.biblegateway.com/passage/?search=John+8%3A12&version=WEB">John 8:12 (WEB)</a>
+      <a href="https://www.biblegateway.com/passage/?search=Ephesians+2%3A1-5&version=WEB">Eph 2:1–5 (WEB)</a>
+    </div>
+  </section>
 
-      <!-- 2 -->
-      <article class="card">
-        <h2>2. What Christ Actually Brings</h2>
-        <p>
-          The New Covenant doesn’t market Jesus as “escape.” It presents Him as <strong>life itself</strong>:
-          life, light, union, restoration of humanity, participation in God.
-        </p>
-        <ul class="bullets">
-          <li><strong>Life</strong> — not mere survival, but shared life with God.</li>
-          <li><strong>Light</strong> — clarity, exposure of illusion, restored sight.</li>
-          <li><strong>Union</strong> — participation, not distance.</li>
-          <li><strong>Restoration</strong> — humanity made whole in Christ.</li>
-        </ul>
+  <section class="card" id="descriptions">
+    <h2>4. Biblical Descriptions of Life Apart from Christ</h2>
+    <p>
+      Scripture uses restrained, existential language for life apart from Christ:
+      darkness, blindness, death, alienation. These are states of being — not court-issued sentences.
+    </p>
+    <ul>
+      <li><strong>Darkness</strong> — living by distortion, hiding, confusion.</li>
+      <li><strong>Blindness</strong> — inability to perceive what is true and present.</li>
+      <li><strong>Death</strong> — separation from the life of God (a lived condition).</li>
+      <li><strong>Alienation</strong> — fragmented humanity, inward exile.</li>
+    </ul>
 
-        <div class="refs" aria-label="Key passages">
-          <a href="https://www.biblegateway.com/passage/?search=John%201&version=WEB">John 1 (WEB)</a>
-          <a href="https://www.biblegateway.com/passage/?search=John%205%3A24&version=WEB">John 5:24 (WEB)</a>
-          <a href="https://www.biblegateway.com/passage/?search=John%2010%3A10&version=WEB">John 10:10 (WEB)</a>
-          <a href="https://www.biblegateway.com/passage/?search=1%20John%205%3A12&version=WEB">1 John 5:12 (WEB)</a>
-        </div>
-      </article>
+    <div class="quote">
+      The New Covenant answer is not “try harder so God won’t punish you.”<br />
+      It is: come into the life that is already offered in Christ.
+    </div>
 
-      <!-- 3 -->
-      <article class="card">
-        <h2>3. What “Rejecting Christ” Means</h2>
-        <p>
-          In New Covenant terms, rejecting Christ is not mainly “failing a theology exam” or “refusing a doctrine.”
-          It is refusing participation in life itself.
-        </p>
+    <div class="refs">
+      <a href="https://www.biblegateway.com/passage/?search=John+1%3A4-5&version=WEB">John 1:4–5 (WEB)</a>
+      <a href="https://www.biblegateway.com/passage/?search=John+12%3A46&version=WEB">John 12:46 (WEB)</a>
+      <a href="https://www.biblegateway.com/passage/?search=Colossians+1%3A13&version=WEB">Col 1:13 (WEB)</a>
+    </div>
+  </section>
 
-        <div class="key">
-          <div class="klabel">Key phrase</div>
-          <p style="margin:0">
-            <strong>Rejection does not trigger punishment.</strong><br/>
-            It leaves a person unchanged.
-          </p>
-        </div>
+  <section class="card" id="fire">
+    <h2>5. Fire, Darkness, and Exclusion — Reframed</h2>
+    <p>
+      “Fire,” “outer darkness,” and “exclusion” are often weaponised as post-fulfillment threats.
+      FPBible reads these as covenantal and historical images tied to the judgment and transition of Israel’s age.
+      They are not a description of God’s ongoing posture toward the world after fulfillment.
+    </p>
+    <ul>
+      <li>These images are covenantal: prophetic, symbolic, historically anchored.</li>
+      <li>They are not a post-fulfillment blueprint for divine behaviour.</li>
+      <li>In New Covenant reality, “fire” is refining exposure — truth burning away illusion — not a threat mechanism.</li>
+    </ul>
 
-        <p class="muted">
-          That’s why the New Testament often describes people as already in darkness or death — not as people who will be
-          tortured later if they don’t comply now.
-        </p>
+    <div class="callout">
+      <p class="label">How to read “fire” here</p>
+      <p style="margin:0;">
+        Not: “God threatens future torment.”<br />
+        Rather: God exposes and purifies what is false as people come into light.
+      </p>
+    </div>
 
-        <div class="refs" aria-label="Key passages">
-          <a href="https://www.biblegateway.com/passage/?search=John%203%3A19-21&version=WEB">John 3:19–21 (WEB)</a>
-          <a href="https://www.biblegateway.com/passage/?search=John%208%3A12&version=WEB">John 8:12 (WEB)</a>
-          <a href="https://www.biblegateway.com/passage/?search=Ephesians%202%3A1-5&version=WEB">Eph 2:1–5 (WEB)</a>
-        </div>
-      </article>
+    <div class="refs">
+      <a href="https://www.biblegateway.com/passage/?search=Matthew+13%3A40-43&version=WEB">Matt 13:40–43 (WEB)</a>
+      <a href="https://www.biblegateway.com/passage/?search=Matthew+22%3A13&version=WEB">Matt 22:13 (WEB)</a>
+      <a href="https://www.biblegateway.com/passage/?search=1+Corinthians+3%3A13-15&version=WEB">1 Cor 3:13–15 (WEB)</a>
+    </div>
+  </section>
 
-      <!-- 4 -->
-      <article class="card">
-        <h2>4. Biblical Descriptions of Life Apart from Christ</h2>
-        <p>
-          Scripture uses restrained, existential language for life apart from Christ:
-          <strong>darkness</strong>, <strong>blindness</strong>, <strong>death</strong>, <strong>alienation</strong>.
-          These are <strong>states of being</strong>, not court-issued sentences.
-        </p>
+  <section class="card" id="not-say">
+    <h2>6. What Scripture Does Not Say</h2>
+    <p>This matters, because fear-based systems survive on assumptions. So be blunt and clean:</p>
+    <ul>
+      <li>Scripture does not describe God torturing people endlessly.</li>
+      <li>It does not depict a post-death tribunal for “the world” as the New Covenant’s operating system.</li>
+      <li>It does not motivate faith through fear after fulfillment.</li>
+    </ul>
 
-        <ul class="bullets">
-          <li><strong>Darkness</strong> — living by distortion, hiding, confusion.</li>
-          <li><strong>Blindness</strong> — inability to perceive what is true and present.</li>
-          <li><strong>Death</strong> — separation from the life of God (a lived condition).</li>
-          <li><strong>Alienation</strong> — fragmented humanity, inward exile.</li>
-        </ul>
+    <div class="callout">
+      <p class="label">Silence matters</p>
+      <p style="margin:0;">
+        If the New Covenant is “life in the Son,” then importing fear-based futurism is not “being faithful” —
+        it’s adding a different framework.
+      </p>
+    </div>
+  </section>
 
-        <blockquote>
-          The New Covenant answer is not “try harder so God won’t punish you.”<br/>
-          It is: <strong>come into the life that is already offered in Christ.</strong>
-        </blockquote>
+  <section class="card" id="invitation">
+    <h2>7. The Invitation That Remains</h2>
+    <p>
+      The gospel remains what it always was at its core: an invitation into life.
+      Not an ultimatum. Not a threat. Not a sales pitch for escape.
+    </p>
+    <ul>
+      <li>Christ remains available — present, not distant.</li>
+      <li>Life remains open — offered, not forced.</li>
+      <li>The call is to come into participation — union, light, restoration.</li>
+    </ul>
 
-        <div class="refs" aria-label="Key passages">
-          <a href="https://www.biblegateway.com/passage/?search=John%201%3A4-5&version=WEB">John 1:4–5 (WEB)</a>
-          <a href="https://www.biblegateway.com/passage/?search=John%2012%3A46&version=WEB">John 12:46 (WEB)</a>
-          <a href="https://www.biblegateway.com/passage/?search=Colossians%201%3A13&version=WEB">Col 1:13 (WEB)</a>
-        </div>
-      </article>
+    <div class="quote">
+      “I came that they may have life — and have it abundantly.”<br />
+      — John 10:10 (WEB)
+    </div>
 
-      <!-- 5 -->
-      <article class="card span2">
-        <h2>5. Fire, Darkness, and Exclusion — Reframed</h2>
-        <p>
-          “Fire,” “outer darkness,” and “exclusion” are often weaponised as post-fulfillment threats.
-          FPBible reads these as covenantal and historical images tied to the judgment and transition of Israel’s age.
-          They are not a description of God’s ongoing posture toward the world after fulfillment.
-        </p>
+    <div class="refs">
+      <a href="https://www.biblegateway.com/passage/?search=John+10%3A10&version=WEB">John 10:10 (WEB)</a>
+      <a href="https://www.biblegateway.com/passage/?search=John+5%3A24&version=WEB">John 5:24 (WEB)</a>
+      <a href="https://www.biblegateway.com/passage/?search=1+John+5%3A11-13&version=WEB">1 John 5:11–13 (WEB)</a>
+    </div>
+  </section>
 
-        <ul class="bullets">
-          <li><strong>These images are covenantal</strong>: prophetic, symbolic, and historically anchored.</li>
-          <li><strong>They are not a post-fulfillment blueprint</strong> for divine behaviour.</li>
-          <li>In New Covenant reality, “fire” is better understood as <strong>refining exposure</strong> — truth burning away illusion — not a threat mechanism.</li>
-        </ul>
+  <section class="card" id="why">
+    <h2>Why this page matters for FPBible</h2>
+    <ul>
+      <li>It prevents readers importing futurism into every “judgment” word they see.</li>
+      <li>It answers the most common objection calmly and consistently.</li>
+      <li>It keeps devotionals from drifting into fear language.</li>
+      <li>It gives you a single linkable anchor instead of repeating explanations everywhere.</li>
+      <li>It stabilises the New-Creation tone across the whole site.</li>
+    </ul>
 
-        <div class="key">
-          <div class="klabel">How to read “fire” here</div>
-          <p style="margin:0">
-            Not “God threatens future torment.”<br/>
-            Rather: <strong>God exposes and purifies what is false</strong> as people come into light.
-          </p>
-        </div>
+    <div class="callout">
+      <p class="label">Suggested placement</p>
+      <p style="margin:0;">
+        This works well under <code>/Bible/Prophecy/</code> as a framework page.
+        Link to it from relevant chapters (John, 1 John, Ephesians, Hebrews) whenever “death / life / judgment” language appears.
+      </p>
+    </div>
+  </section>
 
-        <div class="refs" aria-label="Key passages">
-          <a href="https://www.biblegateway.com/passage/?search=Matthew%2013%3A40-43&version=WEB">Matt 13:40–43 (WEB)</a>
-          <a href="https://www.biblegateway.com/passage/?search=Matthew%2022%3A13&version=WEB">Matt 22:13 (WEB)</a>
-          <a href="https://www.biblegateway.com/passage/?search=1%20Corinthians%203%3A13-15&version=WEB">1 Cor 3:13–15 (WEB)</a>
-        </div>
-      </article>
-
-      <!-- 6 -->
-      <article class="card">
-        <h2>6. What Scripture Does Not Say</h2>
-        <p class="muted">
-          This matters, because fear-based systems survive on assumptions. So be blunt and clean:
-        </p>
-        <ul class="bullets">
-          <li>Scripture does <strong>not</strong> describe God torturing people endlessly.</li>
-          <li>It does <strong>not</strong> depict a post-death tribunal for “the world” as the New Covenant’s operating system.</li>
-          <li>It does <strong>not</strong> motivate faith through fear after fulfillment.</li>
-        </ul>
-        <div class="key">
-          <div class="klabel">Silence matters</div>
-          <p style="margin:0" class="muted">
-            If the New Covenant is “life in the Son,” then importing fear-based futurism is not “being faithful” — it’s adding a different framework.
-          </p>
-        </div>
-      </article>
-
-      <!-- 7 -->
-      <article class="card">
-        <h2>7. The Invitation That Remains</h2>
-        <p>
-          The gospel remains what it always was at its core: <strong>an invitation into life</strong>.
-          Not an ultimatum. Not a threat. Not a sales pitch for escape.
-        </p>
-        <ul class="bullets">
-          <li><strong>Christ remains available</strong> — present, not distant.</li>
-          <li><strong>Life remains open</strong> — offered, not forced.</li>
-          <li>The call is to <strong>come into participation</strong> — union, light, restoration.</li>
-        </ul>
-
-        <blockquote>
-          “I came that they may have life — and have it abundantly.”<br/>
-          <span class="muted">— John 10:10 (WEB)</span>
-        </blockquote>
-
-        <div class="refs" aria-label="Key passages">
-          <a href="https://www.biblegateway.com/passage/?search=John%2010%3A10&version=WEB">John 10:10 (WEB)</a>
-          <a href="https://www.biblegateway.com/passage/?search=John%205%3A24&version=WEB">John 5:24 (WEB)</a>
-          <a href="https://www.biblegateway.com/passage/?search=1%20John%205%3A11-13&version=WEB">1 John 5:11–13 (WEB)</a>
-        </div>
-      </article>
-
-      <!-- Why it matters -->
-      <article class="card span2">
-        <h2>Why this page matters for FPBible</h2>
-        <ul class="bullets">
-          <li>It prevents readers importing futurism into every “judgment” word they see.</li>
-          <li>It answers the most common objection calmly and consistently.</li>
-          <li>It keeps devotionals from drifting into fear language.</li>
-          <li>It gives you a single linkable anchor instead of repeating explanations everywhere.</li>
-          <li>It stabilises the New-Creation tone across the whole site.</li>
-        </ul>
-
-        <div class="key">
-          <div class="klabel">Suggested placement</div>
-          <p style="margin:0" class="muted">
-            Put this under <span class="pill">/Bible/NewCreation/</span> or <span class="pill">/Bible/Prophecy/</span> as a “framework” page,
-            then link to it from relevant chapters (John, 1 John, Ephesians, Hebrews) whenever “death / life / judgment” language appears.
-          </p>
-        </div>
-      </article>
-
-    </section>
-  </div>
 </main>
 
 <footer>
   <div class="wrap">
-    <div class="small">
-      <span class="pill">FPBible Framework Page</span>
-      <span class="pill">New Covenant / New Creation</span>
-      <span class="pill">No futurist tribunal</span>
-    </div>
-    <p style="margin:10px 0 0">
-      Return: <a href="https://fpbible.github.io/Bible/">FPBible Index</a> ·
-      Prophecy Hub: <a href="https://fpbible.github.io/Bible/Prophecy/">Prophecy Hub</a>
-    </p>
+    Return: <a href="../index.html">FPBible Index</a> ·
+    Prophecy Hub: <a href="../Prophecy/index.html">Prophecy Hub</a>
   </div>
 </footer>
-
 </body>
 </html>
