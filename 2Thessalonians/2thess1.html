@@ -1,227 +1,414 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>2 Thessalonians 1 — Vindication and Relief in Covenant Judgment</title>
+  <meta charset="utf-8" />
+  <title>2 Thessalonians 1 — Fulfilled Paraphrase</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="2 Thessalonians 1 — Vindication and Relief in Covenant Judgment (FPBible, WEB text + Fulfilled Paraphrase commentary)." />
+
   <style>
-    body{ font-family: system-ui, sans-serif; line-height: 1.6; margin: 1.5em; max-width: 900px; }
-    h1,h2,h3{ margin-top: 1.4em; margin-bottom: 0.4em; }
-    nav{ margin: 1em 0; font-size: 0.95em; }
-    nav a{ margin-right: 0.6em; text-decoration: underline; }
-    p{ margin: 0.6em 0; }
-    hr{ margin: 2em 0; }
-    ul{ margin: 0.6em 0 0.8em 1.2em; }
-    li{ margin: 0.35em 0; }
-    .note{ font-size: 0.95em; opacity: 0.9; }
+    :root{
+      --maxw: 980px;
+      --pad: 18px;
+      --radius: 14px;
+
+      --bg: #ffffff;
+      --panel: #f6f7f9;
+      --text: #111827;
+      --muted: #6b7280;
+      --rule: #e5e7eb;
+      --link: #0b63ce;
+
+      --shadow: 0 8px 24px rgba(0,0,0,.08);
+    }
+
+    *{ box-sizing:border-box; }
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+
+    a{ color: var(--link); text-decoration: none; }
+    a:hover{ text-decoration: underline; }
+
+    .wrap{
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 0 var(--pad) 64px;
+    }
+
+    .topnav{
+      margin: 14px 0 18px;
+      padding: 10px 12px;
+      border: 1px solid var(--rule);
+      border-radius: 12px;
+      background: #fff;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .topnav .left,
+    .topnav .right{
+      display:flex;
+      flex-wrap:wrap;
+      gap: 10px;
+      align-items:center;
+    }
+
+    .badge{
+      font-size: 12px;
+      color: var(--muted);
+      border: 1px solid var(--rule);
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: #fff;
+    }
+
+    header h1{
+      margin: 10px 0 4px;
+      font-size: 34px;
+      letter-spacing: -0.02em;
+    }
+    header .sub{
+      margin: 0 0 18px;
+      color: var(--muted);
+    }
+
+    .card{
+      background: #fff;
+      border: 1px solid var(--rule);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 16px 16px 10px;
+      margin: 14px 0;
+    }
+
+    .card h2{
+      margin: 0 0 10px;
+      font-size: 18px;
+      letter-spacing: -0.01em;
+    }
+
+    .rule{
+      border: 0;
+      border-top: 1px solid var(--rule);
+      margin: 18px 0;
+    }
+
+    .meta{
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: -2px;
+    }
+
+    .verses{
+      margin: 10px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .verses li{
+      padding: 10px 10px;
+      border-top: 1px solid var(--rule);
+      display: grid;
+      grid-template-columns: 56px 1fr;
+      gap: 10px;
+    }
+    .verses li:first-child{ border-top: 0; }
+
+    .vnum{
+      font-weight: 700;
+      color: #111827;
+      font-size: 14px;
+      line-height: 1.2;
+      opacity: .85;
+    }
+
+    .vtext{
+      font-size: 16px;
+    }
+
+    .note{
+      background: var(--panel);
+      border: 1px solid var(--rule);
+      border-radius: 12px;
+      padding: 12px 12px;
+      margin: 12px 0 0;
+    }
+
+    .note h3{
+      margin: 0 0 8px;
+      font-size: 15px;
+    }
+
+    .note p{ margin: 10px 0; }
+    .note ul{ margin: 8px 0 0 20px; }
+    .note li{ margin: 6px 0; }
+
+    .xref{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 8px;
+    }
+    .pill{
+      display:inline-block;
+      border:1px solid var(--rule);
+      border-radius: 999px;
+      padding: 6px 10px;
+      background:#fff;
+      font-size: 13px;
+      color: var(--text);
+      white-space: nowrap;
+    }
+
+    footer{
+      margin-top: 26px;
+      padding-top: 18px;
+      border-top: 1px solid var(--rule);
+      color: var(--muted);
+      font-size: 13px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      align-items:center;
+      justify-content: space-between;
+    }
   </style>
 </head>
+
 <body>
+  <a id="top"></a>
+  <div class="wrap">
 
-<a id="top"></a>
+    <nav class="topnav" aria-label="Primary">
+      <div class="left">
+        <a href="../index.html">FPBible Index</a>
+        <span class="badge">2 Thessalonians</span>
+        <a href="./index.html">Book Index</a>
+        <a href="./preface.html">Preface</a>
+        <a href="./appendix.html">Appendix</a>
+        <a href="../Prophecy/index.html">Prophecy Hub</a>
+      </div>
+      <div class="right">
+        <a href="./2thess2.html">Next →</a>
+        <a href="#top">Top</a>
+      </div>
+    </nav>
 
-<nav>
-  <a href="/Bible/index.html">FPBible Index</a> |
-  <a href="index.html">Book Index</a> |
-  <a href="preface.html">Preface</a> |
-  <a href="appendix.html">Appendix</a> |
-  <a href="2thess2.html">Next</a> |
-  <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> |
-  <a href="#top">Top</a>
-</nav>
+    <header>
+      <h1>2 Thessalonians 1</h1>
+      <p class="sub">Fulfilled Paraphrase · Vindication and Relief in Covenant Judgment · No futurist drift</p>
+    </header>
 
-<h1>2 Thessalonians 1</h1>
-<h2>Vindication and Relief in Covenant Judgment</h2>
+    <section class="card" id="text">
+      <h2>Text (WEB)</h2>
+      <p class="meta">World English Bible (public domain)</p>
 
-<p class="note">
-Original text:
-<a href="https://ebible.org/eng-web/2TH01.htm" target="_blank">2 Thessalonians 1 — WEB</a>
-</p>
+      <ol class="verses">
+        <li id="v1"><div class="vnum">1</div><div class="vtext">Paul, Silvanus, and Timothy, to the assembly of the Thessalonians in God our Father and the Lord Jesus Christ:</div></li>
+        <li id="v2"><div class="vnum">2</div><div class="vtext">Grace to you, and peace from God our Father and the Lord Jesus Christ.</div></li>
+        <li id="v3"><div class="vnum">3</div><div class="vtext">We are bound to always give thanks to God for you, brothers, even as it is appropriate, because your faith grows exceedingly, and the love of each and every one of you toward one another abounds,</div></li>
+        <li id="v4"><div class="vnum">4</div><div class="vtext">so that we ourselves boast about you in the assemblies of God for your perseverance and faith in all your persecutions and in the afflictions which you endure.</div></li>
+        <li id="v5"><div class="vnum">5</div><div class="vtext">This is an evident token of the righteous judgment of God, to the end that you may be counted worthy of the Kingdom of God, for which you also suffer;</div></li>
+        <li id="v6"><div class="vnum">6</div><div class="vtext">since it is a righteous thing with God to repay affliction to those who afflict you,</div></li>
+        <li id="v7"><div class="vnum">7</div><div class="vtext">and to give relief to you who are afflicted with us, at the revelation of the Lord Jesus from heaven with the angels of his power in flaming fire,</div></li>
+        <li id="v8"><div class="vnum">8</div><div class="vtext">punishing those who don’t know God, and to those who don’t obey the Good News of our Lord Jesus,</div></li>
+        <li id="v9"><div class="vnum">9</div><div class="vtext">who will pay the penalty: eternal destruction from the face of the Lord and from the glory of his might,</div></li>
+        <li id="v10"><div class="vnum">10</div><div class="vtext">when he comes in that day to be glorified in his saints and to be admired among all those who have believed, because our testimony to you was believed.</div></li>
+        <li id="v11"><div class="vnum">11</div><div class="vtext">To this end we also pray always for you, that our God may count you worthy of your calling, and fulfill every desire of goodness and work of faith with power;</div></li>
+        <li id="v12"><div class="vnum">12</div><div class="vtext">that the name of our Lord Jesus may be glorified in you, and you in him, according to the grace of our God and the Lord Jesus Christ.</div></li>
+      </ol>
+    </section>
 
-<hr />
+    <section class="card" id="commentary">
+      <h2>Fulfilled Paraphrase Commentary (Deep)</h2>
 
-<h2>Immediate Context</h2>
-<p>
-The Thessalonians are being persecuted. Paul does not tell them to wait for a far-off end of the world.
-He tells them God’s justice will be revealed in history: vindication for the faithful and judgment for the oppressors.
-This is covenant judgment language in their horizon, not futurist delay.
-</p>
+      <div class="note">
+        <h3>1) This chapter is pressure + vindication, not prediction</h3>
+        <p>
+          Paul is not writing theory. He is writing into lived persecution. The question is not, “How does the world end?”
+          The question is, “Does Christ reign while we are being crushed — and will He act within our horizon?”
+        </p>
+        <p>
+          This chapter answers: <strong>yes</strong>. And it answers it in the language the prophets used:
+          <strong>revelation</strong>, <strong>fire</strong>, <strong>judgment</strong>, <strong>relief</strong>.
+          That vocabulary is covenantal and historical. It describes God acting in history to vindicate His people
+          and remove an opposing order.
+        </p>
+      </div>
 
-<hr />
+      <div class="note">
+        <h3>2) “Righteous judgment” means covenant justice in their generation (vv. 4–6)</h3>
+        <p>
+          Paul calls their endurance an “evident token” — a visible sign — that God’s judgment is not theoretical.
+          It is approaching as a righteous act: measured, deserved, and historically appropriate.
+        </p>
+        <p>
+          “Judgment” here is not God lashing out at random humanity. It is God repaying those who
+          are actively afflicting Christ’s people. In the first-century setting, that opposition is tied to a hostile
+          covenant environment: a system resisting the gospel and persecuting the saints.
+        </p>
+        <p>
+          The logic is tight: if God is righteous, then prolonged covenant violence does not get the last word.
+          Vindication is not “someday.” It is tied to the same concrete world in which the affliction is happening.
+        </p>
+      </div>
 
-<h2>Fulfilled Paraphrase</h2>
+      <div class="note">
+        <h3>3) “Counted worthy of the Kingdom” is vindication, not merit (v. 5)</h3>
+        <p>
+          Paul is not teaching earned salvation. “Counted worthy” is courtroom language:
+          publicly recognized as belonging to the Kingdom that is being established in their time.
+        </p>
+        <p>
+          Their suffering does not delay the Kingdom. It exposes the conflict between the old order and the new.
+          The Kingdom is not postponed until a future earthly throne. It is already present in Christ’s reign —
+          and it is shown to be present when persecutors are judged and the saints are relieved.
+        </p>
+      </div>
 
-<h3>Grace, Peace, and Visible Growth (1:1–4)</h3>
+      <div class="note">
+        <h3>4) “Relief” is not escape from earth — it is removal of the persecuting source (vv. 6–7)</h3>
+        <p>
+          The promise is not evacuation. The promise is relief — in history — by God acting to break the pressure.
+          Paul expects the Thessalonians to continue living, working, and growing as a community. That only makes sense
+          if “relief” means the oppressive conditions will change because the opposing system will be judged.
+        </p>
+        <p>
+          This fits the prophets: God “delivers” by judging. Not by deleting the world.
+        </p>
+      </div>
 
-<p>
-Paul, Silvanus, and Timothy—to the Thessalonian community in God our Father and the Lord Jesus Christ:
-grace to you and peace.
-</p>
+      <div class="note">
+        <h3>5) “Revealed from heaven” is authority unveiled, not a sky-travel scene (v. 7)</h3>
+        <p>
+          “Heaven” in prophetic idiom functions as the realm of divine authority. To say Jesus is “revealed from heaven”
+          is to say His kingship becomes unmistakably public through an act of judgment.
+        </p>
+        <p>
+          The Old Testament repeatedly describes God “coming” or being “revealed” when He judges nations and covenant
+          violators. Paul is using that same vocabulary. It is not physics. It is covenant action.
+        </p>
+        <p>
+          If you read this as literal descent, you immediately create delay problems — because Paul anchors it to their persecution horizon.
+          Read it as prophetic unveiling, and it locks into first-century vindication without futurist drift.
+        </p>
+      </div>
 
-<p>
-We are obligated to thank God always for you, brothers and sisters, and rightly so,
-because your faith is growing greatly,
-and the love each of you has for one another keeps increasing.
-</p>
+      <div class="note">
+        <h3>6) “Flaming fire” is covenant judgment imagery (v. 7)</h3>
+        <p>
+          Fire signals decisive judgment and removal. It communicates finality: an order is being consumed, ended, and replaced.
+          The prophets used fire for covenant collapse and national judgment — including judgment language aimed at Jerusalem
+          when covenant unfaithfulness reached maturity.
+        </p>
+        <p>
+          Paul is not painting a global burn event. He is announcing a covenant reckoning that ends the persecuting structure.
+        </p>
+      </div>
 
-<p>
-So we ourselves boast about you among God’s communities—
-about your endurance and faith in all your persecutions and pressures that you are bearing.
-</p>
+      <div class="note">
+        <h3>7) “Those who don’t know God” is covenant language, not a global category (v. 8)</h3>
+        <p>
+          In Scripture, “knowing God” is not mere awareness. It is covenant recognition and obedience.
+          To “not know God” is to reject His revealed will and His gospel, even while claiming religious status.
+        </p>
+        <p>
+          Paul’s target is not “all pagans everywhere.” It is those who are opposing the gospel in that first-century conflict.
+        </p>
+      </div>
 
-<hr />
+      <div class="note">
+        <h3>8) “Eternal destruction” is irreversible covenant removal, not endless torment (v. 9)</h3>
+        <p>
+          “Eternal” (aiōnios) describes the outcome as belonging to the age in view — decisive, permanent in effect, not temporary.
+          The point is irreversibility: once the old covenant order is judged and removed, it does not return.
+        </p>
+        <p>
+          “From the face of the Lord” is exclusion language: being cut off from covenant favor and standing,
+          not a metaphysical map of the afterlife.
+        </p>
+      </div>
 
-<h3>God’s Righteous Verdict in History (1:5–8)</h3>
+      <div class="note">
+        <h3>9) “When He comes… to be glorified in His saints” is vindication on the ground (v. 10)</h3>
+        <p>
+          Christ is “glorified in His saints” when His authority is publicly confirmed by their vindication.
+          Their endurance is not pointless suffering — it becomes a testimony that Christ reigns.
+        </p>
+        <p>
+          This is why Paul can say “our testimony… was believed” and then pray for their calling to be fulfilled (vv. 10–12).
+          He expects continued life, maturity, and visible fruit. That only coheres if this chapter is covenant transition judgment
+          in their horizon — not a distant end-of-time reset.
+        </p>
+      </div>
 
-<p>
-This is evidence of God’s righteous judgment:
-that you are considered worthy of the kingdom of God, for which you are suffering.
-</p>
+      <div class="note">
+        <h3>10) What this chapter does (and does not) do</h3>
+        <ul>
+          <li><strong>It does:</strong> stabilize persecuted believers with a near-horizon promise of vindication.</li>
+          <li><strong>It does:</strong> use prophetic idiom (revelation, fire, coming) as covenant judgment vocabulary.</li>
+          <li><strong>It does:</strong> place relief inside history by removing the persecuting pressure source.</li>
+          <li><strong>It does not:</strong> teach the end of the physical universe.</li>
+          <li><strong>It does not:</strong> introduce a 2,000-years-later “still future” coming.</li>
+          <li><strong>It does not:</strong> support escape theology.</li>
+        </ul>
+      </div>
+    </section>
 
-<p>
-Since it is right for God to repay affliction to those who afflict you,
-and to grant relief to you who are afflicted—along with us—
-when the Lord Jesus is unveiled from heaven,
-with His powerful messengers,
-</p>
+    <section class="card" id="hub">
+      <h2>Prophecy Hub Links</h2>
+      <p class="meta">Use these when “revelation / fire / day” language gets read futuristically.</p>
+      <div class="xref">
+        <a class="pill" href="../Prophecy/index.html">Prophecy Hub Index</a>
+        <a class="pill" href="../Prophecy/matthew-24.html">Matthew 24 — Judgment on Jerusalem</a>
+        <a class="pill" href="../Prophecy/luke-21.html">Luke 21 — Days of Vengeance</a>
+        <a class="pill" href="../Prophecy/daniel.html">Daniel — Kingdom, Son of Man, and Time</a>
+        <a class="pill" href="../Prophecy/parousia.html">Parousia — Presence, Not Delay</a>
+      </div>
+    </section>
 
-<p>
-in flaming fire—bringing justice against those who refuse God
-and against those who do not obey the good news of our Lord Jesus.
-</p>
+    <section class="card" id="xref">
+      <h2>Cross References (Quick)</h2>
+      <div class="xref">
+        <span class="pill">Isa 13; 19; 34 — “coming” judgment idiom</span>
+        <span class="pill">Mal 4 — covenant fire imagery</span>
+        <span class="pill">Matt 23–24 — covenant reckoning in that generation</span>
+        <span class="pill">Luke 21 — days of vengeance</span>
+        <span class="pill">Rom 12:19 — recompense belongs to God</span>
+        <span class="pill">1 Thess 1–2 — persecution + vindication horizon</span>
+      </div>
+    </section>
 
-<p class="note">
-<strong>Zero futurism:</strong>
-“Heaven / fire / unveiled” is prophetic judgment imagery.
-Paul is not shifting this into a distant cosmic ending; he is reassuring a persecuted church that God’s verdict will be made public.
-</p>
+    <nav class="topnav" aria-label="Footer">
+      <div class="left">
+        <a href="./index.html">← Book Index</a>
+        <a href="./preface.html">Preface</a>
+        <a href="./appendix.html">Appendix</a>
+        <a href="../Prophecy/index.html">Prophecy Hub</a>
+      </div>
+      <div class="right">
+        <a href="./2thess2.html">Next →</a>
+        <a href="#top">Top</a>
+        <a href="https://ko-fi.com/">ko-fi</a>
+      </div>
+    </nav>
 
-<hr />
-
-<h3>The Outcome: Justice, Honour, and Shared Glory (1:9–12)</h3>
-
-<p>
-They will pay the penalty of ruin—away from the Lord’s face
-and from the glory of His strength—
-when He is honoured in His holy people
-and marvelled at among all who believed,
-because our testimony to you was believed.
-</p>
-
-<p>
-For this reason we always pray for you:
-that our God may count you worthy of the calling,
-and fulfil every resolve for goodness and every work of faith with power,
-so that the name of our Lord Jesus may be honoured in you,
-and you in Him,
-according to the grace of our God and the Lord Jesus Christ.
-</p>
-
-<p class="note">
-<strong>Fulfilled emphasis:</strong>
-This is not “one day you’ll matter.”
-This is God strengthening a real community right now, so Christ is honoured in them in the midst of the conflict.
-</p>
-
-<hr />
-
-<h2>Fulfillment Commentary</h2>
-
-<h3>1) Persecution doesn’t mean God is absent</h3>
-<p>
-Paul treats suffering as context, not contradiction.
-The Thessalonians are not abandoned. Their endurance is “evidence” of God’s righteous verdict.
-</p>
-
-<h3>2) “Unveiled from heaven” is covenant-public language</h3>
-<p>
-“Heaven” is throne-language: God’s authority. “Unveiled” is made-known language.
-Paul is describing the public demonstration of Christ’s reign and verdict in history,
-using the same prophetic style found in the prophets and in Jesus’ own warnings.
-</p>
-
-<h3>3) “Fire” is a prophetic symbol of judgment</h3>
-<p>
-Fire language is used repeatedly for covenant judgment and purification.
-Paul is not writing a physics report. He is using prophetic vocabulary to promise that God will act righteously.
-</p>
-
-<h3>4) The point is relief and stability</h3>
-<p>
-The pastoral point is simple: keep standing. God sees. God acts. Christ is honoured in His people now.
-That’s New Creation endurance under pressure.
-</p>
-
-<hr />
-
-<h2>Prophecy Hub Links</h2>
-<ul>
-  <li><strong>Day / judgment vocabulary</strong> —
-    <a href="/Bible/Prophecy/day-of-the-lord.html">Day of the Lord</a>
-  </li>
-  <li><strong>Gospel judgment horizon</strong> —
-    <a href="/Bible/Prophecy/matt24.html">Matthew 24</a>,
-    <a href="/Bible/Prophecy/luke21.html">Luke 21</a>
-  </li>
-  <li><strong>Daniel framework (kingdom + vindication)</strong> —
-    <a href="/Bible/Prophecy/daniel.html">Daniel</a>
-  </li>
-</ul>
-
-<hr />
-
-<h2>Cross-References</h2>
-<ul>
-  <li><strong>God repays oppression</strong> —
-    <a href="https://ebible.org/eng-web/ROM12.htm" target="_blank">Romans 12</a>
-  </li>
-  <li><strong>Judgment imagery (fire / day)</strong> —
-    <a href="https://ebible.org/eng-web/ISA66.htm" target="_blank">Isaiah 66</a>
-  </li>
-  <li><strong>Relief and vindication in the Gospels</strong> —
-    <a href="https://ebible.org/eng-web/LUK21.htm" target="_blank">Luke 21</a>
-  </li>
-</ul>
-
-<hr />
-
-<h2>New Creation Reality</h2>
-<p>
-When pressure hits, your job is not to panic.
-Your job is to stay rooted in Christ:
-faith that holds, love that grows, hope that doesn’t fold.
-</p>
-
-<p>
-God’s justice is not “maybe later.”
-It is real, active, and it protects His people in history.
-</p>
-
-<hr />
-
-<h2>Reflection</h2>
-<p>
-Where am I interpreting hardship as abandonment,
-instead of seeing it as a place where Christ’s life is proven strong in me?
-</p>
-
-<hr />
-
-<nav>
-  <a href="/Bible/index.html">FPBible Index</a> |
-  <a href="index.html">Book Index</a> |
-  <a href="preface.html">Preface</a> |
-  <a href="appendix.html">Appendix</a> |
-  <a href="2thess2.html">Next</a> |
-  <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> |
-  <a href="#top">Top</a>
-</nav>
-
-<a href="https://ko-fi.com/B0B61QC1BU" target="_blank">
-  <img height="36" style="border:0px;height:36px;"
-    src="https://storage.ko-fi.com/cdn/kofi5.png?v=6"
-    border="0" alt="Buy Me a Coffee at ko-fi.com" />
-</a>
-
+    <footer>
+      <div>
+        FPBible · 2 Thessalonians 1 · WEB text + Fulfilled Paraphrase commentary
+      </div>
+      <div>
+        <a href="../index.html">fpbible.github.io/Bible/</a>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>
