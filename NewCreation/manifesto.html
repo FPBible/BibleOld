@@ -1,357 +1,214 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8">
   <title>FPBible — The New Creation Manifesto</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="FPBible’s New Creation Manifesto: Christ present, prophecy fulfilled, and New Covenant life lived now." />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <style>
     :root{
-      --maxw: 1020px;
-      --pad: 16px;
-      --line: rgba(0,0,0,0.12);
-      --line2: rgba(0,0,0,0.18);
-      --muted: rgba(0,0,0,0.72);
-      --soft: rgba(0,0,0,0.06);
-      --soft2: rgba(0,0,0,0.04);
-      --radius: 14px;
-    }
-    body{
-      font-family: system-ui, sans-serif;
-      line-height: 1.65;
-      margin: 0;
-      color: #111;
-      background: #fff;
-    }
-    .wrap{
-      max-width: var(--maxw);
-      margin: 0 auto;
-      padding: 18px var(--pad) 42px;
+      --bg:#ffffff;
+      --text:#111;
+      --muted:#555;
+      --line:#e6e6e6;
+      --accent:#b58b2a;
+      --max: 960px;
+      --radius:14px;
+      --serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+      --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
     }
 
-    h1,h2,h3{ margin-top: 1.6em; margin-bottom: 0.45em; line-height: 1.2; }
-    h1{ margin-top: 0.9em; font-size: 2.1rem; letter-spacing: -0.2px; }
-    h2{ font-size: 1.35rem; }
-    h3{ font-size: 1.08rem; }
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);}
+    a{color:inherit;text-decoration:none;}
+    a:hover{text-decoration:underline;}
 
-    p{ margin: 0.75em 0; }
-    ul{ margin: 0.6em 0 0.9em 1.15em; padding: 0; }
-    li{ margin: 0.42em 0; }
-
-    a{ color: inherit; text-decoration: underline; }
-    a:hover{ opacity: 0.85; }
-
-    hr{ margin: 2.0em 0; border: 0; border-top: 1px solid var(--line); }
-    .note{ font-size: 0.96em; color: var(--muted); }
-
-    /* Top nav (match index.html) */
-    .topnav{
-      position: sticky;
-      top: 0;
-      z-index: 20;
-      background: rgba(255,255,255,0.92);
-      backdrop-filter: blur(8px);
-      border-bottom: 1px solid var(--line);
-    }
-    .topnav .bar{
-      max-width: var(--maxw);
-      margin: 0 auto;
-      padding: 10px var(--pad);
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px 12px;
-      align-items: center;
-    }
-    .topnav a{
-      text-decoration: underline;
-      font-size: 0.95em;
-      color: #111;
-      white-space: nowrap;
-    }
-    .topnav .sep{ opacity: 0.45; }
-
-    /* Boxes consistent with index */
-    .box{
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      padding: 14px 16px;
-      background: #fff;
-    }
-    .softbox{
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      padding: 14px 16px;
-      background: var(--soft2);
-    }
-    .quick{
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      padding: 12px 14px;
-      background: var(--soft2);
-    }
-    .quick ul{ margin: 0.6em 0 0.2em 1.15em; }
-    .quick li{ margin: 0.35em 0; }
-
-    .lead{ font-size: 1.06em; }
-    .closing{ margin-top: 1.1em; font-size: 1.05em; }
-
-    /* Anchor offsets under sticky nav */
-    section{ scroll-margin-top: 72px; }
-
-    /* Small badge row */
-    .badges{ margin-top: 0.2em; }
-    .pill{
-      display: inline-block;
-      border: 1px solid var(--line2);
-      border-radius: 999px;
-      padding: 2px 10px;
-      font-size: 0.9em;
-      margin: 0 6px 6px 0;
-      background: var(--soft2);
+    header{
+      border-bottom:1px solid var(--line);
+      position:sticky; top:0; background:#fff; z-index:10;
     }
 
-    /* Video styling */
-    .video{
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      padding: 14px 16px;
-      background: var(--soft2);
+    .wrap{max-width:var(--max);margin:0 auto;padding:0 18px;}
+    .nav{display:flex;justify-content:space-between;align-items:center;padding:14px 0;}
+    .brand{font-family:var(--serif);font-weight:700;font-size:18px;}
+    .nav a{margin-left:12px;font-size:14px;color:var(--muted);}
+
+    main{padding:40px 0 70px;}
+
+    h1,h2{font-family:var(--serif);margin:0 0 12px;}
+    h1{font-size:44px;line-height:1.05;}
+    h2{font-size:30px;margin-top:42px;}
+    p{font-family:var(--sans);font-size:16px;line-height:1.7;color:var(--muted);max-width:78ch;}
+
+    .hero img,
+    .section-image{
+      width:100%;
+      border-radius:var(--radius);
+      margin:22px 0;
     }
-    .video .frame{
-      width: 100%;
-      border-radius: 12px;
-      border: 1px solid var(--line);
-      display: block;
-      background: #fff;
+
+    .declare{
+      font-family:var(--serif);
+      font-size:22px;
+      line-height:1.35;
+      margin:18px 0;
+      color:#111;
+    }
+
+    .accent{color:var(--accent);font-weight:700;}
+
+    .quote{
+      border-left:4px solid var(--accent);
+      padding:12px 16px;
+      margin:22px 0;
+      background:rgba(181,139,42,.06);
+      border-radius:10px;
+    }
+
+    footer{
+      border-top:1px solid var(--line);
+      padding:26px 0;
+      font-size:13px;
+      color:var(--muted);
     }
   </style>
 </head>
 
 <body>
 
-<a id="top"></a>
-
-<div class="topnav">
-  <div class="bar">
-    <a href="/Bible/index.html">FPBible Index</a><span class="sep">|</span>
-    <a href="/Bible/Prophecy/index.html">Prophecy Hub</a><span class="sep">|</span>
-    <a href="/Bible/Prophecy/new-creation.html">New Creation (Hub)</a><span class="sep">|</span>
-    <a href="#video">Video</a><span class="sep">|</span>
-    <a href="#start">Start</a><span class="sep">|</span>
-    <a href="#manifesto">Manifesto</a><span class="sep">|</span>
-    <a href="#top">Top</a>
+<header>
+  <div class="wrap nav">
+    <div class="brand">FPBible</div>
+    <nav>
+      <a href="/Bible/">Bible</a>
+      <a href="/Bible/Prophecy/">Prophecy Hub</a>
+      <a href="/Bible/NewCreation/">New Creation</a>
+      <a href="/Bible/Audio/">Audio</a>
+    </nav>
   </div>
-</div>
+</header>
 
-<div class="wrap">
+<main>
+  <div class="wrap">
 
-  <h1>The New Creation Manifesto</h1>
-  <p class="note">
-    This is a framework page. It sets the lens for FPBible so chapter pages stay clean and consistent.
-  </p>
+    <!-- HERO -->
+    <section class="hero">
+      <h1>The New Creation Manifesto</h1>
+      <p>
+        Moving from expectation to fulfillment.
+        The Sun has risen. The waiting has ended.
+      </p>
 
-  <div class="badges">
-    <span class="pill">Framework</span>
-    <span class="pill">New Creation</span>
-    <span class="pill">Presence</span>
-    <span class="pill">Zero Futurism</span>
+      <img src="/Bible/assets/manifesto/sunrise.png"
+           alt="The sunrise has come — fulfillment has arrived">
+
+      <p class="declare">
+        We are not waiting for the day to arrive.  
+        <span class="accent">The day has arrived.</span>
+      </p>
+    </section>
+
+    <!-- AGE ENDED -->
+    <section>
+      <h2>The Age Has Ended, the Promise Is Kept</h2>
+      <p>
+        The “end of the age” spoken of by Jesus was not the end of the material universe.
+        It was the consummation of the Jewish covenant world, completed in the first century
+        with the destruction of Jerusalem in AD 70.
+      </p>
+      <p>
+        The Old Covenant order passed away. The New Covenant age stands established.
+        Faith is no longer oriented toward unfinished prophecy, but toward accomplished reality.
+      </p>
+    </section>
+
+    <!-- PAROUSIA -->
+    <section>
+      <h2>Parousia Means Presence, Not Arrival</h2>
+
+      <img src="/Bible/assets/manifesto/parousia-presence.png"
+           alt="Parousia means abiding presence and kingship">
+
+      <p>
+        <em>Parousia</em> does not describe a brief visit or a future interruption.
+        It signifies royal presence — authority exercised, reign established, nearness realized.
+      </p>
+      <p class="declare">
+        Christ is not absent.  
+        He reigns <span class="accent">now</span>.
+      </p>
+    </section>
+
+    <!-- OLD WORLD PASSED -->
+    <section>
+      <h2>The Old World of Shadows Has Passed</h2>
+
+      <img src="/Bible/assets/manifesto/veil-passed.png"
+           alt="The veil is gone — access is open">
+
+      <p>
+        The former “heavens and earth” was the covenant world structured around temple,
+        priesthood, and separation. That world has been removed.
+      </p>
+      <p>
+        The veil is torn. Access is no longer mediated. Barriers are gone.
+        This is not symbolic optimism for the future — it is the present condition of life in Christ.
+      </p>
+    </section>
+
+    <!-- NEW JERUSALEM -->
+    <section>
+      <h2>The Holy City Is Open</h2>
+
+      <img src="/Bible/assets/manifesto/new-jerusalem.png"
+           alt="The New Jerusalem — open gates, no walls">
+
+      <p>
+        The New Jerusalem is not a future city descending from the sky.
+        It is the living community of God’s people — a city without walls,
+        whose gates are always open.
+      </p>
+      <p>
+        Healing flows now. Access is immediate. Identity is present.
+      </p>
+    </section>
+
+    <!-- LIVING IN THE DAY -->
+    <section>
+      <h2>How We Live in the Day</h2>
+      <p>
+        We stop waiting.  
+        We walk in awareness.  
+        We offer life.
+      </p>
+      <p class="declare">
+        The New Creation is not an idea to defend.  
+        <span class="accent">It is a reality to inhabit.</span>
+      </p>
+    </section>
+
+    <!-- CLOSING -->
+    <section>
+      <h2>We Are Children of the Day</h2>
+
+      <img src="/Bible/assets/manifesto/inhabit-the-reality.png"
+           alt="Inhabit the reality — walking in the light">
+
+      <div class="quote">
+        <p>
+          We do not wait for Christ.  
+          We walk with Him.
+        </p>
+      </div>
+    </section>
+
   </div>
+</main>
 
-  <hr />
+<footer>
+  <div class="wrap">
+    FPBible — Fulfillment • New Creation • Presence
+  </div>
+</footer>
 
-  <!-- VIDEO (NEW) -->
-  <section id="video" class="video">
-    <h2>New Creation — Fulfilled (Video)</h2>
-    <p class="note">
-      Short visual orientation to the New Creation framework used throughout FPBible.
-    </p>
-
-    <video class="frame" controls preload="metadata">
-      <source src="/Bible/Media/New_Creation__Fulfilled_.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-
-    <p class="note">
-      If the video doesn’t load, check the file path and that the mp4 is committed to the repo.
-    </p>
-  </section>
-
-  <hr />
-
-  <section id="start">
-    <h2>Start Here</h2>
-
-    <div class="quick">
-      <ul>
-        <li><strong>Read this manifesto once</strong> to understand the lens.</li>
-        <li><strong>Then read a book</strong> chapter-by-chapter from the book index.</li>
-        <li><strong>When you hit prophecy language</strong> (coming / wrath / fire / resurrection / heaven &amp; earth), use the Prophecy Hub.</li>
-      </ul>
-
-      <p class="note">
-        Chapter pages follow the locked structure:
-        <a href="/Bible/standard.html">FPBible Chapter Standard</a>
-      </p>
-    </div>
-  </section>
-
-  <hr />
-
-  <section id="manifesto" class="softbox">
-    <h2>Manifesto</h2>
-
-    <section class="box">
-      <h3>1. Fulfillment, Not Expectation</h3>
-      <p>
-        We affirm that the “end of the age” spoken of by Jesus and the prophets was not the end of the physical universe,
-        but the completion of Israel’s covenant age. That age reached its appointed conclusion in the first century,
-        climaxing in the judgment of Jerusalem and the passing of the temple system.
-      </p>
-      <p>
-        This was not a failed expectation or a postponed promise. It was fulfillment.
-        Christian faith does not stand on anticipation of unfinished prophecy, but on the reality that what was promised
-        has been accomplished. The old covenant world has ended. A new covenant world has begun.
-      </p>
-    </section>
-
-    <p></p>
-
-    <section class="box">
-      <h3>2. The Presence of Christ</h3>
-      <p>
-        The New Testament uses the word <em>parousia</em> to describe more than a momentary arrival. It speaks of
-        <strong>presence</strong> — an abiding, royal nearness.
-      </p>
-      <p>
-        Christ is not absent from His kingdom. He has taken His throne. His reign did not begin in the future, nor is it
-        delayed until another age. He reigns now, not as a distant ruler, but as a present Lord.
-      </p>
-      <p>
-        Christian life is therefore not lived in anticipation of Christ’s return, but in awareness of His nearness.
-      </p>
-    </section>
-
-    <p></p>
-
-    <section class="box">
-      <h3>3. Life in the New Heavens and New Earth</h3>
-      <p>
-        Scripture describes the passing of the “former heaven and earth” as the removal of the old covenant order —
-        a world structured around temple, priesthood, and ethnic boundary.
-      </p>
-      <p>
-        We now live in the New Heavens and New Earth: a renewed covenant reality where access to God is no longer mediated
-        by place, ritual, or lineage. The barriers have been removed. The veil is gone. God dwells with His people.
-      </p>
-      <p>
-        This is not symbolic optimism. It is the present condition of Christian life.
-      </p>
-    </section>
-
-    <p></p>
-
-    <section class="box">
-      <h3>4. The New Jerusalem</h3>
-      <p>
-        The New Jerusalem is not a future city descending from the sky. It is the living community of God’s people —
-        a spiritual city, founded in heaven, expressed on earth.
-      </p>
-      <p>
-        Its gates are always open. Its life flows outward. Its purpose is healing, reconciliation, and life for the nations.
-        To belong to Christ is to belong to this city now.
-      </p>
-    </section>
-
-    <p></p>
-
-    <section class="box">
-      <h3>5. Resurrection and Life</h3>
-      <p>
-        The gospel proclaims victory over death — not merely biological death, but separation from God.
-      </p>
-      <p>
-        In Christ, death has lost its dominion. Resurrection life is not postponed until the end of history; it is the
-        present inheritance of those who live in Him. Those who die in Christ do not wait in uncertainty. They rest in
-        completed redemption.
-      </p>
-      <p>
-        Eternal life is not only future survival. It is present participation.
-      </p>
-    </section>
-
-    <p></p>
-
-    <section class="box">
-      <h3>6. God All in All</h3>
-      <p>
-        With the fulfillment of Israel’s covenant mission, God’s relationship with humanity is no longer confined to a single nation
-        or sacred geography.
-      </p>
-      <p>
-        We live in the age of God’s unveiled nearness — where worship is not bound to temples, where holiness is not confined to rituals,
-        and where God’s presence fills ordinary life.
-      </p>
-      <p>
-        Faith is no longer about access. It is about awareness.
-        No sacred ground is restricted. No moment is excluded.
-        God is all in all.
-      </p>
-    </section>
-
-    <p></p>
-
-    <section class="box">
-      <h3>A Living Analogy</h3>
-      <p>
-        For generations, the world lived under a provisional light — like a lantern used through the night.
-        The prophets spoke of a sunrise that would make the lantern unnecessary.
-      </p>
-      <p><strong>That sunrise has come.</strong></p>
-      <p>
-        We are not waiting for the day to arrive. We are learning how to live in it.
-      </p>
-    </section>
-
-    <p class="closing">
-      <strong>Closing Statement</strong><br />
-      The New Creation is not an idea to defend. It is a reality to inhabit.<br />
-      Christian faith, after fulfillment, is not anxious, delayed, or suspended between ages.
-      It is grounded, present, and alive.<br /><br />
-      <strong>We do not wait for Christ.<br />We walk with Him.</strong>
-    </p>
-
-  </section>
-
-  <hr />
-
-  <section id="links">
-    <h2>Guiding Links</h2>
-    <div class="quick">
-      <ul>
-        <li><a href="/Bible/index.html">Return to FPBible Index</a></li>
-        <li><a href="/Bible/Prophecy/index.html">Prophecy Hub Index</a></li>
-        <li><a href="/Bible/Prophecy/new-creation.html">New Creation (Prophecy Hub)</a></li>
-        <li><a href="/Bible/Prophecy/parousia.html">Parousia — Presence, Not Delay</a></li>
-        <li><a href="/Bible/standard.html">FPBible Chapter Standard</a></li>
-      </ul>
-      <p class="note">
-        Rule of thumb: if language sounds “future,” it must be explained as first-century fulfillment or linked to the Hub.
-      </p>
-    </div>
-  </section>
-
-  <hr />
-
-  <nav class="note">
-    <a href="#top">Top</a> ·
-    <a href="#video">Video</a> ·
-    <a href="#start">Start</a> ·
-    <a href="#manifesto">Manifesto</a> ·
-    <a href="/Bible/index.html">FPBible Index</a> ·
-    <a href="/Bible/Prophecy/index.html">Prophecy Hub</a>
-  </nav>
-
-</div>
 </body>
 </html>
