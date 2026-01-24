@@ -1,12 +1,12 @@
 /* FPBible Global Styles - Locked Standard */
 
 body {
-  /* Exact font stack from your template */
+  /* GLOBAL FONT: System Sans-Serif (Matches Matt 7) */
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   line-height: 1.6;
-  margin: 1.5em auto; /* Centers the content */
-  padding: 0 16px;    /* Safety padding for phone screens */
-  max-width: 900px;   /* Your requested width */
+  margin: 1.5em auto;
+  padding: 0 16px;
+  max-width: 900px;
   color: #111;
   background: #fff;
 }
@@ -36,16 +36,16 @@ li { margin: 0.35em 0; }
 /* Special Classes */
 .note { font-size: 0.95em; opacity: 0.9; }
 
-/* Scripture Text (LSV) - Distinct Serif Font */
+/* Scripture Text (LSV) */
 .scripture-text {
-  font-family: "Times New Roman", Times, serif; 
-  font-size: 1.15em; 
-  line-height: 1.7;
+  /* Inherit the global font - NO Times New Roman */
+  font-family: inherit; 
+  font-size: 1.05em; 
+  margin-bottom: 1.5em;
 }
 .v-num {
-  font-family: system-ui, sans-serif;
   font-weight: bold;
-  font-size: 0.7em;
+  font-size: 0.75em;
   vertical-align: super;
   opacity: 0.6;
   margin-right: 4px;
@@ -53,13 +53,12 @@ li { margin: 0.35em 0; }
 
 /* Annotations & Commentary Styles */
 .annotation-block {
-  background: #f4f4f4; /* Subtle grey background */
-  padding: 12px 16px;
-  border-left: 4px solid #ddd;
+  background: rgba(0,0,0,0.04);
+  padding: 10px 14px;
+  border-left: 3px solid rgba(0,0,0,0.12);
   margin-top: 1em;
-  border-radius: 4px;
 }
 .annotation-item {
   font-size: 0.95em;
-  margin-bottom: 0.6em;
+  margin-bottom: 0.5em;
 }
