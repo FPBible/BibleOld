@@ -1,4 +1,4 @@
-​🔒 THE MASTER PROMPT (Merged & Final)
+​🔒 THE MASTER PROMPT (Final Fix - Absolute CSS)
 ​Instruction:
 Generate the HTML code for the next chapter of Matthew using the Strict FPBible Standard defined below.
 ​Theological Lens (SITE AUDIT COMPLIANT):
@@ -12,7 +12,7 @@ You MUST write all commentary from a Consistent Covenantal / Full Preterist pers
 ​Strict Formatting Rules:
 ​Format: Use valid HTML5.
 ​CSS Link: Do NOT use internal <style> blocks. You MUST link to the central stylesheet using exactly this line in the <head>:
-<link rel="stylesheet" href="../../css/style.css">
+<link rel="stylesheet" href="https://fpbible.github.io/css/style.css">
 ​Structure: The page MUST contain exactly these 5 sections in this order, separated by <hr />:
 ​Immediate Context: A brief paragraph setting the scene.
 ​Scripture: The full Literal Standard Version (LSV) text. Use <div class="scripture-text"> and wrap verse numbers in <span class="v-num">.
