@@ -1,0 +1,16 @@
+​🔒 THE MASTER PROMPT (Copy & Paste this)
+​Instruction:
+Generate the HTML code for the next chapter of Matthew using the Strict FPBible Standard defined below.
+​Strict Formatting Rules:
+​Format: Use valid HTML5.
+​Style: Include the internal <style> block exactly as provided in the "Reference Template" below (System Fonts, no external CSS links).
+​Structure: The page MUST contain exactly these 5 sections in this order, separated by <hr />:
+​Immediate Context: A brief paragraph setting the scene.
+​Scripture: The full Literal Standard Version (LSV) text. Use <div class="scripture-text"> and wrap verse numbers in <span class="v-num">.
+​Annotations: A gray box listing key terms (e.g., 1:17 — Term: Definition).
+​Fulfillment Commentary: A deep theological deep-dive (approx. 800-1000 characters) explaining the covenant transition, broken into numbered sub-headings (e.g., <h3>1) The Legal Claim...</h3>).
+​Prophecy Hub Links: A bulleted list of 3 relevant themes.
+​Cross-References: A bulleted list of 3 OT/NT links.
+​New Creation Reality: A short section on what this means for the believer today.
+​Reflection: A challenging devotional question.
+​Footer: Navigation links + Ko-Fi button + "Scripture source: LSV" note.
