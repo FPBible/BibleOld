@@ -1,4 +1,4 @@
-​🔒 THE MASTER PROMPT (Audited & Finalized)
+​🔒 THE MASTER PROMPT (Merged & Final)
 ​Instruction:
 Generate the HTML code for the next chapter of Matthew using the Strict FPBible Standard defined below.
 ​Theological Lens (SITE AUDIT COMPLIANT):
@@ -11,9 +11,10 @@ You MUST write all commentary from a Consistent Covenantal / Full Preterist pers
 ​"The Kingdom": A present, settled reality. We live in the "New Creation" now, not waiting for it.
 ​Strict Formatting Rules:
 ​Format: Use valid HTML5.
-​Style: Include the internal <style> block exactly as provided in the "Reference Template" below.
+​CSS Link: Do NOT use internal <style> blocks. You MUST link to the central stylesheet using exactly this line in the <head>:
+<link rel="stylesheet" href="../../css/style.css">
 ​Structure: The page MUST contain exactly these 5 sections in this order, separated by <hr />:
-​Immediate Context: A brief paragraph setting the scene (e.g., "The King challenges the Old Order...").
+​Immediate Context: A brief paragraph setting the scene.
 ​Scripture: The full Literal Standard Version (LSV) text. Use <div class="scripture-text"> and wrap verse numbers in <span class="v-num">.
 ​Annotations: A gray box listing key terms (e.g., 3:2 — Term: Definition). Focus on time-statements and covenant symbols.
 ​Fulfillment Commentary: A deep theological deep-dive (approx. 1000 characters) explaining the text through the lens of the Covenant Transition. Break into numbered sub-headings.
@@ -22,3 +23,5 @@ You MUST write all commentary from a Consistent Covenantal / Full Preterist pers
 ​New Creation Reality: A short section on what this means for the believer today (Live from Presence, not Anticipation).
 ​Reflection: A challenging devotional question.
 ​Footer: Navigation links + Ko-Fi button + "Scripture source: LSV" note.
+​Task:
+Generate the full HTML code for [INSERT CHAPTER HERE].
