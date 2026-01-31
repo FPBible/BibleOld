@@ -1,66 +1,95 @@
 Instruction:
-Generate the full HTML code for the next chapter of Matthew using the LOCKED FPBible Matthew Chapter HTML Standard (Revelation 1–style structure/nav/CSS) and the rules below.
+Generate the full HTML code for the next chapter of ANY Bible book (Genesis–Revelation) using the LOCKED FPBible Chapter HTML Standard (Revelation 1–style structure/nav/CSS) and the rules below.
 
 THEOLOGICAL LENS (SITE AUDIT COMPLIANT):
 - You MUST write all framing, notes, and commentary from a consistent Covenantal / Full Preterist perspective.
-- Zero Futurism: if a passage sounds “still pending,” you must explain its fulfillment in the first-century covenant transition (AD 30–70).
+- Zero Futurism: if a passage sounds “still pending,” you must explain its fulfillment in the first-century covenant transition (AD 30–70), or (for OT) as fulfilled in Christ and/or the covenant transition.
 - “The End” = end of the Mosaic age (AD 70).
 - “The Coming / Parousia” = Christ’s vindication/judgment on Jerusalem and covenantal transition.
 - “The Kingdom” = present, settled New Creation reality now.
 - Do NOT use “already but not yet” language.
+- Audience relevance is mandatory: state who is being addressed and why the timing statements are time-bound.
 
-TEXT INTEGRITY (LSV):
-- Scripture must be the Literal Standard Version (LSV) text, copied verbatim.
-- DO NOT paraphrase, rewrite, modernize, or adjust wording/punctuation.
+TEXT INTEGRITY (WEB — SOURCE LOCKED):
+- Scripture MUST be the World English Bible (WEB) text, copied verbatim.
+- Source of truth for copying text: https://ebible.org/web/BOOK##.htm (e.g., https://ebible.org/web/MAT03.htm).
+- DO NOT paraphrase, rewrite, modernize, harmonize, or adjust wording/punctuation.
+- No mixing translations (WEB only).
 - Selective Bolding: within the Scripture text, apply <strong> ONLY to the exact words/phrases supplied in the Annotations list. Nothing else gets bolded.
 
 LINK RULES:
-- Cross-References MUST link to LSV on eBible.org using:
-  https://ebible.org/englsv/BOOK##.htm (e.g., https://ebible.org/englsv/ISA40.htm)
+- Cross-References MUST link to WEB on eBible.org using:
+  https://ebible.org/web/BOOK##.htm (e.g., https://ebible.org/web/ISA40.htm)
 - Prophecy Hub links MUST be internal:
   <a href="/Bible/Prophecy/index.html#anchor">Theme Name</a>
 
 FORMAT + TEMPLATE:
 1) Output valid HTML5.
-2) Use the LOCKED Matthew/Revelation-1 style internal CSS and layout (cards/sections/nav/buttons) — do NOT use external CSS.
-3) Include top navigation and bottom navigation consistent with the locked Matthew standard (Index + Previous/Next chapter links).
+2) Use the LOCKED Revelation-1 style internal CSS and layout (cards/sections/nav/buttons) — do NOT use external CSS.
+3) Include top navigation and bottom navigation consistent with the locked FPBible standard (Bible Index + Book Index + Previous/Next chapter links).
+
+FILE + TITLE RULES:
+- Use correct <title> and <h1> format:
+  “{Book} {Chapter} — {Short Covenant-Themed Subtitle}”
+- Use correct internal Prev/Next file links consistent with the repo naming scheme for that book.
+- Do NOT invent folder names. If folder naming is unknown, use the existing pattern in that book (e.g., /Bible/{Book}/book1.html) and keep it consistent within the output.
 
 REQUIRED SECTION ORDER (each separated by <hr />):
 1. Immediate Context
-   - One short paragraph setting the scene in Matthew’s covenant-litigation flow (no fluff).
-2. Scripture (LSV)
+   - One short paragraph setting the scene in the book’s covenant-litigation / redemptive-historical flow (no fluff).
+
+2. Scripture (WEB)
    - Full chapter text in <div class="scripture-text">.
    - Verse numbers wrapped in <span class="v-num">.
    - Apply selective bolding only per Annotations list.
+
 3. Fulfillment Notes (STRICT)
    - EXACTLY 3–5 lines total.
    - Each line = ONE sentence only.
    - No mini-commentary, no quotes, no “maybe.”
-   - Must explicitly sharpen “this generation” / timing where relevant.
+   - Must explicitly sharpen timing where relevant (“this generation,” “near,” “at hand,” “soon,” “in a little while,” etc.).
+   - For OT chapters: state the covenant fulfillment trajectory (Christ, Cross, New Covenant, AD 70) without futurist drift.
+
 4. Annotations
    - Gray/soft box listing key terms and brief definitions (1–2 lines each).
-   - Include any covenant idioms relevant to the chapter (e.g., “heaven and earth,” “coming on clouds,” “vineyard,” “outer darkness,” etc.) without bloated essays.
+   - Include covenant idioms relevant to the chapter (e.g., “heaven and earth,” “coming on clouds,” “day of the LORD,” “wilderness,” “vineyard,” “outer darkness,” “Babylon,” “Beast,” etc.) without bloated essays.
+   - The terms/phrases listed here define the ONLY phrases that receive <strong> in Scripture.
+
 5. Fulfillment Commentary (DEPTH REQUIRED)
    - Minimum 700 words (900+ preferred if the chapter is dense).
    - Break into numbered subheadings.
-   - Must connect imagery to covenant realities: Law/Temple/Priesthood/Israel’s leadership/judgment-transfer/New Creation access.
+   - Must connect imagery to covenant realities: Law/Temple/Priesthood/Sacrifice/Israel’s leadership/judgment-transfer/New Creation access.
    - Must state the first-century resolution plainly (AD 70 context where applicable).
    - Must avoid repeating the Fulfillment Notes verbatim.
+   - Must explicitly reject futurist assumptions when the passage is commonly misread futuristically.
+
 6. Prophecy Hub Links
-   - Bullet list of exactly 3 relevant internal themes.
+   - Bullet list of exactly 3 relevant internal themes (use existing hub anchors; do not invent new anchors unless instructed).
+
 7. Cross-References
-   - Bullet list of exactly 3 LSV links (OT/NT mix as appropriate).
+   - Bullet list of exactly 3 WEB links (OT/NT mix as appropriate).
+
 8. New Creation Reality
    - Short, grounded: what this means now (presence, access, identity, Spirit-life).
+   - No fear-based application. No condemnation tone.
+
 9. Reflection
    - One challenging devotional question (not moralistic, not fear-based).
+
 10. Footer
-   - Prev/Next + Index links
+   - Prev/Next + Bible Index + Book Index links
    - Official Ko-fi button: https://ko-fi.com/B0B61QC1BU
-   - Extended LSV attribution note (as per site standard)
+   - Extended WEB attribution note (as per site standard)
+
+QUALITY CONTROL (HARD FAIL CONDITIONS):
+- If Scripture text is not verifiably WEB from eBible, do NOT output guessed Scripture.
+- Do NOT output paraphrased Scripture.
+- Do NOT include futurist “still pending” implications.
+- Do NOT exceed 5 Fulfillment Notes lines.
+- Do NOT bold anything in Scripture that is not listed in Annotations.
 
 Task:
-Generate the full HTML for: Matthew [INSERT CHAPTER NUMBER HERE].
+Generate the full HTML for: [BOOK NAME] [CHAPTER NUMBER].
 Also include:
-- Correct <title> and <h1> format: “Matthew X — [Short Covenant-Themed Subtitle]”
+- Correct <title> and <h1> format: “{Book} {Chapter} — [Short Covenant-Themed Subtitle]”
 - Correct internal Prev/Next file links consistent with the repo naming scheme.
