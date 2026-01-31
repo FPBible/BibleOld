@@ -1,200 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Matthew 1 — Genealogy and Birth of Jesus the Messiah</title>
+  <meta charset="UTF-8" />
+  <title>Matthew 1 — The Genealogy and Birth of the Covenant King</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
-    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; margin: 1.5em auto; padding: 0 16px; max-width: 900px; color: #111; background: #fff; }
-    h1, h2, h3 { margin-top: 1.4em; margin-bottom: 0.4em; }
-    h1 { font-size: 2.1rem; } h2 { font-size: 1.5rem; border-bottom: 1px solid rgba(0,0,0,0.12); padding-bottom: 0.2em; } h3 { font-size: 1.2rem; }
-    nav { margin: 1em 0; font-size: 0.95em; } nav a { margin-right: 0.6em; text-decoration: underline; color: #111; }
-    hr { margin: 2em 0; border: 0; border-top: 1px solid rgba(0,0,0,0.12); }
-    ul { margin: 0.6em 0 0.8em 1.2em; } li { margin: 0.35em 0; }
-    .scripture-text { font-family: inherit; font-size: 1.1em; margin-bottom: 1.5em; }
-    .v-num { font-weight: bold; font-size: 0.75em; vertical-align: super; opacity: 0.6; margin-right: 4px; }
-    .annotation-block { background: rgba(0,0,0,0.04); padding: 10px 14px; border-left: 3px solid rgba(0,0,0,0.12); margin-top: 1em; }
-    .annotation-item { font-size: 0.95em; margin-bottom: 0.5em; }
-    .note { font-size: 0.95em; opacity: 0.9; }
+    :root{
+      --maxw: 980px;
+      --pad: 16px;
+      --line: rgba(0,0,0,0.12);
+      --muted: rgba(0,0,0,0.72);
+      --soft: rgba(0,0,0,0.05);
+      --soft2: rgba(0,0,0,0.03);
+      --radius: 14px;
+    }
+    body{
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.65;
+      margin: 0;
+      color: #111;
+      background: #fff;
+    }
+    .wrap{
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 18px var(--pad) 56px;
+    }
+    h1,h2,h3{ margin: 1.1em 0 0.35em; }
+    h1{ font-size: 2.05rem; letter-spacing: -0.02em; }
+    h2{ font-size: 1.35rem; padding-bottom: 0.25em; border-bottom: 1px solid var(--line); }
+    h3{ font-size: 1.08rem; }
+    p{ margin: 0.6em 0; }
+    hr{ margin: 2em 0; border: 0; border-top: 1px solid var(--line); }
+    ul{ margin: 0.6em 0 0.8em 1.2em; }
+    li{ margin: 0.35em 0; }
+    a{ color:#111; text-decoration: underline; }
+    a.btn{
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      text-decoration: none;
+      background: var(--soft2);
+    }
+    nav.top, nav.bottom{
+      display:flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items:center;
+      justify-content:flex-start;
+      margin: 10px 0 16px;
+    }
+    .card{
+      background: var(--soft2);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 14px 14px;
+    }
+    .scripture-text{
+      font-size: 1.08em;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 14px 14px;
+    }
+    .v-num{
+      font-weight: 700;
+      font-size: 0.75em;
+      vertical-align: super;
+      opacity: 0.55;
+      margin-right: 4px;
+    }
+    .annotation-block{
+      background: var(--soft);
+      padding: 12px 14px;
+      border-left: 3px solid var(--line);
+      border-radius: 10px;
+    }
+    .annotation-item{ font-size: 0.98em; margin: 0.55em 0; }
+    .note{ font-size: 0.95em; color: rgba(0,0,0,0.85); }
+    .muted{ color: var(--muted); }
+    .kofi{ margin-top: 14px; }
+    .kofi img{ height: 36px; border: 0; }
+    footer{ margin-top: 18px; }
   </style>
 </head>
-
 <body>
-<a id="top"></a>
+  <a id="top"></a>
+  <div class="wrap">
 
-<nav>
-  <a href="/Bible/index.html">FPBible Index</a>
-  <a href="index.html">Book Index</a>
-  <a href="preface.html">Preface</a>
-  <a href="appendix.html">Appendix</a>
-  <a href="matt2.html">Next</a>
-  <a href="/Bible/Prophecy/index.html">Prophecy Hub</a>
-  <a href="#top">Top</a>
-</nav>
+    <nav class="top">
+      <a class="btn" href="/Bible/index.html">FPBible Index</a>
+      <a class="btn" href="index.html">Book Index</a>
+      <a class="btn" href="preface.html">Preface</a>
+      <a class="btn" href="appendix.html">Appendix</a>
+      <a class="btn" href="matt0.html" title="If you don't use matt0.html, remove this button.">Prev</a>
+      <a class="btn" href="matt2.html">Next</a>
+      <a class="btn" href="/Bible/Prophecy/index.html">Prophecy Hub</a>
+      <a class="btn" href="#top">Top</a>
+    </nav>
 
-<h1>Matthew 1</h1>
-<h2>Genealogy and Birth of Jesus the Messiah</h2>
+    <h1>Matthew 1 — The Genealogy and Birth of the Covenant King</h1>
 
-<p class="note">
-  Source text (LSV on eBible): <a href="https://ebible.org/englsv/MAT01.htm" target="_blank" rel="noopener">Matthew 1 — Literal Standard Version</a>
-</p>
+    <hr />
 
-<hr />
+    <h2>Immediate Context</h2>
+    <p>
+      Matthew opens as covenant courtroom: he proves Jesus’ legal identity (Abraham/David), then anchors the birth narrative in fulfillment language, setting the trajectory toward the first-century transition where the old order’s credentials are surpassed by the King who brings “God with us” into lived reality.
+    </p>
 
-<h2>Immediate Context</h2>
-<p>
-  Matthew opens by legally locating Jesus inside Israel’s covenant story: Abraham → David → exile → Messiah. This is not trivia—it’s covenant proof that the promised seed and King has arrived, and that the old age is reaching its appointed climax as the New Covenant reality breaks into history.
-</p>
+    <hr />
 
-<hr />
+    <h2>Scripture (WEB)</h2>
+    <div class="scripture-text">
+      <p>
+        <span class="v-num">1</span><strong>The book of the genealogy</strong> of <strong>Jesus Christ</strong>, the <strong>son of David</strong>, the <strong>son of Abraham</strong>.
+      </p>
 
-<h2>Scripture (LSV)</h2>
-<div class="scripture-text">
-  <!-- NOTE: Scripture text below is kept as provided by you. If you want strict verbatim alignment with eBible LSV,
-       paste the exact MAT01 text and I’ll keep the same formatting + bolding rules. -->
+      <p>
+        <span class="v-num">2</span>Abraham became the father of Isaac. Isaac became the father of Jacob. Jacob became the father of Judah and his brothers.
+        <span class="v-num">3</span>Judah became the father of Perez and Zerah by Tamar. Perez became the father of Hezron. Hezron became the father of Ram.
+        <span class="v-num">4</span>Ram became the father of Amminadab. Amminadab became the father of Nahshon. Nahshon became the father of Salmon.
+        <span class="v-num">5</span>Salmon became the father of Boaz by Rahab. Boaz became the father of Obed by Ruth. Obed became the father of Jesse.
+        <span class="v-num">6</span>Jesse became the father of King David. David became the father of Solomon by her who had been Uriah’s wife.
+      </p>
 
-  <p><span class="v-num">1</span><strong>The scroll of the genealogy</strong> of <strong>Jesus</strong> Christ, son of David, son of Abraham.</p>
-  <p><span class="v-num">2</span>Abraham begot Isaac, and Isaac begot Jacob, and Jacob begot Judah and his brothers,</p>
-  <p><span class="v-num">3</span>and Judah begot Pharez and Zarah of Tamar, and Pharez begot Hezron, and Hezron begot Ram,</p>
-  <p><span class="v-num">4</span>and Ram begot Amminadab, and Amminadab begot Nahshon, and Nahshon begot Salmon,</p>
-  <p><span class="v-num">5</span>and Salmon begot Boaz of Rahab, and Boaz begot Obed of Ruth, and Obed begot Jesse,</p>
-  <p><span class="v-num">6</span>and Jesse begot David the king. And David the king begot Solomon of her [who had been] Uriah’s,</p>
-  <p><span class="v-num">7</span>and Solomon begot Rehoboam, and Rehoboam begot Abijah, and Abijah begot Asa,</p>
-  <p><span class="v-num">8</span>and Asa begot Jehoshaphat, and Jehoshaphat begot Joram, and Joram begot Uzziah,</p>
-  <p><span class="v-num">9</span>and Uzziah begot Jotham, and Jotham begot Ahaz, and Ahaz begot Hezekiah,</p>
-  <p><span class="v-num">10</span>and Hezekiah begot Manasseh, and Manasseh begot Amon, and Amon begot Josiah,</p>
-  <p><span class="v-num">11</span>and Josiah begot Jeconiah and his brothers, at the Babylonian removal.</p>
-  <p><span class="v-num">12</span>And after the Babylonian removal, Jeconiah begot Shealtiel, and Shealtiel begot Zerubbabel,</p>
-  <p><span class="v-num">13</span>and Zerubbabel begot Abiud, and Abiud begot Eliakim, and Eliakim begot Azor,</p>
-  <p><span class="v-num">14</span>and Azor begot Zadok, and Zadok begot Achim, and Achim begot Eliud,</p>
-  <p><span class="v-num">15</span>and Eliud begot Eleazar, and Eleazar begot Matthan, and Matthan begot Jacob,</p>
-  <p><span class="v-num">16</span>and Jacob begot Joseph, the husband of Mary, of whom was begotten Jesus, who is named Christ.</p>
-  <p><span class="v-num">17</span>All the generations, then, from Abraham to David [are] <strong>fourteen generations</strong>, and from David to the Babylonian removal fourteen generations, and from the Babylonian removal to the Christ, fourteen generations.</p>
-  <p><span class="v-num">18</span>And of Jesus Christ, the birth was thus: for His mother Mary having been betrothed to Joseph, before their coming together she was found to have [conceived] in womb from the Holy Spirit,</p>
-  <p><span class="v-num">19</span>and Joseph her husband, being righteous, and not willing to make her an example, did wish privately to send her away.</p>
-  <p><span class="v-num">20</span>And on his thinking of these things, behold, a messenger of the LORD appeared to him in a dream, saying, “Joseph, son of David, you may not fear to receive Mary your wife, for that which was begotten in her is from the Holy Spirit,</p>
-  <p><span class="v-num">21</span>and she will bring forth a Son, and you will call His Name Jesus, for <strong>He will save His people from their sins</strong>.”</p>
-  <p><span class="v-num">22</span>And all this has come to pass, that it might be fulfilled that which was spoken by the LORD through the prophet, saying,</p>
-  <p><span class="v-num">23</span>“Behold, the virgin will have [conceived] in womb, and she will bring forth a Son, and they will call His Name <strong>Immanuel</strong>,” which is, being interpreted, “With us [is] God.”</p>
-  <p><span class="v-num">24</span>And Joseph, having risen from the sleep, did as the messenger of the LORD directed him, and received his wife,</p>
-  <p><span class="v-num">25</span>and did not know her until she brought forth her son—the first-born, and he called His Name Jesus.</p>
-</div>
+      <p>
+        <span class="v-num">7</span>Solomon became the father of Rehoboam. Rehoboam became the father of Abijah. Abijah became the father of Asa.
+        <span class="v-num">8</span>Asa became the father of Jehoshaphat. Jehoshaphat became the father of Joram. Joram became the father of Uzziah.
+        <span class="v-num">9</span>Uzziah became the father of Jotham. Jotham became the father of Ahaz. Ahaz became the father of Hezekiah.
+        <span class="v-num">10</span>Hezekiah became the father of Manasseh. Manasseh became the father of Amon. Amon became the father of Josiah.
+        <span class="v-num">11</span>Josiah became the father of Jechoniah and his brothers at the time of the exile to Babylon.
+      </p>
 
-<hr />
+      <p>
+        <span class="v-num">12</span>After the exile to Babylon, Jechoniah became the father of Shealtiel. Shealtiel became the father of Zerubbabel.
+        <span class="v-num">13</span>Zerubbabel became the father of Abiud. Abiud became the father of Eliakim. Eliakim became the father of Azor.
+        <span class="v-num">14</span>Azor became the father of Zadok. Zadok became the father of Achim. Achim became the father of Eliud.
+        <span class="v-num">15</span>Eliud became the father of Eleazar. Eleazar became the father of Matthan. Matthan became the father of Jacob.
+        <span class="v-num">16</span>Jacob became the father of Joseph, the husband of Mary, from whom was born <strong>Jesus</strong>, who is called Christ.
+        <span class="v-num">17</span>So all the generations from Abraham to David are <strong>fourteen generations</strong>; from David to the exile to Babylon fourteen generations; and from the carrying away to Babylon to the Christ, fourteen generations.
+      </p>
 
-<h2>Fulfillment Notes</h2>
-<ul>
-  <li>Matthew begins with covenant credentials: Jesus is presented as the promised seed of Abraham and the legal heir of David—Israel’s story reaching its intended climax.</li>
-  <li>The genealogy’s structure signals intentional completion: history is being “summed up” into the Messiah as the old age approaches its end.</li>
-  <li>“He will save His people from their sins” is covenant language: deliverance from the Law’s condemnation and the exile-condition, completed in Christ and finalized as the old system passed away in the first-century transition.</li>
-  <li>“Immanuel” announces the shift from localized, temple-bound presence to God-with-us in the Messiah and His people—New Covenant presence, not future waiting.</li>
-</ul>
+      <p>
+        <span class="v-num">18</span>Now the birth of Jesus Christ was like this: After his mother, Mary, was engaged to Joseph, before they came together, she was found pregnant by the Holy Spirit.
+        <span class="v-num">19</span>Joseph, her husband, being a righteous man, and not willing to make her a public example, intended to put her away secretly.
+        <span class="v-num">20</span>But when he thought about these things, behold, an angel of the Lord appeared to him in a dream, saying, “Joseph, son of David, don’t be afraid to take to yourself Mary as your wife, for that which is conceived in her is of the Holy Spirit.
+        <span class="v-num">21</span>She shall give birth to a son. You shall name him <strong>Jesus</strong>, for it is he who shall <strong>save his people from their sins</strong>.”
+        <span class="v-num">22</span>Now all this has happened that it might be fulfilled which was spoken by the Lord through the prophet, saying,
+      </p>
 
-<hr />
+      <p>
+        <span class="v-num">23</span>“Behold, the virgin shall be with child,
+        and shall give birth to a son.
+        They shall call his name <strong>Immanuel</strong>,”
+        which is, being interpreted, “<strong>God with us</strong>.”
+      </p>
 
-<h2>Annotations</h2>
-<div class="annotation-block">
-  <div class="annotation-item"><strong>The scroll of the genealogy</strong> — “Book/record of origins”; a covenant/legal introduction that anchors Jesus in Israel’s promised storyline.</div>
-  <div class="annotation-item"><strong>Jesus</strong> — “Yahweh saves”; the Name identifies mission: deliverance, not merely advice.</div>
-  <div class="annotation-item"><strong>fourteen generations</strong> — A deliberately arranged pattern emphasizing Davidic identity and messianic legitimacy.</div>
-  <div class="annotation-item"><strong>He will save His people from their sins</strong> — Not moral pep-talk; covenant removal of condemnation, the curse, and separation produced by the Mosaic administration.</div>
-  <div class="annotation-item"><strong>Immanuel</strong> — “God with us”; temple-shadow gives way to direct presence in the Messiah and His covenant people.</div>
-</div>
+      <p>
+        <span class="v-num">24</span>Joseph arose from his sleep, and did as the angel of the Lord commanded him, and took his wife to himself;
+        <span class="v-num">25</span>and didn’t know her sexually until she had given birth to her firstborn son. He named him Jesus.
+      </p>
+    </div>
 
-<hr />
+    <hr />
 
-<h2>Fulfillment Commentary</h2>
+    <h2>Fulfillment Notes</h2>
+    <div class="card">
+      <p class="note">1) Matthew begins with legal credentials because the Old Covenant world operated by lineage, inheritance, and documented right.</p>
+      <p class="note">2) The genealogy is not filler: it demonstrates that the promises converge on one Person who can lawfully carry them into completion.</p>
+      <p class="note">3) “Save his people from their sins” targets the covenant problem Israel lived under—sin strengthened by the Law—resolved in the first-century transition.</p>
+      <p class="note">4) “God with us” announces the direction of history: presence moving from temple-restricted to person-embodied and finally to New Covenant access.</p>
+      <p class="note">5) Matthew’s “fulfilled” framing is the opening drumbeat of a story that climaxes historically when the temple-age ends in AD 70.</p>
+    </div>
 
-<h3>1) Why Matthew Starts With a Genealogy (and Why It’s Not “Filler”)</h3>
-<p>
-Matthew doesn’t open with philosophy. He opens with covenant proof. In Israel, identity was legal: who you were, what promises applied to you, and what authority you could claim all ran through covenant lineage and covenant history. By starting with “the scroll of the genealogy,” Matthew is not giving trivia—he is presenting credentials. Jesus is named “son of David” and “son of Abraham” because those titles are the two great covenant hinges: Abraham carries promise (seed and blessing), and David carries kingship (throne and rule). Matthew is saying: the promised Seed and the promised King is not a concept; He is a Person, and He has arrived inside the actual story of Israel.
-</p>
+    <hr />
 
-<h3>2) The Patterned Generations: History Being “Summed Up” Into the Messiah</h3>
-<p>
-Matthew highlights the structure (three blocks of fourteen). That isn’t accidental. It’s a theological signal that Israel’s long narrative is reaching its intended goal. The story moves from promise (Abraham), to monarchy (David), to exile (Babylonian removal), and then to Messiah. This is the covenant arc: election → kingdom → judgment/exile → restoration in the Christ. In a fulfilled, covenantal lens, the point is not “numerology for its own sake,” but the claim that God has been steering this storyline toward a resolution. The Messiah is presented as the climax of the old world’s covenant development—the One who gathers the entire history into Himself and completes what the old administration could only anticipate.
-</p>
+    <h2>Annotations</h2>
+    <div class="annotation-block">
+      <div class="annotation-item"><strong>The book of the genealogy</strong>: A legal opening statement—Matthew is documenting covenant right, not writing trivia.</div>
+      <div class="annotation-item"><strong>Jesus Christ</strong>: “Jesus” = Yahweh saves; “Christ” = anointed king—salvation and kingship fused in one name.</div>
+      <div class="annotation-item"><strong>son of David</strong>: Royal covenant claim (2 Samuel 7); the throne promise is being carried to its true fulfillment.</div>
+      <div class="annotation-item"><strong>son of Abraham</strong>: Promise-of-blessing claim (Genesis 12/22); the nations are always in view from the start.</div>
+      <div class="annotation-item"><strong>fourteen generations</strong>: Structured covenant-history; Matthew is presenting a deliberate, ordered arrival at the climactic King.</div>
+      <div class="annotation-item"><strong>save his people from their sins</strong>: Covenant rescue—deliverance from the sin/Law entanglement and the exile-condition it produced.</div>
+      <div class="annotation-item"><strong>Immanuel</strong>: God-with-us as the new locus of presence—no longer tied to a building as the decisive center.</div>
+      <div class="annotation-item"><strong>God with us</strong>: The heart of New Covenant reality—access and nearness replace distance and mediation-by-ritual.</div>
+    </div>
 
-<h3>3) “He Will Save His People From Their Sins” as Covenant Deliverance</h3>
-<p>
-The angelic announcement defines the mission: “He will save His people from their sins.” In modern reading, that line often collapses into private guilt management. In Matthew’s covenant context, “sins” is not merely “bad behavior”; it’s the covenant breach condition that kept Israel under condemnation—sin defined and empowered by the Law’s jurisdiction. The Mosaic administration could diagnose and expose sin, but it could not finally remove it. It produced repeated reminders, repeated sacrifices, and a conscience still haunted by unresolved separation.
-</p>
-<p>
-So the naming of Jesus (“Yahweh saves”) is not sentimental; it’s covenantal. The Messiah would do what the Law could not: fulfill its demands, take its curse, and end its power to accuse. That salvation was inaugurated at the cross and publicly finalized as the old temple-world reached its historical end in the first-century covenant transition. The outcome for the New Creation people is not “still pending.” It is settled: no condemnation, no exile-status, no Law-based accusation.
-</p>
+    <hr />
 
-<h3>4) Immanuel: The End of Localized Presence</h3>
-<p>
-Matthew quotes Isaiah: “they will call His Name Immanuel… God with us.” That is the headline of the entire gospel: presence. Under the old covenant, presence was mediated and restricted—priesthood, sanctuary boundaries, sacrifice schedules, and a physical center (Jerusalem). Immanuel signals the shift. God’s nearness is no longer managed by an external system; it is embodied in the Messiah and then shared with His covenant people. This is exactly why Matthew’s gospel will later intensify temple conflict: when true presence arrives, the shadow-system becomes obsolete.
-</p>
-<p>
-In fulfilled terms, Immanuel is not merely “God showed up for a while.” It’s the announcement that the entire covenant arrangement is being transformed—from distance to nearness, from shadow to substance, from external regulation to internal life. When the old temple-world passed away, it didn’t erase God’s presence—it confirmed that presence had been relocated: the Messiah and His body as the living temple of the New Covenant.
-</p>
+    <h2>Fulfillment Commentary</h2>
 
-<h3>5) The Women in the Line: Mercy, Inclusion, and the Unstoppable Promise</h3>
-<p>
-Matthew’s genealogy includes Tamar, Rahab, Ruth, and “her who had been Uriah’s.” That’s not random detail; it’s a signal that the covenant promise is not a fragile purity project. It moves through scandal, outsiders, and brokenness—without losing its line. This sets the tone for the gospel itself: the Messiah is not here to preserve the old boundary pride; He is here to bring the promise to its intended breadth and depth. This is the seed of Abraham heading toward blessing for the nations, and it begins by revealing that the story was never about human bragging rights.
-</p>
+    <h3>1) Why Matthew Starts With “Paperwork”</h3>
+    <p>
+      Modern readers treat genealogies like dead weight, but Matthew 1 is covenant logic. In the Old Covenant world, identity and inheritance were public facts—recorded, traced, and defended. Priesthood required genealogy, land claims required genealogy, and messianic expectation required genealogy. So Matthew opens like a legal brief: “Here is the documented right of the King.” That is not mere history; it’s covenant courtroom strategy. If the Messiah is the one who fulfills and closes the old order, he must first be shown as the rightful heir within it. Matthew’s first move, then, is not “devotional,” it’s forensic: he proves the Messiah belongs to Israel’s story so that Israel’s story can lawfully reach its designed conclusion in him.
+    </p>
 
-<h3>6) The Opening Claim: The New Covenant Reality Starts Here</h3>
-<p>
-Matthew 1 is not merely prologue. It is the legal announcement that the covenant transition has begun. The rightful King is present in history. The promised salvation is defined. The presence of God is embodied. From here on, Matthew will press the question: if the Messiah has arrived, what happens to the old structures that opposed, obscured, or mediated what He now brings directly? The answer unfolds through the gospel and reaches its historical closure as the old age ends and the New Covenant world stands fully established.
-</p>
+    <h3>2) David and Abraham: Kingship and Promise Converge</h3>
+    <p>
+      The two titles in verse 1—son of David, son of Abraham—aren’t random. Abraham is promise (blessing to the nations), David is kingship (a throne with covenant significance). Matthew is telling you up front: the Messiah is both the promised Seed and the promised King, meaning the covenant story is about to move from shadow to substance. The promises do not float in the air as future ideals; they are carried by covenant right into history through a specific Person. This also explains why Matthew repeatedly highlights “fulfillment” language: when the rightful bearer arrives, the time of waiting is over and the time of realization begins.
+    </p>
 
-<hr />
+    <h3>3) The Patterned Generations and the “Timed” Nature of the Old Order</h3>
+    <p>
+      Matthew emphasizes “fourteen generations” not to nerd out, but to signal that history has been steered toward an appointed climax. Whether you focus on the literary shaping, the mnemonic structure, or the Davidic resonance, the point is the same: the covenant story was not open-ended. The Law and the prophets were not designed as a permanent spiritual treadmill; they were a tutor with a finish line. The genealogy functions like a countdown: Israel’s story has been moving toward a single culmination, and now the culmination has arrived. In a Full Preterist frame, this matters because it aligns with the New Testament’s broader claim that the “last days” were the last days of that covenant age, not the last days of planet earth. Matthew starts the book by showing you the covenant clock is reaching its hour.
+    </p>
 
-<h2>Prophecy Hub Links</h2>
-<ul>
-  <li><a href="/Bible/Prophecy/index.html#seed-of-abraham">The Seed of Abraham</a></li>
-  <li><a href="/Bible/Prophecy/index.html#davidic-throne">The Davidic Throne</a></li>
-  <li><a href="/Bible/Prophecy/index.html#virgin-birth">The Virgin Birth</a></li>
-</ul>
+    <h3>4) “Save His People From Their Sins” Is Covenant-Specific</h3>
+    <p>
+      The angel’s line is often flattened into generic individualism, but Matthew’s context is Israel’s covenant crisis. Under Moses, sin is not merely “bad choices”; it’s law-defined transgression that brings covenant curse. The Law does not remove sin; it exposes it, multiplies it, and keeps Israel under an administration of accusation. That’s why the Messiah’s name matters: he is “Yahweh saves” precisely because Israel’s problem is not lack of effort but lack of covenant resolution. “Save his people from their sins” means he will deal with the sin problem at its root—by fulfilling the Law’s demands, exhausting its curse, and replacing the old system of mediated access with New Covenant access. That salvation is historically secured in the cross and historically finalized in the first-century covenant transition (AD 30–70) when the temple-order that embodied the Law’s administration is taken out of the way. The result is not “still pending”; it is settled: no Law-barrier, no covenant accusation, no need for a standing temple-priesthood to manage guilt.
+    </p>
 
-<hr />
+    <h3>5) “God With Us” Is the End of Temple-Centered Distance</h3>
+    <p>
+      Immanuel is not merely a comforting slogan; it’s a directional claim about how God will dwell with his people. Under the old order, presence was concentrated—holy place, holy furniture, holy priesthood, holy calendar. Distance was built into the system as a teaching tool: God is holy, and access is regulated. But the promise trajectory always aimed beyond regulation toward communion. Matthew quotes Isaiah to say: the “with us” reality is now embodied in the Messiah. That sets up everything that follows in Matthew—conflict with religious gatekeepers, warnings about Jerusalem’s leadership, and the ultimate passing of the temple-age. In New Covenant reality, presence is not localized; it is covenantally distributed in union with Christ. The temple was a shadow of access; the Messiah is access.
+    </p>
 
-<h2>Cross-References</h2>
-<ul>
-  <li><a href="https://ebible.org/englsv/GEN05.htm" target="_blank" rel="noopener">Genesis 5</a> — “book of generations” background pattern.</li>
-  <li><a href="https://ebible.org/englsv/ISA07.htm" target="_blank" rel="noopener">Isaiah 7</a> — Immanuel prophecy.</li>
-  <li><a href="https://ebible.org/englsv/GAL04.htm" target="_blank" rel="noopener">Galatians 4</a> — “fullness of time” and redemption under Law.</li>
-</ul>
+    <h3>6) Joseph’s Obedience and the Shape of Fulfillment</h3>
+    <p>
+      Joseph matters because fulfillment does not arrive as abstract theology; it arrives as lived obedience within messy circumstances. The narrative shows righteousness that is not performative: Joseph is “righteous” and yet gentle, refusing public shame. Then, when commanded, he obeys. Matthew is already teaching a New Covenant kind of righteousness—one that aligns with God’s movement instead of clinging to old-world optics. That becomes a theme in the Gospel: the kingdom comes not through self-protective religion but through trust in God’s action in Christ.
+    </p>
 
-<hr />
+    <h3>7) The First Words of a Book About an Ending</h3>
+    <p>
+      Matthew 1 is the opening of a Gospel that will repeatedly press a timeline and a transition. You can’t read Matthew faithfully and turn it into a story about indefinite delay. The Messiah arrives as lawful heir, announces fulfillment, embodies “God with us,” and then spends the book exposing the old order’s terminal condition—until that order is judged and removed in history. That’s why the genealogy belongs here: it proves the King has the right to bring the covenant to its appointed end and to establish the enduring reality that remains—the New Covenant life of nearness, access, and identity in the presence of God.
+    </p>
 
-<h2>New Creation Reality</h2>
-<p>
-You are not trying to “get God with you.” Immanuel has already arrived in Christ, and you live from that nearness. Your identity isn’t anchored in natural lineage, religious performance, or old-covenant measurement—it’s anchored in the finished covenant deliverance Jesus came to accomplish.
-</p>
+    <hr />
 
-<hr />
+    <h2>Prophecy Hub Links</h2>
+    <ul>
+      <li><a href="/Bible/Prophecy/index.html#seed-of-abraham">Seed of Abraham</a></li>
+      <li><a href="/Bible/Prophecy/index.html#davidic-throne">Davidic Throne</a></li>
+      <li><a href="/Bible/Prophecy/index.html#immanuel">Immanuel / God With Us</a></li>
+    </ul>
 
-<h2>Reflection</h2>
-<p>
-Where do you still relate to God as “distant” or “conditional,” instead of living from the settled reality of Immanuel—God with us, now?
-</p>
+    <hr />
 
-<hr />
+    <h2>Cross-References</h2>
+    <ul>
+      <li><a href="https://ebible.org/eng-web/GEN12.htm" target="_blank" rel="noopener">Genesis 12 (WEB)</a></li>
+      <li><a href="https://ebible.org/eng-web/2SA07.htm" target="_blank" rel="noopener">2 Samuel 7 (WEB)</a></li>
+      <li><a href="https://ebible.org/eng-web/ISA07.htm" target="_blank" rel="noopener">Isaiah 7 (WEB)</a></li>
+    </ul>
 
-<footer>
-  <nav>
-    <a href="/Bible/index.html">FPBible Index</a>
-    <a href="index.html">Book Index</a>
-    <a href="preface.html">Preface</a>
-    <a href="appendix.html">Appendix</a>
-    <a href="matt2.html">Next: Matthew 2 &rarr;</a>
-    <a href="#top">Top</a>
-  </nav>
+    <hr />
 
-  <p>
-    <a href="https://ko-fi.com/B0B61QC1BU" target="_blank" rel="noopener">
-      <img height="36" style="border:0;height:36px;" src="https://storage.ko-fi.com/cdn/kofi5.png?v=6" alt="Support FPBible on Ko-fi" />
-    </a>
-  </p>
+    <h2>New Creation Reality</h2>
+    <p>
+      Your identity isn’t maintained by religious paperwork or proximity to sacred space; it’s secured in the King who fulfilled the covenant story and brought “God with us” into ordinary life—access, nearness, and belonging without temple-distance.
+    </p>
 
-  <p class="note">
-    Scripture source: <strong>Literal Standard Version (LSV)</strong> as published on eBible.org. The Scripture text is reproduced for reading and study; wording is otherwise unchanged except for selective emphasis (bold) matching the Annotations list.
-  </p>
-</footer>
+    <hr />
 
+    <h2>Reflection</h2>
+    <p>
+      Where am I still trying to prove myself by “old-order credentials” instead of resting in the finished identity that comes from being with the King?
+    </p>
+
+    <hr />
+
+    <footer>
+      <nav class="bottom">
+        <a class="btn" href="/Bible/index.html">FPBible Index</a>
+        <a class="btn" href="index.html">Book Index</a>
+        <a class="btn" href="matt0.html" title="If you don't use matt0.html, remove this button.">Prev</a>
+        <a class="btn" href="matt2.html">Next</a>
+        <a class="btn" href="/Bible/Prophecy/index.html">Prophecy Hub</a>
+        <a class="btn" href="#top">Top</a>
+      </nav>
+
+      <div class="kofi">
+        <a href="https://ko-fi.com/B0B61QC1BU" target="_blank" rel="noopener">
+          <img src="https://storage.ko-fi.com/cdn/kofi5.png?v=6" alt="Support FPBible on Ko-fi" />
+        </a>
+      </div>
+
+      <p class="note muted" style="margin-top:12px;">
+        Scripture quotations are from the <strong>World English Bible (WEB)</strong>, public domain. Source: eBible.org (WEB/eng-web). You may copy and share the WEB freely.
+      </p>
+    </footer>
+
+  </div>
+
+  <!--
+    NOTE:
+    - If your repo does NOT use matt0.html, delete the Prev button (top and bottom) or point it to your actual prior page (e.g., index.html).
+    - Selective bolding in Scripture above is limited to the exact phrases defined in the Annotations list.
+  -->
 </body>
 </html>
