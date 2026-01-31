@@ -1,209 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Matthew 2 — The King Received by the Nations and Rejected by the Old Order</title>
-
+  <meta charset="UTF-8" />
+  <title>Matthew 2 — The True King, the False King, and the New Exodus</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
-    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; margin: 1.5em auto; padding: 0 16px; max-width: 900px; color: #111; background: #fff; }
-    h1, h2, h3 { margin-top: 1.4em; margin-bottom: 0.4em; }
-    h1 { font-size: 2.1rem; } h2 { font-size: 1.5rem; border-bottom: 1px solid rgba(0,0,0,0.12); padding-bottom: 0.2em; } h3 { font-size: 1.2rem; }
-    nav { margin: 1em 0; font-size: 0.95em; } nav a { margin-right: 0.6em; text-decoration: underline; color: #111; }
-    hr { margin: 2em 0; border: 0; border-top: 1px solid rgba(0,0,0,0.12); }
-    ul { margin: 0.6em 0 0.8em 1.2em; } li { margin: 0.35em 0; }
-    .scripture-text { font-family: inherit; font-size: 1.1em; margin-bottom: 1.5em; }
-    .v-num { font-weight: bold; font-size: 0.75em; vertical-align: super; opacity: 0.6; margin-right: 4px; }
-    .annotation-block { background: rgba(0,0,0,0.04); padding: 10px 14px; border-left: 3px solid rgba(0,0,0,0.12); margin-top: 1em; }
-    .annotation-item { font-size: 0.95em; margin-bottom: 0.5em; }
-    .note { font-size: 0.95em; opacity: 0.9; }
+    :root{
+      --maxw: 980px;
+      --pad: 16px;
+      --line: rgba(0,0,0,0.12);
+      --muted: rgba(0,0,0,0.72);
+      --soft: rgba(0,0,0,0.05);
+      --soft2: rgba(0,0,0,0.03);
+      --radius: 14px;
+    }
+    body{
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.65;
+      margin: 0;
+      color: #111;
+      background: #fff;
+    }
+    .wrap{
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 18px var(--pad) 56px;
+    }
+    h1,h2,h3{ margin: 1.1em 0 0.35em; }
+    h1{ font-size: 2.05rem; letter-spacing: -0.02em; }
+    h2{ font-size: 1.35rem; padding-bottom: 0.25em; border-bottom: 1px solid var(--line); }
+    h3{ font-size: 1.08rem; }
+    p{ margin: 0.6em 0; }
+    hr{ margin: 2em 0; border: 0; border-top: 1px solid var(--line); }
+    ul{ margin: 0.6em 0 0.8em 1.2em; }
+    li{ margin: 0.35em 0; }
+    a{ color:#111; text-decoration: underline; }
+    a.btn{
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      text-decoration: none;
+      background: var(--soft2);
+    }
+    nav.top, nav.bottom{
+      display:flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items:center;
+      justify-content:flex-start;
+      margin: 10px 0 16px;
+    }
+    .card{
+      background: var(--soft2);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 14px 14px;
+    }
+    .scripture-text{
+      font-size: 1.08em;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 14px 14px;
+    }
+    .v-num{
+      font-weight: 700;
+      font-size: 0.75em;
+      vertical-align: super;
+      opacity: 0.55;
+      margin-right: 4px;
+    }
+    .annotation-block{
+      background: var(--soft);
+      padding: 12px 14px;
+      border-left: 3px solid var(--line);
+      border-radius: 10px;
+    }
+    .annotation-item{ font-size: 0.98em; margin: 0.55em 0; }
+    .note{ font-size: 0.95em; color: rgba(0,0,0,0.85); }
+    .muted{ color: var(--muted); }
+    .kofi{ margin-top: 14px; }
+    .kofi img{ height: 36px; border: 0; }
+    footer{ margin-top: 18px; }
   </style>
 </head>
-
 <body>
-<a id="top"></a>
+  <a id="top"></a>
+  <div class="wrap">
 
-<nav>
-  <a href="/Bible/index.html">FPBible Index</a>
-  <a href="index.html">Book Index</a>
-  <a href="preface.html">Preface</a>
-  <a href="appendix.html">Appendix</a>
-  <a href="matt1.html">Prev</a>
-  <a href="matt3.html">Next</a>
-  <a href="/Bible/Prophecy/index.html">Prophecy Hub</a>
-  <a href="#top">Top</a>
-</nav>
+    <nav class="top">
+      <a class="btn" href="/Bible/index.html">FPBible Index</a>
+      <a class="btn" href="index.html">Book Index</a>
+      <a class="btn" href="preface.html">Preface</a>
+      <a class="btn" href="appendix.html">Appendix</a>
+      <a class="btn" href="matt1.html">Prev</a>
+      <a class="btn" href="matt3.html">Next</a>
+      <a class="btn" href="/Bible/Prophecy/index.html">Prophecy Hub</a>
+      <a class="btn" href="#top">Top</a>
+    </nav>
 
-<h1>Matthew 2</h1>
-<h2>The King Received by the Nations and Rejected by the Old Order</h2>
+    <h1>Matthew 2 — The True King, the False King, and the New Exodus</h1>
 
-<p class="note">
-  Source text (LSV on eBible): <a href="https://ebible.org/englsv/MAT02.htm" target="_blank" rel="noopener">Matthew 2 — Literal Standard Version</a>
-</p>
+    <hr />
 
-<hr />
+    <h2>Immediate Context</h2>
+    <p>
+      Matthew has just established Jesus as the lawful heir of Abraham and David; now he shows what that claim does to the old order: the nations begin seeking, the throne panics, and the “fulfillment” theme accelerates as Jesus is presented as True Israel—already moving toward the covenant transition that will climax in AD 70.
+    </p>
 
-<h2>Immediate Context</h2>
-<p>
-  Matthew has introduced Jesus as Abraham’s seed and David’s heir. Now he shows the first public reactions to the King: Gentile seekers move toward Him, while the existing power-structure panics. This chapter is covenant theatre—Israel’s leaders have the Scriptures, yet resist the Reality standing in their midst, while the nations begin to stream in.
-</p>
+    <hr />
 
-<hr />
+    <h2>Scripture (WEB)</h2>
+    <div class="scripture-text">
+      <p>
+        <span class="v-num">1</span>Now when Jesus was born in <strong>Bethlehem</strong> of Judea in the days of <strong>King Herod</strong>, behold, <strong>wise men</strong> from the east came to Jerusalem,
+        <span class="v-num">2</span>saying, “Where is he who is born King of the Jews? For we saw his star in the east, and have come to worship him.”
+        <span class="v-num">3</span>When <strong>King Herod</strong> heard it, he was troubled, and all Jerusalem with him.
+        <span class="v-num">4</span>Gathering together all the chief priests and scribes of the people, he asked them where the Christ would be born.
+        <span class="v-num">5</span>They said to him, “In <strong>Bethlehem</strong> of Judea, for this is written through the prophet,
+        <span class="v-num">6</span>‘You <strong>Bethlehem</strong>, land of Judah, are in no way least among the princes of Judah; for out of you shall come a governor who shall shepherd my people, Israel.’”
+      </p>
+      <p>
+        <span class="v-num">7</span>Then <strong>King Herod</strong> secretly called the <strong>wise men</strong>, and learned from them exactly what time the star appeared.
+        <span class="v-num">8</span>He sent them to <strong>Bethlehem</strong>, and said, “Go and search diligently for the young child. When you have found him, bring me word, so that I also may come and worship him.”
+        <span class="v-num">9</span>They, having heard the king, went their way; and behold, the star, which they saw in the east, went before them until it came and stood over where the young child was.
+        <span class="v-num">10</span>When they saw the star, they rejoiced with exceedingly great joy.
+        <span class="v-num">11</span>They came into the house and saw the young child with Mary, his mother, and they fell down and worshiped him. Opening their treasures, they offered to him gifts: gold, frankincense, and myrrh.
+        <span class="v-num">12</span>Being warned in a dream not to return to <strong>King Herod</strong>, they went back to their own country another way.
+      </p>
+      <p>
+        <span class="v-num">13</span>Now when they had departed, behold, an angel of the Lord appeared to Joseph in a dream, saying, “Arise and take the young child and his mother, and flee into Egypt, and stay there until I tell you, for <strong>King Herod</strong> will seek the young child to destroy him.”
+        <span class="v-num">14</span>He arose and took the young child and his mother by night and departed into Egypt,
+        <span class="v-num">15</span>and was there until the death of Herod, that it might be fulfilled which was spoken by the Lord through the prophet, saying, “<strong>Out of Egypt I called my son</strong>.”
+      </p>
+      <p>
+        <span class="v-num">16</span>Then Herod, when he saw that he was mocked by the <strong>wise men</strong>, was exceedingly angry, and sent out and killed all the male children who were in <strong>Bethlehem</strong> and in all the surrounding countryside, from two years old and under, according to the exact time which he had learned from the <strong>wise men</strong>.
+        <span class="v-num">17</span>Then that which was spoken by Jeremiah the prophet was fulfilled, saying,
+        <span class="v-num">18</span>“A voice was heard in Ramah, lamentation, weeping and great mourning, <strong>Rachel weeping for her children</strong>; she wouldn’t be comforted, because they are no more.”
+      </p>
+      <p>
+        <span class="v-num">19</span>But when Herod was dead, behold, an angel of the Lord appeared in a dream to Joseph in Egypt, saying,
+        <span class="v-num">20</span>“Arise and take the young child and his mother, and go into the land of Israel, for those who sought the young child’s life are dead.”
+        <span class="v-num">21</span>He arose and took the young child and his mother, and came into the land of Israel.
+        <span class="v-num">22</span>But when he heard that Archelaus was reigning over Judea in the place of his father, Herod, he was afraid to go there. Being warned in a dream, he withdrew into the region of Galilee,
+        <span class="v-num">23</span>and came and lived in a city called <strong>Nazareth</strong>; that it might be fulfilled which was spoken through the prophets that he will be called a <strong>Nazarene</strong>.
+      </p>
+    </div>
 
-<h2>Scripture (LSV)</h2>
-<div class="scripture-text">
-  <!-- Scripture text kept as supplied by you; bolding is limited to the phrases listed in the Annotations section. -->
-  <p><span class="v-num">1</span>Now after Jesus was born in <strong>Bethlehem</strong> of Judea in the days of <strong>Herod the king</strong>, behold, <strong>wise men</strong> from the East arrived in Jerusalem,</p>
-  <p><span class="v-num">2</span>saying, “Where is He who was born King of the Jews? For we saw His star in the East and came to do Him homage.”</p>
-  <p><span class="v-num">3</span>And Herod the king having heard, was troubled, and all Jerusalem with him,</p>
-  <p><span class="v-num">4</span>and having gathered all the chief priests and scribes of the people, he was inquiring of them where the Christ is born.</p>
-  <p><span class="v-num">5</span>And they said to him, “In Bethlehem of Judea, for thus it has been written through the prophet:</p>
-  <p><span class="v-num">6</span>And you, Bethlehem, land of Judah, you are by no means least among the leaders of Judah, for out of you will come forth a Leader who will shepherd My people Israel.”</p>
-  <p><span class="v-num">7</span>Then Herod, having privately called the wise men, inquired exactly of them the time of the appearing star,</p>
-  <p><span class="v-num">8</span>and having sent them to Bethlehem, he said, “Having gone, inquire exactly for the child, and when you may have found, bring me back word, that I also having come, may do him homage.”</p>
-  <p><span class="v-num">9</span>And they, having heard the king, departed, and behold, the star, which they saw in the East, was going before them, until, having come, it stood over where the child was.</p>
-  <p><span class="v-num">10</span>And having seen the star, they rejoiced with very great joy,</p>
-  <p><span class="v-num">11</span>and having come into the house, they found the child with Mary His mother, and having fallen down they did him homage, and having opened their treasures, they offered to him gifts, gold, and frankincense, and myrrh;</p>
-  <p><span class="v-num">12</span>and having been divinely warned in a dream not to turn back to Herod, through another way they withdrew to their own region.</p>
-  <p><span class="v-num">13</span>And on their having withdrawn, behold, a messenger of the LORD appears in a dream to Joseph, saying, “Having risen, take the child and His mother, and flee into Egypt, and be there until I may speak to you, for Herod is about to seek the child to destroy him.”</p>
-  <p><span class="v-num">14</span>And he, having risen, took the child and His mother by night, and withdrew into Egypt,</p>
-  <p><span class="v-num">15</span>and he was there until the death of Herod, that it might be fulfilled that which was spoken by the LORD through the prophet, saying, “<strong>Out of Egypt I called My Son</strong>.”</p>
-  <p><span class="v-num">16</span>Then Herod, having seen that he was deceived by the wise men, was very wroth, and having sent forth, he slew all the male children in Bethlehem, and in all its borders, from two years and under, according to the time that he inquired exactly from the wise men.</p>
-  <p><span class="v-num">17</span>Then was fulfilled that which was spoken through Jeremiah the prophet, saying,</p>
-  <p><span class="v-num">18</span>“A voice in Ramah was heard—lamentation, and weeping, and much mourning—<strong>Rachel weeping [for] her children</strong>, and she would not be comforted, because they are not.”</p>
-  <p><span class="v-num">19</span>And Herod having died, behold, a messenger of the LORD in a dream appears to Joseph in Egypt,</p>
-  <p><span class="v-num">20</span>saying, “Having risen, take the child and His mother, and be going into the land of Israel, for they have died who are seeking the life of the child.”</p>
-  <p><span class="v-num">21</span>And he, having risen, took the child and His mother, and came into the land of Israel,</p>
-  <p><span class="v-num">22</span>and having heard that Archelaus reigns over Judea instead of Herod his father, he was afraid to go there, and having been divinely warned in a dream, he withdrew into the parts of Galilee,</p>
-  <p><span class="v-num">23</span>and having come, he dwelt in a city called Nazareth, that it might be fulfilled what was spoken through the prophets, that “He will be called a Nazarene.”</p>
-</div>
+    <hr />
 
-<hr />
+    <h2>Fulfillment Notes</h2>
+    <div class="card">
+      <p class="note">1) The nations seeking the King in Matthew 2 previews the New Covenant widening that becomes fully settled after the covenant transition of AD 30–70.</p>
+      <p class="note">2) Herod functions as a sign of old-order power: threatened by Christ, it lashes out and exposes its hostility to God’s reign.</p>
+      <p class="note">3) “Out of Egypt I called my son” identifies Jesus as True Israel, compressing Israel’s story into one faithful Representative who brings the promises to completion.</p>
+      <p class="note">4) Rachel’s weeping signals covenant birth-pains: the old world bleeds as the new world arrives, a pattern that culminates historically in Jerusalem’s fall in AD 70.</p>
+      <p class="note">5) “Nazareth / Nazarene” marks the Messiah’s prophetic shaping in humility, not triumphalism, overturning expectations that the kingdom arrives by earthly spectacle.</p>
+    </div>
 
-<h2>Fulfillment Notes</h2>
-<ul>
-  <li>The Magi are an early “nations streaming in” sign: Gentiles recognize the King while Jerusalem’s leadership is disturbed and defensive.</li>
-  <li>Matthew’s “fulfilled” citations are covenant signals: the Messiah is reliving Israel’s story to bring it to completion in Himself.</li>
-  <li>Herod and “all Jerusalem” foreshadow the larger first-century collision between Messiah and the existing order that culminated in Jerusalem’s judgment (AD 70).</li>
-  <li>“Out of Egypt I called My Son” identifies Jesus as the True Israel, leading the definitive exodus out of the old system into New Covenant reality.</li>
-</ul>
+    <hr />
 
-<hr />
+    <h2>Annotations</h2>
+    <div class="annotation-block">
+      <div class="annotation-item"><strong>Bethlehem</strong>: David’s town; a covenant credential that the Shepherd-King arrives as promised, not as a political invention.</div>
+      <div class="annotation-item"><strong>King Herod</strong>: An “old world” ruler; a living parable of threatened power when God’s true King appears.</div>
+      <div class="annotation-item"><strong>wise men</strong>: Gentile seekers; first-fruits that anticipate the nations streaming in as the covenant barriers fall.</div>
+      <div class="annotation-item"><strong>Out of Egypt I called my son</strong>: Hosea’s Exodus language re-applied to Jesus, presenting him as True Israel and covenant Representative.</div>
+      <div class="annotation-item"><strong>Rachel weeping for her children</strong>: Jeremiah’s exile grief; covenantal sorrow that frames transition pains and the passing of an age.</div>
+      <div class="annotation-item"><strong>Nazareth</strong>: A place-name tied to low status; the Messiah’s path is humble and scandalous to old-order expectations.</div>
+      <div class="annotation-item"><strong>Nazarene</strong>: Prophetic summary-title (not one single quote); signals the Messiah’s consecrated identity and despised appearance in Israel’s eyes.</div>
+    </div>
 
-<h2>Annotations</h2>
-<div class="annotation-block">
-  <div class="annotation-item"><strong>Bethlehem</strong> — David’s town; the promised Ruler emerges from Israel’s prophetic storyline (Micah’s theme).</div>
-  <div class="annotation-item"><strong>Herod the king</strong> — A threatened ruler propping up a fragile order; a picture of power that panics when true authority arrives.</div>
-  <div class="annotation-item"><strong>wise men</strong> — Gentile seekers; a preview that the Kingdom will not remain locked inside ethnic Israel.</div>
-  <div class="annotation-item"><strong>Out of Egypt I called My Son</strong> — Jesus as “True Israel”; Israel’s exodus pattern gathered into one Person and brought to its goal.</div>
-  <div class="annotation-item"><strong>Rachel weeping [for] her children</strong> — Covenant lament language; grief at the breaking-point of an age, with comfort on the other side of transition.</div>
-</div>
+    <hr />
 
-<hr />
+    <h2>Fulfillment Commentary</h2>
 
-<h2>Fulfillment Commentary</h2>
+    <h3>1) Two Kings, Two Worlds</h3>
+    <p>
+      Matthew 2 is not “cute Christmas material”; it is covenant confrontation. The chapter sets two “kings” in the same frame: Herod (power held by threat) and Jesus (authority carried by promise). That collision is the point. Herod does not merely fear a baby—he fears a rival story of legitimacy. In covenant terms, Herod embodies the kind of rule that grows out of the old world: anxious, controlling, and violent when challenged. Matthew’s portrait exposes how the old order reacts when the true King stands in its territory: it destabilizes, scrambles for information, weaponizes scripture without obedience, and then sheds blood to preserve status.
+    </p>
+    <p>
+      Notice the irony: the chief priests and scribes can locate the prophecy, but they do not move toward the Messiah. They can quote, but they cannot follow. That is covenant litigation in narrative form—Israel’s leadership possesses the oracles but refuses the One those oracles were aiming at. This is the same pattern Jesus will later condemn: external precision with internal unbelief. In a Full Preterist lens, Matthew is already forecasting the trajectory that ends in AD 70: leaders clinging to the symbols of legitimacy while rejecting the substance, until the entire system collapses under judgment.
+    </p>
 
-<h3>1) Two Responses to the King: Nations Move, Jerusalem Trembles</h3>
-<p>
-Matthew 2 is a clash of reactions. Gentile “wise men” travel to honour the newborn King, while “Herod the king” is troubled—and “all Jerusalem with him” (vv. 1–3). That detail matters: Matthew is not merely telling a Christmas story; he is framing a covenant conflict. Jerusalem is the temple-city, the centre of the Mosaic world, the place where priesthood and Scripture were meant to lead people to God. Yet when the Messiah arrives, the city that should rejoice becomes anxious. This is exactly the pattern Matthew will intensify through the gospel: the religious centre, armed with texts, becomes defensive when confronted with the living fulfilment of those texts.
-</p>
-<p>
-Even the chief priests and scribes can quote where Messiah must be born (vv. 4–6). They can locate Bethlehem on a map, but they do not move toward the child. The Magi do. Matthew is signalling a reversal: proximity to Scripture does not guarantee submission to the King. The nations are beginning to stream in, not because Israel’s story failed, but because Israel’s story is reaching its intended purpose—blessing to the nations through Abraham’s seed.
-</p>
+    <h3>2) The Nations Arrive Before the City Repents</h3>
+    <p>
+      The <em>wise men</em> are not side characters; they are covenant signposts. Gentiles arrive searching for Israel’s King, while “all Jerusalem” is troubled. That reversal matters. It anticipates what the New Covenant will openly finalize: the kingdom is not guarded by ethnicity, priestly gatekeeping, or proximity to the temple; it is received by faith in the King. Matthew is quietly showing you that the old boundary markers are already failing. The nations come in by worship; the city responds with fear.
+    </p>
+    <p>
+      This is why the gifts are more than atmosphere. Gold, frankincense, and myrrh function like a declaration: royalty, priestly fragrance, and death-marking burial spice all converge on one Child. Matthew is compressing the Messiah’s identity into a single moment—King, Priest, and Sacrifice. If you’re reading this through futurist glasses, you miss how immediate the re-centering is: the locus of God’s work is no longer temple-space; it’s the Messiah himself.
+    </p>
 
-<h3>2) The Bethlehem Ruler: Shepherd-King, Not Temple Administrator</h3>
-<p>
-The quotation about Bethlehem is not random prophecy trivia; it identifies the kind of rule Messiah brings: shepherding (v. 6). Shepherd imagery has covenant weight—faithful leadership, protection, gathering, guidance. Matthew places this right against the fearful manoeuvring of Herod and the passivity of the religious elite. In other words, the old leadership model is exposed as self-preserving, while the promised ruler is defined as life-giving and people-centred. This contrast sets the stage for Matthew’s later confrontations with Jerusalem’s leaders: they will be shown as hirelings guarding status, not shepherds giving life.
-</p>
+    <h3>3) “Out of Egypt”: Jesus as True Israel</h3>
+    <p>
+      “Out of Egypt I called my son” is where Matthew’s covenant method becomes explicit. Hosea’s line originally described Israel (the corporate son) being brought out of Egypt. Matthew applies it to Jesus to make a legal-theological claim: Jesus is Israel concentrated into one faithful Representative. He walks the story Israel failed to walk. He embodies the covenant vocation in obedience, so that the promise to Abraham can move forward without being held hostage by Israel’s repeated collapse.
+    </p>
+    <p>
+      In other words, Matthew is not cherry-picking verses; he is teaching you how covenant fulfillment works. The Messiah is the “true vine,” the “true son,” the “true servant,” and the “true temple.” That is why the New Covenant is stable: it is not built on national performance, but on one fulfilled life. When you later reach AD 70 in the story-world, the destruction of the temple does not end God’s plan; it publicly confirms that the plan was never meant to remain attached to bricks, genealogies, and sacrifices once the True Israel has arrived and completed the covenant task.
+    </p>
 
-<h3>3) “Out of Egypt I Called My Son”: Jesus as True Israel and the New Exodus</h3>
-<p>
-Matthew explicitly says the Egypt episode fulfils what was spoken: “Out of Egypt I called My Son” (v. 15). In its original prophetic setting, Hosea spoke of corporate Israel. Matthew’s point is not that Hosea was “wrong,” but that Hosea’s Israel-story was always heading somewhere: toward a single representative Son who would embody Israel faithfully and bring the covenant narrative to its goal. Jesus is re-walking Israel’s path—down into Egypt, then out again—because He is gathering Israel’s identity into Himself.
-</p>
-<p>
-This matters for your covenant lens: the New Covenant does not start by ignoring Israel; it starts by completing Israel. The “new exodus” is not merely geography; it is emancipation from the old administration of condemnation and boundary markers, into the direct life of God in the Messiah. That’s why Matthew keeps saying “fulfilled.” He is showing the covenant storyline converging into Christ. And once the storyline converges into Christ, the old scaffolding (temple-centred identity, priestly gatekeeping, and law-based status) is on borrowed time.
-</p>
+    <h3>4) Rachel’s Weeping and the Birth-Pains of Transition</h3>
+    <p>
+      The Jeremiah quote (“Rachel weeping for her children”) is exile language. Rachel is a symbolic mother of Israel, grieving her lost children. Matthew uses that grief to frame the cost of transition: the old world produces death even as the new world is arriving. This is not sentimental; it is prophetic realism. The powers aligned to the old order will spill blood to preserve their claims. That’s why this chapter feels like a mini-Exodus: a tyrant, threatened infants, flight, and return—because covenant shifts always expose who truly trusts God and who truly trusts power.
+    </p>
+    <p>
+      Full Preterism reads this as part of the larger covenant lawsuit that culminates in AD 70. Rachel’s weeping belongs to the same stream as Jesus’ later laments over Jerusalem. The old covenant world ends, not because God “gives up,” but because it has reached its designed terminus in Christ and has become a persecuting system rather than a life-giving tutor. The grief is real, but it is not endless. Jeremiah 31 also moves from weeping to New Covenant promise—law written on hearts, intimate knowledge of God, sins remembered no more. Matthew is already steering you there.
+    </p>
 
-<h3>4) Herod’s Violence and “All Jerusalem”: A Foreshadow of First-Century Collision</h3>
-<p>
-Herod’s attempt to destroy the child is the reflex of threatened power. The old order cannot tolerate a rival king. Matthew is setting a pattern the reader will recognize later: the Messiah is opposed not mainly by honest pagans, but by threatened rulers and compromised leadership structures. When Matthew says “all Jerusalem” was troubled, it functions like a forecast. The city will later reject Christ’s authority, and the conflict between the Messiah and the entrenched system will mature into a full covenant crisis within that generation.
-</p>
-<p>
-This is where your “site-audit” angle matters: the gospels repeatedly frame judgment language as covenantal and historical, not cosmic sci-fi. Matthew’s narrative does not float outside history. It builds toward a real first-century resolution in which the temple-world that rejected the King lost its standing. Herod’s death is a small-scale sign that hostile powers do not get the last word.
-</p>
+    <h3>5) Nazareth, Nazarene, and the Anti-Triumphal Messiah</h3>
+    <p>
+      Matthew ends with “Nazareth” and “Nazarene,” a reminder that God’s Messiah does not arrive in the form the old world respects. He is shaped in obscurity, associated with places and labels that carry social dismissal. That matters because much futurism is a triumphalism engine—it needs the Messiah’s victory to look like public domination and postponed cosmic spectacle. Matthew says: the Messiah’s path is covenant faithfulness, suffering, and vindication, and the old world will misunderstand him at every step.
+    </p>
+    <p>
+      By the time the covenant transition is completed (AD 30–70), the “victory” is not the world-ending fantasy; it is the end of the temple-age and the public establishment of New Covenant access—God with his people, without veil, without priestly gatekeeping, without sacrificial maintenance. Matthew 2 is an early installment of that argument: the King is here, the nations are already moving, the tyrant is already trembling, and the story is already being fulfilled.
+    </p>
 
-<h3>5) Rachel Weeping, Jeremiah 31, and the Logic of Covenant Transition</h3>
-<p>
-Matthew cites Jeremiah: “Rachel weeping [for] her children” (vv. 17–18). That line is grief language tied to loss and exile memory. But Jeremiah 31 is not only lament—it is also the chapter famous for New Covenant promise. Matthew’s use of the lament is not to lock readers into despair; it’s to locate pain inside a transition. The story of the old covenant includes exile, mourning, and collapse—and also restoration and covenant renewal. Matthew is showing that the birth of the Messiah occurs as the old age is moving toward its final breaking-point, and that this breaking-point is not meaningless suffering; it is the pangs of a world being reordered around the true King.
-</p>
-<p>
-In a fulfilled perspective, the “weeping” belongs to the age of shadow and distance. The “comfort” belongs to the New Covenant reality that settles when the old administration is retired. Matthew is not pointing you forward into endless waiting; he is grounding the Messiah’s arrival inside the covenant story that was actually resolved in the first-century transition.
-</p>
+    <hr />
 
-<h3>6) Nazareth and “He Will Be Called a Nazarene”: The King Comes Low</h3>
-<p>
-Matthew ends the chapter with Nazareth and a fulfilment summary: “He will be called a Nazarene” (v. 23). However you parse the prophetic background, Matthew’s theological point is consistent: the Messiah is not legitimized by elite approval, urban prestige, or temple endorsement. The King is identified with the lowly and the overlooked. That frames the entire gospel’s conflict: the leadership that clings to status will stumble over a Messiah who comes in humility, yet carries absolute authority.
-</p>
-<p>
-Put it together: nations honour Him, Jerusalem trembles, the true exodus pattern is announced, covenant lament is invoked as a sign of transition, and the Messiah is placed outside prestige structures. That is Matthew 2: the King has arrived, and the old order is already reacting—because its expiration has begun.
-</p>
+    <h2>Prophecy Hub Links</h2>
+    <ul>
+      <li><a href="/Bible/Prophecy/index.html#new-exodus">New Exodus Pattern</a></li>
+      <li><a href="/Bible/Prophecy/index.html#gentile-inclusion">Gentile Inclusion</a></li>
+      <li><a href="/Bible/Prophecy/index.html#birth-pangs">Birth-Pangs of the Transition</a></li>
+    </ul>
 
-<hr />
+    <hr />
 
-<h2>Prophecy Hub Links</h2>
-<ul>
-  <li><a href="/Bible/Prophecy/index.html#new-exodus">The New Exodus Pattern</a></li>
-  <li><a href="/Bible/Prophecy/index.html#gentile-inclusion">Gentile Inclusion</a></li>
-  <li><a href="/Bible/Prophecy/index.html#davidic-throne">The Davidic Throne</a></li>
-</ul>
+    <h2>Cross-References</h2>
+    <ul>
+      <li><a href="https://ebible.org/eng-web/MIC05.htm" target="_blank" rel="noopener">Micah 5:2 (WEB)</a></li>
+      <li><a href="https://ebible.org/eng-web/HOS11.htm" target="_blank" rel="noopener">Hosea 11:1 (WEB)</a></li>
+      <li><a href="https://ebible.org/eng-web/JER31.htm" target="_blank" rel="noopener">Jeremiah 31:15 (WEB)</a></li>
+    </ul>
 
-<hr />
+    <hr />
 
-<h2>Cross-References</h2>
-<ul>
-  <li><a href="https://ebible.org/englsv/MIC05.htm" target="_blank" rel="noopener">Micah 5</a> — The ruler from Bethlehem.</li>
-  <li><a href="https://ebible.org/englsv/HOS11.htm" target="_blank" rel="noopener">Hosea 11</a> — “Out of Egypt I called My son.”</li>
-  <li><a href="https://ebible.org/englsv/JER31.htm" target="_blank" rel="noopener">Jeremiah 31</a> — Rachel’s weeping and New Covenant context.</li>
-</ul>
+    <h2>New Creation Reality</h2>
+    <p>
+      The King does not need your protection—he gives you refuge. In the New Creation, you live from “God-with-us” stability: not temple-distance, not fear-driven survival, but presence, access, and identity that cannot be threatened by collapsing systems.
+    </p>
 
-<hr />
+    <hr />
 
-<h2>New Creation Reality</h2>
-<p>
-You’re not trying to “earn access” to God through an old-system mindset. The King has already been revealed, received by the nations, and established as the true centre of God’s people. Your identity isn’t managed by proximity to religious power; it’s grounded in Christ—where the covenant story has reached its fulfilment and God’s presence is not gated.
-</p>
+    <h2>Reflection</h2>
+    <p>
+      Where do I still react like Herod—protecting a threatened identity—instead of resting like the wise men—moving toward the King with open hands?
+    </p>
 
-<hr />
+    <hr />
 
-<h2>Reflection</h2>
-<p>
-Where do you still feel pressure to seek legitimacy from “Jerusalem” (status, systems, approval), instead of resting in the King who is already present and already acknowledged?
-</p>
+    <footer>
+      <nav class="bottom">
+        <a class="btn" href="/Bible/index.html">FPBible Index</a>
+        <a class="btn" href="index.html">Book Index</a>
+        <a class="btn" href="matt1.html">Prev</a>
+        <a class="btn" href="matt3.html">Next</a>
+        <a class="btn" href="/Bible/Prophecy/index.html">Prophecy Hub</a>
+        <a class="btn" href="#top">Top</a>
+      </nav>
 
-<hr />
+      <div class="kofi">
+        <a href="https://ko-fi.com/B0B61QC1BU" target="_blank" rel="noopener">
+          <img src="https://storage.ko-fi.com/cdn/kofi5.png?v=6" alt="Support FPBible on Ko-fi" />
+        </a>
+      </div>
 
-<footer>
-  <nav>
-    <a href="/Bible/index.html">FPBible Index</a>
-    <a href="index.html">Book Index</a>
-    <a href="preface.html">Preface</a>
-    <a href="appendix.html">Appendix</a>
-    <a href="matt1.html">&larr; Prev: Matthew 1</a>
-    <a href="matt3.html">Next: Matthew 3 &rarr;</a>
-    <a href="/Bible/Prophecy/index.html">Prophecy Hub</a>
-    <a href="#top">Top</a>
-  </nav>
+      <p class="note muted" style="margin-top:12px;">
+        Scripture quotations are from the <strong>World English Bible (WEB)</strong>, public domain. Source: eBible.org (WEB/eng-web). You may copy and share the WEB freely.
+      </p>
+    </footer>
 
-  <p>
-    <a href="https://ko-fi.com/B0B61QC1BU" target="_blank" rel="noopener">
-      <img height="36" style="border:0;height:36px;" src="https://storage.ko-fi.com/cdn/kofi5.png?v=6" alt="Support FPBible on Ko-fi" />
-    </a>
-  </p>
-
-  <p class="note">
-    Scripture source: <strong>Literal Standard Version (LSV)</strong> as published on eBible.org. The Scripture wording is unchanged except for selective emphasis (bold) matching the Annotations list.
-  </p>
-</footer>
-
+  </div>
 </body>
 </html>
