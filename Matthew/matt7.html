@@ -2,182 +2,311 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Matthew 7 — The Two Foundations</title>
+  <title>Matthew 7 — The Narrow Gate and the Unshakable House</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
-    /* INTERNAL CSS - GUARANTEED TO WORK INSTANTLY */
-    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; margin: 1.5em auto; padding: 0 16px; max-width: 900px; color: #111; background: #fff; }
-    h1, h2, h3 { margin-top: 1.4em; margin-bottom: 0.4em; }
-    h1 { font-size: 2.1rem; } h2 { font-size: 1.5rem; border-bottom: 1px solid rgba(0,0,0,0.12); padding-bottom: 0.2em; } h3 { font-size: 1.2rem; }
-    nav { margin: 1em 0; font-size: 0.95em; } nav a { margin-right: 0.6em; text-decoration: underline; color: #111; }
-    hr { margin: 2em 0; border: 0; border-top: 1px solid rgba(0,0,0,0.12); }
-    ul { margin: 0.6em 0 0.8em 1.2em; } li { margin: 0.35em 0; }
-    .scripture-text { font-family: inherit; font-size: 1.1em; margin-bottom: 1.5em; }
-    .v-num { font-weight: bold; font-size: 0.75em; vertical-align: super; opacity: 0.6; margin-right: 4px; }
-    .annotation-block { background: rgba(0,0,0,0.04); padding: 10px 14px; border-left: 3px solid rgba(0,0,0,0.12); margin-top: 1em; }
-    .annotation-item { font-size: 0.95em; margin-bottom: 0.5em; }
-    .note { font-size: 0.95em; opacity: 0.9; }
+    :root{
+      --maxw: 980px;
+      --pad: 16px;
+      --line: rgba(0,0,0,0.12);
+      --muted: rgba(0,0,0,0.72);
+      --soft: rgba(0,0,0,0.05);
+      --soft2: rgba(0,0,0,0.03);
+      --radius: 14px;
+    }
+    body{
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.65;
+      margin: 0;
+      color: #111;
+      background: #fff;
+    }
+    .wrap{
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 18px var(--pad) 56px;
+    }
+    h1,h2,h3{ margin: 1.1em 0 0.35em; }
+    h1{ font-size: 2.05rem; letter-spacing: -0.02em; }
+    h2{ font-size: 1.35rem; padding-bottom: 0.25em; border-bottom: 1px solid var(--line); }
+    h3{ font-size: 1.08rem; }
+    p{ margin: 0.6em 0; }
+    hr{ margin: 2em 0; border: 0; border-top: 1px solid var(--line); }
+    ul{ margin: 0.6em 0 0.8em 1.2em; }
+    li{ margin: 0.35em 0; }
+    a{ color:#111; text-decoration: underline; }
+    a.btn{
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      text-decoration: none;
+      background: var(--soft2);
+    }
+    nav.top, nav.bottom{
+      display:flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items:center;
+      justify-content:flex-start;
+      margin: 10px 0 16px;
+    }
+    .card{
+      background: var(--soft2);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 14px 14px;
+    }
+    .scripture-text{
+      font-size: 1.08em;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 14px 14px;
+    }
+    .v-num{
+      font-weight: 700;
+      font-size: 0.75em;
+      vertical-align: super;
+      opacity: 0.55;
+      margin-right: 4px;
+    }
+    .annotation-block{
+      background: var(--soft);
+      padding: 12px 14px;
+      border-left: 3px solid var(--line);
+      border-radius: 10px;
+    }
+    .annotation-item{ font-size: 0.98em; margin: 0.55em 0; }
+    .note{ font-size: 0.95em; color: rgba(0,0,0,0.85); }
+    .muted{ color: var(--muted); }
+    .kofi{ margin-top: 14px; }
+    .kofi img{ height: 36px; border: 0; }
+    footer{ margin-top: 18px; }
+    .footnotes{
+      margin-top: 10px;
+      padding: 10px 12px;
+      background: var(--soft2);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      font-size: 0.98em;
+    }
   </style>
 </head>
 <body>
+  <a id="top"></a>
+  <div class="wrap">
 
-<a id="top"></a>
+    <nav class="top">
+      <a class="btn" href="/Bible/index.html">FPBible Index</a>
+      <a class="btn" href="index.html">Book Index</a>
+      <a class="btn" href="preface.html">Preface</a>
+      <a class="btn" href="appendix.html">Appendix</a>
+      <a class="btn" href="matt6.html">Prev</a>
+      <a class="btn" href="matt8.html">Next</a>
+      <a class="btn" href="/Bible/Prophecy/index.html">Prophecy Hub</a>
+      <a class="btn" href="#top">Top</a>
+    </nav>
 
-<nav>
-  <a href="/Bible/index.html">FPBible Index</a> |
-  <a href="index.html">Book Index</a> |
-  <a href="preface.html">Preface</a> |
-  <a href="appendix.html">Appendix</a> |
-  <a href="matt6.html">Prev</a> |
-  <a href="matt8.html">Next</a> |
-  <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> |
-  <a href="#top">Top</a>
-</nav>
+    <h1>Matthew 7 — The Narrow Gate and the Unshakable House</h1>
 
-<h1>Matthew 7</h1>
-<h2>The Two Foundations</h2>
+    <hr />
 
-<hr />
+    <h2>Immediate Context</h2>
+    <p>
+      Matthew 7 closes the Sermon on the Mount by forcing a decision: Israel must judge itself honestly, reject false shepherds, enter the Kingdom way, and build on Christ’s words—because the old covenant house is about to be shaken and only what is founded on the Rock will stand.
+    </p>
 
-<h2>Immediate Context</h2>
-<p>
-The Sermon on the Mount concludes with a series of binary warnings: two gates, two trees, and two houses. Jesus brings the crowd to a moment of decision. This is not a general moral lecture; it is a covenantal ultimatum. Israel stands at a crossroads. One path leads to life (the New Covenant), while the "broad" path—the popular zeal for revolution and tradition—leads directly to the destruction of the nation.
-</p>
+    <hr />
 
-<hr />
+    <h2>Scripture (WEB)</h2>
+    <div class="scripture-text">
+      <p>
+        <span class="v-num">1</span>“Don’t judge, so that you won’t be judged.
+        <span class="v-num">2</span>For with whatever judgment you judge, you will be judged; and with whatever measure you measure, it will be measured to you.
+        <span class="v-num">3</span>Why do you see the speck that is in your brother’s eye, but don’t consider the beam that is in your own eye?
+        <span class="v-num">4</span>Or how will you tell your brother, ‘Let me remove the speck from your eye,’ and behold, the beam is in your own eye?
+        <span class="v-num">5</span>You hypocrite! First remove the beam out of your own eye, and then you can see clearly to remove the speck out of your brother’s eye.
+      </p>
 
-<h2>Scripture (LSV)</h2>
+      <p>
+        <span class="v-num">6</span>“Don’t give that which is holy to the dogs, neither throw your pearls before the pigs, lest perhaps they trample them under their feet, and turn and tear you to pieces.
+      </p>
 
-<div class="scripture-text">
-  <p>
-    <span class="v-num">1</span> Judge not, that ye may not be judged,
-    <span class="v-num">2</span> for in what judgment ye judge, ye shall be judged, and in what measure ye measure, it shall be measured to you.
-    <span class="v-num">3</span> And why dost thou behold the mote that is in thy brother’s eye, and the beam that is in thine own eye dost not consider?
-    <span class="v-num">4</span> Or how wilt thou say to thy brother, Suffer I may cast out the mote from thine eye, and lo, the beam is in thine own eye?
-    <span class="v-num">5</span> Hypocrite, cast out first the beam out of thine own eye, and then thou shalt see clearly to cast out the mote out of thy brother’s eye.
-    <span class="v-num">6</span> Ye may not give that which is holy to the dogs, nor cast your pearls before the swine, that they may not trample them with their feet, and having turned may rend you.
-  </p>
-  <p>
-    <span class="v-num">7</span> Ask, and it shall be given to you; seek, and ye shall find; knock, and it shall be opened to you;
-    <span class="v-num">8</span> for every one who is asking doth receive, and he who is seeking doth find, and to him who is knocking it shall be opened.
-    <span class="v-num">9</span> Or what man is of you, of whom, if his son may ask a loaf—a stone will he give to him?
-    <span class="v-num">10</span> And if a fish he may ask—a serpent will he give to him?
-    <span class="v-num">11</span> If, therefore, ye being evil, have known good gifts to give to your children, how much more shall your Father who is in the heavens give good things to those asking him?
-    <span class="v-num">12</span> All things, therefore, whatever ye may will that men may do to you, so also do ye to them, for this is the law and the prophets.
-  </p>
-  <p>
-    <span class="v-num">13</span> Enter ye in through the strait gate, because wide is the gate, and broad the way that is leading to the destruction, and many are those entering through it;
-    <span class="v-num">14</span> how strait is the gate, and compressed the way that is leading to the life, and few are those finding it!
-  </p>
-  <p>
-    <span class="v-num">15</span> But take heed of the false prophets, who come unto you in sheep’s clothing, and inwardly are ravening wolves.
-    <span class="v-num">16</span> From their fruits ye shall know them; do men gather from thorns grapes? Or from thistles figs?
-    <span class="v-num">17</span> So every good tree doth yield good fruits, but the bad tree doth yield evil fruits.
-    <span class="v-num">18</span> A good tree is not able to yield evil fruits, nor a bad tree to yield good fruits.
-    <span class="v-num">19</span> Every tree not yielding good fruit is cut down and cast to fire.
-    <span class="v-num">20</span> Therefore from their fruits ye shall know them.
-  </p>
-  <p>
-    <span class="v-num">21</span> Not every one who is saying to me Lord, Lord, shall enter into the kingdom of the heavens, but he who is doing the will of my Father who is in the heavens.
-    <span class="v-num">22</span> Many will say to me in that day, Lord, Lord, have we not in thy name prophesied? And in thy name cast out demons? And in thy name done many mighty things?
-    <span class="v-num">23</span> And then I will acknowledge to them, that—I never knew you, depart from me ye who are working lawlessness.
-  </p>
-  <p>
-    <span class="v-num">24</span> Therefore, every one who heareth these words of mine, and doeth them, I will liken him to a wise man, who built his house upon the rock;
-    <span class="v-num">25</span> and the rain came down, and the streams came, and the winds blew, and they beat against that house, and it fell not, for it had been founded on the rock.
-    <span class="v-num">26</span> And every one who is hearing these words of mine, and is not doing them, shall be likened to a foolish man, who built his house upon the sand;
-    <span class="v-num">27</span> and the rain came down, and the streams came, and the winds blew, and they beat against that house, and it fell, and the fall of it was great.”
-  </p>
-  <p>
-    <span class="v-num">28</span> And it came to pass, when Jesus ended these words, the multitudes were astonished at his teaching,
-    <span class="v-num">29</span> for he was teaching them as having authority, and not as the scribes.
-  </p>
-</div>
+      <p>
+        <span class="v-num">7</span>“Ask, and it will be given you. Seek, and you will find. Knock, and it will be opened for you.
+        <span class="v-num">8</span>For everyone who asks receives. He who seeks finds. To him who knocks it will be opened.
+        <span class="v-num">9</span>Or who is there among you who, if his son asks him for bread, will give him a stone?
+        <span class="v-num">10</span>Or if he asks for a fish, who will give him a serpent?
+        <span class="v-num">11</span>If you then, being evil, know how to give good gifts to your children, how much more will <strong>your Father who is in heaven give good things to those who ask him</strong>!
+        <span class="v-num">12</span>Therefore, whatever you desire for men to do to you, you shall also do to them; for this is the law and the prophets.
+      </p>
 
-<h3>Annotations</h3>
-<div class="annotation-block">
-  <div class="annotation-item"><strong>7:13 — Wide is the gate:</strong> The popular path of Jewish nationalism and Pharisaic tradition. "Many" followed this path straight into the "destruction" (Apoleia) of AD 70.</div>
-  <div class="annotation-item"><strong>7:15 — False prophets:</strong> Specifically the Zealots and leaders who promised God would save Jerusalem from Rome if they fought. They were "wolves" devouring the flock with false hope.</div>
-  <div class="annotation-item"><strong>7:22 — In that day:</strong> The Day of Judgment upon Jerusalem. These miracle-workers claimed Yahweh's name but were "workers of lawlessness" (violators of the true Covenant).</div>
-  <div class="annotation-item"><strong>7:27 — It fell:</strong> The collapse of the "House" of Old Covenant Israel. The foolish man builds on the sand of the Temple system; the wise man builds on the Rock of Christ's words.</div>
-</div>
+      <p>
+        <span class="v-num">13</span><strong>“Enter in by the narrow gate;</strong> for the gate is wide and the way is broad that leads to destruction, and there are many who enter in by it.
+        <span class="v-num">14</span>How‡ TR reads “Because” instead of “How” narrow is the gate and the way is restricted that leads to life! There are few who find it.
+      </p>
 
-<hr />
+      <p>
+        <span class="v-num">15</span><strong>“Beware of false prophets</strong>, who come to you in sheep’s clothing, but inwardly are ravening wolves.
+        <span class="v-num">16</span>By their fruits you will know them. Do you gather grapes from thorns or figs from thistles?
+        <span class="v-num">17</span>Even so, every good tree produces good fruit, but the corrupt tree produces evil fruit.
+        <span class="v-num">18</span>A good tree can’t produce evil fruit, neither can a corrupt tree produce good fruit.
+        <span class="v-num">19</span>Every tree that doesn’t grow good fruit is cut down and thrown into the fire.
+        <span class="v-num">20</span>Therefore by their fruits you will know them.
+      </p>
 
-<h2>Fulfillment Commentary</h2>
+      <p>
+        <span class="v-num">21</span><strong>“Not everyone who says to me, ‘Lord, Lord,’ will enter into the Kingdom of Heaven</strong>, but he who does the will of my Father who is in heaven.
+        <span class="v-num">22</span>Many will tell me in that day, ‘Lord, Lord, didn’t we prophesy in your name, in your name cast out demons, and in your name do many mighty works?’
+        <span class="v-num">23</span>Then I will tell them, ‘I never knew you. <strong>Depart from me, you who work iniquity.</strong>’
+      </p>
 
-<h3>1) The Broad Way to Destruction</h3>
-<p>
-Verse 13 is often used as a generic evangelistic warning ("most people go to hell"), but its primary context is covenantal. The "Broad Way" was the road the majority of first-century Israel was walking—the road of reliance on the Temple, ethnic pride, and revolutionary violence. This path led literally and spiritually to "destruction" (the same word used for the destruction of the Temple). The "Narrow Way" was the difficult, unpopular path of following the Nazarene, which alone offered survival when the wrath fell.
-</p>
+      <p>
+        <span class="v-num">24</span><strong>“Everyone therefore who hears these words of mine and does them, I will liken him to a wise man who built his house on the rock.</strong>
+        <span class="v-num">25</span>The rain came down, the floods came, and the winds blew and beat on that house; and it didn’t fall, for it was founded on the rock.
+        <span class="v-num">26</span>Everyone who hears these words of mine and doesn’t do them will be like a foolish man who built his house on the sand.
+        <span class="v-num">27</span>The rain came down, the floods came, and the winds blew and beat on that house; and it fell—and its fall was great.”
+      </p>
 
-<h3>2) Wolves in the Fold</h3>
-<p>
-Jesus warns of "false prophets" who look like sheep (Covenant members) but are wolves. This is not just about modern heretics; it refers to the leaders within Israel who were agitating for war with Rome. Josephus records that "false prophets" infested Jerusalem during the siege, telling the people to go up to the Temple roof to see "signs of deliverance," only for them to perish in the flames. They produced the "bad fruit" of rebellion and death.
-</p>
+      <p>
+        <span class="v-num">28</span>When Jesus had finished saying these things, the multitudes were astonished at his teaching,
+        <span class="v-num">29</span>for he taught them with authority, and not like the scribes.
+      </p>
 
-<h3>3) "I Never Knew You"</h3>
-<p>
-This terrifying dismissal (v. 23) is directed at those who assumed their Jewish identity and charismatic works guaranteed them a spot in the Kingdom. They appeal to their resume: "We prophesied! We did miracles!" But Jesus calls them "workers of lawlessness" (Torah-breakers). In the New Covenant, intimacy ("knowing" Him) replaces religious performance. The Temple establishment did not know Him, and in the judgment of AD 70, He did not know them.
-</p>
+      <div class="footnotes">
+        <p class="note" style="margin:0;">
+          † <strong>7:14</strong> TR reads “Because” instead of “How”
+        </p>
+      </div>
+    </div>
 
-<h3>4) The Crash of the Old House</h3>
-<p>
-The Sermon culminates in the parable of the Two Houses. This is a prophecy of the two temples. The "House on the Sand" is the Old Covenant Temple, built on earthly shadows and human tradition. When the "flood" of Roman judgment came (Dan 9:26 calls the invasion a "flood"), that house fell, and "great was its fall." The "House on the Rock" is the Church, built on the sayings of Jesus. It withstood the storm of AD 70 and stands today as the eternal dwelling place of God.
-</p>
+    <hr />
 
-<hr />
+    <h2>Fulfillment Notes</h2>
+    <div class="card">
+      <p class="note">1) The “narrow gate” frames first-century covenant allegiance: life is found in the Messiah as the old path heads toward historical destruction.</p>
+      <p class="note">2) “False prophets” are covenant deceivers inside Israel who claim God’s voice while steering people away from Christ during the AD 30–70 transition.</p>
+      <p class="note">3) “In that day” points to the decisive covenantal reckoning on Jerusalem, where empty claims were exposed and the old house fell.</p>
+      <p class="note">4) The “house on the rock” is covenant stability in Christ that remains when the old order is shaken and removed.</p>
+      <p class="note">5) The Golden Rule is the Law-and-Prophets summary, fulfilled as love becomes the lived ethic of the New Covenant people.</p>
+    </div>
 
-<h2>Prophecy Hub Links</h2>
-<ul>
-  <li><strong>The Two Ways</strong> — <a href="/Bible/Prophecy/remnant.html">The Remnant vs. The Many</a></li>
-  <li><strong>The Fall of the House</strong> — <a href="/Bible/Prophecy/temple.html">Destruction of the Temple</a></li>
-  <li><strong>False Prophets</strong> — <a href="/Bible/Prophecy/false-prophets.html">First Century Deceivers</a></li>
-</ul>
+    <hr />
 
-<hr />
+    <h2>Annotations</h2>
+    <div class="annotation-block">
+      <div class="annotation-item"><strong>your Father who is in heaven give good things to those who ask him</strong>: Father-provision language for disciples living through transition pressure without reverting to fear or manipulation.</div>
+      <div class="annotation-item"><strong>Enter in by the narrow gate;</strong>: Covenant decision point—Messiah’s way versus the broad path of the old system heading to ruin.</div>
+      <div class="annotation-item"><strong>Beware of false prophets</strong>: Internal covenant predators; religious voices that look “sheep-like” but devour the flock by fruitless teaching and self-interest.</div>
+      <div class="annotation-item"><strong>Not everyone who says to me, ‘Lord, Lord,’ will enter into the Kingdom of Heaven</strong>: Verbal confession without covenant alignment; Jesus exposes temple-age religion that uses divine language while resisting God’s will.</div>
+      <div class="annotation-item"><strong>Depart from me, you who work iniquity.</strong>: Covenant exclusion language aimed at lawless workers inside Israel’s religious world, not random outsiders.</div>
+      <div class="annotation-item"><strong>Everyone therefore who hears these words of mine and does them, I will liken him to a wise man who built his house on the rock.</strong>: House = covenant life; rock = Christ’s authority; storm = the coming shake-down of the old order.</div>
+      <div class="annotation-item"><strong>in that day</strong>: A prophetic “day” marker for a decisive historical reckoning within that generation’s covenant crisis.</div>
+    </div>
 
-<h2>Cross-References</h2>
-<ul>
-  <li><strong>The Flood of Judgment</strong> — <a href="https://ebible.org/englsv/DAN09.htm" target="_blank">Daniel 9:26 (LSV)</a></li>
-  <li><strong>The Wall of Falsehood</strong> — <a href="https://ebible.org/englsv/EZK13.htm" target="_blank">Ezekiel 13:10-14 (LSV)</a></li>
-  <li><strong>The Shaking of Earth</strong> — <a href="https://ebible.org/englsv/HEB12.htm" target="_blank">Hebrews 12:26-27 (LSV)</a></li>
-</ul>
+    <hr />
 
-<hr />
+    <h2>Fulfillment Commentary</h2>
 
-<h2>New Creation Reality</h2>
-<p>
-The storm has already passed. The "House on the Sand" (the Old Covenant system) has been washed away forever. We do not need to fear that our foundation might crack; we are built on the Rock that survived the greatest tribulation in history. We live in the house that is still standing, safe and secure in the New Creation.
-</p>
+    <h3>1) Judgment Without Hypocrisy: Covenant Self-Assessment</h3>
+    <p>
+      “Don’t judge” is not Jesus banning discernment; it is Jesus forbidding hypocritical, status-driven condemnation—the exact posture that the temple-age system trained into people. In the covenant world of first-century Judea, “judgment” was not only personal; it was institutional. The leadership class positioned itself as the spiritual court of Israel, measuring people by externals while remaining blind to its own corruption. Jesus turns the mirror back: remove the beam first. That is covenant litigation language—Israel must face its own condition before it can claim to be the light to the nations. This is the same collision Matthew has been building: the old order loves to pronounce, label, exclude, and control; the Kingdom exposes motives, insists on integrity, and calls for clean sight. The point is not “never address anything,” but “stop playing God while refusing to be healed.”
+    </p>
 
-<hr />
+    <h3>2) Holy Things, Pearls, and the End of Religious Naivety</h3>
+    <p>
+      “Don’t give that which is holy to the dogs… don’t throw your pearls before the pigs” is Jesus training disciples for realism during a volatile transition. The “holy” is not a temple object; it is Kingdom truth—Christ’s authority, covenant fulfillment, New Creation access. During AD 30–70 the preaching of the Kingdom collided with entrenched power and hardened resistance. Some audiences would trample truth and turn violent. Jesus is not teaching contempt for people; he is teaching wisdom: don’t treat sacred revelation like it’s a negotiable toy for mockers. In covenant terms, this guards the remnant from wasting itself in endless, fruitless battles with those committed to preserving a dying system.
+    </p>
 
-<h2>Reflection</h2>
-<p>
-Am I trying to build a little "side-room" on the shifting sands of my own performance, or am I resting entirely in the House that Jesus has already built and secured?
-</p>
+    <h3>3) Ask, Seek, Knock: Father-Access Replacing Temple-Access</h3>
+    <p>
+      The “ask/seek/knock” section is often flattened into generic encouragement. In Matthew’s flow it carries covenant weight: direct Father-access is being normalized. The old world trained people to approach God through managed systems—priests, courts, purity ladders, social visibility. Jesus roots prayer in the Father’s goodness: if earthly fathers give bread, your Father gives “good things.” This is not a blank cheque for comfort; it is a relational foundation for people who will face disruption. A Kingdom people cannot be stabilized by temple props or national confidence; they must be stabilized by Father care. That is why the Golden Rule lands here: Kingdom ethics are not maintained by threat; they are expressed by transformed desire—“whatever you desire for men to do to you…”—which is exactly what the Law and Prophets aimed at but could not complete in the flesh.
+    </p>
 
-<hr />
+    <h3>4) Narrow Gate vs Broad Way: The First-Century Fork in the Road</h3>
+    <p>
+      The “narrow gate” is not a timeless riddle about how hard it is to be moral; it is a covenant decision line for Israel in the days when Messiah has arrived and judgment is approaching. “Destruction” is not “planet ends”; it is the covenant catastrophe that would fall on the old path—rejecting Christ while clinging to the temple identity as salvation. The broad way is wide precisely because it is culturally reinforced: it is the default religious-national current. The narrow way is restricted because it requires a break with the public honor system, a break with self-justifying religion, and a willingness to be aligned with the rejected Messiah. In Full Preterist terms, this is the route into the New Covenant life while the old covenant house is nearing collapse. Jesus is not threatening “most people go to hell forever”; he is warning that Israel’s mainstream trajectory is headed toward covenant ruin, and the way into life is Christ.
+    </p>
 
-<nav>
-  <a href="/Bible/index.html">FPBible Index</a> |
-  <a href="index.html">Book Index</a> |
-  <a href="preface.html">Preface</a> |
-  <a href="appendix.html">Appendix</a> |
-  <a href="matt6.html">Prev</a> |
-  <a href="matt8.html">Next</a> |
-  <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> |
-  <a href="#top">Top</a>
-</nav>
+    <h3>5) False Prophets: Wolves Inside the Covenant Community</h3>
+    <p>
+      “Beware of false prophets” is not mainly about random cults centuries later; it’s an urgent first-century warning. Matthew repeatedly presents Israel’s leadership as compromised—external piety with internal predation. Jesus says you will know them by fruit. That is covenant criteria: do they produce the justice, mercy, faithfulness, and truth the covenant requires, or do they produce exploitation, hypocrisy, and violence? In the run-up to AD 70, many voices claimed authority—some religious, some revolutionary, some mystical. A people under pressure will always be tempted by spectacular promises and tribal certainty. Jesus sets the test: fruit, not costume. This protects the remnant from being swept into the broad way’s frenzy—whether the frenzy of legalism or the frenzy of revolt.
+    </p>
 
-<p class="note" style="text-align:center;">
-  Scripture source: <a href="https://www.lsvbible.com/" target="_blank">Literal Standard Version</a>
-</p>
+    <h3>6) “Lord, Lord” and “In That Day”: Exposure of Empty Covenant Claims</h3>
+    <p>
+      The most confronting section is not about outsiders; it is about insiders who speak the language of faith, claim power, and point to “mighty works,” yet are rejected. Jesus targets covenant presumption: “I never knew you.” In Matthew, “knowing” is relational allegiance, not religious activity. “You who work iniquity” is not a casual insult; it’s covenant lawlessness—operating outside the Messiah’s authority while claiming to represent God. The phrase “in that day” functions like prophetic “Day of the LORD” language: a decisive historical reckoning. In a fulfilled lens, this coheres with the covenant transition: the old system’s credentials are exposed, the pretenders are unmasked, and only what is truly aligned with Christ remains. This is not Jesus threatening believers with instability; it’s Jesus stripping false confidence from a system that used God-talk to maintain power.
+    </p>
 
-<a href="https://ko-fi.com/B0B61QC1BU" target="_blank">
-  <img height="36" src="https://storage.ko-fi.com/cdn/kofi5.png?v=6" alt="Buy Me a Coffee" />
-</a>
+    <h3>7) The Rock and the Storm: The Unshakable New Creation House</h3>
+    <p>
+      The closing parable locks it in: two houses, one storm, one collapse. “House” is covenant life—what you are building your identity on. The “rock” is not vague “good ideas”; it is Jesus’ words and authority. The storm imagery fits the covenant crisis that culminates in AD 70: rains, floods, winds—pressure, upheaval, judgment, shaking. The old covenant house built on sand (external religion, status righteousness, temple security, empty confession) cannot stand when the age changes. The New Covenant house—hearing and doing Jesus—remains because it is founded on the King himself. And that’s the punchline for us now: we do not live bracing for a future collapse of the world; we live in the settled outcome of a completed covenant transition. The Rock has already proven unshakable. The house that remains is the New Creation people, established in Father access, truth, forgiveness, and Kingdom life.
+    </p>
 
+    <hr />
+
+    <h2>Prophecy Hub Links</h2>
+    <ul>
+      <li><a href="/Bible/Prophecy/index.html#narrow-gate">The Narrow Gate</a></li>
+      <li><a href="/Bible/Prophecy/index.html#false-prophets">False Prophets and Wolves</a></li>
+      <li><a href="/Bible/Prophecy/index.html#house-on-rock">House on the Rock</a></li>
+    </ul>
+
+    <hr />
+
+    <h2>Cross-References</h2>
+    <ul>
+      <li><a href="https://ebible.org/eng-web/ISA28.htm" target="_blank" rel="noopener">Isaiah 28 (WEB)</a></li>
+      <li><a href="https://ebible.org/eng-web/EZK13.htm" target="_blank" rel="noopener">Ezekiel 13 (WEB)</a></li>
+      <li><a href="https://ebible.org/eng-web/JER07.htm" target="_blank" rel="noopener">Jeremiah 7 (WEB)</a></li>
+    </ul>
+
+    <hr />
+
+    <h2>New Creation Reality</h2>
+    <p>
+      You’re not auditioning for God through performance or “Lord, Lord” language; you live from Father access, clean sight, wise discernment, and an unshakable foundation in Christ that already outlasted the old world’s collapse.
+    </p>
+
+    <hr />
+
+    <h2>Reflection</h2>
+    <p>
+      Where am I relying on religious language or image, instead of actually building my life on the words of Jesus as my unshakable foundation?
+    </p>
+
+    <hr />
+
+    <footer>
+      <nav class="bottom">
+        <a class="btn" href="/Bible/index.html">FPBible Index</a>
+        <a class="btn" href="index.html">Book Index</a>
+        <a class="btn" href="matt6.html">Prev</a>
+        <a class="btn" href="matt8.html">Next</a>
+        <a class="btn" href="/Bible/Prophecy/index.html">Prophecy Hub</a>
+        <a class="btn" href="#top">Top</a>
+      </nav>
+
+      <div class="kofi">
+        <a href="https://ko-fi.com/B0B61QC1BU" target="_blank" rel="noopener">
+          <img src="https://storage.ko-fi.com/cdn/kofi5.png?v=6" alt="Support FPBible on Ko-fi" />
+        </a>
+      </div>
+
+      <p class="note muted" style="margin-top:12px;">
+        Scripture quotations are from the <strong>World English Bible (WEB)</strong>, public domain. Source: eBible.org (WEB/eng-web). You may copy and share the WEB freely.
+      </p>
+    </footer>
+
+  </div>
+
+  <!--
+    TEXT INTEGRITY NOTE:
+    - Scripture above is copied from eBible.org WEB Matthew 7 (eng-web/MAT07.htm), including the inline TR footnote marker as displayed.
+    - Selective bolding is applied ONLY to the exact phrases listed in the Annotations section.
+  -->
 </body>
 </html>
