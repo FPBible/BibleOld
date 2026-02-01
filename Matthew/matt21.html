@@ -2,219 +2,343 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Matthew 21 — The Entry of the King and the Inspection of the Temple</title>
+  <title>Matthew 21 — The King Arrives and the Temple Is Put on Notice</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
-    body{ font-family: system-ui, sans-serif; line-height: 1.6; margin: 1.5em; max-width: 900px; }
-    h1,h2,h3{ margin-top: 1.4em; margin-bottom: 0.4em; }
-    nav{ margin: 1em 0; font-size: 0.95em; }
-    nav a{ margin-right: 0.6em; text-decoration: underline; }
-    p{ margin: 0.6em 0; }
-    hr{ margin: 2em 0; border-top: 1px solid rgba(0,0,0,0.12); }
+    :root{
+      --maxw: 980px;
+      --pad: 16px;
+      --line: rgba(0,0,0,0.12);
+      --line2: rgba(0,0,0,0.18);
+      --muted: rgba(0,0,0,0.72);
+      --soft: rgba(0,0,0,0.06);
+      --soft2: rgba(0,0,0,0.04);
+      --radius: 14px;
+    }
+    body{
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.65;
+      margin: 0;
+      color: #111;
+      background: #fff;
+    }
+    .wrap{
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 18px var(--pad) 48px;
+    }
+    h1{ font-size: 2.05rem; margin: 0.2em 0 0.1em; letter-spacing: -0.02em; }
+    h2{ font-size: 1.35rem; margin: 1.2em 0 0.5em; padding-bottom: 0.2em; border-bottom: 1px solid var(--line); }
+    h3{ font-size: 1.08rem; margin: 1em 0 0.4em; }
+    p{ margin: 0.65em 0; }
+    hr{ border: 0; border-top: 1px solid var(--line); margin: 22px 0; }
+    a{ color: #111; text-decoration: underline; }
+    nav{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+      align-items: center;
+      font-size: 0.95em;
+      padding: 10px 12px;
+      background: var(--soft2);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+    }
+    .pill{
+      display: inline-block;
+      padding: 6px 10px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #fff;
+      text-decoration: none;
+    }
+    .pill:hover{ background: var(--soft); }
+    .sub{
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 0.98em;
+    }
+    .card{
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      padding: 14px 14px;
+    }
+    .scripture-text{
+      font-size: 1.05em;
+    }
+    .v-num{
+      font-weight: 700;
+      font-size: 0.75em;
+      vertical-align: super;
+      opacity: 0.65;
+      margin-right: 4px;
+      white-space: nowrap;
+    }
+    .note{
+      font-size: 0.96em;
+      color: var(--muted);
+    }
+    .annotation-block{
+      background: var(--soft2);
+      padding: 12px 14px;
+      border-left: 3px solid var(--line2);
+      border-radius: 10px;
+    }
     ul{ margin: 0.6em 0 0.8em 1.2em; }
     li{ margin: 0.35em 0; }
-    .note{ font-size: 0.95em; opacity: 0.9; }
+    .kofi{
+      margin-top: 14px;
+    }
+    .footer-nav{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+      align-items: center;
+      justify-content: space-between;
+    }
   </style>
 </head>
 <body>
+  <div class="wrap">
+    <a id="top"></a>
 
-<a id="top"></a>
+    <nav aria-label="Top navigation">
+      <a class="pill" href="/Bible/index.html">FPBible Index</a>
+      <a class="pill" href="index.html">Book Index</a>
+      <a class="pill" href="preface.html">Preface</a>
+      <a class="pill" href="appendix.html">Appendix</a>
+      <a class="pill" href="matt20.html">Prev</a>
+      <a class="pill" href="matt22.html">Next</a>
+      <a class="pill" href="/Bible/Prophecy/index.html">Prophecy Hub</a>
+      <a class="pill" href="#top">Top</a>
+    </nav>
 
-<nav>
-  <a href="/Bible/index.html">FPBible Index</a> |
-  <a href="index.html">Book Index</a> |
-  <a href="preface.html">Preface</a> |
-  <a href="appendix.html">Appendix</a> |
-  <a href="matt20.html">Prev</a> |
-  <a href="matt22.html">Next</a> |
-  <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> |
-  <a href="#top">Top</a>
-</nav>
+    <h1>Matthew 21 — The King Arrives and the Temple Is Put on Notice</h1>
+    <div class="sub note">
+      Scripture base text: World English Bible (Public Domain) —
+      <a href="https://ebible.org/web/MAT21.htm" target="_blank" rel="noopener noreferrer">Matthew 21</a>
+    </div>
 
-<h1>Matthew 21</h1>
-<h2>The Entry of the King and the Inspection of the Temple</h2>
+    <hr />
 
-<p class="note">
-Original text: 
-<a href="https://www.biblegateway.com/passage/?search=Matthew+21&version=LSV" target="_blank">Matthew 21 — LSV</a>
-</p>
+    <h2>Immediate Context</h2>
+    <p>
+      Matthew 21 is the public turning point: Jesus enters Jerusalem as King, confronts the temple economy, and speaks covenant-judgment parables that place Israel’s leadership under immediate indictment as the AD 30–70 transition reaches its final phase.
+    </p>
 
-<hr />
+    <hr />
 
-<h2>Immediate Context</h2>
-<p>
-Jesus enters Jerusalem for the final week of His earthly mission. 
-Every action in this chapter—the donkey, the temple cleansing, the fig tree—is a prophetic sign aimed at the religious leadership. 
-</p>
-<p>
-This chapter establishes that <strong>the Old Covenant Temple is no longer the house of God, but has become a barrier that must be cleared to make way for the New Creation.</strong>
-</p>
+    <h2>Scripture (WEB)</h2>
+    <div class="card">
+      <div class="scripture-text">
 
-<hr />
+        <p>
+          <span class="v-num">1</span>When they came near to Jerusalem, and came to Bethsphage, to the Mount of Olives, then Jesus sent two disciples,
+          <span class="v-num">2</span>saying to them, “Go into the village that is opposite you, and immediately you will find a donkey tied, and a colt with her. Untie them, and bring them to me.
+          <span class="v-num">3</span>If anyone says anything to you, you shall say, ‘The Lord needs them,’ and immediately he will send them.”
+          <span class="v-num">4</span>All this was done, that it might be fulfilled which was spoken through the prophet, saying,
+          <span class="v-num">5</span>“Tell the daughter of Zion, behold, your King comes to you, humble, and riding on a donkey, on a colt, the foal of a donkey.”
+          <span class="v-num">6</span>The disciples went, and did just as Jesus commanded them,
+          <span class="v-num">7</span>and brought the donkey and the colt, and laid their clothes on them; and he sat on them.
+          <span class="v-num">8</span>A very great multitude spread their clothes on the road. Others cut branches from the trees, and spread them on the road.
+          <span class="v-num">9</span>The multitudes who went before him, and who followed kept shouting, “Hosanna to the son of David! Blessed is he who comes in the name of the Lord! Hosanna in the highest!”
+          <span class="v-num">10</span>When he had come into Jerusalem, all the city was stirred up, saying, “Who is this?”
+          <span class="v-num">11</span>The multitudes said, “This is the prophet, Jesus, from Nazareth of Galilee.”
+        </p>
 
-<h2>Fulfilled Paraphrase</h2>
+        <p>
+          <span class="v-num">12</span>Jesus entered into the temple of God, and drove out all of those who sold and bought in the temple, and overthrew the money changers’ tables and the seats of those who sold the doves.
+          <span class="v-num">13</span>He said to them, “It is written, ‘My house shall be called a house of prayer,’ but you have made it a den of robbers!”
+          <span class="v-num">14</span>The blind and the lame came to him in the temple, and he healed them.
+          <span class="v-num">15</span>But when the chief priests and the scribes saw the wonderful things that he did, and the children who were crying in the temple and saying, “Hosanna to the son of David!” they were indignant,
+          <span class="v-num">16</span>and said to him, “Do you hear what these are saying?” Jesus said to them, “Yes. Did you never read, ‘Out of the mouth of babies and infants you have perfected praise?’”
+          <span class="v-num">17</span>He left them, and went out of the city to Bethany, and lodged there.
+        </p>
 
-<h3>The Triumphal Entry (21:1–11)</h3>
-<p>
-Approaching Jerusalem, Jesus sent two disciples to find a donkey and its colt, fulfilling the prophecy: "Behold, your King is coming to you, humble, and mounted on a donkey." 
-The crowds spread their garments and branches on the road, shouting, "Hosanna to the Son of David! Blessed is He who comes in the Name of the Lord!" 
-The whole city was stirred, asking, "Who is this?" The crowds replied, "This is Jesus, the prophet from Nazareth of Galilee."
-</p>
+        <p>
+          <span class="v-num">18</span>Now in the morning, as he returned to the city, he was hungry.
+          <span class="v-num">19</span>Seeing a fig tree by the road, he came to it, and found nothing on it but leaves. He said to it, “Let there be no fruit from you forever!” Immediately the fig tree withered away.
+          <span class="v-num">20</span>When the disciples saw it, they marveled, saying, “How did the fig tree immediately wither away?”
+          <span class="v-num">21</span>Jesus answered them, “Most certainly I tell you, if you have faith, and don’t doubt, you will not only do what was done to the fig tree, but even if you told this mountain, ‘Be taken up and cast into the sea,’ it would be done.
+          <span class="v-num">22</span>All things, whatever you ask in prayer, believing, you will receive.”
+        </p>
 
-<p class="note">
-<strong>Fulfillment note:</strong> Jesus enters as the Prince of Peace, not a war-lord. He is arriving to finalize the Covenant, not to uphold the physical walls of the city.
-</p>
+        <p>
+          <span class="v-num">23</span>When he had come into the temple, the chief priests and the elders of the people came to him as he was teaching, and said, “By what authority do you do these things? Who gave you this authority?”
+          <span class="v-num">24</span>Jesus answered them, “I also will ask you one question, which if you tell me, I likewise will tell you by what authority I do these things.
+          <span class="v-num">25</span>The baptism of John, where was it from? From heaven or from men?”
+          <span class="v-num">26</span>They reasoned with themselves, saying, “If we say, ‘From heaven,’ he will ask us, ‘Why then did you not believe him?’
+          <span class="v-num">27</span>But if we say, ‘From men,’ we fear the multitude, for all hold John as a prophet.”
+          <span class="v-num">28</span>They answered Jesus, and said, “We don’t know.” He also said to them, “Neither will I tell you by what authority I do these things.
+        </p>
 
-<hr />
+        <p>
+          <span class="v-num">29</span>“But what do you think? A man had two sons, and he came to the first, and said, ‘Son, go work today in my vineyard.’
+          <span class="v-num">30</span>He answered, ‘I will not,’ but afterward he changed his mind and went.
+          <span class="v-num">31</span>He came to the second, and said the same thing. He answered, ‘I go, sir,’ but he didn’t go.
+          <span class="v-num">32</span>Which of the two did the will of his father?”
+          <span class="v-num">33</span>They said to him, “The first.”
+          <span class="v-num">34</span>Jesus said to them, “Most certainly I tell you that the tax collectors and the prostitutes are entering into God’s Kingdom before you.
+          <span class="v-num">35</span>For John came to you in the way of righteousness, and you didn’t believe him, but the tax collectors and the prostitutes believed him. When you saw it, you didn’t even repent afterward, that you might believe him.
+        </p>
 
-<h3>Cleansing the Temple (21:12–17)</h3>
-<p>
-Jesus entered the temple and drove out all who bought and sold, overturning the tables of the money changers. 
-"It is written, 'My house shall be called a house of prayer,' but you have made it a den of thieves!" 
-The blind and the lame came to Him <strong>in the temple</strong>, and He healed them. 
-When the chief priests saw these wonders and heard children shouting Hosanna, they were indignant. 
-Jesus replied, "Have you never read, 'Out of the mouth of babes and nursing infants You have prepared praise'?"
-</p>
+        <p>
+          <span class="v-num">36</span>“Hear another parable. There was a man who was a master of a household, who planted a vineyard, set a hedge about it, dug a wine press in it, built a tower, leased it out to farmers, and went into another country.
+          <span class="v-num">37</span>When the season for the fruit came near, he sent his servants to the farmers to receive his fruit.
+          <span class="v-num">38</span>The farmers took his servants, beat one, killed another, and stoned another.
+          <span class="v-num">39</span>Again, he sent other servants more than the first: and they treated them the same way.
+          <span class="v-num">40</span>But afterward he sent to them his son, saying, ‘They will respect my son.’
+          <span class="v-num">41</span>But the farmers, when they saw the son, said among themselves, ‘This is the heir. Come, let’s kill him and seize his inheritance.’
+          <span class="v-num">42</span>So they took him, and threw him out of the vineyard, and killed him.
+          <span class="v-num">43</span>When therefore the lord of the vineyard comes, what will he do to those farmers?”
+          <span class="v-num">44</span>They told him, “He will miserably destroy those miserable men, and will lease out the vineyard to other farmers, who will give him the fruit in its season.”
+          <span class="v-num">45</span>Jesus said to them, “Did you never read in the Scriptures, ‘The stone which the builders rejected, the same was made the head of the corner. This was from the Lord. It is marvelous in our eyes?’
+          <span class="v-num">46</span>“Therefore I tell you, God’s Kingdom will be taken away from you, and will be given to a nation producing its fruit.
+          <span class="v-num">47</span>He who falls on this stone will be broken to pieces, but on whoever it will fall, it will scatter him as dust.”
+          <span class="v-num">48</span>When the chief priests and the Pharisees heard his parables, they perceived that he spoke about them.
+          <span class="v-num">49</span>When they sought to seize him, they feared the multitudes, because they considered him to be a prophet.
+        </p>
 
-<p class="note">
-<strong>Fulfillment note:</strong> By healing the blind and lame inside the temple, Jesus was doing what the Law's shadow could not—providing actual restoration where the old system only provided commerce.
-</p>
+      </div>
+    </div>
 
-<hr />
+    <hr />
 
-<h3>The Cursing of the Fig Tree (21:18–22)</h3>
-<p>
-In the morning, being hungry, He saw a fig tree with only leaves but no fruit. 
-He said, "Let no fruit ever grow on you again!" Instantly, the tree withered. 
-The disciples were amazed. Jesus said, "If you have faith and do not doubt, you will not only do this, 
-but you could say to <strong>this mountain</strong>, 'Be lifted up and thrown into the sea,' and it would happen."
-</p>
+    <h2>Fulfillment Notes</h2>
+    <div class="card">
+      <p class="note">1) The triumphal entry publicly declares Jesus as Zion’s King while Jerusalem is about to reject Him.</p>
+      <p class="note">2) The temple cleansing is covenant litigation: the house is exposed as corrupt and placed under judgment.</p>
+      <p class="note">3) The fig tree sign-act announces Israel’s fruitlessness and the impending withering of the old order.</p>
+      <p class="note">4) The vineyard parable identifies the leaders as covenant tenants who will lose the Kingdom in the first-century handover.</p>
+      <p class="note">5) The rejected stone becomes the cornerstone as the New Covenant people replace the temple-centered system by AD 70.</p>
+    </div>
 
-<p class="note">
-<strong>Fulfillment note:</strong> The fig tree represents Israel’s religious system—full of the "leaves" of ritual but lacking the fruit of the Spirit. "This mountain" is the Temple Mount, which was about to be removed from its position of authority.
-</p>
+    <hr />
 
-<hr />
+    <h2>Annotations</h2>
+    <div class="annotation-block">
+      <div class="annotation-item"><strong>daughter of Zion</strong> — covenant-person language for Jerusalem as the representative city of the old order.</div>
+      <div class="annotation-item"><strong>Hosanna</strong> — “save now,” a royal acclamation that intensifies the covenant crisis.</div>
+      <div class="annotation-item"><strong>den of robbers</strong> — prophetic charge: leadership turned worship into predatory covenant exploitation.</div>
+      <div class="annotation-item"><strong>fig tree</strong> — common Israel symbol; leaves without fruit = covenant show with no righteousness outcome.</div>
+      <div class="annotation-item"><strong>this mountain</strong> — temple-mount imagery: covenant structures can be removed by Spirit-authority faith.</div>
+      <div class="annotation-item"><strong>vineyard</strong> — Israel under covenant stewardship; a classic prophetic lawsuit frame.</div>
+      <div class="annotation-item"><strong>builders rejected</strong> — leadership rejection of Messiah; cornerstone shift to the new covenant reality.</div>
+      <div class="annotation-item"><strong>taken away… given to a nation</strong> — covenant transfer from the old leadership order to a fruit-bearing New Covenant people.</div>
+    </div>
 
-<h3>The Authority of the Son (21:23–32)</h3>
-<p>
-The priests questioned His authority. Jesus asked them in return, "Was John’s baptism from heaven or from men?" 
-They were trapped; if they said "heaven," He would ask why they didn't believe; if they said "men," they feared the people. 
-They said, "We don't know." Jesus replied, "Then neither will I tell you My authority." 
-He told a parable of two sons: one who refused but later obeyed, and one who promised but didn't. 
-"Tax collectors and prostitutes are entering the Kingdom before you," He told the leaders.
-</p>
+    <hr />
 
-<p class="note">
-<strong>Fulfillment note:</strong> Authority in the New Covenant is recognized by the heart, not by a title in the old hierarchy.
-</p>
+    <h2>Fulfillment Commentary</h2>
 
-<hr />
+    <h3>1) The King enters: Zion is confronted in public</h3>
+    <p>
+      Matthew 21 is not “nice Palm Sunday vibes”—it is a royal claim that forces a verdict. Jesus deliberately fulfills the Zion-king prophecy by entering humbly on a donkey. That humility is not weakness; it is the form of His kingship. In Israel’s story, Jerusalem was the covenant center where God’s name dwelt. If the true King arrives there, the city must either receive Him and transition into New Creation life, or reject Him and come under the covenant lawsuit.
+    </p>
+    <p>
+      The city being “stirred up” is covenant tremor language: the arrival of the Messiah shakes the old order. People ask, “Who is this?”—and that question becomes the city’s judgment. Jerusalem’s leaders will treat Him as a threat, not a fulfillment, and that refusal is the seed of AD 70.
+    </p>
 
-<h3>The Parable of the Wicked Tenants (21:33–46)</h3>
-<p>
-A landowner planted a vineyard and leased it to tenants. When he sent servants to collect fruit, the tenants beat and killed them. 
-Finally, he sent his son, saying, "They will respect my son." But they killed the son to take his inheritance. 
-Jesus asked, "What will the owner do?" The leaders replied, "He will destroy those wretches and give the vineyard to others." 
-Jesus said, "The stone the builders rejected has become the chief cornerstone. 
-<strong>The Kingdom of God will be taken from you and given to a nation producing its fruit.</strong>"
-</p>
+    <h3>2) Temple cleansing: not reform, but exposure and replacement</h3>
+    <p>
+      Jesus drives out sellers and overturns tables because the temple had become a machine for religious extraction. “House of prayer” versus “den of robbers” is not merely a complaint about commerce; it is a prophetic indictment. The prophets used “robbers” language for covenant-breaking leadership who hide behind sacred space while devouring the vulnerable. Jesus’ act is a sign: the temple is no longer functioning as intended, and its days are numbered.
+    </p>
+    <p>
+      The detail that the blind and lame come to Him in the temple is surgical. Under the old system, access was controlled, stratified, and often exclusionary. Jesus heals in the temple as a living preview: true access is in Him, not in the building. Children praising Him in the temple drives the knife deeper—pure dependence recognizes the King while the officials become indignant. That’s the transition in miniature: the remnant receives, the leadership resists.
+    </p>
 
-<p class="note">
-<strong>Fulfillment note:</strong> This is a direct prophecy of the AD 70 transition. The "nation" receiving the Kingdom is the New Creation people (Jew and Gentile) who live by the Finished Work.
-</p>
+    <h3>3) Fig tree: covenant sign-act of Israel’s fruitlessness</h3>
+    <p>
+      The fig tree with leaves but no fruit is a covenant picture: outward show without the fruit of justice, mercy, and faithful response to God’s visitation. Jesus’ word withers it immediately as a prophetic sign-act. This is not about Jesus being impatient with botany; it is about Him announcing that the covenant tree, as administered by the leadership, is barren and about to be judged.
+    </p>
+    <p>
+      This fits the AD 30–70 overlap: there is a final season of visitation, preaching, warning, and invitation—but the leadership’s refusal hardens. The withering points forward to the historical withering of the temple-centered world in AD 70.
+    </p>
 
-<hr />
+    <h3>4) “This mountain” and the removal of covenant structures</h3>
+    <p>
+      Jesus’ “this mountain” language should not be flattened into generic motivation. In the Jerusalem context, mountain imagery naturally invokes the temple mount and the covenant center. Faith here is not “positive thinking”; it is Spirit-anchored allegiance to the King that participates in the removal of an obsolete covenant structure. The old world is not dismantled by human revolt; it is dismantled by God’s own covenant action—announced by Christ, accomplished in His death/resurrection, and historically resolved by AD 70.
+    </p>
 
-<h2>Fulfillment Commentary</h2>
+    <h3>5) Authority showdown: leadership cannot answer because they fear losing control</h3>
+    <p>
+      When leaders challenge Jesus’ authority, He exposes their fear-based calculation. They won’t say John is from heaven because that condemns them; they won’t say John is from men because they fear the crowd. This is what covenant corruption looks like: truth is weighed against political safety. In the transition, that posture becomes fatal because it prevents repentance and locks the leadership into self-preservation—right up to the catastrophe.
+    </p>
 
-<h3>1) The Prince of Peace vs. The Zealots</h3>
-<p>
-By riding a donkey, Jesus was intentionally de-escalating the carnal expectations of the Jewish people. 
-They wanted a military king to save the Temple; He came as a humble King to <strong>replace</strong> the Temple.
-</p>
+    <h3>6) Two sons: covenant lip-service versus actual response</h3>
+    <p>
+      The parable of the two sons exposes Israel’s leadership: they say “I go, sir” but refuse God’s call. The surprising twist is that tax collectors and prostitutes enter the Kingdom ahead of them—not because sin is celebrated, but because repentance is real. The Kingdom is not inherited by status, but by response. This is covenant reversal again: the “clean” category collapses, and faith-response becomes the true marker of belonging.
+    </p>
 
-<h3>2) The Den of Thieves</h3>
-<p>
-A "den of thieves" is not just a place where people steal; it is a hideout where criminals go to feel safe after their crimes. 
-The religious leaders were using the Temple rituals as a "hideout" from true righteousness. 
-Jesus’ cleansing was a legal eviction notice.
-</p>
+    <h3>7) Vineyard tenants: the covenant transfer is declared plainly</h3>
+    <p>
+      The vineyard story is the most explicit covenant lawsuit in the chapter. Israel is God’s vineyard; leaders are tenants; prophets are servants; the Son is sent last. The tenants’ plan—kill the heir and seize the inheritance—is precisely what the leadership will do. Then Jesus forces the verdict: what will the owner do? They pronounce their own sentence. Jesus then states the outcome in direct covenant language: the Kingdom will be taken from them and given to a fruit-bearing nation.
+    </p>
+    <p>
+      This is not “God is done with Jews”; it is “God is done with that covenant administration.” The new “nation” is the New Covenant people in Christ—Jew and Gentile together—producing the fruit the Law never produced. The transfer becomes historically visible as the temple falls and the New Creation people remain, living as God’s true dwelling.
+    </p>
 
-<h3>3) The Withered Fig Tree and "This Mountain"</h3>
-<p>
-In Hebrew imagery, the fig tree and the mountain are synonyms for Israel and the Temple Mount. 
-Jesus isn't teaching "magic" to move literal mountains; He is prophesying the <strong>removal of the Old Covenant system.</strong> 
-By faith, the disciples would see the Temple Mount "cast into the sea" (judged among the nations) as the New Covenant was established.
-</p>
+    <h3>8) The rejected stone: cornerstone shift and AD 70 consequence</h3>
+    <p>
+      The cornerstone quote is the interpretive key: leadership rejects, God exalts. The stone breaks those who stumble, and it crushes those it falls upon—judgment imagery that lands in first-century Jerusalem’s fate. The cornerstone is Christ; the new building is not the temple; it is the living house of the Spirit. That is why the old building can fall without the Kingdom collapsing. The Kingdom is not located in stone; it is located in the King.
+    </p>
 
-<h3>4) The Cornerstone</h3>
-<p>
-The "builders" (the Sanhedrin) rejected the very Stone required to hold the structure together. 
-In the Finished Work, Christ is the Cornerstone of a living Temple. 
-The old structure collapsed because it refused to rest on Him.
-</p>
+    <hr />
 
-<h3>5) Taking the Kingdom</h3>
-<p>
-Jesus explicitly states that the Kingdom would be **taken away** from the physical lineage and institutional leadership of Israel. 
-The "inheritance" is no longer tied to a piece of land in the Middle East, but to the fruit-bearing Life of the New Creation.
-</p>
+    <h2>Prophecy Hub Links</h2>
+    <ul>
+      <li><a href="/Bible/Prophecy/index.html#temple-judgment">Temple Judgment and Covenant Lawsuit</a></li>
+      <li><a href="/Bible/Prophecy/index.html#vineyard-israel">Vineyard of Israel and the Tenant Parable</a></li>
+      <li><a href="/Bible/Prophecy/index.html#cornerstone">Rejected Stone and Cornerstone Shift</a></li>
+    </ul>
 
-<hr />
+    <hr />
 
-<h2>Prophecy Hub Links</h2>
-<ul>
-  <li><strong>The Removal of the Mountain</strong> — <a href="/Bible/Prophecy/index.html">The End of the Temple Mount</a></li>
-  <li><strong>The Rejection of the Stone</strong> — <a href="/Bible/Prophecy/index.html">Christ the Cornerstone</a></li>
-  <li><strong>The Nation of the New Creation</strong> — <a href="/Bible/Prophecy/index.html">The True Israel</a></li>
-</ul>
+    <h2>Cross-References</h2>
+    <ul>
+      <li><a href="https://ebible.org/web/ZEC09.htm" target="_blank" rel="noopener noreferrer">Zechariah 9:9 (Zion’s king comes humble)</a></li>
+      <li><a href="https://ebible.org/web/ISA05.htm" target="_blank" rel="noopener noreferrer">Isaiah 5 (the vineyard song)</a></li>
+      <li><a href="https://ebible.org/web/PSA118.htm" target="_blank" rel="noopener noreferrer">Psalm 118:22–23 (the rejected stone)</a></li>
+    </ul>
 
-<hr />
+    <hr />
 
-<h2>Cross-References</h2>
-<ul>
-  <li><strong>The King on a Donkey</strong> — <a href="https://www.biblegateway.com/passage/?search=Zechariah+9%3A9&version=LSV" target="_blank">Zechariah 9:9</a></li>
-  <li><strong>The Den of Thieves</strong> — <a href="https://www.biblegateway.com/passage/?search=Jeremiah+7%3A11&version=LSV" target="_blank">Jeremiah 7:11</a></li>
-  <li><strong>The Chief Cornerstone</strong> — <a href="https://www.biblegateway.com/passage/?search=Psalm+118%3A22-23&version=LSV" target="_blank">Psalm 118:22-23</a></li>
-</ul>
+    <h2>New Creation Reality</h2>
+    <p>
+      The King has already claimed His house: you are not trying to “get access” through religious systems, but living from direct presence—bearing fruit that comes from union, not from temple-performance.
+    </p>
 
-<hr />
+    <hr />
 
-<h2>New Creation Reality</h2>
-<p>
-Matthew 21 shows us that we are part of the "nation" that has been given the Kingdom. 
-We don't look to a physical mountain or a building for our security. 
-The "fruitless" ways of religious performance have been withered by the Word of Christ. 
-We live as the "babes and infants" who have seen the King and are not afraid to shout His praise in the midst of the collapsing old world.
-</p>
+    <h2>Reflection</h2>
+    <p>
+      Where am I tempted to offer God “leaves” (appearance, identity, talk) while withholding “fruit” (real response, humility, mercy)—and what would change if I let the King cleanse that space?
+    </p>
 
-<hr />
+    <hr />
 
-<h2>Reflection</h2>
-<p>
-Am I still trying to find "fruit" on the withered tree of my own religious performance?
-</p>
-<p>
-Do I recognize the authority of the Cornerstone in my life, or am I still trying to "build" my own version of the Kingdom?
-</p>
+    <div class="footer-nav">
+      <nav aria-label="Bottom navigation">
+        <a class="pill" href="/Bible/index.html">FPBible Index</a>
+        <a class="pill" href="index.html">Book Index</a>
+        <a class="pill" href="matt20.html">Prev</a>
+        <a class="pill" href="matt22.html">Next</a>
+        <a class="pill" href="/Bible/Prophecy/index.html">Prophecy Hub</a>
+        <a class="pill" href="#top">Top</a>
+      </nav>
 
-<hr />
+      <div class="kofi">
+        <a href="https://ko-fi.com/B0B61QC1BU" target="_blank" rel="noopener noreferrer">
+          <img height="36" src="https://storage.ko-fi.com/cdn/kofi5.png?v=6" alt="Support FPBible on Ko-fi" />
+        </a>
+      </div>
+    </div>
 
-<nav>
-  <a href="/Bible/index.html">FPBible Index</a> |
-  <a href="index.html">Book Index</a> |
-  <a href="preface.html">Preface</a> |
-  <a href="appendix.html">Appendix</a> |
-  <a href="matt20.html">Prev</a> |
-  <a href="matt22.html">Next</a> |
-  <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> |
-  <a href="#top">Top</a>
-</nav>
+    <p class="note" style="margin-top:14px;">
+      Scripture quotation is from the <strong>World English Bible</strong> (WEB), which is in the Public Domain (text hosted by eBible.org). “World English Bible” is a trademark of eBible.org; the text itself may be copied freely.
+    </p>
 
-<a href="https://ko-fi.com/B0B61QC1BU" target="_blank">
-  <img height="36" src="https://storage.ko-fi.com/cdn/kofi5.png?v=6" alt="Buy Me a Coffee" />
-</a>
-
+  </div>
 </body>
 </html>
