@@ -2,206 +2,435 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Matthew 15 — Tradition vs. Truth and the Inward Reality of the Heart</title>
+  <title>Matthew 15 — Tradition Exposed, Bread Extended</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Matthew 15 — Tradition confronted, true defilement defined, and covenant bread extended beyond Israel as the age turns." />
+
   <style>
-    body{ font-family: system-ui, sans-serif; line-height: 1.6; margin: 1.5em; max-width: 900px; }
-    h1,h2,h3{ margin-top: 1.4em; margin-bottom: 0.4em; }
-    nav{ margin: 1em 0; font-size: 0.95em; }
-    nav a{ margin-right: 0.6em; text-decoration: underline; }
-    p{ margin: 0.6em 0; }
-    hr{ margin: 2em 0; border-top: 1px solid rgba(0,0,0,0.12); }
-    ul{ margin: 0.6em 0 0.8em 1.2em; }
-    li{ margin: 0.35em 0; }
-    .note{ font-size: 0.95em; opacity: 0.9; }
+    :root{
+      --max: 980px;
+      --pad: 16px;
+      --line: rgba(0,0,0,0.12);
+      --line2: rgba(0,0,0,0.18);
+      --muted: rgba(0,0,0,0.72);
+      --soft: rgba(0,0,0,0.06);
+      --soft2: rgba(0,0,0,0.04);
+      --card: rgba(0,0,0,0.03);
+      --radius: 14px;
+      --shadow: 0 10px 24px rgba(0,0,0,0.06);
+    }
+    *{ box-sizing:border-box; }
+    body{
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.65;
+      margin: 0;
+      color: #111;
+      background: #fff;
+    }
+    .wrap{
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 18px var(--pad) 44px;
+    }
+    header{
+      padding: 14px 0 6px;
+    }
+    h1{ font-size: 2.05rem; margin: 0.2rem 0 0.35rem; letter-spacing:-0.02em; }
+    h2{
+      font-size: 1.35rem;
+      margin: 1.3rem 0 0.5rem;
+      padding-bottom: 0.25rem;
+      border-bottom: 1px solid var(--line);
+    }
+    h3{ font-size: 1.1rem; margin: 1.05rem 0 0.35rem; }
+    p{ margin: 0.6rem 0; }
+    hr{
+      margin: 1.6rem 0;
+      border: 0;
+      border-top: 1px solid var(--line);
+    }
+
+    /* Nav */
+    .nav{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      align-items:center;
+      margin: 10px 0 12px;
+    }
+    .nav a{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding: 8px 10px;
+      border: 1px solid var(--line);
+      background: #fff;
+      border-radius: 999px;
+      text-decoration:none;
+      color:#111;
+      font-size: 0.95rem;
+    }
+    .nav a:hover{ border-color: var(--line2); box-shadow: 0 6px 16px rgba(0,0,0,0.06); }
+    .nav .sep{ opacity:0.4; padding: 0 2px; }
+
+    /* Cards */
+    .card{
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 14px 14px;
+    }
+    .subtle{
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    /* Scripture */
+    .scripture-text{
+      font-size: 1.05rem;
+      background: linear-gradient(180deg, var(--soft2), transparent);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 14px 14px;
+    }
+    .v-num{
+      font-weight: 700;
+      font-size: 0.75em;
+      vertical-align: super;
+      opacity: 0.6;
+      margin-right: 6px;
+    }
+    .scripture-text p{ margin: 0.55rem 0; }
+
+    /* Fulfillment notes */
+    .notes{
+      border-left: 4px solid var(--line2);
+      background: var(--soft2);
+      padding: 10px 12px;
+      border-radius: 10px;
+    }
+    .notes .line{ margin: 0.35rem 0; }
+
+    /* Annotations */
+    .annotation-block{
+      background: var(--soft2);
+      border: 1px solid var(--line);
+      border-left: 4px solid var(--line2);
+      border-radius: var(--radius);
+      padding: 12px 14px;
+    }
+    .annotation-item{ margin: 0.5rem 0; font-size: 0.98rem; }
+    ul{ margin: 0.6rem 0 0.8rem 1.2rem; }
+    li{ margin: 0.35rem 0; }
+
+    /* Footer */
+    footer{
+      margin-top: 18px;
+      padding-top: 12px;
+      border-top: 1px solid var(--line);
+    }
+    .kofi{
+      margin-top: 14px;
+      display:inline-block;
+    }
+    .fineprint{
+      margin-top: 12px;
+      font-size: 0.92rem;
+      color: var(--muted);
+    }
+    code{ font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
   </style>
 </head>
+
 <body>
+  <a id="top"></a>
+  <div class="wrap">
 
-<a id="top"></a>
+    <nav class="nav" aria-label="Top navigation">
+      <a href="/Bible/index.html">FPBible Index</a>
+      <a href="index.html">Book Index</a>
+      <a href="preface.html">Preface</a>
+      <a href="appendix.html">Appendix</a>
+      <a href="matt14.html">Prev</a>
+      <a href="matt16.html">Next</a>
+      <a href="/Bible/Prophecy/index.html">Prophecy Hub</a>
+      <a href="#top">Top</a>
+    </nav>
 
-<nav>
-  <a href="/Bible/index.html">FPBible Index</a> |
-  <a href="index.html">Book Index</a> |
-  <a href="preface.html">Preface</a> |
-  <a href="appendix.html">Appendix</a> |
-  <a href="matt14.html">Prev</a> |
-  <a href="matt16.html">Next</a> |
-  <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> |
-  <a href="#top">Top</a>
-</nav>
+    <header class="card">
+      <div class="subtle">FPBible • Matthew</div>
+      <h1>Matthew 15 — Tradition Exposed, Bread Extended</h1>
+      <p class="subtle">
+        Scripture base: World English Bible (Public Domain) as displayed by eBible.org. 0
+      </p>
+    </header>
 
-<h1>Matthew 15</h1>
-<h2>Tradition vs. Truth and the Inward Reality of the Heart</h2>
+    <hr />
 
-<p class="note">
-Original text:
-<a href="https://www.biblegateway.com/passage/?search=Matthew+15&version=LSV" target="_blank">Matthew 15 — LSV</a>
-</p>
+    <section>
+      <h2>Immediate Context</h2>
+      <div class="card">
+        <p>
+          Matthew 15 tightens the covenant lawsuit: Jesus confronts leadership-driven tradition that nullifies God’s command,
+          redefines “defilement” as heart-originated (not food-originated), and then signals the covenant expansion by granting
+          mercy to a Canaanite woman—followed by “bread in the wilderness” imagery that points to provision beyond the old boundaries.
+        </p>
+      </div>
+    </section>
 
-<hr />
+    <hr />
 
-<h2>Immediate Context</h2>
-<p>
-Matthew 15 begins with a delegation of Pharisees from Jerusalem coming to find fault with the disciples. 
-Jesus uses their accusation to expose the core problem of the Old Covenant: 
-<strong>The focus on external "cleanliness" was a mask for internal "uncleanliness."</strong>
-</p>
-<p>
-This chapter reveals that the New Covenant is a matter of the heart, and that the Bread of Life is now available even to those outside the lineage of Israel.
-</p>
+    <section>
+      <h2>Scripture (WEB)</h2>
 
-<hr />
+      <div class="scripture-text" aria-label="Scripture text">
+        <p><span class="v-num">1</span>Then Pharisees and scribes came to Jesus from Jerusalem, saying,</p>
+        <p><span class="v-num">2</span>“Why do your disciples disobey <strong>the tradition of the elders</strong>? For they don’t wash their hands when they eat bread.”</p>
 
-<h2>Fulfilled Paraphrase</h2>
+        <p><span class="v-num">3</span>He answered them, “Why do you also disobey <strong>the commandment of God</strong> because of your tradition?</p>
+        <p><span class="v-num">4</span>For God commanded, ‘Honor your father and your mother,’* Exodus 20:12; Deuteronomy 5:16 and, ‘He who speaks evil of father or mother, let him be put to death.’* Exodus 21:17; Leviticus 20:9</p>
+        <p><span class="v-num">5</span>But you say, ‘Whoever may tell his father or his mother, “Whatever help you might otherwise have gotten from me is a gift devoted to God,”</p>
+        <p><span class="v-num">6</span>he shall not honor his father or mother.’ You have made <strong>the commandment of God</strong> void because of your tradition.</p>
+        <p><span class="v-num">7</span><strong>You hypocrites!</strong> Well did Isaiah prophesy of you, saying,</p>
 
-<h3>The Corruption of Tradition (15:1–9)</h3>
-<p>
-Pharisees from Jerusalem asked, "Why do Your disciples break the tradition of the elders by eating with unwashed hands?" 
-Jesus countered, "And why do you break the commandment of God for the sake of your tradition? 
-You nullify God's Word with your religious loops—like claiming money is 'devoted to God' just to avoid helping your parents." 
-He called them hypocrites, quoting Isaiah: "These people honor Me with their lips, but their heart is far from Me."
-</p>
+        <p><span class="v-num">8</span>‘These people draw near to me with their mouth,</p>
+        <p>and honor me with their lips;</p>
+        <p>but their heart is far from me.</p>
+        <p><span class="v-num">9</span>And they worship me in vain,</p>
+        <p>teaching as doctrine rules made by men.’ ”* Isaiah 29:13</p>
 
-<p class="note">
-<strong>Fulfillment note:</strong> Jesus is exposing that the "Old" system had become a fortress for self-interest rather than a conduit for God’s character.
-</p>
+        <p><span class="v-num">10</span>He summoned the multitude, and said to them, “Hear, and understand.</p>
+        <p><span class="v-num">11</span>That which enters into the mouth doesn’t defile the man; but that which proceeds out of the mouth, this defiles the man.”</p>
 
-<hr />
+        <p><span class="v-num">12</span>Then the disciples came and said to him, “Do you know that the Pharisees were offended when they heard this saying?”</p>
 
-<h3>What Actually Defiles (15:10–20)</h3>
-<p>
-Jesus told the crowd, "Listen and understand: It is not what goes into the mouth that defiles a man, but what comes out of the mouth—this defiles a man." 
-When the disciples noted that the Pharisees were offended, He replied, "Every plant My Father hasn't planted will be uprooted. 
-Leave them; they are blind leaders of the blind." 
-He explained that food passes through the body, but words come from the heart—evil thoughts, theft, and lies. 
-"These are what defile; eating with unwashed hands does not."
-</p>
+        <p><span class="v-num">13</span>But he answered, “Every plant which my heavenly Father didn’t plant will be uprooted.</p>
+        <p><span class="v-num">14</span>Leave them alone. They are <strong>blind guides of the blind</strong>. If the blind guide the blind, both will fall into a pit.”</p>
 
-<p class="note">
-<strong>Fulfillment note:</strong> In one sentence, Jesus legally terminates the food laws of Leviticus. In the New Creation, "purity" is not a digestive issue; it is a heart issue.
-</p>
+        <p><span class="v-num">15</span>Peter answered him, “Explain the parable to us.”</p>
+        <p><span class="v-num">16</span>So Jesus said, “Do you also still not understand?</p>
+        <p><span class="v-num">17</span>Don’t you understand that whatever goes into the mouth passes into the belly and then out of the body?</p>
+        <p><span class="v-num">18</span>But the things which proceed out of the mouth come out of the heart, and they defile the man.</p>
+        <p><span class="v-num">19</span>For out of the heart come evil thoughts, murders, adulteries, sexual sins, thefts, false testimony, and blasphemies.</p>
+        <p><span class="v-num">20</span>These are the things which defile the man; but to eat with unwashed hands doesn’t defile the man.”</p>
 
-<hr />
+        <p><span class="v-num">21</span>Jesus went out from there and withdrew into the region of Tyre and Sidon.</p>
+        <p><span class="v-num">22</span>Behold, a Canaanite woman came out from those borders and cried, saying, “Have mercy on me, Lord, you son of David! My daughter is severely possessed by a demon!”</p>
 
-<h3>The Canaanite Woman: Crumbs of the New Creation (15:21–28)</h3>
-<p>
-In the region of Tyre and Sidon, a Canaanite woman begged Him to heal her demon-possessed daughter. 
-Jesus initially tested her, saying He was sent only to the lost sheep of Israel and that it wasn't right to give the children's bread to the dogs. 
-She replied, "Yes, Lord, but even the dogs eat the crumbs that fall from their masters' table." 
-Jesus marveled at her faith: "Great is your faith! Let it be as you desire." Her daughter was healed instantly.
-</p>
+        <p><span class="v-num">23</span>But he answered her not a word.</p>
 
-<p class="note">
-<strong>Fulfillment note:</strong> The "Bread" (the Kingdom) is overflowing the borders of Israel. Her faith allowed her to tap into the Finished Work before the full transition was even complete.
-</p>
+        <p>His disciples came and begged him, saying, “Send her away; for she cries after us.”</p>
 
-<hr />
+        <p><span class="v-num">24</span>But he answered, “I wasn’t sent to anyone but <strong>the lost sheep of the house of Israel</strong>.”</p>
+        <p><span class="v-num">25</span>But she came and worshiped him, saying, “Lord, help me.”</p>
 
-<h3>Healing and the Feeding of the Four Thousand (15:29–39)</h3>
-<p>
-Jesus went to the Sea of Galilee and healed the lame, blind, and mute; the crowd glorified the God of Israel. 
-He had compassion on the multitude, who had been with Him for three days without food. 
-With seven loaves and a few small fish, He fed four thousand men, plus women and children. 
-They gathered seven large baskets of leftovers.
-</p>
+        <p><span class="v-num">26</span>But he answered, “It is not appropriate to take the children’s bread and throw it to the dogs.”</p>
 
-<p class="note">
-<strong>Fulfillment note:</strong> Feeding the 4,000 (a Gentile number in symbolic context) mirrors the feeding of the 5,000 (Israel). The abundance of the New Creation is for all humanity.
-</p>
+        <p><span class="v-num">27</span>But she said, “Yes, Lord, but even the dogs eat the crumbs which fall from their masters’ table.”</p>
 
-<hr />
+        <p><span class="v-num">28</span>Then Jesus answered her, “<strong>Woman, great is your faith!</strong> Be it done to you even as you desire.” And her daughter was healed from that hour.</p>
 
-<h2>Fulfillment Commentary</h2>
+        <p><span class="v-num">29</span>Jesus departed from there and came near to the sea of Galilee; and he went up on the mountain and sat there.</p>
+        <p><span class="v-num">30</span>Great multitudes came to him, having with them the lame, blind, mute, maimed, and many others, and they put them down at his feet. He healed them,</p>
+        <p><span class="v-num">31</span>so that the multitude wondered when they saw the mute speaking, the injured healed, the lame walking, and the blind seeing—and they glorified the God of Israel.</p>
 
-<h3>1) The End of the Dietary Law</h3>
-<p>
-By declaring that food cannot defile a man, Jesus is performing a "covenantal uprooting." 
-The dietary laws were designed to keep Israel separate from the nations. 
-By removing the defilement of food, Jesus is removing the wall of partition between Jew and Gentile.
-</p>
+        <p><span class="v-num">32</span>Jesus summoned his disciples and said, “I have compassion on the multitude, because they have continued with me now three days and have nothing to eat. I don’t want to send them away fasting, or they might faint on the way.”</p>
 
-<h3>2) The Uprooting of the Old System</h3>
-<p>
-"Every plant which My heavenly Father has not planted will be uprooted" (v. 13). 
-This is a direct reference to the religious institutions of the Pharisees. 
-In the Finished Work, the "Old House" is not being renovated; it is being pulled up by the roots to make way for the New Creation.
-</p>
+        <p><span class="v-num">33</span>The disciples said to him, “Where could we get so many loaves in a deserted place as to satisfy so great a multitude?”</p>
 
-<h3>3) Dogs and Children</h3>
-<p>
-Jesus’ use of "dogs" was a cultural reference to how Jews viewed Gentiles. 
-However, His interaction with the woman proves that <strong>Faith is the only currency of the Kingdom.</strong> 
-She understood that even the "leftovers" of Christ's authority are more than enough to handle any demonic oppression.
-</p>
+        <p><span class="v-num">34</span>Jesus said to them, “How many loaves do you have?”</p>
 
-<h3>4) Heart vs. Hand</h3>
-<p>
-The Pharisees focused on the "hand" (outward performance). Jesus focuses on the "heart" (inward source). 
-In the New Covenant, we don't work from the outside-in to become holy. 
-We live from the inside-out because the Spirit has given us a new heart.
-</p>
+        <p>They said, “Seven, and a few small fish.”</p>
 
-<h3>5) Seven Baskets of Completion</h3>
-<p>
-The seven large baskets remaining signify completion and wholeness. 
-While the twelve baskets (Matt 14) pointed to the tribes of Israel, the seven baskets point to the world (represented by the seven Noahide nations in Jewish thought). 
-The Finished Work is a global feast.
-</p>
+        <p><span class="v-num">35</span>He commanded the multitude to sit down on the ground;</p>
+        <p><span class="v-num">36</span>and he took the seven loaves and the fish. He gave thanks and broke them, and gave to the disciples, and the disciples to the multitudes.</p>
+        <p><span class="v-num">37</span>They all ate and were filled. They took up seven baskets full of the broken pieces that were left over.</p>
+        <p><span class="v-num">38</span>Those who ate were four thousand men, in addition to women and children.</p>
+        <p><span class="v-num">39</span>Then he sent away the multitudes, got into the boat, and came into the borders of Magdala.</p>
+      </div>
+    </section>
 
-<hr />
+    <hr />
 
-<h2>Prophecy Hub Links</h2>
-<ul>
-  <li><strong>The Heart of the Covenant</strong> — <a href="/Bible/Prophecy/index.html">Inward Law</a></li>
-  <li><strong>The Wall of Partition</strong> — <a href="/Bible/Prophecy/index.html">Jew and Gentile</a></li>
-  <li><strong>Uprooting the Old</strong> — <a href="/Bible/Prophecy/index.html">Judgment on the System</a></li>
-</ul>
+    <section>
+      <h2>Fulfillment Notes</h2>
+      <div class="notes">
+        <p class="line">Jesus exposes tradition-as-authority as a covenant failure that would be judged in that generation’s transition.</p>
+        <p class="line">“Defilement” is relocated from foods and washings to the heart, signaling the collapse of purity-boundary religion.</p>
+        <p class="line">The Canaanite woman previews covenant inclusion beyond Israel while the old administration is still being legally addressed.</p>
+        <p class="line">“Bread” imagery in the wilderness frames Jesus as true provision as the old bread-system (temple-centered access) nears its end.</p>
+      </div>
+    </section>
 
-<hr />
+    <hr />
 
-<h2>Cross-References</h2>
-<ul>
-  <li><strong>Lip Service Prophecy</strong> — <a href="https://www.biblegateway.com/passage/?search=Isaiah+29%3A13&version=LSV" target="_blank">Isaiah 29:13</a></li>
-  <li><strong>Clean and Unclean</strong> — <a href="https://www.biblegateway.com/passage/?search=Acts+10%3A15&version=LSV" target="_blank">Acts 10:15</a></li>
-  <li><strong>The New Heart</strong> — <a href="https://www.biblegateway.com/passage/?search=Ezekiel+36%3A26&version=LSV" target="_blank">Ezekiel 36:26</a></li>
-</ul>
+    <section>
+      <h2>Annotations</h2>
+      <div class="annotation-block">
+        <div class="annotation-item"><strong>the tradition of the elders</strong>: Oral halakhah used as binding authority, functioning as an alternative “law” beside Torah.</div>
+        <div class="annotation-item"><strong>the commandment of God</strong>: Covenant obligation (God’s stated command) contrasted with man-made overlays that void it.</div>
+        <div class="annotation-item"><strong>You hypocrites!</strong>: Covenant courtroom language—leaders performing piety while violating the covenant’s heart.</div>
+        <div class="annotation-item"><strong>blind guides of the blind</strong>: Leadership collapse; the shepherds of the old order cannot lead into the new.</div>
+        <div class="annotation-item"><strong>the lost sheep of the house of Israel</strong>: First-century priority—Israel must be confronted and gathered before the wider ingathering fully manifests.</div>
+        <div class="annotation-item"><strong>Woman, great is your faith!</strong>: A prophetic “preview” of nations receiving covenant mercy by trust, not by boundary-markers.</div>
+      </div>
+    </section>
 
-<hr />
+    <hr />
 
-<h2>New Creation Reality</h2>
-<p>
-Matthew 15 frees us from the "touch not, taste not" mentality of religious performance. 
-We are not made "unclean" by the world or our environment; we are made clean by the Word of Christ. 
-We live as those who have been "planted by the Father," knowing that our identity is anchored in the heart, not in the observance of man-made traditions.
-</p>
+    <section>
+      <h2>Fulfillment Commentary</h2>
 
-<hr />
+      <h3>1) Tradition vs. Covenant Authority</h3>
+      <p>
+        Matthew 15 opens as a direct collision between two authorities: what God commanded and what leadership had layered on top of it as “the tradition of the elders.”
+        This is not Jesus being anti-discipline or anti-community practice; it is Jesus prosecuting a covenant problem—human tradition elevated to covenant rank.
+        When tradition becomes the measure of purity, it becomes a rival law, and rival law always produces two things: accusation and control.
+        Jesus’ charge is blunt: “You have made the commandment of God void because of your tradition.”
+        That word “void” is the issue—these leaders aren’t merely “adding helpful guidelines,” they are nullifying covenant intent by protecting their own system.
+      </p>
+      <p>
+        In the covenant-transition frame (AD 30–70), this matters because the temple-world ran on boundary maintenance: clean/unclean, inside/outside, authorized/unauthorized.
+        Tradition served that boundary machine by creating extra fences, which then became the real test of “righteousness.”
+        Jesus targets it because the Kingdom is arriving as fulfillment, and fulfillment always exposes what was temporary, what was performative, and what was weaponized.
+        This is part of Matthew’s wider lawsuit: the leadership of “this generation” is unfit to steward the people into the promised reality.
+      </p>
 
-<h2>Reflection</h2>
-<p>
-Am I still trying to "wash my hands" to be acceptable to God, or am I resting in the cleanliness He has provided in my heart?
-</p>
-<p>
-What "traditions" am I holding onto that actually nullify the power of Grace in my life?
-</p>
+      <h3>2) Defilement Reassigned: From Foods to the Heart</h3>
+      <p>
+        The pivotal move in the chapter is Jesus redefining defilement: “That which enters into the mouth doesn’t defile the man; but that which proceeds out of the mouth, this defiles the man.”
+        In plain terms: the old purity logic cannot carry the Kingdom.
+        Under the Mosaic administration, “defilement” functioned as a social-theological boundary that kept Israel distinct—but it was never meant to become the ultimate measure of nearness to God.
+        When leaders turned purity codes into identity badges, they made separation the “god,” and turned worship into performance.
+      </p>
+      <p>
+        Jesus relocates the issue to the heart because the New Covenant is a heart covenant.
+        That isn’t “new moralism”; it’s covenant diagnosis: the real uncleanness is not dirt on hands but murder, theft, false testimony, and blasphemy flowing from within.
+        This is also why the Pharisees are “offended”—because Jesus is dismantling the leadership’s power source.
+        When purity is no longer policed by external washings, their gatekeeping collapses.
+        “Every plant which my heavenly Father didn’t plant will be uprooted” is not gardening advice; it’s covenant judgment language—unplanted systems get removed.
+      </p>
 
-<hr />
+      <h3>3) Blind Guides and the Coming Uprooting</h3>
+      <p>
+        “Blind guides of the blind” is covenant leadership verdict.
+        Matthew has been building this: the shepherds are failing, the house is unstable, the old structure is heading toward removal.
+        Jesus does not present this as a vague end-of-the-world threat; it is a near-term crisis of stewardship.
+        When blind leadership insists on tradition as righteousness, it leads the people into a pit—socially, spiritually, and historically.
+        Within the AD 30–70 horizon, this is exactly what played out: leadership that rejected the Messiah led the nation into catastrophe.
+      </p>
+      <p>
+        Notice: Jesus says, “Leave them alone.”
+        That is not passivity; it is judicial.
+        It signals a handing-over: a system that refuses correction is allowed to run its course to its appointed end.
+        In covenant terms, that’s what “wrath” looks like—God giving a corrupt administration over to the consequences it has chosen.
+      </p>
 
-<nav>
-  <a href="/Bible/index.html">FPBible Index</a> |
-  <a href="index.html">Book Index</a> |
-  <a href="preface.html">Preface</a> |
-  <a href="appendix.html">Appendix</a> |
-  <a href="matt14.html">Prev</a> |
-  <a href="matt16.html">Next</a> |
-  <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> |
-  <a href="#top">Top</a>
-</nav>
+      <h3>4) “Lost Sheep” Priority and the Nations Preview</h3>
+      <p>
+        The Canaanite woman scene is often read as if Jesus is reluctant to help outsiders and then changes His mind.
+        Read it covenantally and it lands differently: the Messiah’s mission must first address Israel’s covenant house, because the lawsuit is against that house.
+        “I wasn’t sent to anyone but the lost sheep of the house of Israel” marks priority, not limitation.
+        The covenant order had to be confronted, fulfilled, and brought to resolution before the “open table” could be seen in its full clarity.
+      </p>
+      <p>
+        The woman’s persistence exposes the deeper truth: covenant mercy is not a bloodline privilege; it is God’s faithfulness expressed through Messiah.
+        Her “crumbs” response is brilliant because it accepts Israel’s priority while revealing the inevitable overflow—bread at the table cannot be contained.
+        Jesus’ declaration, “Woman, great is your faith!” functions like a prophetic sign: the nations will receive life not by boundary markers but by trust in the King.
+        This is Matthew’s steady drumbeat: the old “fence” identity is fading, and a new humanity is being gathered.
+      </p>
 
-<a href="https://ko-fi.com/B0B61QC1BU" target="_blank">
-  <img height="36" src="https://storage.ko-fi.com/cdn/kofi5.png?v=6" alt="Buy Me a Coffee" />
-</a>
+      <h3>5) Bread in the Wilderness: Provision as the Old Order Fades</h3>
+      <p>
+        The healings and the feeding of the four thousand are not random miracles; they are covenant signs.
+        In Israel’s story, wilderness and bread always point to Exodus provision and God’s shepherding care.
+        Here, Jesus provides bread outside the temple-centered system, in a “deserted place.”
+        That matters: it demonstrates that access and provision are not temple-managed commodities.
+      </p>
+      <p>
+        In the transition era, this is exactly the shift: the locus of “life with God” moves from a building and priesthood to the Messiah Himself.
+        The baskets of leftovers underline abundance—Kingdom provision is not scarcity-based.
+        The point isn’t “Jesus can do catering”; the point is “the true bread is here, and the old bread-system is being surpassed.”
+        By AD 70, the temple apparatus that traded in separation and managed access was removed, and the New Covenant reality stood clear: God-with-us is not localized; it is lived.
+      </p>
 
+      <p>
+        Put simply: Matthew 15 is Jesus severing the illusion that righteousness is maintained by external boundary performance.
+        He exposes the leadership’s counterfeit authority, relocates purity to the heart, signals the uprooting of an unplanted system, and previews the nations receiving covenant mercy.
+        This is not futurism; it is covenant transition in motion—ending one world’s operating system and establishing another.
+      </p>
+    </section>
+
+    <hr />
+
+    <section>
+      <h2>Prophecy Hub Links</h2>
+      <ul>
+        <li><a href="/Bible/Prophecy/index.html#traditions-of-men">Traditions of Men</a></li>
+        <li><a href="/Bible/Prophecy/index.html#gentile-inclusion">Gentile Inclusion</a></li>
+        <li><a href="/Bible/Prophecy/index.html#bread-in-wilderness">Bread in the Wilderness</a></li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <section>
+      <h2>Cross-References</h2>
+      <ul>
+        <li><a href="https://ebible.org/englsv/ISA29.htm" target="_blank" rel="noopener">Isaiah 29:13 (LSV)</a></li>
+        <li><a href="https://ebible.org/englsv/EZK34.htm" target="_blank" rel="noopener">Ezekiel 34 (LSV)</a></li>
+        <li><a href="https://ebible.org/englsv/ISA56.htm" target="_blank" rel="noopener">Isaiah 56 (LSV)</a></li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <section>
+      <h2>New Creation Reality</h2>
+      <div class="card">
+        <p>
+          You are not kept “clean” by religious friction, checklists, or boundary signaling; you live clean from the inside out because the King has established access.
+          The Spirit-life is not managed by tradition—Christ is present, and the heart is the true altar where life expresses itself.
+        </p>
+      </div>
+    </section>
+
+    <hr />
+
+    <section>
+      <h2>Reflection</h2>
+      <div class="card">
+        <p>
+          Where have I let “tradition” (how things are usually done) become more authoritative than the actual voice and heart of Jesus in me?
+        </p>
+      </div>
+    </section>
+
+    <hr />
+
+    <footer>
+      <nav class="nav" aria-label="Bottom navigation">
+        <a href="/Bible/index.html">FPBible Index</a>
+        <a href="index.html">Book Index</a>
+        <a href="matt14.html">Prev</a>
+        <a href="matt16.html">Next</a>
+        <a href="/Bible/Prophecy/index.html">Prophecy Hub</a>
+        <a href="#top">Top</a>
+      </nav>
+
+      <a class="kofi" href="https://ko-fi.com/B0B61QC1BU" target="_blank" rel="noopener">
+        <img height="36" src="https://storage.ko-fi.com/cdn/kofi5.png?v=6" alt="Buy Me a Coffee" />
+      </a>
+
+      <p class="fineprint">
+        Scripture text shown here is the <strong>World English Bible (WEB)</strong>, which is Public Domain.
+        Source as displayed by eBible.org (chapter page: Matthew 15). 1
+        <br />
+        Note: Cross-reference links above intentionally point to the <strong>LSV</strong> on eBible.org to match FPBible link rules.
+      </p>
+    </footer>
+
+  </div>
 </body>
 </html>
