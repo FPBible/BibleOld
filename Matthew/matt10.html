@@ -1,271 +1,380 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Matthew 10 — The Twelve Sent to Israel and the Near Coming of the Son of Man</title>
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Matthew 10 — Sent to Israel in the Last-Days Crisis</title>
+  <meta name="description" content="Matthew 10 (WEB) — The Twelve are commissioned into Israel’s covenant crisis: kingdom proclamation, persecution, and the first-century time marker of the Son of Man’s coming." />
 
   <style>
-    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; margin: 1.5em auto; padding: 0 16px; max-width: 900px; color: #111; background: #fff; }
-    h1, h2, h3 { margin-top: 1.4em; margin-bottom: 0.4em; }
-    h1 { font-size: 2.1rem; } h2 { font-size: 1.5rem; border-bottom: 1px solid rgba(0,0,0,0.12); padding-bottom: 0.2em; } h3 { font-size: 1.2rem; }
-    nav { margin: 1em 0; font-size: 0.95em; } nav a { margin-right: 0.6em; text-decoration: underline; color: #111; }
-    hr { margin: 2em 0; border: 0; border-top: 1px solid rgba(0,0,0,0.12); }
-    ul { margin: 0.6em 0 0.8em 1.2em; } li { margin: 0.35em 0; }
-    .scripture-text { font-family: inherit; font-size: 1.1em; margin-bottom: 1.5em; }
-    .v-num { font-weight: bold; font-size: 0.75em; vertical-align: super; opacity: 0.6; margin-right: 4px; }
-    .annotation-block { background: rgba(0,0,0,0.04); padding: 10px 14px; border-left: 3px solid rgba(0,0,0,0.12); margin-top: 1em; }
-    .annotation-item { font-size: 0.95em; margin-bottom: 0.5em; }
-    .note { font-size: 0.95em; opacity: 0.9; }
+    :root{
+      --max: 980px;
+      --ink: #111;
+      --muted: rgba(0,0,0,.72);
+      --line: rgba(0,0,0,.12);
+      --soft: rgba(0,0,0,.04);
+      --soft2: rgba(0,0,0,.06);
+      --radius: 14px;
+      --shadow: 0 10px 24px rgba(0,0,0,.06);
+    }
+    *{ box-sizing: border-box; }
+    body{
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.65;
+      margin: 0;
+      color: var(--ink);
+      background: #fff;
+    }
+    .wrap{
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 18px 16px 52px;
+    }
+    h1,h2,h3{ margin: 1.1em 0 .45em; line-height: 1.25; }
+    h1{ font-size: 2.05rem; letter-spacing: -0.02em; margin-top: .25em; }
+    h2{
+      font-size: 1.35rem;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: .25em;
+    }
+    h3{ font-size: 1.1rem; }
+    p{ margin: .65em 0; }
+    hr{
+      margin: 1.8em 0;
+      border: 0;
+      border-top: 1px solid var(--line);
+    }
+    a{ color: inherit; text-decoration: underline; }
+    .topnav, .botnav{
+      display: flex;
+      flex-wrap: wrap;
+      gap: .55em .8em;
+      align-items: center;
+      font-size: .95em;
+      padding: 10px 12px;
+      background: var(--soft);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+    }
+    .pill{
+      display: inline-flex;
+      align-items: center;
+      gap: .45em;
+      padding: .34em .62em;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: #fff;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .pill:hover{ background: var(--soft2); }
+    .card{
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 14px 14px;
+    }
+    .note{
+      font-size: .95em;
+      color: var(--muted);
+    }
+    .scripture-text{
+      font-size: 1.06em;
+      margin: 0;
+    }
+    .scripture-text p{ margin: .75em 0; }
+    .v-num{
+      font-weight: 700;
+      font-size: .74em;
+      vertical-align: super;
+      opacity: .6;
+      margin-right: 4px;
+    }
+    .annotation-block{
+      background: var(--soft);
+      border: 1px solid var(--line);
+      border-left: 4px solid rgba(0,0,0,.18);
+      border-radius: var(--radius);
+      padding: 12px 14px;
+    }
+    .annotation-item{ margin: .5em 0; font-size: .97em; }
+    ul{ margin: .5em 0 .9em 1.15em; }
+    li{ margin: .35em 0; }
+    .kofi{
+      margin-top: 14px;
+      display: inline-block;
+    }
+    .footerline{
+      margin-top: 10px;
+      font-size: .93em;
+      color: var(--muted);
+    }
+    .mini{ font-size: .92em; color: var(--muted); }
   </style>
 </head>
 
 <body>
-<a id="top"></a>
-
-<nav>
-  <a href="/Bible/index.html">FPBible Index</a>
-  <a href="index.html">Book Index</a>
-  <a href="preface.html">Preface</a>
-  <a href="appendix.html">Appendix</a>
-  <a href="matt9.html">Prev</a>
-  <a href="matt11.html">Next</a>
-  <a href="/Bible/Prophecy/index.html">Prophecy Hub</a>
-  <a href="#top">Top</a>
-</nav>
-
-<h1>Matthew 10</h1>
-<h2>The Twelve Sent to Israel and the Near Coming of the Son of Man</h2>
-
-<p class="note">
-  Source text (LSV on eBible): <a href="https://ebible.org/englsv/MAT10.htm" target="_blank" rel="noopener">Matthew 10 — Literal Standard Version</a>
-</p>
-
-<hr />
-
-<h2>Immediate Context</h2>
-<p>
-  Matthew 8–9 displays Jesus’ Kingdom authority in action; Matthew 10 delegates that authority. This is not a generic “mission talk” for all times—this is a targeted, covenantal summons to Israel (“lost sheep”), with real near-term consequences for welcoming or rejecting the message as the Mosaic age approaches its end.
-</p>
-
-<hr />
-
-<h2>Scripture (LSV)</h2>
-<div class="scripture-text">
-  <p><span class="v-num">1</span>And having called His twelve disciples to Himself, He gave to them power over unclean spirits, so as to be casting them out, and to be healing every disease and every sickness.</p>
-
-  <p><span class="v-num">2</span>And of the twelve apostles the names are these: first, Simon, who is called Peter, and his brother Andrew; James of Zebedee, and his brother John;</p>
-
-  <p><span class="v-num">3</span>Philip, and Bartholomew; Thomas, and Matthew the tax collector; James of Alpheus, and Lebbeus who was surnamed Thaddeus;</p>
-
-  <p><span class="v-num">4</span>Simon the Zealot, and Judas Iscariot, who also delivered Him up.</p>
-
-  <p><span class="v-num">5</span>These twelve Jesus sent forth, having given command to them, saying, “Do not go away to the way of the nations, and do not go into a city of the Samaritans,</p>
-
-  <p><span class="v-num">6</span>and be going rather <strong>to the lost sheep of the house of Israel</strong>.</p>
-
-  <p><span class="v-num">7</span>And going on, proclaim, saying that <strong>the kingdom of the heavens has come near</strong>;</p>
-
-  <p><span class="v-num">8</span>be healing [those] ailing, raising the dead, cleansing lepers, casting out demons—freely you received, freely give.</p>
-
-  <p><span class="v-num">9</span>Do not provide gold, nor silver, nor brass in your girdles,</p>
-
-  <p><span class="v-num">10</span>nor leather pouch for the way, nor two coats, nor sandals, nor staff—for the workman is worthy of his nourishment.</p>
-
-  <p><span class="v-num">11</span>And into whatever city or village you may enter, inquire who in it is worthy, and abide there, until you may go forth.</p>
-
-  <p><span class="v-num">12</span>And coming into the house greet it,</p>
-
-  <p><span class="v-num">13</span>and if indeed the house is worthy, let your peace come on it; and if it is not worthy, let your peace return to you.</p>
-
-  <p><span class="v-num">14</span>And whoever may not receive you nor hear your words, coming forth from that house or city, shake off the dust of your feet,</p>
-
-  <p><span class="v-num">15</span>truly I say to you, it will be more tolerable for the land of Sodom and Gomorrah in the day of judgment than for that city.</p>
-
-  <p><span class="v-num">16</span>Behold, I send you forth as sheep in the midst of wolves, therefore be wise as the serpents, and pure as the doves.</p>
-
-  <p><span class="v-num">17</span>And take heed of men, for they will give you up to Sanhedrins, and in their synagogues they will scourge you,</p>
-
-  <p><span class="v-num">18</span>and before governors and kings you will be brought for My sake, for a testimony to them and to the nations.</p>
-
-  <p><span class="v-num">19</span>And whenever they may deliver you up, do not be anxious how or what you may speak, for it will be given you in that hour what you will speak;</p>
-
-  <p><span class="v-num">20</span>for you are not the speakers, but the Spirit of your Father that is speaking in you.</p>
-
-  <p><span class="v-num">21</span>And brother will deliver up brother to death, and father child, and children will rise up against parents, and will put them to death,</p>
-
-  <p><span class="v-num">22</span>and you will be hated by all because of My Name, but <strong>he who has endured to the end</strong>, he will be saved.</p>
-
-  <p><span class="v-num">23</span>And whenever they may persecute you in this city, flee to the other, for truly I say to you, <strong>you may not have finished [going through] the cities of Israel until the Son of Man may come</strong>.</p>
-
-  <p><span class="v-num">24</span>A disciple is not above the teacher, nor a servant above his lord;</p>
-
-  <p><span class="v-num">25</span>sufficient to the disciple that he may be as his teacher, and the servant as his lord; if the master of the house they called Beelzebul, how much more those of his household?</p>
-
-  <p><span class="v-num">26</span>You may not, therefore, fear them, for there is nothing covered that will not be revealed, and hid that will not be known;</p>
-
-  <p><span class="v-num">27</span>that which I tell you in the darkness, speak in the light, and that which you hear at the ear, proclaim on the housetops.</p>
-
-  <p><span class="v-num">28</span>And do not be afraid of those killing the body, and are not able to kill the soul, but rather fear Him who is able to destroy both soul and body in <strong>Gehenna</strong>.</p>
-
-  <p><span class="v-num">29</span>Are not two sparrows sold for an assarion? And one of them will not fall on the ground without your Father;</p>
-
-  <p><span class="v-num">30</span>and of you—even the hairs of the head are all numbered;</p>
-
-  <p><span class="v-num">31</span>therefore, do not be afraid, you are better than many sparrows.</p>
-
-  <p><span class="v-num">32</span>Everyone, therefore, who will confess in Me before men, I also will confess in him before My Father who is in the heavens;</p>
-
-  <p><span class="v-num">33</span>and whoever will deny Me before men, I also will deny him before My Father who is in the heavens.</p>
-
-  <p><span class="v-num">34</span>You may not suppose that I came to put peace on the earth; I did not come to put peace, but <strong>a sword</strong>;</p>
-
-  <p><span class="v-num">35</span>for I came to set a man at variance against his father, and a daughter against her mother, and a daughter-in-law against her mother-in-law,</p>
-
-  <p><span class="v-num">36</span>and the enemies of a man are those of his household.</p>
-
-  <p><span class="v-num">37</span>He who is cherishing father or mother above Me, is not worthy of Me, and he who is cherishing son or daughter above Me, is not worthy of Me,</p>
-
-  <p><span class="v-num">38</span>and whoever does not receive his cross and follow after Me, is not worthy of Me.</p>
-
-  <p><span class="v-num">39</span>He who found his life will lose it, and he who lost his life for My sake will find it.</p>
-
-  <p><span class="v-num">40</span>He who is receiving you receives Me, and he who is receiving Me receives Him who sent Me;</p>
-
-  <p><span class="v-num">41</span>he who is receiving a prophet in the name of a prophet, will receive a prophet’s reward, and he who is receiving a righteous man in the name of a righteous man, will receive a righteous man’s reward,</p>
-
-  <p><span class="v-num">42</span>and whoever may give to drink to one of these little ones a cup of cold water only in the name of a disciple, truly I say to you, he may not lose his reward.”</p>
-</div>
-
-<hr />
-
-<h2>Fulfillment Notes</h2>
-<ul>
-  <li>This is a covenant-targeted mission to Israel first, because the Mosaic order was being weighed, exposed, and brought to its appointed end within that generation.</li>
-  <li>Matthew 10:23 is an explicit time-marker: the “coming of the Son of Man” belongs to the first-century crisis before the Twelve finished traversing Israel’s cities.</li>
-  <li>“The end” (v. 22) is the end of the age—the Mosaic age—culminating in Jerusalem’s judgment (AD 70), not the end of planet earth.</li>
-  <li>“Gehenna” (v. 28) functions as covenant-judgment language tied to Jerusalem’s looming calamity, not a generic post-mortem geography.</li>
-  <li>The “sword” (v. 34) is covenantal division and sorting—Old order versus New Creation allegiance—showing up inside households and communities.</li>
-</ul>
-
-<hr />
-
-<h2>Annotations</h2>
-<div class="annotation-block">
-  <div class="annotation-item"><strong>“to the lost sheep of the house of Israel”</strong> — The mission’s immediate covenant audience; Israel is being confronted as the old order nears expiry.</div>
-  <div class="annotation-item"><strong>“the kingdom of the heavens has come near”</strong> — Not a distant offer; it’s an announced arrival pressing into history.</div>
-  <div class="annotation-item"><strong>“he who has endured to the end”</strong> — Faithfulness through the covenant transition amid pressure and persecution.</div>
-  <div class="annotation-item"><strong>“until the Son of Man may come”</strong> — Near-term vindication/judgment language tied to the first-century crisis.</div>
-  <div class="annotation-item"><strong>“Gehenna”</strong> — Covenant warning language for Jerusalem’s judgment horizon, not a timeless abstraction.</div>
-  <div class="annotation-item"><strong>“a sword”</strong> — The dividing line created by Christ’s claim: the old identity structures fracture under New Covenant reality.</div>
-</div>
-
-<hr />
-
-<h2>Fulfillment Commentary</h2>
-
-<h3>1) Why the Mission Is Narrow: “Israel First” Is Covenant Procedure</h3>
-<p>
-Matthew 10 does not read like a timeless church manual; it reads like a covenant lawsuit moving into its final phase. Jesus explicitly restricts the Twelve from the nations and Samaritan towns and directs them to Israel (vv. 5–6). That restriction is not ethnic favoritism; it is covenant procedure. The Mosaic administration had a defined people, a defined land, a defined sanctuary, and a defined leadership structure. If the Old Covenant order is about to be judged and replaced (as the storyline of Matthew is steadily tightening toward), then the first recipients of the warning, the announcement, and the signs must be the covenant people themselves.
-</p>
-<p>
-Notice the content and the power: they proclaim that “the kingdom of the heavens has come near” (v. 7) and they enact that nearness through healing, cleansing, deliverance, and resurrection signs (v. 8). These acts aren’t random “miracle flexing.” They are covenant signs of a new reality breaking in—life pushing back death, wholeness pushing back impurity, authority pushing back unclean spirits. In other words, the coming Kingdom is not a theory; it is embodied, and it is aimed right into Israel’s world because Israel’s old order is about to be exposed as unable to produce life.
-</p>
-
-<h3>2) Hospitality and Judgment: A City’s Response Becomes Its Verdict</h3>
-<p>
-Jesus ties reception of the messengers to reception of Himself (vv. 40–41). This is covenant representation: the King sends authorized witnesses, and the response to the witness becomes the response to the King. That’s why peace “rests” on a house that receives them and “returns” if it rejects them (vv. 12–13). This isn’t mystical vibes—it’s legal-covenantal imagery: acceptance places a household under the covering of the new announcement; rejection aligns a household with the resisting order.
-</p>
-<p>
-The “dust-shaking” (v. 14) is also covenantal: it marks a boundary, a testimony, a separation. Then Jesus intensifies it: the “day of judgment” will be more tolerable for Sodom and Gomorrah than for a rejecting city (v. 15). That only makes sense if we keep the passage anchored where Jesus anchored it—within Israel’s near-term crisis—because the warning is directed at actual towns that will either receive or reject the Kingdom announcement as it confronts the old age.
-</p>
-
-<h3>3) Persecution Is Not Random: It Comes From the Old System Under Threat</h3>
-<p>
-Jesus warns that the disciples will be handed over to Sanhedrins and scourged in synagogues (v. 17). That is not generic “people are mean” persecution; it is institutional opposition. When the old order is being challenged at its roots, it does what threatened systems do: it prosecutes the witnesses. Even the mention of governors and kings (v. 18) fits the widening first-century collision between the Jesus movement and the powers that sat over Judea and the surrounding world.
-</p>
-<p>
-And Jesus frames this suffering with presence: “it is not you speaking, but the Spirit of your Father” (v. 20). In FPBible terms, this is New Creation reality in motion during the transition—God’s life and speech breaking through weak vessels, not to build an empire of intimidation, but to bear witness while the old administration is being dismantled.
-</p>
-
-<h3>4) “The End” and the Non-Negotiable Time-Stamp of Matthew 10:23</h3>
-<p>
-Verse 22 says “he who has endured to the end, he will be saved.” In context, “the end” is not the end of the planet; it is the end of the age that is being confronted throughout Matthew—an age centered in temple, priesthood, and covenant boundary markers. The practical instruction in v. 23 makes that unavoidable: “you may not have finished [going through] the cities of Israel until the Son of Man may come.”
-</p>
-<p>
-That line is a built-in time stamp. Jesus does not place His “coming” thousands of years beyond the Twelve; He places it within the horizon of their Israel mission. The “coming of the Son of Man” here is vindication and judgment language—the enthroned Son publicly confirmed as true while the rejecting city and its structures meet their covenantal end. In history, that crisis culminates in Jerusalem’s devastation in AD 70, which functioned as the public termination of the temple-centered order that opposed the Messiah and His witnesses.
-</p>
-<p>
-So Matthew 10 is not “soft.” It is sharp: the Kingdom is near, the resistance is real, the division will cut through families, and the crisis is not indefinite. Jesus speaks like someone who knows the covenant clock is running out.
-</p>
-
-<h3>5) Gehenna and the “Sword”: Judgment and Division as Covenant Sorting</h3>
-<p>
-Jesus tells them not to fear men who kill the body, but to fear the One able to destroy both soul and body in Gehenna (v. 28). Whatever else people try to make this, in Matthew it functions as a warning to the covenant world standing on the edge of catastrophic judgment. It is not presented as a detached, abstract afterlife diagram; it is presented as a real, weighty covenant warning with the same near-term intensity as the rest of the chapter.
-</p>
-<p>
-Then He says He did not come to bring peace, but “a sword” (v. 34). This does not contradict the peace of the New Covenant; it reveals the cost of transition. When New Creation reality arrives in a world propped up by old identity systems, it creates a dividing line. Allegiance to Christ will disrupt inherited loyalties where those loyalties are welded to the old order. The “sword” is the unavoidable separation that happens when truth and Kingdom authority confront a dying administration.
-</p>
-
-<h3>6) Receiving Christ’s Messengers: Alignment With the New Creation</h3>
-<p>
-The closing verses (vv. 40–42) ground everything in tangible faithfulness: receiving, supporting, giving a cup of cold water. This is not performance religion; it is embodied allegiance. In the transition era, people aligned with Jesus by aligning with His sent ones. In the settled New Creation, the same principle stands: love is not an idea—it moves through actual hands, actual hospitality, actual care.
-</p>
-
-<hr />
-
-<h2>Prophecy Hub Links</h2>
-<ul>
-  <li><a href="/Bible/Prophecy/index.html#coming-of-son-of-man">The Coming of the Son of Man</a></li>
-  <li><a href="/Bible/Prophecy/index.html#end-of-age">The End of the Age</a></li>
-  <li><a href="/Bible/Prophecy/index.html#gehenna">Gehenna and Covenant Judgment</a></li>
-</ul>
-
-<hr />
-
-<h2>Cross-References (LSV on eBible)</h2>
-<ul>
-  <li><strong>Lost Sheep / Shepherding Israel</strong> — <a href="https://ebible.org/englsv/EZK34.htm" target="_blank" rel="noopener">Ezekiel 34</a></li>
-  <li><strong>Sent as Sheep Among Wolves</strong> — <a href="https://ebible.org/englsv/LUK10.htm" target="_blank" rel="noopener">Luke 10</a></li>
-  <li><strong>Sodom and Gomorrah</strong> — <a href="https://ebible.org/englsv/GEN19.htm" target="_blank" rel="noopener">Genesis 19</a></li>
-</ul>
-
-<hr />
-
-<h2>New Creation Reality</h2>
-<p>
-Matthew 10 is not telling you to live in panic; it’s telling you to live in clarity. The Kingdom has come near—and in Christ, it has arrived and remains. You don’t carry “future dread”; you carry present union. Your confession is not a gamble for later—it's alignment with Reality now. And your “cup of cold water” life is not small: it’s what Kingdom looks like when it takes flesh in everyday places.
-</p>
-
-<hr />
-
-<h2>Reflection</h2>
-<p>
-Where am I still trying to preserve peace with “old identity” pressures, instead of letting Christ define my loyalties, my voice, and my courage?
-</p>
-
-<hr />
-
-<nav>
-  <a href="/Bible/index.html">FPBible Index</a>
-  <a href="index.html">Book Index</a>
-  <a href="preface.html">Preface</a>
-  <a href="appendix.html">Appendix</a>
-  <a href="matt9.html">Prev</a>
-  <a href="matt11.html">Next</a>
-  <a href="/Bible/Prophecy/index.html">Prophecy Hub</a>
-  <a href="#top">Top</a>
-</nav>
-
-<p>
-  <a href="https://ko-fi.com/B0B61QC1BU" target="_blank" rel="noopener">
-    <img height="36" src="https://storage.ko-fi.com/cdn/kofi5.png?v=6" alt="Support FPBible on Ko-fi" />
-  </a>
-</p>
-
-<p class="note">
-  LSV Scripture text reproduced from eBible.org (Literal Standard Version, © 2020 Covenant Press). This page includes selective emphasis for study purposes; wording of the Scripture text is otherwise unchanged.
-</p>
-
+  <a id="top"></a>
+  <div class="wrap">
+
+    <nav class="topnav" aria-label="Top navigation">
+      <a class="pill" href="/Bible/index.html">FPBible Index</a>
+      <a class="pill" href="index.html">Matthew Index</a>
+      <a class="pill" href="preface.html">Preface</a>
+      <a class="pill" href="appendix.html">Appendix</a>
+      <span class="mini">|</span>
+      <a class="pill" href="matt9.html">← Prev</a>
+      <a class="pill" href="matt11.html">Next →</a>
+      <span class="mini">|</span>
+      <a class="pill" href="/Bible/Prophecy/index.html">Prophecy Hub</a>
+      <a class="pill" href="#top">Top ↑</a>
+    </nav>
+
+    <header>
+      <h1>Matthew 10 — Sent to Israel in the Last-Days Crisis</h1>
+      <p class="note">Scripture text: World English Bible (WEB) — public domain (eBible.org).</p>
+    </header>
+
+    <hr />
+
+    <section class="card">
+      <h2>Immediate Context</h2>
+      <p>
+        After declaring the harvest urgency (Matt 9:37–38), Jesus formally commissions the Twelve into Israel’s covenant crisis: they proclaim the Kingdom “near,” confront the failing leadership structures, and endure persecution that belongs to the AD 30–70 transition culminating in Jerusalem’s judgment.
+      </p>
+    </section>
+
+    <hr />
+
+    <section class="card">
+      <h2>Scripture (WEB)</h2>
+      <div class="scripture-text">
+        <p>
+          <span class="v-num">1</span>He called to himself his twelve disciples, and gave them authority over unclean spirits, to cast them out, and to heal every disease and every sickness.
+          <span class="v-num">2</span>Now the names of the twelve apostles are these. The first, Simon, who is called Peter; Andrew, his brother; James the son of Zebedee; John, his brother;
+          <span class="v-num">3</span>Philip; Bartholomew; Thomas; Matthew the tax collector; James the son of Alphaeus; Lebbaeus, whose surname was Thaddaeus;
+          <span class="v-num">4</span>Simon the Canaanite; and Judas Iscariot, who also betrayed him.
+        </p>
+
+        <p>
+          <span class="v-num">5</span>Jesus sent these twelve out, and commanded them, saying, “Don’t go among the Gentiles, and don’t enter into any city of the Samaritans.
+          <span class="v-num">6</span>Rather, go to the lost sheep of the house of Israel.
+          <span class="v-num">7</span>As you go, preach, saying, ‘The Kingdom of Heaven is at hand!’
+          <span class="v-num">8</span>Heal the sick, cleanse the lepers, and cast out demons. Freely you received, so freely give.
+          <span class="v-num">9</span>Don’t take any gold, nor silver, nor brass in your money belts.
+          <span class="v-num">10</span>Take no bag for your journey, neither two coats, nor shoes, nor staff: for the laborer is worthy of his food.
+          <span class="v-num">11</span>Into whatever city or village you enter, find out who in it is worthy; and stay there until you go on.
+          <span class="v-num">12</span>As you enter into the household, greet it.
+          <span class="v-num">13</span>If the household is worthy, let your peace come on it, but if it isn’t worthy, let your peace return to you.
+          <span class="v-num">14</span>Whoever doesn’t receive you, nor hear your words, as you go out of that house or that city, shake off the dust from your feet.
+          <span class="v-num">15</span>Most certainly I tell you, it will be more tolerable for the land of Sodom and Gomorrah in the day of judgment than for that city.
+        </p>
+
+        <p>
+          <span class="v-num">16</span>“Behold, I send you out as sheep among wolves. Therefore be wise as serpents, and harmless as doves.
+          <span class="v-num">17</span>But beware of men: for they will deliver you up to councils, and in their synagogues they will scourge you.
+          <span class="v-num">18</span>Yes, and you will be brought before governors and kings for my sake, for a testimony to them and to the nations.
+          <span class="v-num">19</span>But when they deliver you up, don’t be anxious how or what you will say, for it will be given you in that hour what you will say.
+          <span class="v-num">20</span>For it is not you who speak, but the Spirit of your Father who speaks in you.
+        </p>
+
+        <p>
+          <span class="v-num">21</span>Brother will deliver up brother to death, and the father his child. Children will rise up against parents, and cause them to be put to death.
+          <span class="v-num">22</span>You will be hated by all men for my name’s sake, but he who endures to the end will be saved.
+          <span class="v-num">23</span>But when they persecute you in this city, flee into the next, for most certainly I tell you, <strong>you will not have gone through the cities of Israel, until the Son of Man has come.</strong>
+        </p>
+
+        <p>
+          <span class="v-num">24</span>“A disciple is not above his teacher, nor a servant above his lord.
+          <span class="v-num">25</span>It is enough for the disciple that he be like his teacher, and the servant like his lord. If they have called the master of the house Beelzebul, how much more those of his household!
+        </p>
+
+        <p>
+          <span class="v-num">26</span>Therefore don’t be afraid of them, for there is nothing covered that will not be revealed; and hidden that will not be known.
+          <span class="v-num">27</span>What I tell you in the darkness, speak in the light; and what you hear whispered in the ear, proclaim on the housetops.
+          <span class="v-num">28</span>Don’t be afraid of those who kill the body, but are not able to kill the soul. Rather, fear him who is able to destroy both soul and body in <strong>Gehenna</strong>.
+          <span class="v-num">29</span>Aren’t two sparrows sold for an assarion coin? Not one of them falls on the ground apart from your Father’s will.
+          <span class="v-num">30</span>But the very hairs of your head are all numbered.
+          <span class="v-num">31</span>Therefore don’t be afraid. You are of more value than many sparrows.
+        </p>
+
+        <p>
+          <span class="v-num">32</span>Everyone therefore who confesses me before men, him I will also confess before my Father who is in heaven.
+          <span class="v-num">33</span>But whoever denies me before men, him I will also deny before my Father who is in heaven.
+        </p>
+
+        <p>
+          <span class="v-num">34</span>“Don’t think that I came to send peace on the earth. I didn’t come to send peace, but a sword.
+          <span class="v-num">35</span>For I came to set a man at odds against his father, and a daughter against her mother, and a daughter-in-law against her mother-in-law.
+          <span class="v-num">36</span>A man’s foes will be those of his own household.
+          <span class="v-num">37</span>He who loves father or mother more than me is not worthy of me; and he who loves son or daughter more than me isn’t worthy of me.
+          <span class="v-num">38</span>He who doesn’t take his cross and follow after me, isn’t worthy of me.
+          <span class="v-num">39</span>He who seeks his life will lose it; and he who loses his life for my sake will find it.
+        </p>
+
+        <p>
+          <span class="v-num">40</span>“He who receives you receives me, and he who receives me receives him who sent me.
+          <span class="v-num">41</span>He who receives a prophet in the name of a prophet will receive a prophet’s reward. He who receives a righteous man in the name of a righteous man will receive a righteous man’s reward.
+          <span class="v-num">42</span>Whoever gives one of these little ones just a cup of cold water to drink in the name of a disciple, most certainly I tell you, he will in no way lose his reward.”
+        </p>
+      </div>
+    </section>
+
+    <hr />
+
+    <section class="card">
+      <h2>Fulfillment Notes (STRICT)</h2>
+      <p>This commission is explicitly Israel-focused because the covenant lawsuit had to be served to the house of Israel before the age could end.</p>
+      <p>Matthew 10:23 is a non-negotiable time marker: the Son of Man’s “coming” is tied to the first-century mission field of Israel’s cities.</p>
+      <p>“The end” in 10:22 is the end of the Mosaic age, not the end of the physical planet, and it culminated in AD 70.</p>
+      <p>Gehenna is Jerusalem’s covenant-judgment imagery tied to the Valley of Hinnom, not a timeless post-mortem torture realm.</p>
+      <p>The sword and household division describe the first-century covenant split between Messiah and the old order as the transition intensified.</p>
+    </section>
+
+    <hr />
+
+    <section class="annotation-block">
+      <h2>Annotations</h2>
+      <div class="annotation-item">
+        <strong>you will not have gone through the cities of Israel, until the Son of Man has come.</strong> — First-century deadline statement; “coming” = vindication/judgment on Jerusalem in the covenant transition.
+      </div>
+      <div class="annotation-item">
+        <strong>Gehenna</strong> — The Valley of Hinnom outside Jerusalem; prophetic/covenantal judgment symbol for the AD 70 crisis.
+      </div>
+      <div class="annotation-item">
+        <strong>The Kingdom of Heaven is at hand!</strong> — Imminent kingdom announcement in Israel’s last-days overlap (AD 30–70), not a distant future.
+      </div>
+      <div class="annotation-item">
+        <strong>he who endures to the end will be saved</strong> — “Saved” = delivered through the covenant collapse; “end” = end of the Mosaic age.
+      </div>
+      <div class="annotation-item">
+        <strong>shake off the dust</strong> — Covenant-testimony act: a city that rejects the message stands under impending judgment.
+      </div>
+      <div class="annotation-item">
+        <strong>a sword</strong> — Covenant division: the Messiah’s claim forces separation from the old order even within households.
+      </div>
+    </section>
+
+    <hr />
+
+    <section class="card">
+      <h2>Fulfillment Commentary</h2>
+
+      <h3>1) Why the Mission is “Israel Only” at First</h3>
+      <p>
+        Matthew 10 is not “random instructions for all time.” It’s a targeted covenant action inside Israel’s story. Jesus restricts the Twelve: “Don’t go among the Gentiles… Rather, go to the lost sheep of the house of Israel.” That limitation is theological, legal, and prophetic. Israel was the covenant nation under the Mosaic arrangement; therefore the covenant lawsuit had to be served to the covenant house before the covenant could be publicly closed. The prophets repeatedly portray Yahweh’s controversy with Israel as a courtroom matter: indictment, summons, witnesses, and finally judgment. This chapter is the witness phase. The apostles are sent as authorized messengers to announce the Kingdom’s nearness and to expose refusal where it exists—especially among leadership structures that had turned the Law into a boundary weapon and the temple into a control system.
+      </p>
+      <p>
+        In a fulfilled (AD 30–70) framework, this is the historical overlap where the old covenant is still standing in Jerusalem while the New Covenant is being announced and embodied. That is why the proclamation is time-sensitive: “The Kingdom of Heaven is at hand!” This “at hand” language is not an elastic phrase that stretches across millennia. It is covenant imminence: the King is present, the age is turning, and Israel must decide.
+      </p>
+
+      <h3>2) The Signs Are Covenant Credentials, Not Entertainment</h3>
+      <p>
+        The Twelve are given authority over unclean spirits and disease, and are commanded to heal, cleanse lepers, and cast out demons. In Matthew’s flow, these acts function as covenant credentials: they demonstrate that the promised restoration is arriving and that the powers of uncleanness—so central to the old system’s separation logic—are being displaced. The old order could label “unclean” and could manage ritual distance, but it could not produce the New Creation outcome: real cleansing and restored life. That is why Jesus commands a “freely received, freely give” posture: the Kingdom is not a market, and authority is not sold by religious elites.
+      </p>
+      <p>
+        Even the travel instructions (no extra supplies) fit the covenant setting: the messengers are to rely on “worthy” households in Israel. Reception becomes a covenant dividing line. “Peace” resting on a house is not a vibe; it is a covenant verdict: this house aligns with the King and His Kingdom.
+      </p>
+
+      <h3>3) Persecution, Councils, Synagogues: This Is First-Century Texture</h3>
+      <p>
+        Jesus describes councils, synagogues, governors, kings, family betrayal, and city-to-city flight. This is not generic end-times speculation; it is the lived world of the first-century apostolic mission. The promise that the Spirit will speak through them belongs to that pressured setting where witness is required before judgment. It also reinforces Matthew’s theme: Israel’s leadership has become hostile to its own fulfillment, and the true Israel (the Messiah and His body) will be treated as an enemy by the old guard.
+      </p>
+      <p>
+        “He who endures to the end will be saved” must be read in Matthew’s timeframe: “the end” here is the end of the Mosaic age, not the end of the planet. Salvation in this context includes deliverance through the covenant collapse and vindication as the new order is publicly established. You can’t flatten this into a timeless moral slogan without losing Matthew’s meaning.
+      </p>
+
+      <h3>4) Matthew 10:23: The Hard Timestamp Most Systems Try to Soften</h3>
+      <p>
+        Verse 23 is a direct blow to futurism: “you will not have gone through the cities of Israel, until the Son of Man has come.” This statement ties the Son of Man’s coming to the mission geography and timeframe of the disciples’ circuit of Israel. That is exactly why many readers try to dilute it (“it means something else,” “it’s conditional,” “it’s two comings,” etc.). But Matthew places it inside a specific instruction about fleeing from one city to the next due to persecution. The plain reading is the covenant reading: the coming in view is the vindication/judgment event bound to the first-century covenant transition, culminating in Jerusalem’s destruction and the public end of the old temple order in AD 70.
+      </p>
+      <p>
+        This also fits the larger pattern of “coming” language in the prophets: Yahweh “comes” against cities and nations in judgment using historical means while remaining the enthroned Lord. Jesus applies that pattern to Jerusalem’s leadership and to the covenant order they were guarding. The result is not “planet ends” but “old covenant world ends.”
+      </p>
+
+      <h3>5) Gehenna, the Sword, and the Covenant Split</h3>
+      <p>
+        Jesus warns about Gehenna: the Valley of Hinnom outside Jerusalem, historically associated with defilement and judgment imagery. In Matthew’s covenant context, Gehenna language functions as prophetic warning of the coming catastrophe on the covenant center—Jerusalem—where bodies, shame, and ruin would be visible outcomes of national judgment in the war. This is not Jesus pivoting to a timeless afterlife torture doctrine; it is covenant lawsuit warning to covenant people.
+      </p>
+      <p>
+        The “sword” sayings likewise belong to the transition. Messiah does not bring “peace” to the old system; He brings division because His claim forces a decision: remain anchored to the temple-centered identity or follow the King into the New Creation reality. Household division is what happens when covenant identity is shifting: the old loyalties cannot coexist with the new allegiance without conflict.
+      </p>
+
+      <h3>6) Receiving the Messengers Is Receiving the King</h3>
+      <p>
+        The chapter ends with reception logic: receiving the apostles is receiving Jesus, and receiving Jesus is receiving the Father. In covenant terms, the messengers carry the legal announcement of a new order; reception is alignment. Even small acts (a cup of cold water) are treated as participation in the Kingdom economy—not because God is petty, but because covenant loyalty is being revealed in concrete choices during a time of upheaval.
+      </p>
+      <p>
+        Put together, Matthew 10 is the Kingdom expanding through Israel under intense pressure in a defined historical window. It is not waiting for a distant end; it is describing the path by which the old age was brought to its close and the New Creation order stood openly after the temple system fell.
+      </p>
+    </section>
+
+    <hr />
+
+    <section class="card">
+      <h2>Prophecy Hub Links</h2>
+      <ul>
+        <li><a href="/Bible/Prophecy/index.html#son-of-man-coming">The Coming of the Son of Man</a></li>
+        <li><a href="/Bible/Prophecy/index.html#end-of-the-age">The End of the Age (AD 70)</a></li>
+        <li><a href="/Bible/Prophecy/index.html#gehenna">Gehenna and Covenant Judgment</a></li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <section class="card">
+      <h2>Cross-References (WEB)</h2>
+      <ul>
+        <li><a href="https://ebible.org/eng-web/DAN07.htm" target="_blank" rel="noopener">Daniel 7 (Son of Man authority)</a></li>
+        <li><a href="https://ebible.org/eng-web/HOS06.htm" target="_blank" rel="noopener">Hosea 6 (covenant mercy)</a></li>
+        <li><a href="https://ebible.org/eng-web/MIC07.htm" target="_blank" rel="noopener">Micah 7 (household conflict imagery)</a></li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <section class="card">
+      <h2>New Creation Reality</h2>
+      <p>
+        You are not living under a pending apocalypse timetable; you live on the far side of the covenant transition with settled access and settled identity in Christ.
+        The Kingdom is not fragile and not postponed—so your witness can be fearless, generous, and unbribable.
+        Reception and mercy still reveal alignment: not to earn belonging, but because belonging is already secure in the New Creation.
+      </p>
+    </section>
+
+    <hr />
+
+    <section class="card">
+      <h2>Reflection</h2>
+      <p>
+        Where am I still trying to keep peace with an “old order” mindset (fear, performance, people-approval) instead of embracing the clear covenant divide of allegiance to the King?
+      </p>
+    </section>
+
+    <hr />
+
+    <footer class="card">
+      <nav class="botnav" aria-label="Bottom navigation">
+        <a class="pill" href="/Bible/index.html">FPBible Index</a>
+        <a class="pill" href="index.html">Matthew Index</a>
+        <span class="mini">|</span>
+        <a class="pill" href="matt9.html">← Matthew 9</a>
+        <a class="pill" href="matt11.html">Matthew 11 →</a>
+        <span class="mini">|</span>
+        <a class="pill" href="#top">Top ↑</a>
+      </nav>
+
+      <a class="kofi" href="https://ko-fi.com/B0B61QC1BU" target="_blank" rel="noopener">
+        <img height="36" style="border:0;height:36px;" src="https://storage.ko-fi.com/cdn/kofi5.png?v=6" alt="Support FPBible on Ko-fi" />
+      </a>
+
+      <p class="footerline">
+        Extended attribution: Scripture quotations are from the <strong>World English Bible (WEB)</strong>, public domain.
+        Source: eBible.org (eng-web). You may copy and share freely.
+      </p>
+    </footer>
+
+  </div>
 </body>
 </html>
