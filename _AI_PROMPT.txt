@@ -1,95 +1,130 @@
+LOCKED FPBible Chapter HTML Standard — Tightened (Audit-Proof)
+
 Instruction:
-Generate the full HTML code for the next chapter of ANY Bible book (Genesis–Revelation) using the LOCKED FPBible Chapter HTML Standard (Revelation 1–style structure/nav/CSS) and the rules below.
+Generate the full HTML code for the next chapter of ANY Bible book (Genesis–Revelation) using the LOCKED FPBible Chapter HTML Standard (Revelation-1 style structure/nav/CSS) and the rules below.
 
-THEOLOGICAL LENS (SITE AUDIT COMPLIANT):
-- You MUST write all framing, notes, and commentary from a consistent Covenantal / Full Preterist perspective.
-- Zero Futurism: if a passage sounds “still pending,” you must explain its fulfillment in the first-century covenant transition (AD 30–70), or (for OT) as fulfilled in Christ and/or the covenant transition.
-- “The End” = end of the Mosaic age (AD 70).
-- “The Coming / Parousia” = Christ’s vindication/judgment on Jerusalem and covenantal transition.
-- “The Kingdom” = present, settled New Creation reality now.
-- Do NOT use “already but not yet” language.
-- Audience relevance is mandatory: state who is being addressed and why the timing statements are time-bound.
+0) NON-NEGOTIABLE BRANDING RULE
+- Do NOT use the words “Paraphrase Bible” or “Paraphrase” anywhere in the page (title, headings, nav, body, footer, metadata).
+- Use only FPBible / Fulfilled Bible wording if naming is needed.
 
-TEXT INTEGRITY (WEB — SOURCE LOCKED):
-- Scripture MUST be the World English Bible (WEB) text, copied verbatim.
-- Source of truth for copying text: https://ebible.org/web/BOOK##.htm (e.g., https://ebible.org/web/MAT03.htm).
-- DO NOT paraphrase, rewrite, modernize, harmonize, or adjust wording/punctuation.
-- No mixing translations (WEB only).
-- Selective Bolding: within the Scripture text, apply <strong> ONLY to the exact words/phrases supplied in the Annotations list. Nothing else gets bolded.
+1) THEOLOGICAL LENS (SITE AUDIT COMPLIANT)
+- All framing, notes, and commentary MUST be consistently Covenantal / Full Preterist.
+- Zero Futurism: If a passage is commonly treated as “still pending,” you MUST state its fulfillment:
+  - NT: in the first-century covenant transition AD 30–70 (explicitly mention AD 70 where applicable).
+  - OT: fulfilled in Christ (Cross/New Covenant) and/or in the covenant transition climaxing in AD 70, without futurist drift.
+- Definitions (locked):
+  - “The End” = end of the Mosaic age (AD 70).
+  - “Coming / Parousia” = Christ’s covenantal vindication/judgment on Jerusalem leading to transition (AD 70).
+  - “Kingdom” = present, settled New Creation reality now.
+- Banned phrasing:
+  - No “already but not yet” language.
+  - No “still to be fulfilled” implication.
+- Audience relevance is mandatory: identify who is addressed and why time-markers are time-bound (e.g., “this generation,” “near,” “soon”).
 
-LINK RULES:
-- Cross-References MUST link to WEB on eBible.org using:
-  https://ebible.org/web/BOOK##.htm (e.g., https://ebible.org/web/ISA40.htm)
-- Prophecy Hub links MUST be internal:
+2) TEXT INTEGRITY (WEB — SOURCE LOCKED) — PRIMARY GATE
+Hard gate: If Scripture cannot be verified as WEB from eBible, do not output guessed text.
+- Scripture MUST be World English Bible (WEB) copied verbatim.
+- Source of truth for Scripture text:
+  https://ebible.org/web/BOOK##.htm (e.g., https://ebible.org/web/MAT03.htm)
+- Prohibitions:
+  - DO NOT paraphrase, rewrite, modernize, harmonize, condense, or adjust wording/punctuation.
+  - No mixing translations (WEB only).
+- Selective Bolding (locked):
+  - Within Scripture text, apply <strong> ONLY to exact words/phrases listed in Annotations.
+  - Nothing else is bolded.
+  - Exact match only (no variants, no partials).
+
+3) LINK RULES (LOCKED)
+- Cross-References MUST link to WEB on eBible using:
+  https://ebible.org/web/BOOK##.htm
+- Prophecy Hub links MUST be internal and formatted exactly:
   <a href="/Bible/Prophecy/index.html#anchor">Theme Name</a>
+- Do not invent external cross-reference sites.
+- Do not invent Prophecy Hub anchors unless explicitly instructed.
 
-FORMAT + TEMPLATE:
+4) FORMAT + TEMPLATE (LOCKED)
 1) Output valid HTML5.
-2) Use the LOCKED Revelation-1 style internal CSS and layout (cards/sections/nav/buttons) — do NOT use external CSS.
-3) Include top navigation and bottom navigation consistent with the locked FPBible standard (Bible Index + Book Index + Previous/Next chapter links).
+2) Use the LOCKED Revelation-1 style internal CSS/layout (cards/sections/nav/buttons).
+   - No external CSS, no framework imports.
+3) Must include top navigation and bottom navigation consistent with FPBible standard:
+   - Bible Index + Book Index + Previous + Next links.
 
-FILE + TITLE RULES:
-- Use correct <title> and <h1> format:
+5) FILE + TITLE RULES (LOCKED)
+- <title> and <h1> MUST match exactly:
   “{Book} {Chapter} — {Short Covenant-Themed Subtitle}”
-- Use correct internal Prev/Next file links consistent with the repo naming scheme for that book.
-- Do NOT invent folder names. If folder naming is unknown, use the existing pattern in that book (e.g., /Bible/{Book}/book1.html) and keep it consistent within the output.
+- Prev/Next internal links MUST match repo naming scheme:
+  - Do NOT invent folder names.
+  - If unknown, follow the existing pattern for that book folder and remain consistent inside the output.
 
-REQUIRED SECTION ORDER (each separated by <hr />):
+6) REQUIRED SECTION ORDER (LOCKED)
+Each section MUST be separated by <hr />. No extra sections inserted.
+
 1. Immediate Context
-   - One short paragraph setting the scene in the book’s covenant-litigation / redemptive-historical flow (no fluff).
+- One short paragraph: covenant-litigation / redemptive-historical scene-setting (no fluff).
 
 2. Scripture (WEB)
-   - Full chapter text in <div class="scripture-text">.
-   - Verse numbers wrapped in <span class="v-num">.
-   - Apply selective bolding only per Annotations list.
+- Full chapter text inside <div class="scripture-text">.
+- Verse numbers wrapped in <span class="v-num">.
+- Apply selective bolding ONLY per Annotations list.
+- Include the eBible source URL for the chapter in a muted note directly under the Scripture heading (not inside Scripture text).
 
 3. Fulfillment Notes (STRICT)
-   - EXACTLY 3–5 lines total.
-   - Each line = ONE sentence only.
-   - No mini-commentary, no quotes, no “maybe.”
-   - Must explicitly sharpen timing where relevant (“this generation,” “near,” “at hand,” “soon,” “in a little while,” etc.).
-   - For OT chapters: state the covenant fulfillment trajectory (Christ, Cross, New Covenant, AD 70) without futurist drift.
+- EXACTLY 3–5 lines total.
+- Each line = exactly one sentence.
+- No quotes, no “maybe,” no mini-commentary.
+- Must sharpen timing where relevant (“this generation,” “near,” “soon,” “at hand,” “in a little while,” etc.).
+- OT chapters MUST state the covenant fulfillment trajectory (Christ → Cross → New Covenant → AD 70) without futurist drift.
 
 4. Annotations
-   - Gray/soft box listing key terms and brief definitions (1–2 lines each).
-   - Include covenant idioms relevant to the chapter (e.g., “heaven and earth,” “coming on clouds,” “day of the LORD,” “wilderness,” “vineyard,” “outer darkness,” “Babylon,” “Beast,” etc.) without bloated essays.
-   - The terms/phrases listed here define the ONLY phrases that receive <strong> in Scripture.
+- Gray/soft box listing key terms with brief definitions (1–2 lines each).
+- Include relevant covenant idioms for the chapter where applicable.
+- The terms/phrases listed here define the ONLY phrases that receive <strong> in Scripture.
+- No multi-paragraph essays.
 
 5. Fulfillment Commentary (DEPTH REQUIRED)
-   - Minimum 700 words (900+ preferred if the chapter is dense).
-   - Break into numbered subheadings.
-   - Must connect imagery to covenant realities: Law/Temple/Priesthood/Sacrifice/Israel’s leadership/judgment-transfer/New Creation access.
-   - Must state the first-century resolution plainly (AD 70 context where applicable).
-   - Must avoid repeating the Fulfillment Notes verbatim.
-   - Must explicitly reject futurist assumptions when the passage is commonly misread futuristically.
+- Minimum 700 words (900+ preferred for dense chapters).
+- Break into numbered subheadings.
+- Must connect imagery to covenant realities:
+  Law / Temple / Priesthood / Sacrifice / Israel’s leadership / judgment-transfer / New Creation access.
+- Must state the first-century resolution plainly (AD 70 context where applicable).
+- Must NOT repeat Fulfillment Notes verbatim.
+- Must explicitly reject futurist assumptions where commonly misread futuristically.
+- Tone rule: explain calmly; do not spar or mock.
 
 6. Prophecy Hub Links
-   - Bullet list of exactly 3 relevant internal themes (use existing hub anchors; do not invent new anchors unless instructed).
+- Bullet list of exactly 3 relevant internal themes (existing anchors only unless instructed).
 
 7. Cross-References
-   - Bullet list of exactly 3 WEB links (OT/NT mix as appropriate).
+- Bullet list of exactly 3 WEB links (OT/NT mix as appropriate).
 
 8. New Creation Reality
-   - Short, grounded: what this means now (presence, access, identity, Spirit-life).
-   - No fear-based application. No condemnation tone.
+- Short, grounded “now” meaning: presence, access, identity, Spirit-life.
+- No fear-based application. No condemnation tone.
 
 9. Reflection
-   - One challenging devotional question (not moralistic, not fear-based).
+- One challenging devotional question.
+- Not moralistic. Not fear-based.
 
-10. Footer
-   - Prev/Next + Bible Index + Book Index links
-   - Official Ko-fi button: https://ko-fi.com/B0B61QC1BU
-   - Extended WEB attribution note (as per site standard)
+10. Footer (LOCKED)
+- Prev/Next + Bible Index + Book Index links.
+- Official Ko-fi button:
+  https://ko-fi.com/B0B61QC1BU
+- Extended WEB attribution note (as per site standard).
 
-QUALITY CONTROL (HARD FAIL CONDITIONS):
-- If Scripture text is not verifiably WEB from eBible, do NOT output guessed Scripture.
-- Do NOT output paraphrased Scripture.
-- Do NOT include futurist “still pending” implications.
-- Do NOT exceed 5 Fulfillment Notes lines.
-- Do NOT bold anything in Scripture that is not listed in Annotations.
+7) QUALITY CONTROL — HARD FAIL CONDITIONS (PASS/FAIL)
+Hard fail if ANY of the following occur:
+- Scripture text is not verifiably WEB from eBible.
+- Any Scripture is paraphrased or edited.
+- Any futurist “still pending” implication remains.
+- Fulfillment Notes exceed 5 lines or fall below 3 lines.
+- Any <strong> appears in Scripture that is not an exact Annotations phrase.
+- Wrong number of Prophecy Hub links (must be exactly 3) or Cross-References (must be exactly 3).
+- Missing required sections or wrong section order.
+- Branding rule violated (any “Paraphrase Bible/Paraphrase” appears).
 
 Task:
 Generate the full HTML for: [BOOK NAME] [CHAPTER NUMBER].
 Also include:
-- Correct <title> and <h1> format: “{Book} {Chapter} — [Short Covenant-Themed Subtitle]”
+- Correct <title> and <h1> format:
+  “{Book} {Chapter} — {Short Covenant-Themed Subtitle}”
 - Correct internal Prev/Next file links consistent with the repo naming scheme.
