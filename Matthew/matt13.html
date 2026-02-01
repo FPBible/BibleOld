@@ -2,221 +2,333 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Matthew 13 — The Parables of the Kingdom and the Separation of the Ages</title>
+  <title>Matthew 13 — Parables of the Covenant Harvest</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
-    body{ font-family: system-ui, sans-serif; line-height: 1.6; margin: 1.5em; max-width: 900px; }
-    h1,h2,h3{ margin-top: 1.4em; margin-bottom: 0.4em; }
-    nav{ margin: 1em 0; font-size: 0.95em; }
-    nav a{ margin-right: 0.6em; text-decoration: underline; }
-    p{ margin: 0.6em 0; }
-    hr{ margin: 2em 0; border-top: 1px solid rgba(0,0,0,0.12); }
-    ul{ margin: 0.6em 0 0.8em 1.2em; }
-    li{ margin: 0.35em 0; }
-    .note{ font-size: 0.95em; opacity: 0.9; }
+    :root{
+      --max: 980px;
+      --pad: 16px;
+      --line: rgba(0,0,0,0.12);
+      --line2: rgba(0,0,0,0.18);
+      --muted: rgba(0,0,0,0.72);
+      --soft: rgba(0,0,0,0.04);
+      --soft2: rgba(0,0,0,0.06);
+      --radius: 14px;
+    }
+    body{
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.65;
+      margin: 0;
+      color: #111;
+      background: #fff;
+    }
+    .wrap{
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 18px var(--pad) 44px;
+    }
+    h1{ font-size: 2.05rem; margin: 0.2em 0 0.2em; }
+    h2{ font-size: 1.35rem; margin: 1.2em 0 0.5em; padding-bottom: 0.2em; border-bottom: 1px solid var(--line); }
+    h3{ font-size: 1.08rem; margin: 1.0em 0 0.35em; }
+    p{ margin: 0.65em 0; }
+    hr{ margin: 1.8em 0; border: 0; border-top: 1px solid var(--line); }
+    a{ color:#111; text-decoration: underline; }
+    .muted{ color: var(--muted); }
+    .topnav, .botnav{
+      display:flex; flex-wrap:wrap; gap:10px;
+      align-items:center;
+      padding: 10px 12px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+    }
+    .topnav a, .botnav a{ text-decoration: underline; }
+    .pill{
+      display:inline-block;
+      padding: 3px 10px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--soft);
+      font-size: 0.92rem;
+    }
+    .card{
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      padding: 12px 14px;
+    }
+    .scripture-text{
+      font-size: 1.06rem;
+    }
+    .v-num{
+      font-weight: 700;
+      font-size: 0.75em;
+      vertical-align: super;
+      opacity: 0.55;
+      margin-right: 4px;
+      white-space: nowrap;
+    }
+    .annotation-block{
+      background: var(--soft);
+      border-left: 3px solid var(--line2);
+      padding: 10px 14px;
+      border-radius: 10px;
+    }
+    .annotation-item{
+      margin: 0.35em 0;
+      font-size: 0.98rem;
+    }
+    .notes-list{
+      margin: 0.5em 0 0.3em 1.1em;
+    }
+    .notes-list li{ margin: 0.35em 0; }
+    .kofi{
+      margin-top: 14px;
+      display:flex;
+      justify-content:flex-start;
+    }
+    .footnote{
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
   </style>
 </head>
 <body>
+  <a id="top"></a>
+  <div class="wrap">
 
-<a id="top"></a>
+    <nav class="topnav" aria-label="Top navigation">
+      <a href="/Bible/index.html">FPBible Index</a>
+      <span class="muted">/</span>
+      <a href="index.html">Book Index</a>
+      <span class="muted">/</span>
+      <a href="preface.html">Preface</a>
+      <span class="muted">/</span>
+      <a href="appendix.html">Appendix</a>
+      <span class="muted">/</span>
+      <a href="matt12.html">Prev</a>
+      <span class="muted">/</span>
+      <a href="matt14.html">Next</a>
+      <span class="muted">/</span>
+      <a href="/Bible/Prophecy/index.html">Prophecy Hub</a>
+      <span class="muted">/</span>
+      <a href="#top">Top</a>
+      <span class="pill">WEB text (public domain)</span>
+    </nav>
 
-<nav>
-  <a href="/Bible/index.html">FPBible Index</a> |
-  <a href="index.html">Book Index</a> |
-  <a href="preface.html">Preface</a> |
-  <a href="appendix.html">Appendix</a> |
-  <a href="matt12.html">Prev</a> |
-  <a href="matt14.html">Next</a> |
-  <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> |
-  <a href="#top">Top</a>
-</nav>
+    <header class="card" style="margin-top:14px;">
+      <h1>Matthew 13 — Parables of the Covenant Harvest</h1>
+      <p class="muted" style="margin:0.35em 0 0;">
+        Jesus’ parables here aren’t “timeless moral stories” first — they are covenant-reality disclosures aimed at Israel’s crisis moment, exposing what was about to be separated, gathered, and burned in the end-of-age transition.
+      </p>
+    </header>
 
-<h1>Matthew 13</h1>
-<h2>The Parables of the Kingdom and the Separation of the Ages</h2>
+    <hr />
 
-<p class="note">
-Original text:
-<a href="https://www.biblegateway.com/passage/?search=Matthew+13&version=LSV" target="_blank">Matthew 13 — LSV</a>
-</p>
+    <section>
+      <h2>Immediate Context</h2>
+      <p>
+        After rising conflict with Israel’s leadership, Jesus turns to parables to both reveal and conceal: the Kingdom is present and advancing, yet the old covenant house is becoming judicially hardened, moving toward a decisive harvest in that generation’s covenant transition.
+      </p>
+    </section>
 
-<hr />
+    <hr />
 
-<h2>Immediate Context</h2>
-<p>
-In Matthew 13, Jesus shifts His teaching style to parables. 
-This isn't to make the message "simpler," but to hide the mechanics of the Kingdom transition from those clinging to the Old system while revealing it to the "babes" of the New.
-</p>
-<p>
-This chapter describes the <strong>growth, mystery, and eventual harvest</strong> that would conclude the Mosaic Age in AD 70.
-</p>
+    <section>
+      <h2>Scripture (WEB)</h2>
+      <div class="scripture-text card">
+        <p><span class="v-num">1</span>On that day Jesus went out of the house and sat by the seaside. <span class="v-num">2</span>Great multitudes gathered to him, so that he entered into a boat and sat; and all the multitude stood on the beach. <span class="v-num">3</span>He spoke to them many things in parables, saying, “Behold, a farmer went out to sow. <span class="v-num">4</span>As he sowed, some seeds fell by the roadside, and the birds came and devoured them. <span class="v-num">5</span>Others fell on rocky ground, where they didn’t have much soil, and immediately they sprang up, because they had no depth of earth. <span class="v-num">6</span>When the sun had risen, they were scorched. Because they had no root, they withered away. <span class="v-num">7</span>Others fell among thorns. The thorns grew up and choked them. <span class="v-num">8</span>Others fell on good soil and yielded fruit: some one hundred times as much, some sixty, and some thirty. <span class="v-num">9</span>He who has ears to hear, let him hear.”</p>
 
-<hr />
+        <p><span class="v-num">10</span>The disciples came, and said to him, “Why do you speak to them in parables?”</p>
 
-<h2>Fulfilled Paraphrase</h2>
+        <p><span class="v-num">11</span>He answered them, “To you it is given to know the <strong>mysteries of the Kingdom of Heaven</strong>, but it is not given to them. <span class="v-num">12</span>For whoever has, to him will be given, and he will have abundance; but whoever doesn’t have, from him will be taken away even that which he has. <span class="v-num">13</span>Therefore I speak to them in parables, because seeing they don’t see, and hearing, they don’t hear, neither do they understand. <span class="v-num">14</span>In them the prophecy of Isaiah is fulfilled, which says,</p>
 
-<h3>The Sower: Reception of the New Word (13:1–23)</h3>
-<p>
-Jesus sat by the sea and taught the crowds about a sower. 
-The seed is the Word of the Kingdom. Some falls on hard hearts, some on shallow soil, and some among the thorns of "old world" anxieties. 
-But the seed that falls on good ground produces a massive harvest of the New Creation.
-</p>
+        <p>‘By hearing you will hear,<br />and will in no way understand;<br /><br />Seeing you will see,<br /><br />and will in no way perceive;<br /><br /><span class="v-num">15</span>for this people’s heart has grown callous,<br /><br />their ears are dull of hearing,<br /><br />and they have closed their eyes;<br /><br />or else perhaps they might perceive with their eyes,<br /><br />hear with their ears,<br /><br />understand with their heart,<br /><br />and would turn again,<br /><br />and I would heal them.’* Isaiah 6:9-10</p>
 
-<p class="note">
-<strong>Fulfillment note:</strong> The "Word" is the announcement that the Old is passing and the New has arrived. Success is determined by the heart’s willingness to let the "Old" go.
-</p>
+        <p><span class="v-num">16</span>“But blessed are your eyes, for they see; and your ears, for they hear. <span class="v-num">17</span>For most certainly I tell you that many prophets and righteous men desired to see the things which you see, and didn’t see them; and to hear the things which you hear, and didn’t hear them.</p>
 
-<hr />
+        <p><span class="v-num">18</span>“Hear, then, the parable of the farmer. <span class="v-num">19</span>When anyone hears the word of the Kingdom and doesn’t understand it, the evil one comes and snatches away that which has been sown in his heart. This is what was sown by the roadside. <span class="v-num">20</span>What was sown on the rocky places, this is he who hears the word and immediately with joy receives it; <span class="v-num">21</span>yet he has no root in himself, but endures for a while. When oppression or persecution arises because of the word, immediately he stumbles. <span class="v-num">22</span>What was sown among the thorns, this is he who hears the word, but the cares of <strong>this age</strong> and the deceitfulness of riches choke the word, and he becomes unfruitful. <span class="v-num">23</span>What was sown on the good ground, this is he who hears the word and understands it, who most certainly bears fruit and produces, some one hundred times as much, some sixty, and some thirty.”</p>
 
-<h3>The Wheat and the Tares: The Overlapping Ages (13:24–30, 36–43)</h3>
-<p>
-He told of a man who sowed good seed, but an enemy sowed weeds (tares) among them. 
-He commanded they grow together until the <strong>completion of the age</strong>. 
-At the harvest, the weeds are gathered for burning, and the wheat is gathered into the barn.
-</p>
+        <p><span class="v-num">24</span>He set another parable before them, saying, “The Kingdom of Heaven is like a man who sowed good seed in his field, <span class="v-num">25</span>but while people slept, his enemy came and sowed darnel weeds‡ darnel is a weed grass (probably bearded darnel or lolium temulentum) that looks very much like wheat until it is mature, when the difference becomes very apparent. also among the wheat, and went away. <span class="v-num">26</span>But when the blade sprang up and produced grain, then the darnel weeds appeared also. <span class="v-num">27</span>The servants of the householder came and said to him, ‘Sir, didn’t you sow good seed in your field? Where did these darnel weeds come from?’ <span class="v-num">28</span>“He said to them, ‘An enemy has done this.’</p>
 
-<p class="note">
-<strong>Fulfillment note:</strong> The "harvest" is the AD 70 transition. The "end of the age" is the end of the Jewish Age, where the "tares" (apostate Israel) were burned in the fire of judgment and the "wheat" (the church) was vindicated.
-</p>
+        <p>“The servants asked him, ‘Do you want us to go and gather them up?’</p>
 
-<hr />
+        <p><span class="v-num">29</span>“But he said, ‘No, lest perhaps while you gather up the darnel weeds, you root up the wheat with them. <span class="v-num">30</span>Let both grow together until the harvest, and in the harvest time I will tell the reapers, “First, gather up the darnel weeds, and bind them in bundles to burn them; but gather the wheat into my barn.” ’ ”</p>
 
-<h3>Mustard Seed and Leaven: The Invisible Expansion (13:31–35)</h3>
-<p>
-The Kingdom is like a tiny mustard seed that grows into a massive tree, or leaven that transforms a whole loaf. 
-It starts small and unnoticed within the old system but eventually replaces it entirely.
-</p>
+        <p><span class="v-num">31</span>He set another parable before them, saying, “The Kingdom of Heaven is like a grain of mustard seed which a man took, and sowed in his field, <span class="v-num">32</span>which indeed is smaller than all seeds. But when it is grown, it is greater than the herbs and becomes a tree, so that the birds of the air come and lodge in its branches.”</p>
 
-<p class="note">
-<strong>Fulfillment note:</strong> The Kingdom doesn't come with a physical observation that the Pharisees could see; it grows as an internal, spiritual reality that eventually covers the earth.
-</p>
+        <p><span class="v-num">33</span>He spoke another parable to them. “The Kingdom of Heaven is like yeast which a woman took and hid in three measures‡ literally, three sata. Three sata is about 39 liters or a bit more than a bushel of meal, until it was all leavened.”</p>
 
-<hr />
+        <p><span class="v-num">34</span>Jesus spoke all these things in parables to the multitudes; and without a parable, he didn’t speak to them, <span class="v-num">35</span>that it might be fulfilled which was spoken through the prophet, saying,</p>
 
-<h3>The Treasure and the Pearl: The Value of the Transition (13:44–46)</h3>
-<p>
-The Kingdom is like a treasure hidden in a field or a pearl of great price. 
-When a person realizes what the New Covenant is worth, they joyfully sell everything they had in the "Old World" to possess the "New."
-</p>
+        <p>“I will open my mouth in parables;<br />I will utter things hidden from the foundation of the world.”* Psalms 78:2</p>
 
-<p class="note">
-<strong>Fulfillment note:</strong> Leaving the Old Covenant identity was "selling everything," but the "New Creation" is the ultimate treasure.
-</p>
+        <p><span class="v-num">36</span>Then Jesus sent the multitudes away, and went into the house. His disciples came to him, saying, “Explain to us the parable of the darnel weeds of the field.”</p>
 
-<hr />
+        <p><span class="v-num">37</span>He answered them, “He who sows the good seed is the Son of Man, <span class="v-num">38</span>the field is the world, the good seeds are the children of the Kingdom, and the darnel weeds are the children of the evil one. <span class="v-num">39</span>The enemy who sowed them is the devil. The harvest is the <strong>end of the age</strong>, and the reapers are angels. <span class="v-num">40</span>As therefore the darnel weeds are gathered up and burned with fire; so will it be at the end of this age. <span class="v-num">41</span>The Son of Man will send out his angels, and they will gather out of his Kingdom all things that cause stumbling and those who do iniquity, <span class="v-num">42</span>and will cast them into the furnace of fire. There will be <strong>weeping and gnashing of teeth</strong>. <span class="v-num">43</span>Then the righteous will shine like the sun in the Kingdom of their Father. He who has ears to hear, let him hear.</p>
 
-<h3>The Dragnet: The Final Sorting (13:47–50)</h3>
-<p>
-The Kingdom is like a net cast into the sea, gathering all kinds. 
-When it is full, the good are kept and the bad are thrown away. 
-"So it will be at the <strong>completion of the age</strong>."
-</p>
+        <p><span class="v-num">44</span>“Again, the Kingdom of Heaven is like <strong>treasure hidden in the field</strong>, which a man found and hid. In his joy, he goes and sells all that he has and buys that field.</p>
 
-<p class="note">
-<strong>Fulfillment note:</strong> This refers to the historical separation of the "Two Jerusalems" during the Roman siege—one was preserved, the other discarded.
-</p>
+        <p><span class="v-num">45</span>“Again, the Kingdom of Heaven is like a man who is a merchant seeking fine pearls, <span class="v-num">46</span>who having found one <strong>pearl of great price</strong>, he went and sold all that he had and bought it.</p>
 
-<hr />
+        <p><span class="v-num">47</span>“Again, the Kingdom of Heaven is like a dragnet that was cast into the sea and gathered some fish of every kind, <span class="v-num">48</span>which, when it was filled, fishermen drew up on the beach. They sat down and gathered the good into containers, but the bad they threw away. <span class="v-num">49</span>So it will be in the end of the world.§ or, end of the age. The angels will come and separate the wicked from among the righteous, <span class="v-num">50</span>and will cast them into the furnace of fire. There will be weeping and gnashing of teeth.” <span class="v-num">51</span>Jesus said to them, “Have you understood all these things?” They answered him, “Yes, Lord.”</p>
 
-<h3>The New and the Old (13:51–58)</h3>
-<p>
-Jesus asked, "Have you understood all these things?" They said, "Yes, Lord." 
-He said, "Every scribe instructed in the Kingdom is like a householder who brings out of his treasure things <strong>New and Old</strong>." 
-He then went to His hometown, but they rejected Him. He did few works there because of their unbelief.
-</p>
+        <p><span class="v-num">52</span>He said to them, “Therefore every scribe who has been made a disciple in the Kingdom of Heaven is like a man who is a householder, who brings out of his treasure new and old things.”</p>
 
-<p class="note">
-<strong>Fulfillment note:</strong> The "Old" (the shadows) is only understood through the "New" (the substance). Rejection of the New (as in Nazareth) cancels the experience of the Kingdom’s power.
-</p>
+        <p><span class="v-num">53</span>When Jesus had finished these parables, he departed from there. <span class="v-num">54</span>Coming into his own country, he taught them in their synagogue, so that they were astonished and said, “Where did this man get this wisdom and these mighty works? <span class="v-num">55</span>Isn’t this the carpenter’s son? Isn’t his mother called Mary, and his brothers James, Joses, Simon, and Judas?‡ or, Judah <span class="v-num">56</span>Aren’t all of his sisters with us? Where then did this man get all of these things?” <span class="v-num">57</span>They were offended by him. But Jesus said to them, “A prophet is not without honor, except in his own country and in his own house.” <span class="v-num">58</span>He didn’t do many mighty works there because of their unbelief.</p>
+      </div>
+    </section>
 
-<hr />
+    <hr />
 
-<h2>Fulfillment Commentary</h2>
+    <section>
+      <h2>Fulfillment Notes</h2>
+      <ul class="notes-list">
+        <li>The parables disclose a real, present Kingdom while judicially hardening the old covenant audience moving toward crisis.</li>
+        <li>The “harvest” and “end of the age” language targets the Mosaic age’s closing phase, not the end of the physical universe.</li>
+        <li>The “weeping and gnashing of teeth” imagery belongs to covenant-judgment language realized in the first-century downfall of the old order.</li>
+        <li>“This age” in the sower explanation is the still-active Mosaic world that was being outgrown and replaced by the New Covenant.</li>
+        <li>The Kingdom’s “hidden treasure” value exposes what Israel’s leaders missed, as the covenant center shifted from Temple to Christ.</li>
+      </ul>
+    </section>
 
-<h3>1) The "End of the Age" is Not the End of the World</h3>
-<p>
-The Greek word <em>aion</em> used throughout Matthew 13 refers to an "age," specifically the Mosaic Age. 
-The "harvest" Jesus describes is not a future end of the physical planet, but the <strong>Covenantal Harvest</strong> of AD 70, 
-where the Old system was "burned" and the New Creation was fully established.
-</p>
+    <hr />
 
-<h3>2) Parables as a Judicial Act</h3>
-<p>
-Jesus uses parables to fulfill the prophecy of Isaiah: "Hearing you will hear and shall not understand." 
-By teaching in parables, Jesus was legally closing the eyes of a generation that had already hardened its heart against the New Covenant light.
-</p>
+    <section>
+      <h2>Annotations</h2>
+      <div class="annotation-block">
+        <div class="annotation-item"><strong>mysteries of the Kingdom of Heaven</strong>: The once-hidden covenant realities now unveiled in Christ during the transition (not secret codes, but disclosed meaning).</div>
+        <div class="annotation-item"><strong>this age</strong>: The Mosaic covenant world still operating in Jesus’ ministry, nearing its termination in the first-century shift.</div>
+        <div class="annotation-item"><strong>end of the age</strong>: The close of the Mosaic age (the covenant order centered on Temple/Law), resolved in the AD 30–70 transition.</div>
+        <div class="annotation-item"><strong>weeping and gnashing of teeth</strong>: Prophetic-covenantal judgment language for exclusion and collapse as the old system is removed.</div>
+        <div class="annotation-item"><strong>treasure hidden in the field</strong>: The Kingdom’s true value concealed under ordinary appearances during the overlap of covenants.</div>
+        <div class="annotation-item"><strong>pearl of great price</strong>: The surpassing worth of Christ’s Kingdom over inherited status, tradition, and Temple-centered identity.</div>
+      </div>
+    </section>
 
-<h3>3) The Mustard Seed Reality</h3>
-<p>
-The Kingdom didn't start as a global empire; it started as a small seed in the soil of Israel. 
-The Finished Work teaches us that the Kingdom’s victory is inevitable and organic—it doesn't require "help" from human politics; it grows by its own Life-power.
-</p>
+    <hr />
 
-<h3>4) The "Furnace of Fire"</h3>
-<p>
-In the context of Matthew 13, the "furnace of fire" corresponds to the literal burning of Jerusalem and the Temple. 
-Historian Josephus records the literal "weeping and gnashing of teeth" that occurred as the city was consumed, 
-marking the end of the "tares" in the holy field.
-</p>
+    <section>
+      <h2>Fulfillment Commentary</h2>
 
-<h3>5) Treasure and Pearl</h3>
-<p>
-To the first-century Jew, the "field" was the Law. Finding the "treasure" (Christ) required "selling" their legalistic inheritance. 
-In the Finished Work, we recognize that no part of our old self or old religious effort is worth keeping compared to the New Life.
-</p>
+      <h3>1) Why Parables Here: Covenant Disclosure and Covenant Blindness</h3>
+      <p>
+        Matthew 13 is not a random “teaching day.” It is a strategic turn in Matthew’s covenant-litigation narrative. Opposition has hardened, and Jesus now teaches in parables so that two things happen at once: the faithful remnant receives the unveiled meaning of the Kingdom, while the covenant establishment is confirmed in its blindness. That dual function is stated plainly: “To you it is given… but it is not given to them.” In other words, the parables are not merely illustrations; they are judicial instruments in a lawsuit.
+      </p>
+      <p>
+        Isaiah 6 is the background: a people hearing but not understanding. In covenant terms, Israel’s leadership is being handed over to the consequence of long-standing resistance. This is not “God hiding truth from sincere seekers.” It is God confirming an already chosen posture—protecting the remnant, exposing the hardened, and moving the story toward resolution. Matthew’s point is timeline-heavy: the Kingdom is arriving in real time, and the old house is being weighed, found wanting, and prepared for removal.
+      </p>
 
-<hr />
+      <h3>2) The Sower: The Kingdom Word in a Land Undergoing Transition</h3>
+      <p>
+        The sower parable is often flattened into generic “be a good listener.” But Jesus Himself frames it as “the word of the Kingdom.” The soils represent covenant-reception conditions in Israel as the Messiah confronts the old order. The “roadside” is not merely inattentiveness; it is the beaten path of tradition where the word cannot penetrate because the surface is already hardened by another narrative. The “rocky ground” is the shallow enthusiasm that collapses under the pressure that inevitably comes when you detach from the old covenant identity. The “thorns” are named: “the cares of this age and the deceitfulness of riches.” In first-century Judea, “this age” was not a vague psychological state—it was the covenant environment still governed by Temple authority, social cost, and the looming political storm.
+      </p>
+      <p>
+        That matters because Matthew is showing how the Kingdom advances inside a covenant world that is about to be judged. The word produces fruit, but the fruit is not merely private virtue; it is the formation of a New Covenant people inside the shell of the old. This is why persecution is baked into the explanation: receiving the Kingdom word in that period carried immediate social and religious consequences. The parable is an x-ray of covenant transition—who can receive the new without retreating into the old.
+      </p>
 
-<h2>Prophecy Hub Links</h2>
-<ul>
-  <li><strong>The End of the Age</strong> — <a href="/Bible/Prophecy/index.html">Sunteleia of the Mosaic Age</a></li>
-  <li><strong>The Parable of the Tares</strong> — <a href="/Bible/Prophecy/index.html">The Separation of AD 70</a></li>
-  <li><strong>Kingdom Growth</strong> — <a href="/Bible/Prophecy/index.html">The Mustard Seed Expansion</a></li>
-</ul>
+      <h3>3) Wheat and Weeds: Separation Before the Age Ends</h3>
+      <p>
+        The wheat-and-weeds parable is the clearest “end-of-age” text in the chapter, and Jesus interprets it. The key phrase is “The harvest is the end of the age.” Matthew does not allow you to convert that into “end of the planet.” The issue is covenantal: as the Kingdom grows, two kinds of “children” exist within the same field—true Kingdom heirs and those aligned with the opposing power. The point is not that God is confused about who is who; the point is timing and public vindication.
+      </p>
+      <p>
+        In the AD 30–70 overlap, the old covenant order still had institutional presence, and the New Covenant community was often treated as the deviant sect. The parable says: don’t force a premature, violent sorting; let the story run to its appointed covenant harvest. Then, at the end of the age, the separation becomes undeniable—stumbling blocks are removed, lawless leadership is exposed, and the righteous are publicly shown as the true covenant people. That’s why the language of “furnace of fire” and “weeping and gnashing of teeth” appears. This is prophetic judgment idiom, not a metaphysical travel brochure.
+      </p>
+      <p>
+        In covenant terms, “fire” is routinely the imagery of God’s consuming judgment against a system. Here it fits the historical trajectory Matthew is building toward: Jerusalem’s downfall and the removal of the Temple-centered world. The righteous “shining like the sun” is not about finally becoming righteous two thousand years later; it is about vindication and visibility when the old order that slandered them collapses. The Kingdom does not start after the fire; it is present before, and the fire removes what resisted it.
+      </p>
 
-<hr />
+      <h3>4) Mustard Seed and Leaven: The Quiet Replacement of the Old Center</h3>
+      <p>
+        The mustard seed and leaven parables describe how the Kingdom advances: not by grabbing the old levers of power, but by growing until the entire environment is changed. This is crucial for “zero futurism.” The Kingdom is not postponed; it is active, expanding, and inevitable. The seed begins “smaller than all seeds,” yet becomes a tree where birds lodge. In biblical imagery, birds lodging can symbolize nations finding refuge, or simply the public, visible reality of a realm large enough to host life.
+      </p>
+      <p>
+        The leaven parable is especially covenantal: leaven hidden in meal until “it was all leavened.” During the overlap, New Covenant life was “hidden” in plain sight—Christ in His people—while the Temple still stood and the old age still looked dominant. But leaven works from within. The point is not that the Kingdom becomes worldly empire; the point is that the covenant center shifts irreversibly from external structure to internal life. In the end-of-age resolution, the old center is removed, and what was “hidden” is revealed as the true, lasting reality.
+      </p>
 
-<h2>Cross-References</h2>
-<ul>
-  <li><strong>Isaiah’s Judicial Blindness</strong> — <a href="https://www.biblegateway.com/passage/?search=Isaiah+6&version=LSV" target="_blank">Isaiah 6:9-10</a></li>
-  <li><strong>The Burning of the Wicked</strong> — <a href="https://www.biblegateway.com/passage/?search=Malachi+4&version=LSV" target="_blank">Malachi 4:1</a></li>
-  <li><strong>The New and the Old</strong> — <a href="https://www.biblegateway.com/passage/?search=Song+of+Solomon+7%3A13&version=LSV" target="_blank">Song of Solomon 7:13</a></li>
-</ul>
+      <h3>5) Treasure, Pearl, Net: Covenant Value, Covenant Choice, Covenant Outcome</h3>
+      <p>
+        The “treasure hidden in the field” and “pearl of great price” confront Israel’s cost of transition. The Kingdom is not an add-on to Torah identity; it is the true inheritance that relativizes everything else. The “selling all” is not a generic call to poverty; it is a covenant re-centering—letting go of the old claims to security (status, lineage pride, Temple confidence) to take hold of Christ as the substance.
+      </p>
+      <p>
+        The dragnet parable returns to separation. Again, the point is not cosmic annihilation but covenant outcome: good gathered, bad thrown away, and judgment imagery describing the close of an age. Notice how Matthew 13 keeps repeating the same architecture: Kingdom present → mixed environment during overlap → decisive end-of-age separation → public vindication of the righteous. That is exactly the storyline of Matthew as a whole, culminating in the removal of the old covenant world and the settled New Creation reality.
+      </p>
 
-<hr />
+      <h3>6) “New and Old”: What a Kingdom-Trained Scribe Actually Does</h3>
+      <p>
+        The final line about a scribe trained for the Kingdom is a mission statement for Matthew’s Gospel itself. “New and old” is not contradiction; it is fulfillment. The old is not trashed as meaningless; it is re-read in its true trajectory, now that the King has arrived. That’s the FPBible posture: honor the text, refuse futurist drift, and insist on first-century resolution where the text demands it.
+      </p>
+      <p>
+        In practice, Matthew 13 teaches that parables are covenant instruments: they reveal Christ’s Kingdom as present and advancing, they explain why Israel’s leadership is hardening, and they announce a near harvest that closes an age. The outcome is not Christians living under threat; it is the end of threat from the old covenant condemnation system. The Kingdom stands. The field has been harvested in its covenant sense. The treasure is owned. The leaven has worked through the whole.
+      </p>
+    </section>
 
-<h2>New Creation Reality</h2>
-<p>
-Matthew 13 shows that we are the "wheat" gathered into the safety of the New Covenant "barn." 
-We don't live in fear of a future "end of the world" harvest; we live from the reality that the age of shadows has already been burned away. 
-We are the "good ground" where the Finished Work is producing Life.
-</p>
+    <hr />
 
-<hr />
+    <section>
+      <h2>Prophecy Hub Links</h2>
+      <ul class="notes-list">
+        <li><a href="/Bible/Prophecy/index.html#end-of-the-age">The End of the Age</a></li>
+        <li><a href="/Bible/Prophecy/index.html#kingdom-parables">Kingdom Parables</a></li>
+        <li><a href="/Bible/Prophecy/index.html#weeping-gnashing">Weeping &amp; Gnashing of Teeth</a></li>
+      </ul>
+    </section>
 
-<h2>Reflection</h2>
-<p>
-Am I still trying to "grow" as a tare (by religious effort), or am I resting as "wheat" in the Father’s field?
-</p>
-<p>
-Do I see the value of the New Creation as a "treasure" worth selling all my old identities for?
-</p>
+    <hr />
 
-<hr />
+    <section>
+      <h2>Cross-References</h2>
+      <ul class="notes-list">
+        <li><a href="https://ebible.org/eng-web/ISA06.htm" target="_blank" rel="noopener">Isaiah 6:9–10 (WEB)</a></li>
+        <li><a href="https://ebible.org/eng-web/PSA78.htm" target="_blank" rel="noopener">Psalm 78:2 (WEB)</a></li>
+        <li><a href="https://ebible.org/eng-web/DAN12.htm" target="_blank" rel="noopener">Daniel 12 (WEB)</a></li>
+      </ul>
+    </section>
 
-<nav>
-  <a href="/Bible/index.html">FPBible Index</a> |
-  <a href="index.html">Book Index</a> |
-  <a href="preface.html">Preface</a> |
-  <a href="appendix.html">Appendix</a> |
-  <a href="matt12.html">Prev</a> |
-  <a href="matt14.html">Next</a> |
-  <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> |
-  <a href="#top">Top</a>
-</nav>
+    <hr />
 
-<a href="https://ko-fi.com/B0B61QC1BU" target="_blank">
-  <img height="36" src="https://storage.ko-fi.com/cdn/kofi5.png?v=6" alt="Buy Me a Coffee" />
-</a>
+    <section>
+      <h2>New Creation Reality</h2>
+      <p>
+        You are not living in an “age of suspense.” The Kingdom Jesus described is present, settled reality—Christ’s life in His people—so your fruit is not performance to earn standing, but life expressing itself from union, access, and Spirit-indwelling.
+      </p>
+    </section>
 
+    <hr />
+
+    <section>
+      <h2>Reflection</h2>
+      <p>
+        Where am I still treating the Kingdom as a “hidden add-on” instead of the treasure that reorders everything—identity, security, and what I call “worth it”?
+      </p>
+    </section>
+
+    <hr />
+
+    <footer class="card">
+      <nav class="botnav" aria-label="Bottom navigation">
+        <a href="/Bible/index.html">FPBible Index</a>
+        <span class="muted">/</span>
+        <a href="index.html">Book Index</a>
+        <span class="muted">/</span>
+        <a href="matt12.html">Prev</a>
+        <span class="muted">/</span>
+        <a href="matt14.html">Next</a>
+        <span class="muted">/</span>
+        <a href="#top">Top</a>
+      </nav>
+
+      <div class="kofi">
+        <a href="https://ko-fi.com/B0B61QC1BU" target="_blank" rel="noopener">
+          <img height="36" style="border:0;height:36px;" src="https://storage.ko-fi.com/cdn/kofi5.png?v=6" alt="Ko-fi" />
+        </a>
+      </div>
+
+      <p class="footnote" style="margin-top:12px;">
+        Scripture text is from the <strong>World English Bible (WEB)</strong>, public domain. Sourced via eBible.org (eng-web). You may copy and share the WEB freely.
+      </p>
+    </footer>
+
+  </div>
 </body>
 </html>
