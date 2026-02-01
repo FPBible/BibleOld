@@ -2,185 +2,318 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Matthew 6 — Kingdom Practices</title>
+  <title>Matthew 6 — True Righteousness in the Father’s Presence</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
-    /* INTERNAL CSS - GUARANTEED TO WORK INSTANTLY */
-    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; margin: 1.5em auto; padding: 0 16px; max-width: 900px; color: #111; background: #fff; }
-    h1, h2, h3 { margin-top: 1.4em; margin-bottom: 0.4em; }
-    h1 { font-size: 2.1rem; } h2 { font-size: 1.5rem; border-bottom: 1px solid rgba(0,0,0,0.12); padding-bottom: 0.2em; } h3 { font-size: 1.2rem; }
-    nav { margin: 1em 0; font-size: 0.95em; } nav a { margin-right: 0.6em; text-decoration: underline; color: #111; }
-    hr { margin: 2em 0; border: 0; border-top: 1px solid rgba(0,0,0,0.12); }
-    ul { margin: 0.6em 0 0.8em 1.2em; } li { margin: 0.35em 0; }
-    .scripture-text { font-family: inherit; font-size: 1.1em; margin-bottom: 1.5em; }
-    .v-num { font-weight: bold; font-size: 0.75em; vertical-align: super; opacity: 0.6; margin-right: 4px; }
-    .annotation-block { background: rgba(0,0,0,0.04); padding: 10px 14px; border-left: 3px solid rgba(0,0,0,0.12); margin-top: 1em; }
-    .annotation-item { font-size: 0.95em; margin-bottom: 0.5em; }
-    .note { font-size: 0.95em; opacity: 0.9; }
+    :root{
+      --maxw: 980px;
+      --pad: 16px;
+      --line: rgba(0,0,0,0.12);
+      --muted: rgba(0,0,0,0.72);
+      --soft: rgba(0,0,0,0.05);
+      --soft2: rgba(0,0,0,0.03);
+      --radius: 14px;
+    }
+    body{
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.65;
+      margin: 0;
+      color: #111;
+      background: #fff;
+    }
+    .wrap{
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 18px var(--pad) 56px;
+    }
+    h1,h2,h3{ margin: 1.1em 0 0.35em; }
+    h1{ font-size: 2.05rem; letter-spacing: -0.02em; }
+    h2{ font-size: 1.35rem; padding-bottom: 0.25em; border-bottom: 1px solid var(--line); }
+    h3{ font-size: 1.08rem; }
+    p{ margin: 0.6em 0; }
+    hr{ margin: 2em 0; border: 0; border-top: 1px solid var(--line); }
+    ul{ margin: 0.6em 0 0.8em 1.2em; }
+    li{ margin: 0.35em 0; }
+    a{ color:#111; text-decoration: underline; }
+    a.btn{
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      text-decoration: none;
+      background: var(--soft2);
+    }
+    nav.top, nav.bottom{
+      display:flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items:center;
+      justify-content:flex-start;
+      margin: 10px 0 16px;
+    }
+    .card{
+      background: var(--soft2);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 14px 14px;
+    }
+    .scripture-text{
+      font-size: 1.08em;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 14px 14px;
+    }
+    .v-num{
+      font-weight: 700;
+      font-size: 0.75em;
+      vertical-align: super;
+      opacity: 0.55;
+      margin-right: 4px;
+    }
+    .annotation-block{
+      background: var(--soft);
+      padding: 12px 14px;
+      border-left: 3px solid var(--line);
+      border-radius: 10px;
+    }
+    .annotation-item{ font-size: 0.98em; margin: 0.55em 0; }
+    .note{ font-size: 0.95em; color: rgba(0,0,0,0.85); }
+    .muted{ color: var(--muted); }
+    .kofi{ margin-top: 14px; }
+    .kofi img{ height: 36px; border: 0; }
+    footer{ margin-top: 18px; }
   </style>
 </head>
 <body>
+  <a id="top"></a>
+  <div class="wrap">
 
-<a id="top"></a>
+    <nav class="top">
+      <a class="btn" href="/Bible/index.html">FPBible Index</a>
+      <a class="btn" href="index.html">Book Index</a>
+      <a class="btn" href="preface.html">Preface</a>
+      <a class="btn" href="appendix.html">Appendix</a>
+      <a class="btn" href="matt5.html">Prev</a>
+      <a class="btn" href="matt7.html">Next</a>
+      <a class="btn" href="/Bible/Prophecy/index.html">Prophecy Hub</a>
+      <a class="btn" href="#top">Top</a>
+    </nav>
 
-<nav>
-  <a href="/Bible/index.html">FPBible Index</a> |
-  <a href="index.html">Book Index</a> |
-  <a href="preface.html">Preface</a> |
-  <a href="appendix.html">Appendix</a> |
-  <a href="matt5.html">Prev</a> |
-  <a href="matt7.html">Next</a> |
-  <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> |
-  <a href="#top">Top</a>
-</nav>
+    <h1>Matthew 6 — True Righteousness in the Father’s Presence</h1>
 
-<h1>Matthew 6</h1>
-<h2>Kingdom Practices</h2>
+    <hr />
 
-<hr />
+    <h2>Immediate Context</h2>
+    <p>
+      Matthew 6 continues the Sermon on the Mount by exposing performative “righteousness” inside the temple-age world and relocating devotion from public status systems to direct Father-relationship—preparing disciples to live as New Covenant people while the old order nears its historical removal.
+    </p>
 
-<h2>Immediate Context</h2>
-<p>
-Having established the superior righteousness of the Kingdom (internal vs. external), Jesus now attacks the religious performance of the day. He warns against practicing piety to be seen by the "Old Order"—the synagogue and the street corners. He then pivots to the specific anxiety of the coming transition. With the Roman war on the horizon, hoarding earthly treasure was a foolish strategy; only investment in the coming Age would survive the fires of AD 70.
-</p>
+    <hr />
 
-<hr />
+    <h2>Scripture (WEB)</h2>
+    <div class="scripture-text">
+      <p>
+        <span class="v-num">1</span>“Be careful that you don’t do your charitable giving‡ NU reads “acts of righteousness” instead of “charitable giving” before men, to be seen by them, or else you have no reward from your Father who is in heaven.
+        <span class="v-num">2</span>Therefore, when you do merciful deeds, don’t sound a trumpet before yourself, as the hypocrites do in the synagogues and in the streets, that they may get glory from men. Most certainly I tell you, they have received their reward.
+        <span class="v-num">3</span>But when you do merciful deeds, don’t let your left hand know what your right hand does,
+        <span class="v-num">4</span>so that your merciful deeds may be in secret, then <strong>your Father who sees in secret will reward you openly</strong>.
+      </p>
 
-<h2>Scripture (LSV)</h2>
+      <p>
+        <span class="v-num">5</span>“When you pray, you shall not be as the hypocrites, for they love to stand and pray in the synagogues and in the corners of the streets, that they may be seen by men. Most certainly, I tell you, they have received their reward.
+        <span class="v-num">6</span>But you, when you pray, enter into your inner room, and having shut your door, pray to <strong>your Father who is in secret</strong>; and <strong>your Father who sees in secret will reward you openly</strong>.
+        <span class="v-num">7</span>In praying, don’t use vain repetitions as the Gentiles do; for they think that they will be heard for their much speaking.
+        <span class="v-num">8</span>Therefore don’t be like them, for your Father knows what things you need before you ask him.
+        <span class="v-num">9</span>Pray like this:
+      </p>
 
-<div class="scripture-text">
-  <p>
-    <span class="v-num">1</span> Take heed your kindness not to do before men, to be seen by them, and if not—reward ye have not from your Father who is in the heavens;
-    <span class="v-num">2</span> whenever, therefore, thou mayest do kindness, thou mayest not sound a trumpet before thee as the hypocrites do, in the synagogues and in the streets, that they may have glory from men; verily I say to you, they have their reward!
-    <span class="v-num">3</span> But thou, doing kindness, let not thy left hand know what thy right hand doth,
-    <span class="v-num">4</span> that thy kindness may be in secret, and thy Father who is seeing in secret Himself shall reward thee manifestly.
-  </p>
-  <p>
-    <span class="v-num">5</span> And when thou mayest pray, thou shalt not be as the hypocrites, because they love in the synagogues, and in the corners of the broad places—standing—to pray, that they may be seen of men; verily I say to you, that they have their reward.
-    <span class="v-num">6</span> But thou, when thou mayest pray, enter into thy chamber, and having shut thy door, pray to thy Father who is in secret, and thy Father who is seeing in secret shall reward thee manifestly.
-    <span class="v-num">7</span> And praying, ye may not use vain repetitions like the nations, for they think that in their much speaking they shall be heard,
-    <span class="v-num">8</span> be ye not therefore like to them, for your Father doth know those things that ye have need of before your asking him.
-  </p>
-  <p>
-    <span class="v-num">9</span> Thus therefore pray ye: Our Father who art in the heavens! Hallowed be Thy name.
-    <span class="v-num">10</span> Thy reign come: Thy will come to pass, as in heaven also on the earth.
-    <span class="v-num">11</span> Our appointed bread give us today.
-    <span class="v-num">12</span> And forgive us our debts, as also we forgive our debtors.
-    <span class="v-num">13</span> And mayest Thou not lead us into temptation, but deliver us from the evil, for Thine is the reign, and the power, and the glory—to the ages. Amen.
-    <span class="v-num">14</span> For if ye may forgive men their trespasses He also will forgive you—your Father who is in the heavens;
-    <span class="v-num">15</span> but if ye may not forgive men their trespasses, neither will your Father forgive your trespasses.
-  </p>
-  <p>
-    <span class="v-num">16</span> And when ye may fast, be not as the hypocrites, of sour countenances, for they disfigure their faces that they may appear to men fasting; verily I say to you, that they have their reward.
-    <span class="v-num">17</span> But thou, fasting, anoint thy head, and wash thy face,
-    <span class="v-num">18</span> that thou mayest not appear to men fasting, but to thy Father who is in secret, and thy Father who is seeing in secret shall reward thee.
-  </p>
-  <p>
-    <span class="v-num">19</span> Treasure not up to yourselves treasures on the earth, where moth and rust disfigure, and where thieves break through and steal,
-    <span class="v-num">20</span> but treasure up to yourselves treasures in heaven, where neither moth nor rust doth disfigure, and where thieves do not break through nor steal,
-    <span class="v-num">21</span> for where your treasure is, there will be also your heart.
-    <span class="v-num">22</span> The lamp of the body is the eye, if, therefore, thine eye may be perfect, all thy body shall be light,
-    <span class="v-num">23</span> but if thine eye may be evil, all thy body shall be dark; if, therefore, the light that is in thee is darkness—the darkness, how great!
-  </p>
-  <p>
-    <span class="v-num">24</span> None is able to serve two lords, for either he will hate the one and love the other, or one he will hold to, and of the other he will be heedless; ye are not able to serve God and Mammon.
-    <span class="v-num">25</span> Because of this I say to you, be not anxious for your life, what ye may eat, and what ye may drink, nor for your body, what ye may put on. Is not the life more than the nourishment, and the body than the clothing?
-    <span class="v-num">26</span> Look to the fowls of the heaven, for they do not sow, nor reap, nor gather into storehouses, and your heavenly Father doth nourish them; are not ye much better than they?
-    <span class="v-num">27</span> And who of you, being anxious, is able to add to his age one cubit?
-    <span class="v-num">28</span> And about clothing why are ye anxious? Consider well the lilies of the field; how do they grow? They do not labor, nor do they spin;
-    <span class="v-num">29</span> and I say to you, that not even Solomon in all his glory was arrayed as one of these.
-    <span class="v-num">30</span> And if the herb of the field, that today is, and tomorrow is cast to the furnace, God doth so clothe—not much more you, O ye of little faith?
-    <span class="v-num">31</span> Therefore ye may not be anxious, saying, What may we eat? Or, What may we drink? Or, What may we put round?
-    <span class="v-num">32</span> For all these do the nations seek for, for your heavenly Father doth know that ye have need of all these;
-    <span class="v-num">33</span> but seek ye first the reign of God and His righteousness, and all these shall be added to you.
-    <span class="v-num">34</span> Be not therefore anxious for the morrow, for the morrow shall be anxious for its own things; sufficient for the day is the evil of it.”
-  </p>
-</div>
+      <p>
+        <span class="v-num">10</span><strong>Let your Kingdom come.</strong>
+      </p>
 
-<h3>Annotations</h3>
-<div class="annotation-block">
-  <div class="annotation-item"><strong>6:10 — Thy reign come:</strong> A prayer for the consummation of the New Covenant age, which arrived fully in AD 70. The Kingdom has now come; we live in the answer to this prayer.</div>
-  <div class="annotation-item"><strong>6:13 — The evil:</strong> Often translated "The Evil One." A specific request for protection during the "great tribulation" and apostasy that would precede the fall of Jerusalem.</div>
-  <div class="annotation-item"><strong>6:19 — Treasures on the earth:</strong> Historically, a warning against investing in the Jewish "Land" (earth) and economy, which was about to be ravaged by the Romans.</div>
-  <div class="annotation-item"><strong>6:33 — Seek first the reign:</strong> The priority for the disciples was to secure their place in the incoming New Covenant order before the Old one collapsed.</div>
-</div>
+      <p>
+        <span class="v-num">11</span>Give us today our daily bread.
+      </p>
 
-<hr />
+      <p>
+        <span class="v-num">12</span>Forgive us our debts,
+      </p>
 
-<h2>Fulfillment Commentary</h2>
+      <p>
+        <span class="v-num">13</span>Bring us not into temptation,
+      </p>
 
-<h3>1) The Prayer Has Been Answered</h3>
-<p>
-For centuries, the church has prayed "Thy Kingdom Come" as a futuristic hope, ignoring the fact that God answered this prayer in the first century. The "Reign" (Kingdom) was "at hand" when Jesus taught this. It came with power at Pentecost and was fully established when the Old Covenant Temple (the rival kingdom) was destroyed in AD 70. We do not pray for the Kingdom to arrive; we pray from within the Kingdom that is already here. We are the citizens of the answered prayer.
-</p>
+      <p>
+        <span class="v-num">13</span>For yours is the Kingdom, the power, and the glory forever. Amen.’‡ NU omits “For yours is the Kingdom, the power, and the glory forever. Amen.”
+      </p>
 
-<h3>2) Bad Investments in a Dying Age</h3>
-<p>
-Jesus' warning about "treasures on earth" (literally "the Land") was practical investment advice for the AD 30-70 generation. The Jewish economy, the Temple bank, and the land values of Judea were about to be wiped out by the Roman legions. "Moth and rust" refer to the decay of the Old Order; "thieves" hints at the zealots and robbers who seized property during the siege. To store up treasure in the Jerusalem of that day was to lose everything. The only safe investment was in the "Heavens"—the spiritual Kingdom that Rome could not touch.
-</p>
+      <p>
+        <span class="v-num">14</span>“For if you forgive men their trespasses, your heavenly Father will also forgive you.
+        <span class="v-num">15</span>But if you don’t forgive men their trespasses, neither will your Father forgive your trespasses.
+      </p>
 
-<h3>3) Anxiety in the Face of War</h3>
-<p>
-The command "Be not anxious" (v. 25) must be read in the context of the coming crisis. The disciples would soon face persecution, famine (Acts 11:28), and the tribulation of the "End of the Age." Jesus assures them that while the Gentiles (the nations) scramble for resources, the Father will sustain the "Little Flock" through the transition. This was a promise of survival for the Remnant during the death throes of the Old Covenant.
-</p>
+      <p>
+        <span class="v-num">16</span>“Moreover when you fast, don’t be like the hypocrites, with sad faces. For they disfigure their faces that they may be seen by men to be fasting. Most certainly I tell you, they have received their reward.
+        <span class="v-num">17</span>But you, when you fast, anoint your head and wash your face,
+        <span class="v-num">18</span>so that you are not seen by men to be fasting, but by <strong>your Father who is in secret</strong>; and <strong>your Father who sees in secret will reward you</strong>.
+      </p>
 
-<h3>4) Serving Mammon or Messiah?</h3>
-<p>
-"Mammon" was not just money; it was the entire system of reliance on earthly security. For a first-century Jew, reliance on the Temple system and social standing was reliance on Mammon. Jesus demands a binary choice: You cannot hold onto the Old Covenant status (which brings earthly security) and the New Covenant Kingdom (which brings persecution) at the same time. You must choose which Master you will serve before the judgment falls.
-</p>
+      <p>
+        <span class="v-num">19</span>“Don’t lay up treasures for yourselves on the earth, where moth and rust consume, and where thieves break through and steal;
+        <span class="v-num">20</span>but lay up for yourselves treasures in heaven, where neither moth nor rust consume, and where thieves don’t break through and steal;
+        <span class="v-num">21</span>for where your treasure is, there your heart will be also.
+      </p>
 
-<hr />
+      <p>
+        <span class="v-num">22</span>“The lamp of the body is the eye. If therefore your eye is sound, your whole body will be full of light.
+        <span class="v-num">23</span>But if your eye is evil, your whole body will be full of darkness. If therefore the light that is in you is darkness, how great is the darkness!
+      </p>
 
-<h2>Prophecy Hub Links</h2>
-<ul>
-  <li><strong>The Kingdom Has Come</strong> — <a href="/Bible/Prophecy/kingdom.html">Kingdom Reality</a></li>
-  <li><strong>The End of the Age</strong> — <a href="/Bible/Prophecy/end-of-the-age.html">AD 70 Context</a></li>
-  <li><strong>Tribulation Survival</strong> — <a href="/Bible/Prophecy/tribulation.html">The Great Tribulation</a></li>
-</ul>
+      <p>
+        <span class="v-num">24</span>“No one can serve two masters, for either he will hate the one and love the other, or else he will be devoted to one and despise the other. <strong>You can’t serve both God and Mammon.</strong>
+        <span class="v-num">25</span>Therefore I tell you, don’t be anxious for your life: what you will eat, or what you will drink; nor yet for your body, what you will wear. Isn’t life more than food, and the body more than clothing?
+        <span class="v-num">26</span>See the birds of the sky, that they don’t sow, neither do they reap, nor gather into barns. Your heavenly Father feeds them. Aren’t you of much more value than they?
+        <span class="v-num">27</span>“Which of you by being anxious, can add one moment§ literally, cubit to his lifespan?
+        <span class="v-num">28</span>Why are you anxious about clothing? Consider the lilies of the field, how they grow. They don’t toil, neither do they spin,
+        <span class="v-num">29</span>yet I tell you that even Solomon in all his glory was not dressed like one of these.
+        <span class="v-num">30</span>But if God so clothes the grass of the field, which today exists and tomorrow is thrown into the oven, won’t he much more clothe you, you of little faith?
+      </p>
 
-<hr />
+      <p>
+        <span class="v-num">31</span>“Therefore don’t be anxious, saying, ‘What will we eat?’, ‘What will we drink?’ or, ‘With what will we be clothed?’
+        <span class="v-num">32</span>For the Gentiles seek after all these things; for your heavenly Father knows that you need all these things.
+        <span class="v-num">33</span><strong>But seek first God’s Kingdom and his righteousness; and all these things will be given to you as well.</strong>
+        <span class="v-num">34</span>Therefore don’t be anxious for tomorrow, for tomorrow will be anxious for itself. Each day’s own evil is sufficient.
+      </p>
+    </div>
 
-<h2>Cross-References</h2>
-<ul>
-  <li><strong>The Kingdom Crushing the Old</strong> — <a href="https://ebible.org/englsv/DAN02.htm" target="_blank">Daniel 2:44 (LSV)</a></li>
-  <li><strong>Rich Men Weeping (AD 70)</strong> — <a href="https://ebible.org/englsv/JAS05.htm" target="_blank">James 5:1-3 (LSV)</a></li>
-  <li><strong>Anxiety for the Little Flock</strong> — <a href="https://ebible.org/englsv/LUK12.htm" target="_blank">Luke 12:32 (LSV)</a></li>
-</ul>
+    <hr />
 
-<hr />
+    <h2>Fulfillment Notes</h2>
+    <div class="card">
+      <p class="note">1) Jesus confronts the public honor economy of the temple-age world and roots righteousness in Father-relationship rather than religious visibility.</p>
+      <p class="note">2) “Let your Kingdom come” belongs to the first-century arrival and manifestation of the reign of God as the old covenant order reaches its end.</p>
+      <p class="note">3) The prayer and forgiveness frame “debts” covenantally: reconciliation is the posture of the New Covenant people during the transition.</p>
+      <p class="note">4) “Treasures in heaven” redirects Israel from fading, theft-prone earthly systems to an unshakable covenant inheritance.</p>
+      <p class="note">5) “Don’t be anxious” forms a settled people who live from the Father’s care, not from the instability of a world about to be shaken.</p>
+    </div>
 
-<h2>New Creation Reality</h2>
-<p>
-We do not live in the "anxiety of the transition" that the disciples faced. The war is over. The Kingdom is established. The "Evil One" of that age has been defeated. We can seek the Kingdom not as a desperate lifeboat, but as a settled homeland. Our treasure is safe because our City (New Jerusalem) can never be besieged or destroyed.
-</p>
+    <hr />
 
-<hr />
+    <h2>Annotations</h2>
+    <div class="annotation-block">
+      <div class="annotation-item"><strong>your Father who sees in secret will reward you openly</strong>: The Father is not accessed through display; true reward flows from hidden union, not public performance.</div>
+      <div class="annotation-item"><strong>your Father who is in secret</strong>: Jesus relocates “holy place” logic from temple-space to Father-nearness—direct access replaces mediated status.</div>
+      <div class="annotation-item"><strong>Let your Kingdom come.</strong>: First-century covenant transition language—God’s reign arriving in power as the old age closes (AD 30–70).</div>
+      <div class="annotation-item"><strong>You can’t serve both God and Mammon.</strong>: A loyalty test between covenant allegiance and wealth-power systems that rival God as “master.”</div>
+      <div class="annotation-item"><strong>But seek first God’s Kingdom and his righteousness; and all these things will be given to you as well.</strong>: Kingdom-first stability in the midst of shaking; righteousness as covenant membership and life under God’s rule.</div>
+      <div class="annotation-item"><strong>debts</strong>: More than money—relational and covenant obligations; New Covenant life expresses forgiveness because the accusation system is being removed.</div>
+      <div class="annotation-item"><strong>treasures in heaven</strong>: Covenant inheritance that cannot be stolen, corrupted, or collapsed when earthly structures fail.</div>
+    </div>
 
-<h2>Reflection</h2>
-<p>
-Am I praying "Thy Kingdom Come" like a beggar waiting for a future scrap, or am I living "Thy Kingdom Is Here" like a son enjoying the Father's table?
-</p>
+    <hr />
 
-<hr />
+    <h2>Fulfillment Commentary</h2>
 
-<nav>
-  <a href="/Bible/index.html">FPBible Index</a> |
-  <a href="index.html">Book Index</a> |
-  <a href="preface.html">Preface</a> |
-  <a href="appendix.html">Appendix</a> |
-  <a href="matt5.html">Prev</a> |
-  <a href="matt7.html">Next</a> |
-  <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> |
-  <a href="#top">Top</a>
-</nav>
+    <h3>1) From Temple-Visibility to Father-Union</h3>
+    <p>
+      Matthew 6 is not a generic “be humble” talk; it’s a direct confrontation with how the temple-age world produced righteousness—through visibility, reputation, and approval inside the religious-social machine. Jesus names the “hypocrites” not as random mean people, but as representatives of a system that trained Israel to perform covenant identity in public. Alms, prayers, fasting—these were real acts, but they were easily weaponized into status. In that environment, righteousness could become theater, and the “reward” was immediate: applause, honor, influence, control. Jesus cuts through that entire economy by anchoring devotion in the Father who is already present and who sees what the public cannot see. This is covenantal movement: the center of gravity is shifting away from temple space and priestly gatekeeping toward direct Father-relationship. That shift is the seed of the New Creation life: access is not earned by performance, and holiness is not managed by spectators; it flows from union.
+    </p>
 
-<p class="note" style="text-align:center;">
-  Scripture source: <a href="https://www.lsvbible.com/" target="_blank">Literal Standard Version</a>
-</p>
+    <h3>2) The “Secret Place” Is Not Hiding—It’s New Covenant Access</h3>
+    <p>
+      “Your Father who is in secret” is not Jesus promoting spiritual introversion; it’s Jesus announcing the end of a mediated presence model. Under the old order, the “secret” place was bound up with veils and restricted access—holy space for a limited priesthood on a limited schedule. Jesus now tells ordinary disciples to go into an inner room and pray to the Father as Father. That is explosive in covenant terms. It anticipates what will become normal when the old system is retired: the Father is not far, not locked behind ritual machinery, not parceled out by institutional control. The “reward” language is also covenantal: not a prosperity formula, but the Father’s open vindication and provision for those aligned with his kingdom way—especially as the transition intensifies toward AD 70 and the old world’s claims begin to collapse.
+    </p>
 
-<a href="https://ko-fi.com/B0B61QC1BU" target="_blank">
-  <img height="36" src="https://storage.ko-fi.com/cdn/kofi5.png?v=6" alt="Buy Me a Coffee" />
-</a>
+    <h3>3) “Let Your Kingdom Come” and the First-Century Horizon</h3>
+    <p>
+      The Lord’s Prayer sits inside the Sermon on the Mount, addressed to disciples living in the overlap of ages. “Let your Kingdom come” is not a vague request for a distant end-of-history event; it belongs to the first-century arrival and manifestation of God’s reign as the Mosaic age reaches its conclusion. The prayer trains disciples to desire what God is doing in their time: the unveiling of the King, the gathering of a renewed people, and the removal of the covenant barriers that had defined Israel’s distance. Read this in covenant transition terms and it becomes coherent: the name of God is being honored in the Son; the will of God is being enacted in the new covenant; daily bread and deliverance are prayed by a people who will face real pressures as the old world shakes; forgiveness is demanded because New Covenant life cannot be lived while clinging to accusation and retaliation—the very spirit of the old order.
+    </p>
 
+    <h3>4) Debts, Forgiveness, and the End of Accusation</h3>
+    <p>
+      Jesus ties prayer to forgiveness with teeth: if you forgive, you’re forgiven; if you don’t, you aren’t. That’s not Jesus re-installing a new legal treadmill; it’s Jesus describing covenant posture during a covenant transition. The old system was powered by accusation—law-defined trespass, debt imagery, and relational fracture. New Covenant life, by contrast, embodies release. If the Messiah is bringing “save his people from their sins,” then his people must live as released people: releasing others, refusing to weaponize trespass, refusing to live by the old economy of scorekeeping. This is why Matthew 6 matters for “fulfilled” theology: it shows what the new world feels like. It is not fear-driven, not performance-driven, not accusation-driven. It is Father-driven—living from the inside out with mercy that matches the covenant you claim to be in.
+    </p>
+
+    <h3>5) Treasures, Mammon, and the Shaking of an Old World</h3>
+    <p>
+      “Don’t lay up treasures on the earth” is commonly individualized into “don’t be materialistic,” but in Matthew’s flow it also functions as survival wisdom for a world nearing upheaval. Israel’s temple-centered society was not stable; it was heading toward judgment and collapse. Treasures could be seized, stolen, burned, confiscated, or rendered useless. Jesus redirects loyalty: invest in what cannot be shaken—“treasures in heaven,” covenant inheritance, kingdom life, Father approval. That’s why the “eye” imagery follows: perception determines what fills you. If your “eye” is evil—if your vision is governed by greed, fear, status, and scarcity—your inner world becomes darkness. Then Jesus states the dividing line: you can’t serve both God and Mammon. Mammon is not simply “money”; it’s wealth as master, wealth as security, wealth as identity. In a covenant transition, serving Mammon ties you to the failing structures of the old world, while serving God anchors you to the unshakable kingdom.
+    </p>
+
+    <h3>6) “Don’t Be Anxious” as a Kingdom-Stabilized People</h3>
+    <p>
+      Anxiety is not merely a mental health topic here; it’s a discipleship marker. Jesus is forming a people who can live calmly while an age is shaking. Birds, lilies, daily provision—these images are not naive. They train a new covenant nervous system: the Father is reliable. The old system made people manage survival through control—status, purity performance, public reputation, hoarding, leverage. Jesus replaces control with trust: seek first the kingdom and righteousness, and the Father supplies what is needed. This is not a promise that nothing difficult ever happens; it’s a promise that the Father’s care is not interrupted by external instability. In first-century terms, this prepares disciples for pressures, persecutions, displacement, and loss. In New Creation terms today, it means your life is not held together by “tomorrow” plans and fear cycles; it is held together by the Father’s presence now.
+    </p>
+
+    <h3>7) The Net Result: Righteousness Without Performance, Prayer Without Distance</h3>
+    <p>
+      Matthew 6 is kingdom formation. It dismantles temple-age righteousness as public theater and installs New Covenant righteousness as relational reality. It trains prayer as communion, not manipulation. It redefines forgiveness as the natural language of a released people. It severs loyalty to Mammon as master and anchors identity in the Father who provides. And because we read this through a fulfilled, first-century resolution, we can say plainly: the transition reached its historical conclusion; the old world that depended on public status, temple leverage, and law-powered accusation is not the governing covenant reality anymore. What remains is the Father’s nearness and the kingdom life of those who live from it.
+    </p>
+
+    <hr />
+
+    <h2>Prophecy Hub Links</h2>
+    <ul>
+      <li><a href="/Bible/Prophecy/index.html#kingdom-near">The Kingdom Has Come Near</a></li>
+      <li><a href="/Bible/Prophecy/index.html#new-covenant-access">New Covenant Access</a></li>
+      <li><a href="/Bible/Prophecy/index.html#mammon-and-idolatry">Mammon and Rival Masters</a></li>
+    </ul>
+
+    <hr />
+
+    <h2>Cross-References</h2>
+    <ul>
+      <li><a href="https://ebible.org/eng-web/ISA55.htm" target="_blank" rel="noopener">Isaiah 55 (WEB)</a></li>
+      <li><a href="https://ebible.org/eng-web/HEB12.htm" target="_blank" rel="noopener">Hebrews 12 (WEB)</a></li>
+      <li><a href="https://ebible.org/eng-web/COL03.htm" target="_blank" rel="noopener">Colossians 3 (WEB)</a></li>
+    </ul>
+
+    <hr />
+
+    <h2>New Creation Reality</h2>
+    <p>
+      You don’t have to perform for visibility to be “seen”; you’re already seen by the Father, already held in his care, and free to live from kingdom loyalty—secure, forgiving, present, and unshaken.
+    </p>
+
+    <hr />
+
+    <h2>Reflection</h2>
+    <p>
+      Where am I still serving “Mammon” (security-by-control) instead of resting in the Father’s nearness and seeking the kingdom first?
+    </p>
+
+    <hr />
+
+    <footer>
+      <nav class="bottom">
+        <a class="btn" href="/Bible/index.html">FPBible Index</a>
+        <a class="btn" href="index.html">Book Index</a>
+        <a class="btn" href="matt5.html">Prev</a>
+        <a class="btn" href="matt7.html">Next</a>
+        <a class="btn" href="/Bible/Prophecy/index.html">Prophecy Hub</a>
+        <a class="btn" href="#top">Top</a>
+      </nav>
+
+      <div class="kofi">
+        <a href="https://ko-fi.com/B0B61QC1BU" target="_blank" rel="noopener">
+          <img src="https://storage.ko-fi.com/cdn/kofi5.png?v=6" alt="Support FPBible on Ko-fi" />
+        </a>
+      </div>
+
+      <p class="note muted" style="margin-top:12px;">
+        Scripture quotations are from the <strong>World English Bible (WEB)</strong>, public domain. Source: eBible.org (WEB/eng-web). You may copy and share the WEB freely.
+      </p>
+    </footer>
+
+  </div>
+
+  <!--
+    TEXT INTEGRITY NOTE:
+    - Scripture above is copied from eBible.org WEB Matthew 6 (eng-web/MAT06.htm), including inline footnote markers as displayed on that page.
+    - Selective bolding is applied ONLY to the exact phrases listed in the Annotations section.
+  -->
 </body>
 </html>
