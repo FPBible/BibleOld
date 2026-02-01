@@ -2,211 +2,316 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Matthew 20 — The Economy of Grace and the Great Reversal</title>
+  <title>Matthew 20 — The Vineyard Wage and the Great Reversal</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
-    body{ font-family: system-ui, sans-serif; line-height: 1.6; margin: 1.5em; max-width: 900px; }
-    h1,h2,h3{ margin-top: 1.4em; margin-bottom: 0.4em; }
-    nav{ margin: 1em 0; font-size: 0.95em; }
-    nav a{ margin-right: 0.6em; text-decoration: underline; }
-    p{ margin: 0.6em 0; }
-    hr{ margin: 2em 0; border-top: 1px solid rgba(0,0,0,0.12); }
+    :root{
+      --maxw: 980px;
+      --pad: 16px;
+      --line: rgba(0,0,0,0.12);
+      --line2: rgba(0,0,0,0.18);
+      --muted: rgba(0,0,0,0.72);
+      --soft: rgba(0,0,0,0.06);
+      --soft2: rgba(0,0,0,0.04);
+      --radius: 14px;
+    }
+    body{
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.65;
+      margin: 0;
+      color: #111;
+      background: #fff;
+    }
+    .wrap{
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 18px var(--pad) 48px;
+    }
+    h1{ font-size: 2.05rem; margin: 0.2em 0 0.1em; letter-spacing: -0.02em; }
+    h2{ font-size: 1.35rem; margin: 1.2em 0 0.5em; padding-bottom: 0.2em; border-bottom: 1px solid var(--line); }
+    h3{ font-size: 1.08rem; margin: 1em 0 0.4em; }
+    p{ margin: 0.65em 0; }
+    hr{ border: 0; border-top: 1px solid var(--line); margin: 22px 0; }
+    a{ color: #111; text-decoration: underline; }
+    nav{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+      align-items: center;
+      font-size: 0.95em;
+      padding: 10px 12px;
+      background: var(--soft2);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+    }
+    .pill{
+      display: inline-block;
+      padding: 6px 10px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #fff;
+      text-decoration: none;
+    }
+    .pill:hover{ background: var(--soft); }
+    .sub{
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 0.98em;
+    }
+    .card{
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      padding: 14px 14px;
+    }
+    .scripture-text{
+      font-size: 1.05em;
+    }
+    .v-num{
+      font-weight: 700;
+      font-size: 0.75em;
+      vertical-align: super;
+      opacity: 0.65;
+      margin-right: 4px;
+      white-space: nowrap;
+    }
+    .note{
+      font-size: 0.96em;
+      color: var(--muted);
+    }
+    .annotation-block{
+      background: var(--soft2);
+      padding: 12px 14px;
+      border-left: 3px solid var(--line2);
+      border-radius: 10px;
+    }
     ul{ margin: 0.6em 0 0.8em 1.2em; }
     li{ margin: 0.35em 0; }
-    .note{ font-size: 0.95em; opacity: 0.9; }
+    .kofi{
+      margin-top: 14px;
+    }
+    .footer-nav{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+      align-items: center;
+      justify-content: space-between;
+    }
   </style>
 </head>
 <body>
+  <div class="wrap">
+    <a id="top"></a>
 
-<a id="top"></a>
+    <nav aria-label="Top navigation">
+      <a class="pill" href="/Bible/index.html">FPBible Index</a>
+      <a class="pill" href="index.html">Book Index</a>
+      <a class="pill" href="preface.html">Preface</a>
+      <a class="pill" href="appendix.html">Appendix</a>
+      <a class="pill" href="matt19.html">Prev</a>
+      <a class="pill" href="matt21.html">Next</a>
+      <a class="pill" href="/Bible/Prophecy/index.html">Prophecy Hub</a>
+      <a class="pill" href="#top">Top</a>
+    </nav>
 
-<nav>
-  <a href="/Bible/index.html">FPBible Index</a> |
-  <a href="index.html">Book Index</a> |
-  <a href="preface.html">Preface</a> |
-  <a href="appendix.html">Appendix</a> |
-  <a href="matt19.html">Prev</a> |
-  <a href="matt21.html">Next</a> |
-  <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> |
-  <a href="#top">Top</a>
-</nav>
+    <h1>Matthew 20 — The Vineyard Wage and the Great Reversal</h1>
+    <div class="sub note">
+      Scripture base text: World English Bible (Public Domain) —
+      <a href="https://ebible.org/web/MAT20.htm" target="_blank" rel="noopener noreferrer">Matthew 20</a>
+    </div>
 
-<h1>Matthew 20</h1>
-<h2>The Economy of Grace and the Great Reversal</h2>
+    <hr />
 
-<p class="note">
-Original text: 
-<a href="https://www.biblegateway.com/passage/?search=Matthew+20&version=LSV" target="_blank">Matthew 20 — LSV</a>
-</p>
+    <h2>Immediate Context</h2>
+    <p>
+      Matthew 20 pushes the covenant controversy further: Jesus exposes Israel’s entitlement mindset (vineyard wages), redefines greatness as servanthood, and repeats His near-term passion prediction as the AD 30–70 transition accelerates toward Jerusalem’s covenant end.
+    </p>
 
-<hr />
+    <hr />
 
-<h2>Immediate Context</h2>
-<p>
-Following the discussion on wealth in chapter 19, Jesus uses a parable to explain how the Kingdom reward system functions. 
-He then begins His final ascent to Jerusalem, predicting His death for the third time and teaching on true leadership.
-</p>
-<p>
-This chapter establishes that <strong>in the Finished Work, the "wage" is a gift, and authority is found in service, not in religious rank.</strong>
-</p>
+    <h2>Scripture (WEB)</h2>
+    <div class="card">
+      <div class="scripture-text">
+        <p>
+          <span class="v-num">1</span>“For the Kingdom of Heaven is like a man who is a master of a household, who went out early in the morning to hire laborers for his vineyard.
+          <span class="v-num">2</span>When he had agreed with the laborers for a denarius† a day, he sent them into his vineyard.
+          <span class="v-num">3</span>He went out about the third hour, and saw others standing idle in the marketplace.
+          <span class="v-num">4</span>To them he said, ‘You also go into the vineyard, and whatever is right I will give you.’ So they went their way.
+          <span class="v-num">5</span>Again he went out about the sixth and the ninth hour, and did likewise.
+          <span class="v-num">6</span>About the eleventh hour†† he went out, and found others standing idle. He said to them, ‘Why do you stand here all day idle?’
+          <span class="v-num">7</span>“They said to him, ‘Because no one has hired us.’ He said to them, ‘You also go into the vineyard, and you will receive whatever is right.’
+          <span class="v-num">8</span>When evening had come, the lord of the vineyard said to his manager, ‘Call the laborers and pay them their wages, beginning from the last to the first.’
+          <span class="v-num">9</span>“When those who were hired at about the eleventh hour came, they each received a denarius.
+          <span class="v-num">10</span>When the first came, they supposed that they would receive more; and they likewise each received a denarius.
+          <span class="v-num">11</span>When they received it, they murmured against the master of the household,
+          <span class="v-num">12</span>saying, ‘These last have spent one hour, and you have made them equal to us, who have borne the burden of the day and the scorching heat!’
+          <span class="v-num">13</span>“But he answered one of them, ‘Friend, I am doing you no wrong. Didn’t you agree with me for a denarius?
+          <span class="v-num">14</span>Take that which is yours, and go your way. It is my will to give to this last just as much as to you.
+          <span class="v-num">15</span>Isn’t it lawful for me to do what I want to with what I own? Or is your eye evil, because I am good?’
+          <span class="v-num">16</span>So the last will be first, and the first last. For many are called, but few chosen.”
+        </p>
 
-<hr />
+        <p>
+          <span class="v-num">17</span>As Jesus was going up to Jerusalem, he took the twelve disciples aside, and on the way he said to them,
+          <span class="v-num">18</span>“Behold, we are going up to Jerusalem, and the Son of Man will be delivered to the chief priests and scribes, and they will condemn him to death,
+          <span class="v-num">19</span>and will hand him over to the Gentiles to mock, to scourge, and to crucify; and the third day he will be raised up.”
+        </p>
 
-<h2>Fulfilled Paraphrase</h2>
+        <p>
+          <span class="v-num">20</span>Then the mother of the sons of Zebedee came to him with her sons, kneeling and asking a certain thing of him.
+          <span class="v-num">21</span>He said to her, “What do you want?” She said to him, “Command that these, my two sons, may sit, one on your right hand and one on your left hand, in your Kingdom.”
+          <span class="v-num">22</span>But Jesus answered, “You don’t know what you are asking. Are you able to drink the cup that I am about to drink, and be baptized with the baptism that I am baptized with?” They said to him, “We are able.”
+          <span class="v-num">23</span>He said to them, “You will indeed drink my cup, and be baptized with the baptism that I am baptized with; but to sit on my right hand and on my left hand is not mine to give, but it is for whom it has been prepared by my Father.”
+          <span class="v-num">24</span>When the ten heard it, they were indignant with the two brothers.
+          <span class="v-num">25</span>But Jesus called them to himself and said, “You know that the rulers of the Gentiles lord it over them, and their great ones exercise authority over them.
+          <span class="v-num">26</span>It shall not be so among you, but whoever desires to become great among you shall be your servant.
+          <span class="v-num">27</span>Whoever desires to be first among you shall be your bondservant,
+          <span class="v-num">28</span>even as the Son of Man came not to be served but to serve, and to give his life as a ransom for many.”
+        </p>
 
-<h3>The Parable of the Equal Reward (20:1–16)</h3>
-<p>
-The Kingdom is like a landowner who hired workers for his vineyard. He agreed to pay the first group a denarius for the day. He hired more at the third, sixth, and ninth hours. 
-Finally, at the eleventh hour—just before sunset—he hired those whom no one else wanted. 
-When it was time for payment, he paid the last-minute workers a full denarius first. 
-The first group expected more, but they received the same denarius. They complained, "We toiled all day in the heat!" 
-The Master replied, "Friend, I haven't wronged you. Did we not agree on this? 
-Is it not lawful for me to do what I want with my own? Or is your eye evil because I am good?" 
-So, the last will be first, and the first last.
-</p>
+        <p>
+          <span class="v-num">29</span>As they went out from Jericho, a great multitude followed him.
+          <span class="v-num">30</span>Behold, two blind men sitting by the road, when they heard that Jesus was passing by, cried out, “Lord, have mercy on us, you son of David!”
+          <span class="v-num">31</span>The multitude rebuked them, telling them that they should be quiet, but they cried out even more, “Lord, have mercy on us, you son of David!”
+          <span class="v-num">32</span>Jesus stood still and called them, and asked, “What do you want me to do for you?”
+          <span class="v-num">33</span>They told him, “Lord, that our eyes may be opened.”
+          <span class="v-num">34</span>Jesus, being moved with compassion, touched their eyes; and immediately their eyes received sight, and they followed him.
+        </p>
 
-<p class="note">
-<strong>Fulfillment note:</strong> The "eleventh hour" workers are the Gentiles and the outcasts. They receive the full inheritance of the New Creation alongside those who toiled under the Law, because the reward is based on the Master's character, not human effort.
-</p>
+        <p class="note">
+          † 20:2: A denarius was a day’s wages. &nbsp; †† 20:6: The eleventh hour was about 5:00 PM.
+        </p>
+      </div>
+    </div>
 
-<hr />
+    <hr />
 
-<h3>The Third Announcement of the Victory (20:17–19)</h3>
-<p>
-As they went up to Jerusalem, Jesus took the twelve aside: "Behold, we are going up to Jerusalem. 
-The Son of Man will be delivered to the chief priests and scribes; they will condemn Him to death and hand Him to the Gentiles to be mocked, scourged, and crucified. 
-And on the third day, He will be raised."
-</p>
+    <h2>Fulfillment Notes</h2>
+    <div class="card">
+      <p class="note">1) The vineyard wage exposes covenant entitlement and establishes grace-based belonging as the New Creation ethic.</p>
+      <p class="note">2) “Last/first” is covenant reversal language aimed at Israel’s leadership hierarchy in the AD 30–70 transition.</p>
+      <p class="note">3) Jesus’ passion prediction is near-term and sets the legal basis for the covenant handover culminating in AD 70.</p>
+      <p class="note">4) Kingdom greatness is redefined as servant-ransom life, not status in the old power systems.</p>
+      <p class="note">5) The healing at Jericho signals restored sight for the remnant while the old order remains blind.</p>
+    </div>
 
-<p class="note">
-<strong>Fulfillment note:</strong> Jesus is not a victim of circumstances; He is deliberately walking into the legal transaction required to cancel the debt of the world.
-</p>
+    <hr />
 
-<hr />
+    <h2>Annotations</h2>
+    <div class="annotation-block">
+      <div class="annotation-item"><strong>Kingdom of Heaven</strong> — God’s reign arriving in history, displacing the temple-centered covenant world.</div>
+      <div class="annotation-item"><strong>vineyard</strong> — classic covenant image for Israel and God’s stewardship claim (prophetic lawsuit backdrop).</div>
+      <div class="annotation-item"><strong>denarius</strong> — the “equal wage” image for equal belonging and shared inheritance under the King.</div>
+      <div class="annotation-item"><strong>many are called, but few chosen</strong> — covenant selection within Israel: hearing the invitation is not the same as embracing the transition.</div>
+      <div class="annotation-item"><strong>cup</strong> — suffering vocation tied to the first-century conflict and the path through which the covenant changes hands.</div>
+      <div class="annotation-item"><strong>ransom for many</strong> — liberation price: Christ’s life given to release His people from the covenant bondage of sin and death.</div>
+      <div class="annotation-item"><strong>son of David</strong> — Messianic kingship claim, directly challenging the existing leadership order.</div>
+    </div>
 
-<h3>Authority is Found in Service (20:20–28)</h3>
-<p>
-The mother of Zebedee’s sons asked for her sons to sit at His right and left in the Kingdom. 
-Jesus asked, "Can you drink the cup I am about to drink?" They said, "We are able." 
-He told them they would indeed share His cup, but the seats of honor are the Father's to give. 
-To the indignant disciples, He said, "The rulers of the Gentiles lord it over them, but it shall not be so among you. 
-Whoever wants to be great must be your servant. 
-Even the Son of Man did not come to be served, but to serve, and to <strong>give His life as a ransom for many.</strong>"
-</p>
+    <hr />
 
-<p class="note">
-<strong>Fulfillment note:</strong> The New Covenant hierarchy is inverted. The "Greatest" is the one who most fully expresses the self-giving life of the Finished Work.
-</p>
+    <h2>Fulfillment Commentary</h2>
 
-<hr />
+    <h3>1) The Vineyard: covenant ownership and the lawsuit context</h3>
+    <p>
+      Matthew 20 opens with a vineyard story because vineyard is covenant courtroom language. In Israel’s prophets, the vineyard represents God’s planted people under His care and accountability. By Jesus’ day, that stewardship had become transactional: leaders treated covenant privilege as wages owed. The parable confronts that mindset head-on. The master is not a payroll department; he is the owner who gives life and belonging as a gift. That is the New Covenant collision: entitlement dies where grace rules.
+    </p>
+    <p>
+      Notice the timing rhythm (early, third, sixth, ninth, eleventh hour). This reads like a history-of-Israel sweep: multiple callings across the long day, culminating in a final-hour gathering as the old age closes. The AD 30–70 overlap is that “late hour” where God gathers a remnant and also opens the door wider, not because anyone earned it, but because the owner is good.
+    </p>
 
-<h3>The Sight of the Blind (20:29–34)</h3>
-<p>
-As they left Jericho, two blind men cried out, "Lord, Son of David, have mercy on us!" 
-The crowd tried to silence them, but they cried out louder. 
-Jesus stopped and asked, "What do you want Me to do for you?" 
-They said, "Lord, that our eyes may be opened." 
-Moved with compassion, He touched their eyes. Instantly, they received sight and followed Him.
-</p>
+    <h3>2) Equal wage: inheritance, not performance</h3>
+    <p>
+      The tension is not that the early workers were cheated—they received exactly what was promised. The offense is equality. “You have made them equal to us…” is the scandal. This maps onto Israel’s covenant pride: “We bore the burden… we have the fathers… we have the temple.” Jesus is dismantling a whole economy of status. The denarius pictures shared inheritance: if you are in the King’s vineyard, you receive the King’s life. The New Creation is not a merit ladder; it is union.
+    </p>
+    <p>
+      This is also why “Is your eye evil, because I am good?” matters. In biblical idiom, an “evil eye” is stingy envy. It’s the heart that cannot celebrate another’s inclusion. That spirit is exactly what fuels persecution and exclusion during the transition. Jesus is forming a people who can rejoice when God gives freely—because that is the Father’s character now revealed in the Son.
+    </p>
 
-<p class="note">
-<strong>Fulfillment note:</strong> Opening blind eyes is the prophetic signature of the Kingdom. Their sight allows them to see the King as He truly is—the Servant who heals.
-</p>
+    <h3>3) Last/first as covenant reversal (AD 30–70 pressure)</h3>
+    <p>
+      “So the last will be first, and the first last” is not a vague motivational poster; it’s covenant reversal targeted at the existing hierarchy. Those “first” in the Mosaic world—status, office, influence, and public holiness reputation—were often the very ones resisting the King. Those “last”—the overlooked, the repentant, the socially marginal, and the faithful remnant—are elevated as the true heirs. In the covenant transition culminating by AD 70, that reversal becomes visible: the temple system collapses, and the living temple (Christ’s body) remains.
+    </p>
+    <p>
+      “Many are called, but few chosen” fits the same frame. Israel heard the invitation; few embraced the turning. The chosen are not an ethereal club; they are the remnant who receive the King and thus become the nucleus of the New Creation people.
+    </p>
 
-<hr />
+    <h3>4) Passion prediction: the legal hinge of the covenant changeover</h3>
+    <p>
+      The chapter immediately anchors the parable in the approaching cross: condemnation, handing over, crucifixion, resurrection. This is the legal hinge. The covenant does not shift because people decide to update theology; it shifts because the representative Israel (the Messiah) fulfills and exhausts the old covenant in His body and rises as the beginning of the new humanity. The AD 30–70 period is the outworking—judicially and historically—of what the cross accomplished.
+    </p>
+    <p>
+      So the story’s “equal wage” is not random generosity; it’s blood-bought access. If the Master pays the price, He can include whom He wills, and He can make latecomers equal without violating justice, because justice has been satisfied in the ransom life of the Son.
+    </p>
 
-<h2>Fulfillment Commentary</h2>
+    <h3>5) Greatness redefined: servant authority versus Gentile power</h3>
+    <p>
+      Zebedee’s family request shows the old reflex: seats, rank, visibility. Jesus replies with the cup and baptism—suffering participation. In the coming crisis, the disciples will not win by out-powering the empire or out-politicking the priesthood. They will witness through faithful endurance and cruciform service. “It shall not be so among you” is the constitution of the new community: authority is expressed as service, and leadership is measured by sacrifice.
+    </p>
+    <p>
+      “Ransom for many” is the Gospel core here. It names the covenant liberation. The many are those gathered into Christ’s new humanity: freed from the law-condemnation framework, freed from the temple-dependency structure, and freed into direct access to the Father. This is why the Kingdom is a settled reality now: the ransom has been paid; the old bonds are broken.
+    </p>
 
-<h3>1) The Denarius of Grace</h3>
-<p>
-The denarius represents the **Eternal Life** of the New Covenant. 
-You cannot have "more" or "less" of Christ's finished life. 
-Whether a person was a faithful Jew under the Law for decades or a "thief on the cross" at the last second, 
-the inheritance is the same: the full, unmerited presence of God.
-</p>
+    <h3>6) Jericho sight: the sign of the remnant seeing what Israel’s leaders missed</h3>
+    <p>
+      The chapter ends with opened eyes near Jericho—threshold geography. The blind men call Jesus “son of David,” a royal confession. The crowd tries to silence them (always the old order’s instinct), but the King stops. He touches, sight comes, and they follow. That is a micro-parable of the transition: the lowly see, the excluded are heard, and the King gathers followers as He advances toward the city that will reject Him and later fall under covenant judgment. The New Creation community begins with opened eyes and ends with following Jesus.
+    </p>
 
-<h3>2) The Evil Eye and Religious Jealousy</h3>
-<p>
-The "evil eye" (v. 15) refers to the religious jealousy of the Pharisees who resented that "sinners" were receiving 
-the same access to God as those who performed the rituals of the Law. 
-The Finished Work offends the "worker" because it removes his leverage of perceived merit.
-</p>
+    <hr />
 
-<h3>3) The Cup of the New Covenant</h3>
-<p>
-The "cup" is the suffering associated with the death of the Old Self. 
-To sit with Christ in His throne, one must identify with His death. 
-In the Finished Work, we have already "drunk the cup" by being co-crucified with Him, allowing us to share His authority.
-</p>
+    <h2>Prophecy Hub Links</h2>
+    <ul>
+      <li><a href="/Bible/Prophecy/index.html#vineyard-israel">Vineyard of Israel and Covenant Accountability</a></li>
+      <li><a href="/Bible/Prophecy/index.html#kingdom-reversal">First/Last Reversal in the Covenant Transition</a></li>
+      <li><a href="/Bible/Prophecy/index.html#ransom">Ransom and New Covenant Release</a></li>
+    </ul>
 
-<h3>4) Ransom for Many</h3>
-<p>
-The word "ransom" (<em>lutron</em>) is a legal term for the price paid to release a slave. 
-Jesus is explaining that His death is the payment that buys humanity out of the slavery of the Old Covenant "debt" system 
-and places them into the freedom of the New Creation.
-</p>
+    <hr />
 
-<h3>5) Leaving Jericho</h3>
-<p>
-Jericho was the first city conquered under Joshua. 
-As the "New Joshua" (Jesus) leaves Jericho to enter Jerusalem, He is signaling the final "conquest." 
-He is not conquering with a sword, but with the opening of eyes and the laying down of His life.
-</p>
+    <h2>Cross-References</h2>
+    <ul>
+      <li><a href="https://ebible.org/web/ISA05.htm" target="_blank" rel="noopener noreferrer">Isaiah 5 (the vineyard song)</a></li>
+      <li><a href="https://ebible.org/web/PSA118.htm" target="_blank" rel="noopener noreferrer">Psalm 118 (stone/rejection theme)</a></li>
+      <li><a href="https://ebible.org/web/HEB09.htm" target="_blank" rel="noopener noreferrer">Hebrews 9 (redemption by blood and covenant change)</a></li>
+    </ul>
 
-<hr />
+    <hr />
 
-<h2>Prophecy Hub Links</h2>
-<ul>
-  <li><strong>The Denarius of the Kingdom</strong> — <a href="/Bible/Prophecy/index.html">The Gift of Life</a></li>
-  <li><strong>The Ransom Price</strong> — <a href="/Bible/Prophecy/index.html">The Legal Cancellation of Debt</a></li>
-  <li><strong>The Cup of Suffering</strong> — <a href="/Bible/Prophecy/index.html">Identification with Christ</a></li>
-</ul>
+    <h2>New Creation Reality</h2>
+    <p>
+      You don’t earn your place by “being early” or “carrying heat”; you live from equal-wage grace—shared inheritance in Christ—expressed as servant-hearted presence that frees others rather than competes for rank.
+    </p>
 
-<hr />
+    <hr />
 
-<h2>Cross-References</h2>
-<ul>
-  <li><strong>The First and the Last</strong> — <a href="https://www.biblegateway.com/passage/?search=Matthew+19%3A30&version=LSV" target="_blank">Matthew 19:30</a></li>
-  <li><strong>The Suffering Servant</strong> — <a href="https://www.biblegateway.com/passage/?search=Isaiah+53%3A10-12&version=LSV" target="_blank">Isaiah 53:10-12</a></li>
-  <li><strong>The Opening of Blind Eyes</strong> — <a href="https://www.biblegateway.com/passage/?search=Isaiah+42%3A7&version=LSV" target="_blank">Isaiah 42:7</a></li>
-</ul>
+    <h2>Reflection</h2>
+    <p>
+      Where does envy or entitlement still creep in—quietly resenting grace given to others—and how would my week look if I lived like the Master’s goodness sets the whole economy?
+    </p>
 
-<hr />
+    <hr />
 
-<h2>New Creation Reality</h2>
-<p>
-Matthew 20 reveals that we are the "eleventh hour" workers who have been given the full "paycheck" of Christ's righteousness. 
-We don't work *to* get paid; we work because we *have been* paid. 
-Our greatness is found in mirroring the Master’s generosity toward others. 
-We live in the reality where eyes have been opened to see that the ransom is paid and the debt is gone.
-</p>
+    <div class="footer-nav">
+      <nav aria-label="Bottom navigation">
+        <a class="pill" href="/Bible/index.html">FPBible Index</a>
+        <a class="pill" href="index.html">Book Index</a>
+        <a class="pill" href="matt19.html">Prev</a>
+        <a class="pill" href="matt21.html">Next</a>
+        <a class="pill" href="/Bible/Prophecy/index.html">Prophecy Hub</a>
+        <a class="pill" href="#top">Top</a>
+      </nav>
 
-<hr />
+      <div class="kofi">
+        <a href="https://ko-fi.com/B0B61QC1BU" target="_blank" rel="noopener noreferrer">
+          <img height="36" src="https://storage.ko-fi.com/cdn/kofi5.png?v=6" alt="Support FPBible on Ko-fi" />
+        </a>
+      </div>
+    </div>
 
-<h2>Reflection</h2>
-<p>
-Am I still trying to "earn" a bigger reward than others, or am I resting in the "denarius" of Christ's enough-ness?
-</p>
-<p>
-Whom am I "lording it over" today, instead of serving from the abundance of the Finished Work?
-</p>
+    <p class="note" style="margin-top:14px;">
+      Scripture quotation is from the <strong>World English Bible</strong> (WEB), which is in the Public Domain (text hosted by eBible.org). “World English Bible” is a trademark of eBible.org; the text itself may be copied freely.
+    </p>
 
-<hr />
-
-<nav>
-  <a href="/Bible/index.html">FPBible Index</a> |
-  <a href="index.html">Book Index</a> |
-  <a href="preface.html">Preface</a> |
-  <a href="appendix.html">Appendix</a> |
-  <a href="matt19.html">Prev</a> |
-  <a href="matt21.html">Next</a> |
-  <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> |
-  <a href="#top">Top</a>
-</nav>
-
-<a href="https://ko-fi.com/B0B61QC1BU" target="_blank">
-  <img height="36" src="https://storage.ko-fi.com/cdn/kofi5.png?v=6" alt="Buy Me a Coffee" />
-</a>
-
+  </div>
 </body>
 </html>
