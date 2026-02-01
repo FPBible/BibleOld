@@ -2,228 +2,328 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Matthew 22 — The Wedding Feast and the Lord of All Questions</title>
+  <title>Matthew 22 — The Wedding Feast and the Silencing of the Temple Order</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
-    body{ font-family: system-ui, sans-serif; line-height: 1.6; margin: 1.5em; max-width: 900px; }
-    h1,h2,h3{ margin-top: 1.4em; margin-bottom: 0.4em; }
-    nav{ margin: 1em 0; font-size: 0.95em; }
-    nav a{ margin-right: 0.6em; text-decoration: underline; }
-    p{ margin: 0.6em 0; }
-    hr{ margin: 2em 0; border-top: 1px solid rgba(0,0,0,0.12); }
+    :root{
+      --maxw: 980px;
+      --pad: 16px;
+      --line: rgba(0,0,0,0.12);
+      --line2: rgba(0,0,0,0.18);
+      --muted: rgba(0,0,0,0.72);
+      --soft: rgba(0,0,0,0.06);
+      --soft2: rgba(0,0,0,0.04);
+      --radius: 14px;
+    }
+    body{
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.65;
+      margin: 0;
+      color: #111;
+      background: #fff;
+    }
+    .wrap{
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 18px var(--pad) 48px;
+    }
+    h1{ font-size: 2.05rem; margin: 0.2em 0 0.1em; letter-spacing: -0.02em; }
+    h2{ font-size: 1.35rem; margin: 1.2em 0 0.5em; padding-bottom: 0.2em; border-bottom: 1px solid var(--line); }
+    h3{ font-size: 1.08rem; margin: 1em 0 0.4em; }
+    p{ margin: 0.65em 0; }
+    hr{ border: 0; border-top: 1px solid var(--line); margin: 22px 0; }
+    a{ color: #111; text-decoration: underline; }
+    nav{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+      align-items: center;
+      font-size: 0.95em;
+      padding: 10px 12px;
+      background: var(--soft2);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+    }
+    .pill{
+      display: inline-block;
+      padding: 6px 10px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #fff;
+      text-decoration: none;
+    }
+    .pill:hover{ background: var(--soft); }
+    .sub{
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 0.98em;
+    }
+    .card{
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      padding: 14px 14px;
+    }
+    .scripture-text{
+      font-size: 1.05em;
+    }
+    .v-num{
+      font-weight: 700;
+      font-size: 0.75em;
+      vertical-align: super;
+      opacity: 0.65;
+      margin-right: 4px;
+      white-space: nowrap;
+    }
+    .note{
+      font-size: 0.96em;
+      color: var(--muted);
+    }
+    .annotation-block{
+      background: var(--soft2);
+      padding: 12px 14px;
+      border-left: 3px solid var(--line2);
+      border-radius: 10px;
+    }
     ul{ margin: 0.6em 0 0.8em 1.2em; }
     li{ margin: 0.35em 0; }
-    .note{ font-size: 0.95em; opacity: 0.9; }
+    .kofi{
+      margin-top: 14px;
+    }
+    .footer-nav{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+      align-items: center;
+      justify-content: space-between;
+    }
   </style>
 </head>
 <body>
+  <div class="wrap">
+    <a id="top"></a>
 
-<a id="top"></a>
+    <nav aria-label="Top navigation">
+      <a class="pill" href="/Bible/index.html">FPBible Index</a>
+      <a class="pill" href="index.html">Book Index</a>
+      <a class="pill" href="preface.html">Preface</a>
+      <a class="pill" href="appendix.html">Appendix</a>
+      <a class="pill" href="matt21.html">Prev</a>
+      <a class="pill" href="matt23.html">Next</a>
+      <a class="pill" href="/Bible/Prophecy/index.html">Prophecy Hub</a>
+      <a class="pill" href="#top">Top</a>
+    </nav>
 
-<nav>
-  <a href="/Bible/index.html">FPBible Index</a> |
-  <a href="index.html">Book Index</a> |
-  <a href="preface.html">Preface</a> |
-  <a href="appendix.html">Appendix</a> |
-  <a href="matt21.html">Prev</a> |
-  <a href="matt23.html">Next</a> |
-  <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> |
-  <a href="#top">Top</a>
-</nav>
+    <h1>Matthew 22 — The Wedding Feast and the Silencing of the Temple Order</h1>
+    <div class="sub note">
+      Scripture base text: World English Bible (Public Domain) —
+      <a href="https://ebible.org/web/MAT22.htm" target="_blank" rel="noopener noreferrer">Matthew 22</a>
+    </div>
 
-<h1>Matthew 22</h1>
-<h2>The Wedding Feast and the Lord of All Questions</h2>
+    <hr />
 
-<p class="note">
-Original text: 
-<a href="https://www.biblegateway.com/passage/?search=Matthew+22&version=LSV" target="_blank">Matthew 22 — LSV</a>
-</p>
+    <h2>Immediate Context</h2>
+    <p>
+      Matthew 22 continues the covenant confrontation: Jesus announces the wedding-feast invitation moving beyond the old leadership, then dismantles the trap-questions of the temple parties, leaving the old order speechless as its authority collapses in the AD 30–70 transition.
+    </p>
 
-<hr />
+    <hr />
 
-<h2>Immediate Context</h2>
-<p>
-Jesus continues His confrontation with the leaders in the Temple. 
-He uses the imagery of a royal wedding to describe the transition of the Kingdom from those who rejected the invitation to those gathered from the "highways." 
-</p>
-<p>
-This chapter establishes that <strong>rejection of the Son leads to the destruction of the old city, while the New Covenant is a feast where the only requirement is the "garment" provided by the King.</strong>
-</p>
+    <h2>Scripture (WEB)</h2>
+    <div class="card">
+      <div class="scripture-text">
 
-<hr />
+        <p>
+          <span class="v-num">1</span>Jesus answered and spoke again in parables to them, saying,
+          <span class="v-num">2</span>“The Kingdom of Heaven is like a certain king, who made a marriage feast for his son,
+          <span class="v-num">3</span>and sent out his servants to call those who were invited to the marriage feast, but they would not come.
+          <span class="v-num">4</span>Again he sent out other servants, saying, ‘Tell those who are invited, “Behold, I have prepared my dinner. My cattle and my fatlings are killed, and all things are ready. Come to the marriage feast!”’
+          <span class="v-num">5</span>But they made light of it and went their ways, one to his own farm, another to his merchandise,
+          <span class="v-num">6</span>and the rest grabbed his servants, treated them shamefully, and killed them.
+          <span class="v-num">7</span>When the king heard that, he was angry, and sent his armies, destroyed those murderers, and burned their city.
+          <span class="v-num">8</span>“Then he said to his servants, ‘The wedding is ready, but those who were invited weren’t worthy.
+          <span class="v-num">9</span>Go therefore to the intersections of the highways, and as many as you may find, invite to the marriage feast.’
+          <span class="v-num">10</span>Those servants went out into the highways and gathered together as many as they found, both bad and good. The wedding was filled with guests.
+          <span class="v-num">11</span>But when the king came in to see the guests, he saw there a man who didn’t have on wedding clothing,
+          <span class="v-num">12</span>and he said to him, ‘Friend, how did you come in here not wearing wedding clothing?’ He was speechless.
+          <span class="v-num">13</span>Then the king said to the servants, ‘Bind him hand and foot, take him away, and throw him into the outer darkness. That is where the weeping and gnashing of teeth will be.’
+          <span class="v-num">14</span>For many are called, but few chosen.”
+        </p>
 
-<h2>Fulfilled Paraphrase</h2>
+        <p>
+          <span class="v-num">15</span>Then the Pharisees went and took counsel how they might entrap him in his talk.
+          <span class="v-num">16</span>They sent their disciples to him, along with the Herodians, saying, “Teacher, we know that you are honest, and teach the way of God in truth, no matter whom you teach, for you aren’t partial to anyone.
+          <span class="v-num">17</span>Tell us therefore, what do you think? Is it lawful to pay taxes to Caesar, or not?”
+          <span class="v-num">18</span>But Jesus perceived their wickedness, and said, “Why do you test me, you hypocrites?
+          <span class="v-num">19</span>Show me the tax money.” They brought to him a denarius.
+          <span class="v-num">20</span>He asked them, “Whose is this image and inscription?”
+          <span class="v-num">21</span>They said to him, “Caesar’s.” Then he said to them, “Give therefore to Caesar the things that are Caesar’s, and to God the things that are God’s.”
+          <span class="v-num">22</span>When they heard it, they marveled, and left him and went away.
+        </p>
 
-<h3>The Parable of the Wedding Feast (22:1–14)</h3>
-<p>
-The Kingdom is like a King who prepared a wedding feast for his Son. 
-He sent servants to call those invited, but they refused. He sent more, but they ignored the call—some even killed the messengers. 
-The King was outraged; <strong>He sent His armies, destroyed those murderers, and burned their city.</strong> 
-He then told His servants, "The wedding is ready, but the invited were not worthy. 
-Go to the thoroughfares and invite everyone you find." 
-The hall was filled with guests. But the King saw a man there without a wedding garment and asked, "Friend, how did you get in here without the garment?" 
-The man was speechless. The King had him cast into the outer darkness. 
-For many are called, but few are chosen.
-</p>
+        <p>
+          <span class="v-num">23</span>On that day Sadducees (those who say that there is no resurrection) came to him. They asked him,
+          <span class="v-num">24</span>saying, “Teacher, Moses said, ‘If a man dies, having no children, his brother shall marry his wife, and raise up offspring for his brother.’
+          <span class="v-num">25</span>Now there were with us seven brothers. The first married and died, and having no offspring left his wife to his brother.
+          <span class="v-num">26</span>In like manner the second also, and the third, to the seventh.
+          <span class="v-num">27</span>After them all, the woman died.
+          <span class="v-num">28</span>In the resurrection, therefore, whose wife will she be of the seven? For they all had her.”
+          <span class="v-num">29</span>But Jesus answered them, “You are mistaken, not knowing the Scriptures, nor the power of God.
+          <span class="v-num">30</span>For in the resurrection they neither marry nor are given in marriage, but are like God’s angels in heaven.
+          <span class="v-num">31</span>But concerning the resurrection of the dead, haven’t you read that which was spoken to you by God, saying,
+          <span class="v-num">32</span>‘I am the God of Abraham, and the God of Isaac, and the God of Jacob’? God is not the God of the dead, but of the living.”
+          <span class="v-num">33</span>When the multitudes heard it, they were astonished at his teaching.
+        </p>
 
-<p class="note">
-<strong>Fulfillment note:</strong> The "burning of the city" is a precise prophecy of AD 70. The "wedding garment" is the righteousness of Christ—the only way to remain in the Feast of the New Creation.
-</p>
+        <p>
+          <span class="v-num">34</span>But the Pharisees, when they heard that he had silenced the Sadducees, gathered themselves together.
+          <span class="v-num">35</span>One of them, a lawyer, asked him a question, testing him.
+          <span class="v-num">36</span>“Teacher, which is the greatest commandment in the law?”
+          <span class="v-num">37</span>Jesus said to him, “‘You shall love the Lord your God with all your heart, with all your soul, and with all your mind.’
+          <span class="v-num">38</span>This is the first and great commandment.
+          <span class="v-num">39</span>A second likewise is this, ‘You shall love your neighbor as yourself.’
+          <span class="v-num">40</span>The whole law and the prophets depend on these two commandments.”
+        </p>
 
-<hr />
+        <p>
+          <span class="v-num">41</span>Now while the Pharisees were gathered together, Jesus asked them a question,
+          <span class="v-num">42</span>saying, “What do you think of the Christ? Whose son is he?” They said to him, “Of David.”
+          <span class="v-num">43</span>He said to them, “How then does David in the Spirit call him Lord, saying,
+          <span class="v-num">44</span>‘The Lord said to my Lord, sit on my right hand, until I make your enemies a footstool for your feet’?
+          <span class="v-num">45</span>If then David calls him Lord, how is he his son?”
+          <span class="v-num">46</span>No one was able to answer him a word, neither did any man dare ask him any more questions from that day forth.
+        </p>
 
-<h3>Taxes and the Image of God (22:15–22)</h3>
-<p>
-The Pharisees tried to trap Him: "Is it lawful to pay taxes to Caesar or not?" 
-Jesus, knowing their malice, asked for a denarius. "Whose image and inscription is this?" 
-They said, "Caesar's." 
-He replied, "Then <strong>render to Caesar the things that are Caesar's, and to God the things that are God's.</strong>" 
-They were stunned and left Him.
-</p>
+      </div>
+    </div>
 
-<p class="note">
-<strong>Fulfillment note:</strong> In the New Covenant, we are not defined by political rebellion, but by whose "Image" is on our hearts. We are God's "currency" in the world.
-</p>
+    <hr />
 
-<hr />
+    <h2>Fulfillment Notes</h2>
+    <div class="card">
+      <p class="note">1) The wedding feast announces New Covenant inclusion while the old leadership refuses the King’s invitation.</p>
+      <p class="note">2) “He sent his armies… burned their city” signals first-century covenant judgment that climaxes in Jerusalem’s destruction (AD 70).</p>
+      <p class="note">3) “Outer darkness” is exclusion from covenant banquet-life, not a geography lesson about the afterlife.</p>
+      <p class="note">4) Jesus dismantles the temple parties’ trap-questions, exposing their loss of interpretive authority.</p>
+      <p class="note">5) Psalm 110 is used to enthrone Messiah now, not to postpone His reign.</p>
+    </div>
 
-<h3>The God of the Living (22:23–33)</h3>
-<p>
-The Sadducees, who deny the resurrection, asked a hypothetical question about a woman with seven husbands. 
-Jesus replied, "You are mistaken, not knowing the Scriptures nor the power of God. 
-In the resurrection, they neither marry nor are given in marriage, but are like messengers of God in heaven. 
-But regarding the resurrection of the dead, haven't you read: 'I am the God of Abraham, Isaac, and Jacob'? 
-<strong>He is not the God of the dead, but of the living.</strong>"
-</p>
+    <hr />
 
-<p class="note">
-<strong>Fulfillment note:</strong> The "Resurrection" is a present reality in the Spirit. Because He is the God of the Living, those in the Finished Work never truly die.
-</p>
+    <h2>Annotations</h2>
+    <div class="annotation-block">
+      <div class="annotation-item"><strong>wedding feast</strong> — covenant union image: the Son’s marriage celebration = New Covenant reality and access.</div>
+      <div class="annotation-item"><strong>invited… would not come</strong> — Israel’s leadership refusal of Messiah’s summons in the last-days transition.</div>
+      <div class="annotation-item"><strong>destroyed… burned their city</strong> — covenant-judgment imagery that lands in the AD 70 devastation of Jerusalem.</div>
+      <div class="annotation-item"><strong>wedding clothing</strong> — belonging marker: covenant participation requires receiving the King’s provided righteousness, not self-status.</div>
+      <div class="annotation-item"><strong>outer darkness / weeping and gnashing</strong> — covenant-exclusion language tied to first-century judgment and loss of inheritance.</div>
+      <div class="annotation-item"><strong>Caesar’s image</strong> — exposes false binaries; God’s claim is ultimate because humans bear His image.</div>
+      <div class="annotation-item"><strong>resurrection</strong> — transition-life reality: God is “of the living,” covenant life not trapped in temple assumptions.</div>
+      <div class="annotation-item"><strong>love God / love neighbor</strong> — the Law’s goal brought to completion in Christ’s New Covenant ethic.</div>
+      <div class="annotation-item"><strong>Psalm 110</strong> — enthronement text: Messiah seated, enemies subdued through covenant judgment and transition.</div>
+    </div>
 
-<hr />
+    <hr />
 
-<h3>The Great Commandment (22:34–40)</h3>
-<p>
-A lawyer asked, "Which is the great commandment in the Law?" 
-Jesus said, "You shall love the Lord your God with all your heart, soul, and mind. This is the first. 
-The second is like it: You shall love your neighbor as yourself. 
-<strong>On these two commandments hang all the Law and the Prophets.</strong>"
-</p>
+    <h2>Fulfillment Commentary</h2>
 
-<p class="note">
-<strong>Fulfillment note:</strong> Love is the "fulfillment" of the Law. In the New Covenant, the Law is not an external code but an internal nature of Love.
-</p>
+    <h3>1) Wedding feast: covenant union announced, refusal exposed</h3>
+    <p>
+      Jesus frames the Kingdom as a wedding feast because covenant is relational union, not mere regulation. The king prepares the feast “for his son,” which locates the Kingdom in the Son’s honor and the Son’s finished provision. In Matthew’s flow, this is the public declaration that the covenant center is no longer the temple administration; it is the Messiah Himself. The invited guests represent the covenant-privileged leadership and those who assumed the banquet was owed to them by birthright. Their refusal is not neutral; it is treason against the King’s Son.
+    </p>
+    <p>
+      The refusal also reveals what the old order had become: “farm” and “merchandise” imagery paints a leadership class more invested in land-based advantage and religious economy than in God’s visitation. The killing of servants matches Israel’s prophetic history: messengers are beaten, shamed, and rejected. Jesus is not telling a timeless morality tale; He is describing the actual covenant pattern that is culminating in His own rejection.
+    </p>
 
-<hr />
+    <h3>2) “Burned their city”: covenant judgment and AD 70 clarity</h3>
+    <p>
+      Verse 7 is the time-signal in the parable: the king sends armies, destroys the murderers, and burns their city. In the covenant-litigation frame, this is not random violence; it is the execution of the covenant lawsuit against a generation that rejects the Son. Historically, the Jesus-movement understood Jerusalem’s fall as covenant judgment—an end-of-age event that closed the Mosaic administration and publicly vindicated Christ’s authority. This is why Full Preterism refuses futurist drift here: Jesus is warning His contemporaries about their city and their covenant world.
+    </p>
+    <p>
+      The key is that the feast does not fail when the old invitees refuse. The wedding is “ready.” The Son’s provision stands. The invitation expands out to the “intersections of the highways”—a deliberate widening beyond the controlled temple center. This is the New Covenant expansion: the Kingdom is not locked behind priestly gatekeeping. The King fills the hall because the Son’s work is sufficient.
+    </p>
 
-<h3>David’s Son and David’s Lord (22:41–46)</h3>
-<p>
-Jesus asked the Pharisees, "What do you think about the Christ? Whose son is He?" 
-They said, "The Son of David." 
-He asked, "Then why does David, in the Spirit, call Him 'Lord,' saying: 'The LORD said to my Lord, Sit at My right hand until I make Your enemies a footstool for Your feet'? 
-If David calls Him Lord, how is He his son?" 
-No one could answer Him, and from that day on, no one dared to ask Him any more questions.
-</p>
+    <h3>3) Wedding clothing: receiving the King’s provision, not importing self-status</h3>
+    <p>
+      The man without wedding clothing is not a cheap “gotcha.” It exposes a deeper issue: trying to enter the Kingdom on your own terms. In the old system, identity was performed and signaled—pedigree, purity codes, social ranking, temple access. The wedding garment symbolizes the provided “fit” for the feast: you don’t craft your own righteousness to belong; you receive the King’s gift and come as the kind of guest the Son’s celebration creates.
+    </p>
+    <p>
+      “He was speechless” mirrors the larger theme of Matthew 22: when the old order is confronted by the King’s reality, it has no defense. Outer darkness and gnashing language functions as covenant-exclusion imagery—being locked out of the banquet-life, losing inheritance, standing outside the joy of the Son’s reign. In the AD 30–70 transition, that exclusion becomes historically visible as the old temple-centered identity collapses and the New Covenant people remain.
+    </p>
 
-<p class="note">
-<strong>Fulfillment note:</strong> Jesus is proving His Divinity. He is not just a human descendant of David; He is the eternal Lord who has already taken His seat at the Father's right hand.
-</p>
+    <h3>4) Trap questions: the temple parties compete for control and lose</h3>
+    <p>
+      After the parable, the Pharisees and Herodians attempt to trap Jesus over Caesar. The goal is not sincere ethics; it’s control. Jesus’ reply is surgical: yes, render Caesar what belongs to Caesar, but render God what belongs to God. The deeper implication is unavoidable: Caesar’s coin bears Caesar’s image; humans bear God’s image. Therefore God’s claim is total. Jesus refuses to let the Kingdom be reduced to political tribalism or temple-party manipulation. The King will not be managed by their categories.
+    </p>
+    <p>
+      Then the Sadducees arrive with resurrection denial dressed as clever logic. Their whole question is built on temple-age assumptions: lineage, levirate marriage, and the idea that “resurrection” must look like the continuation of the old social world. Jesus corrects them: they don’t know Scripture or God’s power. He anchors the argument in covenant identity—God calls Himself the God of Abraham, Isaac, and Jacob—God is of the living. In other words, covenant life is not trapped inside the temple’s framework of legitimacy. Life is located in the God who gives life.
+    </p>
 
-<hr />
+    <h3>5) The Law’s center: love as the fulfilled aim</h3>
+    <p>
+      When asked for the greatest commandment, Jesus does not create a new legalism; He reveals the Law’s heart. Love God; love neighbor. “The whole law and the prophets depend on these.” In covenant terms, this is the Law’s goal brought to the surface—what it was always pointing toward but could not produce by external commands. In the New Covenant, love is not a ladder to earn God; love is the fruit of union with God. The Kingdom ethic is not “try harder”; it is “live from the Son.”
+    </p>
 
-<h2>Fulfillment Commentary</h2>
+    <h3>6) Psalm 110: enthronement now, enemies subdued in the transition</h3>
+    <p>
+      Jesus ends by flipping the test: if Messiah is David’s son, why does David call Him Lord? The point is enthronement. Psalm 110 locates Messiah at God’s right hand “until” enemies are placed as a footstool. In Matthew’s covenant-litigation flow, those enemies include the rebellious leadership and the structures resisting the King. The subduing is not postponed to a distant future; it unfolds through Christ’s cross/resurrection and the first-century covenant judgment that ends the temple age. That’s why no one can answer Him: the old order cannot explain a Messiah who is both David’s son and David’s Lord without conceding that Jesus is the enthroned King.
+    </p>
 
-<h3>1) The Historical Burn of AD 70</h3>
-<p>
-In the Parable of the Wedding Feast (v. 7), Jesus is not speaking metaphorically. 
-The "armies" were the Roman legions, whom God used as His instrument of judgment to "burn the city" (Jerusalem) for its rejection of the Son. 
-This marks the definitive end of the Old Covenant "invitation."
-</p>
+    <hr />
 
-<h3>2) The Wedding Garment</h3>
-<p>
-In the ancient world, the host of a royal wedding provided the garments for the guests. 
-To refuse the garment was an insult to the King. 
-In the Finished Work, we don't bring our "own" righteousness (filthy rags) to the feast; 
-we wear the garment of Christ's righteousness which has been freely provided.
-</p>
+    <h2>Prophecy Hub Links</h2>
+    <ul>
+      <li><a href="/Bible/Prophecy/index.html#wedding-feast">Wedding Feast and Covenant Inclusion</a></li>
+      <li><a href="/Bible/Prophecy/index.html#jerusalem-judgment">Jerusalem Judgment and AD 70</a></li>
+      <li><a href="/Bible/Prophecy/index.html#psalm-110">Psalm 110 and Messiah Enthroned</a></li>
+    </ul>
 
-<h3>3) Mistaking the Power of God</h3>
-<p>
-Jesus rebukes the Sadducees for two things: not knowing the Scriptures and not knowing the **Power of God**. 
-The Finished Work is the "Power of God" that brings life out of death. 
-The Sadducees were stuck in a materialist, "Old World" view that could not see the spiritual reality of the New Creation.
-</p>
+    <hr />
 
-<h3>4) The God of the Living</h3>
-<p>
-By quoting the present-tense "I AM" from the burning bush regarding the patriarchs, 
-Jesus reveals that the New Covenant is an **Eternal Covenant**. 
-Death has been swallowed up in victory. We don't "wait" to live; we are alive in Him now.
-</p>
+    <h2>Cross-References</h2>
+    <ul>
+      <li><a href="https://ebible.org/web/ISA25.htm" target="_blank" rel="noopener noreferrer">Isaiah 25 (the feast and victory)</a></li>
+      <li><a href="https://ebible.org/web/PSA110.htm" target="_blank" rel="noopener noreferrer">Psalm 110 (Lord and footstool)</a></li>
+      <li><a href="https://ebible.org/web/EXO03.htm" target="_blank" rel="noopener noreferrer">Exodus 3:6 (God of the living)</a></li>
+    </ul>
 
-<h3>5) The Footstool of the Finished Work</h3>
-<p>
-Quoting Psalm 110, Jesus establishes His current position. 
-He is already seated at the right hand of the Father. 
-The "Finished Work" means that the victory is secured, and we are now living in the time where His enemies are being made His footstool through the expansion of His Kingdom.
-</p>
+    <hr />
 
-<hr />
+    <h2>New Creation Reality</h2>
+    <p>
+      You’re not negotiating access through systems or status—you’re living inside the Son’s feast, clothed in what the King provides, free to render your whole self to God because you already belong.
+    </p>
 
-<h2>Prophecy Hub Links</h2>
-<ul>
-  <li><strong>The Burning of the City</strong> — <a href="/Bible/Prophecy/index.html">The AD 70 Judgment</a></li>
-  <li><strong>The God of the Living</strong> — <a href="/Bible/Prophecy/index.html">The Nature of Resurrection</a></li>
-  <li><strong>Psalm 110 Fulfillment</strong> — <a href="/Bible/Prophecy/index.html">The Seated King</a></li>
-</ul>
+    <hr />
 
-<hr />
+    <h2>Reflection</h2>
+    <p>
+      Where am I trying to enter the Kingdom “unclothed”—bringing my own credentials or anxieties—and what would change if I simply received the King’s provision and enjoyed the feast?
+    </p>
 
-<h2>Cross-References</h2>
-<ul>
-  <li><strong>The Seated Lord</strong> — <a href="https://www.biblegateway.com/passage/?search=Psalm+110%3A1&version=LSV" target="_blank">Psalm 110:1</a></li>
-  <li><strong>The God of Abraham</strong> — <a href="https://www.biblegateway.com/passage/?search=Exodus+3%3A6&version=LSV" target="_blank">Exodus 3:6</a></li>
-  <li><strong>Love as Fulfillment</strong> — <a href="https://www.biblegateway.com/passage/?search=Romans+13%3A10&version=LSV" target="_blank">Romans 13:10</a></li>
-</ul>
+    <hr />
 
-<hr />
+    <div class="footer-nav">
+      <nav aria-label="Bottom navigation">
+        <a class="pill" href="/Bible/index.html">FPBible Index</a>
+        <a class="pill" href="index.html">Book Index</a>
+        <a class="pill" href="matt21.html">Prev</a>
+        <a class="pill" href="matt23.html">Next</a>
+        <a class="pill" href="/Bible/Prophecy/index.html">Prophecy Hub</a>
+        <a class="pill" href="#top">Top</a>
+      </nav>
 
-<h2>New Creation Reality</h2>
-<p>
-Matthew 22 reveals that we are the guests gathered from the highways. 
-We are feasting at the Wedding of the Son. 
-We don't live in fear of the "burning city" because we have left the old world behind. 
-We wear the garment of His righteousness and live as those who are "truly alive" to the God of the living. 
-All our questions have been answered in the Person of the Christ.
-</p>
+      <div class="kofi">
+        <a href="https://ko-fi.com/B0B61QC1BU" target="_blank" rel="noopener noreferrer">
+          <img height="36" src="https://storage.ko-fi.com/cdn/kofi5.png?v=6" alt="Support FPBible on Ko-fi" />
+        </a>
+      </div>
+    </div>
 
-<hr />
+    <p class="note" style="margin-top:14px;">
+      Scripture quotation is from the <strong>World English Bible</strong> (WEB), which is in the Public Domain (text hosted by eBible.org). “World English Bible” is a trademark of eBible.org; the text itself may be copied freely.
+    </p>
 
-<h2>Reflection</h2>
-<p>
-Am I still trying to wear my "own" clothes to the King's feast, or have I rested in the garment He provided?
-</p>
-<p>
-Do I recognize that I am God's "image-bearer," belonging entirely to Him regardless of what "Caesar" I live under?
-</p>
-
-<hr />
-
-<nav>
-  <a href="/Bible/index.html">FPBible Index</a> |
-  <a href="index.html">Book Index</a> |
-  <a href="preface.html">Preface</a> |
-  <a href="appendix.html">Appendix</a> |
-  <a href="matt21.html">Prev</a> |
-  <a href="matt23.html">Next</a> |
-  <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> |
-  <a href="#top">Top</a>
-</nav>
-
-<a href="https://ko-fi.com/B0B61QC1BU" target="_blank">
-  <img height="36" src="https://storage.ko-fi.com/cdn/kofi5.png?v=6" alt="Buy Me a Coffee" />
-</a>
-
+  </div>
 </body>
 </html>
