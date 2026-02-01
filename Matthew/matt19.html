@@ -2,213 +2,303 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Matthew 19 — Hardness of Heart vs. The Regeneration of All Things</title>
+  <title>Matthew 19 — Covenant Fidelity and the Cost of the Kingdom</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
-    body{ font-family: system-ui, sans-serif; line-height: 1.6; margin: 1.5em; max-width: 900px; }
-    h1,h2,h3{ margin-top: 1.4em; margin-bottom: 0.4em; }
-    nav{ margin: 1em 0; font-size: 0.95em; }
-    nav a{ margin-right: 0.6em; text-decoration: underline; }
-    p{ margin: 0.6em 0; }
-    hr{ margin: 2em 0; border-top: 1px solid rgba(0,0,0,0.12); }
+    :root{
+      --maxw: 980px;
+      --pad: 16px;
+      --line: rgba(0,0,0,0.12);
+      --line2: rgba(0,0,0,0.18);
+      --muted: rgba(0,0,0,0.72);
+      --soft: rgba(0,0,0,0.06);
+      --soft2: rgba(0,0,0,0.04);
+      --radius: 14px;
+    }
+    body{
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.65;
+      margin: 0;
+      color: #111;
+      background: #fff;
+    }
+    .wrap{
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 18px var(--pad) 48px;
+    }
+    h1{ font-size: 2.05rem; margin: 0.2em 0 0.1em; letter-spacing: -0.02em; }
+    h2{ font-size: 1.35rem; margin: 1.2em 0 0.5em; padding-bottom: 0.2em; border-bottom: 1px solid var(--line); }
+    h3{ font-size: 1.08rem; margin: 1em 0 0.4em; }
+    p{ margin: 0.65em 0; }
+    hr{ border: 0; border-top: 1px solid var(--line); margin: 22px 0; }
+    a{ color: #111; text-decoration: underline; }
+    nav{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+      align-items: center;
+      font-size: 0.95em;
+      padding: 10px 12px;
+      background: var(--soft2);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+    }
+    .pill{
+      display: inline-block;
+      padding: 6px 10px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #fff;
+      text-decoration: none;
+    }
+    .pill:hover{ background: var(--soft); }
+    .sub{
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 0.98em;
+    }
+    .card{
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      padding: 14px 14px;
+    }
+    .scripture-text{
+      font-size: 1.05em;
+    }
+    .v-num{
+      font-weight: 700;
+      font-size: 0.75em;
+      vertical-align: super;
+      opacity: 0.65;
+      margin-right: 4px;
+      white-space: nowrap;
+    }
+    .note{
+      font-size: 0.96em;
+      color: var(--muted);
+    }
+    .annotation-block{
+      background: var(--soft2);
+      padding: 12px 14px;
+      border-left: 3px solid var(--line2);
+      border-radius: 10px;
+    }
     ul{ margin: 0.6em 0 0.8em 1.2em; }
     li{ margin: 0.35em 0; }
-    .note{ font-size: 0.95em; opacity: 0.9; }
+    .kofi{
+      margin-top: 14px;
+    }
+    .footer-nav{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+      align-items: center;
+      justify-content: space-between;
+    }
   </style>
 </head>
 <body>
+  <div class="wrap">
+    <a id="top"></a>
 
-<a id="top"></a>
+    <nav aria-label="Top navigation">
+      <a class="pill" href="/Bible/index.html">FPBible Index</a>
+      <a class="pill" href="index.html">Book Index</a>
+      <a class="pill" href="preface.html">Preface</a>
+      <a class="pill" href="appendix.html">Appendix</a>
+      <a class="pill" href="matt18.html">Prev</a>
+      <a class="pill" href="matt20.html">Next</a>
+      <a class="pill" href="/Bible/Prophecy/index.html">Prophecy Hub</a>
+      <a class="pill" href="#top">Top</a>
+    </nav>
 
-<nav>
-  <a href="/Bible/index.html">FPBible Index</a> |
-  <a href="index.html">Book Index</a> |
-  <a href="preface.html">Preface</a> |
-  <a href="appendix.html">Appendix</a> |
-  <a href="matt18.html">Prev</a> |
-  <a href="matt20.html">Next</a> |
-  <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> |
-  <a href="#top">Top</a>
-</nav>
+    <h1>Matthew 19 — Covenant Fidelity and the Cost of the Kingdom</h1>
+    <div class="sub note">
+      Scripture base text: World English Bible (Public Domain) —
+      <a href="https://ebible.org/web/MAT19.htm" target="_blank" rel="noopener noreferrer">Matthew 19</a>
+    </div>
 
-<h1>Matthew 19</h1>
-<h2>Hardness of Heart vs. The Regeneration of All Things</h2>
+    <hr />
 
-<p class="note">
-Original text: 
-<a href="https://www.biblegateway.com/passage/?search=Matthew+19&version=LSV" target="_blank">Matthew 19 — LSV</a>
-</p>
+    <h2>Immediate Context</h2>
+    <p>
+      Matthew 19 continues Jesus’ covenant confrontation as He moves toward Jerusalem: questions about divorce, children, wealth, and inheritance expose how deeply the Mosaic system had distorted God’s intent, even as the New Creation order is being clarified before the AD 70 transition.
+    </p>
 
-<hr />
+    <hr />
 
-<h2>Immediate Context</h2>
-<p>
-Jesus leaves Galilee and enters the borders of Judea. The Pharisees immediately attempt to trap Him using the Law of Moses. 
-Jesus responds by distinguishing between the "concessions" of the Law and the "intent" of the New Creation.
-</p>
-<p>
-This chapter establishes that <strong>the Law was a temporary fix for a hard heart, but the Kingdom is a restoration of the original Union with God.</strong>
-</p>
+    <h2>Scripture (WEB)</h2>
+    <div class="card">
+      <div class="scripture-text">
+        <p>
+          <span class="v-num">1</span>When Jesus had finished these words, he departed from Galilee and came into the borders of Judea beyond the Jordan.
+          <span class="v-num">2</span>Great multitudes followed him, and he healed them there.
+        </p>
 
-<hr />
+        <p>
+          <span class="v-num">3</span>Pharisees came to him, testing him, and saying, “Is it lawful for a man to divorce his wife for any reason?”
+          <span class="v-num">4</span>He answered, “Haven’t you read that he who made them from the beginning made them male and female,
+          <span class="v-num">5</span>and said, ‘For this cause a man shall leave his father and mother, and shall join to his wife; and the two shall become one flesh?’
+          <span class="v-num">6</span>So that they are no more two, but one flesh. What therefore God has joined together, don’t let man tear apart.”
+        </p>
 
-<h2>Fulfilled Paraphrase</h2>
+        <p>
+          <span class="v-num">7</span>They asked him, “Why then did Moses command us to give her a writing of divorce, and divorce her?”
+          <span class="v-num">8</span>He said to them, “Moses, because of the hardness of your hearts, allowed you to divorce your wives, but from the beginning it has not been so.
+          <span class="v-num">9</span>I tell you that whoever divorces his wife, except for sexual immorality, and marries another, commits adultery; and he who marries her when she is divorced commits adultery.”
+        </p>
 
-<h3>Marriage and the Original Intent (19:1–12)</h3>
-<p>
-The Pharisees asked, "Is it lawful for a man to divorce his wife for any reason?" 
-Jesus didn't point to the scroll of the Law first; He pointed to the Beginning: "Have you not read that He who made them at the beginning made them male and female? 
-What God has joined together, let no man separate." 
-They countered, "Then why did Moses command a certificate of divorce?" 
-Jesus replied, "Moses permitted it because of your <strong>hardness of heart</strong>, but from the beginning it was not so. 
-In the New Reality, we return to the original Union." 
-The disciples noted that this standard was high; Jesus replied that this life is understood only by those to whom it is given.
-</p>
+        <p>
+          <span class="v-num">10</span>His disciples said to him, “If this is the case of the man with his wife, it is not expedient to marry.”
+          <span class="v-num">11</span>But he said to them, “Not all men can receive this saying, but those to whom it is given.
+          <span class="v-num">12</span>For there are eunuchs who were born that way from their mother’s womb, and there are eunuchs who were made eunuchs by men; and there are eunuchs who made themselves eunuchs for the Kingdom of Heaven’s sake. He who is able to receive it, let him receive it.”
+        </p>
 
-<p class="note">
-<strong>Fulfillment note:</strong> The Law of Moses managed sin; the New Covenant removes the "hardness" that made the Law necessary.
-</p>
+        <p>
+          <span class="v-num">13</span>Then little children were brought to him, that he should lay his hands on them and pray; and the disciples rebuked them.
+          <span class="v-num">14</span>But Jesus said, “Allow the little children, and don’t forbid them to come to me; for the Kingdom of Heaven belongs to ones like these.”
+          <span class="v-num">15</span>He laid his hands on them, and departed from there.
+        </p>
 
-<hr />
+        <p>
+          <span class="v-num">16</span>Behold, one came to him and said, “Good teacher, what good thing shall I do, that I may have eternal life?”
+          <span class="v-num">17</span>He said to him, “Why do you call me good? No one is good but one, that is, God. But if you want to enter into life, keep the commandments.”
+          <span class="v-num">18</span>He said to him, “Which ones?” Jesus said, “‘You shall not murder.’ ‘You shall not commit adultery.’ ‘You shall not steal.’ ‘You shall not give false testimony.’
+          <span class="v-num">19</span>‘Honor your father and mother.’ and, ‘You shall love your neighbor as yourself.’”
+        </p>
 
-<h3>The Kingdom Belongs to the Simple (19:13–15)</h3>
-<p>
-People brought little children to Jesus for a blessing. The disciples rebuked them, still thinking in terms of status. 
-Jesus said, "Leave the children alone. Do not stop them, for the Kingdom of Heaven belongs to those who are like them."
-</p>
+        <p>
+          <span class="v-num">20</span>The young man said to him, “All these things I have observed from my youth. What do I still lack?”
+          <span class="v-num">21</span>Jesus said to him, “If you want to be perfect, go, sell what you have, and give to the poor, and you will have treasure in heaven; and come, follow me.”
+          <span class="v-num">22</span>But when the young man heard the saying, he went away sorrowful, for he was one who had great possessions.
+        </p>
 
-<p class="note">
-<strong>Fulfillment note:</strong> You cannot "achieve" the New Creation; you can only receive it with the simple trust of a child.
-</p>
+        <p>
+          <span class="v-num">23</span>Jesus said to his disciples, “Most certainly I say to you, a rich man will enter into the Kingdom of Heaven with difficulty.
+          <span class="v-num">24</span>Again I tell you, it is easier for a camel to go through a needle’s eye than for a rich man to enter into the Kingdom of God.”
+        </p>
 
-<hr />
+        <p>
+          <span class="v-num">25</span>When the disciples heard it, they were exceedingly astonished, saying, “Who then can be saved?”
+          <span class="v-num">26</span>Looking at them, Jesus said, “With men this is impossible, but with God all things are possible.”
+        </p>
 
-<h3>The Rich Young Ruler: Law vs. Life (19:16–26)</h3>
-<p>
-A man asked, "What good thing shall I do to have eternal life?" 
-Jesus pointed him to the commandments. The man claimed he had kept them all. 
-Jesus then exposed the root: "If you want to be complete, sell your possessions, give to the poor, and follow Me." 
-The man went away grieving because he had great wealth. 
-Jesus told His disciples, "It is hard for a rich man to enter the Kingdom. It is easier for a camel to go through the eye of a needle." 
-The disciples were shocked: "Who then can be saved?" 
-Jesus looked at them and said, "With men this is impossible, but with God <strong>all things are possible.</strong>"
-</p>
+        <p>
+          <span class="v-num">27</span>Then Peter answered, “Behold, we have left everything, and followed you. What then will we have?”
+          <span class="v-num">28</span>Jesus said to them, “Most certainly I tell you that you who have followed me, in the regeneration when the Son of Man will sit on the throne of his glory, you also will sit on twelve thrones, judging the twelve tribes of Israel.
+          <span class="v-num">29</span>Everyone who has left houses, or brothers, or sisters, or father, or mother, or wife, or children, or lands, for my name’s sake, will receive one hundred times, and will inherit eternal life.
+          <span class="v-num">30</span>But many will be last who are first; and first who are last.
+        </p>
+      </div>
+    </div>
 
-<p class="note">
-<strong>Fulfillment note:</strong> The man was trying to "buy" the New with the currency of the Old (merit and wealth). Entrance into Life is a work of God, not an accomplishment of man.
-</p>
+    <hr />
 
-<hr />
+    <h2>Fulfillment Notes</h2>
+    <div class="card">
+      <p class="note">1) Jesus restores creation-intent marriage as covenant faithfulness while exposing Mosaic concessions as temporary.</p>
+      <p class="note">2) Childlike reception defines Kingdom inheritance, not legal maturity or status.</p>
+      <p class="note">3) Wealth represents covenant security in the old system, which must be relinquished to follow Christ.</p>
+      <p class="note">4) The “regeneration” and judging of Israel point to the first-century covenant renewal culminating before AD 70.</p>
+    </div>
 
-<h3>The Promise of the Regeneration (19:27–30)</h3>
-<p>
-Peter said, "We have left everything to follow You. What will we have?" 
-Jesus said, "Truly I say to you, in the <strong>Regeneration</strong> (the New Creation), when the Son of Man sits on His throne of glory, 
-you who followed Me will also sit on twelve thrones, judging the twelve tribes of Israel. 
-Everyone who has left houses or family for My sake will receive a hundredfold and inherit eternal life. 
-But many who are first in the old system will be last in the New, and the last will be first."
-</p>
+    <hr />
 
-<p class="note">
-<strong>Fulfillment note:</strong> The "Regeneration" is the New Covenant age. The "judging" of the tribes refers to the apostolic authority that replaced the old Sanhedrin.
-</p>
+    <h2>Annotations</h2>
+    <div class="annotation-block">
+      <div class="annotation-item"><strong>Kingdom of Heaven</strong> — God’s reign arriving historically to replace the temple-centered covenant order.</div>
+      <div class="annotation-item"><strong>hardness of your hearts</strong> — covenant resistance that necessitated temporary Mosaic concessions.</div>
+      <div class="annotation-item"><strong>little children</strong> — symbols of dependence and inclusion, not merit or achievement.</div>
+      <div class="annotation-item"><strong>eternal life</strong> — covenant life of the age to come, not merely post-mortem existence.</div>
+      <div class="annotation-item"><strong>regeneration</strong> — the covenant renewal climaxing in the AD 70 transition.</div>
+    </div>
 
-<hr />
+    <hr />
 
-<h2>Fulfillment Commentary</h2>
+    <h2>Fulfillment Commentary</h2>
 
-<h3>1) Beyond the Hard Heart</h3>
-<p>
-Jesus defines the Mosaic Law as a temporary management system for "hard hearts." 
-In the Finished Work, the "stony heart" has been replaced with a "heart of flesh" (Ezekiel 36). 
-Therefore, we don't live by the concessions of the Law, but by the power of a restored life.
-</p>
+    <h3>1) Divorce, Moses, and Covenant Concession</h3>
+    <p>
+      Jesus’ response to the Pharisees is not an abstract marital ethics lecture but a covenant exposure. Divorce had become a legal mechanism for control and abandonment under the Mosaic system. By appealing to creation, Jesus reveals that Moses’ allowance was a concession to covenant hardness, not God’s ideal. This distinction matters in a covenant-transition context: the old system managed sin without curing it. The New Creation restores intent by transforming hearts rather than regulating breakdown.
+    </p>
 
-<h3>2) The Eye of the Needle</h3>
-<p>
-The "impossible" nature of salvation for the rich was a blow to the "Prosperity" theology of the Old Covenant, 
-where wealth was seen as a sign of God's favor under the Law. 
-Jesus proves that no amount of Old World "blessing" can gain a man entry into the New Creation. 
-It requires a total surrender of the old identity.
-</p>
+    <h3>2) Kingdom Reception and the Child Paradigm</h3>
+    <p>
+      The welcoming of children directly rebukes covenant elitism. Under the old order, access flowed through purity codes and hierarchy. Jesus places children—those without leverage—at the center of inheritance. This anticipates the New Creation, where belonging precedes achievement and sonship replaces probation.
+    </p>
 
-<h3>3) The Regeneration (Palingenesia)</h3>
-<p>
-The word "Regeneration" in verse 28 refers to the "new birth" of the world. 
-This is not a far-distant future event; it is the New Covenant era. 
-When Jesus sat on His throne (after the Ascension and the destruction of the old Temple), 
- the New World was fully inaugurated.
-</p>
+    <h3>3) Wealth, Law, and False Security</h3>
+    <p>
+      The rich young ruler embodies covenant confusion. He assumes eternal life is acquired through law-keeping, yet his wealth anchors him to the old system’s securities. Jesus’ demand is surgical, not universalized asceticism: relinquish the asset that binds you to the dying order. Wealth here symbolizes covenant confidence apart from Christ.
+    </p>
 
-<h3>4) The Twelve Thrones</h3>
-<p>
-The twelve apostles represent the new leadership of the "True Israel." 
-Their "judging" is the teaching and authority of the New Testament that now governs the people of God, 
-superseding the authority of the physical twelve tribes.
-</p>
+    <h3>4) Regeneration and the Judgment of Israel</h3>
+    <p>
+      Jesus’ promise of “regeneration” situates authority in the imminent covenant renewal. The disciples’ role in judging Israel is not future cosmic administration but first-century participation in the transition—proclaiming and embodying the New Creation as the old covenant reaches its terminus in AD 70.
+    </p>
 
-<h3>5) The First and the Last</h3>
-<p>
-This is the "Great Reversal." Those who were "first" (the religious elite of the Old Covenant) 
-found themselves "last" (outside the Kingdom), while the "last" (sinners, Gentiles, and the poor) 
-found themselves "first" in the New Creation.
-</p>
+    <h3>5) First Becoming Last</h3>
+    <p>
+      The chapter closes with reversal language: those privileged under the Mosaic system will find themselves displaced, while those who abandon status for Christ inherit life. This is covenant recalibration, not moral posturing. The New Creation reorders everything around Christ, not pedigree or possession.
+    </p>
 
-<hr />
+    <hr />
 
-<h2>Prophecy Hub Links</h2>
-<ul>
-  <li><strong>The Regeneration of All Things</strong> — <a href="/Bible/Prophecy/index.html">The New Covenant Age</a></li>
-  <li><strong>Hardness of Heart</strong> — <a href="/Bible/Prophecy/index.html">Law vs. Spirit</a></li>
-  <li><strong>The Apostolic Thrones</strong> — <a href="/Bible/Prophecy/index.html">Authority in the Ekklesia</a></li>
-</ul>
+    <h2>Prophecy Hub Links</h2>
+    <ul>
+      <li><a href="/Bible/Prophecy/index.html#regeneration">Regeneration and Covenant Renewal</a></li>
+      <li><a href="/Bible/Prophecy/index.html#marriage-covenant">Marriage and Covenant Fidelity</a></li>
+      <li><a href="/Bible/Prophecy/index.html#kingdom-inheritance">Kingdom Inheritance</a></li>
+    </ul>
 
-<hr />
+    <hr />
 
-<h2>Cross-References</h2>
-<ul>
-  <li><strong>The Heart of Flesh</strong> — <a href="https://www.biblegateway.com/passage/?search=Ezekiel+36%3A26&version=LSV" target="_blank">Ezekiel 36:26</a></li>
-  <li><strong>The Beginning</strong> — <a href="https://www.biblegateway.com/passage/?search=Genesis+2%3A24&version=LSV" target="_blank">Genesis 2:24</a></li>
-  <li><strong>The Eye of the Needle</strong> — <a href="https://www.biblegateway.com/passage/?search=Mark+10%3A25&version=LSV" target="_blank">Mark 10:25</a></li>
-</ul>
+    <h2>Cross-References</h2>
+    <ul>
+      <li><a href="https://ebible.org/web/GEN02.htm" target="_blank">Genesis 2:24</a></li>
+      <li><a href="https://ebible.org/web/MAL02.htm" target="_blank">Malachi 2:14–16</a></li>
+      <li><a href="https://ebible.org/web/HEB08.htm" target="_blank">Hebrews 8:13</a></li>
+    </ul>
 
-<hr />
+    <hr />
 
-<h2>New Creation Reality</h2>
-<p>
-Matthew 19 reveals that we are living in the "Regeneration." 
-The barriers of the "hard heart" have been removed by the Finished Work. 
-We don't follow Jesus to *get* a reward in the future; we live *from* the hundredfold Life He has already provided. 
-Our relationships and our resources are no longer governed by the "rules of divorce" or "rules of wealth," 
-but by the original intent of God’s Union with man.
-</p>
+    <h2>New Creation Reality</h2>
+    <p>
+      Life in the Kingdom is not sustained by law, wealth, or status but by trusting participation in Christ’s finished covenant renewal, where belonging and inheritance are secure now.
+    </p>
 
-<hr />
+    <hr />
 
-<h2>Reflection</h2>
-<p>
-Am I still looking for "rules" to manage my hardness of heart, or have I let the Spirit give me a new heart?
-</p>
-<p>
-Do I trust that "all things are possible" in the New Creation, or am I still trying to squeeze through the needle's eye on my own?
-</p>
+    <h2>Reflection</h2>
+    <p>
+      What security might Christ be asking me to release so that I live freely in the New Creation rather than clinging to a fading order?
+    </p>
 
-<hr />
+    <hr />
 
-<nav>
-  <a href="/Bible/index.html">FPBible Index</a> |
-  <a href="index.html">Book Index</a> |
-  <a href="preface.html">Preface</a> |
-  <a href="appendix.html">Appendix</a> |
-  <a href="matt18.html">Prev</a> |
-  <a href="matt20.html">Next</a> |
-  <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> |
-  <a href="#top">Top</a>
-</nav>
+    <div class="footer-nav">
+      <nav aria-label="Bottom navigation">
+        <a class="pill" href="/Bible/index.html">FPBible Index</a>
+        <a class="pill" href="index.html">Book Index</a>
+        <a class="pill" href="matt18.html">Prev</a>
+        <a class="pill" href="matt20.html">Next</a>
+        <a class="pill" href="/Bible/Prophecy/index.html">Prophecy Hub</a>
+        <a class="pill" href="#top">Top</a>
+      </nav>
 
-<a href="https://ko-fi.com/B0B61QC1BU" target="_blank">
-  <img height="36" src="https://storage.ko-fi.com/cdn/kofi5.png?v=6" alt="Buy Me a Coffee" />
-</a>
+      <div class="kofi">
+        <a href="https://ko-fi.com/B0B61QC1BU" target="_blank" rel="noopener noreferrer">
+          <img height="36" src="https://storage.ko-fi.com/cdn/kofi5.png?v=6" alt="Support FPBible on Ko-fi" />
+        </a>
+      </div>
+    </div>
 
+    <p class="note" style="margin-top:14px;">
+      Scripture quotation is from the <strong>World English Bible</strong> (WEB), which is in the Public Domain (text hosted by eBible.org). “World English Bible” is a trademark of eBible.org; the text itself may be copied freely.
+    </p>
+
+  </div>
 </body>
 </html>
