@@ -2,223 +2,330 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Matthew 18 — Kingdom Greatness and the Logic of Infinite Forgiveness</title>
+  <title>Matthew 18 — Greatness, Restoration, and Kingdom Forgiveness</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
-    body{ font-family: system-ui, sans-serif; line-height: 1.6; margin: 1.5em; max-width: 900px; }
-    h1,h2,h3{ margin-top: 1.4em; margin-bottom: 0.4em; }
-    nav{ margin: 1em 0; font-size: 0.95em; }
-    nav a{ margin-right: 0.6em; text-decoration: underline; }
-    p{ margin: 0.6em 0; }
-    hr{ margin: 2em 0; border-top: 1px solid rgba(0,0,0,0.12); }
+    :root{
+      --maxw: 980px;
+      --pad: 16px;
+      --line: rgba(0,0,0,0.12);
+      --line2: rgba(0,0,0,0.18);
+      --muted: rgba(0,0,0,0.72);
+      --soft: rgba(0,0,0,0.06);
+      --soft2: rgba(0,0,0,0.04);
+      --radius: 14px;
+    }
+    body{
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.65;
+      margin: 0;
+      color: #111;
+      background: #fff;
+    }
+    .wrap{
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 18px var(--pad) 48px;
+    }
+    h1{ font-size: 2.05rem; margin: 0.2em 0 0.1em; letter-spacing: -0.02em; }
+    h2{ font-size: 1.35rem; margin: 1.2em 0 0.5em; padding-bottom: 0.2em; border-bottom: 1px solid var(--line); }
+    h3{ font-size: 1.08rem; margin: 1em 0 0.4em; }
+    p{ margin: 0.65em 0; }
+    hr{ border: 0; border-top: 1px solid var(--line); margin: 22px 0; }
+    a{ color: #111; text-decoration: underline; }
+    nav{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+      align-items: center;
+      font-size: 0.95em;
+      padding: 10px 12px;
+      background: var(--soft2);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+    }
+    .pill{
+      display: inline-block;
+      padding: 6px 10px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #fff;
+      text-decoration: none;
+    }
+    .pill:hover{ background: var(--soft); }
+    .sub{
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 0.98em;
+    }
+    .card{
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      padding: 14px 14px;
+    }
+    .scripture-text{
+      font-size: 1.05em;
+    }
+    .v-num{
+      font-weight: 700;
+      font-size: 0.75em;
+      vertical-align: super;
+      opacity: 0.65;
+      margin-right: 4px;
+      white-space: nowrap;
+    }
+    .note{
+      font-size: 0.96em;
+      color: var(--muted);
+    }
+    .annotation-block{
+      background: var(--soft2);
+      padding: 12px 14px;
+      border-left: 3px solid var(--line2);
+      border-radius: 10px;
+    }
     ul{ margin: 0.6em 0 0.8em 1.2em; }
     li{ margin: 0.35em 0; }
-    .note{ font-size: 0.95em; opacity: 0.9; }
+    .kofi{
+      margin-top: 14px;
+    }
+    .footer-nav{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+      align-items: center;
+      justify-content: space-between;
+    }
   </style>
 </head>
 <body>
+  <div class="wrap">
+    <a id="top"></a>
 
-<a id="top"></a>
+    <nav aria-label="Top navigation">
+      <a class="pill" href="/Bible/index.html">FPBible Index</a>
+      <a class="pill" href="index.html">Book Index</a>
+      <a class="pill" href="preface.html">Preface</a>
+      <a class="pill" href="appendix.html">Appendix</a>
+      <a class="pill" href="matt17.html">Prev</a>
+      <a class="pill" href="matt19.html">Next</a>
+      <a class="pill" href="/Bible/Prophecy/index.html">Prophecy Hub</a>
+      <a class="pill" href="#top">Top</a>
+    </nav>
 
-<nav>
-  <a href="/Bible/index.html">FPBible Index</a> |
-  <a href="index.html">Book Index</a> |
-  <a href="preface.html">Preface</a> |
-  <a href="appendix.html">Appendix</a> |
-  <a href="matt17.html">Prev</a> |
-  <a href="matt19.html">Next</a> |
-  <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> |
-  <a href="#top">Top</a>
-</nav>
+    <h1>Matthew 18 — Greatness, Restoration, and Kingdom Forgiveness</h1>
+    <div class="sub note">
+      Scripture base text: World English Bible British Edition (Public Domain) — Matthew 18 on eBible.org:
+      <a href="https://ebible.org/eng-webbe/MAT18.htm" target="_blank" rel="noopener noreferrer">MAT18</a>
+    </div>
 
-<h1>Matthew 18</h1>
-<h2>Kingdom Greatness and the Logic of Infinite Forgiveness</h2>
+    <hr />
 
-<p class="note">
-Original text: 
-<a href="https://www.biblegateway.com/passage/?search=Matthew+18&version=LSV" target="_blank">Matthew 18 — LSV</a>
-</p>
+    <h2>Immediate Context</h2>
+    <p>
+      Matthew 18 sits inside Jesus’ escalating covenant-litigation with Israel’s leadership and the coming transition of ages: He forms a community that lives by Father-shaped humility, restores rather than exploits, and practices debt-cancelling mercy as the old order approaches its decisive judgment.
+    </p>
 
-<hr />
+    <hr />
 
-<h2>Immediate Context</h2>
-<p>
-After the Transfiguration and the miracle of the temple tax, the disciples are still thinking in terms of Old World status. 
-They want to know who is the "Greatest." 
-Jesus responds by using a child to illustrate that the New Covenant is not a ladder to be climbed, but a reality to be received.
-</p>
-<p>
-This chapter establishes that <strong>in the Kingdom, the humble are the highest, the lost are the priority, and forgiveness is the atmosphere of the Finished Work.</strong>
-</p>
+    <h2>Scripture (WEBBE)</h2>
+    <div class="card">
+      <div class="scripture-text">
+        <p>
+          <span class="v-num">1</span>In that hour the disciples came to Jesus, saying, “Who then is greatest in the <strong>Kingdom of Heaven</strong>?”
+          <span class="v-num">2</span>Jesus called a <strong>little child</strong> to himself, and set him in the middle of them
+          <span class="v-num">3</span>and said, “Most certainly I tell you, unless you turn and become as little children, you will in no way enter into the <strong>Kingdom of Heaven</strong>.
+          <span class="v-num">4</span>Whoever therefore humbles himself as this <strong>little child</strong> is the greatest in the <strong>Kingdom of Heaven</strong>.
+          <span class="v-num">5</span>Whoever receives one such <strong>little child</strong> in my name receives me,
+          <span class="v-num">6</span>but whoever causes one of these little ones who believe in me to stumble, it would be better for him if a huge millstone were hung around his neck and that he were sunk in the depths of the sea.
+        </p>
 
-<hr />
+        <p>
+          <span class="v-num">7</span>“Woe to the world because of <strong>occasions of stumbling</strong>! For it must be that the occasions come, but woe to that person through whom the occasion comes!
+          <span class="v-num">8</span>If your hand or your foot causes you to stumble, cut it off and cast it from you. It is better for you to enter into life maimed or crippled, rather than having two hands or two feet to be cast into the eternal fire.
+          <span class="v-num">9</span>If your eye causes you to stumble, pluck it out and cast it from you.
+          It is better for you to enter into life with one eye, rather than having two eyes to be cast into the Gehenna‡ or, Hell of fire.
+          <span class="v-num">10</span>See that you don’t despise one of these little ones, for I tell you that in heaven their angels always see the face of my Father who is in heaven.
+          <span class="v-num">11</span>For the Son of Man came to save that which was lost.‡
+        </p>
 
-<h2>Fulfilled Paraphrase</h2>
+        <p>
+          <span class="v-num">12</span>“What do you think? If a man has one hundred sheep, and one of them goes astray, doesn’t he leave the ninety-nine, go to the mountains, and seek that which has gone astray?
+          <span class="v-num">13</span>If he finds it, most certainly I tell you, he rejoices over it more than over the ninety-nine which have not gone astray.
+          <span class="v-num">14</span>Even so it is not the will of your Father who is in heaven that one of these little ones should perish.
+        </p>
 
-<h3>Childlike Entry (18:1–6)</h3>
-<p>
-The disciples asked, "Who is the greatest in the Kingdom of Heaven?" 
-Jesus called a little child to Him and said, "Truly, unless you change your mind and become as little children, you will not enter the Kingdom at all. 
-Whoever humbles himself like this child is the greatest. 
-Whoever receives a humble person in My Name receives Me; but whoever causes one of these 'little ones' who trust Me to stumble, it would be better for him to be drowned in the sea."
-</p>
+        <p>
+          <span class="v-num">15</span>“If your brother sins against you, go, show him his fault between you and him alone. If he listens to you, you have gained back your brother.
+          <span class="v-num">16</span>But if he doesn’t listen, take one or two more with you, that at the mouth of two or three witnesses every word may be established.
+          <span class="v-num">17</span>If he refuses to listen to them, tell it to the assembly. If he refuses to hear the assembly also, let him be to you as a Gentile or a tax collector.
+        </p>
 
-<p class="note">
-<strong>Fulfillment note:</strong> Entering the Kingdom isn't about religious achievement; it is about the "un-learning" of Old World ego.
-</p>
+        <p>
+          <span class="v-num">18</span>Most certainly I tell you, whatever things you <strong>bind on earth</strong> will have been bound in heaven, and whatever things you release on earth will have been released in heaven.
+          <span class="v-num">19</span>Again, assuredly I tell you, that if two of you will agree on earth concerning anything that they will ask, it will be done for them by my Father who is in heaven.
+          <span class="v-num">20</span>For where two or three are gathered together in my name, there I am in the middle of them.”
+        </p>
 
-<hr />
+        <p>
+          <span class="v-num">21</span>Then Peter came and said to him, “Lord, how often shall my brother sin against me, and I forgive him? Until seven times?”
+          <span class="v-num">22</span>Jesus said to him, “I don’t tell you until seven times, but, until <strong>seventy times seven</strong>.
+        </p>
 
-<h3>The Radical Removal of Obstacles (18:7–11)</h3>
-<p>
-"Woe to the world because of stumbling blocks! If your hand or foot causes you to stumble, cut it off. 
-It is better to enter Life crippled than to be thrown into the Gehenna of fire with both hands. 
-Do not look down on these little ones, for their messengers always see the face of My Father in the heavens. 
-The Son of Man came to save that which was lost."
-</p>
+        <p>
+          <span class="v-num">23</span>Therefore the <strong>Kingdom of Heaven</strong> is like a certain king who wanted to settle accounts with his servants.
+          <span class="v-num">24</span>When he had begun to settle, one was brought to him who owed him ten thousand talents.§
+          <span class="v-num">25</span>But because he couldn’t pay, his lord commanded him to be sold, with his wife, his children, and all that he had, and payment to be made.
+          <span class="v-num">26</span>The servant therefore fell down and knelt before him, saying, ‘Lord, have patience with me, and I will repay you all!’
+          <span class="v-num">27</span>The lord of that servant, being moved with compassion, released him and forgave him the debt.
+        </p>
 
-<p class="note">
-<strong>Fulfillment note:</strong> Gehenna refers to the historical judgment on the old system. Jesus is warning that clinging to "Old World" behaviors leads to being consumed by the "Old World's" end.
-</p>
+        <p>
+          <span class="v-num">28</span>“But that servant went out and found one of his fellow servants who owed him one hundred denarii,† and he grabbed him and took him by the throat, saying, ‘Pay me what you owe!’
+          <span class="v-num">29</span>“So his fellow servant fell down at his feet and begged him, saying, ‘Have patience with me, and I will repay you!’
+          <span class="v-num">30</span>He would not, but went and cast him into prison until he should pay back that which was due.
+          <span class="v-num">31</span>So when his fellow servants saw what was done, they were exceedingly sorry, and came and told their lord all that was done.
+          <span class="v-num">32</span>Then his lord called him in and said to him, ‘You wicked servant! I forgave you all that debt because you begged me.
+          <span class="v-num">33</span>Shouldn’t you also have had mercy on your fellow servant, even as I had mercy on you?’
+          <span class="v-num">34</span>His lord was angry, and delivered him to the <strong>tormentors</strong> until he should pay all that was due to him.
+          <span class="v-num">35</span>So my heavenly Father will also do to you, if you don’t each forgive your brother from your hearts for his misdeeds.”
+        </p>
 
-<hr />
+        <p class="note">
+          ‡ 18:11: NU omits verse 11. &nbsp; § 18:24: Ten thousand talents… extremely large sum. &nbsp; † 18:28: 100 denarii…
+        </p>
+      </div>
+    </div>
 
-<h3>The Shepherd’s Priority (18:12–14)</h3>
-<p>
-"If a man has a hundred sheep and one goes astray, does he not leave the ninety-nine on the mountains to seek the one? 
-If he finds it, he rejoices more over that one than over the ninety-nine that didn't wander. 
-In the same way, it is not the will of your Father that even one of these little ones should perish."
-</p>
+    <hr />
 
-<p class="note">
-<strong>Fulfillment note:</strong> The New Covenant is a rescue mission. The Shepherd has already found the sheep; we live in the joy of being "found."
-</p>
+    <h2>Fulfillment Notes</h2>
+    <div class="card">
+      <p class="note">1) This chapter forms a covenant-community for the AD 30–70 transition, training the remnant to live as the Father’s household while the old house collapses.</p>
+      <p class="note">2) “Gehenna” language is Jerusalem-facing warning tied to covenant judgment, not a modern afterlife scare tactic.</p>
+      <p class="note">3) “Bind/release” is covenant-administrative authority for that period of upheaval, guarding the new assembly’s boundaries as the temple order is being displaced.</p>
+      <p class="note">4) The unforgiving-servant parable targets Israel’s leadership culture—receiving massive debt-cancellation yet refusing mercy—setting up the moral logic behind the coming “reckoning.”</p>
+    </div>
 
-<hr />
+    <hr />
 
-<h3>Agreement and Presence (18:15–20)</h3>
-<p>
-"If your brother sins against you, go and show him his fault in private. If he listens, you have won him. 
-If he doesn't, take others with you. If he ignores them, tell the assembly. 
-Truly, what you bind on earth has already been bound in heaven. 
-Where two or three are gathered in My Name, <strong>I am there in the midst of them.</strong>"
-</p>
+    <h2>Annotations</h2>
+    <div class="annotation-block">
+      <div class="annotation-item"><strong>Kingdom of Heaven</strong> — Matthew’s covenant-language for God’s reign arriving in history and displacing the old temple-centered order.</div>
+      <div class="annotation-item"><strong>little child</strong> — a living sign of status reversal: humility and dependence, not priestly rank or pedigree, marks Kingdom “greatness.”</div>
+      <div class="annotation-item"><strong>occasions of stumbling</strong> — traps and scandal-makers that pressure the faithful remnant during the last-days conflict of the old age.</div>
+      <div class="annotation-item"><strong>bind on earth</strong> — covenant “binding” decisions (discipline/recognition) made by the assembly under heaven’s backing in the transition era.</div>
+      <div class="annotation-item"><strong>seventy times seven</strong> — limitless, Jubilee-flavoured forgiveness that mirrors God’s debt-remission rather than law-court retaliation.</div>
+      <div class="annotation-item"><strong>tormentors</strong> — severe covenant consequences pictured as imprisonment/discipline when mercy is rejected and the community is poisoned by unforgiveness.</div>
+      <div class="annotation-item"><strong>Gehenna</strong> — the Valley of Hinnom outside Jerusalem used as prophetic warning imagery for Jerusalem’s coming collapse.</div>
+    </div>
 
-<p class="note">
-<strong>Fulfillment note:</strong> Jesus is relocating His presence. He is no longer "in the Temple" but "in the midst" of the gathered New Creation people.
-</p>
+    <hr />
 
-<hr />
+    <h2>Fulfillment Commentary</h2>
 
-<h3>The Logic of Infinite Forgiveness (18:21–35)</h3>
-<p>
-Peter asked, "How often shall I forgive? Seven times?" 
-Jesus said, "No, seventy times seven." 
-He told a parable of a servant who owed a king ten thousand talents—an impossible debt. The king, moved by compassion, canceled it. 
-But that same servant found a fellow servant who owed him a small amount and threw him in prison. 
-When the king heard, he was outraged: "Should you not have had mercy on your fellow servant as I had on you?" 
-He handed him over to the jailers until he should pay all he owed. 
-"So My heavenly Father will do to you if you do not forgive from your heart."
-</p>
+    <h3>1) Greatness redefined as “New Covenant sonship,” not old-rank status</h3>
+    <p>
+      The disciples’ question (“Who then is greatest…?”) is not an abstract ethics discussion; it’s a clash of two operating systems. Under the Mosaic world, greatness was reinforced by visible markers: tribe, pedigree, proximity to the temple, and proximity to power. Jesus answers by placing a child at the centre. That is covenant-prophetic theatre. In the coming transition (AD 30–70), the old ladder of status is going to be exposed as hollow, because the new assembly is not built on bloodline or temple access but on the Father’s presence with His people. The child signals the opposite of performance-based standing: dependence, low status, and simple trust. “Enter the Kingdom” is not a vague future; it is the real-time passage from the old covenant frame into the lived reality of the new.
+    </p>
+    <p>
+      That also explains why Jesus ties reception of “one such little child” to reception of Himself. The remnant community will be tempted to chase influence, but the Kingdom’s signature is who it protects: the small, the overlooked, the vulnerable. That is exactly what the old system (especially at its corrupt end) trampled. So Matthew 18 begins by installing a new metric of covenant faithfulness: how you treat “the least” is how you treat the King.
+    </p>
 
-<p class="note">
-<strong>Fulfillment note:</strong> Forgiveness is a "done deal" from God's side (the 10,000 talents). We don't forgive to *get* forgiven; we forgive because we *are* forgiven. Refusing to forgive is an attempt to live back in the Old system of debt.
-</p>
+    <h3>2) Stumbling blocks, Gehenna, and the covenant-crisis backdrop</h3>
+    <p>
+      “Woe to the world because of occasions of stumbling” lands inside the first-century crisis atmosphere. Israel’s leadership culture was producing traps: burdens, exclusions, accusations, and social pressure designed to fracture the faithful. Jesus treats stumbling as deadly serious because, in the AD 30–70 overlap, the stakes are historical and communal. When a society is collapsing, the strong prey on the weak; and when a covenant order is being judged, the old regime intensifies its hostility toward the new.
+    </p>
+    <p>
+      The hard imagery (cut off hand/foot; pluck out eye) is not a literal self-harm instruction; it is prophetic hyperbole aimed at decisive separation from whatever drags you back into ruin. In that setting, “Gehenna” is not a generic synonym for post-mortem torment; it is Jerusalem-facing warning language. Jesus uses the valley image as an emblem of covenant catastrophe and uncleanness—what happens when the old world implodes and the city becomes a death-zone. This is consistent with Matthew’s wider urgency and Jesus’ repeated time-locked warnings to that generation as the covenant lawsuit matures toward AD 70.
+    </p>
+    <p>
+      The “angels always see the face of my Father” is another reversal: the “little ones” are not disposable. Heaven’s court is not impressed by temple status, but it is attentive to covenant faithfulness and to the protection of those the system would discard. In the New Creation frame, God’s presence is not managed by elites; it is the family’s inheritance.
+    </p>
 
-<hr />
+    <h3>3) The lost sheep: remnant logic inside Israel’s looming collapse</h3>
+    <p>
+      The one-sheep parable is often flattened into a generic evangelism slogan. In Matthew’s flow, it is remnant logic during a covenant separation. Jesus is not describing a God who shrugs at the endangered; He is forming a community that refuses to write people off. This is crucial during the transition: many will be pressured, scattered, and confused as the old order tightens its grip. The Father’s will is not the crushing of the “little ones,” but their preservation.
+    </p>
+    <p>
+      Notice the practical turn: “If your brother sins against you…” The Kingdom does not run on public shaming or religious performance. It runs on restoration. That matters because the old world’s default is accusation. The new assembly must embody a different order: truth told privately, escalation only when necessary, and the goal always being gain—not destruction. This is the opposite of a collapsing covenant regime that survives by scapegoating.
+    </p>
 
-<h2>Fulfillment Commentary</h2>
+    <h3>4) “Bind and release”: covenant authority during the handover of ages</h3>
+    <p>
+      “Whatever things you bind on earth will have been bound in heaven…” is often misused as a blank cheque for personal decrees. In Matthew 18 it sits directly inside community discipline and reconciliation. That anchors the meaning: binding/releasing is covenant-administrative language—recognition, exclusion, restoration, and the authoritative handling of disputes as the old authority structures lose legitimacy. During AD 30–70, the Jesus-community is being established as the true assembly of God, while the temple establishment is heading toward removal.
+    </p>
+    <p>
+      The point is not that the church invents reality; it is that heaven backs faithful, covenant-consistent judgments of the community as it navigates a volatile transition. “Two or three gathered” is not a magic number for getting requests granted; it’s assurance that the presence of Jesus governs the assembly’s hard moments—discipline, repair, and boundary-setting—so the new household remains clean and safe while the old world fractures.
+    </p>
 
-<h3>1) Greatness Reimagined</h3>
-<p>
-In the Old Covenant, greatness was often associated with lineage, position, and keeping the Law. 
-In the New, greatness is found in the lack of self-importance. 
-The "child" is the perfect model because a child has no "religious resume" to lean on—they simply receive.
-</p>
+    <h3>5) Forgiveness as the signature of the New Creation, and the “reckoning” as covenant logic</h3>
+    <p>
+      Peter’s question about forgiveness exposes the human desire for limits. Jesus’ “seventy times seven” explodes the ledger. Then the parable makes the point unavoidable: the king cancels an unpayable debt, but the forgiven servant refuses mercy over a small debt. That is covenant critique. Israel had received mercy over centuries, yet the leadership culture had become merciless—tight-fisted, punitive, and obsessed with control. Jesus is exposing the moral insanity of receiving remission while becoming a gatekeeper of condemnation.
+    </p>
+    <p>
+      In a first-century covenant setting, the “settling accounts” theme resonates with the approaching judgment of the old order. The crisis is not random; it is the outworking of covenant realities. If you build a society on unforgiveness, you build a prison. If you refuse mercy while claiming to be God’s people, you align with the very system God is bringing to an end. The “tormentors” image portrays severe consequences of mercilessness: the community becomes a place of choking, imprisonment, and relational violence. Jesus is warning His disciples not to import old-covenant cruelty into the new household.
+    </p>
+    <p>
+      Here’s the New Creation punchline: forgiveness is not a technique for personal peace; it is the family resemblance of the Father’s house. The new world is marked by debt-cancellation—by restored relationship replacing accusation. That is why Matthew 18 belongs in the covenant transition storyline. The old order is defined by escalating accusation; the new order is defined by mercy that is real, costly, and unlimited because it mirrors the King who cancelled the impossible debt.
+    </p>
 
-<h3>2) Binding and Loosing as Agreement</h3>
-<p>
-This is the second mention of the "Keys." 
-Here, it is tied to the local gathering. 
-The authority of the New Covenant is a shared authority. 
-When we agree on the Finished Work, we are simply echoing what is already true in the heavens.
-</p>
+    <hr />
 
-<h3>3) The Relocation of the Divine Presence</h3>
-<p>
-"I am there in the midst of them" (v. 20) is a radical statement in AD 30. 
-It signaled that the Shekinah glory was leaving the physical Temple and moving into the people of the New Covenant. 
-The "building" was becoming a shell; the "people" were becoming the sanctuary.
-</p>
+    <h2>Prophecy Hub Links</h2>
+    <ul>
+      <li><a href="/Bible/Prophecy/index.html#little-ones">Little Ones and the Remnant</a></li>
+      <li><a href="/Bible/Prophecy/index.html#gehenna">Gehenna and Covenant Judgment</a></li>
+      <li><a href="/Bible/Prophecy/index.html#forgiveness-debt">Debt, Mercy, and Covenant Release</a></li>
+    </ul>
 
-<h3>4) The Mathematics of Grace</h3>
-<p>
-70 x 7 is a reference to Daniel's 70 weeks. 
-While Daniel's prophecy was about the "end of sin" and the transition of ages, Jesus uses the number to show that forgiveness in the New Creation has no ceiling. 
-It is an infinite resource because it is backed by the infinite Finished Work of Christ.
-</p>
+    <hr />
 
-<h3>5) The Debt-Free Life</h3>
-<p>
-The servant was handed to the "torturers" not as a future hell, but as the mental and spiritual "torment" of trying to live by Law (debt) after being given Grace. 
-If you try to hold others to a "debt" (unforgiveness), you are legally placing yourself back under the system of debt, which will crush you.
-</p>
+    <h2>Cross-References</h2>
+    <ul>
+      <li><a href="https://ebible.org/eng-webbe/EZK34.htm" target="_blank" rel="noopener noreferrer">Ezekiel 34 (Shepherd and sheep)</a></li>
+      <li><a href="https://ebible.org/eng-webbe/DEU19.htm" target="_blank" rel="noopener noreferrer">Deuteronomy 19:15 (two or three witnesses)</a></li>
+      <li><a href="https://ebible.org/eng-webbe/MAT06.htm" target="_blank" rel="noopener noreferrer">Matthew 6 (forgive as forgiven)</a></li>
+    </ul>
 
-<hr />
+    <hr />
 
-<h2>Prophecy Hub Links</h2>
-<ul>
-  <li><strong>The End of the Temple Presence</strong> — <a href="/Bible/Prophecy/index.html">The New Sanctuary</a></li>
-  <li><strong>The 70 Weeks Fulfillment</strong> — <a href="/Bible/Prophecy/index.html">Seventy Times Seven</a></li>
-  <li><strong>Gehenna and Historical Judgment</strong> — <a href="/Bible/Prophecy/index.html">The Fire of AD 70</a></li>
-</ul>
+    <h2>New Creation Reality</h2>
+    <p>
+      You are not living under an accusation-system; you are living inside a finished-access family, where humility, restoration, and mercy are not optional extras but the normal atmosphere of the Kingdom.
+    </p>
 
-<hr />
+    <hr />
 
-<h2>Cross-References</h2>
-<ul>
-  <li><strong>The Humble and the High</strong> — <a href="https://www.biblegateway.com/passage/?search=Isaiah+57%3A15&version=LSV" target="_blank">Isaiah 57:15</a></li>
-  <li><strong>Seventy Weeks Prophecy</strong> — <a href="https://www.biblegateway.com/passage/?search=Daniel+9%3A24&version=LSV" target="_blank">Daniel 9:24</a></li>
-  <li><strong>Forgiveness in the Epistles</strong> — <a href="https://www.biblegateway.com/passage/?search=Ephesians+4%3A32&version=LSV" target="_blank">Ephesians 4:32</a></li>
-</ul>
+    <h2>Reflection</h2>
+    <p>
+      Where am I still keeping a ledger—subtly demanding “payment”—instead of living from the Father’s cancelled-debt reality and extending that same mercy outward?
+    </p>
 
-<hr />
+    <hr />
 
-<h2>New Creation Reality</h2>
-<p>
-Matthew 18 reveals that we are a people who have had an impossible debt canceled. 
-We do not live in a "debt-based" relationship with God or man. 
-The presence of Christ is not something we have to travel to a Temple to find; 
-He is "in the midst" of our fellowship. 
-We live from the "Finished" forgiveness of the Father, which empowers us to release everyone else.
-</p>
+    <div class="footer-nav">
+      <nav aria-label="Bottom navigation">
+        <a class="pill" href="/Bible/index.html">FPBible Index</a>
+        <a class="pill" href="index.html">Book Index</a>
+        <a class="pill" href="matt17.html">Prev</a>
+        <a class="pill" href="matt19.html">Next</a>
+        <a class="pill" href="/Bible/Prophecy/index.html">Prophecy Hub</a>
+        <a class="pill" href="#top">Top</a>
+      </nav>
 
-<hr />
+      <div class="kofi">
+        <a href="https://ko-fi.com/B0B61QC1BU" target="_blank" rel="noopener noreferrer">
+          <img height="36" style="border:0;height:36px;" src="https://storage.ko-fi.com/cdn/kofi5.png?v=6" alt="Support FPBible on Ko-fi" />
+        </a>
+      </div>
+    </div>
 
-<h2>Reflection</h2>
-<p>
-Am I trying to be "great" by Old World standards, or have I embraced the humility of the "Found" sheep?
-</p>
-<p>
-Is there a "small debt" I am holding against someone while standing in the shadow of my "infinite debt" that was canceled at the Cross?
-</p>
+    <p class="note" style="margin-top:14px;">
+      Scripture quotation is from the <strong>World English Bible British Edition</strong> (WEBBE), which is in the Public Domain (text hosted by eBible.org). “World English Bible” is a trademark of eBible.org; the text itself may be copied freely.
+    </p>
 
-<hr />
-
-<nav>
-  <a href="/Bible/index.html">FPBible Index</a> |
-  <a href="index.html">Book Index</a> |
-  <a href="preface.html">Preface</a> |
-  <a href="appendix.html">Appendix</a> |
-  <a href="matt17.html">Prev</a> |
-  <a href="matt19.html">Next</a> |
-  <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> |
-  <a href="#top">Top</a>
-</nav>
-
-<a href="https://ko-fi.com/B0B61QC1BU" target="_blank">
-  <img height="36" src="https://storage.ko-fi.com/cdn/kofi5.png?v=6" alt="Buy Me a Coffee" />
-</a>
-
+  </div>
 </body>
 </html>
