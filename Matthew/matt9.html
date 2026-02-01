@@ -1,190 +1,405 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Matthew 9 — New Wine, New Skins</title>
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Matthew 9 — Mercy Over Sacrifice in the Covenant Transition</title>
+  <meta name="description" content="Matthew 9 (WEB) — Jesus enacts covenant authority: forgiveness, table-fellowship mercy, new-wine/new-cloth transition, and harvest urgency in Israel’s last-days crisis (AD 30–70)." />
+
   <style>
-    /* INTERNAL CSS - GUARANTEED TO WORK INSTANTLY */
-    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; margin: 1.5em auto; padding: 0 16px; max-width: 900px; color: #111; background: #fff; }
-    h1, h2, h3 { margin-top: 1.4em; margin-bottom: 0.4em; }
-    h1 { font-size: 2.1rem; } h2 { font-size: 1.5rem; border-bottom: 1px solid rgba(0,0,0,0.12); padding-bottom: 0.2em; } h3 { font-size: 1.2rem; }
-    nav { margin: 1em 0; font-size: 0.95em; } nav a { margin-right: 0.6em; text-decoration: underline; color: #111; }
-    hr { margin: 2em 0; border: 0; border-top: 1px solid rgba(0,0,0,0.12); }
-    ul { margin: 0.6em 0 0.8em 1.2em; } li { margin: 0.35em 0; }
-    .scripture-text { font-family: inherit; font-size: 1.1em; margin-bottom: 1.5em; }
-    .v-num { font-weight: bold; font-size: 0.75em; vertical-align: super; opacity: 0.6; margin-right: 4px; }
-    .annotation-block { background: rgba(0,0,0,0.04); padding: 10px 14px; border-left: 3px solid rgba(0,0,0,0.12); margin-top: 1em; }
-    .annotation-item { font-size: 0.95em; margin-bottom: 0.5em; }
-    .note { font-size: 0.95em; opacity: 0.9; }
+    :root{
+      --max: 980px;
+      --ink: #111;
+      --muted: rgba(0,0,0,.72);
+      --line: rgba(0,0,0,.12);
+      --soft: rgba(0,0,0,.04);
+      --soft2: rgba(0,0,0,.06);
+      --radius: 14px;
+      --shadow: 0 10px 24px rgba(0,0,0,.06);
+    }
+    *{ box-sizing: border-box; }
+    body{
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.65;
+      margin: 0;
+      color: var(--ink);
+      background: #fff;
+    }
+    .wrap{
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 18px 16px 52px;
+    }
+    h1,h2,h3{ margin: 1.1em 0 .45em; line-height: 1.25; }
+    h1{ font-size: 2.05rem; letter-spacing: -0.02em; margin-top: .25em; }
+    h2{
+      font-size: 1.35rem;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: .25em;
+    }
+    h3{ font-size: 1.1rem; }
+    p{ margin: .65em 0; }
+    hr{
+      margin: 1.8em 0;
+      border: 0;
+      border-top: 1px solid var(--line);
+    }
+    a{ color: inherit; text-decoration: underline; }
+    .topnav, .botnav{
+      display: flex;
+      flex-wrap: wrap;
+      gap: .55em .8em;
+      align-items: center;
+      font-size: .95em;
+      padding: 10px 12px;
+      background: var(--soft);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+    }
+    .pill{
+      display: inline-flex;
+      align-items: center;
+      gap: .45em;
+      padding: .34em .62em;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: #fff;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .pill:hover{ background: var(--soft2); }
+    .card{
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 14px 14px;
+    }
+    .note{
+      font-size: .95em;
+      color: var(--muted);
+    }
+    .scripture-text{
+      font-size: 1.06em;
+      margin: 0;
+    }
+    .scripture-text p{
+      margin: .75em 0;
+    }
+    .v-num{
+      font-weight: 700;
+      font-size: .74em;
+      vertical-align: super;
+      opacity: .6;
+      margin-right: 4px;
+    }
+    .annotation-block{
+      background: var(--soft);
+      border: 1px solid var(--line);
+      border-left: 4px solid rgba(0,0,0,.18);
+      border-radius: var(--radius);
+      padding: 12px 14px;
+    }
+    .annotation-item{ margin: .5em 0; font-size: .97em; }
+    ul{ margin: .5em 0 .9em 1.15em; }
+    li{ margin: .35em 0; }
+    .kofi{
+      margin-top: 14px;
+      display: inline-block;
+    }
+    .footerline{
+      margin-top: 10px;
+      font-size: .93em;
+      color: var(--muted);
+    }
+    .mini{
+      font-size: .92em;
+      color: var(--muted);
+    }
+    .tight > p{ margin: .5em 0; }
   </style>
 </head>
+
 <body>
+  <a id="top"></a>
+  <div class="wrap">
 
-<a id="top"></a>
+    <nav class="topnav" aria-label="Top navigation">
+      <a class="pill" href="/Bible/index.html">FPBible Index</a>
+      <a class="pill" href="index.html">Matthew Index</a>
+      <a class="pill" href="preface.html">Preface</a>
+      <a class="pill" href="appendix.html">Appendix</a>
+      <span class="mini">|</span>
+      <a class="pill" href="matt8.html">← Prev</a>
+      <a class="pill" href="matt10.html">Next →</a>
+      <span class="mini">|</span>
+      <a class="pill" href="/Bible/Prophecy/index.html">Prophecy Hub</a>
+      <a class="pill" href="#top">Top ↑</a>
+    </nav>
 
-<nav>
-  <a href="/Bible/index.html">FPBible Index</a> |
-  <a href="index.html">Book Index</a> |
-  <a href="preface.html">Preface</a> |
-  <a href="appendix.html">Appendix</a> |
-  <a href="matt8.html">Prev</a> |
-  <a href="matt10.html">Next</a> |
-  <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> |
-  <a href="#top">Top</a>
-</nav>
+    <header class="tight">
+      <h1>Matthew 9 — Mercy Over Sacrifice in the Covenant Transition</h1>
+      <p class="note">
+        Scripture text: World English Bible (WEB) — public domain (eBible.org).
+      </p>
+    </header>
 
-<h1>Matthew 9</h1>
-<h2>New Wine, New Skins</h2>
+    <hr />
 
-<hr />
+    <section class="card">
+      <h2>Immediate Context</h2>
+      <p>
+        Matthew 9 intensifies the covenant confrontation: Jesus publicly exercises temple-level authority (forgiveness), challenges the purity system at the table, announces the “new wine” shift away from the old garment of Moses, and ends with harvest urgency—because Israel’s leadership has failed and the end-of-the-age crisis is pressing toward AD 70.
+      </p>
+    </section>
 
-<h2>Immediate Context</h2>
-<p>
-The conflict deepens. Jesus is no longer just healing bodies; He is claiming the prerogatives of God Himself—specifically the authority to forgive sins apart from the Temple sacrifices. As the religious leaders accuse Him of blasphemy, Jesus escalates the tension by declaring that His movement is incompatible with their traditions. The "Old Wineskin" of Judaism cannot hold the "New Wine" of the Kingdom; a total structural change is required.
-</p>
+    <hr />
 
-<hr />
+    <section class="card">
+      <h2>Scripture (WEB)</h2>
 
-<h2>Scripture (LSV)</h2>
+      <div class="scripture-text" aria-label="Matthew 9 Scripture text">
+        <p>
+          <span class="v-num">1</span>He entered into a boat and crossed over, and came into his own city.
+          <span class="v-num">2</span>Behold, they brought to him a man who was paralyzed, lying on a bed. Jesus, seeing their faith, said to the paralytic, “Son, cheer up! <strong>Your sins are forgiven you.</strong>”
+        </p>
 
-<div class="scripture-text">
-  <p>
-    <span class="v-num">1</span> And having entered into the boat, he passed over, and came to his own city,
-    <span class="v-num">2</span> and lo, they were bringing to him a paralytic, laid upon a couch, and Jesus having seen their faith, said to the paralytic, “Be of good courage, child, thy sins have been forgiven thee.”
-    <span class="v-num">3</span> And lo, certain of the scribes said within themselves, “This one doth blaspheme.”
-    <span class="v-num">4</span> And Jesus, having known their thoughts, said, “Why think ye evil in your hearts?
-    <span class="v-num">5</span> For which is easier? To say, Thy sins have been forgiven? Or to say, Rise and walk?
-    <span class="v-num">6</span> But that ye may know that the Son of Man hath authority upon the earth to forgive sins—(then saith he to the paralytic)—having risen, take up thy couch, and go to thy house.”
-    <span class="v-num">7</span> And having risen, he went to his house,
-    <span class="v-num">8</span> and the multitudes having seen, wondered, and glorified God, who gave such authority to men.
-  </p>
-  <p>
-    <span class="v-num">9</span> And Jesus passing forth thence, saw a man sitting at the tax-office, named Matthew, and saith to him, “Follow me;” and he having risen, followed him.
-    <span class="v-num">10</span> And it came to pass, he reclining (at meat) in the house, that lo, many tax-gatherers and sinners having come, were reclining (at meat) with Jesus and his disciples,
-    <span class="v-num">11</span> and the Pharisees having seen, said to his disciples, “Wherefore with tax-gatherers and sinners doth your teacher eat?”
-    <span class="v-num">12</span> And Jesus having heard, said to them, “They who are whole have no need of a physician, but they who are ill;
-    <span class="v-num">13</span> but having gone, learn ye what is, Kindness I will, and not sacrifice, for I did not come to call righteous men, but sinners to reformation.”
-  </p>
-  <p>
-    <span class="v-num">14</span> Then come to him the disciples of John, saying, “Wherefore do we and the Pharisees fast much, and thy disciples fast not?”
-    <span class="v-num">15</span> And Jesus said to them, “Can the sons of the bride-chamber mourn, so long as the bridegroom is with them? But days shall come when the bridegroom may be taken from them, and then they shall fast.
-    <span class="v-num">16</span> And no one doth put a patch of undressed cloth on an old garment, for its filling up doth take from the garment, and a worse rent is made.
-    <span class="v-num">17</span> Nor do they put new wine into old skins, and if not—the skins burst, and the wine doth run out, and the skins are destroyed, but they put new wine into new skins, and both are preserved together.”
-  </p>
-  <p>
-    <span class="v-num">18</span> While he is speaking these things to them, lo, a ruler having come, was bowing to him, saying, “My daughter just now died, but having come, lay thy hand upon her, and she shall live.”
-    <span class="v-num">19</span> And Jesus having risen, followed him, also his disciples;
-    <span class="v-num">20</span> and lo, a woman having an issue of blood twelve years, having come to him behind, touched the fringe of his garment,
-    <span class="v-num">21</span> for she said within herself, “If only I may touch his garment, I shall be saved.”
-    <span class="v-num">22</span> And Jesus having turned about, and seen her, said, “Be of good courage, daughter, thy faith hath saved thee;” and the woman was saved from that hour.
-    <span class="v-num">23</span> And Jesus having come into the house of the ruler, and having seen the minstrels and the multitude making a tumult,
-    <span class="v-num">24</span> he saith to them, “Withdraw, for the damsel did not die, but doth sleep,” and they were deriding him;
-    <span class="v-num">25</span> but when the multitude was put forth, having gone in, he took hold of her hand, and the damsel arose;
-    <span class="v-num">26</span> and the fame of this went forth into all that land.
-  </p>
-  <p>
-    <span class="v-num">27</span> And Jesus passing on thence, two blind men followed him, calling and saying, “Deal kindly with us, Son of David.”
-    <span class="v-num">28</span> And he having come to the house, the blind men came to him, and Jesus saith to them, “Believe ye that I am able to do this?” They say to him, “Yes, Lord.”
-    <span class="v-num">29</span> Then touched he their eyes, saying, “According to your faith let it be to you,”
-    <span class="v-num">30</span> and their eyes were opened, and Jesus strictly charged them, saying, “See, let no one know;”
-    <span class="v-num">31</span> but they, having gone forth, did spread his fame in all that land.
-    <span class="v-num">32</span> And as they are coming forth, lo, they brought to him a man dumb, a demoniac,
-    <span class="v-num">33</span> and the demon having been cast out, the dumb spake, and the multitudes wondered, saying, “It was never so seen in Israel.”
-    <span class="v-num">34</span> But the Pharisees said, “By the ruler of the demons he doth cast out the demons.”
-  </p>
-  <p>
-    <span class="v-num">35</span> And Jesus was going up and down all the cities and the villages, teaching in their synagogues, and proclaiming the good news of the reign, and healing every sickness and every malady among the people.
-    <span class="v-num">36</span> And having seen the multitudes, he was moved with compassion for them, that they were faint and cast aside, as sheep not having a shepherd,
-    <span class="v-num">37</span> then saith he to his disciples, “The harvest indeed [is] abundant, but the workmen few;
-    <span class="v-num">38</span> beseech ye therefore the Lord of the harvest, that he may put forth workmen to his harvest.”
-  </p>
-</div>
+        <p>
+          <span class="v-num">3</span>Behold, some of the scribes said to themselves, “This man blasphemes.”
+          <span class="v-num">4</span>Jesus, knowing their thoughts, said, “Why do you think evil in your hearts?
+          <span class="v-num">5</span>For which is easier, to say, ‘Your sins are forgiven;’ or to say, ‘Get up, and walk’?
+          <span class="v-num">6</span>But that you may know that <strong>the Son of Man has authority on earth to forgive sins</strong>—” (then he said to the paralytic), “Get up, and take up your mat, and go to your house.”
+        </p>
 
-<h3>Annotations</h3>
-<div class="annotation-block">
-  <div class="annotation-item"><strong>9:6 — Authority on earth:</strong> The central conflict. The Pharisees believed only the Temple (heaven's representative) could manage sin. Jesus claims that jurisdiction for Himself, bypassing the priesthood.</div>
-  <div class="annotation-item"><strong>9:13 — Mercy, not sacrifice:</strong> A quote from Hosea 6:6. Jesus is not just tweaking the Law; He is prioritizing the prophetic demand for heart-reality over the Levitical cultus.</div>
-  <div class="annotation-item"><strong>9:17 — New Wine into Old Skins:</strong> The theological core of the chapter. The "New Wine" is the Spirit/New Covenant. The "Old Skins" is the Mosaic Law system. They cannot be mixed.</div>
-  <div class="annotation-item"><strong>9:37 — The harvest:</strong> Refers to the end of the age (see Matt 13:39). The "reaping" of the faithful Remnant was beginning, and the time was short.</div>
-</div>
+        <p>
+          <span class="v-num">7</span>He arose and departed to his house.
+          <span class="v-num">8</span>But when the multitudes saw it, they marveled and glorified God, who had given such authority to men.
+        </p>
 
-<hr />
+        <p>
+          <span class="v-num">9</span>As Jesus passed by from there, he saw a man called Matthew sitting at the tax collection office. He said to him, “Follow me.” He got up and followed him.
+          <span class="v-num">10</span>As he sat in the house, behold, many tax collectors and sinners came and sat down with Jesus and his disciples.
+          <span class="v-num">11</span>When the Pharisees saw it, they said to his disciples, “Why does your teacher eat with tax collectors and sinners?”
+          <span class="v-num">12</span>When Jesus heard it, he said to them, “Those who are healthy have no need for a physician, but those who are sick do.
+          <span class="v-num">13</span>But you go and learn what this means: <strong>‘I desire mercy, and not sacrifice,’</strong>* Hosea 6:6 for I came not to call the righteous, but sinners to repentance.”‡ NU omits “to repentance”.
+        </p>
 
-<h2>Fulfillment Commentary</h2>
+        <p>
+          <span class="v-num">14</span>Then John’s disciples came to him, saying, “Why do we and the Pharisees fast often, but your disciples don’t fast?”
+          <span class="v-num">15</span>Jesus said to them, “Can the friends of the bridegroom mourn as long as <strong>the bridegroom</strong> is with them? But the days will come when the bridegroom will be taken away from them, and then they will fast.
+          <span class="v-num">16</span>No one puts a piece of unshrunk cloth on an old garment; for the patch would tear away from the garment, and a worse hole is made.
+          <span class="v-num">17</span>Neither do people put new wine into old wineskins, or else the skins would burst, and the wine be spilled, and the skins ruined.
+          No, they put <strong>new wine into fresh wineskins</strong>, and both are preserved.”
+        </p>
 
-<h3>1) Bypassing the Temple</h3>
-<p>
-When Jesus forgives the paralytic (v. 2), He commits a deliberate act of war against the Temple system. In the Old Covenant, forgiveness required a trip to Jerusalem, a priest, and a blood sacrifice. Jesus offers it right there, in a house, based solely on His own authority. This signals that the Temple's function is obsolete. The "House" of God is no longer a building in Jerusalem; it is the person of the Son.
-</p>
+        <p>
+          <span class="v-num">18</span>While he told these things to them, behold, a ruler came and worshiped him, saying, “My daughter has just died, but come and lay your hand on her, and she will live.”
+          <span class="v-num">19</span>Jesus got up and followed him, as did his disciples.
+        </p>
 
-<h3>2) The Incompatibility of Covenants</h3>
-<p>
-The parable of the Wineskins (vv. 16-17) is the death knell for "Judeo-Christianity" or "Messianic Judaism" that tries to keep the Law while following Jesus. Jesus explicitly states that you cannot patch the "Old Garment" (Judaism) with the New Cloth. You cannot pour the "New Wine" (Spirit-filled life) into the "Old Wineskin" (the rigid Levitical structure). If you try, <em>both</em> are ruined. The Old Wineskin must be discarded so the New Wine can be preserved in a New Wineskin (the Church/New Jerusalem).
-</p>
+        <p>
+          <span class="v-num">20</span>Behold, a woman who had a discharge of blood for twelve years came behind him, and touched the fringe‡ or, tassel of his garment;
+          <span class="v-num">21</span>for she said within herself, “If I just touch his garment, I will be made well.”
+          <span class="v-num">22</span>But Jesus, turning around and seeing her, said, “Daughter, cheer up! Your faith has made you well.” And the woman was made well from that hour.
+        </p>
 
-<h3>3) The Bridegroom and the Crisis</h3>
-<p>
-Jesus refers to Himself as the Bridegroom (v. 15), identifying with Yahweh, the husband of Israel. He mentions days when He will be "taken away"—a reference to the Cross and Ascension. This inaugurated the transitional period where the "friends of the Bridegroom" (the disciples) would fast and work frantically to gather the harvest before the Wedding Feast was fully consummated at the destruction of the Harlot City (Rev 19).
-</p>
+        <p>
+          <span class="v-num">23</span>When Jesus came into the ruler’s house and saw the flute players and the crowd in noisy disorder,
+          <span class="v-num">24</span>he said to them, “Make room, because the girl isn’t dead, but sleeping.”
+        </p>
 
-<h3>4) Sheep Without a Shepherd</h3>
-<p>
-Verse 36 paints a tragic picture of first-century Israel: "faint and cast aside." The religious leaders (Pharisees/Sadducees) were not shepherding the flock; they were fleecing it. This creates the urgency for the "Harvest" (v. 37). The judgment was coming, the leaders were corrupt, and the true sheep needed to be gathered into the fold of the Great Shepherd immediately. This "harvest" was the gathering of the Remnant in the generation of AD 30-70.
-</p>
+        <p>
+          They were ridiculing him.
+          <span class="v-num">25</span>But when the crowd was sent out, he entered in, took her by the hand, and the girl arose.
+          <span class="v-num">26</span>The report of this went out into all that land.
+        </p>
 
-<hr />
+        <p>
+          <span class="v-num">27</span>As Jesus passed by from there, two blind men followed him, calling out and saying, “Have mercy on us, <strong>son of David!</strong>”
+          <span class="v-num">28</span>When he had come into the house, the blind men came to him. Jesus said to them, “Do you believe that I am able to do this?”
+        </p>
 
-<h2>Prophecy Hub Links</h2>
-<ul>
-  <li><strong>The Wineskins</strong> — <a href="/Bible/Prophecy/end-of-the-law.html">Incompatibility of Covenants</a></li>
-  <li><strong>The Bridegroom</strong> — <a href="/Bible/Prophecy/wedding.html">The Marriage Supper</a></li>
-  <li><strong>The Harvest</strong> — <a href="/Bible/Prophecy/end-of-the-age.html">Gathering the Remnant</a></li>
-</ul>
+        <p>
+          They told him, “Yes, Lord.”
+          <span class="v-num">29</span>Then he touched their eyes, saying, “According to your faith be it done to you.”
+          <span class="v-num">30</span>Then their eyes were opened. Jesus strictly commanded them, saying, “See that no one knows about this.”
+          <span class="v-num">31</span>But they went out and spread abroad his fame in all that land.
+        </p>
 
-<hr />
+        <p>
+          <span class="v-num">32</span>As they went out, behold, a mute man who was demon possessed was brought to him.
+          <span class="v-num">33</span>When the demon was cast out, the mute man spoke. The multitudes marveled, saying, <strong>“Nothing like this has ever been seen in Israel!”</strong>
+          <span class="v-num">34</span>But the Pharisees said, “By the prince of the demons, he casts out demons.”
+        </p>
 
-<h2>Cross-References</h2>
-<ul>
-  <li><strong>Mercy Over Sacrifice</strong> — <a href="https://ebible.org/englsv/HOS06.htm" target="_blank">Hosea 6:6 (LSV)</a></li>
-  <li><strong>The New Covenant</strong> — <a href="https://ebible.org/englsv/JER31.htm" target="_blank">Jeremiah 31:31-34 (LSV)</a></li>
-  <li><strong>The Shepherd's Compassion</strong> — <a href="https://ebible.org/englsv/EZK34.htm" target="_blank">Ezekiel 34:5-6 (LSV)</a></li>
-</ul>
+        <p>
+          <span class="v-num">35</span>Jesus went about all the cities and the villages, teaching in their synagogues and preaching the Good News of the Kingdom, and healing every disease and every sickness among the people.
+          <span class="v-num">36</span>But when he saw the multitudes, he was moved with compassion for them because they were harassed§ TR reads “weary” instead of “harassed” and scattered, like sheep without a shepherd.
+          <span class="v-num">37</span>Then he said to his disciples, “<strong>The harvest indeed is plentiful, but the laborers are few.</strong>
+          <span class="v-num">38</span>Pray therefore that the Lord of the harvest will send out laborers into his harvest.”
+        </p>
+      </div>
+    </section>
 
-<hr />
+    <hr />
 
-<h2>New Creation Reality</h2>
-<p>
-We drink the New Wine in the New Wineskin. We do not look back to the rigid forms of the Old Law for our structure, nor do we need a priest to mediate our forgiveness. We live in the flexibility and joy of the Spirit, celebrating that the Bridegroom is no longer "taken away" but is present with us forever in the New Jerusalem.
-</p>
+    <section class="card">
+      <h2>Fulfillment Notes (STRICT)</h2>
+      <p>Jesus acts with temple-level authority on earth, signaling the transfer of covenant administration from the old system to the Son.</p>
+      <p>Table fellowship with “sinners” is a living judgment on the purity boundaries of the Pharisaic program in Israel’s last-days crisis.</p>
+      <p>The “new cloth / new wine” sayings announce an imminent covenant change that cannot be patched onto the Mosaic order.</p>
+      <p>The harvest urgency frames Israel as leaderless and ripe for separation, moving toward the first-century resolution that culminated in AD 70.</p>
+    </section>
 
-<hr />
+    <hr />
 
-<h2>Reflection</h2>
-<p>
-Am I trying to patch up my old life with a little bit of Jesus (putting new cloth on an old garment), or have I allowed Him to give me an entirely new structure (wineskin) to hold His life?
-</p>
+    <section class="annotation-block">
+      <h2>Annotations</h2>
 
-<hr />
+      <div class="annotation-item">
+        <strong>Your sins are forgiven you.</strong> — Covenant-cleansing language: not mere sentiment, but public authority that the temple claimed to mediate.
+      </div>
+      <div class="annotation-item">
+        <strong>the Son of Man has authority on earth to forgive sins</strong> — Danielic Son-of-Man authority exercised “on earth” in Israel, exposing the old gatekeepers as obsolete.
+      </div>
+      <div class="annotation-item">
+        <strong>‘I desire mercy, and not sacrifice,’</strong> — Prophetic lawsuit priority: covenant faithfulness over ritual performance (Hosea 6:6) as the age turns.
+      </div>
+      <div class="annotation-item">
+        <strong>the bridegroom</strong> — Messiah-with-Israel imagery: the presence of the Bridegroom marks the wedding-hour of covenant transition.
+      </div>
+      <div class="annotation-item">
+        <strong>new wine into fresh wineskins</strong> — New Covenant life cannot be contained by the old legal container without rupture.
+      </div>
+      <div class="annotation-item">
+        <strong>son of David!</strong> — Messianic/legal appeal: the Davidic heir is present and acting in the land.
+      </div>
+      <div class="annotation-item">
+        <strong>“Nothing like this has ever been seen in Israel!”</strong> — Signpost: the kingdom-inbreaking is unprecedented within the old framework.
+      </div>
+      <div class="annotation-item">
+        <strong>The harvest indeed is plentiful, but the laborers are few.</strong> — Covenant separation language: Israel is ripe, but faithful workers are urgently needed.
+      </div>
+    </section>
 
-<nav>
-  <a href="/Bible/index.html">FPBible Index</a> |
-  <a href="index.html">Book Index</a> |
-  <a href="preface.html">Preface</a> |
-  <a href="appendix.html">Appendix</a> |
-  <a href="matt8.html">Prev</a> |
-  <a href="matt10.html">Next</a> |
-  <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> |
-  <a href="#top">Top</a>
-</nav>
+    <hr />
 
-<p class="note" style="text-align:center;">
-  Scripture source: <a href="https://www.lsvbible.com/" target="_blank">Literal Standard Version</a>
-</p>
+    <section class="card">
+      <h2>Fulfillment Commentary</h2>
 
-<a href="https://ko-fi.com/B0B61QC1BU" target="_blank">
-  <img height="36" src="https://storage.ko-fi.com/cdn/kofi5.png?v=6" alt="Buy Me a Coffee" />
-</a>
+      <h3>1) Forgiveness on Earth: the Temple Claim is Being Replaced</h3>
+      <p>
+        Matthew opens this chapter with a confrontation that is bigger than a healing story. When Jesus tells the paralytic, “Your sins are forgiven you,” He is doing what the temple system claimed to manage: covenant cleansing. That is why the scribes immediately label it blasphemy. In their world, forgiveness was not merely a private comfort; it was a priestly jurisdiction bound to altar, sacrifice, and authorized mediation. Jesus’ response is not to soften the claim, but to publicly validate it: “that you may know that the Son of Man has authority on earth to forgive sins.” This is covenant-transfer language. The old order said, “Come to us; we control access.” Jesus says, in effect, “Access is standing in front of you, and it is moving with Me.”
+      </p>
+      <p>
+        In a Full Preterist reading, this is part of the first-century covenant litigation that runs through Matthew: Israel’s leaders are being exposed as unfaithful stewards, and the authority of the age is being transferred to the Son and to His body. The healing is not a “proof” for modern skeptics; it is a prophetic sign inside Israel’s story that the administrator of forgiveness has arrived. This is why the crowd glorifies God “who had given such authority to men.” The point is not merely that Jesus can do miracles, but that covenant authority is being relocated from the old house into a new humanity.
+      </p>
 
+      <h3>2) Mercy at the Table: the Purity Boundary is on Trial</h3>
+      <p>
+        The call of Matthew and the meal that follows is Matthew’s way of showing the covenant shift in social form. Pharisaic righteousness policed identity by separation—clean/unclean, insider/outsider, acceptable/unacceptable. Jesus does the opposite: He calls a tax collector and then shares a table with “tax collectors and sinners.” That is not a minor cultural detail; it is a direct challenge to the gatekeeping mechanism of the old order.
+      </p>
+      <p>
+        Then Jesus quotes Hosea: “I desire mercy, and not sacrifice.” Hosea is not a random ethical slogan; it is covenant-lawsuit prophecy aimed at an unfaithful Israel. Jesus is saying the same covenant accusation is still true in His day: the leadership has substituted ritual correctness for covenant faithfulness. In the overlap period (AD 30–70), this matters because the old system is still operating, but it is already being judged as a failed steward. Jesus’ table becomes a living prophecy: the Kingdom gathers people by mercy and healing, not by pedigree and performance.
+      </p>
+
+      <h3>3) Bridegroom, New Cloth, New Wine: You Can’t Patch Moses</h3>
+      <p>
+        The fasting question is the doorway to one of the most important transition statements in Matthew. Jesus calls Himself the Bridegroom. In Israel’s Scriptures, Yahweh is the covenant Husband, and Israel is the covenant wife; unfaithfulness is described as adultery, and restoration is described as renewed marriage. When Jesus says the friends of the Bridegroom do not mourn while He is present, He is locating His ministry in the wedding-hour of covenant change: the promised covenant renewal is happening in real time.
+      </p>
+      <p>
+        Then He gives two analogies: unshrunk cloth on an old garment, and new wine in old wineskins. The meaning is blunt: the New Covenant cannot be stapled onto the Mosaic order. If you try, you get tearing and bursting. That’s not just “religion vs relationship”; it is structural. The Law/Temple/Priesthood system had a design life, and it was reaching its appointed end. The “days will come” language is not vague futurism; it points into that first-century sequence where the Bridegroom would be “taken away” (the cross, followed by vindication) and the community would endure the last-days pressure while the old world unraveled.
+      </p>
+      <p>
+        The payoff is this: the New Creation is not an improvement of Moses; it is a replacement of the covenant container. The wine is too alive for the old skin. This is why later New Testament language can speak of the old as obsolete and fading in that generation’s timeframe. Matthew 9 plants the seed: you cannot preserve the old system by sprinkling Jesus on it.
+      </p>
+
+      <h3>4) Healings as Covenant Signs: Cleansing, Restoration, and the True Shepherd</h3>
+      <p>
+        The woman with the discharge of blood and the raising of the ruler’s daughter are not random miracle clips; they are covenant signs loaded with purity and life imagery. The discharge made the woman perpetually “unclean” under the purity code—cut off from normal participation. Her healing is not only bodily; it is a sign of cleansing and restoration that the old system could label but not finally resolve. The ruler’s daughter being raised is likewise a sign that life is breaking in where death ruled. Within the covenant-transition frame, these are signals that the Messiah is restoring what the old age could not heal: separation, uncleanness, and death’s claim.
+      </p>
+      <p>
+        The two blind men crying “son of David” ties it back to covenant legality: the Davidic King is present and acting. The deliverances and healings culminate in the crowd’s line: “Nothing like this has ever been seen in Israel!” That’s the point. The Kingdom reality is exceeding the old categories, and the leaders respond by doubling down: “By the prince of the demons…” In Matthew’s storyline, that accusation ripens into the later, more severe judgments because it is a willful inversion of light and darkness inside the covenant lawsuit.
+      </p>
+
+      <h3>5) The Harvest: Israel is Ripe, and the Separation is Near</h3>
+      <p>
+        Matthew ends the chapter with compassion and urgency: the crowds are “harassed and scattered, like sheep without a shepherd.” That is an indictment of Israel’s leadership class. In prophetic terms, shepherd imagery belongs to kings, priests, and teachers who were supposed to feed the flock. Jesus’ compassion is not sentimental; it is the compassion of the true Shepherd stepping into a failed shepherding regime.
+      </p>
+      <p>
+        “The harvest indeed is plentiful, but the laborers are few” is not generic church-growth language. In the biblical imagination, harvest is often tied to judgment and separation—gathering wheat, burning chaff, sorting the field. Matthew is preparing you for the next movements: sending, warning, endurance, and the coming crisis that culminated in the end of the Mosaic age. In Full Preterism, the first-century resolution matters because it anchors the text in its stated timeframe: the harvest was Israel’s covenant climax, and the laborers were urgently needed in that generation as the old order moved toward its public end in AD 70.
+      </p>
+      <p>
+        The result is a clean conclusion for today: we do not live waiting for the Kingdom to arrive; we live in the settled outcome of the transition. The mercy-based table, the Bridegroom presence, the new-wine container, and the harvest separation are not “maybe later” themes—they are the story of how the New Creation came to stand openly, without temple mediation, after the old house fell.
+      </p>
+    </section>
+
+    <hr />
+
+    <section class="card">
+      <h2>Prophecy Hub Links</h2>
+      <ul>
+        <li><a href="/Bible/Prophecy/index.html#authority-to-forgive">Authority to Forgive</a></li>
+        <li><a href="/Bible/Prophecy/index.html#new-wine-new-covenant">New Wine / New Covenant</a></li>
+        <li><a href="/Bible/Prophecy/index.html#harvest-separation">Harvest & Separation</a></li>
+      </ul>
+      <p class="mini">If your hub uses different anchors, keep the theme names and swap the #anchors.</p>
+    </section>
+
+    <hr />
+
+    <section class="card">
+      <h2>Cross-References (WEB)</h2>
+      <ul>
+        <li><a href="https://ebible.org/eng-web/HOS06.htm" target="_blank" rel="noopener">Hosea 6 (Hosea 6:6)</a></li>
+        <li><a href="https://ebible.org/eng-web/DAN07.htm" target="_blank" rel="noopener">Daniel 7 (Son of Man authority)</a></li>
+        <li><a href="https://ebible.org/eng-web/EZE34.htm" target="_blank" rel="noopener">Ezekiel 34 (Shepherds and scattered sheep)</a></li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <section class="card">
+      <h2>New Creation Reality</h2>
+      <p>
+        You are not negotiating access through a religious system; you live in direct mercy-based access in Christ, with forgiveness and belonging not gated by ritual performance.
+        The “new wine” life is the Spirit-life of the New Covenant—flexible, alive, and not contained by old fear-based containers.
+        And the Shepherd’s compassion is now expressed through His body: you carry healing, restoration, and practical mercy into real people and real rooms.
+      </p>
+    </section>
+
+    <hr />
+
+    <section class="card">
+      <h2>Reflection</h2>
+      <p>
+        Where am I still trying to “patch” old-system thinking (performance, separation, fear) onto a mercy-based New Creation life that cannot be contained that way?
+      </p>
+    </section>
+
+    <hr />
+
+    <footer class="card">
+      <nav class="botnav" aria-label="Bottom navigation">
+        <a class="pill" href="/Bible/index.html">FPBible Index</a>
+        <a class="pill" href="index.html">Matthew Index</a>
+        <span class="mini">|</span>
+        <a class="pill" href="matt8.html">← Matthew 8</a>
+        <a class="pill" href="matt10.html">Matthew 10 →</a>
+        <span class="mini">|</span>
+        <a class="pill" href="#top">Top ↑</a>
+      </nav>
+
+      <a class="kofi" href="https://ko-fi.com/B0B61QC1BU" target="_blank" rel="noopener">
+        <img height="36" src="https://storage.ko-fi.com/cdn/kofi5.png?v=6" alt="Support FPBible on Ko-fi" />
+      </a>
+
+      <p class="footerline">
+        Extended attribution: Scripture quotations are from the <strong>World English Bible (WEB)</strong>, public domain.
+        Source: eBible.org (eng-web). You may copy and share freely.
+      </p>
+    </footer>
+
+  </div>
 </body>
 </html>
