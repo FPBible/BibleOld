@@ -1,0 +1,23 @@
+{
+  "include": ["Bible/**/*.html"],
+  "exclude": [
+    "Bible/Prophecy/**",
+    "Bible/**/preface*.html",
+    "Bible/**/appendix*.html",
+    "Bible/standard*.html",
+    "Bible/about*.html"
+  ],
+  "banned": [
+    "paraphrase",
+    "lens",
+    "framework",
+    "how to read",
+    "this project",
+    "we interpret",
+    "from a fulfilled",
+    "zero futurism",
+    "fulfilled clarification",
+    "approach",
+    "perspective"
+  ]
+}
