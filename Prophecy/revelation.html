@@ -6,280 +6,310 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <style>
-    body {
-      font-family: system-ui, sans-serif;
-      line-height: 1.6;
+    :root{
+      --maxw: 980px;
+      --line: rgba(0,0,0,0.12);
+      --muted: rgba(0,0,0,0.72);
+      --soft: #f6f6f6;
+      --frame: #999;
+    }
+    body{
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.65;
       margin: 1.5em;
+      color:#111;
+      background:#fff;
     }
-    h1, h2, h3 {
+    .wrap{ max-width: var(--maxw); }
+    h1, h2, h3{
       margin-top: 1.4em;
-      margin-bottom: 0.6em;
+      margin-bottom: 0.55em;
+      line-height: 1.25;
     }
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-      max-width: 900px;
-    }
-    li { margin: 0.5em 0; }
-    a { text-decoration: underline; }
-    .frame {
-      background:#f6f6f6;
-      padding:1em;
-      border-left:4px solid #999;
-      margin: 1.2em 0;
+    p{ margin: 0.65em 0; }
+    hr{ margin: 2em 0; border: 0; border-top: 1px solid var(--line); }
+    a{ text-decoration: underline; color: inherit; }
+    .nav{
       font-size: 0.95em;
-      max-width: 950px;
+      margin: 0.5em 0 1.1em;
     }
-    .key { font-weight: 600; }
+    .nav a{ margin-right: 0.75em; }
+    .muted{ color: var(--muted); }
+    ul{
+      padding-left: 1.1em;
+      max-width: var(--maxw);
+      margin: 0.6em 0 0.9em;
+    }
+    li{ margin: 0.35em 0; }
+    .frame{
+      background: var(--soft);
+      padding: 1em 1.05em;
+      border-left: 4px solid var(--frame);
+      margin: 1.1em 0;
+      font-size: 0.98em;
+      max-width: var(--maxw);
+    }
+    .frame strong{ display:inline-block; margin-bottom: 0.35em; }
+    .quote{
+      font-style: italic;
+      margin: 0.45em 0 0.2em;
+    }
+    .ref{
+      display:inline-block;
+      margin-left: 0.35em;
+      font-size: 0.95em;
+    }
+    .grid{
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 8px;
+    }
+    @media (min-width: 860px){
+      .grid{ grid-template-columns: 1fr 1fr; gap: 12px; }
+    }
+    .chiplist{ margin: 0.4em 0 0; padding-left: 1.1em; }
   </style>
 </head>
 
 <body>
-
 <a id="top"></a>
 
-<p>
-  <a href="/Bible/">Bible Index</a> |
-  <a href="/Bible/Prophecy/">Prophecy Hub</a>
-</p>
+<div class="wrap">
+  <p class="nav">
+    <a href="/Bible/index.html">Bible Index</a> |
+    <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> |
+    <a href="#top">Top</a>
+  </p>
 
-<h1>Revelation</h1>
-<h2>Symbol, Judgment, and the Victory of Christ</h2>
+  <h1>Revelation</h1>
+  <h2>Symbol, Judgment, and the Victory of Christ</h2>
 
-<div class="frame">
-  <strong>Reading Frame (Mandatory)</strong><br />
-  Revelation is not a coded forecast of modern geopolitics
-  or the end of the physical universe.
-  It is an apocalyptic covenant lawsuit,
-  written to first-century churches,
-  using symbolic imagery drawn from the Old Testament
-  to announce judgment on the old order
-  and the victorious reign of the risen Christ.
-</div>
+  <div class="frame">
+    <strong>Reading Frame (Mandatory)</strong><br />
+    Revelation is apocalyptic covenant literature written to first-century churches.
+    It uses Old Testament imagery to announce judgment on a passing order, vindicate the Lamb,
+    and unveil the settled Kingdom and New Creation reality in Christ.
+  </div>
 
-<h2>Overview</h2>
-
-<ul>
-  <li>Revelation is symbolic by genre</li>
-  <li>Its time statements are explicit and near</li>
-  <li>The judgment targets Jerusalem and covenant apostasy</li>
-  <li>The beasts represent persecuting powers</li>
-  <li>The end result is victory, reign, and New Creation</li>
-</ul>
-
-<hr />
-
-<h2>1) Revelation Declares Its Own Time Frame</h2>
-
-<p>
-“The things that must soon take place.”
-<a href="https://ebible.org/eng-web/REV01.htm">(Rev 1:1)</a>
-</p>
-
-<p>
-“For the time is near.”
-<a href="https://ebible.org/eng-web/REV01.htm">(Rev 1:3)</a>
-</p>
-
-<div class="frame">
-  <strong>Decisive Point</strong><br />
-  Revelation does not allow a distant-future reading.
-  Its opening lines fix the time frame.
-  “Soon” and “near” mean what they say.
-</div>
-
-<h2>2) Apocalyptic Genre: Symbol Is the Language</h2>
-
-<p>
-John writes in apocalyptic form —
-visions, beasts, numbers, cosmic imagery.
-</p>
-
-<div class="frame">
-  <strong>Genre Control</strong><br />
-  Apocalyptic literature communicates truth through symbol.
-  To literalise the imagery is to misunderstand the genre.
-  Revelation interprets history theologically, not photographically.
-</div>
-
-<h2>3) The Audience: Seven First-Century Churches</h2>
-
-<p>
-John writes to real congregations in Asia Minor.
-<a href="https://ebible.org/eng-web/REV01.htm">(Rev 1:4)</a>
-</p>
-
-<div class="frame">
-  <strong>Audience Relevance</strong><br />
-  Revelation addresses their persecution, faithfulness, compromise,
-  and coming vindication.
-  A book written *to* them must make sense *for* them.
-</div>
-
-<h2>4) Babylon the Great — Covenant Apostasy</h2>
-
-<p>
-Babylon is called “the great city”
-where the Lord was crucified.
-<a href="https://ebible.org/eng-web/REV11.htm">(Rev 11:8)</a>
-</p>
-
-<div class="frame">
-  <strong>Identification</strong><br />
-  Babylon is not Rome alone, nor a future superpower.
-  It is Jerusalem in covenant betrayal —
-  the city that rejected the prophets and the Messiah.
-</div>
-
-<h2>5) The Beasts — Persecuting Power Structures</h2>
-
-<p>
-Revelation’s beasts represent oppressive authority
-aligned against Christ and His people.
-<a href="https://ebible.org/eng-web/REV13.htm">(Rev 13)</a>
-</p>
-
-<div class="frame">
-  <strong>Daniel Connection</strong><br />
-  Revelation’s beasts are drawn directly from Daniel 7.
-  They represent empire, coercion, and false authority —
-  not future sci-fi entities.
-</div>
-
-<h2>6) The Mark, the Number, the Name</h2>
-
-<p>
-The mark of the beast is contrasted
-with the seal of God.
-<a href="https://ebible.org/eng-web/REV13.htm">(Rev 13)</a>
-</p>
-
-<div class="frame">
-  <strong>Covenantal Allegiance</strong><br />
-  Marks and seals identify loyalty and worship.
-  The issue is allegiance —
-  not microchips, barcodes, or technology.
-</div>
-
-<h2>7) Judgment Is Measured and Just</h2>
-
-<p>
-Revelation depicts bowls, trumpets, and seals.
-</p>
-
-<div class="frame">
-  <strong>Judgment Pattern</strong><br />
-  These cycles repeat the same covenant judgment
-  from different symbolic angles.
-  They are not chronological disasters,
-  but theological perspectives on the same event.
-</div>
-
-<h2>8) The Fall of Babylon</h2>
-
-<p>
-“Fallen, fallen is Babylon the great.”
-<a href="https://ebible.org/eng-web/REV18.htm">(Rev 18:2)</a>
-</p>
-
-<div class="frame">
-  <strong>Historical Fulfilment</strong><br />
-  The imagery matches Jerusalem’s destruction in AD 70:
-  burning, lament, blood guilt, and covenant collapse.
-</div>
-
-<h2>9) The Millennium — Reign, Not Delay</h2>
-
-<p>
-Christ reigns while His enemies are subdued.
-<a href="https://ebible.org/eng-web/REV20.htm">(Rev 20)</a>
-</p>
-
-<div class="frame">
-  <strong>Psalm 110 Lens</strong><br />
-  The millennium reflects the present reign of Christ,
-  not a future postponement.
-  Satan’s binding describes restricted deception,
-  not total inactivity.
-</div>
-
-<h2>10) Resurrection and Judgment</h2>
-
-<p>
-Revelation uses resurrection language
-to describe vindication and covenant outcome.
-</p>
-
-<div class="frame">
-  <strong>Ezekiel 37 Parallel</strong><br />
-  Resurrection imagery is corporate and covenantal.
-  Life and judgment are defined by relationship to Christ.
-</div>
-
-<h2>11) New Heaven, New Earth, New Jerusalem</h2>
-
-<p>
-“I saw a new heaven and a new earth.”
-<a href="https://ebible.org/eng-web/REV21.htm">(Rev 21:1)</a>
-</p>
-
-<div class="frame">
-  <strong>Isaiah Fulfilment</strong><br />
-  Revelation directly quotes Isaiah 65–66.
-  The imagery describes covenant renewal,
-  not planetary replacement.
-</div>
-
-<h2>12) God Dwelling With Humanity</h2>
-
-<p>
-“Behold, the dwelling of God is with humanity.”
-<a href="https://ebible.org/eng-web/REV21.htm">(Rev 21:3)</a>
-</p>
-
-<div class="frame">
-  <strong>End Goal</strong><br />
-  Revelation ends where Scripture has always aimed:
-  God present with His people,
-  death and separation removed,
-  victory complete.
-</div>
-
-<h2>13) Revelation Is a Victory Book</h2>
-
-<p>
-Christ is not waiting to reign.
-He reigns.
-</p>
-
-<div class="frame">
-  <strong>Final Word</strong><br />
-  Revelation announces:
+  <h2>Overview</h2>
   <ul>
-    <li>Judgment finished</li>
-    <li>The Lamb victorious</li>
-    <li>The Kingdom established</li>
-    <li>The New Creation revealed</li>
+    <li>Revelation is symbolic by genre: imagery communicates covenant realities.</li>
+    <li>Its time statements are explicit and near, and they govern interpretation.</li>
+    <li>The judgments address covenant unfaithfulness and persecuting power structures.</li>
+    <li>Beasts, marks, and “worship” language describe allegiance, not modern technology.</li>
+    <li>The book ends in victory: the Lamb reigns, access is open, New Creation is revealed.</li>
   </ul>
+
+  <hr />
+
+  <h2>1) Revelation Declares Its Own Time Frame</h2>
+
+  <p class="quote">“The things that must soon take place.” <span class="ref"><a href="https://ebible.org/web/REV01.htm">Revelation 1 (WEB)</a></span></p>
+  <p class="quote">“For the time is near.” <span class="ref"><a href="https://ebible.org/web/REV01.htm">Revelation 1 (WEB)</a></span></p>
+
+  <div class="frame">
+    <strong>Decisive Point</strong><br />
+    Revelation’s opening fixes the horizon. “Soon” and “near” do not permit a distant-future reading.
+    The burden of proof is on any view that pushes fulfillment beyond the audience addressed.
+  </div>
+
+  <hr />
+
+  <h2>2) Apocalyptic Genre: Symbol Is the Language</h2>
+  <p>
+    John writes in apocalyptic form — visions, beasts, numbers, cosmic imagery, and temple-court scenes.
+    These are not “literal camera footage” but prophetic symbols communicating covenant meaning.
+  </p>
+
+  <div class="frame">
+    <strong>Genre Control</strong><br />
+    Apocalyptic communicates truth through symbol. Literalising the imagery reverses the genre.
+    Revelation interprets history theologically, not photographically.
+  </div>
+
+  <hr />
+
+  <h2>3) The Audience: Seven First-Century Churches</h2>
+  <p>
+    John writes to real congregations in Asia Minor. <span class="ref"><a href="https://ebible.org/web/REV01.htm">Revelation 1 (WEB)</a></span>
+  </p>
+
+  <div class="frame">
+    <strong>Audience Relevance</strong><br />
+    Revelation addresses their pressure, compromise, perseverance, and vindication.
+    A book written to them must land in categories they can recognise and live by.
+  </div>
+
+  <hr />
+
+  <h2>4) How Revelation Uses the Old Testament</h2>
+  <p>
+    Revelation is saturated with prophetic echoes. The text expects you to read it through Isaiah, Ezekiel, Daniel,
+    Zechariah, Exodus plagues, and temple imagery. It rarely “invents” symbols; it reuses covenant vocabulary.
+  </p>
+
+  <div class="frame">
+    <strong>Interpretive Rule</strong><br />
+    When Revelation uses cosmic signs, beasts, harlotry, or city imagery, look first to the prophets.
+    The meaning is already established in covenant language.
+  </div>
+
+  <hr />
+
+  <h2>5) Babylon the Great — Covenant Apostasy and Blood-Guilt</h2>
+  <p>
+    Revelation calls Babylon “the great city” and associates it with covenant corruption and blood-guilt.
+    The “city” language is prophetic identity language, not merely geography.
+    <span class="ref"><a href="https://ebible.org/web/REV11.htm">Revelation 11 (WEB)</a></span>
+  </p>
+
+  <div class="frame">
+    <strong>Identification Control</strong><br />
+    Babylon is not a modern geopolitical forecast. It is covenant lawsuit language: a corrupt order judged by God,
+    contrasted with the New Jerusalem. The key is prophetic pattern and first-century horizon.
+  </div>
+
+  <hr />
+
+  <h2>6) The Beasts — Persecuting Power Structures</h2>
+  <p>
+    Revelation’s beasts represent oppressive authority aligned against Christ and His people.
+    The imagery is drawn directly from Daniel’s beast-kingdom framework.
+    <span class="ref"><a href="https://ebible.org/web/REV13.htm">Revelation 13 (WEB)</a></span>
+    <span class="ref"><a href="https://ebible.org/web/DAN07.htm">Daniel 7 (WEB)</a></span>
+  </p>
+
+  <div class="frame">
+    <strong>Daniel Connection</strong><br />
+    In apocalyptic language, beasts portray power-systems and regimes. The conflict is worship and allegiance:
+    Who rules? Who is worthy? Who demands loyalty?
+  </div>
+
+  <hr />
+
+  <h2>7) The Mark, the Number, the Name — Allegiance and Identity</h2>
+  <p>
+    Revelation contrasts the mark of the beast with the seal of God. The issue is covenant belonging and worship-loyalty,
+    expressed in the symbolic language of hand and forehead (deeds and mind).
+    <span class="ref"><a href="https://ebible.org/web/REV13.htm">Revelation 13 (WEB)</a></span>
+  </p>
+
+  <div class="frame">
+    <strong>Covenantal Allegiance</strong><br />
+    Marks and seals identify worship and ownership. This is not a technology forecast; it is covenant identity language.
+    Revelation’s concern is allegiance under pressure.
+  </div>
+
+  <hr />
+
+  <h2>8) Seals, Trumpets, Bowls — Cycles, Not a Disaster Timeline</h2>
+  <p>
+    Revelation depicts seals, trumpets, and bowls as patterned judgments. The cycles intensify and overlap.
+    They are best read as repeated covenant-judgment portraits from different symbolic angles, not as a strict modern chronology.
+  </p>
+
+  <div class="frame">
+    <strong>Judgment Pattern</strong><br />
+    These sequences function like prophetic “replays.” The point is theological clarity:
+    God judges covenant corruption, vindicates His witnesses, and transfers the world-order.
+  </div>
+
+  <hr />
+
+  <h2>9) The Fall of Babylon — Covenant Collapse</h2>
+  <p class="quote">“Fallen, fallen is Babylon the great.” <span class="ref"><a href="https://ebible.org/web/REV18.htm">Revelation 18 (WEB)</a></span></p>
+
+  <div class="frame">
+    <strong>Historical Fulfilment Lens</strong><br />
+    Revelation’s fall-of-the-city imagery aligns with covenant collapse: exposure, judgment, lament, and the end of a persecuting order.
+    The point is not “fear of the future” but the vindication of the Lamb and His people.
+  </div>
+
+  <hr />
+
+  <h2>10) The Millennium — Reign, Not Delay</h2>
+  <p>
+    Revelation 20 portrays the reign of Christ and His people in symbolic terms.
+    Read it through the enthronement lens (Psalm 110): Messiah rules until enemies are subdued.
+    <span class="ref"><a href="https://ebible.org/web/REV20.htm">Revelation 20 (WEB)</a></span>
+    <span class="ref"><a href="https://ebible.org/web/PSA110.htm">Psalm 110 (WEB)</a></span>
+  </p>
+
+  <div class="frame">
+    <strong>Psalm 110 Lens</strong><br />
+    The millennium is not postponement. It is a reign-and-victory portrayal.
+    “Binding” language indicates restricted deception and covenant limitation, not a dead cosmos.
+  </div>
+
+  <hr />
+
+  <h2>11) Resurrection and Judgment — Vindication and Covenant Outcome</h2>
+  <p>
+    Revelation uses resurrection language in covenant categories: vindication, access, and the outcome of belonging to the Lamb.
+    OT parallels (like Ezekiel 37) show resurrection imagery as corporate restoration and covenant victory.
+    <span class="ref"><a href="https://ebible.org/web/EZK37.htm">Ezekiel 37 (WEB)</a></span>
+  </p>
+
+  <div class="frame">
+    <strong>Control Point</strong><br />
+    Resurrection language is not a license for speculation; it is victory language.
+    It announces the triumph of life in Christ and the collapse of the old condemnatory order.
+  </div>
+
+  <hr />
+
+  <h2>12) New Heaven, New Earth, New Jerusalem — Covenant Renewal</h2>
+  <p class="quote">“I saw a new heaven and a new earth.” <span class="ref"><a href="https://ebible.org/web/REV21.htm">Revelation 21 (WEB)</a></span></p>
+
+  <div class="frame">
+    <strong>Isaiah Fulfilment</strong><br />
+    Revelation draws directly from Isaiah’s new-creation imagery.
+    “New heaven and new earth” is covenant renewal language: a new order, new access, new identity — not planetary replacement.
+  </div>
+
+  <hr />
+
+  <h2>13) God Dwelling With Humanity — The End Goal</h2>
+  <p class="quote">“Behold, the dwelling of God is with humanity.” <span class="ref"><a href="https://ebible.org/web/REV21.htm">Revelation 21 (WEB)</a></span></p>
+
+  <div class="frame">
+    <strong>End Goal</strong><br />
+    Revelation ends where Scripture aims: God present with His people, condemnation removed, and life flowing freely.
+    The purpose is assurance and worship, not anxiety.
+  </div>
+
+  <hr />
+
+  <h2>Summary</h2>
+  <div class="grid">
+    <div>
+      <h3>What Revelation Is</h3>
+      <ul class="chiplist">
+        <li>Symbolic covenant literature</li>
+        <li>Time-bound to the audience addressed</li>
+        <li>Judgment + vindication + victory</li>
+        <li>OT imagery applied consistently</li>
+      </ul>
+    </div>
+    <div>
+      <h3>What Revelation Produces</h3>
+      <ul class="chiplist">
+        <li>Confidence in the Lamb</li>
+        <li>Clarity about covenant judgment</li>
+        <li>Freedom from fear-driven futurism</li>
+        <li>New Creation identity and access</li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="nav" style="margin-top:1.4em;">
+    <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> |
+    <a href="/Bible/Prophecy/matt24.html">Matthew 24</a> |
+    <a href="/Bible/Prophecy/daniel.html">Daniel</a> |
+    <a href="/Bible/Prophecy/isaiah.html">Isaiah</a> |
+    <a href="#top">Top</a>
+  </p>
 </div>
-
-<h2>Summary</h2>
-
-<ul>
-  <li>Revelation is symbolic, covenantal, and time-bound</li>
-  <li>Its judgments target apostate Jerusalem and persecuting powers</li>
-  <li>The imagery is drawn from the Old Testament</li>
-  <li>The reign of Christ is present and victorious</li>
-  <li>The book ends in New Creation, not fear</li>
-</ul>
-
-<p>
-  <a href="/Bible/Prophecy/">Prophecy Hub</a> |
-  <a href="/Bible/Prophecy/matt24.html">Matthew 24</a> |
-  <a href="/Bible/Prophecy/daniel.html">Daniel</a> |
-  <a href="/Bible/Prophecy/isaiah.html">Isaiah</a> |
-  <a href="#top">Top</a>
-</p>
 
 </body>
 </html>
