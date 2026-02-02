@@ -5,43 +5,100 @@
   <title>About — Fulfilled Prophecy Bible</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Fulfilled Prophecy Bible: World English Bible (WEB) text with fulfillment notes and prophecy commentary from a first-century covenant transition lens (AD 30–70)." />
+
   <style>
+    :root{
+      --maxw: 900px;
+      --line: rgba(0,0,0,0.12);
+      --line2: rgba(0,0,0,0.18);
+      --muted: rgba(0,0,0,0.72);
+      --soft: rgba(0,0,0,0.06);
+      --soft2: rgba(0,0,0,0.04);
+      --radius: 14px;
+      --pad: 16px;
+    }
+
     body{
       font-family: system-ui, sans-serif;
-      line-height: 1.6;
-      margin: 1.5em;
-      max-width: 900px;
+      line-height: 1.65;
+      margin: 0;
+      color: #111;
+      background: #fff;
     }
-    h1, h2, h3{
-      margin-top: 1.4em;
-      margin-bottom: 0.4em;
+
+    .wrap{
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 18px var(--pad) 44px;
     }
-    nav{
-      margin: 1em 0;
-      font-size: 0.95em;
+
+    /* Sticky top nav */
+    .topnav{
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--line);
     }
-    nav a{
-      margin-right: 0.6em;
+    .topnav .bar{
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 10px var(--pad);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 12px;
+      align-items: center;
+    }
+    .topnav a{
       text-decoration: underline;
+      font-size: 0.95em;
+      color: #111;
+      white-space: nowrap;
     }
-    p{ margin: 0.6em 0; }
-    ul{ margin: 0.6em 0 0.8em 1.2em; }
-    li{ margin: 0.35em 0; }
-    hr{ margin: 2em 0; }
+    .topnav .sep{ opacity: 0.45; }
+
+    /* Anchors offset for sticky nav */
+    section{ scroll-margin-top: 78px; }
+    #top{ scroll-margin-top: 0; }
+
+    h1,h2,h3{ margin-top: 1.6em; margin-bottom: 0.45em; line-height: 1.2; }
+    h1{ margin-top: 0.9em; font-size: 2.05rem; letter-spacing: -0.2px; }
+    h2{ font-size: 1.32rem; }
+    h3{ font-size: 1.06rem; }
+
+    p{ margin: 0.75em 0; }
+    ul{ margin: 0.6em 0 0.9em 1.15em; padding: 0; }
+    li{ margin: 0.42em 0; }
+
+    a{ color: inherit; text-decoration: underline; }
+    a:hover{ opacity: 0.85; }
+
+    hr{ margin: 2.0em 0; border: 0; border-top: 1px solid var(--line); }
+
     .note{
-      padding: 0.8em 1em;
-      border: 1px solid #ddd;
-      border-radius: 12px;
-      background: #fafafa;
+      padding: 12px 14px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--soft2);
       margin: 1em 0;
+      color: #111;
     }
+
+    .muted{ color: var(--muted); }
+
+    /* Ko-fi */
     .kofi{
       display: inline-flex;
       align-items: center;
       gap: 10px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 10px 12px;
+      background: #fff;
       text-decoration: none;
-      margin-top: 0.5em;
     }
+    .kofi:hover{ opacity: 0.9; }
     .kofi span{
       text-decoration: underline;
       font-size: 0.95em;
@@ -52,159 +109,198 @@
 
 <a id="top"></a>
 
-<nav>
-  <a href="/Bible/index.html">Bible Index</a> |
-  <a href="/Bible/Prophecy/index.html">Prophecy Hub</a>
-</nav>
-
-<h1>About This Project</h1>
-<h2>Fulfilled Prophecy Bible</h2>
-
-<p>
-Fulfilled Prophecy Bible is a guided presentation of Scripture that reads each text within its original
-historical setting and takes seriously the New Testament’s claim that decisive covenant realities were
-fulfilled in Christ, within the apostolic horizon.
-</p>
-
-<p>
-This is not a new translation, and it does not replace the biblical text.
-The Scripture displayed is the <strong>World English Bible (WEB)</strong>.
-What this project adds is a fulfilled reading framework:
-<strong>Fulfillment Notes</strong> (brief, restrained) and <strong>Prophecy Commentary</strong> (expanded),
-so modern readers can follow the Bible’s own prophetic idiom and timing.
-</p>
-
-<hr />
-
-<h2>How This Bible Is Read</h2>
-
-<p>
-Biblical language is not flattened into abstract concepts.
-Scripture is allowed to speak in its own categories:
-covenant, temple, kingdom, judgment, life, death, resurrection, and glory.
-</p>
-
-<p>
-Where the New Testament speaks of fulfillment, this project does not postpone that fulfillment indefinitely.
-It treats fulfillment as announced, accomplished, and revealed in Christ, with historical consequences that
-reached their decisive covenant resolution in the first-century transition (AD 30–70).
-</p>
-
-<p>
-This means prophetic language is read covenantally, not cosmologically.
-“Heaven and earth,” “coming,” “day of the Lord,” “fire,” and “resurrection”
-are interpreted by Scripture’s own usage and first-century context,
-not by later philosophical or modern-scientific assumptions.
-</p>
-
-<hr />
-
-<h2>Scripture, Notes, and Commentary</h2>
-
-<p>
-Each chapter is organised with clear separation:
-</p>
-
-<ul>
-  <li><strong>Scripture (WEB):</strong> the text itself</li>
-  <li><strong>Fulfillment Notes:</strong> short, time-bound pointers (kept brief on purpose)</li>
-  <li><strong>Prophecy Commentary:</strong> the expanded explanation and cross-references</li>
-  <li><strong>Prophecy Hub links:</strong> shared definitions and recurring symbols</li>
-</ul>
-
-<p>
-Keeping these distinct helps readers see what the text says, then how the fulfilled lens is applied—without
-blurring Scripture into interpretation.
-</p>
-
-<hr />
-
-<h2>Fulfillment and the New Creation</h2>
-
-<p>
-Throughout the New Testament, life is described as already given, access as already opened,
-judgment as already active, and glory as already being shared.
-This project understands those statements not as partial truths waiting for activation, but as declarations of a
-completed covenant transition.
-</p>
-
-<p>
-The New Creation is not a future environment to escape into; it is a present reality revealed in Christ and lived
-through union with Him—expressed as righteousness, peace, and Spirit-life now.
-</p>
-
-<div class="note">
-  Fulfillment is not the end of hope.
-  It is the realization of what hope was pointing toward.
+<div class="topnav" aria-label="About navigation">
+  <div class="bar">
+    <a href="/Bible/index.html">Bible Index</a><span class="sep">|</span>
+    <a href="/Bible/Prophecy/index.html">Prophecy Hub</a><span class="sep">|</span>
+    <a href="#how">How it’s read</a><span class="sep">|</span>
+    <a href="#structure">Structure</a><span class="sep">|</span>
+    <a href="#newcreation">New Creation</a><span class="sep">|</span>
+    <a href="#what">Is / Is Not</a><span class="sep">|</span>
+    <a href="#invite">Invitation</a><span class="sep">|</span>
+    <a href="#support">Support</a><span class="sep">|</span>
+    <a href="#top">Top</a>
+  </div>
 </div>
 
-<hr />
+<div class="wrap">
 
-<h2>What This Project Is — and Is Not</h2>
+  <h1>About This Project</h1>
+  <h2>Fulfilled Prophecy Bible</h2>
 
-<p>
-This project is:
-</p>
+  <p>
+    Fulfilled Prophecy Bible is a guided presentation of Scripture that reads each text within its original
+    historical setting and takes seriously the New Testament’s claim that decisive covenant realities were
+    fulfilled in Christ within the apostolic horizon.
+  </p>
 
-<ul>
-  <li>a reading guide, not a denomination</li>
-  <li>a theological lens, not a debate platform</li>
-  <li>a structured resource designed for clarity and consistency</li>
-</ul>
+  <p>
+    This is not a new translation, and it does not replace the biblical text.
+    The Scripture displayed is the <strong>World English Bible (WEB)</strong>.
+    What this project adds is a fulfilled reading framework:
+    <strong>Fulfillment Notes</strong> (brief, restrained) and <strong>Prophecy Commentary</strong> (expanded),
+    so readers can follow the Bible’s own prophetic idiom and time-statements without forcing them into a distant future.
+  </p>
 
-<p>
-It is not:
-</p>
+  <div class="note">
+    <strong>One sentence:</strong>
+    <span class="muted">WEB text with fulfillment notes and prophecy commentary from a first-century covenant transition lens (AD 30–70).</span>
+  </div>
 
-<ul>
-  <li>a denial of history or continuity</li>
-  <li>a dismissal of Scripture’s authority</li>
-  <li>an attempt to provoke controversy</li>
-</ul>
+  <hr />
 
-<p>
-It exists to clarify, not to pressure.
-To illuminate, not to dominate.
-</p>
+  <section id="how">
+    <h2>How This Bible Is Read</h2>
 
-<hr />
+    <p>
+      Biblical language is not flattened into abstract concepts.
+      Scripture is allowed to speak in its own categories:
+      covenant, temple, kingdom, judgment, life, death, resurrection, and glory.
+    </p>
 
-<h2>An Invitation</h2>
+    <p>
+      Where the New Testament speaks of fulfillment, this project does not postpone that fulfillment indefinitely.
+      It treats fulfillment as announced, accomplished, and revealed in Christ, with historical consequences that reached
+      their decisive covenant resolution in the first-century transition (AD 30–70).
+    </p>
 
-<p>
-Readers are encouraged to move slowly, read contextually, and allow the text itself to shape understanding.
-Use the Prophecy Hub when you hit timing language (“near,” “soon,” “this generation”) or prophetic imagery
-(“clouds,” “fire,” “stars,” “heaven and earth”).
-</p>
+    <p>
+      This means prophetic language is read covenantally, not cosmologically.
+      “Heaven and earth,” “coming,” “day of the Lord,” “fire,” and “resurrection”
+      are interpreted by Scripture’s own usage and first-century context, not by later philosophical or modern-scientific assumptions.
+    </p>
+  </section>
 
-<p>
-If this perspective is unfamiliar, begin with a Gospel (John or Matthew),
-then follow the cross-links as questions arise.
-</p>
+  <hr />
 
-<p>
-The invitation is not to master a system, but to recognise life already present in Christ.
-</p>
+  <section id="structure">
+    <h2>Scripture, Notes, and Commentary</h2>
 
-<hr />
+    <p>
+      Each chapter is organised with clear separation:
+    </p>
 
-<nav>
-  <a href="#top">Top</a> |
-  <a href="/Bible/index.html">Bible Index</a> |
-  <a href="/Bible/Prophecy/index.html">Prophecy Hub</a>
-</nav>
+    <ul>
+      <li><strong>Scripture (WEB):</strong> the text itself</li>
+      <li><strong>Fulfillment Notes:</strong> short, time-bound pointers (kept brief on purpose)</li>
+      <li><strong>Prophecy Commentary:</strong> expanded explanation, cross-references, and clarifications</li>
+      <li><strong>Prophecy Hub links:</strong> shared definitions and recurring symbols</li>
+    </ul>
 
-<hr />
+    <p>
+      Keeping these distinct helps readers see what the text says, then how the fulfilled lens is applied—without
+      blending Scripture into interpretation.
+    </p>
+  </section>
 
-<a class="kofi" href="https://ko-fi.com/B0B61QC1BU" target="_blank" rel="noopener noreferrer" aria-label="Support this project on Ko-fi">
-  <img
-    height="36"
-    style="border:0;height:36px;"
-    src="https://storage.ko-fi.com/cdn/kofi5.png?v=6"
-    alt="Support on Ko-fi"
-  />
-  <span>Support on Ko-fi</span>
-</a>
+  <hr />
 
+  <section id="newcreation">
+    <h2>Fulfillment and the New Creation</h2>
+
+    <p>
+      Throughout the New Testament, life is described as already given, access as already opened,
+      judgment as already active, and glory as already being shared.
+      This project understands those statements not as partial truths waiting for activation, but as declarations of a completed covenant transition.
+    </p>
+
+    <p>
+      The New Creation is not a future environment to escape into; it is a present reality revealed in Christ and lived through union with Him—expressed as righteousness, peace, and Spirit-life now.
+    </p>
+
+    <div class="note">
+      Fulfillment is not the end of hope.
+      It is the realization of what hope was pointing toward.
+    </div>
+  </section>
+
+  <hr />
+
+  <section id="what">
+    <h2>What This Project Is — and Is Not</h2>
+
+    <p>This project is:</p>
+    <ul>
+      <li>a reading guide, not a denomination</li>
+      <li>a theological lens, not a debate platform</li>
+      <li>a structured resource designed for clarity and consistency</li>
+    </ul>
+
+    <p>It is not:</p>
+    <ul>
+      <li>a denial of history or continuity</li>
+      <li>a dismissal of Scripture’s authority</li>
+      <li>an attempt to provoke controversy</li>
+    </ul>
+
+    <p>
+      It exists to clarify, not to pressure.
+      To illuminate, not to dominate.
+    </p>
+  </section>
+
+  <hr />
+
+  <section id="invite">
+    <h2>An Invitation</h2>
+
+    <p>
+      Readers are encouraged to move slowly, read contextually, and allow the text itself to shape understanding.
+      Use the Prophecy Hub when you hit timing language (“near,” “soon,” “this generation”) or prophetic imagery
+      (“clouds,” “fire,” “stars,” “heaven and earth”).
+    </p>
+
+    <p>
+      If this perspective is unfamiliar, begin with a Gospel (John or Matthew),
+      then follow the cross-links as questions arise.
+    </p>
+
+    <p>
+      The invitation is not to master a system, but to recognise life already present in Christ.
+    </p>
+  </section>
+
+  <hr />
+
+  <section id="support">
+    <h2>Support</h2>
+
+    <p class="muted">
+      If this project helps you, you can support it here.
+    </p>
+
+    <p>
+      <a class="kofi" href="https://ko-fi.com/B0B61QC1BU" target="_blank" rel="noopener noreferrer" aria-label="Support this project on Ko-fi">
+        <img
+          height="36"
+          style="border:0;height:36px;"
+          src="https://storage.ko-fi.com/cdn/kofi5.png?v=6"
+          alt="Ko-fi"
+        />
+        <span>Support on Ko-fi</span>
+      </a>
+    </p>
+
+    <p class="muted">
+      If the button doesn’t load, use this link:
+      <a href="https://ko-fi.com/B0B61QC1BU" target="_blank" rel="noopener noreferrer">ko-fi.com/B0B61QC1BU</a>
+    </p>
+  </section>
+
+  <hr />
+
+  <nav class="muted">
+    <a href="#top">Top</a> ·
+    <a href="/Bible/index.html">Bible Index</a> ·
+    <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> ·
+    <a href="#how">How it’s read</a> ·
+    <a href="#structure">Structure</a> ·
+    <a href="#newcreation">New Creation</a> ·
+    <a href="#what">Is / Is Not</a> ·
+    <a href="#invite">Invitation</a> ·
+    <a href="#support">Support</a>
+  </nav>
+
+</div>
 </body>
 </html>
