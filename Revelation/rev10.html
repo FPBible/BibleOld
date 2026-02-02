@@ -2,195 +2,309 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Revelation 10 — The Open Scroll and the Measured Time</title>
+  <title>Revelation 10 — The Open Scroll and the Measured Time — Fulfilled Prophecy Bible</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Revelation 10 (WEB) with fulfillment notes and prophecy commentary: the open scroll, restrained revelation, and 'no more delay' within the first-century covenant transition (AD 30–70 lens)." />
+
   <style>
-    body{ font-family: system-ui, sans-serif; line-height: 1.6; margin: 1.5em; max-width: 900px; }
-    h1,h2,h3{ margin-top: 1.4em; margin-bottom: 0.4em; }
-    nav{ margin: 1em 0; font-size: 0.95em; }
-    nav a{ margin-right: 0.6em; text-decoration: underline; }
-    p{ margin: 0.6em 0; }
-    hr{ margin: 2em 0; }
-    ul{ margin: 0.6em 0 0.8em 1.2em; }
-    li{ margin: 0.35em 0; }
-    .note{ font-size: 0.95em; opacity: 0.9; }
+    :root{
+      --maxw: 980px;
+      --pad: 16px;
+      --line: rgba(0,0,0,0.12);
+      --line2: rgba(0,0,0,0.18);
+      --muted: rgba(0,0,0,0.72);
+      --soft: rgba(0,0,0,0.06);
+      --soft2: rgba(0,0,0,0.04);
+      --radius: 14px;
+    }
+
+    body{
+      font-family: system-ui, sans-serif;
+      line-height: 1.65;
+      margin: 0;
+      color: #111;
+      background: #fff;
+    }
+
+    .wrap{
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 18px var(--pad) 44px;
+    }
+
+    /* Sticky top nav */
+    .topnav{
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--line);
+    }
+    .topnav .bar{
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 10px var(--pad);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 12px;
+      align-items: center;
+    }
+    .topnav a{
+      text-decoration: underline;
+      font-size: 0.95em;
+      color: #111;
+      white-space: nowrap;
+    }
+    .topnav .sep{ opacity: 0.45; }
+
+    /* Anchors offset for sticky nav */
+    section{ scroll-margin-top: 78px; }
+    #top{ scroll-margin-top: 0; }
+
+    h1,h2,h3{ margin-top: 1.6em; margin-bottom: 0.45em; line-height: 1.2; }
+    h1{ margin-top: 0.9em; font-size: 2.05rem; letter-spacing: -0.2px; }
+    h2{ font-size: 1.32rem; }
+    h3{ font-size: 1.06rem; }
+
+    p{ margin: 0.75em 0; }
+    ul{ margin: 0.6em 0 0.9em 1.15em; padding: 0; }
+    li{ margin: 0.42em 0; }
+
+    a{ color: inherit; text-decoration: underline; }
+    a:hover{ opacity: 0.85; }
+
+    hr{ margin: 2.0em 0; border: 0; border-top: 1px solid var(--line); }
+
+    .note{
+      padding: 12px 14px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--soft2);
+      margin: 1em 0;
+    }
+
+    .muted{ color: var(--muted); }
+
+    .pill{
+      display: inline-block;
+      border: 1px solid var(--line2);
+      border-radius: 999px;
+      padding: 2px 10px;
+      font-size: 0.9em;
+      margin: 0 6px 6px 0;
+      background: var(--soft2);
+    }
+
+    /* Support */
+    .kofi{
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 10px 12px;
+      background: #fff;
+      text-decoration: none;
+    }
+    .kofi:hover{ opacity: 0.9; }
+    .kofi span{
+      text-decoration: underline;
+      font-size: 0.95em;
+    }
+
+    .reading p{ max-width: 76ch; }
+
+    @media (max-width: 520px){
+      h1{ font-size: 1.85rem; }
+      .topnav .bar{ gap: 8px 10px; }
+    }
   </style>
 </head>
 <body>
 
 <a id="top"></a>
 
-<nav>
-  <a href="/Bible/index.html">FPBible Index</a> |
-  <a href="index.html">Book Index</a> |
-  <a href="preface.html">Preface</a> |
-  <a href="appendix.html">Appendix</a> |
-  <a href="rev11.html">Next</a> |
-  <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> |
-  <a href="#top">Top</a>
-</nav>
+<div class="topnav" aria-label="Revelation navigation">
+  <div class="bar">
+    <a href="/Bible/#books">Bible</a><span class="sep">|</span>
+    <a href="/Bible/index.html">Index</a><span class="sep">|</span>
+    <a href="index.html">Revelation</a><span class="sep">|</span>
+    <a href="preface.html">Preface</a><span class="sep">|</span>
+    <a href="appendix.html">Appendix</a><span class="sep">|</span>
+    <a href="rev11.html">Next</a><span class="sep">|</span>
+    <a href="/Bible/Prophecy/index.html">Prophecy Hub</a><span class="sep">|</span>
+    <a href="#notes">Notes</a><span class="sep">|</span>
+    <a href="#commentary">Commentary</a><span class="sep">|</span>
+    <a href="#newcreation">New Creation</a><span class="sep">|</span>
+    <a href="#support">Support</a><span class="sep">|</span>
+    <a href="#top">Top</a>
+  </div>
+</div>
 
-<h1>Revelation 10</h1>
-<h2>The Open Scroll and the Measured Time</h2>
+<div class="wrap reading">
 
-<p class="note">
-Original text:
-<a href="https://ebible.org/eng-web/REV10.htm" target="_blank">Revelation 10 — WEB</a>
-</p>
+  <h1>Revelation 10</h1>
+  <h2>The Open Scroll and the Measured Time</h2>
 
-<hr />
+  <div class="note">
+    <span class="pill">Scripture: WEB</span>
+    <span class="pill">Fulfillment Notes</span>
+    <span class="pill">Prophecy Commentary</span>
+    <p class="muted" style="margin:0.55em 0 0;">
+      Original text:
+      <a href="https://ebible.org/eng-web/REV10.htm" target="_blank" rel="noopener noreferrer">Revelation 10 — WEB</a>
+    </p>
+  </div>
 
-<h2>Immediate Context</h2>
-<p>
-Revelation 9 exposed hardened resistance under trumpet judgment.
-Revelation 10 pauses the sequence again, not to delay fulfillment,
-but to clarify timing, authority, and prophetic responsibility.
-This chapter reassures the churches that covenant judgment is not endless
-and that God’s purposes are reaching their appointed completion.
-</p>
+  <hr />
 
-<hr />
+  <section id="context">
+    <h2>Immediate Context</h2>
+    <p>
+      Revelation 9 exposed hardened resistance under trumpet judgment. Revelation 10 pauses the sequence again,
+      not to delay fulfillment, but to clarify timing, authority, and prophetic responsibility.
+      This chapter reassures the churches that covenant judgment is not endless and that God’s purposes are reaching their appointed completion.
+    </p>
+  </section>
 
-<h2>Fulfilled Paraphrase</h2>
+  <hr />
 
-<h3>The Mighty Messenger and the Open Scroll (10:1–4)</h3>
-<p>
-A mighty messenger descends from heaven, wrapped in cloud,
-with a rainbow above his head—covenant authority in judgment.
-He stands with one foot on the sea and one on the land,
-signalling comprehensive jurisdiction.
-</p>
-<p>
-In his hand is a little scroll, already open.
-When he cries out, seven thunders speak,
-but their words are sealed and not written.
-Not everything is disclosed; restraint still governs revelation.
-</p>
+  <section id="scripture">
+    <h2>Scripture (WEB)</h2>
+    <p class="muted">
+      Note: Scripture text is from the World English Bible (WEB). See the link above for the full public-domain source.
+    </p>
+    <!-- Paste REV 10 WEB text here if you include it on-page.
+         If you are not including WEB text on-page, remove this section to avoid an “empty Scripture” heading. -->
+  </section>
 
-<hr />
+  <hr />
 
-<h3>“No More Delay” (10:5–7)</h3>
-<p>
-The messenger swears by the Creator of all things
-that there will be no more delay.
-At the sounding of the seventh trumpet,
-the mystery of God will be completed,
-just as He announced through His servants the prophets.
-</p>
+  <section id="notes">
+    <h2>Fulfillment Notes</h2>
+    <ol>
+      <li>The scroll is already open: God’s covenant case is disclosed and active, not hidden behind secret timetables.</li>
+      <li>Land/sea imagery signals comprehensive jurisdiction in the covenant crisis, not a modern geography lesson.</li>
+      <li>The sealed thunders enforce restraint: Revelation blocks speculation on purpose.</li>
+      <li>“No more delay” means the process is reaching its first-century conclusion; it is not postponed into distant centuries.</li>
+      <li>Eating the scroll shows prophetic vocation: truth is sweet to receive, bitter to carry through opposition and judgment.</li>
+    </ol>
+  </section>
 
-<p class="note">
-<strong>Zero futurism:</strong> “No more delay” means the covenant process is reaching its historical conclusion,
-not postponed into distant centuries.
-</p>
+  <hr />
 
-<hr />
+  <section id="commentary">
+    <h2>Prophecy Commentary</h2>
 
-<h3>Eating the Scroll: Sweet and Bitter (10:8–11)</h3>
-<p>
-John is commanded to take the scroll and eat it.
-It tastes sweet like honey, yet turns bitter in his stomach.
-</p>
-<p>
-He is told he must prophesy again concerning peoples, nations,
-languages, and kings.
-The message is both life-giving and costly to carry.
-</p>
+    <h3>1) The open scroll means revelation is active, not hidden</h3>
+    <p>
+      Unlike the sealed scroll earlier in the book, this scroll is already open. The meaning is clear:
+      God’s purposes are no longer concealed. The churches are not waiting for secret knowledge;
+      they are living through disclosed covenant action.
+    </p>
 
-<hr />
+    <h3>2) Land and sea imagery signals total scope</h3>
+    <p>
+      Standing on land and sea expresses comprehensive authority in the covenant world.
+      This is not “end-of-the-globe” language; it is judgment jurisdiction across the whole field of the crisis:
+      Israel and the nations entangled with that covenant confrontation.
+    </p>
 
-<h2>Fulfillment Commentary</h2>
+    <h3>3) The thunders remind us of restraint</h3>
+    <p>
+      Even at this late stage, not everything is revealed. God governs what is known and what is withheld.
+      Revelation resists speculation by design. If a detail is sealed, it is not ours to weaponise.
+    </p>
 
-<h3>1) The open scroll means revelation is active, not hidden</h3>
-<p>
-Unlike the sealed scroll of chapter 5, this scroll is already open.
-The meaning is clear: God’s purposes are no longer concealed.
-The churches are not waiting for secret knowledge;
-they are living through disclosed covenant action.
-</p>
+    <h3>4) “No more delay” closes the waiting posture</h3>
+    <p>
+      This phrase marks a decisive shift. The time of warning and restraint is nearly complete.
+      The seventh trumpet brings the “mystery of God” to its intended end—inside the audience’s horizon.
+      That is exactly how the book trains the churches to read time: near, measured, and covenantal.
+    </p>
 
-<h3>2) Land and sea imagery signals total scope</h3>
-<p>
-Standing on land and sea expresses authority over the whole covenant world.
-This is not global geography but comprehensive jurisdiction
-over Israel and the nations connected to the covenant crisis.
-</p>
+    <h3>5) The prophet must ingest the message</h3>
+    <p>
+      Eating the scroll means internalising the word before speaking it. Sweetness is the truth itself;
+      bitterness is the cost of carrying it in a season of judgment and opposition.
+      Prophetic speech is not performance—it is participation.
+    </p>
+  </section>
 
-<h3>3) The thunders remind us of restraint</h3>
-<p>
-Even at this late stage, not everything is revealed.
-God governs what is known and what is withheld.
-Revelation resists speculation by design.
-</p>
+  <hr />
 
-<h3>4) “No more delay” closes the waiting posture</h3>
-<p>
-This phrase marks a decisive shift.
-The time of warning and restraint is nearly complete.
-The seventh trumpet will bring the mystery to its intended end—
-within the audience’s horizon.
-</p>
+  <section id="hub">
+    <h2>Prophecy Hub Connections</h2>
+    <ul>
+      <li><strong>Measured time and fulfillment</strong> — <a href="/Bible/Prophecy/matt24.html">Matthew 24</a></li>
+      <li><strong>End of the age (not end of the world)</strong> — <a href="/Bible/Prophecy/2peter3.html">2 Peter 3</a></li>
+      <li><strong>Revelation structure and timing</strong> — <a href="/Bible/Prophecy/revelation.html">Revelation — Symbol, Judgment, Victory</a></li>
+    </ul>
+  </section>
 
-<h3>5) The prophet must ingest the message</h3>
-<p>
-Eating the scroll means internalising the word before speaking it.
-The sweetness reflects God’s truth;
-the bitterness reflects the cost of bearing it
-during judgment and opposition.
-</p>
+  <hr />
 
-<hr />
+  <section id="xref">
+    <h2>Cross-References</h2>
+    <ul>
+      <li><strong>Eating the scroll</strong> — <a href="https://ebible.org/eng-web/EZE03.htm" target="_blank" rel="noopener noreferrer">Ezekiel 3</a></li>
+      <li><strong>Oath by the Creator</strong> — <a href="https://ebible.org/eng-web/DAN12.htm" target="_blank" rel="noopener noreferrer">Daniel 12</a></li>
+      <li><strong>Sweet word imagery</strong> — <a href="https://ebible.org/eng-web/PSA119.htm" target="_blank" rel="noopener noreferrer">Psalm 119</a></li>
+    </ul>
+  </section>
 
-<h2>Prophecy Hub Links</h2>
-<ul>
-  <li><strong>Measured time and fulfillment</strong> — <a href="/Bible/Prophecy/matt24.html">Matthew 24</a></li>
-  <li><strong>End of the age (not end of the world)</strong> — <a href="/Bible/Prophecy/2peter3.html">2 Peter 3</a></li>
-  <li><strong>Revelation structure and timing</strong> — <a href="/Bible/Prophecy/revelation.html">Revelation — Symbol, Judgment, Victory</a></li>
-</ul>
+  <hr />
 
-<hr />
+  <section id="newcreation">
+    <h2>New Creation Reality</h2>
+    <p>
+      Revelation 10 reminds New Creation people that God’s purposes are not vague or endless.
+      Truth must be received, digested, and spoken—even when it carries cost.
+      Delay is ending; faithfulness remains the calling.
+    </p>
+  </section>
 
-<h2>Cross-References</h2>
-<ul>
-  <li><strong>Eating the scroll</strong> — <a href="https://ebible.org/eng-web/EZE03.htm" target="_blank">Ezekiel 3</a></li>
-  <li><strong>Oath by the Creator</strong> — <a href="https://ebible.org/eng-web/DAN12.htm" target="_blank">Daniel 12</a></li>
-  <li><strong>Sweet word imagery</strong> — <a href="https://ebible.org/eng-web/PSA119.htm" target="_blank">Psalm 119</a></li>
-</ul>
+  <hr />
 
-<hr />
+  <section id="reflection">
+    <h2>Reflection</h2>
+    <p>
+      Where do I enjoy God’s truth in theory but resist its cost in practice?
+      What would it look like to fully internalise the word I’m called to carry in this season?
+    </p>
+  </section>
 
-<h2>New Creation Reality</h2>
-<p>
-Revelation 10 reminds New Creation people that God’s purposes are not vague or endless.
-Truth must be received, digested, and spoken—even when it carries cost.
-Delay is ending; faithfulness remains the calling.
-</p>
+  <hr />
 
-<hr />
+  <section id="support">
+    <h2>Support</h2>
+    <p class="muted">If this project helps you, you can support it here.</p>
+    <p>
+      <a class="kofi" href="https://ko-fi.com/B0B61QC1BU" target="_blank" rel="noopener noreferrer" aria-label="Support this project on Ko-fi">
+        <img height="36" style="border:0;height:36px;"
+             src="https://storage.ko-fi.com/cdn/kofi5.png?v=6" alt="Ko-fi" />
+        <span>Support on Ko-fi</span>
+      </a>
+    </p>
+    <p class="muted">
+      If the button doesn’t load, use this link:
+      <a href="https://ko-fi.com/B0B61QC1BU" target="_blank" rel="noopener noreferrer">ko-fi.com/B0B61QC1BU</a>
+    </p>
+  </section>
 
-<h2>Reflection</h2>
-<p>
-Where do I enjoy God’s truth in theory but resist its cost in practice?
-What would it look like to fully internalise the word I’m called to carry
-in this season?
-</p>
+  <hr />
 
-<hr />
+  <nav class="muted" aria-label="Bottom navigation">
+    <a href="#top">Top</a> ·
+    <a href="/Bible/index.html">FPBible Index</a> ·
+    <a href="index.html">Book Index</a> ·
+    <a href="preface.html">Preface</a> ·
+    <a href="appendix.html">Appendix</a> ·
+    <a href="rev11.html">Next</a> ·
+    <a href="/Bible/Prophecy/index.html">Prophecy Hub</a>
+  </nav>
 
-<nav>
-  <a href="/Bible/index.html">FPBible Index</a> |
-  <a href="index.html">Book Index</a> |
-  <a href="preface.html">Preface</a> |
-  <a href="appendix.html">Appendix</a> |
-  <a href="rev11.html">Next</a> |
-  <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> |
-  <a href="#top">Top</a>
-</nav>
-
-<a href="https://ko-fi.com/B0B61QC1BU" target="_blank">
-  <img height="36" style="border:0px;height:36px;"
-    src="https://storage.ko-fi.com/cdn/kofi5.png?v=6"
-    border="0" alt="Buy Me a Coffee at ko-fi.com" />
-</a>
-
+</div>
 </body>
 </html>
