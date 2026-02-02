@@ -1,199 +1,351 @@
+Copy code
+Html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Galatians 1 — No Other Gospel</title>
+  <title>Galatians 1 — No Other Gospel — Fulfilled Prophecy Bible</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Galatians 1 (WEB) with fulfillment notes and prophecy commentary: no Christ+law gospel, covenant-age deliverance, and New Creation identity (AD 30–70 lens)." />
+
   <style>
+    :root{
+      --maxw: 980px;
+      --pad: 16px;
+      --line: rgba(0,0,0,0.12);
+      --line2: rgba(0,0,0,0.18);
+      --muted: rgba(0,0,0,0.72);
+      --soft: rgba(0,0,0,0.06);
+      --soft2: rgba(0,0,0,0.04);
+      --radius: 14px;
+    }
+
     body{
       font-family: system-ui, sans-serif;
-      line-height: 1.6;
-      margin: 1.5em;
-      max-width: 900px;
+      line-height: 1.65;
+      margin: 0;
+      color: #111;
+      background: #fff;
     }
-    h1, h2, h3{
-      margin-top: 1.6em;
-      margin-bottom: 0.4em;
+
+    .wrap{
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 18px var(--pad) 44px;
     }
-    p{ margin: 0.6em 0; }
-    ul{ margin: 0.6em 0 1.2em 1.2em; }
-    li{ margin: 0.35em 0; }
-    a{ text-decoration: underline; }
-    nav{
+
+    /* Sticky top nav */
+    .topnav{
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--line);
+    }
+    .topnav .bar{
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 10px var(--pad);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 12px;
+      align-items: center;
+    }
+    .topnav a{
+      text-decoration: underline;
+      font-size: 0.95em;
+      color: #111;
+      white-space: nowrap;
+    }
+    .topnav .sep{ opacity: 0.45; }
+
+    /* Anchors offset for sticky nav */
+    section{ scroll-margin-top: 78px; }
+    #top{ scroll-margin-top: 0; }
+
+    h1,h2,h3{ margin-top: 1.6em; margin-bottom: 0.45em; line-height: 1.2; }
+    h1{ margin-top: 0.9em; font-size: 2.05rem; letter-spacing: -0.2px; }
+    h2{ font-size: 1.32rem; }
+    h3{ font-size: 1.06rem; }
+
+    p{ margin: 0.75em 0; }
+    ul{ margin: 0.6em 0 0.9em 1.15em; padding: 0; }
+    li{ margin: 0.42em 0; }
+
+    a{ color: inherit; text-decoration: underline; }
+    a:hover{ opacity: 0.85; }
+
+    hr{ margin: 2.0em 0; border: 0; border-top: 1px solid var(--line); }
+
+    .note{
+      padding: 12px 14px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--soft2);
       margin: 1em 0;
+    }
+
+    .muted{ color: var(--muted); }
+
+    .pill{
+      display: inline-block;
+      border: 1px solid var(--line2);
+      border-radius: 999px;
+      padding: 2px 10px;
+      font-size: 0.9em;
+      margin: 0 6px 6px 0;
+      background: var(--soft2);
+    }
+
+    /* Support */
+    .kofi{
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 10px 12px;
+      background: #fff;
+      text-decoration: none;
+    }
+    .kofi:hover{ opacity: 0.9; }
+    .kofi span{
+      text-decoration: underline;
       font-size: 0.95em;
     }
-    nav a{
-      margin-right: 0.6em;
-      text-decoration: underline;
+
+    .reading p{ max-width: 74ch; }
+
+    @media (max-width: 520px){
+      h1{ font-size: 1.85rem; }
+      .topnav .bar{ gap: 8px 10px; }
     }
-    hr{ margin: 2em 0; }
   </style>
 </head>
 <body>
 
 <a id="top"></a>
 
-<nav>
-  <a href="index.html">Index</a> |
-  <a href="preface.html">Preface</a> |
-  <a href="appendix.html">Appendix</a> |
-  <a href="gal2.html">Next</a> |
-  <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> |
-  <a href="/Bible/index.html">Bible Index</a>
-</nav>
+<div class="topnav" aria-label="Galatians navigation">
+  <div class="bar">
+    <a href="/Bible/#books">Bible</a><span class="sep">|</span>
+    <a href="/Bible/index.html">Index</a><span class="sep">|</span>
+    <a href="index.html">Galatians</a><span class="sep">|</span>
+    <a href="preface.html">Preface</a><span class="sep">|</span>
+    <a href="appendix.html">Appendix</a><span class="sep">|</span>
+    <a href="gal2.html">Next</a><span class="sep">|</span>
+    <a href="/Bible/Prophecy/index.html">Prophecy Hub</a><span class="sep">|</span>
+    <a href="#notes">Notes</a><span class="sep">|</span>
+    <a href="#commentary">Commentary</a><span class="sep">|</span>
+    <a href="#newcreation">New Creation</a><span class="sep">|</span>
+    <a href="#support">Support</a><span class="sep">|</span>
+    <a href="#top">Top</a>
+  </div>
+</div>
 
-<h1>Galatians 1</h1>
-<h2>No Other Gospel · Freedom from Law-Based Identity</h2>
+<div class="wrap reading">
 
-<hr />
+  <h1>Galatians 1</h1>
+  <h2>No Other Gospel · Freedom from Law-Based Identity</h2>
 
-<h2>Fulfilled Paraphrase (Galatians 1)</h2>
+  <div class="note">
+    <span class="pill">Scripture: WEB</span>
+    <span class="pill">Fulfillment Notes</span>
+    <span class="pill">Prophecy Commentary</span>
+    <p class="muted" style="margin:0.55em 0 0;">
+      Original text:
+      <a href="https://ebible.org/eng-web/GAL01.htm" target="_blank" rel="noopener noreferrer">Galatians 1 — WEB</a>
+    </p>
+  </div>
 
-<p><strong>1:1–5</strong> Paul—an apostle not commissioned by human approval or human systems, but by Jesus the Messiah and God the Father, who raised Him—writes to the assemblies of Galatia. Grace and peace to you from God our Father and the Lord Jesus the Messiah, who gave Himself for our sins to deliver us out of this present evil age, according to the will of our God and Father. To Him be glory forever. Amen.</p>
+  <hr />
 
-<p><strong>1:6–10</strong> I’m shocked that you’re turning away so quickly from the One who called you by grace and running to a different “gospel.” It isn’t another gospel at all. It’s a distortion. Some are troubling you and trying to twist the message of the Messiah. Even if we—or an angel from heaven—preach a gospel different from what you received, let him be condemned. I’m saying it again: if anyone preaches a different gospel than the one you received, let him be condemned. Am I trying to win human applause, or God’s? If I were still chasing human approval, I wouldn’t be a servant of the Messiah.</p>
+  <section id="scripture">
+    <h2>Scripture (WEB)</h2>
+    <p class="muted">
+      Note: Scripture text is from the World English Bible (WEB). See the link above for the full public-domain source.
+    </p>
+    <!-- Paste GAL 1 WEB text here if you include it on-page.
+         If you are not including WEB text on-page, remove this section to avoid an “empty Scripture” heading. -->
+  </section>
 
-<p><strong>1:11–12</strong> Understand this: the gospel I preached did not come from man. I didn’t receive it from human instruction, and I wasn’t trained into it by tradition. It came by revelation of Jesus the Messiah.</p>
+  <hr />
 
-<p><strong>1:13–17</strong> You’ve heard how I lived under Judaism: I violently persecuted the assembly of God and tried to destroy it. I outpaced many of my peers in strictness, being more devoted than most to the traditions of my fathers. But when God—who set me apart before I was born—called me by grace and was pleased to reveal His Son in me, so that I might proclaim Him among the nations, I didn’t run to humans for permission. I did not go up to Jerusalem to those who were apostles before me. I went away into Arabia, and then returned again to Damascus.</p>
+  <section id="notes">
+    <h2>Fulfillment Notes</h2>
+    <ol>
+      <li>“This present evil age” is covenant-era language: an order governed by condemnation and boundary identity, not “escaping the planet.”</li>
+      <li>The “different gospel” is not secularism; it’s Christ plus Torah-identity markers as the basis of belonging and righteousness.</li>
+      <li>Paul treats covenant mixture as a direct threat because it rebuilds what Christ ended and re-centres accusation.</li>
+      <li>Paul’s authority claim guards the message from institution control: the gospel is sourced in Christ, not tradition managers.</li>
+      <li>Galatians is written inside the first-century covenant crisis horizon; the stakes are the transition from old administration to New Covenant life.</li>
+    </ol>
+  </section>
 
-<p><strong>1:18–24</strong> Then after three years I went up to Jerusalem to meet Cephas and stayed with him fifteen days. I didn’t see any other apostle except James, the Lord’s brother. Before God, I’m not lying about this. After that I went into the regions of Syria and Cilicia. I was still unknown by face to the Judean assemblies in the Messiah. They only kept hearing, “The one who once persecuted us is now proclaiming the faith he once tried to destroy.” And they glorified God because of me.</p>
+  <hr />
 
-<hr />
+  <section id="context">
+    <h2>Immediate Context</h2>
+    <p>
+      Paul is writing to Gentile believers being pressured to add Jewish law-identity markers (especially circumcision and calendar observance)
+      as a requirement for belonging and righteousness. This is not a small theological tweak. It is a covenant reversal.
+      Paul treats it as abandoning Christ’s finished work and returning to the old system that could not give life.
+    </p>
+  </section>
 
-<h2>Immediate Context (Who / What / Why)</h2>
-<p>
-Paul is writing to Gentile believers being pressured to add Jewish law-identity markers (especially circumcision and calendar observance)
-as a requirement for belonging and righteousness. This is not a small theological tweak. It is a covenant reversal.
-Paul treats it as abandoning Christ’s finished work and returning to the old system that could not give life.
-</p>
+  <hr />
 
-<hr />
+  <section id="commentary">
+    <h2>Prophecy Commentary</h2>
 
-<h2>Fulfilled Commentary (New Covenant / New Creation Lens)</h2>
+    <h3>1) “Deliver us out of this present evil age” is covenant language</h3>
+    <p>
+      Paul is not describing an escape from the planet. “Age” is covenant-world language: a governed order.
+      The “present evil age” is the old covenant administration under sin’s leverage, condemnation, and boundary-based identity.
+      Christ’s self-giving delivers people out of that old age and into the New Covenant reality of grace and Spirit.
+    </p>
 
-<h3>1) “Deliver us out of this present evil age” is covenant language</h3>
-<p>
-Paul is not describing an escape from the planet. “Age” is covenant-world language.
-The “present evil age” is the old covenant order under sin, condemnation, and boundary-based identity.
-Christ’s self-giving delivers people out of that old age and into the new reality of grace and Spirit.
-</p>
+    <h3>2) “No other gospel” means no law-added gospel</h3>
+    <p>
+      The “different gospel” is not atheism. It’s religion with Christ used as an accessory.
+      It is Christ + law as the basis of identity, righteousness, and membership.
+      Paul says that is not a second option — it is a distortion that empties Christ of meaning.
+    </p>
 
-<h3>2) “No other gospel” means no law-added gospel</h3>
-<p>
-The “different gospel” is not atheism. It’s religion with Christ added as an accessory.
-It is Christ + law as the basis of identity, righteousness, and membership.
-Paul says that is not a second option — it is a distortion that empties Christ of meaning.
-</p>
+    <h3>3) Paul refuses human-authority control over the message</h3>
+    <p>
+      Paul’s authority claim is not ego. It’s protection.
+      If the gospel is sourced from human institutions, it will always be pressured to compromise.
+      Paul’s point: the gospel comes from revelation of Christ, not from tradition managers.
+      That is why it cannot be reshaped to suit fear, politics, or group control.
+    </p>
 
-<h3>3) Paul refuses human-authority control over the message</h3>
-<p>
-Paul’s authority claim is not ego. It’s protection.
-If the gospel is sourced from human institutions, it will always be pressured to compromise.
-Paul’s point: the gospel comes from revelation of Christ, not from tradition managers.
-That is why it cannot be reshaped to suit fear, politics, or group control.
-</p>
+    <h3>4) Paul’s conversion proves the message is not a tribal loyalty system</h3>
+    <p>
+      Paul was not a casual rule-keeper. He was a zealous enforcer of the old order.
+      If anyone embodied law-based righteousness and tradition zeal, it was Paul.
+      Yet God revealed His Son in him and redirected his entire identity toward the nations.
+      That shift is the whole argument: New Covenant belonging is not built on Torah boundary markers.
+    </p>
 
-<h3>4) Paul’s conversion proves the message is not a tribal loyalty system</h3>
-<p>
-Paul was not a casual rule-keeper. He was a zealous enforcer of the old order.
-If anyone embodied law-based righteousness and tradition zeal, it was Paul.
-Yet God revealed His Son in him and redirected his entire identity toward the nations.
-That shift is the whole argument: New Covenant belonging is not built on Torah boundary markers.
-</p>
+    <h3>5) The fight in Galatians is the fight against covenant mixture</h3>
+    <p>
+      Galatians is not mainly about “being nice.” It’s about refusing to rebuild what Christ ended.
+      Once you mix covenants, you produce confusion: fear, performance, insider-outsider status, and endless measuring.
+      Paul cuts it off at the root: grace is the covenant foundation.
+    </p>
+  </section>
 
-<h3>5) The fight in Galatians is the fight against covenant mixture</h3>
-<p>
-Galatians is not mainly about “being nice.” It’s about refusing to rebuild what Christ ended.
-Once you mix covenants, you produce confusion: fear, performance, insider-outsider status,
-and endless measuring. Paul cuts it off at the root: grace is the covenant foundation.
-</p>
+  <hr />
 
-<hr />
+  <section id="xref">
+    <h2>Cross-References</h2>
+    <ul>
+      <li><strong>Deliverance from the “age”</strong> —
+        <a href="https://ebible.org/eng-web/MAT24.htm" target="_blank" rel="noopener noreferrer">Matthew 24</a>,
+        <a href="https://ebible.org/eng-web/ROM08.htm" target="_blank" rel="noopener noreferrer">Romans 8</a>,
+        <a href="https://ebible.org/eng-web/HEB08.htm" target="_blank" rel="noopener noreferrer">Hebrews 8</a>
+      </li>
+      <li><strong>Grace vs law-based righteousness</strong> —
+        <a href="https://ebible.org/eng-web/ROM03.htm" target="_blank" rel="noopener noreferrer">Romans 3</a>,
+        <a href="https://ebible.org/eng-web/ROM07.htm" target="_blank" rel="noopener noreferrer">Romans 7</a>,
+        <a href="https://ebible.org/eng-web/PHI03.htm" target="_blank" rel="noopener noreferrer">Philippians 3</a>
+      </li>
+      <li><strong>New Covenant transition</strong> —
+        <a href="https://ebible.org/eng-web/JER31.htm" target="_blank" rel="noopener noreferrer">Jeremiah 31</a>,
+        <a href="https://ebible.org/eng-web/HEB09.htm" target="_blank" rel="noopener noreferrer">Hebrews 9</a>,
+        <a href="https://ebible.org/eng-web/2CO03.htm" target="_blank" rel="noopener noreferrer">2 Corinthians 3</a>
+      </li>
+      <li><strong>The message is guarded</strong> —
+        <a href="https://ebible.org/eng-web/ACT15.htm" target="_blank" rel="noopener noreferrer">Acts 15</a>
+      </li>
+    </ul>
+  </section>
 
-<h2>Cross-References (Curated)</h2>
-<ul>
-  <li><strong>Deliverance from the “age”</strong> —
-    <a href="https://ebible.org/eng-web/MAT24.htm">Matt 24</a>,
-    <a href="https://ebible.org/eng-web/ROM08.htm">Rom 8</a>,
-    <a href="https://ebible.org/eng-web/HEB08.htm">Heb 8</a>
-  </li>
-  <li><strong>Grace vs law-based righteousness</strong> —
-    <a href="https://ebible.org/eng-web/ROM03.htm">Rom 3</a>,
-    <a href="https://ebible.org/eng-web/ROM07.htm">Rom 7</a>,
-    <a href="https://ebible.org/eng-web/PHI03.htm">Phil 3</a>
-  </li>
-  <li><strong>New Covenant transition</strong> —
-    <a href="https://ebible.org/eng-web/JER31.htm">Jer 31</a>,
-    <a href="https://ebible.org/eng-web/HEB09.htm">Heb 9</a>,
-    <a href="https://ebible.org/eng-web/2CO03.htm">2 Cor 3</a>
-  </li>
-  <li><strong>The message is guarded</strong> —
-    <a href="https://ebible.org/eng-web/ACT15.htm">Acts 15</a>
-  </li>
-</ul>
+  <hr />
 
-<hr />
+  <section id="hub">
+    <h2>Prophecy Hub Connections</h2>
+    <ul>
+      <li>
+        <strong>Age / covenant-world language</strong> —
+        <a href="/Bible/Prophecy/2peter3.html">2 Peter 3 — Heavens and Earth</a>
+      </li>
+      <li>
+        <strong>Judgment and transition vocabulary</strong> —
+        <a href="/Bible/Prophecy/matt24.html">Matthew 24 — Judgment on Jerusalem</a>
+      </li>
+    </ul>
+  </section>
 
-<h2>Prophecy Fulfilment Links</h2>
-<ul>
-  <li>
-    <strong>Age / covenant-world language</strong> —
-    <a href="/Bible/Prophecy/2peter3.html">2 Peter 3 — Heavens and Earth</a>
-  </li>
-  <li>
-    <strong>Judgment and transition vocabulary</strong> —
-    <a href="/Bible/Prophecy/matt24.html">Matthew 24 — Judgment on Jerusalem</a>
-  </li>
-</ul>
+  <hr />
 
-<hr />
+  <section id="idioms">
+    <h2>Key Idioms &amp; Language Notes</h2>
+    <ul>
+      <li><strong>“Age”</strong> — Often covenant-era language (a governed order), not “planet time.”</li>
+      <li><strong>“Gospel distortion”</strong> — A different foundation: grace vs law as the basis of righteousness and belonging.</li>
+    </ul>
+  </section>
 
-<h2>Key Idioms & Language Notes</h2>
-<ul>
-  <li><strong>“Age”</strong> — Often covenant-era language (a governed order), not “planet time.”</li>
-  <li><strong>“Gospel distortion”</strong> — Not “different music style,” but a different foundation: grace vs law.</li>
-</ul>
+  <hr />
 
-<hr />
+  <section id="newcreation">
+    <h2>New Creation Reality</h2>
+    <p>
+      Galatians 1 is your line in the sand: you do not live by approval systems.
+      You do not belong by performance, tribe, or identity markers.
+      You belong because Christ delivered you out of the condemned order and placed you in grace.
+      If your faith is driven by fear of exclusion, you are being pulled back into the old pattern.
+      New Creation life begins with clarity: Christ is enough.
+    </p>
+  </section>
 
-<h2>New Creation Reality (Today)</h2>
-<p>
-Galatians 1 is your line in the sand: you do not live by approval systems.
-You do not belong by performance, tribe, or identity markers.
-You belong because Christ delivered you out of the condemned order and placed you in grace.
-If your faith is driven by fear of exclusion, you are being pulled back into the old pattern.
-New Creation life begins with clarity: Christ is enough.
-</p>
+  <hr />
 
-<hr />
+  <section id="reflection">
+    <h2>Reflection</h2>
+    <p>Where am I still measuring my belonging by something other than Christ?</p>
+  </section>
 
-<h2>Reflection</h2>
-<p>
-Where am I still measuring my belonging by something other than Christ?
-</p>
+  <hr />
 
-<hr />
+  <section id="support">
+    <h2>Support</h2>
+    <p class="muted">If this project helps you, you can support it here.</p>
+    <p>
+      <a class="kofi" href="https://ko-fi.com/B0B61QC1BU" target="_blank" rel="noopener noreferrer" aria-label="Support this project on Ko-fi">
+        <img height="36" style="border:0;height:36px;"
+             src="https://storage.ko-fi.com/cdn/kofi5.png?v=6" alt="Ko-fi" />
+        <span>Support on Ko-fi</span>
+      </a>
+    </p>
+    <p class="muted">
+      If the button doesn’t load, use this link:
+      <a href="https://ko-fi.com/B0B61QC1BU" target="_blank" rel="noopener noreferrer">ko-fi.com/B0B61QC1BU</a>
+    </p>
+  </section>
 
-<nav>
-  <a href="#top">Top</a> |
-  <a href="index.html">Index</a> |
-  <a href="preface.html">Preface</a> |
-  <a href="appendix.html">Appendix</a> |
-  <a href="gal2.html">Next</a> |
-  <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> |
-  <a href="/Bible/index.html">Bible Index</a>
-</nav>
+  <hr />
 
-<hr />
+  <nav class="muted" aria-label="Bottom navigation">
+    <a href="#top">Top</a> ·
+    <a href="index.html">Index</a> ·
+    <a href="preface.html">Preface</a> ·
+    <a href="appendix.html">Appendix</a> ·
+    <a href="gal2.html">Next</a> ·
+    <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> ·
+    <a href="/Bible/index.html">Bible Index</a>
+  </nav>
 
-<a href="https://ko-fi.com/B0B61QC1BU" target="_blank">
-  <img height="36"
-       style="border:0;height:36px;"
-       src="https://storage.ko-fi.com/cdn/kofi5.png?v=6"
-       alt="Buy Me a Coffee" />
-</a>
-
+</div>
 </body>
 </html>
+Key fixes:
+Removed “Fulfilled Paraphrase” section (you said you don’t want paraphrase) and moved the value into WEB Scripture + Fulfillment Notes + Prophecy Commentary.
+Updated to your newer sticky-nav + wrap + CSS variables layout for consistency.
+Added the required Fulfillment Notes (3–5, one-line each) block.
+Kept your original “Immediate Context / Commentary / Cross-refs / Hub links / New Creation / Reflection” content intact, just structured properly.
+Added Support section with a button + fallback link.
+Same deal: if you’re not pasting WEB on-page, delete the “Scripture (WEB)” section to avoid an empty heading.
