@@ -2,10 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Matthew 24 — The End of the Age and the Vindication of the Son of Man</title>
+  <title>Matthew 24 — Temple Judgment and the End of the Age</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <style>
+    :root{
+      --maxw: 980px;
+      --pad: 16px;
+      --line: rgba(0,0,0,0.12);
+      --muted: rgba(0,0,0,0.72);
+      --soft: rgba(0,0,0,0.05);
+      --soft2: rgba(0,0,0,0.03);
+      --radius: 14px;
+    }
     body{
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       line-height: 1.65;
@@ -13,234 +22,288 @@
       color: #111;
       background: #fff;
     }
-    .wrap{
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 18px 16px 44px;
-    }
-    h1{ font-size: 2.05rem; margin: 18px 0 6px; }
-    h2{ font-size: 1.35rem; margin: 22px 0 10px; padding-bottom: 6px; border-bottom: 1px solid rgba(0,0,0,0.12); }
-    p{ margin: 10px 0; }
-    hr{ margin: 26px 0; border: 0; border-top: 1px solid rgba(0,0,0,0.12); }
-
-    nav{
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin: 14px 0;
-      font-size: 0.95rem;
-    }
-    nav a{
+    .wrap{ max-width: var(--maxw); margin: 0 auto; padding: 18px; }
+    nav.top, nav.bottom{ display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin: 10px 0 16px; }
+    nav.bottom{ margin-top: 18px; }
+    .btn{
+      display:inline-block;
+      padding: 7px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
       text-decoration: none;
       color: #111;
-      padding: 8px 10px;
-      border: 1px solid rgba(0,0,0,0.12);
-      border-radius: 999px;
+      background: #fff;
     }
-
-    .scripture-text{ font-size: 1.06rem; }
-    .scripture-text p{ margin: 10px 0; }
+    .btn:hover{ background: var(--soft2); }
+    h1{ margin: 0.2em 0 0.4em; }
+    h2{ margin: 1.2em 0 0.4em; }
+    hr{ border: 0; border-top: 1px solid var(--line); margin: 20px 0; }
+    .card{
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 14px;
+      background: #fff;
+    }
+    .muted{ color: var(--muted); }
+    .softbox{
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 12px;
+      background: var(--soft);
+    }
+    .scripture-text{
+      font-family: ui-serif, Georgia, "Times New Roman", Times, serif;
+      font-size: 1.04rem;
+      line-height: 1.75;
+    }
     .v-num{
-      font-weight: 700;
-      font-size: 0.72em;
-      vertical-align: super;
-      opacity: 0.6;
-      margin-right: 6px;
+      display:inline-block;
+      min-width: 2.2em;
+      font-family: ui-sans-serif, system-ui;
+      font-size: 0.92rem;
+      color: var(--muted);
     }
+    ul{ margin: 0.4em 0 0.2em 1.2em; }
+    li{ margin: 0.35em 0; }
+    .kofiimg{ height: 36px; border: 0; }
   </style>
 </head>
 
 <body>
-<a id="top"></a>
-<div class="wrap">
+  <a id="top"></a>
+  <div class="wrap">
 
-<nav>
-  <a href="/Bible/index.html">FPBible Index</a>
-  <a href="index.html">Book Index</a>
-  <a href="matt23.html">Prev</a>
-  <a href="matt25.html">Next</a>
-  <a href="/Bible/Prophecy/index.html">Prophecy Hub</a>
-  <a href="#top">Top</a>
-</nav>
+    <nav class="top">
+      <a class="btn" href="/Bible/index.html">FPBible Index</a>
+      <a class="btn" href="index.html">Book Index</a>
+      <a class="btn" href="preface.html">Preface</a>
+      <a class="btn" href="appendix.html">Appendix</a>
+      <a class="btn" href="matt23.html">Prev</a>
+      <a class="btn" href="matt25.html">Next</a>
+      <a class="btn" href="/Bible/Prophecy/index.html">Prophecy Hub</a>
+      <a class="btn" href="#top">Top</a>
+    </nav>
 
-<h1>Matthew 24 — The End of the Age and the Vindication of the Son of Man</h1>
+    <div class="card">
+      <h1>Matthew 24 — Temple Judgment and the End of the Age</h1>
+      <p class="muted">Covenantal / Full Preterist lens • WEB Scripture (verbatim) • No futurism • No “Paraphrase” branding.</p>
+    </div>
 
-<hr />
+    <hr />
 
-<h2>Immediate Context</h2>
-<p>
-Matthew 24 follows directly from Jesus’ covenant indictment of Jerusalem’s leaders (Matthew 23).
-Leaving the Temple, He announces its total destruction and answers the disciples’ question about the
-timing and signs of <strong>the end of the age</strong>.
-The entire discourse is framed around the Temple, Jerusalem, Judea, and events that would occur within that generation.
-</p>
+    <section class="card">
+      <h2>1. Immediate Context</h2>
+      <p>
+        Jesus has just pronounced the house “left desolate” (Matt 23) and now interprets the coming temple collapse as covenant judgment,
+        answering the disciples’ question about “these things” and “the end of the age” within their first-century horizon.
+      </p>
+    </section>
 
-<hr />
+    <hr />
 
-<h2>Scripture (WEB)</h2>
-<div class="scripture-text">
+    <section class="card">
+      <h2>2. Scripture (WEB)</h2>
+      <p class="muted">Source (must match verbatim): https://ebible.org/web/MAT24.htm</p>
 
-<p>
-<span class="v-num">1</span>Jesus went out from the temple, and was going on his way. His disciples came to him to show him the buildings of the temple.
-<span class="v-num">2</span>But he answered them, “You see all of these things, don’t you? Most certainly I tell you, there will not be left here <strong>one stone on another</strong>, that will not be thrown down.”
-</p>
+      <div class="scripture-text">
+       1 Jesus went out from the temple, and was going on his way. His disciples came to him to show him the buildings of the temple. 2 But he answered them, “You see all of these things, don’t you? Most certainly I tell you, there will not be left here one stone on another, that will not be thrown down.”
+3 As he sat on the Mount of Olives, the disciples came to him privately, saying, “Tell us, when will these things be? What is the sign of your coming, and of the end of the age?”
+4 Jesus answered them, “Be careful that no one leads you astray. 5 For many will come in my name, saying, ‘I am the Christ,’ and will lead many astray. 6 You will hear of wars and rumors of wars. See that you aren’t troubled, for all this must happen, but the end is not yet. 7 For nation will rise against nation, and kingdom against kingdom; and there will be famines, plagues, and earthquakes in various places. 8 But all these things are the beginning of birth pains.
+9 “Then they will deliver you up to oppression and will kill you. You will be hated by all of the nations for my name’s sake. 10 Then many will stumble, and will deliver up one another, and will hate one another. 11 Many false prophets will arise and will lead many astray. 12 Because iniquity will be multiplied, the love of many will grow cold. 13 But he who endures to the end will be saved. 14 This Good News of the Kingdom will be preached in the whole world for a testimony to all the nations, and then the end will come.
+15 “When, therefore, you see the abomination of desolation,* which was spoken of through Daniel the prophet, standing in the holy place (let the reader understand), 16 then let those who are in Judea flee to the mountains. 17 Let him who is on the housetop not go down to take out the things that are in his house. 18 Let him who is in the field not return back to get his clothes. 19 But woe to those who are with child and to nursing mothers in those days! 20 Pray that your flight will not be in the winter nor on a Sabbath, 21 for then there will be great suffering,† such as has not been from the beginning of the world until now, no, nor ever will be. 22 Unless those days had been shortened, no flesh would have been saved. But for the sake of the chosen ones, those days will be shortened.
+23 “Then if any man tells you, ‘Behold, here is the Christ!’ or, ‘There!’ don’t believe it. 24 For false christs and false prophets will arise, and they will show great signs and wonders, so as to lead astray, if possible, even the chosen ones.
+25 “Behold, I have told you beforehand.
+26 “If therefore they tell you, ‘Behold, he is in the wilderness,’ don’t go out; or ‘Behold, he is in the inner rooms,’ don’t believe it. 27 For as the lightning flashes from the east, and is seen even to the west, so will the coming of the Son of Man be. 28 For wherever the carcass is, that is where the vultures‡ gather together.
+29 “But immediately after the suffering§ of those days, the sun will be darkened, the moon will not give its light, the stars will fall from the sky, and the powers of the heavens will be shaken;* 30 and then the sign of the Son of Man will appear in the sky. Then all the tribes of the earth will mourn, and they will see the Son of Man coming on the clouds of the sky with power and great glory. 31 He will send out his angels with a great sound of a trumpet, and they will gather together his chosen ones from the four winds, from one end of the sky to the other.
+32 “Now from the fig tree learn this parable: When its branch has now become tender and produces its leaves, you know that the summer is near. 33 Even so you also, when you see all these things, know that he is near, even at the doors. 34 Most certainly I tell you, this generation† will not pass away until all these things are accomplished. 35 Heaven and earth will pass away, but my words will not pass away.
+36 “But no one knows of that day and hour, not even the angels of heaven,‡ but my Father only. 37 As the days of Noah were, so will the coming of the Son of Man be. 38 For as in those days which were before the flood they were eating and drinking, marrying and giving in marriage, until the day that Noah entered into the ship, 39 and they didn’t know until the flood came and took them all away, so will the coming of the Son of Man be. 40 Then two men will be in the field: one will be taken and one will be left. 41 Two women will be grinding at the mill: one will be taken and one will be left. 42 Watch therefore, for you don’t know in what hour your Lord comes. 43 But know this, that if the master of the house had known in what watch of the night the thief was coming, he would have watched, and would not have allowed his house to be broken into. 44 Therefore also be ready, for in an hour that you don’t expect, the Son of Man will come.
+45 “Who then is the faithful and wise servant, whom his lord has set over his household, to give them their food in due season? 46 Blessed is that servant whom his lord finds doing so when he comes. 47 Most certainly I tell you that he will set him over all that he has. 48 But if that evil servant should say in his heart, ‘My lord is delaying his coming,’ 49 and begins to beat his fellow servants, and eat and drink with the drunkards, 50 the lord of that servant will come in a day when he doesn’t expect it and in an hour when he doesn’t know it, 51 and will cut him in pieces and appoint his portion with the hypocrites. That is where the weeping and grinding of teeth will be.
+      </div>
+    </section>
 
-<p>
-<span class="v-num">3</span>As he sat on the Mount of Olives, the disciples came to him privately, saying, “Tell us, when will these things be? What is the sign of your coming, and of <strong>the end of the age</strong>?”
-</p>
+    <hr />
 
-<p>
-<span class="v-num">4</span>Jesus answered them, “Be careful that no one leads you astray.
-<span class="v-num">5</span>For many will come in my name, saying, ‘I am the Christ,’ and will lead many astray.
-<span class="v-num">6</span>You will hear of wars and rumors of wars. See that you aren’t troubled, for all this must happen, but the end is not yet.
-<span class="v-num">7</span>For nation will rise against nation, and kingdom against kingdom; and there will be famines, plagues, and earthquakes in various places.
-<span class="v-num">8</span>But all these things are the beginning of birth pains.
-</p>
+    <section class="card">
+      <h2>3. Fulfillment Notes</h2>
+      <div class="softbox">
+        <p>Jesus anchors the prophecy in the temple’s fall and the first-century covenant crisis, not the end of the planet.</p>
+        <p>Time markers like “near,” “at hand,” and “this generation” bind the fulfillment to that living audience.</p>
+        <p>The “coming” language signals covenantal vindication and judgment on Jerusalem climaxing in AD 70.</p>
+        <p>Cosmic imagery follows the Hebrew-prophetic pattern for de-creation of ruling powers, not astronomy predictions.</p>
+        <p>The Kingdom reality is present and settled now in the New Covenant, not postponed.</p>
+      </div>
+    </section>
 
-<p>
-<span class="v-num">9</<p>
-<span class="v-num">36</span>“But no one knows of that day and hour, not even the angels of heaven, but my Father only.
-<span class="v-num">37</span>As the days of Noah were, so will be the coming of the Son of Man be.
-<span class="v-num">38</span>For as in those days which were before the flood they were eating and drinking, marrying and giving in marriage, until the day that Noah entered into the ship,
-<span class="v-num">39</span>and they didn’t know until the flood came, and took them all away, so will the coming of the Son of Man be.
-<span class="v-num">40</span>Then two men will be in the field: one will be taken and one will be left;
-<span class="v-num">41</span>two women grinding at the mill, one will be taken and one will be left.
-</p>
+    <hr />
 
-<p>
-<span class="v-num">42</span>Watch therefore, for you don’t know in what hour your Lord comes.
-<span class="v-num">43</span>But know this, that if the master of the house had known in what watch of the night the thief was coming, he would have watched, and would not have allowed his house to be broken into.
-<span class="v-num">44</span>Therefore also be ready, for in an hour that you don’t expect, the Son of Man will come.
-</p>
+    <section class="card">
+      <h2>4. Annotations</h2>
+      <div class="softbox">
+        <!-- These phrases MUST be the ONLY <strong> phrases inside Scripture -->
+        <p><strong>one stone on another</strong> — Temple judgment language: total dismantling of the old covenant house.</p>
+        <p><strong>the end of the age</strong> — The close of the Mosaic age, not the end of the physical world.</p>
+        <p><strong>abomination of desolation</strong> — Danielic covenant-defilement marker signaling imminent Judean flight.</p>
+        <p><strong>this generation</strong> — The living audience Jesus addressed; the time-limit that forbids futurism.</p>
+        <p><strong>Heaven and earth</strong> — Covenant-order language for the old world of Torah/temple passing away.</p>
+        <p><strong>coming on the clouds</strong> — Prophetic judgment/vindication idiom (Yahweh-coming imagery), not literal sky travel.</p>
+      </div>
+    </section>
 
-<p>
-<span class="v-num">45</span>“Who then is the faithful and wise servant, whom his lord has set over his household, to give them food in due season?
-<span class="v-num">46</span>Blessed is that servant whom his lord finds doing so when he comes.
-<span class="v-num">47</span>Most certainly I tell you that he will set him over all that he has.
-<span class="v-num">48</span>But if that evil servant should say in his heart, ‘My lord is delaying his coming,’
-<span class="v-num">49</span>and begins to beat his fellow servants, and eat and drink with the drunkards,
-<span class="v-num">50</span>the lord of that servant will come in a day when he doesn’t expect it, and in an hour when he doesn’t know it,
-<span class="v-num">51</span>and will cut him in pieces, and appoint his portion with the hypocrites. There is where the weeping and grinding of teeth will be.”
-</p>
+    <hr />
 
-</div> <!-- end scripture-text -->
+    <section class="card">
+      <h2>5. Fulfillment Commentary</h2>
 
-<hr />
+      <h3>1) The Question Is About the Temple and “These Things”</h3>
+      <p>
+        Matthew 24 begins with an unmistakable concrete referent: the temple. Jesus has just announced covenant exposure and judgment on
+        Jerusalem’s leadership (Matt 23), and as he leaves the temple the disciples point out its buildings. Jesus responds with a total
+        demolition forecast—“not be left here one stone on another.” That line is not a mood, a metaphor, or a vague spiritual principle.
+        It is covenant-judgment speech attached to a real building in their real city.
+      </p>
+      <p>
+        The disciples’ follow-up question has two parts that belong together in their minds: “When will these things be?” (the temple
+        judgment) and “what is the sign of your coming, and of the end of the age?” The lock point is the phrase “end of the age,” which
+        in covenant categories means the closing of the Mosaic administration, not the termination of the created order. If “age” is the
+        covenant world of Torah-temple-priesthood, then “end” is the transition into the New Covenant order established in Christ and
+        publicly vindicated in the first-century crisis culminating in AD 70.
+      </p>
 
-<h2>Fulfillment Notes</h2>
-<ul>
-  <li>The entire discourse is anchored to the destruction of the Temple and the end of the Mosaic age.</li>
-  <li>All warnings are directed to first-century disciples living in Judea prior to AD 70.</li>
-  <li>“This generation” fixes the fulfillment within the lifetime of Jesus’ contemporaries.</li>
-  <li>The “coming of the Son of Man” is covenantal vindication, not a bodily descent to end the planet.</li>
-  <li>The Noah comparison emphasizes sudden judgment on an unprepared society, not global annihilation.</li>
-</ul>
+      <h3>2) Birth Pains, False Christs, and the Covenant Pressure Cooker</h3>
+      <p>
+        Jesus lists wars, rumors, upheavals, and distress as “the beginning of birth pains.” In prophetic-covenant terms, birth pains are
+        not random history; they are the pressure signals of an order about to give way to another. The old covenant house is being brought
+        to account, and the new covenant reality is emerging. This is why Jesus repeatedly commands sobriety: “don’t be troubled,” “don’t be
+        led astray,” “I have told you beforehand.” The aim is not to feed speculation but to keep first-century disciples anchored.
+      </p>
+      <p>
+        Persecution language also fits the immediate apostolic horizon: “they will deliver you up… you will be hated… many will stumble.”
+        The church’s early decades were marked by covenant conflict—synagogue expulsion, accusations, and pressure from both Judean and Roman
+        authorities. Matthew is not writing a generic tribulation template; he is recording Jesus’ covenant lawsuit warning and shepherding
+        counsel for the generation standing at the threshold of the transition.
+      </p>
 
-<hr />
+      <h3>3) The Abomination and the Local Flight Command</h3>
+      <p>
+        The “abomination of desolation” is the pivot point that triggers a very specific instruction: “then let those who are in Judea flee
+        to the mountains.” This is geography. It is calendar-aware (“pray that your flight will not be… on a Sabbath”). It assumes local
+        travel realities (“roof,” “field,” “cloak”). These details are not compatible with a global end-of-the-world scenario. They are
+        compatible with a covenant-judgment event that strikes Judea and Jerusalem in the first century.
+      </p>
+      <p>
+        Daniel’s abomination imagery is covenantal: profanation, usurpation, and the climax of covenant-breaking reaching its terminal
+        judgment. Jesus signals that when that marker becomes visible, disciples are not to debate; they are to flee. This is the difference
+        between futurist sensationalism and covenant reading: one turns the text into distant speculation; the other treats it as the living
+        instruction it was for that audience.
+      </p>
 
-<h2>Annotations</h2>
-<div class="annotation-block">
-  <div class="annotation-item"><strong>One stone on another:</strong> Total Temple destruction in AD 70, ending the Mosaic system.</div>
-  <div class="annotation-item"><strong>The end of the age:</strong> The conclusion of the Old Covenant world, not the end of time.</div>
-  <div class="annotation-item"><strong>This generation:</strong> Jesus’ living contemporaries, fixing the prophecy to the first century.</div>
-  <div class="annotation-item"><strong>Coming of the Son of Man:</strong> Covenant judgment and vindication using Daniel 7 cloud-language.</div>
-  <div class="annotation-item"><strong>Taken / left:</strong> Separation in judgment within Israel, not a rapture of the globe.</div>
-  <div class="annotation-item"><strong>Weeping and grinding of teeth:</strong> Covenant exclusion and judgment imagery tied to Jerusalem’s fall.</div>
-</div><hr />
+      <h3>4) “Coming” as Vindication: Clouds, Tribes, and Prophetic De-Creation</h3>
+      <p>
+        The most contested lines involve cosmic imagery and “coming on the clouds.” In the Hebrew prophetic register, sun/moon/stars language
+        regularly depicts the collapse of rulers and covenant order—de-creation imagery for regime change and judgment, not a literal
+        astronomy forecast. Matthew’s language is saturated with that register.
+      </p>
+      <p>
+        “They will see the Son of Man coming on the clouds” evokes Daniel’s court imagery where the Son of Man is vindicated and given
+        authority. In covenant terms, this is Jesus’ public vindication: the rejected Messiah is shown to be enthroned, and the old covenant
+        persecuting system is judged. “All the tribes of the earth will mourn” reads naturally as the tribes of the land (Israel) mourning
+        as judgment arrives—again covenant-local, not global-dispersed.
+      </p>
 
-<h2>Fulfillment Commentary</h2>
+      <h3>5) The Time-Lock: “This Generation” and the Passing of Heaven and Earth</h3>
+      <p>
+        Jesus then locks interpretation with one of the strongest time markers in the Gospels: “Most certainly I tell you, this generation
+        will not pass away until all these things are accomplished.” Whatever interpretive gymnastics a reader attempts, this line is the
+        governor. It forbids pushing fulfillment thousands of years away while pretending to honor the text. Under the locked FPBible lens,
+        “this generation” means the living audience Jesus addressed.
+      </p>
+      <p>
+        “Heaven and earth will pass away, but my words will not pass away” is covenant weight language: the old covenant world (its temple
+        center, priesthood, and accusatory administration) is shakable and passing, but Christ’s word stands. This is not the annihilation of
+        the cosmos; it is the irreversible triumph of the New Covenant reality over the fading Mosaic order.
+      </p>
 
-<h3>1) The Question That Controls the Whole Chapter</h3>
-<p>
-Matthew 24 is not a free-floating “end of the world” chapter. It is anchored to a specific, visible, locatable event: the dismantling of the Temple complex (“not one stone on another,” v. 2). The disciples then ask a combined question about “these things,” Jesus’ “coming,” and “the end of the age” (v. 3). In Matthew’s storyline, the Temple is not merely a building; it is the public center of the Mosaic administration—priesthood, sacrifices, calendar, courts, and covenant identity. If the Temple falls, the old covenant world loses its operating system. That is why “the end of the age” here means the end of the Mosaic age, not the end of the planet. Jesus is announcing the termination of a covenant order that has reached its appointed conclusion in Him, and He is warning His disciples how to live through the overlap period leading up to AD 70.
-</p>
+      <h3>6) What This Is NOT Saying</h3>
+      <p>
+        This chapter is not teaching a future end-of-planet event; it is covenant litigation attached to the temple and bound by “this
+        generation.” It is not a rapture chart; it is discipleship instruction for a real first-century crisis. It is not literal sky-travel
+        language; it uses the prophetic idiom of clouds to speak of judgment and vindication. It is not fear-based speculation; it is
+        shepherding clarity for those who needed to endure faithfully through the transition.
+      </p>
 
-<h3>2) Birth Pains, Not Final Judgment of the Cosmos</h3>
-<p>
-Verses 4–14 describe the early-stage pressures of the transition: deception, conflicts, upheavals, persecutions, internal betrayals, lawlessness, and gospel expansion. Jesus explicitly says these are “the beginning of birth pains” (v. 8). Birth pains are covenantal transition language: the old world is contracting, the new world is arriving. The point is not that every earthquake anywhere on earth is a prophetic code; the point is that the first-century environment would become increasingly unstable as the old order resisted the kingdom’s advance. The “end” in v. 14 is not the end of time; it is the end of that age—when the covenant administration centered in Jerusalem would be judged and removed. This also explains the emphasis on endurance: “he who endures to the end will be saved” (v. 13). In this context “saved” includes deliverance through (and out of) that approaching crisis, as the believing remnant heeds Jesus’ warnings and does not get swept up in the city’s collapse.
-</p>
+      <h3>7) The New Covenant Resolution</h3>
+      <p>
+        The resolution is plain: the old temple order collapses, the covenant lawsuit reaches its historical climax, and Christ’s kingship is
+        publicly vindicated in the transition culminating in AD 70. The Kingdom is not waiting; it is present. Access is not postponed; it is
+        open. The “end” is not the end of creation; it is the end of the Mosaic age, making way for the settled New Creation life in the
+        Spirit.
+      </p>
+    </section>
 
-<h3>3) The Abomination and the Judea Flight: Geography Proves the Meaning</h3>
-<p>
-The chapter’s own instructions lock the meaning to first-century Judea. “Let those who are in Judea flee to the mountains” (v. 16). “Pray that your flight will not be in winter, nor on a Sabbath” (v. 20). These are not global end-times instructions; they are practical escape warnings tied to a specific region, calendar constraints, and local travel realities. The “abomination of desolation” (v. 15) is a Danielic marker for covenantal profanation and the triggering sign for evacuation. Jesus is not giving a vague spiritual metaphor; He is giving an actionable warning: when the sign appears in the holy place, leave. That alone dismantles futurist readings that relocate the passage into a distant millennium. The holy place is the Temple sphere; the flight is in Judea; the crisis is in that generation. The whole unit functions as a mercy instruction for the remnant so that they are not trapped inside the collapsing city and its doomed leadership.
-</p>
+    <hr />
 
-<h3>4) “False Christs” and the Meaning of the “Coming”</h3>
-<p>
-Jesus warns about claimants, prophets, and dramatic signs designed to pull people into the wrong interpretation of events (vv. 23–26). The point is not that Christ’s “coming” will be a secret appearance hidden in a room. Quite the opposite: the “coming of the Son of Man” is public covenantal vindication—an event revealed by its effects. The lightning imagery (v. 27) signals unmistakable visibility in the sense of public manifestation, not necessarily a literal meteorological show. The carcass/vultures proverb (v. 28) intensifies this: when a body is dead, the judgment is not hard to locate. In covenant terms, apostate Jerusalem had become the “body” under sentence; the gathering of vultures pictures an inescapable judgment converging on a corrupt center. This is exactly how prophetic language functions: not as newspaper-style prediction, but as covenant lawsuit language describing the public exposure and downfall of a guilty order.
-</p>
+    <section class="card">
+      <h2>6. Prophecy Hub Links</h2>
+      <ul>
+        <li><a href="/Bible/Prophecy/index.html#coming-on-the-clouds">Coming on the Clouds</a></li>
+        <li><a href="/Bible/Prophecy/index.html#end-of-the-age">End of the Age</a></li>
+        <li><a href="/Bible/Prophecy/index.html#heaven-and-earth">Heaven and Earth</a></li>
+      </ul>
+    </section>
 
-<h3>5) Sun, Moon, Stars, and Shaken Powers</h3>
-<p>
-Verses 29–31 use classic prophetic imagery—cosmic de-creation language—to describe the collapse of ruling powers and covenant structures. In the prophets, the darkening of luminaries and falling stars regularly signifies the downfall of authorities and the unmaking of a world-order (a regime, a kingdom, a covenant administration). Here, “the powers of the heavens will be shaken” (v. 29) matches the idea that the “heavenly” side of the Mosaic world—Temple, priesthood, sacrificial access, and its authority claims—was about to be dismantled. The “tribes of the earth” mourning (v. 30) points to the land/people of Israel lamenting as judgment falls. “Coming on the clouds” is Daniel 7 courtroom imagery: the Son of Man is vindicated and enthroned, and judgment is rendered against the persecuting power. It is covenantal arrival in authority, not a postponed travel itinerary. The “angels” and “trumpet” gathering (v. 31) depicts the ingathering of the chosen—God securing His remnant through the upheaval and establishing them as His New Covenant people in the open, post-Temple world.
-</p>
+    <hr />
 
-<h3>6) The Fig Tree and the Time Lock: “This Generation”</h3>
-<p>
-Jesus then presses the time issue. The fig tree lesson (vv. 32–33) teaches discernible nearness: when the signs appear, “it is near, even at the doors.” Then comes the unambiguous lock: “this generation will not pass away, until all these things are accomplished” (v. 34). That statement is not elastic. It means the generation alive in front of Jesus. This anchors fulfillment within the first century and forces the interpretation to stay within the AD 30–70 covenant transition. Verse 35 seals the certainty: covenant worlds may pass, but Jesus’ words do not. That is why the Temple could fall without His prophecy failing; the falling of the Temple is the confirmation that His covenant authority is final.
-</p>
+    <section class="card">
+      <h2>7. Cross-References</h2>
+      <ul>
+        <li><a href="https://ebible.org/web/DAN09.htm">Daniel 9 (WEB)</a></li>
+        <li><a href="https://ebible.org/web/ISA13.htm">Isaiah 13 (WEB)</a></li>
+        <li><a href="https://ebible.org/web/LUK21.htm">Luke 21 (WEB)</a></li>
+      </ul>
+    </section>
 
-<h3>7) “No One Knows the Day or Hour” and Watchfulness in Context</h3>
-<p>
-Verse 36 does not cancel the time lock; it narrows the precision. They would know the season by the signs, but not the exact day/hour. That fits perfectly with the flight instructions: readiness, alertness, responsiveness. The Noah parallel (vv. 37–39) emphasizes normalcy until sudden judgment arrives—people assume stability right up to the moment collapse hits. “Taken/left” (vv. 40–41) is separation language in judgment context, not a globe-evacuation scheme. The thief imagery (vv. 42–44) is covenantal surprise: judgment comes on an unwatchful house. Finally, the faithful/evil servant unit (vv. 45–51) locates the ethical stake: leadership fidelity during the overlap period. The “delay” mentality (v. 48) is condemned because it produces abuse and drunkenness—exactly what happens when people think accountability is far away. In covenant terms, Jesus is warning the household of Israel and its stewards: the Master will come to settle accounts, and hypocrisy will be exposed in that historical crisis.
-</p>
+    <hr />
 
-<hr />
+    <section class="card">
+      <h2>8. New Creation Reality</h2>
+      <p>
+        This chapter calls you to live from settled Kingdom reality: Christ is vindicated, access is open, and your life is led from
+        presence—not fear. You’re not reading headlines for doom; you’re reading covenant history for assurance: Christ’s word stands and
+        your identity is secure in him.
+      </p>
+    </section>
 
-<h2>Prophecy Hub Links</h2>
-<ul>
-  <li><a href="/Bible/Prophecy/index.html#end-of-the-age">The End of the Age</a></li>
-  <li><a href="/Bible/Prophecy/index.html#coming-on-the-clouds">Coming on the Clouds</a></li>
-  <li><a href="/Bible/Prophecy/index.html#this-generation">This Generation</a></li>
-</ul>
+    <hr />
 
-<hr />
+    <section class="card">
+      <h2>9. Reflection</h2>
+      <p><strong>Question:</strong> Where are you still treating Christ’s reign as “pending,” instead of resting in the settled New Covenant reality he established?</p>
+    </section>
 
-<h2>Cross-References</h2>
-<ul>
-  <li><a href="https://ebible.org/web/DAN07.htm" target="_blank" rel="noopener noreferrer">Daniel 7 (WEB)</a></li>
-  <li><a href="https://ebible.org/web/DAN09.htm" target="_blank" rel="noopener noreferrer">Daniel 9 (WEB)</a></li>
-  <li><a href="https://ebible.org/web/2PE03.htm" target="_blank" rel="noopener noreferrer">2 Peter 3 (WEB)</a></li>
-</ul>
+    <hr />
 
-<hr />
+    <footer class="card">
+      <nav class="bottom">
+        <a class="btn" href="/Bible/index.html">FPBible Index</a>
+        <a class="btn" href="index.html">Book Index</a>
+        <a class="btn" href="matt23.html">Prev</a>
+        <a class="btn" href="matt25.html">Next</a>
+        <a class="btn" href="/Bible/Prophecy/index.html">Prophecy Hub</a>
+        <a class="btn" href="#top">Top</a>
+      </nav>
 
-<h2>New Creation Reality</h2>
-<p>
-Because this judgment and transition are fulfilled, you are not living under a countdown clock or a looming cosmic threat.
-The old covenant “house” that measured access by Temple, priesthood, and sacrifice has been retired, and the kingdom is established as a present reality.
-Watchfulness now is not fear—it's awareness: living as a son in the Father’s presence, faithful in your assignment, not intoxicated by delay-thinking, and not manipulated by crisis narratives.
-</p>
+      <p style="margin-top:12px;">
+        <a href="https://ko-fi.com/B0B61QC1BU">
+          <img class="kofiimg" src="https://storage.ko-fi.com/cdn/kofi2.png?v=3" alt="Support FPBible on Ko-fi" />
+        </a>
+      </p>
 
-<hr />
+      <p class="muted">
+        Scripture quotations are from the World English Bible (WEB), public domain, sourced from eBible.org:
+        https://ebible.org/web/MAT24.htm
+      </p>
+    </footer>
 
-<h2>Reflection</h2>
-<p>
-Where have you been living with a “my lord is delaying” mindset—putting off faithfulness, presence, or love—because you still feel like the kingdom is not yet settled?
-</p>
-
-<hr />
-
-<nav>
-  <a href="/Bible/index.html">FPBible Index</a>
-  <a href="index.html">Book Index</a>
-  <a href="matt23.html">Prev</a>
-  <a href="matt25.html">Next</a>
-  <a href="/Bible/Prophecy/index.html">Prophecy Hub</a>
-  <a href="#top">Top</a>
-</nav>
-
-<p style="margin-top: 18px;">
-  <a href="https://ko-fi.com/B0B61QC1BU" target="_blank" rel="noopener noreferrer">
-    <img height="36" style="border:0;height:36px;" src="https://storage.ko-fi.com/cdn/kofi5.png?v=6" alt="Ko-fi" />
-  </a>
-</p>
-
-<p class="note">
-  Scripture quoted from the <strong>World English Bible (WEB)</strong>, a public domain translation.
-  Source text and downloads available via eBible.org.
-</p>
-
-</div> <!-- end wrap -->
+  </div>
 </body>
 </html>
