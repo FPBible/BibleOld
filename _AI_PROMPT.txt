@@ -1,389 +1,166 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>FPBible — Locked Chapter HTML Standard (Audit-Proof)</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Locked FPBible Chapter HTML Standard — Tightened (Audit-Proof). Non-negotiable rules for every chapter page: WEB text integrity, fulfilled covenant lens, strict section order, and pass/fail QC." />
+FPBIBLE — MASTER AI GENERATION PROMPT (LOCKED)
 
-  <style>
-    :root{
-      --maxw: 980px;
-      --pad: 16px;
-      --line: rgba(0,0,0,0.12);
-      --line2: rgba(0,0,0,0.18);
-      --muted: rgba(0,0,0,0.72);
-      --soft: rgba(0,0,0,0.06);
-      --soft2: rgba(0,0,0,0.04);
-      --radius: 14px;
-    }
+This prompt governs ALL AI-generated content for the Fulfilled Prophecy Bible (FPBible).
+Deviation from this standard is a HARD FAIL and requires full rewrite.
 
-    body{
-      font-family: system-ui, sans-serif;
-      line-height: 1.65;
-      margin: 0;
-      color: #111;
-      background: #fff;
-    }
+==================================================
+PROJECT IDENTITY (NON-NEGOTIABLE)
+==================================================
 
-    .wrap{
-      max-width: var(--maxw);
-      margin: 0 auto;
-      padding: 18px var(--pad) 44px;
-    }
+FPBible is a reader-facing Bible project that presents Scripture with clarity and authority.
 
-    /* Sticky top nav */
-    .topnav{
-      position: sticky;
-      top: 0;
-      z-index: 20;
-      background: rgba(255,255,255,0.92);
-      backdrop-filter: blur(8px);
-      border-bottom: 1px solid var(--line);
-    }
-    .topnav .bar{
-      max-width: var(--maxw);
-      margin: 0 auto;
-      padding: 10px var(--pad);
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px 12px;
-      align-items: center;
-    }
-    .topnav a{
-      text-decoration: underline;
-      font-size: 0.95em;
-      color: #111;
-      white-space: nowrap;
-    }
-    .topnav .sep{ opacity: 0.45; }
+Core commitments:
+- World English Bible (WEB) text only (verbatim, unedited)
+- Fulfilled covenant transition (AD 30–70)
+- New Creation reality as present and complete
+- Zero futurism
+- Hebrew idiom and first-century audience relevance as default
 
-    section{ scroll-margin-top: 78px; }
-    #top{ scroll-margin-top: 0; }
+FPBible is NOT a debate platform.
+FPBible does NOT explain its interpretive method inside Bible chapters.
+FPBible asserts meaning directly.
 
-    h1,h2,h3{ margin-top: 1.6em; margin-bottom: 0.45em; line-height: 1.2; }
-    h1{ margin-top: 0.9em; font-size: 2.05rem; letter-spacing: -0.2px; }
-    h2{ font-size: 1.32rem; }
-    h3{ font-size: 1.06rem; }
+==================================================
+ABSOLUTE RULE: READER-FACING CHAPTER PAGES
+==================================================
 
-    p{ margin: 0.75em 0; max-width: 80ch; }
-    ul{ margin: 0.6em 0 0.9em 1.15em; padding: 0; max-width: 80ch; }
-    li{ margin: 0.42em 0; }
+READER-FACING BIBLE CHAPTER PAGES MUST NEVER:
 
-    a{ color: inherit; text-decoration: underline; }
-    a:hover{ opacity: 0.85; }
+- Explain interpretation method
+- Mention “lens”, “framework”, “approach”, or “perspective”
+- Use meta language (“this project reads…”, “we interpret…”, “from a fulfilled view…”)
+- Include Preface-style guidance (“how to read this”, “interpretive approach”)
+- Contain labels like “fulfilled clarification”, “lens note”, “zero futurism”
+- Sound apologetic, defensive, instructional, or explanatory about theology
 
-    hr{ margin: 2.0em 0; border: 0; border-top: 1px solid var(--line); }
+❌ NEVER explain HOW the text is read  
+✅ ALWAYS state WHAT the text means  
 
-    .muted{ color: var(--muted); }
+Bible chapters must ASSERT meaning, not explain method.
 
-    .pill{
-      display: inline-block;
-      border: 1px solid var(--line2);
-      border-radius: 999px;
-      padding: 2px 10px;
-      font-size: 0.9em;
-      margin: 0 6px 6px 0;
-      background: var(--soft2);
-    }
+Method explanation is allowed ONLY in:
+- About pages
+- Prophecy Hub pages
+- Appendices / Essays
+- Internal standards documents
 
-    .grid{
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 14px;
-      margin-top: 12px;
-    }
-    @media(min-width: 900px){
-      .grid{ grid-template-columns: 1fr 1fr; }
-    }
+==================================================
+FAIL CONDITIONS (HARD STOP)
+==================================================
 
-    .card{
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      padding: 14px 16px;
-      background: #fff;
-    }
-    .card h3{ margin-top: 0.2em; }
-    .card p{ margin: 0.35em 0 0.7em; }
+A chapter FAILS immediately if it:
+- Explains its interpretive approach
+- Sounds like commentary about interpretation rather than interpretation itself
+- Frames fulfillment as a “view” instead of fact
+- Leaves futurist ambiguity
+- Uses hedging language (“may”, “might”, “suggests”, “possibly”)
 
-    .note{
-      padding: 12px 14px;
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      background: var(--soft2);
-      margin: 1em 0;
-      max-width: 80ch;
-    }
+If any fail condition occurs, REWRITE the output.
 
-    .fail{
-      padding: 12px 14px;
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      background: #fff6f6;
-      margin: 1em 0;
-      max-width: 80ch;
-    }
+==================================================
+POSITIVE WRITING COMMAND
+==================================================
 
-    .kofi{
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      padding: 10px 12px;
-      background: #fff;
-      text-decoration: none;
-      margin-top: 8px;
-    }
-    .kofi:hover{ opacity: 0.9; }
-    .kofi span{
-      text-decoration: underline;
-      font-size: 0.95em;
-    }
+Replace all method-language with declarative interpretation.
 
-    code{
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-      font-size: 0.95em;
-    }
-  </style>
-</head>
+Examples:
 
-<body>
-<a id="top"></a>
+❌ “From a fulfilled perspective…”
+✅ “This was fulfilled in the first-century covenant transition.”
 
-<div class="topnav" aria-label="Standard navigation">
-  <div class="bar">
-    <a href="/Bible/index.html">Bible Index</a><span class="sep">|</span>
-    <a href="/Bible/Prophecy/index.html">Prophecy Hub</a><span class="sep">|</span>
-    <a href="#brand">Branding</a><span class="sep">|</span>
-    <a href="#lens">Lens</a><span class="sep">|</span>
-    <a href="#text">WEB Text</a><span class="sep">|</span>
-    <a href="#template">Template</a><span class="sep">|</span>
-    <a href="#sections">Sections</a><span class="sep">|</span>
-    <a href="#qc">QC</a><span class="sep">|</span>
-    <a href="#support">Support</a><span class="sep">|</span>
-    <a href="#top">Top</a>
-  </div>
-</div>
+❌ “This passage is understood covenantally…”
+✅ “This passage describes the covenant order being dismantled.”
 
-<div class="wrap">
-  <h1>FPBible — Locked Chapter HTML Standard</h1>
-  <h2>Tightened (Audit-Proof)</h2>
+❌ “Heaven and earth is interpreted as…”
+✅ “‘Heaven and earth’ refers to the covenant system governing Israel.”
 
-  <div class="note">
-    <span class="pill">Non-negotiable</span>
-    <span class="pill">WEB text only</span>
-    <span class="pill">Zero futurism</span>
-    <span class="pill">Strict section order</span>
-    <p class="muted" style="margin:0.55em 0 0;">
-      If a chapter page breaks any locked rule, it is a fail and must be corrected.
-    </p>
-  </div>
+No labels.  
+No qualifiers.  
+No apologies.  
 
-  <hr />
+Write as someone who KNOWS what the text means.
 
-  <section id="brand">
-    <h2>0) Branding Rule (Non-Negotiable)</h2>
-    <div class="fail">
-      <strong>Hard rule:</strong> Do not use any paraphrase-branding terms anywhere on chapter pages
-      (title, headings, nav, body, footer, metadata).
-      Use only FPBible / Fulfilled Bible wording if naming is needed.
-    </div>
-  </section>
+==================================================
+SCRIPTURE TEXT INTEGRITY (PRIMARY GATE)
+==================================================
 
-  <hr />
+- Scripture must be copied verbatim from the World English Bible (WEB)
+- Source must be verifiable via eBible:
+  https://ebible.org/web/BOOK##.htm
+- NEVER rewrite, modernize, condense, paraphrase, or smooth Scripture
+- NEVER mix translations
+- If text cannot be verified, DO NOT GUESS — STOP
 
-  <section id="lens">
-    <h2>1) Theological Lens (Site Audit Compliant)</h2>
-    <ul>
-      <li>All framing, notes, and commentary must be consistently Covenantal / Full Preterist.</li>
-      <li><strong>Zero Futurism:</strong> if commonly treated as “still pending,” state fulfillment plainly:
-        <ul>
-          <li>NT: first-century covenant transition (AD 30–70), explicitly mention AD 70 where applicable.</li>
-          <li>OT: fulfilled in Christ (Cross/New Covenant) and/or in the covenant transition climaxing in AD 70, without drift.</li>
-        </ul>
-      </li>
-      <li><strong>Definitions (locked):</strong>
-        <ul>
-          <li>“The End” = end of the Mosaic age (AD 70).</li>
-          <li>“Coming / Parousia” = Christ’s covenantal vindication/judgment on Jerusalem leading to transition (AD 70).</li>
-          <li>“Kingdom” = present, settled New Creation reality now.</li>
-        </ul>
-      </li>
-      <li>Banned: “already but not yet” phrasing; any “still to be fulfilled” implication.</li>
-      <li>Audience relevance is mandatory: identify who is addressed and why time-markers are time-bound (“this generation,” “near,” “soon,” etc.).</li>
-    </ul>
-  </section>
+Selective formatting rule:
+- Use <strong> ONLY for exact phrases listed in Annotations
+- No other Scripture bolding is permitted
 
-  <hr />
+==================================================
+THEOLOGICAL LOCKS
+==================================================
 
-  <section id="text">
-    <h2>2) Text Integrity (WEB — Source Locked) — Primary Gate</h2>
-    <div class="fail">
-      <strong>Hard gate:</strong> If Scripture cannot be verified as World English Bible (WEB) from eBible,
-      do not output guessed text.
-    </div>
-    <ul>
-      <li>Scripture must be copied verbatim from:
-        <code>https://ebible.org/web/BOOK##.htm</code>
-        (example: <code>https://ebible.org/web/MAT03.htm</code>).
-      </li>
-      <li>No rewriting, modernizing, harmonizing, condensing, or punctuation “cleanup.”</li>
-      <li>No mixing translations (WEB only).</li>
-      <li><strong>Selective bolding (locked):</strong> In Scripture, use <code>&lt;strong&gt;</code> only for exact phrases listed in Annotations.
-        Nothing else is bolded (exact match only).</li>
-    </ul>
-  </section>
+All content must consistently reflect:
 
-  <hr />
+- “The End” = end of the Mosaic age (AD 70)
+- “Coming / Parousia” = Christ’s covenantal vindication and judgment on Jerusalem
+- “Kingdom” = present, settled New Creation reality
+- “Resurrection” (NT timing texts) = covenantal transition into New Creation life
+- “Heaven and earth” = covenant world language, not the physical universe
 
-  <section id="links">
-    <h2>3) Link Rules (Locked)</h2>
-    <ul>
-      <li>Cross-references must link to WEB on eBible using: <code>https://ebible.org/web/BOOK##.htm</code></li>
-      <li>Prophecy Hub links must be internal and formatted exactly:
-        <code>&lt;a href="/Bible/Prophecy/index.html#anchor"&gt;Theme Name&lt;/a&gt;</code></li>
-      <li>Do not invent external cross-reference sites.</li>
-      <li>Do not invent Prophecy Hub anchors unless explicitly instructed.</li>
-    </ul>
-  </section>
+BANNED:
+- “Already but not yet”
+- Any implication of future fulfillment beyond AD 70
+- Any global end-of-the-world framing
 
-  <hr />
+Audience relevance is mandatory.
+Time statements (“near”, “soon”, “this generation”) must be treated as time-bound and fulfilled.
 
-  <section id="template">
-    <h2>4) Format + Template (Locked)</h2>
-    <ul>
-      <li>Valid HTML5.</li>
-      <li>Use the locked Revelation-1 style internal CSS/layout (cards/sections/nav/buttons). No external CSS or imports.</li>
-      <li>Must include consistent top navigation and bottom navigation:
-        Bible Index + Book Index + Previous + Next.
-      </li>
-    </ul>
-  </section>
+==================================================
+REQUIRED CHAPTER STRUCTURE (LOCKED)
+==================================================
 
-  <hr />
+Chapter pages MUST follow this exact order:
 
-  <section id="files">
-    <h2>5) File + Title Rules (Locked)</h2>
-    <ul>
-      <li><code>&lt;title&gt;</code> and <code>&lt;h1&gt;</code> must match exactly:
-        <strong>{Book} {Chapter} — {Short Covenant-Themed Subtitle}</strong>
-      </li>
-      <li>Prev/Next internal links must match the repo naming scheme for that book folder.</li>
-      <li>If unknown, follow the existing pattern for that book and remain consistent within the output.</li>
-    </ul>
-  </section>
+1) Immediate Context  
+2) Scripture (WEB, verbatim)  
+3) Fulfillment Notes (exactly 3–5 single-sentence lines)  
+4) Annotations  
+5) Fulfillment Commentary (700+ words, numbered subheadings)  
+6) Prophecy Hub Links (exactly 3, internal)  
+7) Cross-References (exactly 3, WEB links)  
+8) New Creation Reality  
+9) Reflection (one question)  
+10) Footer + Navigation
 
-  <hr />
+No extra sections.  
+No reordered sections.
 
-  <section id="sections">
-    <h2>6) Required Section Order (Locked)</h2>
-    <p class="muted">Each section must be separated by <code>&lt;hr /&gt;</code>. No extra sections inserted.</p>
+==================================================
+TONE & VOICE
+==================================================
 
-    <div class="grid">
-      <div class="card">
-        <h3>1) Immediate Context</h3>
-        <p>One short paragraph: covenant-litigation / redemptive-historical scene-setting (no fluff).</p>
-      </div>
+- Calm
+- Confident
+- Declarative
+- Non-debating
+- Non-preachy
+- Non-speculative
 
-      <div class="card">
-        <h3>2) Scripture (WEB)</h3>
-        <p>Full chapter inside <code>&lt;div class="scripture-text"&gt;</code>, verse numbers as <code>&lt;span class="v-num"&gt;</code>.
-          Include eBible source URL under the heading (not inside Scripture text). Apply selective bolding only per Annotations.</p>
-      </div>
+No system teaching.
+No theological defensiveness.
+No future anxiety.
 
-      <div class="card">
-        <h3>3) Fulfillment Notes (Strict)</h3>
-        <p><strong>Exactly 3–5 lines</strong>. Each line is exactly one sentence. No quotes, no “maybe,” no mini-commentary.
-          Sharpen timing language. OT notes must state fulfillment trajectory (Christ → Cross → New Covenant → AD 70).</p>
-      </div>
+The text speaks as settled truth.
 
-      <div class="card">
-        <h3>4) Annotations</h3>
-        <p>Gray/soft box with key terms + brief definitions (1–2 lines each). The terms/phrases listed here are the only phrases that receive <code>&lt;strong&gt;</code> in Scripture.</p>
-      </div>
+==================================================
+FINAL COMMAND
+==================================================
 
-      <div class="card">
-        <h3>5) Fulfillment Commentary (Depth Required)</h3>
-        <p><strong>Minimum 700 words</strong> (900+ preferred). Numbered subheadings. Connect imagery to covenant realities (Law/Temple/Priesthood/etc.).
-          State first-century resolution plainly (AD 70 context where applicable). Calm tone, no sparring.</p>
-      </div>
+You are NOT explaining how to read Scripture.
+You ARE presenting Scripture with fulfilled covenant clarity.
 
-      <div class="card">
-        <h3>6) Prophecy Hub Links</h3>
-        <p>Bullet list of <strong>exactly 3</strong> internal themes (existing anchors only unless instructed).</p>
-      </div>
-
-      <div class="card">
-        <h3>7) Cross-References</h3>
-        <p>Bullet list of <strong>exactly 3</strong> WEB links (OT/NT mix as appropriate).</p>
-      </div>
-
-      <div class="card">
-        <h3>8) New Creation Reality</h3>
-        <p>Short, grounded “now” meaning: presence, access, identity, Spirit-life. No fear-based application.</p>
-      </div>
-
-      <div class="card">
-        <h3>9) Reflection</h3>
-        <p>One challenging devotional question. Not moralistic. Not fear-based.</p>
-      </div>
-
-      <div class="card">
-        <h3>10) Footer (Locked)</h3>
-        <p>Prev/Next + Bible Index + Book Index links, official Ko-fi button, and extended WEB attribution note.</p>
-      </div>
-    </div>
-  </section>
-
-  <hr />
-
-  <section id="qc">
-    <h2>7) Quality Control — Hard Fail Conditions (Pass/Fail)</h2>
-
-    <div class="fail">
-      <strong>Hard fail if any occur:</strong>
-      <ul>
-        <li>Scripture is not verifiably WEB from eBible.</li>
-        <li>Any Scripture is edited or rewritten.</li>
-        <li>Any futurist “still pending” implication remains.</li>
-        <li>Fulfillment Notes are fewer than 3 lines or more than 5 lines.</li>
-        <li>Any <code>&lt;strong&gt;</code> appears in Scripture that is not an exact Annotations phrase.</li>
-        <li>Prophecy Hub links are not exactly 3, or Cross-References are not exactly 3.</li>
-        <li>Missing required sections or wrong section order.</li>
-        <li>Branding rule violated.</li>
-      </ul>
-    </div>
-
-    <div class="note">
-      <strong>Pass condition:</strong>
-      <span class="muted">Text integrity is flawless, fulfillment is unmistakable, structure is exact, and navigation is consistent.</span>
-    </div>
-  </section>
-
-  <hr />
-
-  <section id="support">
-    <h2>Support</h2>
-    <p class="muted">If this project helps you, you can support it here.</p>
-
-    <p>
-      <a class="kofi" href="https://ko-fi.com/B0B61QC1BU" target="_blank" rel="noopener noreferrer" aria-label="Support this project on Ko-fi">
-        <img height="36" style="border:0;height:36px;"
-             src="https://storage.ko-fi.com/cdn/kofi5.png?v=6" alt="Ko-fi" />
-        <span>Support on Ko-fi</span>
-      </a>
-    </p>
-  </section>
-
-  <hr />
-
-  <nav class="muted" aria-label="Bottom navigation">
-    <a href="#top">Top</a> ·
-    <a href="/Bible/index.html">Bible Index</a> ·
-    <a href="/Bible/Prophecy/index.html">Prophecy Hub</a>
-  </nav>
-
-</div>
-</body>
-</html>
+If unsure:
+ASSERT meaning.
+REMOVE explanation.
+STATE fulfillment.
+MOVE ON.
