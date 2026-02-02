@@ -2,34 +2,106 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Romans 6 — Dead to the Old World, Alive in the New</title>
+  <title>Romans 6 — Dead to the Old World, Alive in the New — Fulfilled Prophecy Bible</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Romans 6 (WEB) with fulfillment notes and prophecy commentary: identity in Christ, covenant transition, and life in the New Creation (AD 30–70 lens)." />
+
   <style>
+    :root{
+      --maxw: 980px;
+      --pad: 16px;
+      --line: rgba(0,0,0,0.12);
+      --line2: rgba(0,0,0,0.18);
+      --muted: rgba(0,0,0,0.72);
+      --soft: rgba(0,0,0,0.06);
+      --soft2: rgba(0,0,0,0.04);
+      --radius: 14px;
+    }
+
     body{
       font-family: system-ui, sans-serif;
       line-height: 1.65;
-      margin: 1.5em;
-      max-width: 900px;
+      margin: 0;
+      color: #111;
+      background: #fff;
     }
-    h1,h2,h3{
-      margin-top: 1.6em;
-      margin-bottom: 0.4em;
+
+    .wrap{
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 18px var(--pad) 44px;
     }
-    nav{
-      margin: 1em 0;
-      font-size: 0.95em;
+
+    /* Sticky top nav */
+    .topnav{
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--line);
     }
-    nav a{
-      margin-right: 0.6em;
+    .topnav .bar{
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 10px var(--pad);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 12px;
+      align-items: center;
+    }
+    .topnav a{
       text-decoration: underline;
-    }
-    p{ margin: 0.7em 0; }
-    ul{ margin: 0.6em 0 0.8em 1.2em; }
-    li{ margin: 0.4em 0; }
-    hr{ margin: 2.5em 0; }
-    .note{
       font-size: 0.95em;
-      opacity: 0.9;
+      color: #111;
+      white-space: nowrap;
+    }
+    .topnav .sep{ opacity: 0.45; }
+
+    /* Anchors offset for sticky nav */
+    section{ scroll-margin-top: 78px; }
+    #top{ scroll-margin-top: 0; }
+
+    h1,h2,h3{ margin-top: 1.6em; margin-bottom: 0.45em; line-height: 1.2; }
+    h1{ margin-top: 0.9em; font-size: 2.05rem; letter-spacing: -0.2px; }
+    h2{ font-size: 1.32rem; }
+    h3{ font-size: 1.06rem; }
+
+    p{ margin: 0.75em 0; }
+    ul{ margin: 0.6em 0 0.9em 1.15em; padding: 0; }
+    li{ margin: 0.42em 0; }
+
+    a{ color: inherit; text-decoration: underline; }
+    a:hover{ opacity: 0.85; }
+
+    hr{ margin: 2.0em 0; border: 0; border-top: 1px solid var(--line); }
+
+    .note{
+      padding: 12px 14px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--soft2);
+      margin: 1em 0;
+    }
+
+    .muted{ color: var(--muted); }
+
+    .pill{
+      display: inline-block;
+      border: 1px solid var(--line2);
+      border-radius: 999px;
+      padding: 2px 10px;
+      font-size: 0.9em;
+      margin: 0 6px 6px 0;
+      background: var(--soft2);
+    }
+
+    /* Optional: make long reading comfortable */
+    .reading p{ max-width: 72ch; }
+
+    @media (max-width: 520px){
+      h1{ font-size: 1.85rem; }
+      .topnav .bar{ gap: 8px 10px; }
     }
   </style>
 </head>
@@ -37,324 +109,159 @@
 
 <a id="top"></a>
 
-<nav>
-  <a href="/Bible/index.html">Bible Index</a> |
-  <a href="index.html">Romans Index</a> |
-  <a href="preface.html">Preface</a> |
-  <a href="rom5.html">Previous</a> |
-  <a href="rom7.html">Next</a> |
-  <a href="/Bible/Prophecy/index.html">Prophecy Hub</a>
-</nav>
+<div class="topnav" aria-label="Romans navigation">
+  <div class="bar">
+    <a href="/Bible/#books">Bible</a><span class="sep">|</span>
+    <a href="/Bible/index.html">Index</a><span class="sep">|</span>
+    <a href="index.html">Romans</a><span class="sep">|</span>
+    <a href="preface.html">Preface</a><span class="sep">|</span>
+    <a href="rom5.html">Previous</a><span class="sep">|</span>
+    <a href="rom7.html">Next</a><span class="sep">|</span>
+    <a href="/Bible/Prophecy/index.html">Prophecy Hub</a><span class="sep">|</span>
+    <a href="#notes">Notes</a><span class="sep">|</span>
+    <a href="#commentary">Commentary</a><span class="sep">|</span>
+    <a href="#newcreation">New Creation</a><span class="sep">|</span>
+    <a href="#top">Top</a>
+  </div>
+</div>
 
-<h1>Romans 6</h1>
-<h2>Dead to the Old World, Alive in the New</h2>
+<div class="wrap reading">
 
-<p class="note">
-Original text:
-<a href="https://ebible.org/eng-web/ROM06.htm" target="_blank">
-Romans 6 — WEB
-</a>
-</p>
+  <h1>Romans 6</h1>
+  <h2>Dead to the Old World, Alive in the New</h2>
 
-<hr />
+  <div class="note">
+    <span class="pill">Scripture: WEB</span>
+    <span class="pill">Fulfillment Notes</span>
+    <span class="pill">Prophecy Commentary</span>
+    <p class="muted" style="margin:0.55em 0 0;">
+      Original text:
+      <a href="https://ebible.org/eng-web/ROM06.htm" target="_blank" rel="noopener noreferrer">Romans 6 — WEB</a>
+    </p>
+  </div>
 
-<h2>Immediate Context</h2>
+  <hr />
 
-<p>
-Romans 6 answers a misunderstanding created by grace.
-If righteousness is given apart from the Law,
-does that mean sin no longer matters?
-</p>
+  <section id="context">
+    <h2>Immediate Context</h2>
 
-<p>
-Paul’s answer is not moral panic.
-It is identity.
-Believers no longer belong to the world
-where sin and death ruled.
-</p>
+    <p>
+      Romans 6 answers a misunderstanding created by grace.
+      If righteousness is given apart from the Law, does that mean sin no longer matters?
+    </p>
 
-<hr />
+    <p>
+      Paul’s answer is not moral panic. It is identity.
+      Believers no longer belong to the covenant world where sin and death ruled.
+    </p>
+  </section>
 
-<h2>Fulfilled Paraphrase</h2>
+  <hr />
 
-<h3>Grace Does Not Leave You Where You Were (6:1–7)</h3>
+  <section id="scripture">
+    <h2>Scripture (WEB)</h2>
+    <p class="muted">
+      Note: Scripture text is from the World English Bible (WEB). See the link above for the full public-domain source.
+    </p>
+    <!-- Paste ROM 6 WEB text here if you include it on-page.
+         If you are not including WEB text on-page, remove this section entirely to avoid “empty Scripture” confusion. -->
+  </section>
 
-<p>
-What then should we say?
-Should we remain in sin
-so that grace increases?
-</p>
+  <hr />
 
-<p>
-Absolutely not.
-We died to sin.
-How could we still live in it?
-</p>
+  <section id="notes">
+    <h2>Fulfillment Notes</h2>
+    <ol>
+      <li>“Died to sin” is covenant identity language: you have changed realms and allegiance in Christ.</li>
+      <li>Baptism/immersion marks transfer from the old covenant world into New Creation life, not a repeatable “reset.”</li>
+      <li>Sin’s reign is tied to Law’s jurisdiction; grace means a new authority, not “permission.”</li>
+      <li>“Death” and “life” are covenant outcomes: the Adamic/old-order rule ends; Christ’s life governs now.</li>
+      <li>This is present-tense: Paul declares sin’s rule ended for believers, not postponed to the distant future.</li>
+    </ol>
+  </section>
 
-<p>
-Do you not know
-that all who were immersed into Christ Jesus
-were immersed into His death?
-</p>
+  <hr />
 
-<p>
-We were buried with Him through immersion into death,
-so that,
-just as Christ was raised from the dead
-through the glory of the Father,
-we now walked in newness of life.
-</p>
+  <section id="commentary">
+    <h2>Prophecy Commentary</h2>
 
-<p>
-If we have been united with Him
-in the likeness of His death,
-we have also been united with Him
-in the likeness of His risen life.
-</p>
+    <h3>1) Romans 6 is about identity, not effort</h3>
+    <p>
+      Paul does not command believers to die to sin. He declares that they already have.
+      The point is not “try harder,” but “live from what is true in Christ.”
+    </p>
 
-<p>
-Our old person was crucified with Him,
-so that the body ruled by sin
-was rendered powerless,
-so that we were no longer enslaved to sin.
-</p>
+    <h3>2) Baptism marks transition, not repetition</h3>
+    <p>
+      Immersion signifies passage from one covenant world to another—out of Adamic/old-order rule into Christ’s life.
+      The emphasis is transfer of belonging, not a cycle of re-entry.
+    </p>
 
-<p>
-The one who has died
-has been released from sin’s authority.
-</p>
+    <h3>3) Sin loses authority when Law ends</h3>
+    <p>
+      In Paul’s logic, sin’s power is connected to Law’s jurisdiction.
+      With the Law fulfilled and removed as covenant administration, sin no longer reigns as a master over those in Christ.
+    </p>
 
-<p class="note">
-<strong>Fulfilled clarification:</strong>
-This death and resurrection describe covenant transition,
-not future biology or repeated experiences.
-</p>
+    <h3>4) Obedience flows from belonging</h3>
+    <p>
+      Righteous living emerges because identity has changed, not to make the change happen.
+      Grace doesn’t leave you where you were; it re-homes you.
+    </p>
+  </section>
 
-<hr />
+  <hr />
 
-<h3>Alive to God Now (6:8–14)</h3>
+  <section id="hub">
+    <h2>Prophecy Hub Connections</h2>
+    <ul>
+      <li>
+        <strong>Death defeated covenantally</strong> —
+        <a href="/Bible/Prophecy/resurrection/1cor15.html">1 Corinthians 15</a>
+      </li>
+      <li>
+        <strong>End of the old covenant world</strong> —
+        <a href="/Bible/Prophecy/2peter3.html">2 Peter 3</a>
+      </li>
+    </ul>
+  </section>
 
-<p>
-Since we died with Christ,
-we trust that we also live with Him.
-</p>
+  <hr />
 
-<p>
-We know that Christ,
-having been raised from the dead,
-no longer dies.
-Death no longer has authority over Him.
-</p>
+  <section id="newcreation">
+    <h2>New Creation Reality</h2>
 
-<p>
-The death He died,
-He died to sin once for all;
-the life He lives,
-He lives to God.
-</p>
+    <p>
+      Freedom is not the absence of struggle. Freedom is knowing which world you belong to.
+    </p>
 
-<p>
-In the same way,
-you are to count yourselves
-dead to sin
-and alive to God
-in Christ Jesus.
-</p>
+    <p>
+      Believers do not fight sin to become alive.
+      They live alive because sin’s authority has already ended for those under grace.
+    </p>
+  </section>
 
-<p>
-Therefore,
-do not allow sin
-to rule in your mortal existence
-so that you obey its desires.
-</p>
+  <hr />
 
-<p>
-Do not present yourselves to sin
-as instruments of injustice,
-but present yourselves to God
-as those who are alive from the dead.
-</p>
+  <section id="reflection">
+    <h2>Reflection</h2>
+    <p>
+      Where might I still think of myself as someone trying to die, instead of someone who already lives?
+    </p>
+  </section>
 
-<p>
-Sin does not rule over you,
-because you are not under Law
-but under grace.
-</p>
+  <hr />
 
-<p class="note">
-<strong>Fulfilled clarification:</strong>
-Paul does not say sin will stop ruling someday.
-He declares that its rule has already ended.
-</p>
+  <nav class="muted" aria-label="Bottom navigation">
+    <a href="#top">Top</a> ·
+    <a href="/Bible/#books">Bible</a> ·
+    <a href="/Bible/index.html">Index</a> ·
+    <a href="index.html">Romans</a> ·
+    <a href="rom5.html">Previous</a> ·
+    <a href="rom7.html">Next</a> ·
+    <a href="/Bible/Prophecy/index.html">Prophecy Hub</a>
+  </nav>
 
-<hr />
-
-<h3>From One Master to Another (6:15–19)</h3>
-
-<p>
-What then?
-Should we sin because we are not under Law,
-but under grace?
-Absolutely not.
-</p>
-
-<p>
-You were slaves of the power you obeyed —
-either sin leading to death,
-or obedience leading to righteousness.
-</p>
-
-<p>
-But thanks be to God,
-though you once served sin,
-you became obedient from the heart
-to the pattern of teaching
-to which you were entrusted.
-</p>
-
-<p>
-Having been freed from sin,
-you were enslaved to righteousness.
-</p>
-
-<p>
-Just as you once presented yourselves
-as slaves to impurity and lawlessness,
-so now you present yourselves
-as slaves to righteousness,
-leading to holiness.
-</p>
-
-<p class="note">
-<strong>Fulfilled clarification:</strong>
-Slavery language describes covenant allegiance,
-not ongoing self-improvement projects.
-</p>
-
-<hr />
-
-<h3>Two Outcomes, One Already Ended (6:20–23)</h3>
-
-<p>
-When you were slaves of sin,
-you were free from righteousness.
-</p>
-
-<p>
-What benefit did you gain
-from the things
-you are now ashamed of?
-</p>
-
-<p>
-Those things resulted in death.
-</p>
-
-<p>
-But now,
-having been freed from sin
-and enslaved to God,
-you have your fruit leading to holiness,
-and the outcome is covenant life.
-</p>
-
-<p>
-For the wages of sin was death,
-but the gift of God
-is covenant life
-in Christ Jesus our Lord.
-</p>
-
-<p class="note">
-<strong>Fulfilled clarification:</strong>
-“Death” and “life” describe two covenant realms.
-The old realm has ended;
-the new is established.
-</p>
-
-<hr />
-
-<h2>Fulfillment Commentary</h2>
-
-<h3>1) Romans 6 is about identity, not effort</h3>
-<p>
-Paul does not command believers
-to die to sin.
-He declares that they already have.
-</p>
-
-<h3>2) Baptism marks transition, not repetition</h3>
-<p>
-Immersion signifies passage
-from the old covenant world
-into the New Creation world.
-</p>
-
-<h3>3) Sin loses authority when Law ends</h3>
-<p>
-Sin’s power was tied to the Law’s jurisdiction.
-With the Law fulfilled and removed,
-sin no longer reigns.
-</p>
-
-<h3>4) Obedience flows from belonging</h3>
-<p>
-Righteous living emerges
-because identity has changed,
-not to make the change happen.
-</p>
-
-<hr />
-
-<h2>Prophecy Hub Connections</h2>
-<ul>
-  <li>
-    <strong>Death defeated covenantally</strong> —
-    <a href="/Bible/Prophecy/resurrection/1cor15.html">1 Corinthians 15</a>
-  </li>
-  <li>
-    <strong>End of the old covenant world</strong> —
-    <a href="/Bible/Prophecy/2peter3.html">2 Peter 3</a>
-  </li>
-</ul>
-
-<hr />
-
-<h2>New Creation Reality</h2>
-
-<p>
-Freedom is not the absence of struggle.
-</p>
-
-<p>
-Freedom is knowing
-which world you belong to.
-</p>
-
-<p>
-Believers do not fight sin
-to become alive.
-They live alive
-because sin’s authority has already ended.
-</p>
-
-<hr />
-
-<h2>Reflection</h2>
-
-<p>
-Where might I still think of myself
-as someone trying to die,
-instead of someone who already lives?
-</p>
-
-<hr />
-
-<nav>
-  <a href="#top">Top</a> |
-  <a href="index.html">Romans Index</a> |
-  <a href="rom7.html">Next</a>
-</nav>
-
+</div>
 </body>
 </html>
