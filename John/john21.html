@@ -1,39 +1,108 @@
+Copy code
+Html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>John 21 — Fulfilled Paraphrase</title>
+  <title>John 21 — Restoration and Witness — Fulfilled Prophecy Bible</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="John 21 (WEB) with fulfillment notes and prophecy commentary: Peter restored, shepherding defined, and apostolic witness through the covenant transition (AD 30–70 lens)." />
+
   <style>
-    body {
+    :root{
+      --maxw: 980px;
+      --pad: 16px;
+      --line: rgba(0,0,0,0.12);
+      --line2: rgba(0,0,0,0.18);
+      --muted: rgba(0,0,0,0.72);
+      --soft: rgba(0,0,0,0.06);
+      --soft2: rgba(0,0,0,0.04);
+      --radius: 14px;
+    }
+
+    body{
       font-family: system-ui, sans-serif;
-      line-height: 1.6;
-      margin: 1.5em;
-      max-width: 900px;
+      line-height: 1.65;
+      margin: 0;
+      color: #111;
+      background: #fff;
     }
-    h1, h2, h3 {
-      margin-top: 1.4em;
-      margin-bottom: 0.4em;
+
+    .wrap{
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 18px var(--pad) 44px;
     }
-    nav {
-      margin: 1em 0;
-      font-size: 0.95em;
+
+    /* Sticky top nav */
+    .topnav{
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--line);
     }
-    nav a {
-      margin-right: 0.6em;
+    .topnav .bar{
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 10px var(--pad);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 12px;
+      align-items: center;
+    }
+    .topnav a{
       text-decoration: underline;
+      font-size: 0.95em;
+      color: #111;
+      white-space: nowrap;
     }
-    p {
-      margin: 0.6em 0;
+    .topnav .sep{ opacity: 0.45; }
+
+    /* Anchors offset for sticky nav */
+    section{ scroll-margin-top: 78px; }
+    #top{ scroll-margin-top: 0; }
+
+    h1,h2,h3{ margin-top: 1.6em; margin-bottom: 0.45em; line-height: 1.2; }
+    h1{ margin-top: 0.9em; font-size: 2.05rem; letter-spacing: -0.2px; }
+    h2{ font-size: 1.32rem; }
+    h3{ font-size: 1.06rem; }
+
+    p{ margin: 0.75em 0; }
+    ul{ margin: 0.6em 0 0.9em 1.15em; padding: 0; }
+    li{ margin: 0.42em 0; }
+
+    a{ color: inherit; text-decoration: underline; }
+    a:hover{ opacity: 0.85; }
+
+    hr{ margin: 2.0em 0; border: 0; border-top: 1px solid var(--line); }
+
+    .note{
+      padding: 12px 14px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--soft2);
+      margin: 1em 0;
     }
-    hr {
-      margin: 2em 0;
+
+    .muted{ color: var(--muted); }
+
+    .pill{
+      display: inline-block;
+      border: 1px solid var(--line2);
+      border-radius: 999px;
+      padding: 2px 10px;
+      font-size: 0.9em;
+      margin: 0 6px 6px 0;
+      background: var(--soft2);
     }
-    ul {
-      margin: 0.6em 0 0.8em 1.2em;
-    }
-    li {
-      margin: 0.35em 0;
+
+    .reading p{ max-width: 74ch; }
+
+    @media (max-width: 520px){
+      h1{ font-size: 1.85rem; }
+      .topnav .bar{ gap: 8px 10px; }
     }
   </style>
 </head>
@@ -41,140 +110,197 @@
 
 <a id="top"></a>
 
-<nav>
-  <a href="index.html">Index</a> |
-  <a href="john20.html">Previous</a> |
-  <a href="/Bible/Prophecy/index.html">Prophecy Hub</a>
-</nav>
+<div class="topnav" aria-label="John navigation">
+  <div class="bar">
+    <a href="/Bible/#books">Bible</a><span class="sep">|</span>
+    <a href="/Bible/index.html">Index</a><span class="sep">|</span>
+    <a href="index.html">John</a><span class="sep">|</span>
+    <a href="john20.html">Previous</a><span class="sep">|</span>
+    <a href="/Bible/Prophecy/index.html">Prophecy Hub</a><span class="sep">|</span>
+    <a href="#notes">Notes</a><span class="sep">|</span>
+    <a href="#commentary">Commentary</a><span class="sep">|</span>
+    <a href="#newcreation">New Creation</a><span class="sep">|</span>
+    <a href="#top">Top</a>
+  </div>
+</div>
 
-<h1>John 21</h1>
-<h2>Fulfilled Paraphrase + Commentary (New Creation Lens)</h2>
+<div class="wrap reading">
 
-<hr />
+  <h1>John 21</h1>
+  <h2>Restoration and Witness in the New Covenant Community</h2>
 
-<h2>Paraphrase — Breakfast by the Sea (John 21:1–14)</h2>
+  <div class="note">
+    <span class="pill">Scripture: WEB</span>
+    <span class="pill">Fulfillment Notes</span>
+    <span class="pill">Prophecy Commentary</span>
+    <p class="muted" style="margin:0.55em 0 0;">
+      Original text:
+      <a href="https://ebible.org/eng-web/JHN21.htm" target="_blank" rel="noopener noreferrer">John 21 — WEB</a>
+    </p>
+  </div>
 
-<p>After these things, Jesus revealed Himself again to the disciples by the Sea of Tiberias. Simon Peter said, “I am going fishing,” and the others went with him. That night they caught nothing.</p>
+  <hr />
 
-<p>At daybreak, Jesus stood on the shore, though the disciples did not recognize Him. He asked if they had caught anything. When they answered no, He told them to cast the net on the right side of the boat. They did, and were unable to haul it in because of the great number of fish.</p>
+  <section id="scripture">
+    <h2>Scripture (WEB)</h2>
+    <p class="muted">
+      Note: Scripture text is from the World English Bible (WEB). See the link above for the full public-domain source.
+    </p>
+    <!-- Paste JOHN 21 WEB text here if you include it on-page.
+         If you are not including WEB text on-page, remove this section to avoid an “empty Scripture” heading. -->
+  </section>
 
-<p>The disciple whom Jesus loved said to Peter, “It is the Lord.” Peter jumped into the sea and swam to shore. The others followed, dragging the net full of fish.</p>
+  <hr />
 
-<p>On shore they found a charcoal fire with fish and bread. Jesus invited them to bring some of the fish they had caught. There were one hundred and fifty-three large fish, yet the net was not torn.</p>
+  <section id="notes">
+    <h2>Fulfillment Notes</h2>
+    <ol>
+      <li>Jesus restores Peter publicly and re-anchors leadership in love and shepherding, not flawless performance.</li>
+      <li>“Feed/shepherd” defines New Covenant authority as pastoral care, replacing temple/priestly status systems.</li>
+      <li>The charcoal fire deliberately echoes Peter’s denial scene: restoration meets failure head-on, not around it.</li>
+      <li>The beloved disciple’s witness language grounds the apostolic testimony that carried the community through the first-century transition.</li>
+      <li>Mission continues under the risen Christ’s presence; the centre is Him—not the old structures.</li>
+    </ol>
+  </section>
 
-<p>Jesus said, “Come and eat.” None of the disciples dared ask who He was; they knew it was the Lord. Jesus took the bread and gave it to them, and did the same with the fish.</p>
+  <hr />
 
-<hr />
+  <section id="context">
+    <h2>Immediate Context</h2>
+    <p><strong>Speaker:</strong> The risen Jesus</p>
+    <p><strong>Audience:</strong> The disciples, particularly Peter</p>
+    <p><strong>Covenant moment:</strong> Post-resurrection restoration and commissioning of leadership for the New Covenant community</p>
+    <p><strong>Why it mattered then:</strong> Failure is addressed, calling is restored, and mission continues without reference to the temple or old identity structures.</p>
+  </section>
 
-<h2>Paraphrase — Peter Restored and Commissioned (John 21:15–19)</h2>
+  <hr />
 
-<p>After breakfast, Jesus asked Simon Peter, “Do you love Me more than these?” Peter answered that he did. Jesus told him, “Feed My lambs.”</p>
+  <section id="commentary">
+    <h2>Prophecy Commentary</h2>
 
-<p>Jesus asked him again, and then a third time. Peter was grieved, but affirmed his love. Each time Jesus charged him to shepherd His sheep.</p>
+    <h3>1) Fishing without Christ produces nothing</h3>
+    <p>
+      The empty nets echo fruitlessness apart from the Messiah. The moment Jesus directs the work, abundance follows.
+      The point is not “try harder,” but “work from His presence and direction.”
+    </p>
 
-<p>Jesus then spoke of the manner of Peter’s death, indicating how he would glorify God. He concluded, “Follow Me.”</p>
+    <h3>2) What ended</h3>
+    <p>
+      Leadership defined by merit, performance, or flawless loyalty.
+      In the New Covenant community, failure does not become a permanent identity label.
+    </p>
 
-<hr />
+    <h3>3) What replaced it</h3>
+    <p>
+      Shepherding rooted in love, restoration, and grace rather than self-confidence.
+      Authority is expressed as feeding, guarding, and tending—not measuring and controlling.
+    </p>
 
-<h2>Paraphrase — The Beloved Disciple and Witness (John 21:20–25)</h2>
+    <h3>4) The charcoal fire matters</h3>
+    <p>
+      This mirrors the charcoal fire at Peter’s denial. Restoration happens at the point of collapse.
+      Jesus doesn’t pretend it never happened; He re-writes what it means.
+    </p>
 
-<p>Peter asked about the beloved disciple’s future. Jesus replied that it was not Peter’s concern. This saying spread, though Jesus had not said the disciple would not die.</p>
+    <h3>5) “Feed My sheep” defines apostolic authority</h3>
+    <p>
+      New Covenant authority is pastoral, not political or priestly.
+      It nourishes rather than dominates, and it builds people into life rather than managing them by threat.
+    </p>
 
-<p>The chapter closes by affirming that this disciple testified to these things, and that the world itself could not contain the books if all Jesus’ deeds were written.</p>
+    <h3>6) Following, not comparison</h3>
+    <p>
+      Peter wants to compare callings. Jesus shuts it down: “You follow Me.”
+      Each calling unfolds uniquely within the same covenant life, without rivalry or ranking.
+    </p>
 
-<hr />
+    <h3>7) First-century horizon and witness</h3>
+    <p>
+      Peter’s restored leadership and eventual martyrdom, along with apostolic witness, stabilised the New Covenant community
+      through the first-century transition culminating in AD 70. The point is continuity in Christ, not continuity in temple structures.
+    </p>
+  </section>
 
-<h2>Immediate Context</h2>
+  <hr />
 
-<p><strong>Speaker:</strong> The risen Jesus</p>
-<p><strong>Audience:</strong> The disciples, particularly Peter</p>
-<p><strong>Covenant moment:</strong> Post-resurrection restoration and commissioning of leadership for the New Covenant community</p>
-<p><strong>Why it mattered then:</strong> Failure is addressed, calling is restored, and mission continues without reference to the temple or old structures.</p>
+  <section id="idioms">
+    <h2>Key Idioms &amp; Language Notes</h2>
+    <ul>
+      <li><strong>Net not torn</strong> — unity and preservation of the New Creation people under Christ’s keeping.</li>
+      <li><strong>153 fish</strong> — abundance/fullness; avoid numerology rabbit-holes.</li>
+      <li><strong>Feed / shepherd</strong> — pastoral covenant authority: nourishment, care, and protection.</li>
+      <li><strong>Follow Me</strong> — ongoing participation in Christ’s way, not comparison-based spirituality.</li>
+    </ul>
+  </section>
 
-<hr />
+  <hr />
 
-<h2>Commentary (Fulfilled / Covenant Context)</h2>
+  <section id="xref">
+    <h2>Cross-References</h2>
+    <ul>
+      <li><strong>Fruitful mission</strong> —
+        <a href="https://ebible.org/eng-web/EZK47.htm" target="_blank" rel="noopener noreferrer">Ezekiel 47</a>
+      </li>
+      <li><strong>Restored leaders</strong> —
+        <a href="https://ebible.org/eng-web/PSA23.htm" target="_blank" rel="noopener noreferrer">Psalm 23</a>,
+        <a href="https://ebible.org/eng-web/1PE05.htm" target="_blank" rel="noopener noreferrer">1 Peter 5</a>
+      </li>
+      <li><strong>Witness preserved</strong> —
+        <a href="https://ebible.org/eng-web/ACT01.htm" target="_blank" rel="noopener noreferrer">Acts 1</a>
+      </li>
+    </ul>
+  </section>
 
-<h3>1) Fishing without Christ produces nothing</h3>
-<p>The empty nets echo Israel’s fruitlessness apart from the Messiah. The moment Jesus directs the work, abundance follows.</p>
+  <hr />
 
-<h3>2) What ended</h3>
-<p>Leadership defined by merit, performance, or flawless loyalty.</p>
+  <section id="hub">
+    <h2>Prophecy Hub Connections</h2>
+    <ul>
+      <li>
+        <strong>Shepherding the renewed people</strong> —
+        <a href="https://ebible.org/eng-web/EZK34.htm" target="_blank" rel="noopener noreferrer">Ezekiel 34</a> ·
+        <a href="/Bible/Prophecy/ezekiel.html">Prophecy Hub</a>
+      </li>
+      <li>
+        <strong>River of life bringing abundance</strong> —
+        <a href="https://ebible.org/eng-web/EZK47.htm" target="_blank" rel="noopener noreferrer">Ezekiel 47</a>
+      </li>
+    </ul>
+  </section>
 
-<h3>3) What replaced it</h3>
-<p>Shepherding rooted in love, restoration, and grace rather than self-confidence.</p>
+  <hr />
 
-<h3>4) The charcoal fire matters</h3>
-<p>This mirrors the fire by which Peter denied Jesus. Restoration occurs at the place of failure, not apart from it.</p>
+  <section id="newcreation">
+    <h2>New Creation Reality</h2>
+    <p>
+      Failure does not disqualify you. Love restores purpose, and calling flows from relationship, not performance.
+      The risen Christ still feeds His people through restored servants.
+    </p>
+  </section>
 
-<h3>5) “Feed My sheep” defines apostolic authority</h3>
-<p>Authority in the New Covenant is pastoral, not political or priestly. It nourishes rather than controls.</p>
+  <hr />
 
-<h3>6) Following, not comparison</h3>
-<p>Jesus redirects Peter from comparison to faithfulness. Each calling unfolds uniquely within the same covenant life.</p>
+  <section id="reflection">
+    <h2>Reflection</h2>
+    <p>
+      Where might Christ be inviting you to stop replaying failure and start feeding what He has entrusted to you?
+    </p>
+  </section>
 
-<h3>7) First-century fulfillment</h3>
-<p>Peter’s restored leadership and eventual martyrdom, along with apostolic witness, anchors the New Covenant community through the transition culminating in AD 70.</p>
+  <hr />
 
-<hr />
+  <nav class="muted" aria-label="Bottom navigation">
+    <a href="#top">Top</a> ·
+    <a href="index.html">Index</a> ·
+    <a href="john20.html">Previous</a> ·
+    <a href="/Bible/Prophecy/index.html">Prophecy Hub</a>
+  </nav>
 
-<h2>Key Idioms & Language Notes</h2>
-<ul>
-  <li><strong>Net not torn</strong> — unity of the New Creation people</li>
-  <li><strong>153 fish</strong> — fullness and abundance, not numerology speculation</li>
-  <li><strong>Feed / shepherd</strong> — pastoral covenant authority</li>
-  <li><strong>Follow Me</strong> — lifelong participation in Christ’s way</li>
-</ul>
-
-<hr />
-
-<h2>Cross-References (Scripture — eBible)</h2>
-<ul>
-  <li><strong>Fruitful mission</strong> —
-    <a href="https://ebible.org/eng-web/EZK47.htm">Ezek 47</a>
-  </li>
-  <li><strong>Restored leaders</strong> —
-    <a href="https://ebible.org/eng-web/PSA23.htm">Ps 23</a>,
-    <a href="https://ebible.org/eng-web/1PE05.htm">1 Pet 5</a>
-  </li>
-  <li><strong>Witness preserved</strong> —
-    <a href="https://ebible.org/eng-web/ACT01.htm">Acts 1</a>
-  </li>
-</ul>
-
-<h2>Prophecy Fulfilment</h2>
-<ul>
-  <li>
-    <strong>Shepherding the renewed people</strong> —
-    <a href="https://ebible.org/eng-web/EZK34.htm">Ezek 34</a> |
-    <a href="/Bible/Prophecy/ezekiel.html">Prophecy Hub</a>
-  </li>
-  <li>
-    <strong>River of life bringing abundance</strong> —
-    <a href="https://ebible.org/eng-web/EZK47.htm">Ezek 47</a>
-  </li>
-</ul>
-
-<hr />
-
-<h2>New Creation Reality</h2>
-
-<p>Failure does not disqualify you. Love restores purpose, and calling flows from relationship, not performance. The risen Christ still feeds His people through restored servants.</p>
-
-<hr />
-
-<h2>Reflection</h2>
-
-<p>Where might Christ be inviting you to stop replaying failure and start feeding what He has entrusted to you?</p>
-
-<hr />
-
-<nav>
-  <a href="#top">Top</a> |
-  <a href="index.html">Index</a> |
-  <a href="john20.html">Previous</a> |
-  <a href="/Bible/Prophecy/index.html">Prophecy Hub</a>
-</nav>
-
+</div>
 </body>
 </html>
+What I fixed:
+Removed “Fulfilled Paraphrase” branding (title + headings) and aligned it to Fulfilled Prophecy Bible.
+Converted the page to your standard: Scripture (WEB) + Fulfillment Notes + Prophecy Commentary + Idioms + Xrefs + Hub + New Creation + Reflection.
+Upgraded layout to your newer sticky nav + wrap + CSS vars.
+Same call as before: if you’re not pasting WEB text on-page, delete the “Scripture (WEB)” section so you don’t have an empty header.
