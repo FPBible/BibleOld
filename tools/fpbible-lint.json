@@ -8,7 +8,6 @@
     "Bible/about*.html"
   ],
   "banned": [
-    "paraphrase",
     "lens",
     "framework",
     "how to read",
