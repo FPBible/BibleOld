@@ -87,7 +87,7 @@ SCRIPTURE TEXT INTEGRITY (PRIMARY GATE)
 - Scripture must be copied verbatim from the World English Bible (WEB)
 - Source must be verifiable via eBible:
   https://ebible.org/web/BOOK##.htm
-- NEVER rewrite, modernize, condense, paraphrase, or smooth Scripture
+- NEVER rewrite, modernize, condense, or smooth Scripture
 - NEVER mix translations
 - If text cannot be verified, DO NOT GUESS — STOP
 
