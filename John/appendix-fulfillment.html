@@ -1,76 +1,154 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Appendix — Fulfillment and History — Fulfilled Prophecy Bible (WEB)</title>
-  <meta name="description" content="Full Preterist study edition using the WEB translation." />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Appendix — Fulfillment and History — Fulfilled Prophecy Bible (WEB)</title>
+<meta content="Full Preterist study edition using the WEB translation." name="description"/>
+<style>
+ :root{
+ --maxw: 980px;
+ --pad: 16px;
+ --line: rgba(0,0,0,0.12);
+ --line2: rgba(0,0,0,0.18);
+ --muted: rgba(0,0,0,0.72);
+ --soft: rgba(0,0,0,0.06);
+ --soft2: rgba(0,0,0,0.04);
+ --radius: 14px;
+ }
 
-  <style>
-    body {
-      font-family: system-ui, sans-serif;
-      line-height: 1.6;
-      margin: 1.5em;
-      max-width: 900px;
-    }
-    h1, h2, h3 {
-      margin-top: 1.4em;
-      margin-bottom: 0.4em;
-    }
-    nav {
-      margin: 1em 0;
-      font-size: 0.95em;
-    }
-    nav a {
-      margin-right: 0.6em;
-      text-decoration: underline;
-    }
-    p { margin: 0.6em 0; }
-    ul { margin: 0.6em 0 0.6em 1.2em; }
-      footer{
-      margin-top: 2.2em;
-      padding-top: 1.2em;
-      border-top: 1px solid var(--line);
-      color: var(--muted);
-      font-size: 0.96em;
-    }
-    footer .row{
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px 14px;
-      align-items: center;
-      justify-content: space-between;
-    }
-  </style>
+ body{
+ font-family: system-ui, sans-serif;
+ line-height: 1.65;
+ margin: 0;
+ color: #111;
+ background: #fff;
+ }
+
+ .wrap{
+ max-width: var(--maxw);
+ margin: 0 auto;
+ padding: 18px var(--pad) 44px;
+ }
+
+ /* Sticky top nav */
+ .topnav{
+ position: sticky;
+ top: 0;
+ z-index: 20;
+ background: rgba(255,255,255,0.92);
+ backdrop-filter: blur(8px);
+ border-bottom: 1px solid var(--line);
+ }
+ .topnav .bar{
+ max-width: var(--maxw);
+ margin: 0 auto;
+ padding: 10px var(--pad);
+ display: flex;
+ flex-wrap: wrap;
+ gap: 10px 12px;
+ align-items: center;
+ }
+ .topnav a{
+ text-decoration: underline;
+ font-size: 0.95em;
+ color: #111;
+ white-space: nowrap;
+ }
+ .topnav .sep{ opacity: 0.45; }
+
+ /* Anchors offset for sticky nav */
+ section{ scroll-margin-top: 78px; }
+ #top{ scroll-margin-top: 0; }
+
+ h1,h2,h3{ margin-top: 1.6em; margin-bottom: 0.45em; line-height: 1.2; }
+ h1{ margin-top: 0.9em; font-size: 2.05rem; letter-spacing: -0.2px; }
+ h2{ font-size: 1.32rem; }
+ h3{ font-size: 1.06rem; }
+
+ p{ margin: 0.75em 0; }
+ ul{ margin: 0.6em 0 0.9em 1.15em; padding: 0; }
+ li{ margin: 0.42em 0; }
+
+ a{ color: inherit; text-decoration: underline; }
+ a:hover{ opacity: 0.85; }
+
+ hr{ margin: 2.0em 0; border: 0; border-top: 1px solid var(--line); }
+
+ .note{
+ padding: 12px 14px;
+ border: 1px solid var(--line);
+ border-radius: var(--radius);
+ background: var(--soft2);
+ margin: 1em 0;
+ }
+
+ .muted{ color: var(--muted); }
+
+ .pill{
+ display: inline-block;
+ border: 1px solid var(--line2);
+ border-radius: 999px;
+ padding: 2px 10px;
+ font-size: 0.9em;
+ margin: 0 6px 6px 0;
+ background: var(--soft2);
+ }
+
+ .reading p{ max-width: 76ch; }
+
+ @media (max-width: 520px){
+ h1{ font-size: 1.85rem; }
+ .topnav .bar{ gap: 8px 10px; }
+ }
+
+ .scripture-text{ margin: 1em 0; }
+ .scripture-text p{ margin: 0.4em 0; }
+ .v-num{ display:inline-block; min-width: 2.4em; opacity:0.7; }
+ footer{
+ margin-top: 2.2em;
+ padding-top: 1.2em;
+ border-top: 1px solid var(--line);
+ color: var(--muted);
+ font-size: 0.96em;
+ }
+ footer .row{
+ display: flex;
+ flex-wrap: wrap;
+ gap: 10px 14px;
+ align-items: center;
+ justify-content: space-between;
+ }
+
+/* --- FPBible consistency overrides (John pack) --- */
+.scripture-text{ line-height: 1.45; }
+.scripture-text br{ line-height: 1.15; }
+
+</style>
+<link href="/Bible/assets/site.css" rel="stylesheet"/>
 </head>
-<body>
-
+<body><div class="wrap">
 <a id="top"></a>
-
 <!-- TOP NAVIGATION -->
 <nav>
-  <a href="index.html">Index</a> |
-  <a href="john21.html">Previous</a>
+<a href="index.html">Index</a> |
+ <a href="john21.html">Previous</a>
 </nav>
-
 <h1>Appendix</h1>
 <h2>Fulfillment and History</h2>
-
 <p>
 <strong>This appendix is optional.</strong>
-It does not establish the interpretive lens of the Gospel.
-That lens is set in the Preface and assumed throughout every chapter.
+It does not establish the meaning of the Gospel.
+That is set in the Preface and assumed throughout every chapter.
 </p>
-
 <p>
 This appendix exists only to provide historical and covenant clarification
 for readers who want to understand
 why the Gospel of John is read here
 as announcing realities that are present, active, and complete in Christ.
 </p>
-
 <h2>1. What “Fulfillment” Means Here</h2>
-
 <p>
 In this work, “fulfillment” does not mean that nothing remains meaningful
 or that history has ceased to matter.
@@ -78,24 +156,19 @@ It means that the decisive covenant promises
 announced by Jesus reached their appointed completion
 within their historical setting.
 </p>
-
 <p>
 Fulfillment is not the cancellation of hope;
 it is the arrival of what hope was pointing toward.
 What continues is not expectation of activation,
 but participation in what has already been given.
 </p>
-
 <h2>2. A Covenant Shift, Not a Planetary Reset</h2>
-
 <p>
 Biblical “end” language is often misread
 as referring to the end of the physical universe.
 In Scripture, terms such as “world,” “age,” and temple-centered imagery
-frequently function covenantally —
-describing an order of worship, authority, and identity.
+frequently function covenantally — describing an order of worship, authority, and identity.
 </p>
-
 <p>
 John’s Gospel is structured around the replacement
 of an old covenant center:
@@ -104,9 +177,7 @@ and national identity markers.
 Jesus does not renovate that system.
 He fulfills it, exposes its limits, and replaces it with Himself.
 </p>
-
 <h2>3. John’s Own Time Language</h2>
-
 <p>
 John repeatedly uses immediate language:
 “the hour has come,”
@@ -114,45 +185,37 @@ John repeatedly uses immediate language:
 “the ruler of this world is judged,”
 “the Son is glorified.”
 </p>
-
 <p>
 These are not framed as distant predictions.
 They are presented as imminent realities
 tied directly to Jesus’ death, resurrection,
 and the consequences that flow from them.
 </p>
-
 <p>
 This does not suggest that everything occurs in a single moment.
 It means the decisive hinge of the ages
 occurs within the ministry of Jesus,
 and the old covenant order enters its terminal phase.
 </p>
-
 <h2>4. AD 70 as Historical Closure</h2>
-
 <p>
 The destruction of Jerusalem and the temple in AD 70
-matters in this framework
+matters in this
 because it marks the public, historical end
 of the old covenant world’s religious center.
 </p>
-
 <p>
 The temple was not a peripheral structure.
 It was the administrative heart
 of sacrifice, priesthood, purity regulation,
 and covenant identity.
 </p>
-
 <p>
 When that center fell,
-a world ended —
-not the planet,
+a world ended — not the planet,
 but the covenant system that had defined access to God
 through temple mediation.
 </p>
-
 <p>
 AD 70 does not replace the cross or resurrection.
 It confirms them historically.
@@ -160,9 +223,7 @@ The cross is the decisive act.
 AD 70 is the visible closure
 of the order that rejected it.
 </p>
-
 <h2>5. “Coming” and “Glory” in John</h2>
-
 <p>
 John emphasizes presence rather than absence.
 Jesus “comes” in multiple, covenantally meaningful ways:
@@ -171,49 +232,39 @@ in resurrection appearances,
 in the sending of the Spirit,
 and in covenant judgment that vindicates His words.
 </p>
-
 <p>
 For this reason, “coming” language in John
 is not forced into a single category.
 The Gospel’s movement is not geographic
-but relational —
-toward indwelling, union, and shared life.
+but relational — toward indwelling, union, and shared life.
 </p>
-
 <h2>6. Why This Reading Is Not Anti-Future</h2>
-
 <p>
 A fulfilled reading does not deny that history continues
 or that God continues to act.
 It denies that the Gospel’s core promises
 are still waiting to be activated.
 </p>
-
 <p>
 Life in Christ is lived from:
 </p>
-
 <ul>
-  <li>finished access to the Father</li>
-  <li>shared life in the Son</li>
-  <li>the Spirit’s indwelling presence</li>
-  <li>a kingdom not sourced from worldly power</li>
+<li>finished access to the Father</li>
+<li>shared life in the Son</li>
+<li>the Spirit’s indwelling presence</li>
+<li>a kingdom not sourced from worldly power</li>
 </ul>
-
 <p>
 This posture is not resignation.
 It is confidence.
 </p>
-
 <h2>7. How to Use This Appendix</h2>
-
 <p>
-If this framework is unfamiliar,
+If this is unfamiliar,
 read the Gospel first.
 Let John speak on his own terms.
 Then return here if historical clarification is helpful.
 </p>
-
 <p>
 If you are already familiar with a fulfilled reading,
 this appendix may serve as a calm explanation
@@ -221,41 +272,32 @@ for readers who are not.
 It is offered to clarify,
 not to provoke or debate.
 </p>
-
 <p>
 In every case, the purpose remains John’s own:
 that you may believe Jesus is the Christ, the Son of God,
 and that by believing you may have life in His name.
 </p>
-
 <!-- BOTTOM NAVIGATION -->
 <nav>
-  <a href="index.html">Index</a> |
-  <a href="john21.html">Previous</a> |
-  <a href="#top">Top</a>
+<a href="index.html">Index</a> |
+ <a href="john21.html">Previous</a> |
+ <a href="#top">Top</a>
 </nav>
-
 <a href="https://ko-fi.com/B0B61QC1BU" target="_blank">
-  <img height="36"
-       style="border:0;height:36px;"
-       src="https://storage.ko-fi.com/cdn/kofi5.png?v=6"
-       alt="Buy Me a Coffee at ko-fi.com" />
+<img alt="Buy Me a Coffee at ko-fi.com" height="36" src="https://storage.ko-fi.com/cdn/kofi5.png?v=6" style="border:0;height:36px;"/>
 </a>
-
-  <footer>
-    <div class="row">
-      <div>
-        <strong>The Fulfilled Prophecy Bible</strong> — Text based on the <strong>World English Bible (WEB)</strong> with Fulfilled Prophecy Study Commentary
-      </div>
-      <div>
-        <a href="https://ko-fi.com/fpbible" target="_blank" rel="noopener">Support</a> · <a href="#top">Back to top</a>
-      </div>
-    </div>
-    <p class="note">
-      Notes are written to honour audience relevance and time statements, and to avoid futurist drift.
-    </p>
-  </footer>
-
-
-</body>
+<footer>
+<div class="row">
+<div>
+<strong>The Fulfilled Prophecy Bible</strong> — Text based on the <strong>World English Bible (WEB)</strong> with Fulfilled Prophecy Study Commentary
+ </div>
+<div>
+<a href="https://ko-fi.com/fpbible" rel="noopener" target="_blank">Support</a> · <a href="#top">Back to top</a>
+</div>
+</div>
+<p class="note">
+ Notes are written to honour audience relevance and time statements, and to avoid futurist drift.
+ </p>
+</footer>
+</div></body>
 </html>
