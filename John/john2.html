@@ -148,8 +148,11 @@
       align-items: center;
       justify-content: space-between;
     }
+  
+    /* Hide specific UI elements */
+    .hide-element { display: none; }
   </style>
-</head>
+  </head>
 <body>
 <a id="top"></a>
 <div aria-label="John navigation" class="topnav">
@@ -164,15 +167,7 @@
 <div class="wrap reading">
 <h1>John 2</h1>
 <h2>New Wine, New Temple</h2>
-<div class="note">
-<span class="pill">Scripture: WEB</span>
-<span class="pill">Fulfillment Notes</span>
-<span class="pill">Prophecy Commentary</span>
-<p class="muted" style="margin:0.55em 0 0;">
-      Original text:
-      <a href="https://ebible.org/eng-web/JHN02.htm" rel="noopener noreferrer" target="_blank">John 2 — WEB</a>
-</p>
-</div>
+
 <section id="context">
 <h2>Immediate Context</h2>
 <p><strong>Speaker:</strong> John narrating Jesus’ early public signs</p>
@@ -236,7 +231,7 @@ and because he didn’t need for anyone to testify concerning man; for he himsel
 </section>
 <hr/>
 <section id="notes">
-<h2>Fulfillment Notes</h2>
+<h2 class="hide-element">Fulfillment Notes</h2>
 <ol>
 <li>The purification jars are the sign: Jesus transforms the old cleansing system into a New Covenant joy marker.</li>
 <li>“My hour” is covenant timetable language; the signs point forward to the cross/resurrection and the transition’s climax.</li>
@@ -249,7 +244,7 @@ and because he didn’t need for anyone to testify concerning man; for he himsel
 </section>
 <hr/>
 <section id="commentary">
-<h2>Prophecy Commentary</h2>
+<h2 class="hide-element">Prophecy Commentary</h2>
 <h3>1) The purification jars are the point</h3>
 <p>
       The jars are not decoration. They represent the old covenant cleansing economy—repeated washings that never perfected the conscience.
