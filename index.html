@@ -53,10 +53,9 @@
     a:hover{ opacity: 0.85; }
 
     hr{ margin: 2.8em 0; border: 0; border-top: 1px solid var(--line); }
-
     .note{ font-size: 0.96em; color: var(--muted); }
 
-    /* Top nav (site-consistent, sticky, scroll-safe) */
+    /* Top nav — MATCHES YOUR OTHER PAGES (underline + separators) */
     .topnav{
       position: sticky;
       top: 0;
@@ -73,32 +72,19 @@
       flex-wrap: wrap;
       gap: 10px 12px;
       align-items: center;
-      justify-content: flex-start;
     }
     .topnav a{
-      text-decoration: none;
+      text-decoration: underline;
       font-size: 0.95em;
-      font-weight: 600;
       color: #111;
       white-space: nowrap;
-      padding: 6px 10px;
-      border-radius: 999px;
-      border: 1px solid transparent;
-      background: transparent;
     }
-    .topnav a:hover{
-      opacity: 1;
-      background: var(--soft2);
-      border-color: var(--line);
-    }
-    .topnav a.active{
-      background: var(--soft2);
-      border-color: var(--line2);
-    }
+    .topnav .sep{ opacity: 0.45; }
+
     @media (max-width: 768px){
       .topnav .bar{
-        flex-wrap: nowrap;
         overflow-x: auto;
+        flex-wrap: nowrap;
         -webkit-overflow-scrolling: touch;
       }
       .topnav .bar::-webkit-scrollbar{ display: none; }
@@ -366,11 +352,11 @@
 
 <div class="topnav">
   <div class="bar">
-    <a href="#start">Start</a>
-    <a href="#books">Books</a>
-    <a href="#resources">Resources</a>
-    <a href="/Bible/about.html">About</a>
-    <a href="#support">Support</a>
+    <a href="#start">Start</a><span class="sep">|</span>
+    <a href="#books">Books</a><span class="sep">|</span>
+    <a href="#resources">Resources</a><span class="sep">|</span>
+    <a href="/Bible/about.html">About</a><span class="sep">|</span>
+    <a href="#support">Support</a><span class="sep">|</span>
     <a href="#top">Top</a>
   </div>
 </div>
@@ -805,7 +791,6 @@
    Finished books list (edit once)
    ----------------------------- */
 const FINISHED_BOOKS = [
-  // Gospels
   {
     title: "Matthew",
     pill: "Gospel",
@@ -824,8 +809,6 @@ const FINISHED_BOOKS = [
       ["/Bible/John/preface.html","Preface"]
     ]
   },
-
-  // Epistles
   {
     title: "Romans",
     pill: "Epistle",
@@ -909,8 +892,6 @@ const FINISHED_BOOKS = [
       ["/Bible/James/index.html","Book Index"]
     ]
   },
-
-  // Apocalypse
   {
     title: "Revelation",
     pill: "Apocalypse",
@@ -920,8 +901,6 @@ const FINISHED_BOOKS = [
       ["/Bible/Revelation/preface.html","Preface"]
     ]
   },
-
-  // Selected OT
   {
     title: "Isaiah (Selected)",
     pill: "Prophet",
