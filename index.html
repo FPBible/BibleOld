@@ -37,10 +37,9 @@
       padding: 18px var(--pad) 42px;
     }
 
-    h1,h2,h3{ margin-top: 1.6em; margin-bottom: 0.45em; line-height: 1.2; }
-    h1{ margin-top: 0.9em; font-size: 2.1rem; letter-spacing: -0.2px; }
-    h2{ font-size: 1.35rem; }
-    h3{ font-size: 1.08rem; }
+    /* Redundant H1/H2 removed, kept H3 for sections */
+    h3{ margin-top: 1.6em; margin-bottom: 0.45em; line-height: 1.2; font-size: 1.08rem; }
+    h2{ font-size: 1.35rem; margin-top: 1.6em; margin-bottom: 0.45em; line-height: 1.2; }
 
     p{ margin: 0.75em 0; }
     ul{ margin: 0.6em 0 0.9em 1.15em; padding: 0; }
@@ -79,48 +78,14 @@
     }
     .topnav .sep{ opacity: 0.45; }
 
-    /* Pills / badges */
-    .pill{
-      display: inline-block;
-      border: 1px solid var(--line2);
-      border-radius: 999px;
-      padding: 2px 10px;
-      font-size: 0.9em;
-      margin: 0 6px 6px 0;
-      background: var(--soft2);
-    }
-
-    /* Cards / grids */
-    .grid{
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 14px;
-      margin-top: 12px;
-    }
-    @media(min-width: 900px){
-      .grid{ grid-template-columns: 1fr 1fr; }
-    }
-    .card{
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      padding: 14px 16px;
-      background: #fff;
-    }
-    .card h3{ margin-top: 0.2em; }
-    .card p{ margin: 0.35em 0 0.7em; }
-
-    /* Sections */
-    .section-head{
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px 10px;
-      align-items: baseline;
-      justify-content: space-between;
-      margin-top: 0.2em;
-    }
-    .section-head .hint{
-      font-size: 0.95em;
+    .tagline{
+      text-align: center;
+      font-weight: 500;
       color: var(--muted);
+      letter-spacing: 0.5px;
+      margin-top: -10px;
+      margin-bottom: 30px;
+      font-size: 1.1rem;
     }
 
     /* Manifesto */
@@ -142,41 +107,6 @@
       padding: 12px 14px;
       background: var(--soft2);
     }
-    .quick ul{ margin: 0.6em 0 0.2em 1.15em; }
-    .quick li{ margin: 0.35em 0; }
-
-    /* Support box (Ko-fi) */
-    .supportbox{
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      padding: 14px 16px;
-      background: var(--soft2);
-      margin-top: 14px;
-    }
-    .supportbox p{ margin: 0.45em 0; }
-    .supportbox .cta{
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      align-items: center;
-      margin-top: 10px;
-    }
-    .supportbox .btn{
-      display: inline-block;
-      border: 1px solid var(--line2);
-      border-radius: 999px;
-      padding: 8px 14px;
-      background: #fff;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    .supportbox .btn:hover{ opacity: 0.9; }
-
-    code{
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-                   "Liberation Mono","Courier New", monospace;
-      font-size: 0.96em;
-    }
 
     footer{
       margin-top: 2.2em;
@@ -192,11 +122,8 @@
       align-items: center;
       justify-content: space-between;
     }
-  
-    /* Hide specific UI elements */
-    .hide-element { display: none; }
   </style>
-  </head>
+</head>
 
 <body>
 
@@ -219,14 +146,15 @@
 
 <div class="wrap">
 
-  <div style="text-align: center; margin-bottom: 20px;">
-    <img src="images/og-light.png" alt="FPBible Logo" style="max-width: 500px; width: 100%; height: auto;">
+  <div style="text-align: center; margin: 30px 0 10px 0;">
+    <img src="images/og-light.png" alt="FPBible - The Fulfilled Prophecy Bible" style="max-width: 500px; width: 100%; height: auto;">
   </div>
 
-  <h1>The Fulfilled Prophecy Bible (WEB)</h1>
-  <h2>New Creation Lens · Covenant Transition · Fulfilled Horizon</h2>
+  <div class="tagline">
+    New Creation Lens · Covenant Transition · Fulfilled Horizon
+  </div>
 
-  <p>
+  <p style="text-align: center; max-width: 800px; margin: 0 auto 40px auto;">
     The Fulfilled Prophecy Bible presents the <strong>World English Bible (WEB)</strong> with structured Study Commentary that keeps Scripture within its
     original covenant horizon, while applying the finished reality of Christ clearly, directly, and without delay theology.
   </p>
@@ -246,7 +174,6 @@
         <li><strong>Read “The End of the Law”</strong> to lock covenant jurisdiction in Christ: <a href="/Bible/Prophecy/end-of-the-law.html">open</a>.</li>
         <li><strong>Read “The Day of Atonement”</strong> to lock Hebrews 9 language (judgment / appearing / salvation): <a href="/Bible/Prophecy/day-of-atonement.html">open</a>.</li>
         <li><strong>Open a book index</strong> and read chapter-by-chapter.</li>
-        <li><strong>Use “Scripture (WEB)” links</strong> in chapters to verify the base text.</li>
         <li><strong>Use the Prophecy Hub</strong> when you hit “coming / wrath / day / fire / resurrection / heaven &amp; earth”.</li>
       </ul>
 
