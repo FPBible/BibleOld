@@ -12,9 +12,6 @@
   <meta property="og:title" content="FPBible | Full Preterist Bible Commentary">
   <meta property="og:description" content="Explore the World English Bible through a 'Zero Futurism' lens. Focused on Covenant Transition and the finished work of Christ.">
   <meta property="og:image" content="https://fpbible.github.io/Bible/images/og-light.png">
-  
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="theme-color" content="#ffffff">
 
   <style>
     :root{
@@ -28,7 +25,7 @@
       --radius: 14px;
     }
     body{
-      font-family: system-ui, -apple-system, sans-serif;
+      font-family: system-ui, sans-serif;
       line-height: 1.65;
       margin: 0;
       color: #111;
@@ -40,9 +37,10 @@
       padding: 18px var(--pad) 42px;
     }
 
-    h2, h3{ margin-top: 1.6em; margin-bottom: 0.45em; line-height: 1.2; }
-    h2{ font-size: 1.5rem; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
-    h3{ font-size: 1.15rem; }
+    h1,h2,h3{ margin-top: 1.6em; margin-bottom: 0.45em; line-height: 1.2; }
+    h1{ margin-top: 0.9em; font-size: 2.1rem; letter-spacing: -0.2px; }
+    h2{ font-size: 1.35rem; }
+    h3{ font-size: 1.08rem; }
 
     p{ margin: 0.75em 0; }
     ul{ margin: 0.6em 0 0.9em 1.15em; padding: 0; }
@@ -51,11 +49,11 @@
     a{ color: inherit; text-decoration: underline; }
     a:hover{ opacity: 0.85; }
 
-    hr{ margin: 2.5em 0; border: 0; border-top: 1px solid var(--line); }
+    hr{ margin: 2.4em 0; border: 0; border-top: 1px solid var(--line); }
 
     .note{ font-size: 0.96em; color: var(--muted); }
 
-    /* Top nav - Mobile Responsive */
+    /* Top nav */
     .topnav{
       position: sticky;
       top: 0;
@@ -67,70 +65,129 @@
     .topnav .bar{
       max-width: var(--maxw);
       margin: 0 auto;
-      padding: 12px var(--pad);
+      padding: 10px var(--pad);
       display: flex;
       flex-wrap: wrap;
-      gap: 10px 14px;
+      gap: 10px 12px;
       align-items: center;
-      justify-content: center;
     }
     .topnav a{
-      text-decoration: none;
-      font-size: 0.9em;
-      font-weight: 500;
+      text-decoration: underline;
+      font-size: 0.95em;
       color: #111;
       white-space: nowrap;
     }
-    .topnav .sep{ opacity: 0.3; }
+    .topnav .sep{ opacity: 0.45; }
 
-    /* Custom Tagline */
-    .tagline{
-      text-align: center;
-      font-weight: 500;
-      color: var(--muted);
-      letter-spacing: 0.5px;
-      margin-top: -10px;
-      margin-bottom: 35px;
-      font-size: 1.1rem;
+    /* Pills / badges */
+    .pill{
+      display: inline-block;
+      border: 1px solid var(--line2);
+      border-radius: 999px;
+      padding: 2px 10px;
+      font-size: 0.9em;
+      margin: 0 6px 6px 0;
+      background: var(--soft2);
     }
 
     /* Cards / grids */
     .grid{
       display: grid;
       grid-template-columns: 1fr;
-      gap: 16px;
+      gap: 14px;
       margin-top: 12px;
     }
-    @media(min-width: 768px){
+    @media(min-width: 900px){
       .grid{ grid-template-columns: 1fr 1fr; }
     }
     .card{
       border: 1px solid var(--line);
       border-radius: var(--radius);
-      padding: 16px;
+      padding: 14px 16px;
       background: #fff;
     }
+    .card h3{ margin-top: 0.2em; }
+    .card p{ margin: 0.35em 0 0.7em; }
 
-    /* Manifesto & Quick Box */
-    .manifesto, .quick{
+    /* Sections */
+    .section-head{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 10px;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-top: 0.2em;
+    }
+    .section-head .hint{
+      font-size: 0.95em;
+      color: var(--muted);
+    }
+
+    /* Manifesto */
+    .lead{ font-size: 1.06em; }
+    .manifesto{
       border: 1px solid var(--line);
       border-radius: var(--radius);
-      padding: 20px;
+      padding: 16px 18px;
       background: var(--soft2);
     }
+    .manifesto ul{ margin-top: 0.9em; }
+    .manifesto li{ margin: 0.62em 0; }
+    .closing{ margin-top: 1.1em; font-size: 1.05em; }
 
-    .btn-container { text-align: center; margin-top: 20px; }
+    /* Quick links / note boxes */
+    .quick{
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 14px 16px;
+      background: var(--soft2);
+    }
+    .quick ul{ margin: 0.6em 0 0.2em 1.15em; }
+    .quick li{ margin: 0.35em 0; }
+
+    /* Ko-fi support button */
+    .support{
+      margin-top: 2em;
+      padding-top: 1em;
+      border-top: 1px solid var(--line);
+    }
+    .kofi{
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 10px 12px;
+      background: #fff;
+      text-decoration: none;
+    }
+    .kofi:hover{ opacity: 0.9; }
+    .kofi span{
+      text-decoration: underline;
+      font-size: 0.95em;
+    }
+
+    @media (max-width: 520px){
+      h1{ font-size: 1.85rem; }
+      .topnav .bar{ gap: 8px 10px; }
+    }
 
     footer{
-      margin-top: 3em;
-      padding: 2em 0;
+      margin-top: 2.2em;
+      padding-top: 1.2em;
       border-top: 1px solid var(--line);
       color: var(--muted);
-      font-size: 0.9em;
-      text-align: center;
+      font-size: 0.96em;
+    }
+    footer .row{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+      align-items: center;
+      justify-content: space-between;
     }
   </style>
-</head>
+  </head>
 
 <body>
 
@@ -141,7 +198,11 @@
     <a href="#start">Start</a><span class="sep">|</span>
     <a href="#manifesto">New Creation</a><span class="sep">|</span>
     <a href="#books">Books</a><span class="sep">|</span>
+    <a href="#resurrection">Resurrection</a><span class="sep">|</span>
     <a href="#prophecy">Prophecy Hub</a><span class="sep">|</span>
+    <a href="#topics">Core Topics</a><span class="sep">|</span>
+    <a href="#studies">Studies</a><span class="sep">|</span>
+    <a href="#extras">Life / Thoughts / Audio</a><span class="sep">|</span>
     <a href="#support">Support</a><span class="sep">|</span>
     <a href="#top">Top</a>
   </div>
@@ -149,15 +210,11 @@
 
 <div class="wrap">
 
-  <div style="text-align: center; margin: 35px 0 10px 0;">
-    <img src="images/og-light.png" alt="FPBible - The Fulfilled Prophecy Bible" style="max-width: 500px; width: 100%; height: auto;">
+  <div style="text-align: center; margin: 1.5em 0 1.8em;">
+    <img src="images/og-light.png" alt="FPBible Logo" style="max-width: 500px; width: 100%; height: auto;">
   </div>
 
-  <div class="tagline">
-    New Creation Lens · Covenant Transition · Fulfilled Horizon
-  </div>
-
-  <p style="text-align: center; max-width: 850px; margin: 0 auto 40px auto; font-size: 1.05rem;">
+  <p style="font-size: 1.05em; max-width: 76ch; margin: 0 auto 0;">
     The Fulfilled Prophecy Bible presents the <strong>World English Bible (WEB)</strong> with structured Study Commentary that keeps Scripture within its
     original covenant horizon, while applying the finished reality of Christ clearly, directly, and without delay theology.
   </p>
@@ -165,56 +222,484 @@
   <hr />
 
   <section id="start">
-    <h2>Start Here</h2>
+    <div class="section-head">
+      <h2>Start Here</h2>
+      <div class="hint">Four anchor pages + book index</div>
+    </div>
+
     <div class="quick">
       <p><strong>Text based on the World English Bible (WEB) with Fulfilled Prophecy Study Commentary.</strong></p>
       <ul>
-        <li><strong>New Creation Manifesto:</strong> Read our core framework below.</li>
-        <li><strong>The Resurrection:</strong> Anchor your "life now" perspective <a href="/Bible/Resurrection/index.html">here</a>.</li>
-        <li><strong>Covenant Jurisdiction:</strong> Understand why the Law ended at <a href="/Bible/Prophecy/end-of-the-law.html">The End of the Law</a>.</li>
-        <li><strong>The Prophecy Hub:</strong> Your dictionary for terms like "Coming," "Fire," and "Clouds."</li>
+        <li><strong>Read the New Creation manifesto</strong> below (2 minutes).</li>
+        <li><strong>Read the Resurrection page</strong> (5–10 minutes) to anchor the "life now" framework.</li>
+        <li><strong>Read "The End of the Law"</strong> to lock covenant jurisdiction in Christ: <a href="/Bible/Prophecy/end-of-the-law.html">open</a>.</li>
+        <li><strong>Read "The Day of Atonement"</strong> to lock Hebrews 9 language (judgment / appearing / salvation): <a href="/Bible/Prophecy/day-of-atonement.html">open</a>.</li>
+        <li><strong>Open a book index</strong> and read chapter-by-chapter.</li>
+        <li><strong>Use "Scripture (WEB)" links</strong> in chapters to verify the base text.</li>
+        <li><strong>Use the Prophecy Hub</strong> when you hit "coming / wrath / day / fire / resurrection / heaven &amp; earth".</li>
       </ul>
+
+      <p class="note" style="margin-top: 1em;">
+        Locked project standard:
+        <a href="/Bible/standard.html">The Fulfilled Prophecy Bible Chapter Standard</a>
+      </p>
     </div>
   </section>
 
   <hr />
 
   <section id="manifesto" class="manifesto">
-    <h2>Living in the New Creation</h2>
-    <p>Christian faith is not defined by waiting, countdowns, or speculation. Its center is <strong>presence</strong> — a settled life grounded in what Christ has already accomplished.</p>
-    <p>We let time-statements speak plainly, treat prophetic language as covenant imagery, and live from access already given, not access still to be earned.</p>
+    <h2 style="margin-top: 0.3em;">Living in the New Creation</h2>
+
+    <p class="lead">
+      Christian faith is not defined by waiting, countdowns, or speculation.
+      Its center is <strong>presence</strong> — a settled life grounded in what Christ has already accomplished.
+    </p>
+
+    <p>
+      The Fulfilled Prophecy Bible reads Scripture through completion rather than postponement.
+      We let time-statements speak plainly, treat prophetic language as prophetic (Hebrew idiom, covenant imagery),
+      and live from access already given, not access still to be earned.
+    </p>
+
     <ul>
       <li><strong>Presence, not distance</strong> — God with us in ordinary life.</li>
       <li><strong>Fulfillment, not delay</strong> — promises matured into lived reality.</li>
       <li><strong>Identity, not anticipation</strong> — we are new, not nearly new.</li>
+      <li><strong>Spirit, not performance</strong> — life expressed, not maintained by fear.</li>
+      <li><strong>Clarity, not frenzy</strong> — prophecy handled once, then linked via the Hub.</li>
     </ul>
-    <p><a href="/Bible/NewCreation/manifesto.html">Read the full New Creation Manifesto →</a></p>
+
+    <p class="closing">
+      <a href="/Bible/NewCreation/manifesto.html">Read more: The New Creation Manifesto</a>
+    </p>
+  </section>
+
+  <hr />
+
+  <section id="resurrection">
+    <div class="section-head">
+      <h2>Resurrection</h2>
+      <div class="hint">Not postponed: covenant victory over "death" (Law's condemnation) in Christ.</div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <span class="pill">Core Pillar</span>
+        <span class="pill">Fulfilled</span>
+        <h3>Resurrection — From Death to Life</h3>
+        <p>
+          A concise, Scripture-heavy evaluation of resurrection as covenant transition:
+          prophets → apostolic horizon → 1 Corinthians 15 → present life in Christ.
+        </p>
+        <ul>
+          <li><a href="/Bible/Resurrection/index.html">Open Resurrection</a></li>
+        </ul>
+        <p class="note">
+          Key anchors: Ezek 37 · Isa 25–26 · Dan 12 · Matt 24 · 1 Cor 15 · Eph 2 · Col 2–3 · Heb 8–10,12 · Rev 20–22.
+        </p>
+      </div>
+
+      <div class="card">
+        <span class="pill">Cross-links</span>
+        <h3>Where it connects</h3>
+        <p>
+          Resurrection is the hinge between fulfilled judgment and New Creation life.
+          These pages link outward from the resurrection reality.
+        </p>
+        <ul>
+          <li><a href="/Bible/Prophecy/end-of-the-law.html">The End of the Law (jurisdiction)</a></li>
+          <li><a href="/Bible/Prophecy/day-of-atonement.html">The Day of Atonement (Hebrews 9 anchor)</a></li>
+          <li><a href="/Bible/Prophecy/death.html">Death (covenant death)</a></li>
+          <li><a href="/Bible/Prophecy/new-creation.html">New Creation (present reality)</a></li>
+          <li><a href="/Bible/Life/index.html">Life (how we live now)</a></li>
+        </ul>
+      </div>
+    </div>
   </section>
 
   <hr />
 
   <section id="books">
-    <h2>Books & Commentary</h2>
+    <div class="section-head">
+      <h2>Books</h2>
+      <div class="hint">Each book contains a book index, preface, appendix, and chapter files.</div>
+    </div>
+
+    <p class="note">
+      Example chapter naming: <code>rom1.html</code>, <code>heb1.html</code>, <code>rev14.html</code>.
+      Chapters present <strong>Scripture (WEB)</strong> followed by <strong>Fulfillment Notes</strong> and expanded commentary.
+    </p>
+
+    <div class="grid">
+
+      <div class="card">
+        <span class="pill">Gospel</span>
+        <h3>Matthew</h3>
+        <p>
+          Jesus, covenant crisis, the Olivet Discourse, and the end of the Mosaic age.
+          The interpretive spine for New Testament judgment language.
+        </p>
+        <ul>
+          <li><a href="/Bible/Matthew/index.html">Book Index</a></li>
+          <li><a href="/Bible/Matthew/preface.html">Preface</a></li>
+          <li><a href="/Bible/Matthew/appendix.html">Appendix</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <span class="pill">Gospel</span>
+        <h3>John</h3>
+        <p>Light vs darkness, sonship vs slavery, temple replacement, and life already present in Him.</p>
+        <ul>
+          <li><a href="/Bible/John/index.html">Book Index</a></li>
+          <li><a href="/Bible/John/preface.html">Preface</a></li>
+          <li><a href="/Bible/John/appendix-fulfillment.html">Appendix</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <span class="pill">Epistle</span>
+        <h3>Romans</h3>
+        <p>Righteousness apart from Law, condemnation dismantled, Spirit-life as present identity.</p>
+        <ul>
+          <li><a href="/Bible/Romans/index.html">Book Index</a></li>
+          <li><a href="/Bible/Romans/preface.html">Preface</a></li>
+          <li><a href="/Bible/Romans/appendix.html">Appendix</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <span class="pill">Epistle</span>
+        <h3>Hebrews</h3>
+        <p>End of sacrifice and priesthood, access secured, transition from shadow to substance.</p>
+        <ul>
+          <li><a href="/Bible/Hebrews/index.html">Book Index</a></li>
+          <li><a href="/Bible/Hebrews/preface.html">Preface</a></li>
+          <li><a href="/Bible/Hebrews/appendix.html">Appendix</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <span class="pill">Epistle</span>
+        <h3>Galatians</h3>
+        <p>Freedom from Torah-identity, sonship by promise, Spirit as the operating reality of the new world.</p>
+        <ul>
+          <li><a href="/Bible/Galatians/index.html">Book Index</a></li>
+          <li><a href="/Bible/Galatians/preface.html">Preface</a></li>
+          <li><a href="/Bible/Galatians/appendix.html">Appendix</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <span class="pill">Epistle</span>
+        <h3>1 Corinthians</h3>
+        <p>One-body life, holiness without legalism, and resurrection as covenant victory in Christ.</p>
+        <ul>
+          <li><a href="/Bible/1Corinthians/index.html">Book Index</a></li>
+          <li><a href="/Bible/1Corinthians/preface.html">Preface</a></li>
+          <li><a href="/Bible/1Corinthians/appendix.html">Appendix</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <span class="pill">Epistle</span>
+        <h3>2 Corinthians</h3>
+        <p>Veil removed, reconciliation proclaimed, true authority revealed through weakness.</p>
+        <ul>
+          <li><a href="/Bible/2Corinthians/index.html">Book Index</a></li>
+          <li><a href="/Bible/2Corinthians/preface.html">Preface</a></li>
+          <li><a href="/Bible/2Corinthians/appendix.html">Appendix</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <span class="pill">Epistle</span>
+        <h3>1 Thessalonians</h3>
+        <p>A New Creation church under pressure: faith, love, holiness, and the Lord's royal presence without escapism.</p>
+        <ul>
+          <li><a href="/Bible/1Thessalonians/index.html">Book Index</a></li>
+          <li><a href="/Bible/1Thessalonians/preface.html">Preface</a></li>
+          <li><a href="/Bible/1Thessalonians/appendix.html">Appendix</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <span class="pill">Epistle</span>
+        <h3>2 Thessalonians</h3>
+        <p>Panic corrected, lawlessness exposed, steady New Creation life restored under Christ's present reign.</p>
+        <ul>
+          <li><a href="/Bible/2Thessalonians/index.html">Book Index</a></li>
+          <li><a href="/Bible/2Thessalonians/preface.html">Preface</a></li>
+          <li><a href="/Bible/2Thessalonians/appendix.html">Appendix</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <span class="pill">Epistle</span>
+        <h3>James</h3>
+        <p>Undivided loyalty, wisdom from above, mercy over status, integrity of speech, patience, prayer, healing, restoration.</p>
+        <ul>
+          <li><a href="/Bible/James/index.html">Book Index</a></li>
+          <li><a href="/Bible/James/preface.html">Preface</a></li>
+          <li><a href="/Bible/James/appendix.html">Appendix</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <span class="pill">Epistle</span>
+        <h3>Ephesians</h3>
+        <p>Union with Christ, one new humanity, Spirit-filled life as the normal reality of the new world.</p>
+        <ul>
+          <li><a href="/Bible/Ephesians/index.html">Book Index</a></li>
+          <li><a href="/Bible/Ephesians/preface.html">Preface</a></li>
+          <li><a href="/Bible/Ephesians/appendix.html">Appendix</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <span class="pill">Epistle</span>
+        <h3>Colossians</h3>
+        <p>Christ as fullness, old humanity stripped off, new humanity lived now — rooted, not postponed.</p>
+        <ul>
+          <li><a href="/Bible/Colossians/index.html">Book Index</a></li>
+          <li><a href="/Bible/Colossians/preface.html">Preface</a></li>
+          <li><a href="/Bible/Colossians/appendix.html">Appendix</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <span class="pill">Apocalypse</span>
+        <h3>Revelation</h3>
+        <p>Symbolic first-century apocalyptic language unveiling covenant judgment, fall of the old order, and New Jerusalem reality.</p>
+        <ul>
+          <li><a href="/Bible/Revelation/index.html">Book Index</a></li>
+          <li><a href="/Bible/Revelation/preface.html">Preface</a></li>
+          <li><a href="/Bible/Revelation/appendix.html">Appendix</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <hr />
+
+  <section id="prophecy">
+    <div class="section-head">
+      <h2>Prophecy Hub</h2>
+      <div class="hint">Centralised fulfillment explanations and framework anchors.</div>
+    </div>
+
+    <div class="grid">
+
+      <div class="card">
+        <span class="pill">Hub</span>
+        <h3>Prophecy Hub Index</h3>
+        <p>Start here when you hit: coming, wrath, fire, resurrection, heaven &amp; earth, beasts, Babylon, clouds.</p>
+        <ul>
+          <li><a href="/Bible/Prophecy/index.html">Open Hub Index</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <span class="pill">Framework</span>
+        <h3>The End of the Law — Covenant Jurisdiction After Christ</h3>
+        <p>Why Sinai has no jurisdiction in Christ, why AD 70 ended the Law system, and why "New Creation + Law" is a contradiction.</p>
+        <ul>
+          <li><a href="/Bible/Prophecy/end-of-the-law.html">Open Article</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <span class="pill">Framework</span>
+        <h3>The Day of Atonement — Fulfilled (Hebrews 8–10)</h3>
+        <p>Hebrews 9 read correctly: sanctuary logic, priestly "appearing", covenant judgment, and salvation as public closure of the old temple system.</p>
+        <ul>
+          <li><a href="/Bible/Prophecy/day-of-atonement.html">Open Article</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <span class="pill">Framework</span>
+        <h3>Death — Covenant Death, Life in Christ</h3>
+        <p>Death in Scripture as covenant separation and condemnation, and Christ's finished victory over it.</p>
+        <ul>
+          <li><a href="/Bible/Prophecy/death.html">Open Article</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <span class="pill">Framework</span>
+        <h3>Life — Eternal Life as Present Reality</h3>
+        <p>Eternal life defined covenantally: access, union, and life in the Spirit now (not a postponed reward).</p>
+        <ul>
+          <li><a href="/Bible/Prophecy/life.html">Open Article</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <span class="pill">Hub Article</span>
+        <h3>Revelation — Symbol, Judgment, Victory</h3>
+        <p>First-century apocalyptic language: covenant judgment, vindication, and New Jerusalem reality.</p>
+        <ul>
+          <li><a href="/Bible/Prophecy/revelation.html">Open Article</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <span class="pill">Presence</span>
+        <h3>Parousia — Presence, Not Delay</h3>
+        <p>Presence replaces anticipation. Time-texts handled plainly. No futurist drift.</p>
+        <ul>
+          <li><a href="/Bible/Prophecy/parousia.html">Open</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <span class="pill">New Creation</span>
+        <h3>New Creation — Living From What's Finished</h3>
+        <p>Present reality, covenant shift, and life in the Spirit without "almost" language.</p>
+        <ul>
+          <li><a href="/Bible/Prophecy/new-creation.html">Open</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <span class="pill">Key Terms</span>
+        <h3>Hell &amp; Satan (Key Terms)</h3>
+        <p>Gehenna / Hades / adversary language handled covenantally, not as modern mythology.</p>
+        <ul>
+          <li><a href="/Bible/Prophecy/hell.html">Hell</a></li>
+          <li><a href="/Bible/Prophecy/satan.html">Satan</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <hr />
+
+  <section id="topics">
+    <div class="section-head">
+      <h2>Core Topics</h2>
+      <div class="hint">Straight definitions — no delay theology, no fear framing.</div>
+    </div>
+
+    <div class="grid">
+
+      <div class="card">
+        <span class="pill">Core</span>
+        <h3>Salvation — What It Means</h3>
+        <p>Salvation defined in covenant terms: rescue into Christ, into life, into the New Covenant reality now.</p>
+        <ul><li><a href="/Bible/Salvation/index.html">Open</a></li></ul>
+      </div>
+
+      <div class="card">
+        <span class="pill">Prophecy</span>
+        <h3>Hell — Word Origins and Covenant Meaning</h3>
+        <p>Gehenna / Hades language handled covenantally, not as eternal-torture theatre.</p>
+        <ul><li><a href="/Bible/Prophecy/hell.html">Open</a></li></ul>
+      </div>
+
+      <div class="card">
+        <span class="pill">Prophecy</span>
+        <h3>Satan — Adversary Language</h3>
+        <p>Adversary imagery in its covenant-historical context.</p>
+        <ul><li><a href="/Bible/Prophecy/satan.html">Open</a></li></ul>
+      </div>
+
+      <div class="card">
+        <span class="pill">New Creation</span>
+        <h3>New Creation — Living From What's Finished</h3>
+        <p>Present reality, covenant shift, and life in the Spirit without "almost" language.</p>
+        <ul><li><a href="/Bible/Prophecy/new-creation.html">Open</a></li></ul>
+      </div>
+
+      <div class="card">
+        <span class="pill">Presence</span>
+        <h3>Parousia — Presence, Not Delay</h3>
+        <p>Presence replaces anticipation. Time-texts handled plainly. No futurist drift.</p>
+        <ul><li><a href="/Bible/Prophecy/parousia.html">Open</a></li></ul>
+      </div>
+
+      <div class="card">
+        <span class="pill">Framework</span>
+        <h3>Death — Covenant Death</h3>
+        <p>Death language in Scripture as covenant separation and condemnation, and Christ's finished victory over it.</p>
+        <ul><li><a href="/Bible/Prophecy/death.html">Open</a></li></ul>
+      </div>
+
+    </div>
+  </section>
+
+  <hr />
+
+  <section id="studies">
+    <div class="section-head">
+      <h2>Studies</h2>
+      <div class="hint">Long-form material that supports the framework (scripture-heavy).</div>
+    </div>
+
     <div class="grid">
       <div class="card">
-        <h3>Matthew</h3>
-        <p>The interpretive spine for New Testament judgment language and the end of the Mosaic age.</p>
-        <a href="/Bible/Matthew/index.html">View Chapters</a>
+        <span class="pill">Study</span>
+        <h3>The Parousia (Modern Study)</h3>
+        <p>Audience relevance, covenant idiom, and first-century fulfillment—built to stay readable and verifiable.</p>
+        <ul>
+          <li><a href="/Bible/Studies/index.html">Open Studies</a></li>
+        </ul>
       </div>
+
       <div class="card">
-        <h3>Romans</h3>
-        <p>Righteousness apart from Law and Spirit-life as our present, finished identity.</p>
-        <a href="/Bible/Romans/index.html">View Chapters</a>
+        <span class="pill">Study</span>
+        <h3>Language &amp; Idiom</h3>
+        <p>Hebrew covenant-language (heaven &amp; earth, sun/moon/stars, clouds, fire) and how prophecy actually speaks.</p>
+        <ul>
+          <li><a href="/Bible/Prophecy/index.html">Start in Prophecy Hub</a></li>
+        </ul>
       </div>
+    </div>
+
+    <p class="note">
+      Studies aim to reduce repetition: chapters link out to the Prophecy Hub for "once-and-done" definitions.
+    </p>
+  </section>
+
+  <hr />
+
+  <section id="extras">
+    <div class="section-head">
+      <h2>Life / Thoughts / Audio</h2>
+      <div class="hint">Living the New Creation — practice, presence, clarity.</div>
+    </div>
+
+    <div class="grid">
       <div class="card">
-        <h3>Hebrews</h3>
-        <p>The transition from shadow to substance. The public closure of the old temple system.</p>
-        <a href="/Bible/Hebrews/index.html">View Chapters</a>
+        <span class="pill">Life</span>
+        <h3>Life</h3>
+        <p>Practical pages for living from union: presence, peace, and Spirit-led normal life.</p>
+        <ul><li><a href="/Bible/Life/index.html">Open</a></li></ul>
       </div>
+
       <div class="card">
-        <h3>Revelation</h3>
-        <p>Unveiling the fall of the old order and the present reality of the New Jerusalem.</p>
-        <a href="/Bible/Revelation/index.html">View Chapters</a>
+        <span class="pill">Thoughts</span>
+        <h3>Thoughts</h3>
+        <p>Short, direct clarifications—designed for sharing and quick grounding.</p>
+        <ul><li><a href="/Bible/Thoughts/index.html">Open</a></li></ul>
+      </div>
+
+      <div class="card">
+        <span class="pill">Audio</span>
+        <h3>Audio</h3>
+        <p>Proclamation and meditation tracks aimed at mind-renewal and presence.</p>
+        <ul><li><a href="/Bible/Audio/index.html">Open</a></li></ul>
+      </div>
+
+      <div class="card">
+        <span class="pill">New Creation</span>
+        <h3>New Creation</h3>
+        <p>Manifesto and framework pages for living from what is finished.</p>
+        <ul><li><a href="/Bible/NewCreation/manifesto.html">Open Manifesto</a></li></ul>
       </div>
     </div>
   </section>
@@ -222,27 +707,44 @@
   <hr />
 
   <section id="support">
-    <div style="text-align: center; padding: 20px;">
-      <h2>Support the Project</h2>
-      <p style="max-width: 600px; margin: 0 auto 25px auto;">
-        FPBible is a free resource dedicated to the finished work of Christ. If these studies help you, consider supporting the work.
+    <div class="section-head">
+      <h2>Support</h2>
+      <div class="hint">If this resource helps you, you can help sustain it.</div>
+    </div>
+
+    <div class="quick">
+      <p>
+        The Fulfilled Prophecy Bible is designed to stay free and accessible.
+        If this work has been helpful, you can support ongoing development:
       </p>
       
-      <div class="btn-container">
-        <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
-        <script type='text/javascript'>
-          kofiwidget2.init('Support me on Ko-fi', '#72a4f2', 'B0B61QC1BU');
-          kofiwidget2.draw();
-        </script>
-      </div>
-      <p class="note" style="margin-top: 25px;">No pressure, no paywalls. Just pure study resource.</p>
+      <p style="margin-top: 1.2em;">
+        <a class="kofi" href="https://ko-fi.com/B0B61QC1BU" target="_blank" rel="noopener noreferrer" aria-label="Support this project on Ko-fi">
+          <img height="36" style="border:0;height:36px;" src="https://storage.ko-fi.com/cdn/kofi5.png?v=6" alt="Ko-fi" />
+          <span>Support on Ko-fi</span>
+        </a>
+      </p>
+
+      <p class="note" style="margin-top: 0.8em;">
+        If the button doesn't load: <a href="https://ko-fi.com/B0B61QC1BU" target="_blank" rel="noopener noreferrer">ko-fi.com/B0B61QC1BU</a>
+      </p>
     </div>
   </section>
 
+  <hr />
+
   <footer>
-    <p><strong>The Fulfilled Prophecy Bible</strong></p>
-    <p class="note">World English Bible (WEB) + Full Preterist Commentary</p>
-    <p><a href="#top">Back to Top</a></p>
+    <div class="row">
+      <div>
+        <strong>The Fulfilled Prophecy Bible</strong> — Text based on the <strong>World English Bible (WEB)</strong> with Fulfilled Prophecy Study Commentary
+      </div>
+      <div>
+        <a href="https://ko-fi.com/fpbible" target="_blank" rel="noopener">Support</a> · <a href="#top">Back to top</a>
+      </div>
+    </div>
+    <p class="note">
+      Notes are written to honour audience relevance and time statements, and to avoid futurist drift.
+    </p>
   </footer>
 
 </div>
