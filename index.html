@@ -55,7 +55,11 @@
     hr{ margin: 2.8em 0; border: 0; border-top: 1px solid var(--line); }
     .note{ font-size: 0.96em; color: var(--muted); }
 
-    /* Top nav (match /NewCreation/manifesto.html) */
+    /* TOP NAV — now matches manifesto behavior:
+       - sticky
+       - grouped
+       - wraps on mobile (NO horizontal scrolling)
+    */
     .topnav{
       position: sticky;
       top: 0;
@@ -69,27 +73,20 @@
       margin: 0 auto;
       padding: 10px var(--pad);
       display: flex;
-      flex-wrap: nowrap;               /* keep it one row */
-      gap: 0;                          /* separators provide spacing */
+      flex-wrap: wrap;            /* ✅ allow wrapping */
+      gap: 10px 12px;             /* ✅ nice spacing */
       align-items: center;
-      overflow-x: auto;                /* if it can't fit, swipe sideways */
-      -webkit-overflow-scrolling: touch;
-      white-space: nowrap;
+      justify-content: center;    /* ✅ centered rows */
+      white-space: normal;        /* ✅ allow line breaks */
+      overflow-x: visible;        /* ✅ no sideways scroll */
     }
-    .topnav .bar::-webkit-scrollbar{ display: none; }
     .topnav a{
       text-decoration: underline;
       font-size: 0.95em;
       color: #111;
       white-space: nowrap;
-      padding: 2px 2px;                /* tight */
     }
     .topnav a:hover{ opacity: 0.85; }
-    .topnav .sep{
-      opacity: 0.45;
-      padding: 0 8px;
-      user-select: none;
-    }
 
     /* Under construction banner */
     .banner{
@@ -351,12 +348,13 @@
 <body>
 <a id="top"></a>
 
+<!-- NAV (WRAP-SAFE, NO HORIZONTAL SCROLL) -->
 <div class="topnav">
   <div class="bar">
-    <a href="#start">Start</a><span class="sep">|</span>
-    <a href="#books">Books</a><span class="sep">|</span>
-    <a href="#resources">Resources</a><span class="sep">|</span>
-    <a href="/Bible/about.html">About</a><span class="sep">|</span>
+    <a href="#start">Start</a>
+    <a href="#books">Books</a>
+    <a href="#resources">Resources</a>
+    <a href="/Bible/about.html">About</a>
     <a href="#support">Support</a>
   </div>
 </div>
@@ -495,47 +493,6 @@
 
   <hr />
 
-  <!-- RESURRECTION -->
-  <section id="resurrection">
-    <div class="section-head">
-      <h2>Resurrection — The Hinge of Everything</h2>
-      <div class="hint">Covenant victory over “death” (Law’s condemnation) in Christ</div>
-    </div>
-
-    <div class="grid">
-      <div class="card">
-        <span class="pill">Core Pillar</span>
-        <span class="pill">Fulfilled</span>
-        <h3>Resurrection — From Death to Life</h3>
-        <p>
-          A concise, Scripture-heavy evaluation of resurrection as covenant transition:
-          prophets → apostolic horizon → 1 Corinthians 15 → present life in Christ.
-        </p>
-        <ul>
-          <li><a href="/Bible/Resurrection/index.html"><strong>Open Resurrection Page</strong></a></li>
-        </ul>
-        <p class="note">
-          Key anchors: Ezek 37 · Isa 25–26 · Dan 12 · Matt 24 · 1 Cor 15 · Eph 2 · Col 2–3 · Heb 8–10,12 · Rev 20–22.
-        </p>
-      </div>
-
-      <div class="card">
-        <span class="pill">Cross-links</span>
-        <h3>Connected Topics</h3>
-        <p>Resurrection is the hinge between fulfilled judgment and New Creation life.</p>
-        <ul>
-          <li><a href="/Bible/Prophecy/end-of-the-law.html">The End of the Law</a> — jurisdiction</li>
-          <li><a href="/Bible/Prophecy/day-of-atonement.html">The Day of Atonement</a> — Hebrews 9 anchor</li>
-          <li><a href="/Bible/Prophecy/death.html">Death</a> — covenant death defined</li>
-          <li><a href="/Bible/Prophecy/new-creation.html">New Creation</a> — present reality</li>
-          <li><a href="/Bible/Life/index.html">Life</a> — how we live now</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <hr />
-
   <!-- BOOKS -->
   <section id="books">
     <div class="section-head">
@@ -570,7 +527,6 @@
 
     <h3 style="margin-top: 1.2em;">Framework Anchors</h3>
     <div class="grid">
-
       <div class="card">
         <span class="pill">Essential</span>
         <h3>The End of the Law</h3>
@@ -598,14 +554,12 @@
         <p>Eternal life defined covenantally: access, union, and life in the Spirit now (not a postponed reward).</p>
         <ul><li><a href="/Bible/Prophecy/life.html">Open Article</a></li></ul>
       </div>
-
     </div>
 
     <h3 style="margin-top: 2em;">Prophecy Hub</h3>
     <p class="note">Centralized fulfillment explanations for recurring terms: coming, wrath, fire, resurrection, heaven &amp; earth, clouds.</p>
 
     <div class="grid">
-
       <div class="card">
         <span class="pill">Hub Index</span>
         <h3>Prophecy Hub</h3>
@@ -647,12 +601,10 @@
         <p>Adversary imagery in its covenant-historical context.</p>
         <ul><li><a href="/Bible/Prophecy/satan.html">Open</a></li></ul>
       </div>
-
     </div>
 
     <h3 style="margin-top: 2em;">Studies &amp; Life Application</h3>
     <div class="grid">
-
       <div class="card">
         <span class="pill">Study</span>
         <h3>Studies</h3>
@@ -687,7 +639,6 @@
         <p>Salvation defined in covenant terms: rescue into Christ, into life, into the New Covenant reality now.</p>
         <ul><li><a href="/Bible/Salvation/index.html">Open</a></li></ul>
       </div>
-
     </div>
   </section>
 
