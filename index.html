@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>FPBible | The Full Preterist Bible & New Creation Commentary</title>
+  <title>FPBible | The Full Preterist Bible &amp; New Creation Commentary</title>
   <meta name="description" content="World English Bible (WEB) text with fulfilled covenant-transition commentary (AD 30–70) and New Creation clarity—without futurist delay theology." />
 
   <meta property="og:type" content="website">
@@ -56,37 +56,52 @@
 
     .note{ font-size: 0.96em; color: var(--muted); }
 
-    /* Top nav */
+    /* Top nav (site-consistent, sticky, scroll-safe) */
     .topnav{
       position: sticky;
       top: 0;
-      z-index: 20;
-      background: rgba(255,255,255,0.95);
+      z-index: 50;
+      background: rgba(255,255,255,0.92);
       backdrop-filter: blur(8px);
       border-bottom: 1px solid var(--line);
     }
     .topnav .bar{
       max-width: var(--maxw);
       margin: 0 auto;
-      padding: 12px var(--pad);
+      padding: 10px var(--pad);
       display: flex;
       flex-wrap: wrap;
-      gap: 12px 16px;
+      gap: 10px 12px;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
     }
     .topnav a{
       text-decoration: none;
       font-size: 0.95em;
-      font-weight: 500;
+      font-weight: 600;
       color: #111;
       white-space: nowrap;
-      border-bottom: 2px solid transparent;
-      transition: border-color 0.2s;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      background: transparent;
     }
     .topnav a:hover{
       opacity: 1;
-      border-bottom-color: var(--accent);
+      background: var(--soft2);
+      border-color: var(--line);
+    }
+    .topnav a.active{
+      background: var(--soft2);
+      border-color: var(--line2);
+    }
+    @media (max-width: 768px){
+      .topnav .bar{
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+      .topnav .bar::-webkit-scrollbar{ display: none; }
     }
 
     /* Under construction banner */
@@ -330,14 +345,6 @@
 
     @media (max-width: 768px){
       .hero h1{ font-size: 1.9rem; }
-      .topnav .bar{
-        overflow-x: auto;
-        justify-content: flex-start;
-        padding-left: var(--pad);
-        padding-right: var(--pad);
-        -webkit-overflow-scrolling: touch;
-      }
-      .topnav .bar::-webkit-scrollbar{ display: none; }
       .stats{ gap: 15px 25px; }
       .card{ padding: 14px 16px; }
     }
@@ -364,6 +371,7 @@
     <a href="#resources">Resources</a>
     <a href="/Bible/about.html">About</a>
     <a href="#support">Support</a>
+    <a href="#top">Top</a>
   </div>
 </div>
 
