@@ -12,6 +12,9 @@
   <meta property="og:title" content="FPBible | Full Preterist Bible Commentary">
   <meta property="og:description" content="Explore the World English Bible through a 'Zero Futurism' lens. Focused on Covenant Transition and the finished work of Christ.">
   <meta property="og:image" content="https://fpbible.github.io/Bible/images/og-light.png">
+  
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#ffffff">
 
   <style>
     :root{
@@ -25,7 +28,7 @@
       --radius: 14px;
     }
     body{
-      font-family: system-ui, sans-serif;
+      font-family: system-ui, -apple-system, sans-serif;
       line-height: 1.65;
       margin: 0;
       color: #111;
@@ -37,9 +40,9 @@
       padding: 18px var(--pad) 42px;
     }
 
-    /* Redundant H1/H2 removed, kept H3 for sections */
-    h3{ margin-top: 1.6em; margin-bottom: 0.45em; line-height: 1.2; font-size: 1.08rem; }
-    h2{ font-size: 1.35rem; margin-top: 1.6em; margin-bottom: 0.45em; line-height: 1.2; }
+    h2, h3{ margin-top: 1.6em; margin-bottom: 0.45em; line-height: 1.2; }
+    h2{ font-size: 1.5rem; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+    h3{ font-size: 1.15rem; }
 
     p{ margin: 0.75em 0; }
     ul{ margin: 0.6em 0 0.9em 1.15em; padding: 0; }
@@ -48,11 +51,11 @@
     a{ color: inherit; text-decoration: underline; }
     a:hover{ opacity: 0.85; }
 
-    hr{ margin: 2.0em 0; border: 0; border-top: 1px solid var(--line); }
+    hr{ margin: 2.5em 0; border: 0; border-top: 1px solid var(--line); }
 
     .note{ font-size: 0.96em; color: var(--muted); }
 
-    /* Top nav */
+    /* Top nav - Mobile Responsive */
     .topnav{
       position: sticky;
       top: 0;
@@ -64,63 +67,67 @@
     .topnav .bar{
       max-width: var(--maxw);
       margin: 0 auto;
-      padding: 10px var(--pad);
+      padding: 12px var(--pad);
       display: flex;
       flex-wrap: wrap;
-      gap: 10px 12px;
+      gap: 10px 14px;
       align-items: center;
+      justify-content: center;
     }
     .topnav a{
-      text-decoration: underline;
-      font-size: 0.95em;
+      text-decoration: none;
+      font-size: 0.9em;
+      font-weight: 500;
       color: #111;
       white-space: nowrap;
     }
-    .topnav .sep{ opacity: 0.45; }
+    .topnav .sep{ opacity: 0.3; }
 
+    /* Custom Tagline */
     .tagline{
       text-align: center;
       font-weight: 500;
       color: var(--muted);
       letter-spacing: 0.5px;
       margin-top: -10px;
-      margin-bottom: 30px;
+      margin-bottom: 35px;
       font-size: 1.1rem;
     }
 
-    /* Manifesto */
-    .lead{ font-size: 1.06em; }
-    .manifesto{
+    /* Cards / grids */
+    .grid{
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      margin-top: 12px;
+    }
+    @media(min-width: 768px){
+      .grid{ grid-template-columns: 1fr 1fr; }
+    }
+    .card{
       border: 1px solid var(--line);
       border-radius: var(--radius);
-      padding: 14px 16px;
-      background: var(--soft2);
+      padding: 16px;
+      background: #fff;
     }
-    .manifesto ul{ margin-top: 0.9em; }
-    .manifesto li{ margin: 0.62em 0; }
-    .closing{ margin-top: 1.1em; font-size: 1.05em; }
 
-    /* Quick links */
-    .quick{
+    /* Manifesto & Quick Box */
+    .manifesto, .quick{
       border: 1px solid var(--line);
       border-radius: var(--radius);
-      padding: 12px 14px;
+      padding: 20px;
       background: var(--soft2);
     }
+
+    .btn-container { text-align: center; margin-top: 20px; }
 
     footer{
-      margin-top: 2.2em;
-      padding-top: 1.2em;
+      margin-top: 3em;
+      padding: 2em 0;
       border-top: 1px solid var(--line);
       color: var(--muted);
-      font-size: 0.96em;
-    }
-    footer .row{
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px 14px;
-      align-items: center;
-      justify-content: space-between;
+      font-size: 0.9em;
+      text-align: center;
     }
   </style>
 </head>
@@ -134,11 +141,7 @@
     <a href="#start">Start</a><span class="sep">|</span>
     <a href="#manifesto">New Creation</a><span class="sep">|</span>
     <a href="#books">Books</a><span class="sep">|</span>
-    <a href="#resurrection">Resurrection</a><span class="sep">|</span>
     <a href="#prophecy">Prophecy Hub</a><span class="sep">|</span>
-    <a href="#topics">Core Topics</a><span class="sep">|</span>
-    <a href="#studies">Studies</a><span class="sep">|</span>
-    <a href="#extras">Life / Thoughts / Audio</a><span class="sep">|</span>
     <a href="#support">Support</a><span class="sep">|</span>
     <a href="#top">Top</a>
   </div>
@@ -146,7 +149,7 @@
 
 <div class="wrap">
 
-  <div style="text-align: center; margin: 30px 0 10px 0;">
+  <div style="text-align: center; margin: 35px 0 10px 0;">
     <img src="images/og-light.png" alt="FPBible - The Fulfilled Prophecy Bible" style="max-width: 500px; width: 100%; height: auto;">
   </div>
 
@@ -154,7 +157,7 @@
     New Creation Lens · Covenant Transition · Fulfilled Horizon
   </div>
 
-  <p style="text-align: center; max-width: 800px; margin: 0 auto 40px auto;">
+  <p style="text-align: center; max-width: 850px; margin: 0 auto 40px auto; font-size: 1.05rem;">
     The Fulfilled Prophecy Bible presents the <strong>World English Bible (WEB)</strong> with structured Study Commentary that keeps Scripture within its
     original covenant horizon, while applying the finished reality of Christ clearly, directly, and without delay theology.
   </p>
@@ -162,25 +165,15 @@
   <hr />
 
   <section id="start">
-    <div class="section-head">
-      <h2>Start Here</h2>
-    </div>
-
+    <h2>Start Here</h2>
     <div class="quick">
       <p><strong>Text based on the World English Bible (WEB) with Fulfilled Prophecy Study Commentary.</strong></p>
       <ul>
-        <li><strong>Read the New Creation manifesto</strong> below (2 minutes).</li>
-        <li><strong>Read the Resurrection page</strong> (5–10 minutes) to anchor the “life now” framework.</li>
-        <li><strong>Read “The End of the Law”</strong> to lock covenant jurisdiction in Christ: <a href="/Bible/Prophecy/end-of-the-law.html">open</a>.</li>
-        <li><strong>Read “The Day of Atonement”</strong> to lock Hebrews 9 language (judgment / appearing / salvation): <a href="/Bible/Prophecy/day-of-atonement.html">open</a>.</li>
-        <li><strong>Open a book index</strong> and read chapter-by-chapter.</li>
-        <li><strong>Use the Prophecy Hub</strong> when you hit “coming / wrath / day / fire / resurrection / heaven &amp; earth”.</li>
+        <li><strong>New Creation Manifesto:</strong> Read our core framework below.</li>
+        <li><strong>The Resurrection:</strong> Anchor your "life now" perspective <a href="/Bible/Resurrection/index.html">here</a>.</li>
+        <li><strong>Covenant Jurisdiction:</strong> Understand why the Law ended at <a href="/Bible/Prophecy/end-of-the-law.html">The End of the Law</a>.</li>
+        <li><strong>The Prophecy Hub:</strong> Your dictionary for terms like "Coming," "Fire," and "Clouds."</li>
       </ul>
-
-      <p class="note">
-        Locked project standard:
-        <a href="/Bible/standard.html">The Fulfilled Prophecy Bible Chapter Standard</a>
-      </p>
     </div>
   </section>
 
@@ -188,45 +181,68 @@
 
   <section id="manifesto" class="manifesto">
     <h2>Living in the New Creation</h2>
-
-    <p class="lead">
-      Christian faith is not defined by waiting, countdowns, or speculation.
-      Its center is <strong>presence</strong> — a settled life grounded in what Christ has already accomplished.
-    </p>
-
-    <p>
-      The Fulfilled Prophecy Bible reads Scripture through completion rather than postponement.
-      We let time-statements speak plainly, treat prophetic language as prophetic (Hebrew idiom, covenant imagery),
-      and live from access already given, not access still to be earned.
-    </p>
-
+    <p>Christian faith is not defined by waiting, countdowns, or speculation. Its center is <strong>presence</strong> — a settled life grounded in what Christ has already accomplished.</p>
+    <p>We let time-statements speak plainly, treat prophetic language as covenant imagery, and live from access already given, not access still to be earned.</p>
     <ul>
       <li><strong>Presence, not distance</strong> — God with us in ordinary life.</li>
       <li><strong>Fulfillment, not delay</strong> — promises matured into lived reality.</li>
       <li><strong>Identity, not anticipation</strong> — we are new, not nearly new.</li>
-      <li><strong>Spirit, not performance</strong> — life expressed, not maintained by fear.</li>
-      <li><strong>Clarity, not frenzy</strong> — prophecy handled once, then linked via the Hub.</li>
     </ul>
-
-    <p class="closing">
-      <a href="/Bible/NewCreation/manifesto.html">Read more: The New Creation Manifesto</a>
-    </p>
+    <p><a href="/Bible/NewCreation/manifesto.html">Read the full New Creation Manifesto →</a></p>
   </section>
 
   <hr />
 
-  <footer>
-    <div class="row">
-      <div>
-        <strong>The Fulfilled Prophecy Bible</strong> — Text based on the <strong>World English Bible (WEB)</strong> with Fulfilled Prophecy Study Commentary
+  <section id="books">
+    <h2>Books & Commentary</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Matthew</h3>
+        <p>The interpretive spine for New Testament judgment language and the end of the Mosaic age.</p>
+        <a href="/Bible/Matthew/index.html">View Chapters</a>
       </div>
-      <div>
-        <a href="https://ko-fi.com/fpbible" target="_blank" rel="noopener">Support</a> · <a href="#top">Back to top</a>
+      <div class="card">
+        <h3>Romans</h3>
+        <p>Righteousness apart from Law and Spirit-life as our present, finished identity.</p>
+        <a href="/Bible/Romans/index.html">View Chapters</a>
+      </div>
+      <div class="card">
+        <h3>Hebrews</h3>
+        <p>The transition from shadow to substance. The public closure of the old temple system.</p>
+        <a href="/Bible/Hebrews/index.html">View Chapters</a>
+      </div>
+      <div class="card">
+        <h3>Revelation</h3>
+        <p>Unveiling the fall of the old order and the present reality of the New Jerusalem.</p>
+        <a href="/Bible/Revelation/index.html">View Chapters</a>
       </div>
     </div>
-    <p class="note">
-      Notes are written to honour audience relevance and time statements, and to avoid futurist drift.
-    </p>
+  </section>
+
+  <hr />
+
+  <section id="support">
+    <div style="text-align: center; padding: 20px;">
+      <h2>Support the Project</h2>
+      <p style="max-width: 600px; margin: 0 auto 25px auto;">
+        FPBible is a free resource dedicated to the finished work of Christ. If these studies help you, consider supporting the work.
+      </p>
+      
+      <div class="btn-container">
+        <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
+        <script type='text/javascript'>
+          kofiwidget2.init('Support me on Ko-fi', '#72a4f2', 'B0B61QC1BU');
+          kofiwidget2.draw();
+        </script>
+      </div>
+      <p class="note" style="margin-top: 25px;">No pressure, no paywalls. Just pure study resource.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>The Fulfilled Prophecy Bible</strong></p>
+    <p class="note">World English Bible (WEB) + Full Preterist Commentary</p>
+    <p><a href="#top">Back to Top</a></p>
   </footer>
 
 </div>
