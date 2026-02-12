@@ -55,11 +55,11 @@
     hr{ margin: 2.8em 0; border: 0; border-top: 1px solid var(--line); }
     .note{ font-size: 0.96em; color: var(--muted); }
 
-    /* Top nav — MATCHES YOUR OTHER PAGES (underline + separators) */
+    /* Top nav (match /NewCreation/manifesto.html) */
     .topnav{
       position: sticky;
       top: 0;
-      z-index: 50;
+      z-index: 20;
       background: rgba(255,255,255,0.92);
       backdrop-filter: blur(8px);
       border-bottom: 1px solid var(--line);
@@ -69,25 +69,26 @@
       margin: 0 auto;
       padding: 10px var(--pad);
       display: flex;
-      flex-wrap: wrap;
-      gap: 10px 12px;
+      flex-wrap: nowrap;               /* keep it one row */
+      gap: 0;                          /* separators provide spacing */
       align-items: center;
+      overflow-x: auto;                /* if it can't fit, swipe sideways */
+      -webkit-overflow-scrolling: touch;
+      white-space: nowrap;
     }
+    .topnav .bar::-webkit-scrollbar{ display: none; }
     .topnav a{
       text-decoration: underline;
       font-size: 0.95em;
       color: #111;
       white-space: nowrap;
+      padding: 2px 2px;                /* tight */
     }
-    .topnav .sep{ opacity: 0.45; }
-
-    @media (max-width: 768px){
-      .topnav .bar{
-        overflow-x: auto;
-        flex-wrap: nowrap;
-        -webkit-overflow-scrolling: touch;
-      }
-      .topnav .bar::-webkit-scrollbar{ display: none; }
+    .topnav a:hover{ opacity: 0.85; }
+    .topnav .sep{
+      opacity: 0.45;
+      padding: 0 8px;
+      user-select: none;
     }
 
     /* Under construction banner */
@@ -356,8 +357,7 @@
     <a href="#books">Books</a><span class="sep">|</span>
     <a href="#resources">Resources</a><span class="sep">|</span>
     <a href="/Bible/about.html">About</a><span class="sep">|</span>
-    <a href="#support">Support</a><span class="sep">|</span>
-    <a href="#top">Top</a>
+    <a href="#support">Support</a>
   </div>
 </div>
 
@@ -689,22 +689,6 @@
       </div>
 
     </div>
-  </section>
-
-  <hr />
-
-  <!-- ABOUT (teaser only) -->
-  <section id="about">
-    <h2>About This Project</h2>
-
-    <p>
-      FPBible presents the <strong>World English Bible (WEB)</strong> text verbatim,
-      followed by Fulfillment Notes and expanded Prophecy Commentary anchored in first-century covenant transition realities (AD 30–70).
-    </p>
-
-    <p class="note">
-      <a href="/Bible/about.html"><strong>Read the full About page →</strong></a>
-    </p>
   </section>
 
   <hr />
