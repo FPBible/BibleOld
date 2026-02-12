@@ -3,333 +3,409 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Isaiah 2 — New Creation Zion — Fulfilled Prophecy Bible (WEB)</title>
-  <meta name="description" content="Full Preterist study edition using the WEB translation." />
+  <title>Isaiah 2 — New Creation Zion — FPBible (WEB)</title>
+  <meta name="description" content="Isaiah 2 (WEB) with fulfillment notes and New Creation commentary (AD 30–70), without futurist delay theology." />
 
   <style>
-    body {
-      font-family: system-ui, sans-serif;
-      line-height: 1.6;
-      margin: 1.5em;
+    :root{
+      --maxw: 1020px;
+      --pad: 16px;
+      --line: rgba(0,0,0,0.12);
+      --line2: rgba(0,0,0,0.18);
+      --muted: rgba(0,0,0,0.72);
+      --soft: rgba(0,0,0,0.06);
+      --soft2: rgba(0,0,0,0.04);
+      --radius: 14px;
+      --shadow: 0 10px 30px rgba(0,0,0,0.08);
     }
-    h1, h2 {
-      margin-top: 1.4em;
-      margin-bottom: 0.6em;
+    *{ box-sizing: border-box; }
+    body{
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+      margin: 0;
+      color: #111;
+      background: #fff;
     }
-    h3 {
-      margin-top: 1.2em;
-      margin-bottom: 0.4em;
+    a{ color: inherit; }
+    .wrap{
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 0 var(--pad);
     }
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-      max-width: 700px;
+
+    /* Sticky nav matching your newer pages: one grouped block, no sideways scrolling */
+    header{
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line);
     }
-    li {
-      margin: 0.4em 0;
+    .navblock{
+      padding: 10px 0 12px;
     }
-    a {
-      text-decoration: underline;
+    .navtitle{
+      font-size: 0.95em;
+      color: var(--muted);
+      margin: 0 0 8px;
     }
-      footer{
-      margin-top: 2.2em;
-      padding-top: 1.2em;
+    .navgrid{
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 8px;
+    }
+    @media (max-width: 720px){
+      .navgrid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    .btn{
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 12px;
+      border: 1px solid var(--line2);
+      border-radius: 999px;
+      background: #fff;
+      text-decoration: none;
+      font-size: 0.95em;
+      line-height: 1;
+      white-space: nowrap;
+      width: 100%;
+      min-height: 40px;
+    }
+    .btn:hover{ background: var(--soft2); }
+
+    h1{ font-size: 1.75rem; margin: 22px 0 6px; }
+    h2{ font-size: 1.25rem; margin: 22px 0 10px; }
+    h3{ font-size: 1.05rem; margin: 18px 0 8px; }
+    p{ margin: 10px 0; }
+    hr{ border: 0; border-top: 1px solid var(--line); margin: 22px 0; }
+    .muted{ color: var(--muted); }
+
+    .card{
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      box-shadow: var(--shadow);
+      padding: 14px;
+    }
+
+    .scripture{
+      font-size: 1.02em;
+    }
+    .scripture .v{
+      display: inline-block;
+      min-width: 2.2em;
+      color: var(--muted);
+      font-variant-numeric: tabular-nums;
+    }
+    .scripture p{ margin: 8px 0; }
+
+    ul{ margin: 10px 0 0 1.2em; }
+    li{ margin: 6px 0; }
+
+    .links{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+      align-items: center;
+    }
+    .links a{ text-decoration: underline; }
+
+    footer{
+      margin: 26px 0 40px;
+      padding-top: 14px;
       border-top: 1px solid var(--line);
       color: var(--muted);
       font-size: 0.96em;
     }
-    footer .row{
+    .footrow{
       display: flex;
       flex-wrap: wrap;
       gap: 10px 14px;
       align-items: center;
       justify-content: space-between;
     }
+
+    /* Ko-fi widget spacing */
+    .kofi-wrap{
+      margin-top: 12px;
+      display: flex;
+      justify-content: flex-start;
+    }
   </style>
+
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q22N178LJ8"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-Q22N178LJ8');
   </script>
-
-  </head>
+</head>
 
 <body>
-
 <a id="top"></a>
 
-<nav>
-      <a href="/Bible/">Bible Index</a> |
-      <a href="/Bible/Isaiah/index.html">Book Index</a> |
-      <a href="/Bible/Isaiah/isa11.html">Next</a> |
-      <a href="#top">Top</a>
+<header>
+  <div class="wrap navblock">
+    <p class="navtitle">Isaiah 2 (WEB)</p>
+    <nav class="navgrid" aria-label="Page navigation">
+      <a class="btn" href="/Bible/">Bible Index</a>
+      <a class="btn" href="/Bible/Isaiah/index.html">Book Index</a>
+      <a class="btn" href="/Bible/Isaiah/isa11.html">Next</a>
+      <a class="btn" href="#top">Top</a>
     </nav>
+  </div>
+</header>
 
-<h1>Isaiah</h1>
+<main class="wrap">
 
-<h2>Chapter 2 — Zion Reimagined and the Nations Gathered</h2>
+  <h1>Isaiah 2 — New Creation Zion</h1>
+  <p class="muted">Zion is raised as the covenant centre, the nations are gathered by God’s instruction, and human pride is brought down.</p>
 
-<h3>The Mountain of the LORD</h3>
+  <hr />
 
-<p>
-The word that Isaiah son of Amoz saw
-concerning Judah and Jerusalem:
-In the latter days,
-the mountain of the house of the LORD
-will be established as the highest of the mountains,
-and lifted above the hills.
-All nations will stream to it.
-<a href="https://ebible.org/eng-web/ISA02.htm">(Isa 2:1–2)</a>
-</p>
+  <h2>Immediate Context</h2>
+  <div class="card">
+    <p><span class="muted">Speaker:</span> Isaiah, addressing Judah and Jerusalem.</p>
+    <p><span class="muted">Setting:</span> Jerusalem is crowded with wealth, alliances, idols, and confidence in human power.</p>
+    <p><span class="muted">Covenant weight:</span> Zion is announced as God’s true teaching-centre while the “day of Yahweh” humbles the entire pride-system that resists Him.</p>
+    <p><span class="muted">Why it mattered then:</span> This chapter holds together two realities: the nations are gathered into God’s rule, and the old confidence-structure is shattered when Yahweh rises to act.</p>
+  </div>
 
-<p>
-Many peoples will come and say,
-“Come, let us go up to the mountain of the LORD,
-to the house of the God of Jacob.
-He will teach us His ways,
-and we will walk in His paths.”
-For instruction will go out from Zion,
-and the word of the LORD from Jerusalem.
-<a href="https://ebible.org/eng-web/ISA02.htm">(Isa 2:3)</a>
-</p>
+  <hr />
 
-<p>
-He will judge between the nations
-and settle disputes for many peoples.
-They will beat their swords into ploughshares
-and their spears into pruning hooks.
-Nation will not lift up sword against nation,
-and they will no longer learn war.
-<a href="https://ebible.org/eng-web/ISA02.htm">(Isa 2:4)</a>
-</p>
+  <h2>Scripture (WEB)</h2>
+  <p class="muted">Verbatim World English Bible text. Source for verification: <a href="https://ebible.org/eng-web/ISA02.htm">ebible.org (Isaiah 2)</a>.</p>
 
-<h3>The Call to Walk in the Light</h3>
+  <div class="card scripture" aria-label="Isaiah 2 (WEB)">
+    <p><span class="v">1</span> The word that Isaiah the son of Amoz saw concerning Judah and Jerusalem.</p>
 
-<p>
-House of Jacob,
-come and let us walk in the light of the LORD.
-<a href="https://ebible.org/eng-web/ISA02.htm">(Isa 2:5)</a>
-</p>
+    <p><span class="v">2</span> It shall happen in the latter days, that the mountain of Yahweh’s house shall be established on the top of the mountains, and shall be raised above the hills; and all nations shall flow to it.</p>
 
-<h3>The Collapse of Human Pride</h3>
+    <p><span class="v">3</span> Many peoples shall go and say, “Come, let’s go up to the mountain of Yahweh’s house, to the house of the God of Jacob; and he will teach us of his ways, and we will walk in his paths.” For the law shall go out of Zion, and Yahweh’s word from Jerusalem.</p>
 
-<p>
-For You have abandoned Your people,
-the house of Jacob,
-because they are full of eastern practices,
-they tell fortunes like the Philistines,
-and they clasp hands with foreigners.
-Their land is filled with silver and gold,
-and there is no end to their treasures.
-Their land is filled with horses,
-and there is no end to their chariots.
-Their land is filled with idols;
-they bow down to the work of their hands,
-to what their fingers have made.
-<a href="https://ebible.org/eng-web/ISA02.htm">(Isa 2:6–8)</a>
-</p>
+    <p><span class="v">4</span> He will judge between the nations, and will decide concerning many peoples; and they shall beat their swords into plowshares, and their spears into pruning hooks. Nation shall not lift up sword against nation, neither shall they learn war any more.</p>
 
-<p>
-So humanity is brought low,
-and each person is humbled.
-Do not forgive them.
-Enter the rock,
-hide in the dust,
-from the terror of the LORD
-and from the splendour of His majesty.
-<a href="https://ebible.org/eng-web/ISA02.htm">(Isa 2:9–10)</a>
-</p>
+    <p><span class="v">5</span> House of Jacob, come, and let us walk in the light of Yahweh.</p>
 
-<p>
-The proud look of humanity will be humbled,
-and the arrogance of people will be brought low.
-The LORD alone will be exalted in that day.
-<a href="https://ebible.org/eng-web/ISA02.htm">(Isa 2:11)</a>
-</p>
+    <p><span class="v">6</span> For you have forsaken your people the house of Jacob, because they are filled from the east, with those who practice divination like the Philistines, and they clasp hands with the children of foreigners.</p>
 
-<p>
-For the LORD of hosts has a day
-against all that is proud and lofty,
-against all that is lifted up —
-and it will be brought low.
-<a href="https://ebible.org/eng-web/ISA02.htm">(Isa 2:12)</a>
-</p>
+    <p><span class="v">7</span> Their land also is full of silver and gold, neither is there any end of their treasures. Their land also is full of horses, neither is there any end of their chariots.</p>
 
-<p>
-The idols will completely disappear.
-People will go into caves of the rocks
-and holes in the ground,
-from the terror of the LORD
-and the splendour of His majesty,
-when He rises to shake the land.
-<a href="https://ebible.org/eng-web/ISA02.htm">(Isa 2:18–19)</a>
-</p>
+    <p><span class="v">8</span> Their land also is full of idols. They worship the work of their own hands, that which their own fingers have made.</p>
 
-<p>
-In that day,
-people will throw away their idols of silver and gold,
-which they made for themselves to worship,
-to the moles and the bats,
-to go into the caverns of the rocks
-and the crevices of the cliffs,
-from the terror of the LORD
-and the splendour of His majesty,
-when He rises to shake the land.
-<a href="https://ebible.org/eng-web/ISA02.htm">(Isa 2:20–21)</a>
-</p>
+    <p><span class="v">9</span> Man is brought low, and mankind is humbled; therefore don’t forgive them.</p>
 
-<p>
-Stop trusting in mere humans,
-who have only breath in their nostrils.
-What are they really worth?
-<a href="https://ebible.org/eng-web/ISA02.htm">(Isa 2:22)</a>
-</p>
+    <p><span class="v">10</span> Enter into the rock, and hide in the dust, from before the terror of Yahweh, and from the glory of his majesty.</p>
 
-<p>* * *</p>
+    <p><span class="v">11</span> The lofty looks of man will be brought low, the arrogance of men will be bowed down, and Yahweh alone will be exalted in that day.</p>
 
-<h2>Chapter Summary</h2>
-<ul>
-  <li>Zion is elevated as the source of God’s instruction for all nations. <a href="https://ebible.org/eng-web/ISA02.htm">(Isa 2:2–3)</a></li>
-  <li>The nations stream in voluntarily, not by coercion or conquest. <a href="https://ebible.org/eng-web/ISA02.htm">(Isa 2:2)</a></li>
-  <li>Peace replaces warfare as God’s rule takes effect. <a href="https://ebible.org/eng-web/ISA02.htm">(Isa 2:4)</a></li>
-  <li>The people of God are called to walk in the Lord’s light. <a href="https://ebible.org/eng-web/ISA02.htm">(Isa 2:5)</a></li>
-  <li>Human pride, wealth, power, and idolatry are decisively humbled. <a href="https://ebible.org/eng-web/ISA02.htm">(Isa 2:6–21)</a></li>
-</ul>
+    <p><span class="v">12</span> For there will be a day of Yahweh of Armies for all that is proud and arrogant, and for all that is lifted up; and it shall be brought low—</p>
 
-<p>* * *</p>
+    <p><span class="v">13</span> for all the cedars of Lebanon, that are high and lifted up, for all the oaks of Bashan,</p>
 
-<h2>Fulfilled Commentary — Isaiah 2</h2>
+    <p><span class="v">14</span> for all the high mountains, for all the hills that are lifted up,</p>
 
-<h3>1) Zion is no longer geography — it is covenant centre</h3>
-<p>
-Isaiah’s “mountain of the LORD” is not about elevation but authority.
-In prophetic language, mountains represent governing powers.
-Zion’s elevation signals the rise of a new covenant order
-from which instruction and life flow outward.
-In the New Covenant, Zion is not a place people travel to —
-it is the people in whom God now dwells.
-<a href="https://ebible.org/eng-web/ISA02.htm">(Isa 2:2–3)</a>
-</p>
+    <p><span class="v">15</span> for every lofty tower, for every fortified wall,</p>
 
-<h3>2) The nations come because light attracts, not because law compels</h3>
-<p>
-The nations stream voluntarily.
-There is no coercion, conquest, or enforced conversion.
-This anticipates the gospel age,
-where Gentiles are drawn by revealed truth and shared life,
-not by Torah boundary-markers.
-The movement is inward because the light is already present.
-<a href="https://ebible.org/eng-web/ISA02.htm">(Isa 2:2)</a>
-</p>
+    <p><span class="v">16</span> for all the ships of Tarshish, and for all pleasant imagery.</p>
 
-<h3>3) “Latter days” is covenantal language, not end-of-the-universe talk</h3>
-<p>
-Isaiah’s “latter days” refers to the closing phase of the old covenant order
-and the emergence of a new one.
-The New Testament writers consistently apply this language
-to the Christ-event and its consequences,
-not to a distant future millennium.
-<a href="https://ebible.org/eng-web/ISA02.htm">(Isa 2:2)</a>
-</p>
+    <p><span class="v">17</span> The loftiness of man shall be bowed down, and the arrogance of men shall be brought low; and Yahweh alone shall be exalted in that day.</p>
 
-<h3>4) Peace imagery describes the end of covenant hostility</h3>
-<p>
-Swords into ploughshares is not naïve utopianism.
-It announces the end of enmity between peoples
-under God’s reconciling rule.
-Paul will later describe this as the breaking down of the dividing wall.
-Isaiah is seeing the same reality from a prophetic angle.
-<a href="https://ebible.org/eng-web/ISA02.htm">(Isa 2:4)</a>
-</p>
+    <p><span class="v">18</span> The idols shall utterly pass away.</p>
 
-<h3>5) The call to “walk in the light” anticipates New Creation ethics</h3>
-<p>
-Before judgment language intensifies,
-Isaiah issues an invitation:
-walk in the light of the LORD.
-This anticipates Johannine and Pauline language
-where light is identity before behaviour.
-New Covenant life flows from illumination, not fear.
-<a href="https://ebible.org/eng-web/ISA02.htm">(Isa 2:5)</a>
-</p>
+    <p><span class="v">19</span> Men shall go into the caves of the rocks, and into the holes of the earth, from before the terror of Yahweh, and from the glory of his majesty, when he arises to shake the earth mightily.</p>
 
-<h3>6) Judgment targets prideful systems, not random individuals</h3>
-<p>
-Isaiah’s focus is structural:
-wealth, military power, alliances, and idols.
-These are the foundations of human self-sufficiency.
-The “day of the LORD” is God’s decisive exposure
-of systems that pretend they do not need Him.
-<a href="https://ebible.org/eng-web/ISA02.htm">(Isa 2:6–12)</a>
-</p>
+    <p><span class="v">20</span> In that day, men shall cast away their idols of silver and their idols of gold, which have been made for themselves to worship, to the moles and to the bats;</p>
 
-<h3>7) Idolatry collapses when false securities are exposed</h3>
-<p>
-People abandon idols not because of moral lectures,
-but because the illusion of safety collapses.
-Isaiah sees a moment when what humans trusted
-is revealed as empty.
-This anticipates the gospel’s exposure of religious and political idols alike.
-<a href="https://ebible.org/eng-web/ISA02.htm">(Isa 2:18–21)</a>
-</p>
+    <p><span class="v">21</span> to go into the caverns of the rocks, and into the clefts of the ragged rocks, from before the terror of Yahweh, and from the glory of his majesty, when he arises to shake the earth mightily.</p>
 
-<h3>8) “The LORD alone will be exalted” is the New Creation centre</h3>
-<p>
-The outcome is not human improvement,
-but divine centrality.
-The New Creation is not humanity perfected in independence,
-but humanity restored to right orientation —
-God at the centre, people at rest.
-<a href="https://ebible.org/eng-web/ISA02.htm">(Isa 2:11)</a>
-</p>
+    <p><span class="v">22</span> Stop trusting in man, whose breath is in his nostrils; for of what account is he?</p>
+  </div>
 
-<h3>9) The chapter ends by stripping false confidence</h3>
-<p>
-Isaiah closes with a blunt command:
-stop trusting in humans.
-This is not cynicism —
-it is covenant realism.
-The New Creation rests on God’s faithfulness,
-not human strength, leaders, or systems.
-<a href="https://ebible.org/eng-web/ISA02.htm">(Isa 2:22)</a>
-</p>
+  <hr />
 
-<p>
-Isaiah 2 stands as an opening New Creation vision:
-a redefined Zion,
-nations gathered by light,
-peace replacing hostility,
-and the collapse of prideful systems.
-The prophets saw it.
-The apostles proclaimed it.
-The New Covenant lives it.
-</p>
+  <h2>Fulfillment Notes</h2>
+  <ul>
+    <li>Zion is raised as God’s covenant teaching-centre, gathering the nations into His rule.</li>
+    <li>“In the latter days” names the covenant-closing season that matured into the new covenant reality.</li>
+    <li>Peace language declares the end of covenant hostility and the collapse of boundary-driven enmity.</li>
+    <li>The “day of Yahweh” brings down prideful power-systems, exposing idols and false security.</li>
+    <li>The chapter ends by stripping human confidence so Yahweh stands as the only refuge.</li>
+  </ul>
 
-<p>
-  <a href="/Bible/">Bible Index</a> |
-  <a href="/Bible/Isaiah/">Book Index</a> |
-  <a href="/Bible/Isaiah/">Previous</a> |
-  <a href="/Bible/Isaiah/isa11.html">Next</a> |
-  <a href="#top">Top</a>
-</p>
+  <hr />
+
+  <h2>Annotations</h2>
+  <div class="card">
+    <p><span class="muted">“in the latter days”</span> — the concluding covenant season leading into the Messiah’s established reign.</p>
+    <p><span class="muted">“the mountain of Yahweh’s house”</span> — covenant authority and dwelling; Zion as God’s settled centre of rule.</p>
+    <p><span class="muted">“Yahweh alone will be exalted”</span> — every rival glory is humbled so God’s supremacy is publicly vindicated.</p>
+  </div>
+
+  <hr />
+
+  <h2>Fulfillment Commentary</h2>
+
+  <h3>1) Zion is covenant government, not a tourist destination</h3>
+  <p>
+    Isaiah speaks “concerning Judah and Jerusalem,” and then immediately moves beyond mere geography.
+    In prophetic speech, mountains are ruling-heights—centres of authority that shape a people’s life.
+    “The mountain of Yahweh’s house” being established above all mountains announces covenant supremacy:
+    God’s rule becomes the defining centre, higher than every competing height.
+    Zion is presented as the true place of instruction because God Himself establishes it and raises it.
+  </p>
+
+  <h3>2) “In the latter days” identifies the covenant-closing season</h3>
+  <p>
+    Isaiah’s phrase is time-language inside the covenant story.
+    It marks the closing stretch of the old order and the public establishment of the new.
+    The prophets repeatedly spoke of a climactic season in which God would expose false confidence,
+    gather the nations, and settle His rule.
+    Isaiah 2 holds those themes together: Zion is raised, the nations are drawn,
+    and pride is brought down when Yahweh rises to act.
+  </p>
+
+  <h3>3) The nations flow because Yahweh teaches</h3>
+  <p>
+    The nations do not arrive as conquered captives; they come as peoples seeking instruction.
+    The vision is driven by teaching: “he will teach us of his ways, and we will walk in his paths.”
+    This is covenant gathering through the word.
+    Zion becomes the source-point of God’s law and God’s word—His revealed will and His life-giving speech.
+    The flow to Zion is the ingathering of the nations into God’s rule through truth that forms a shared way of life.
+  </p>
+
+  <h3>4) Peace is the fruit of God’s settled judgment</h3>
+  <p>
+    “He will judge between the nations” sits at the centre of the peace imagery.
+    When God decides disputes, the engine of hostility is dismantled.
+    Swords into plowshares is not sentimental fantasy; it is covenant reality:
+    life under God’s rule is not sustained by violence, threat, or rivalry.
+    The same energy once spent on hostility is redirected into fruitfulness.
+    Under Yahweh’s deciding, nations no longer learn war as a discipline, because the old rivalries no longer define identity.
+  </p>
+
+  <h3>5) The invitation comes first: walk in Yahweh’s light</h3>
+  <p>
+    Isaiah calls the house of Jacob to walk in Yahweh’s light before the chapter intensifies the exposure of pride.
+    That is deliberate.
+    Light is covenant clarity: truth that reveals what is real and what is false.
+    To walk in the light is to live aligned with God’s revealed reality rather than with idols, wealth, and power.
+    The invitation stands as the correct response to everything that follows:
+    the only safe direction is into God’s light, because the confidence-systems built on darkness cannot survive God’s rising.
+  </p>
+
+  <h3>6) Judah’s problem is a whole confidence-system</h3>
+  <p>
+    Isaiah stacks the indictment: borrowed spiritual practice, foreign alliances, silver and gold, horses and chariots, and idols.
+    This is a public structure of self-sufficiency.
+    Divination is a counterfeit “guidance.”
+    Alliances are a counterfeit “security.”
+    Wealth is a counterfeit “future.”
+    Horses and chariots are a counterfeit “salvation.”
+    Idols are a counterfeit “presence.”
+    The covenant people are surrounded by God and yet living as though God is optional.
+    Isaiah exposes it as abandonment: “you have forsaken your people the house of Jacob.”
+  </p>
+
+  <h3>7) The day of Yahweh humbles every rival height</h3>
+  <p>
+    The chapter repeats the same verdict: lofty looks brought low, arrogance bowed down, and Yahweh alone exalted.
+    Isaiah then lists cedars, oaks, mountains, hills, towers, walls, ships, and “pleasant imagery.”
+    That list is the anatomy of human glory—natural emblems of height, military confidence, economic reach, and cultural splendour.
+    Isaiah is not condemning trees as evil; he is announcing that every emblem of self-exaltation collapses under God’s action.
+    When Yahweh rises, the entire architecture of pride is reduced.
+  </p>
+
+  <h3>8) Idols die when terror strips the illusion</h3>
+  <p>
+    People run into caves and holes “from before the terror of Yahweh” because false shelters fail.
+    Then, in that day, they throw away idols “to the moles and to the bats.”
+    That is contempt.
+    What was once treated as sacred becomes garbage.
+    Isaiah is describing what judgment does: it exposes the lie, breaks the spell, and forces reality into view.
+    The “glory of his majesty” makes every counterfeit glory look like dust.
+  </p>
+
+  <h3>9) The final command is covenant sanity: stop trusting in man</h3>
+  <p>
+    Isaiah ends with a command that lands like a hammer: “Stop trusting in man.”
+    It is not hatred of humanity; it is clear-eyed covenant truth.
+    Man is breath-dependent.
+    Human systems rise and fall.
+    Human strength cannot bear the weight of worship.
+    The chapter’s outcome is fixed: Yahweh alone is exalted.
+    Zion stands as His established centre, the nations are gathered by His word,
+    hostility is disarmed under His deciding, and every rival confidence is stripped away.
+  </p>
+
+  <hr />
+
+  <h2>Prophecy Hub Links</h2>
+  <div class="links">
+    <a href="/Bible/Prophecy/index.html#zion">Zion — Covenant Centre</a>
+    <a href="/Bible/Prophecy/index.html#day-of-the-lord">Day of Yahweh — Covenant Judgment</a>
+    <a href="/Bible/Prophecy/index.html#nations-gentiles">Nations &amp; Gentiles — In-Gathering</a>
+  </div>
+
+  <hr />
+
+  <h2>Cross-References</h2>
+  <div class="links">
+    <a href="https://ebible.org/eng-web/MIC04.htm">Micah 4:1–5 (WEB)</a>
+    <a href="https://ebible.org/eng-web/HEB12.htm">Hebrews 12:22–24 (WEB)</a>
+    <a href="https://ebible.org/eng-web/EPH02.htm">Ephesians 2:14–22 (WEB)</a>
+  </div>
+
+  <hr />
+
+  <h2>New Creation Reality</h2>
+  <div class="card">
+    <p>
+      Zion stands as God’s settled centre: instruction goes out, hostility is disarmed, and every rival confidence is exposed as empty.
+      Life in the Spirit is not built on human strength, fear, or idols—it is built on Yahweh’s faithfulness and His present rule.
+    </p>
+  </div>
+
+  <hr />
+
+  <h2>Reflection</h2>
+  <p>Where are you still leaning on “human breath” for security instead of resting in Yahweh’s settled reign?</p>
+
+  <hr />
+
+  <h2>Footer + Navigation</h2>
+  <nav class="navgrid" aria-label="Footer navigation" style="margin: 10px 0 0;">
+    <a class="btn" href="/Bible/">Bible Index</a>
+    <a class="btn" href="/Bible/Isaiah/index.html">Book Index</a>
+    <a class="btn" href="/Bible/Isaiah/isa11.html">Next</a>
+    <a class="btn" href="#top">Top</a>
+  </nav>
 
   <footer>
-    <div class="row">
-      <div>
-        <strong>The Fulfilled Prophecy Bible</strong> — Text based on the <strong>World English Bible (WEB)</strong> with Fulfilled Prophecy Study Commentary
-      </div>
-      <div>
-        <a href="https://ko-fi.com/fpbible" target="_blank" rel="noopener">Support</a> · <a href="#top">Back to top</a>
-      </div>
+    <div class="footrow">
+      <div>FPBible — World English Bible (WEB) text with fulfilled covenant-transition commentary (AD 30–70).</div>
+      <div><a href="#top">Back to top</a></div>
     </div>
-    <p class="note">
-      Notes are written to honour audience relevance and time statements, and to avoid futurist drift.
-    </p>
+
+    <!-- Ko-fi button widget (actual button) -->
+    <div class="kofi-wrap" aria-label="Support FPBible on Ko-fi">
+      <div id="kofi-button"></div>
+    </div>
+    <script src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"></script>
+    <script>
+      if (window.kofiwidget2) {
+        kofiwidget2.init('Support on Ko-fi', '#000000', 'fpbible');
+        kofiwidget2.draw('kofi-button');
+      }
+    </script>
+    <noscript>
+      <p><a href="https://ko-fi.com/fpbible" target="_blank" rel="noopener">Support FPBible on Ko-fi</a></p>
+    </noscript>
   </footer>
 
-
+</main>
 </body>
 </html>
