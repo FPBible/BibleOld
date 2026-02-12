@@ -56,6 +56,20 @@
 
     .note{ font-size: 0.96em; color: var(--muted); }
 
+    /* Skip link (accessibility) */
+    .skip{
+      position: absolute;
+      left: -999px;
+      top: 8px;
+      background: #fff;
+      border: 1px solid var(--line2);
+      padding: 8px 10px;
+      border-radius: 10px;
+      z-index: 999;
+      text-decoration: none;
+    }
+    .skip:focus{ left: 10px; }
+
     /* Top nav */
     .topnav{
       position: sticky;
@@ -355,6 +369,7 @@
 </head>
 
 <body>
+<a class="skip" href="#main">Skip to content</a>
 <a id="top"></a>
 
 <div class="topnav">
@@ -367,11 +382,11 @@
   </div>
 </div>
 
-<div class="wrap">
+<div class="wrap" id="main">
 
   <div class="banner" id="construction">
     <strong>Under Construction:</strong> FPBible is actively being built and expanded. Expect new books, rewrites, and layout refinements as the library grows.
-    <div class="small">If a link 404s, it’s not published yet or it’s being rebuilt to the current standard.</div>
+    <div class="small">If a link 404s, it’s not published yet or it’s being rebuilt.</div>
   </div>
 
   <!-- HERO -->
@@ -381,7 +396,7 @@
     </div>
     <h1>Scripture Through Fulfillment</h1>
     <p class="tagline">
-      The World English Bible with Study Commentary that keeps Scripture inside its
+      The World English Bible with study commentary that keeps Scripture inside its
       original covenant horizon — without delay theology.
     </p>
     <div class="cta">
@@ -462,10 +477,6 @@
         <li><strong>Use "Scripture (WEB)" links</strong> in chapters to verify the base text.</li>
         <li><strong>Use the Prophecy Hub</strong> when you hit "coming / wrath / day / fire / resurrection / heaven &amp; earth".</li>
       </ul>
-
-      <p class="note" style="margin-top: 1.2em;">
-        Project standard: <a href="/Bible/standard.html">The Fulfilled Prophecy Bible Chapter Standard</a>
-      </p>
     </div>
   </section>
 
@@ -701,7 +712,7 @@
     <h2>About This Project</h2>
 
     <p>
-      The Fulfilled Prophecy Bible is a comprehensive study edition that reads the New Testament through
+      FPBible is a study edition that reads the New Testament through
       covenant fulfillment rather than postponement. Time-statements are honoured, prophetic language is treated
       as Hebrew idiom, and Christ’s finished work is applied without “almost” theology.
     </p>
@@ -717,7 +728,7 @@
 
     <p class="note" style="margin-top: 1.2em;">
       Read more: <a href="/Bible/NewCreation/manifesto.html">New Creation Manifesto</a> ·
-      <a href="/Bible/standard.html">Chapter Standard</a>
+      <a href="/Bible/standard.html">Build notes (contributors)</a>
     </p>
   </section>
 
@@ -780,6 +791,7 @@
           <li><a href="/Bible/Studies/">Studies</a></li>
           <li><a href="/Bible/Life/">Life</a></li>
           <li><a href="/Bible/Audio/">Audio</a></li>
+          <li><a href="/Bible/standard.html">Build notes</a></li>
         </ul>
       </div>
     </div>
@@ -811,7 +823,8 @@ const FINISHED_BOOKS = [
     desc: "Jesus, covenant crisis, the Olivet Discourse, and the end of the Mosaic age.",
     links: [
       ["/Bible/Matthew/index.html","Book Index"],
-      ["/Bible/Matthew/preface.html","Preface"]
+      ["/Bible/Matthew/preface.html","Preface"],
+      ["/Bible/Matthew/appendix.html","Appendix"]
     ]
   },
   {
@@ -820,7 +833,8 @@ const FINISHED_BOOKS = [
     desc: "Light vs darkness, sonship vs slavery, temple replacement, and life already present in Him.",
     links: [
       ["/Bible/John/index.html","Book Index"],
-      ["/Bible/John/preface.html","Preface"]
+      ["/Bible/John/preface.html","Preface"],
+      ["/Bible/John/appendix.html","Appendix"]
     ]
   },
 
@@ -831,7 +845,8 @@ const FINISHED_BOOKS = [
     desc: "Righteousness apart from Law, condemnation dismantled, Spirit-life as present identity.",
     links: [
       ["/Bible/Romans/index.html","Book Index"],
-      ["/Bible/Romans/preface.html","Preface"]
+      ["/Bible/Romans/preface.html","Preface"],
+      ["/Bible/Romans/appendix.html","Appendix"]
     ]
   },
   {
@@ -840,7 +855,18 @@ const FINISHED_BOOKS = [
     desc: "End of sacrifice and priesthood, access secured, transition from shadow to substance.",
     links: [
       ["/Bible/Hebrews/index.html","Book Index"],
-      ["/Bible/Hebrews/preface.html","Preface"]
+      ["/Bible/Hebrews/preface.html","Preface"],
+      ["/Bible/Hebrews/appendix.html","Appendix"]
+    ]
+  },
+  {
+    title: "Galatians",
+    pill: "Epistle",
+    desc: "Freedom from Torah-identity, sonship by promise, Spirit as operating reality.",
+    links: [
+      ["/Bible/Galatians/index.html","Book Index"],
+      ["/Bible/Galatians/preface.html","Preface"],
+      ["/Bible/Galatians/appendix.html","Appendix"]
     ]
   },
   {
@@ -849,7 +875,8 @@ const FINISHED_BOOKS = [
     desc: "One-body life, holiness without legalism, and resurrection as covenant victory in Christ.",
     links: [
       ["/Bible/1Corinthians/index.html","Book Index"],
-      ["/Bible/1Corinthians/preface.html","Preface"]
+      ["/Bible/1Corinthians/preface.html","Preface"],
+      ["/Bible/1Corinthians/appendix.html","Appendix"]
     ]
   },
   {
@@ -857,31 +884,9 @@ const FINISHED_BOOKS = [
     pill: "Epistle",
     desc: "Veil removed, reconciliation proclaimed, true authority revealed through weakness.",
     links: [
-      ["/Bible/2Corinthians/index.html","Book Index"]
-    ]
-  },
-  {
-    title: "Galatians",
-    pill: "Epistle",
-    desc: "Freedom from Torah-identity, sonship by promise, Spirit as operating reality.",
-    links: [
-      ["/Bible/Galatians/index.html","Book Index"]
-    ]
-  },
-  {
-    title: "Ephesians",
-    pill: "Epistle",
-    desc: "Union with Christ, one new humanity, Spirit-filled life as normal reality.",
-    links: [
-      ["/Bible/Ephesians/index.html","Book Index"]
-    ]
-  },
-  {
-    title: "Colossians",
-    pill: "Epistle",
-    desc: "Christ as fullness, old humanity stripped off, new humanity lived now.",
-    links: [
-      ["/Bible/Colossians/index.html","Book Index"]
+      ["/Bible/2Corinthians/index.html","Book Index"],
+      ["/Bible/2Corinthians/preface.html","Preface"],
+      ["/Bible/2Corinthians/appendix.html","Appendix"]
     ]
   },
   {
@@ -889,7 +894,9 @@ const FINISHED_BOOKS = [
     pill: "Epistle",
     desc: "A New Creation church under pressure: faith, love, holiness, and the Lord's royal presence.",
     links: [
-      ["/Bible/1Thessalonians/index.html","Book Index"]
+      ["/Bible/1Thessalonians/index.html","Book Index"],
+      ["/Bible/1Thessalonians/preface.html","Preface"],
+      ["/Bible/1Thessalonians/appendix.html","Appendix"]
     ]
   },
   {
@@ -897,7 +904,9 @@ const FINISHED_BOOKS = [
     pill: "Epistle",
     desc: "Panic corrected, lawlessness exposed, steady New Creation life restored.",
     links: [
-      ["/Bible/2Thessalonians/index.html","Book Index"]
+      ["/Bible/2Thessalonians/index.html","Book Index"],
+      ["/Bible/2Thessalonians/preface.html","Preface"],
+      ["/Bible/2Thessalonians/appendix.html","Appendix"]
     ]
   },
   {
@@ -905,7 +914,29 @@ const FINISHED_BOOKS = [
     pill: "Epistle",
     desc: "Undivided loyalty, wisdom from above, mercy over status, integrity of speech.",
     links: [
-      ["/Bible/James/index.html","Book Index"]
+      ["/Bible/James/index.html","Book Index"],
+      ["/Bible/James/preface.html","Preface"],
+      ["/Bible/James/appendix.html","Appendix"]
+    ]
+  },
+  {
+    title: "Ephesians",
+    pill: "Epistle",
+    desc: "Union with Christ, one new humanity, Spirit-filled life as normal reality.",
+    links: [
+      ["/Bible/Ephesians/index.html","Book Index"],
+      ["/Bible/Ephesians/preface.html","Preface"],
+      ["/Bible/Ephesians/appendix.html","Appendix"]
+    ]
+  },
+  {
+    title: "Colossians",
+    pill: "Epistle",
+    desc: "Christ as fullness, old humanity stripped off, new humanity lived now.",
+    links: [
+      ["/Bible/Colossians/index.html","Book Index"],
+      ["/Bible/Colossians/preface.html","Preface"],
+      ["/Bible/Colossians/appendix.html","Appendix"]
     ]
   },
 
@@ -916,11 +947,12 @@ const FINISHED_BOOKS = [
     desc: "Symbolic first-century apocalyptic language unveiling covenant judgment and New Jerusalem reality.",
     links: [
       ["/Bible/Revelation/index.html","Book Index"],
-      ["/Bible/Revelation/preface.html","Preface"]
+      ["/Bible/Revelation/preface.html","Preface"],
+      ["/Bible/Revelation/appendix.html","Appendix"]
     ]
   },
 
-  // Selected OT (from Isaiah.zip)
+  // OT (from Isaiah.zip)
   {
     title: "Isaiah (Selected)",
     pill: "Prophet",
@@ -929,14 +961,14 @@ const FINISHED_BOOKS = [
       ["/Bible/Isaiah/index.html","Book Index"],
       ["/Bible/Isaiah/preface.html","Preface"],
       ["/Bible/Isaiah/appendix.html","Appendix"],
-      ["/Bible/Isaiah/isa2.html","2"],
-      ["/Bible/Isaiah/isa11.html","11"],
-      ["/Bible/Isaiah/isa40.html","40"],
-      ["/Bible/Isaiah/isa42.html","42"],
-      ["/Bible/Isaiah/isa49.html","49"],
-      ["/Bible/Isaiah/isa52-53.html","52–53"],
-      ["/Bible/Isaiah/isa61.html","61"],
-      ["/Bible/Isaiah/isa65-66.html","65–66"]
+      ["/Bible/Isaiah/isa2.html","Isaiah 2"],
+      ["/Bible/Isaiah/isa11.html","Isaiah 11"],
+      ["/Bible/Isaiah/isa40.html","Isaiah 40"],
+      ["/Bible/Isaiah/isa42.html","Isaiah 42"],
+      ["/Bible/Isaiah/isa49.html","Isaiah 49"],
+      ["/Bible/Isaiah/isa52-53.html","Isaiah 52–53"],
+      ["/Bible/Isaiah/isa61.html","Isaiah 61"],
+      ["/Bible/Isaiah/isa65-66.html","Isaiah 65–66"]
     ]
   }
 ];
