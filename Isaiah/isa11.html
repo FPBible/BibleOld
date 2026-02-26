@@ -3,134 +3,113 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Isaiah 11 — New Humanity Under the Messiah — FPBible (WEB)</title>
-  <meta name="description" content="Isaiah 11 (WEB) with fulfillment notes and New Creation commentary (AD 30–70), without futurist delay theology." />
+  <title>Isaiah 11 — The Branch of Jesse and the Peaceable Kingdom — Fulfilled Prophecy Bible (WEB)</title>
+  <meta name="description" content="Isaiah 11 prophesies the coming of the Messiah and the 'wolf and lamb' peace. A robust covenantal commentary proving this is the New Covenant unity of Jew and Gentile." />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Isaiah 11 — The Branch of Jesse and the Peaceable Kingdom",
+    "description": "An exhaustive study demonstrating that the 'wolf living with the lamb' is a prophetic idiom for the end of covenantal hostility between Jew and Gentile, fulfilled in the Church.",
+    "author": {
+      "@type": "Organization",
+      "name": "The Fulfilled Prophecy Bible"
+    }
+  }
+  </script>
 
   <style>
     :root{
-      --maxw: 1020px;
+      --maxw: 980px;
       --pad: 16px;
       --line: rgba(0,0,0,0.12);
-      --line2: rgba(0,0,0,0.18);
       --muted: rgba(0,0,0,0.72);
-      --soft2: rgba(0,0,0,0.04);
+      --soft: rgba(0,0,0,0.05);
+      --soft2: rgba(0,0,0,0.03);
       --radius: 14px;
-      --shadow: 0 10px 30px rgba(0,0,0,0.08);
     }
-    *{ box-sizing: border-box; }
     body{
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       line-height: 1.65;
       margin: 0;
       color: #111;
       background: #fff;
     }
-    a{ color: inherit; }
-
-    .wrap{
-      max-width: var(--maxw);
-      margin: 0 auto;
-      padding: 0 var(--pad);
-    }
-
-    /* Sticky nav: grouped, consistent buttons, no sideways scroll */
-    header{
-      position: sticky;
-      top: 0;
-      z-index: 50;
-      background: rgba(255,255,255,0.92);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid var(--line);
-    }
-    .navblock{ padding: 10px 0 12px; }
-    .navtitle{
-      font-size: 0.95em;
+    .wrap{ max-width: var(--maxw); margin: 0 auto; padding: 18px; }
+    
+    /* PIPE-SEPARATED NAVIGATION STYLE */
+    nav.top, nav.bottom{ 
+      text-align: center;
+      font-size: 0.9rem;
+      margin: 15px 0 20px;
       color: var(--muted);
-      margin: 0 0 8px;
     }
-    .navgrid{
-      display: grid;
-      grid-template-columns: repeat(5, minmax(0, 1fr));
-      gap: 8px;
-    }
-    @media (max-width: 820px){
-      .navgrid{ grid-template-columns: repeat(3, minmax(0, 1fr)); }
-    }
-    @media (max-width: 540px){
-      .navgrid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    }
-    .btn{
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 10px 12px;
-      border: 1px solid var(--line2);
-      border-radius: 999px;
-      background: #fff;
+    nav.top a, nav.bottom a{
+      color: #0066cc;
       text-decoration: none;
-      font-size: 0.95em;
-      line-height: 1;
-      white-space: nowrap;
-      width: 100%;
-      min-height: 40px;
+      padding: 0 4px;
     }
-    .btn:hover{ background: var(--soft2); }
+    nav.top a:hover, nav.bottom a:hover{
+      text-decoration: underline;
+    }
 
-    h1{ font-size: 1.75rem; margin: 22px 0 6px; }
-    h2{ font-size: 1.25rem; margin: 22px 0 10px; }
-    h3{ font-size: 1.05rem; margin: 18px 0 8px; }
-    p{ margin: 10px 0; }
-    hr{ border: 0; border-top: 1px solid var(--line); margin: 22px 0; }
-    .muted{ color: var(--muted); }
-
+    h1{ margin: 0.2em 0 0.4em; font-size: 1.9rem; }
+    h2{ margin: 1.2em 0 0.4em; font-size: 1.4rem; }
+    h3{ margin: 1em 0 0.3em; font-size: 1.15rem; }
+    hr{ border: 0; border-top: 1px solid var(--line); margin: 20px 0; }
     .card{
       border: 1px solid var(--line);
       border-radius: var(--radius);
-      background: #fff;
-      box-shadow: var(--shadow);
       padding: 14px;
+      background: #fff;
+      margin-bottom: 1em;
     }
-
-    .scripture{ font-size: 1.02em; }
-    .scripture .v{
-      display: inline-block;
+    .muted{ color: var(--muted); font-size: 0.95rem; }
+    .scripture-text{
+      font-size: 1.02rem;
+      line-height: 1.75;
+    }
+    .v-num{
+      display:inline-block;
       min-width: 2.2em;
+      font-family: ui-sans-serif, system-ui;
+      font-size: 0.9rem;
       color: var(--muted);
-      font-variant-numeric: tabular-nums;
+      font-weight: 600;
     }
-    .scripture p{ margin: 8px 0; }
-
-    ul{ margin: 10px 0 0 1.2em; }
-    li{ margin: 6px 0; }
-
-    .links{
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px 14px;
-      align-items: center;
+    ul{ margin: 0.6em 0 0.4em 1.2em; padding:0; }
+    li{ margin: 0.45em 0; line-height: 1.5; }
+    blockquote {
+      border-left: 4px solid var(--line);
+      margin: 1em 0;
+      padding-left: 1em;
+      font-style: italic;
+      color: var(--muted);
     }
-    .links a{ text-decoration: underline; }
-
     footer{
-      margin: 26px 0 40px;
-      padding-top: 14px;
+      margin-top: 2em;
+      padding-top: 1em;
       border-top: 1px solid var(--line);
       color: var(--muted);
-      font-size: 0.96em;
+      font-size: 0.92rem;
     }
-    .footrow{
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px 14px;
-      align-items: center;
-      justify-content: space-between;
+    a{ color: #0066cc; text-decoration: none; }
+    a:hover{ text-decoration: underline; }
+    strong{ font-weight: 600; }
+    
+    /* Share Button Standard */
+    .btn{
+      display:inline-block;
+      padding: 7px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      text-decoration: none;
+      color: #111;
+      background: #fff;
+      margin: 0 4px;
     }
-
-    .kofi-wrap{
-      margin-top: 12px;
-      display: flex;
-      justify-content: flex-start;
-    }
+    .btn:hover{ background: var(--soft2); }
   </style>
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q22N178LJ8"></script>
@@ -143,270 +122,227 @@
 </head>
 
 <body>
-<a id="top"></a>
+  <a id="top"></a>
+  <div class="wrap">
 
-<header>
-  <div class="wrap navblock">
-    <p class="navtitle">Isaiah 11 (WEB)</p>
-    <nav class="navgrid" aria-label="Page navigation">
-      <a class="btn" href="/Bible/">Bible Index</a>
-      <a class="btn" href="/Bible/Isaiah/index.html">Book Index</a>
-      <a class="btn" href="/Bible/Isaiah/isa2.html">Previous</a>
-      <a class="btn" href="/Bible/Isaiah/isa40.html">Next</a>
-      <a class="btn" href="#top">Top</a>
+    <nav class="top">
+      <a href="/Bible/index.html">Bible Index</a> |
+      <a href="index.html">Book Index</a> |
+      <a href="isa2.html">Previous</a> |
+      <a href="isa13.html">Next</a> |
+      <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> |
+      <a href="#top">Top</a>
     </nav>
-  </div>
-</header>
 
-<main class="wrap">
-
-  <h1>Isaiah 11 — New Humanity Under the Messiah</h1>
-  <p class="muted">A Spirit-filled Messiah brings righteous judgment, reconciled life inside God’s holy mountain, and a gathered people under one banner.</p>
-
-  <hr />
-
-  <h2>Immediate Context</h2>
-  <div class="card">
-    <p><span class="muted">Speaker:</span> Isaiah, proclaiming hope and covenant restoration for God’s people under pressure and pride.</p>
-    <p><span class="muted">Setting:</span> Judah’s kingship and confidence are being cut down; Isaiah announces a new Davidic ruler who governs by the Spirit.</p>
-    <p><span class="muted">Covenant weight:</span> The old power-structures collapse, and God raises a new centre of rule in the Messiah—forming a reconciled people where knowledge of Yahweh governs life.</p>
-    <p><span class="muted">Why it mattered then:</span> This chapter promises a real Messiah and a real new order: righteous rule, hostility ended, and a gathered remnant under one banner.</p>
-  </div>
-
-  <hr />
-
-  <h2>Scripture (WEB)</h2>
-  <p class="muted">Verbatim World English Bible text. Source for verification: <a href="https://ebible.org/eng-web/ISA11.htm">ebible.org (Isaiah 11)</a>.</p>
-
-  <div class="card scripture" aria-label="Isaiah 11 (WEB)">
-    <p><span class="v">1</span> A shoot will come out of the stock of Jesse, and a branch out of his roots will bear fruit.</p>
-
-    <p><span class="v">2</span> Yahweh’s Spirit will rest on him: the spirit of wisdom and understanding, the spirit of counsel and might, the spirit of knowledge and of the fear of Yahweh.</p>
-
-    <p><span class="v">3</span> His delight will be in the fear of Yahweh. He will not judge by the sight of his eyes, neither decide by the hearing of his ears;</p>
-
-    <p><span class="v">4</span> but he will judge the poor with righteousness, and decide with equity for the humble of the earth. He will strike the earth with the rod of his mouth; and with the breath of his lips he will kill the wicked.</p>
-
-    <p><span class="v">5</span> Righteousness will be the belt around his waist, and faithfulness the belt around his waist.</p>
-
-    <p><span class="v">6</span> The wolf will live with the lamb, and the leopard will lie down with the young goat, the calf, the young lion, and the fattened calf together; and a little child will lead them.</p>
-
-    <p><span class="v">7</span> The cow and the bear will graze. Their young ones will lie down together. The lion will eat straw like the ox.</p>
-
-    <p><span class="v">8</span> The nursing child will play near a cobra’s hole, and the weaned child will put his hand on the viper’s den.</p>
-
-    <p><span class="v">9</span> They will not hurt nor destroy in all my holy mountain; for the earth will be full of the knowledge of Yahweh, as the waters cover the sea.</p>
-
-    <p><span class="v">10</span> It will happen in that day that the nations will seek the root of Jesse, who stands as a banner of the peoples; and his resting place will be glorious.</p>
-
-    <p><span class="v">11</span> It will happen in that day that the Lord will set his hand again the second time to recover the remnant that is left of his people from Assyria, from Egypt, from Pathros, from Cush, from Elam, from Shinar, from Hamath, and from the islands of the sea.</p>
-
-    <p><span class="v">12</span> He will set up a banner for the nations, and will assemble the outcasts of Israel, and gather together the dispersed of Judah from the four corners of the earth.</p>
-
-    <p><span class="v">13</span> The envy also of Ephraim will depart, and those who persecute Judah will be cut off. Ephraim won’t envy Judah, and Judah won’t persecute Ephraim.</p>
-
-    <p><span class="v">14</span> They will fly down on the shoulders of the Philistines on the west. Together they will plunder the children of the east. They will extend their power over Edom and Moab, and the children of Ammon will obey them.</p>
-
-    <p><span class="v">15</span> Yahweh will utterly destroy the tongue of the Egyptian sea; and with his scorching wind he will wave his hand over the River, and will split it into seven streams, and cause men to march over in sandals.</p>
-
-    <p><span class="v">16</span> There will be a highway for the remnant that is left of his people from Assyria, like there was for Israel in the day that he came up out of the land of Egypt.</p>
-  </div>
-
-  <hr />
-
-  <h2>Fulfillment Notes</h2>
-  <ul>
-    <li>The Branch from Jesse announces Messiah rising from the cut-down kingship to establish a new covenant rule.</li>
-    <li>The Spirit resting on him defines the Messiah’s reign as wisdom, righteousness, and true judgment.</li>
-    <li>Peace imagery declares hostility ended inside God’s holy mountain where His knowledge governs life.</li>
-    <li>The banner and the nations describe Gentile inclusion under the Messiah’s glorious resting place.</li>
-    <li>The remnant and highway language proclaims restoration by divine action—God making a way through former barriers.</li>
-  </ul>
-
-  <hr />
-
-  <h2>Annotations</h2>
-  <div class="card">
-    <p><span class="muted">“stock of Jesse … a branch”</span> — David’s line cut down to a stump, yet Messiah rises as God’s living continuation and new beginning.</p>
-    <p><span class="muted">“rod of his mouth”</span> — decisive judgment by authoritative word, not by human violence.</p>
-    <p><span class="muted">“my holy mountain”</span> — Zion covenant domain where God’s rule is embodied and peace is practised.</p>
-    <p><span class="muted">“banner of the peoples”</span> — Messiah as the rallying centre for gathered humanity, including the nations.</p>
-  </div>
-
-  <hr />
-
-  <h2>Fulfillment Commentary</h2>
-
-  <h3>1) The “stock of Jesse” is old kingship cut down</h3>
-  <p>
-    Isaiah starts with a stump. Jesse is David’s father, and “the stock of Jesse” places the promise inside the Davidic line while announcing its humiliation.
-    The picture is not of a thriving dynasty expanding itself; it is of a tree cut down until only a stock remains.
-    That is the point: the glory of the old kingship is brought low, and human confidence in the old order is stripped.
-    The Messiah arrives as God’s answer after the cutting—life rising where Israel’s political hope looks finished.
-    The Branch does not renovate the old confidence-system; he replaces it with Spirit-governed rule.
-  </p>
-
-  <h3>2) The Spirit resting on him defines the kind of kingdom this is</h3>
-  <p>
-    “Yahweh’s Spirit will rest on him” announces settled presence and settled authority.
-    This is not a momentary empowerment; it is the defining reality of his reign.
-    The Spirit listed is wisdom, understanding, counsel, might, knowledge, and fear of Yahweh—covenant leadership from the inside out.
-    That means this kingdom does not run on propaganda, charisma, or human intimidation.
-    It runs on truth, discernment, and righteousness.
-    The Messiah rules as God’s faithful king—doing what Israel’s kings failed to do: judging rightly, protecting the vulnerable, and establishing justice as normal.
-  </p>
-
-  <h3>3) He judges by reality, not by appearances</h3>
-  <p>
-    Isaiah insists that Messiah “will not judge by the sight of his eyes” or by what he merely hears.
-    He sees what others miss and judges what others distort.
-    The poor and the humble are not treated as disposable; they are the very ones named as recipients of righteous judgment.
-    This is covenant correction: God’s king overturns the standard human pattern where power protects itself.
-    Under Messiah, the weak are defended and the proud are exposed, because the reign is anchored in Yahweh’s fear, not in human advantage.
-  </p>
-
-  <h3>4) “Rod of his mouth” is kingdom advance by word</h3>
-  <p>
-    “He will strike the earth with the rod of his mouth” locates authority in speech—decree, proclamation, verdict.
-    His mouth is not metaphor for empty talk; it is the instrument of judgment because his word carries divine authority.
-    Isaiah adds, “with the breath of his lips he will kill the wicked.”
-    Wickedness is not allowed to keep defining the covenant world.
-    The Messiah does not need the machinery of violence to establish his reign; he speaks truth, renders judgment, and breaks the power of corruption by the authority of his word.
-    This aligns with the New Covenant reality where Christ rules by proclamation and summons the nations through gospel announcement, not by coercion.
-  </p>
-
-  <h3>5) Righteousness and faithfulness are his constant clothing</h3>
-  <p>
-    Isaiah pictures righteousness and faithfulness as the belt around his waist.
-    Belts hold everything together; they signal readiness and stability.
-    This is not occasional justice when convenient; it is the Messiah’s permanent posture.
-    Where old rulers shifted with fear, bribes, and alliances, Messiah is fixed.
-    His faithfulness is not a mood; it is a governing principle.
-    That is why peace imagery can follow—because reconciliation requires a ruler who will not be bought, bent, or manipulated.
-  </p>
-
-  <h3>6) The peace imagery announces hostility ended inside God’s holy mountain</h3>
-  <p>
-    The wolf with the lamb, leopard with the young goat, and a child leading them declares a new operating principle: harm is no longer the law of life inside God’s domain.
-    Isaiah places the meaning: “They will not hurt nor destroy in all my holy mountain.”
-    This is covenant peace—reconciled life where predation and fear no longer govern relationships.
-    It is not sentimental poetry; it is a prophetic declaration that Messiah’s reign disarms hostility and creates a community where the knowledge of Yahweh produces safety.
-    The child leading signals a world no longer driven by threat.
-    The point is not animal trivia; the point is a new humanity formed under a new king.
-  </p>
-
-  <h3>7) “The earth will be full of the knowledge of Yahweh” is saturation, not scarcity</h3>
-  <p>
-    Isaiah uses the strongest image he can reach for: “as the waters cover the sea.”
-    This is fullness, permeation, saturation—knowledge of Yahweh everywhere it is meant to be.
-    Knowledge here is not mere information; it is covenant knowing—God made known, God trusted, God obeyed, God loved.
-    Where Yahweh is known, peace follows because the true centre is restored.
-    This connects directly to New Covenant reality: God is no longer accessed through priestly gatekeeping; he is made known in Messiah, and the nations are drawn into that knowledge.
-  </p>
-
-  <h3>8) The Root of Jesse becomes the banner for the nations</h3>
-  <p>
-    Isaiah turns outward: “the nations will seek the root of Jesse.”
-    This is explicit Gentile inclusion under the Messiah.
-    The banner imagery is public: Messiah stands as the rallying centre for gathered peoples.
-    The kingdom is not a closed ethnic project; it is Messiah-centred humanity.
-    His “resting place will be glorious” because God’s presence rests where the king reigns.
-    Zion’s glory is not temple gold; it is the settled reality of God dwelling with his gathered people under the Messiah.
-  </p>
-
-  <h3>9) Remnant recovery is restoration through upheaval</h3>
-  <p>
-    Isaiah names a remnant recovered from the nations—a people brought back from dispersion.
-    This is covenant restoration language: God retrieves what was scattered and reconstitutes his people.
-    The banner is raised again, and outcasts are assembled.
-    Isaiah’s goal is not mere geography; it is covenant life restored.
-    The chapter insists that God’s hand is doing this: “the Lord will set his hand again the second time.”
-    Restoration is not achieved by human momentum; it is accomplished by divine action.
-  </p>
-
-  <h3>10) Hostility inside Israel is cut off, and barriers are crossed by God’s highway</h3>
-  <p>
-    Ephraim and Judah represent deep internal rivalry, yet Isaiah announces envy and persecution ended.
-    That is a prototype of one reconciled people: hostility removed, jealousy disarmed, persecution cut off.
-    Then Isaiah brings exodus imagery—sea, river, sandals, and a highway—declaring that God makes a way where the old world said “no way.”
-    The “highway” is access: God-prepared passage through former barriers into restored covenant life.
-    Isaiah 11 therefore stands as a covenant blueprint: the old kingship is cut down, Messiah rises by the Spirit, hostility is dismantled, the nations are gathered under one banner, and God makes a way for a restored people to walk in his peace.
-  </p>
-
-  <hr />
-
-  <h2>Prophecy Hub Links</h2>
-  <div class="links">
-    <a href="/Bible/Prophecy/index.html#messiah">Messiah — The Branch &amp; King</a>
-    <a href="/Bible/Prophecy/index.html#zion">Zion — Holy Mountain</a>
-    <a href="/Bible/Prophecy/index.html#nations-gentiles">Nations &amp; Gentiles — In-Gathering</a>
-  </div>
-
-  <hr />
-
-  <h2>Cross-References</h2>
-  <div class="links">
-    <a href="https://ebible.org/eng-web/ROM15.htm">Romans 15:8–12 (WEB)</a>
-    <a href="https://ebible.org/eng-web/EPH02.htm">Ephesians 2:14–22 (WEB)</a>
-    <a href="https://ebible.org/eng-web/REV07.htm">Revelation 7:9–17 (WEB)</a>
-  </div>
-
-  <hr />
-
-  <h2>New Creation Reality</h2>
-  <div class="card">
-    <p>
-      Messiah reigns by the Spirit with righteousness and faithfulness, forming a reconciled people where harm is no longer the operating principle.
-      The nations are gathered under one banner, and God’s knowledge spreads as a lived reality inside His covenant domain.
-    </p>
-  </div>
-
-  <hr />
-
-  <h2>Reflection</h2>
-  <p>If Messiah has ended hostility, where are you still holding onto it?</p>
-
-  <hr />
-
-  <h2>Footer + Navigation</h2>
-  <p>
-    Share this study:
-    <a href="#" onclick="this.href='https://twitter.com/intent/tweet?url='+encodeURIComponent(location.href)+'&amp;text='+encodeURIComponent(document.title);return true;" target="_blank" rel="noopener">𝕏 Twitter</a>
-    <a href="#" onclick="this.href='https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href);return true;" target="_blank" rel="noopener">Facebook</a>
-    <a href="#" onclick="this.href='mailto:?subject='+encodeURIComponent(document.title)+'&amp;body='+encodeURIComponent(location.href);return true;">Email</a>
-  </p>
-  <hr />
-
-  <nav class="navgrid" aria-label="Footer navigation" style="margin: 10px 0 0;">
-    <a class="btn" href="/Bible/">Bible Index</a>
-    <a class="btn" href="/Bible/Isaiah/index.html">Book Index</a>
-    <a class="btn" href="/Bible/Isaiah/isa2.html">Previous</a>
-    <a class="btn" href="/Bible/Isaiah/isa40.html">Next</a>
-    <a class="btn" href="#top">Top</a>
-  </nav>
-
-  <footer>
-    <div class="footrow">
-      <div>FPBible — World English Bible (WEB) text with fulfilled covenant-transition commentary (AD 30–70).</div>
-      <div><a href="#top">Back to top</a></div>
+    <div class="card">
+      <h1>Isaiah 11 — The Branch of Jesse and the Peaceable Kingdom</h1>
+      <p class="muted">Covenantal Fulfillment • WEB Scripture (verbatim) • Apostolic Interpretation</p>
     </div>
 
-    <!-- Ko-fi button widget (actual button) -->
-    <div class="kofi-wrap" aria-label="Support FPBible on Ko-fi">
-      <div id="kofi-button"></div>
-    </div>
-    <script src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"></script>
-    <script>
-      if (window.kofiwidget2) {
-        kofiwidget2.init('Support on Ko-fi', '#000000', 'fpbible');
-        kofiwidget2.draw('kofi-button');
-      }
-    </script>
-    <noscript>
-      <p><a href="https://ko-fi.com/fpbible" target="_blank" rel="noopener">Support FPBible on Ko-fi</a></p>
-    </noscript>
-  </footer>
+    <hr />
 
-</main>
+    <section class="card">
+      <h2>1. Immediate Context</h2>
+      <p>
+        At the end of Isaiah 10, God describes His judgment on the proud Assyrian empire using the imagery of a mighty forester chopping down massive, towering trees. In stark contrast, Isaiah 11 opens by focusing on the royal house of David (the son of Jesse). By the time the Messiah arrives, the Davidic dynasty will not look like a towering cedar; it will look like a dead, forgotten stump. Yet, from this seemingly lifeless stump, a single Branch will spring up. This chapter prophesies the arrival of Jesus Christ, His endowment with the Holy Spirit, and the establishment of a "peaceable kingdom" where historically bitter enemies—often depicted in prophetic literature as predatory beasts and defenseless livestock—will dwell together in unprecedented unity.
+      </p>
+    </section>
+
+    <hr />
+
+    <section class="card">
+      <h2>2. Scripture (WEB)</h2>
+      <p class="muted">Source (verbatim): <a href="https://ebible.org/web/ISA11.htm" target="_blank">https://ebible.org/web/ISA11.htm</a></p>
+
+      <div class="scripture-text">
+        <span class="v-num">1</span> A shoot will come out of the stock of Jesse, and a branch out of his roots will bear fruit.<br />
+        <span class="v-num">2</span> Yahweh’s Spirit will rest on him: the spirit of wisdom and understanding, the spirit of counsel and might, the spirit of knowledge and of the fear of Yahweh.<br />
+        <span class="v-num">3</span> His delight will be in the fear of Yahweh. He will not judge by the sight of his eyes, neither decide by the hearing of his ears;<br />
+        <span class="v-num">4</span> but with righteousness he will judge the poor, and decide with equity for the humble of the earth. He will strike the earth with the rod of his mouth; and with the breath of his lips he will kill the wicked.<br />
+        <span class="v-num">5</span> Righteousness will be the belt of his waist, and faithfulness the belt of his waist.<br />
+        <span class="v-num">6</span> The wolf will live with the lamb, and the leopard will lie down with the young goat; The calf, the young lion, and the fattened calf together; and a little child will lead them.<br />
+        <span class="v-num">7</span> The cow and the bear will graze. Their young ones will lie down together. The lion will eat straw like the ox.<br />
+        <span class="v-num">8</span> The nursing child will play near a cobra’s hole, and the weaned child will put his hand on the viper’s den.<br />
+        <span class="v-num">9</span> They will not hurt nor destroy in all my holy mountain; for the earth will be full of the knowledge of Yahweh, as the waters cover the sea.<br />
+        <span class="v-num">10</span> It will happen in that day that the nations will seek the root of Jesse, who stands as a banner of the peoples; and his resting place will be glorious.<br />
+        <span class="v-num">11</span> It will happen in that day that the Lord will set his hand again the second time to recover the remnant that is left of his people from Assyria, from Egypt, from Pathros, from Cush, from Elam, from Shinar, from Hamath, and from the islands of the sea.<br />
+        <span class="v-num">12</span> He will set up a banner for the nations, and will assemble the outcasts of Israel, and gather together the dispersed of Judah from the four corners of the earth.<br />
+        <span class="v-num">13</span> The envy also of Ephraim will depart, and those who persecute Judah will be cut off. Ephraim won’t envy Judah, and Judah won’t persecute Ephraim.<br />
+        <span class="v-num">14</span> They will fly down on the shoulders of the Philistines on the west. Together they will plunder the children of the east. They will extend their power over Edom and Moab, and the children of Ammon will obey them.<br />
+        <span class="v-num">15</span> Yahweh will utterly destroy the tongue of the Egyptian sea; and with his scorching wind he will wave his hand over the River, and will split it into seven streams, and cause men to march over in sandals.<br />
+        <span class="v-num">16</span> There will be a highway for the remnant that is left of his people from Assyria, like there was for Israel in the day that he came up out of the land of Egypt.
+      </div>
+    </section>
+
+    <hr />
+
+    <section class="card">
+      <h2>3. Fulfillment Notes</h2>
+      <ul>
+        <li><strong>The Branch:</strong> Fulfilled directly in the incarnation of Jesus Christ, who descended from the line of David (Jesse's son), despite the royal dynasty having lost all political power centuries prior.</li>
+        <li><strong>The Spirit's Rest:</strong> Fulfilled at the baptism of Christ, where the Holy Spirit descended and remained upon Him (John 1:32).</li>
+        <li><strong>The Wolf and the Lamb:</strong> This is a prophetic idiom for the end of bitter ethnic and covenantal hostility (specifically between Jew and Gentile), fulfilled by the tearing down of the dividing wall in Ephesians 2.</li>
+        <li><strong>The Banner to the Nations:</strong> The Apostle Paul explicitly quotes verse 10 in Romans 15:12 to prove that the inclusion of the Gentiles in the first-century church <em>was</em> the fulfillment of this prophecy.</li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <section class="card">
+      <h2>4. Annotations</h2>
+      <ul>
+        <li><strong>stock of Jesse</strong> — Jesse was King David's father. Calling it the "stock" or "stump" implies the royal tree had been chopped down (the Babylonian exile ended the active Davidic throne).</li>
+        <li><strong>breath of his lips</strong> — The spoken word of the Messiah brings judgment. This imagery is utilized in 2 Thessalonians 2:8 and Revelation 19 to describe Christ's victory over lawlessness.</li>
+        <li><strong>my holy mountain</strong> — Mount Zion, representing the New Covenant Kingdom and the Church (Hebrews 12:22), not a literal mountain range.</li>
+        <li><strong>banner of the peoples</strong> — A military rallying point. Christ crucified and resurrected is the standard around which the global Church gathers.</li>
+        <li><strong>highway for the remnant</strong> — Prophetic imagery of a "Second Exodus." God creates a spiritual path for His people to escape the bondage of sin and the Old Covenant, just as He parted the Red Sea for ancient Israel.</li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <section class="card">
+      <h2>5. Fulfillment Commentary</h2>
+
+      <h3>1) Life from a Dead Stump (vv. 1–5)</h3>
+      <p>
+        The Davidic dynasty ruled in Jerusalem for four hundred years, but in 586 BC, Babylon chopped the tree down. The kings were exiled, blinded, or killed. By the time of the first century, the royal line of Jesse was a forgotten, powerless stump; a carpenter in Nazareth named Joseph was one of its obscure heirs. 
+      </p>
+      <p>
+        Yet, Isaiah prophesies that the ultimate King will not arise during the height of the dynasty's political power, but from its lowest point. The "shoot" is Jesus. Unlike the corrupt kings of Judah who relied on military alliances, this King is empowered entirely by the sevenfold Spirit of Yahweh (v. 2). He does not judge by outward appearance or political optics, but strikes the wicked with the truth of His word.
+      </p>
+
+      <h3>2) The Peaceable Kingdom: Wolves and Lambs (vv. 6–9)</h3>
+      
+      <p>
+        Verses 6 through 9 contain some of the most famous imagery in the Bible: the wolf living with the lamb, the leopard with the goat, and the lion eating straw like an ox. 
+      </p>
+      <p>
+        Futurists read this as a literal, biological change to the digestive tracts of predatory animals that will supposedly occur during a future 1,000-year millennium. But this fundamentally misunderstands Hebrew prophetic idiom. Throughout the Old Testament, animals are constantly used as metaphors for nations and people groups.
+      </p>
+      <ul>
+        <li>Israel is repeatedly called God's "sheep" or "flock" (Psalm 79:13, Jeremiah 50:17).</li>
+        <li>Gentile empires and hostile nations are repeatedly called lions, wolves, bears, and leopards (Ezekiel 22:27, Daniel 7, Jeremiah 5:6).</li>
+      </ul>
+      <p>
+        In the ancient world, the Jew and the Gentile were natural enemies. The Gentile "wolves" historically devoured the Israelite "lambs." What Isaiah is prophesying is a breathtaking covenantal miracle: under the reign of the Branch, the historic, predatory hostility between nations will end. They will sit down at the same table. They will dwell in the same "holy mountain" (the Church) without hurting or destroying one another. The venomous bite of hatred will be removed.
+      </p>
+
+      <h3>3) Apostolic Proof of Fulfillment (v. 10)</h3>
+      <p>
+        We do not have to guess if this interpretation is correct. We have direct, inspired, apostolic commentary. In Romans 15, the Apostle Paul is writing to a church struggling with unity between Jewish and Gentile believers. To prove that God's plan was always to unite them into one family, Paul quotes a series of Old Testament texts. His final, climactic proof text is Isaiah 11:10.
+      </p>
+      <blockquote>
+        "And again, Isaiah says, 'There will be the root of Jesse, he who arises to rule over the Gentiles; in him the Gentiles will hope.'" (Romans 15:12)
+      </blockquote>
+      <p>
+        Paul does not say, "Thousands of years from now, during a future millennium, the root of Jesse will finally unite people." He quotes Isaiah 11 to explain <em>what was actively happening in his first-century ministry.</em> The "wolf and lamb" peace was being fulfilled right then and there in the house churches of Rome, as historic enemies broke bread together under the banner of Christ.
+      </p>
+
+      <h3>4) The Second Exodus and the Gathering (vv. 11–16)</h3>
+      
+      <p>
+        The remainder of the chapter speaks of a great ingathering. God promises to set His hand a "second time" to recover the remnant of His people from the nations. He uses the imagery of the first Exodus—drying up the tongue of the Egyptian sea and making a highway—to describe this new deliverance.
+      </p>
+      <p>
+        This is the ingathering of the true, spiritual Israel (the faithful remnant) and the calling of the Gentiles into the New Covenant. The old internal civil war between the northern kingdom (Ephraim) and the southern kingdom (Judah) is healed (v. 13). They are no longer defined by geographic borders or physical enemies (Philistines, Edomites); they march together on the "highway" of holiness into the Kingdom of God.
+      </p>
+
+      <h3>5) What This Is NOT Saying</h3>
+      <p>
+        If we force a wooden, literalistic framework onto this poetry, we rob the Gospel of its power.
+      </p>
+      <ul>
+        <li>This chapter is <strong>not</strong> a promise of a future petting zoo where children can safely play with literal cobras.</li>
+        <li>It is <strong>not</strong> predicting a biological restructuring of the animal kingdom's food chain.</li>
+        <li>It is <strong>not</strong> an unfulfilled prophecy waiting for a future geopolitical Jewish state to conquer its modern Middle Eastern neighbors.</li>
+      </ul>
+      <p>To reduce Isaiah's majestic vision of covenant reconciliation to zoological trivia is to profoundly miss the point of the text.</p>
+
+      <h3>6) The Covenant Resolution</h3>
+      <p>
+        The resolution of Isaiah 11 is the triumph of the Gospel of Peace. The Branch has grown. The Spirit has been poured out. The banner has been raised on the cross. And the ancient, bitter dividing wall of hostility that turned men into predatory beasts has been torn down. The New Covenant Church is the peaceable kingdom, where the earth is being filled with the knowledge of Yahweh as the waters cover the sea.
+      </p>
+    </section>
+
+    <hr />
+
+    <section class="card">
+      <h2>6. Prophecy Hub Links</h2>
+      <ul>
+        <li><a href="/Bible/Prophecy/nations-gentiles.html">Nations & Gentiles</a> — The In-Gathering and the end of the dividing wall</li>
+        <li><a href="/Bible/Prophecy/zion.html">Zion — Covenant Centre</a> — The Holy Mountain of the Lord</li>
+        <li><a href="/Bible/Prophecy/new-creation.html">The New Creation</a> — Living from what is already finished</li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <section class="card">
+      <h2>7. Cross-References</h2>
+      <ul>
+        <li><a href="https://ebible.org/web/ROM15.htm" target="_blank">Romans 15:12</a> — Paul explicitly claims the fulfillment of Isaiah 11:10 in the first-century Church.</li>
+        <li><a href="https://ebible.org/web/EPH02.htm" target="_blank">Ephesians 2:14-16</a> — Christ destroys the hostility between the "wolf" and the "lamb," making one new man.</li>
+        <li><a href="https://ebible.org/web/JHN01.htm#JHN01V32" target="_blank">John 1:32</a> — The Spirit of Yahweh rests upon the Branch of Jesse at His baptism.</li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <section class="card">
+      <h2>8. New Creation Reality</h2>
+      <p>
+        You are currently living in the peaceable kingdom of Isaiah 11. You do not have to wait for a future dispensation to experience the end of hostility. Because you are in Christ, the divisions of race, status, and background have been completely abolished (Galatians 3:28). The predatory nature of the flesh has been replaced by the Spirit of wisdom and fear of the Lord. <strong>You are reading covenant history for assurance, not headlines for doom.</strong> Rest under the banner of the Root of Jesse.
+      </p>
+    </section>
+
+    <hr />
+
+    <section class="card">
+      <h2>9. Reflection</h2>
+      <p><strong>Question:</strong> How does realizing that the "wolf and lamb" is a beautiful metaphor for human enemies finding peace in the Church change the way you view your mandate to love others today?</p>
+    </section>
+
+    <hr />
+
+    <section class="card">
+      <h2>10. Apostolic Fulfillment Evidence</h2>
+      <p>The New Testament writers viewed Isaiah 11 as a present, active reality, not a postponed dream:</p>
+      <ul>
+        <li><strong>Pentecost (AD 30):</strong> The "knowledge of Yahweh" began to rapidly fill the earth as the Spirit was poured out and the Gospel went to the nations.</li>
+        <li><strong>The inclusion of Cornelius (Acts 10):</strong> The moment a Roman Centurion (a literal "wolf" of the occupying empire) was baptized and sat at the table with Jewish believers (the "lambs"), Isaiah 11 was tangibly manifested in history.</li>
+        <li><strong>The Epistles:</strong> The entire pastoral project of the Apostle Paul was ensuring that this newly forged unity in the "holy mountain" was maintained, proving the banner to the nations had already been raised.</li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <div style="text-align: center; margin: 20px 0;">
+      <span class="muted" style="margin-right: 10px;">Share this study:</span>
+      <a class="btn" href="#" onclick="window.open('https://twitter.com/intent/tweet?text=Read this covenantal breakdown at The Fulfilled Prophecy Bible:&url=' + encodeURIComponent(window.location.href)); return false;" rel="noopener noreferrer">𝕏 Twitter</a>
+      <a class="btn" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href)); return false;" rel="noopener noreferrer">Facebook</a>
+      <a class="btn" href="#" onclick="window.location.href='mailto:?subject=Study from The Fulfilled Prophecy Bible&body=I thought you might find this commentary interesting: ' + encodeURIComponent(window.location.href); return false;">Email</a>
+    </div>
+
+    <hr />
+
+    <nav class="bottom">
+      <a href="/Bible/index.html">Bible Index</a> |
+      <a href="index.html">Book Index</a> |
+      <a href="isa2.html">Previous</a> |
+      <a href="isa13.html">Next</a> |
+      <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> |
+      <a href="#top">Top</a>
+    </nav>
+
+    <a href="https://ko-fi.com/B0B61QC1BU" target="_blank"><img src="https://storage.ko-fi.com/cdn/kofi2.png?v=3" alt="Support The Fulfilled Prophecy Bible on Ko-fi" style="height: 36px; width: auto; margin-top: 10px;"></a>
+
+    <footer>
+      <p><strong>The Fulfilled Prophecy Bible</strong> — Scripture text based on the <strong>World English Bible (WEB)</strong>, a public domain modern English translation.</p>
+      <p>Commentary honours audience relevance, time statements, and first-century fulfillment.</p>
+      <p><a href="/Bible/about.html">About</a> · <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> · <a href="https://ko-fi.com/fpbible" target="_blank">Support</a></p>
+    </footer>
+
+  </div>
 </body>
 </html>
