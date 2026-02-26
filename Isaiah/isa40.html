@@ -3,134 +3,113 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Isaiah 40 — Comfort and the End of Exile — FPBible (WEB)</title>
-  <meta name="description" content="Isaiah 40 (WEB) with fulfillment notes and New Creation commentary (AD 30–70), without futurist delay theology." />
+  <title>Isaiah 40 — Comfort and the End of Exile: Preparing the Way — Fulfilled Prophecy Bible (WEB)</title>
+  <meta name="description" content="Isaiah 40 proclaims the end of covenant warfare and the arrival of God. A robust covenantal commentary on John the Baptist, the fading flesh, and the renewed strength of Zion." />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Isaiah 40 — Comfort and the End of Exile: Preparing the Way",
+    "description": "An exhaustive study demonstrating how Isaiah 40 announces the end of Old Covenant exile, fulfilled historically through the ministry of John the Baptist and the arrival of Christ.",
+    "author": {
+      "@type": "Organization",
+      "name": "The Fulfilled Prophecy Bible"
+    }
+  }
+  </script>
 
   <style>
     :root{
-      --maxw: 1020px;
+      --maxw: 980px;
       --pad: 16px;
       --line: rgba(0,0,0,0.12);
-      --line2: rgba(0,0,0,0.18);
       --muted: rgba(0,0,0,0.72);
-      --soft2: rgba(0,0,0,0.04);
+      --soft: rgba(0,0,0,0.05);
+      --soft2: rgba(0,0,0,0.03);
       --radius: 14px;
-      --shadow: 0 10px 30px rgba(0,0,0,0.08);
     }
-    *{ box-sizing: border-box; }
     body{
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       line-height: 1.65;
       margin: 0;
       color: #111;
       background: #fff;
     }
-    a{ color: inherit; }
-
-    .wrap{
-      max-width: var(--maxw);
-      margin: 0 auto;
-      padding: 0 var(--pad);
-    }
-
-    /* Sticky nav: grouped, consistent buttons, no sideways scroll */
-    header{
-      position: sticky;
-      top: 0;
-      z-index: 50;
-      background: rgba(255,255,255,0.92);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid var(--line);
-    }
-    .navblock{ padding: 10px 0 12px; }
-    .navtitle{
-      font-size: 0.95em;
+    .wrap{ max-width: var(--maxw); margin: 0 auto; padding: 18px; }
+    
+    /* PIPE-SEPARATED NAVIGATION STYLE */
+    nav.top, nav.bottom{ 
+      text-align: center;
+      font-size: 0.9rem;
+      margin: 15px 0 20px;
       color: var(--muted);
-      margin: 0 0 8px;
     }
-    .navgrid{
-      display: grid;
-      grid-template-columns: repeat(5, minmax(0, 1fr));
-      gap: 8px;
-    }
-    @media (max-width: 820px){
-      .navgrid{ grid-template-columns: repeat(3, minmax(0, 1fr)); }
-    }
-    @media (max-width: 540px){
-      .navgrid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    }
-    .btn{
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 10px 12px;
-      border: 1px solid var(--line2);
-      border-radius: 999px;
-      background: #fff;
+    nav.top a, nav.bottom a{
+      color: #0066cc;
       text-decoration: none;
-      font-size: 0.95em;
-      line-height: 1;
-      white-space: nowrap;
-      width: 100%;
-      min-height: 40px;
+      padding: 0 4px;
     }
-    .btn:hover{ background: var(--soft2); }
+    nav.top a:hover, nav.bottom a:hover{
+      text-decoration: underline;
+    }
 
-    h1{ font-size: 1.75rem; margin: 22px 0 6px; }
-    h2{ font-size: 1.25rem; margin: 22px 0 10px; }
-    h3{ font-size: 1.05rem; margin: 18px 0 8px; }
-    p{ margin: 10px 0; }
-    hr{ border: 0; border-top: 1px solid var(--line); margin: 22px 0; }
-    .muted{ color: var(--muted); }
-
+    h1{ margin: 0.2em 0 0.4em; font-size: 1.9rem; }
+    h2{ margin: 1.2em 0 0.4em; font-size: 1.4rem; }
+    h3{ margin: 1em 0 0.3em; font-size: 1.15rem; }
+    hr{ border: 0; border-top: 1px solid var(--line); margin: 20px 0; }
     .card{
       border: 1px solid var(--line);
       border-radius: var(--radius);
-      background: #fff;
-      box-shadow: var(--shadow);
       padding: 14px;
+      background: #fff;
+      margin-bottom: 1em;
     }
-
-    .scripture{ font-size: 1.02em; }
-    .scripture .v{
-      display: inline-block;
+    .muted{ color: var(--muted); font-size: 0.95rem; }
+    .scripture-text{
+      font-size: 1.02rem;
+      line-height: 1.75;
+    }
+    .v-num{
+      display:inline-block;
       min-width: 2.2em;
+      font-family: ui-sans-serif, system-ui;
+      font-size: 0.9rem;
       color: var(--muted);
-      font-variant-numeric: tabular-nums;
+      font-weight: 600;
     }
-    .scripture p{ margin: 8px 0; }
-
-    ul{ margin: 10px 0 0 1.2em; }
-    li{ margin: 6px 0; }
-
-    .links{
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px 14px;
-      align-items: center;
+    ul{ margin: 0.6em 0 0.4em 1.2em; padding:0; }
+    li{ margin: 0.45em 0; line-height: 1.5; }
+    blockquote {
+      border-left: 4px solid var(--line);
+      margin: 1em 0;
+      padding-left: 1em;
+      font-style: italic;
+      color: var(--muted);
     }
-    .links a{ text-decoration: underline; }
-
     footer{
-      margin: 26px 0 40px;
-      padding-top: 14px;
+      margin-top: 2em;
+      padding-top: 1em;
       border-top: 1px solid var(--line);
       color: var(--muted);
-      font-size: 0.96em;
+      font-size: 0.92rem;
     }
-    .footrow{
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px 14px;
-      align-items: center;
-      justify-content: space-between;
+    a{ color: #0066cc; text-decoration: none; }
+    a:hover{ text-decoration: underline; }
+    strong{ font-weight: 600; }
+    
+    /* Share Button Standard */
+    .btn{
+      display:inline-block;
+      padding: 7px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      text-decoration: none;
+      color: #111;
+      background: #fff;
+      margin: 0 4px;
     }
-
-    .kofi-wrap{
-      margin-top: 12px;
-      display: flex;
-      justify-content: flex-start;
-    }
+    .btn:hover{ background: var(--soft2); }
   </style>
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q22N178LJ8"></script>
@@ -143,355 +122,227 @@
 </head>
 
 <body>
-<a id="top"></a>
+  <a id="top"></a>
+  <div class="wrap">
 
-<header>
-  <div class="wrap navblock">
-    <p class="navtitle">Isaiah 40 (WEB)</p>
-    <nav class="navgrid" aria-label="Page navigation">
-      <a class="btn" href="/Bible/">Bible Index</a>
-      <a class="btn" href="/Bible/Isaiah/index.html">Book Index</a>
-      <a class="btn" href="/Bible/Isaiah/isa11.html">Previous</a>
-      <a class="btn" href="/Bible/Isaiah/isa42.html">Next</a>
-      <a class="btn" href="#top">Top</a>
+    <nav class="top">
+      <a href="/Bible/index.html">Bible Index</a> |
+      <a href="index.html">Book Index</a> |
+      <a href="isa34.html">Previous</a> |
+      <a href="isa42.html">Next</a> |
+      <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> |
+      <a href="#top">Top</a>
     </nav>
-  </div>
-</header>
 
-<main class="wrap">
-
-  <h1>Isaiah 40 — Comfort and the End of Exile</h1>
-  <p class="muted">Comfort is declared, the way is prepared for the LORD’s arrival, idols are exposed, and strength is given to the weary who wait on Him.</p>
-
-  <hr />
-
-  <h2>Immediate Context</h2>
-  <div class="card">
-    <p><span class="muted">Speaker:</span> Isaiah, announcing comfort and covenant restoration after judgment language.</p>
-    <p><span class="muted">Setting:</span> Exile and despair are answered by a public declaration that warfare is accomplished and iniquity is pardoned.</p>
-    <p><span class="muted">Covenant weight:</span> God’s word stands while human glory fades; the LORD comes to shepherd His flock and to expose idols as powerless.</p>
-    <p><span class="muted">Why it mattered then:</span> This chapter resets hope: God is not absent, and the coming deliverance is God’s own arrival and action.</p>
-  </div>
-
-  <hr />
-
-  <h2>Scripture (WEB)</h2>
-  <p class="muted">Verbatim World English Bible text. Source for verification: <a href="https://ebible.org/eng-web/ISA40.htm">ebible.org (Isaiah 40)</a>.</p>
-
-  <div class="card scripture" aria-label="Isaiah 40 (WEB)">
-    <p><span class="v">1</span> “Comfort, comfort my people,” says your God.</p>
-    <p><span class="v">2</span> “Speak comfortably to Jerusalem, and call out to her that her warfare is accomplished, that her iniquity is pardoned, that she has received of the LORD’s hand double for all her sins.”</p>
-
-    <p><span class="v">3</span> The voice of one who calls out,</p>
-    <p>“Prepare the way of the LORD in the wilderness!</p>
-    <p>Make a level highway in the desert for our God.</p>
-
-    <p><span class="v">4</span> Every valley shall be exalted,</p>
-    <p>and every mountain and hill shall be made low.</p>
-    <p>The uneven shall be made level,</p>
-    <p>and the rough places a plain.</p>
-
-    <p><span class="v">5</span> The LORD’s glory shall be revealed,</p>
-    <p>and all flesh shall see it together;</p>
-    <p>for the mouth of the LORD has spoken it.”</p>
-
-    <p><span class="v">6</span> The voice of one saying, “Cry out!”</p>
-    <p>One said, “What shall I cry?”</p>
-    <p>“All flesh is like grass,</p>
-    <p>and all its glory is like the flower of the field.</p>
-
-    <p><span class="v">7</span> The grass withers,</p>
-    <p>the flower fades,</p>
-    <p>because the LORD’s breath blows on it.</p>
-    <p>Surely the people are like grass.</p>
-
-    <p><span class="v">8</span> The grass withers,</p>
-    <p>the flower fades;</p>
-    <p>but the word of our God stands forever.”</p>
-
-    <p><span class="v">9</span> You who tell good news to Zion, go up on a high mountain.</p>
-    <p>You who tell good news to Jerusalem, lift up your voice with strength!</p>
-    <p>Lift it up! Don’t be afraid!</p>
-    <p>Say to the cities of Judah, “Behold, your God!”</p>
-
-    <p><span class="v">10</span> Behold, the Lord GOD will come as a mighty one,</p>
-    <p>and his arm will rule for him.</p>
-    <p>Behold, his reward is with him,</p>
-    <p>and his recompense before him.</p>
-
-    <p><span class="v">11</span> He will feed his flock like a shepherd.</p>
-    <p>He will gather the lambs in his arm,</p>
-    <p>and carry them in his bosom.</p>
-    <p>He will gently lead those who have their young.</p>
-
-    <p><span class="v">12</span> Who has measured the waters in the hollow of his hand,</p>
-    <p>and marked off the sky with his span,</p>
-    <p>and calculated the dust of the earth in a measuring basket,</p>
-    <p>and weighed the mountains in scales,</p>
-    <p>and the hills in a balance?</p>
-
-    <p><span class="v">13</span> Who has directed the LORD’s Spirit,</p>
-    <p>or has taught him as his counselor?</p>
-
-    <p><span class="v">14</span> Who did he take counsel with,</p>
-    <p>and who instructed him,</p>
-    <p>and taught him in the path of justice,</p>
-    <p>and taught him knowledge,</p>
-    <p>and showed him the way of understanding?</p>
-
-    <p><span class="v">15</span> Behold, the nations are like a drop in a bucket,</p>
-    <p>and are regarded as a speck of dust on a balance.</p>
-    <p>Behold, he lifts up the islands like a very little thing.</p>
-
-    <p><span class="v">16</span> Lebanon is not sufficient to burn,</p>
-    <p>nor its animals sufficient for a burnt offering.</p>
-
-    <p><span class="v">17</span> All the nations are like nothing before him.</p>
-    <p>They are regarded by him as less than nothing, and vanity.</p>
-
-    <p><span class="v">18</span> To whom then will you liken God?</p>
-    <p>Or what likeness will you compare to him?</p>
-
-    <p><span class="v">19</span> A workman has cast an image,</p>
-    <p>and the goldsmith overlays it with gold,</p>
-    <p>and casts silver chains for it.</p>
-
-    <p><span class="v">20</span> He who is too impoverished for such an offering chooses a tree that will not rot.</p>
-    <p>He seeks a skillful workman to set up a carved image for him that will not be moved.</p>
-
-    <p><span class="v">21</span> Haven’t you known?</p>
-    <p>Haven’t you heard?</p>
-    <p>Haven’t you been told from the beginning?</p>
-    <p>Haven’t you understood from the foundations of the earth?</p>
-
-    <p><span class="v">22</span> It is he who sits above the circle of the earth,</p>
-    <p>and its inhabitants are like grasshoppers;</p>
-    <p>who stretches out the heavens like a curtain,</p>
-    <p>and spreads them out like a tent to dwell in,</p>
-
-    <p><span class="v">23</span> who brings princes to nothing,</p>
-    <p>who makes the judges of the earth meaningless.</p>
-
-    <p><span class="v">24</span> They are planted scarcely.</p>
-    <p>They are sown scarcely.</p>
-    <p>Their stock has scarcely taken root in the ground.</p>
-    <p>He merely blows on them, and they wither,</p>
-    <p>and the whirlwind takes them away as stubble.</p>
-
-    <p><span class="v">25</span> “To whom then will you liken me?</p>
-    <p>Who is my equal?” says the Holy One.</p>
-
-    <p><span class="v">26</span> Lift up your eyes on high,</p>
-    <p>and see who has created these,</p>
-    <p>who brings out their army by number.</p>
-    <p>He calls them all by name.</p>
-    <p>By the greatness of his might,</p>
-    <p>and because he is strong in power,</p>
-    <p>not one is lacking.</p>
-
-    <p><span class="v">27</span> Why do you say, Jacob,</p>
-    <p>and speak, Israel,</p>
-    <p>“My way is hidden from the LORD,</p>
-    <p>and the justice due me is disregarded by my God”?</p>
-
-    <p><span class="v">28</span> Haven’t you known?</p>
-    <p>Haven’t you heard?</p>
-    <p>The everlasting God, the LORD,</p>
-    <p>the Creator of the ends of the earth, doesn’t faint.</p>
-    <p>He isn’t weary.</p>
-    <p>His understanding is unsearchable.</p>
-
-    <p><span class="v">29</span> He gives power to the weak.</p>
-    <p>He increases the strength of him who has no might.</p>
-
-    <p><span class="v">30</span> Even the youths faint and get weary,</p>
-    <p>and the young men utterly fall;</p>
-
-    <p><span class="v">31</span> but those who wait for the LORD will renew their strength.</p>
-    <p>They will mount up with wings like eagles.</p>
-    <p>They will run, and not be weary.</p>
-    <p>They will walk, and not faint.</p>
-  </div>
-
-  <hr />
-
-  <h2>Fulfillment Notes</h2>
-  <ul>
-    <li>Comfort is proclaimed because covenant warfare is accomplished and pardon is declared.</li>
-    <li>The wilderness voice prepares the way for the LORD’s arrival and public revelation of His glory.</li>
-    <li>Human glory fades like grass, but God’s word stands and governs the new covenant future.</li>
-    <li>The LORD comes as Shepherd—mighty, yet gentle—gathering His flock in covenant care.</li>
-    <li>Idols and nations are exposed as weightless before the Creator, who renews strength to the weary.</li>
-  </ul>
-
-  <hr />
-
-  <h2>Annotations</h2>
-  <div class="card">
-    <p><span class="muted">“her warfare is accomplished”</span> — covenant conflict brought to its appointed finish; the sentence on sin is resolved and pardon is announced.</p>
-    <p><span class="muted">“Prepare the way of the LORD”</span> — divine arrival language: God comes to act, and the path is cleared for His public intervention.</p>
-    <p><span class="muted">“all flesh is like grass”</span> — fragile human glory contrasted with the permanence of God’s word.</p>
-    <p><span class="muted">“He will feed his flock like a shepherd”</span> — power expressed as covenant care: gathering, carrying, and gently leading.</p>
-  </div>
-
-  <hr />
-
-  <h2>Fulfillment Commentary</h2>
-
-  <h3>1) Comfort is covenant resolution, not postponement</h3>
-  <p>
-    Isaiah 40 opens with a double command: “Comfort, comfort my people.”
-    This is not sentimental tone; it is a legal declaration that the crisis has reached its appointed end.
-    The content of comfort is specific: “her warfare is accomplished,” “her iniquity is pardoned.”
-    Isaiah is announcing that the conflict between God and His people—driven by covenant unfaithfulness—has a stated resolution.
-    Comfort is not “one day later,” but “God has spoken the end of the matter.”
-    When Isaiah says Jerusalem has received “double,” he is announcing full measure: the discipline has done its work, the sentence is completed, and the word now moves from judgment to restoration.
-  </p>
-
-  <h3>2) The wilderness voice is the public preparation for divine arrival</h3>
-  <p>
-    The chapter immediately turns to a herald: “Prepare the way of the LORD in the wilderness!”
-    This is not municipal roadwork.
-    It is the prophetic announcement that God Himself is coming, and the world must be made ready for His arrival.
-    Valleys lifted and mountains lowered are kingdom images: the obstacles to God’s revealed reign are removed.
-    The result is stated: “The LORD’s glory shall be revealed, and all flesh shall see it together.”
-    Isaiah’s “all flesh” is not vague; it is public—God’s action becomes visible, undeniable, and embodied in real history.
-    The New Testament identifies this preparation with the forerunner who cleared the way for Messiah’s appearing.
-  </p>
-
-  <h3>3) God’s word outlasts every human structure</h3>
-  <p>
-    Isaiah’s next movement is ruthless clarity: “All flesh is like grass.”
-    Human glory looks permanent until God speaks.
-    Empires, priesthoods, traditions, and reputations fade because they are creaturely—dependent, temporary, and easily withered.
-    Isaiah is not despairing; he is anchoring hope.
-    The promise does not stand because people are strong; it stands because “the word of our God stands forever.”
-    This is the core New Creation stability: God’s spoken covenant faithfulness does not rot, wobble, or expire.
-    When everything else shifts, God’s word remains the fixed centre.
-  </p>
-
-  <h3>4) “Behold your God” is gospel announcement, not panic speech</h3>
-  <p>
-    Isaiah commands the heralds of good news to lift their voice: “Behold, your God!”
-    That is not merely information; it is reorientation.
-    Israel’s despair said “God is far.”
-    Isaiah’s message says “Look again—God is present and acting.”
-    Then Isaiah holds together two realities: “the Lord GOD will come as a mighty one,” and “He will feed his flock like a shepherd.”
-    God’s might is not separated from God’s gentleness.
-    His arm rules, and His arm gathers lambs.
-    He comes with recompense, and He carries the weak in His bosom.
-    This is covenant kingship: strength used for restoration, not for exploitation.
-  </p>
-
-  <h3>5) Creation language is sovereignty language</h3>
-  <p>
-    Isaiah’s questions pile up: who measured waters, marked off the sky, weighed mountains, directed the LORD’s Spirit?
-    The point is not a science lesson; it is authority.
-    If God is the Creator, then the nations are not rivals.
-    “The nations are like a drop in a bucket.”
-    That does not demean people; it demolishes political idolatry.
-    No nation, no ruler, and no system can carry ultimate weight.
-    God’s sovereignty is the foundation for comfort: the One who speaks pardon is not fragile.
-    He does not need counsel, and He does not lose control.
-  </p>
-
-  <h3>6) Idols are exposed as human-made and helpless</h3>
-  <p>
-    Isaiah turns from the living God to the dead substitute.
-    A workman casts an image; a goldsmith overlays it; silver chains are made.
-    Even the poor participate—choosing wood that will not rot and hiring skill so the idol “will not be moved.”
-    The irony is sharp: the god must be stabilized.
-    It cannot act, speak, shepherd, pardon, or renew strength.
-    Isaiah exposes idolatry as misplaced trust in what human hands can manufacture.
-    When Isaiah says “Haven’t you known?” he is not scolding ignorance; he is exposing forgetfulness—Israel knows the true God, yet keeps drifting toward lifeless props.
-  </p>
-
-  <h3>7) The LORD renews strength to the weary inside the waiting</h3>
-  <p>
-    The chapter ends where people actually live: discouragement, fatigue, the feeling of being unseen.
-    “My way is hidden from the LORD.”
-    Isaiah answers with the everlasting God who “doesn’t faint” and “isn’t weary.”
-    The promise is not that the weak never feel weak; it is that God gives power to the weak.
-    “Those who wait for the LORD will renew their strength.”
-    Waiting here is not passivity; it is loyal, aligned trust—staying oriented to God’s word when the old scenery still looks heavy.
-    The imagery is concrete: wings like eagles, running without collapse, walking without fainting.
-    That is New Creation endurance: strength supplied by God, not manufactured by anxiety.
-  </p>
-
-  <hr />
-
-  <h2>Prophecy Hub Links</h2>
-  <div class="links">
-    <a href="/Bible/Prophecy/index.html#comfort">Comfort — Covenant Resolution</a>
-    <a href="/Bible/Prophecy/index.html#voice-wilderness">Voice in the Wilderness — Prepared Arrival</a>
-    <a href="/Bible/Prophecy/index.html#idols">Idols — Powerless Substitutes</a>
-  </div>
-
-  <hr />
-
-  <h2>Cross-References</h2>
-  <div class="links">
-    <a href="https://ebible.org/eng-web/MRK01.htm">Mark 1:1–8 (WEB)</a>
-    <a href="https://ebible.org/eng-web/LUK03.htm">Luke 3:1–6 (WEB)</a>
-    <a href="https://ebible.org/eng-web/1PE01.htm">1 Peter 1:22–25 (WEB)</a>
-  </div>
-
-  <hr />
-
-  <h2>New Creation Reality</h2>
-  <div class="card">
-    <p>
-      Comfort is not a wish—comfort is a declaration: God speaks pardon, God comes to shepherd, and God’s word outlasts every fading human glory.
-      The Creator is unmatched, idols are weightless, and strength is renewed for those who remain aligned with Him.
-    </p>
-  </div>
-
-  <hr />
-
-  <h2>Reflection</h2>
-  <p>Where do you need God’s comfort to reframe your weariness as you keep waiting in trust?</p>
-
-  <hr />
-
-  <h2>Footer + Navigation</h2>
-  <p>
-    Share this study:
-    <a href="#" onclick="this.href='https://twitter.com/intent/tweet?url='+encodeURIComponent(location.href)+'&amp;text='+encodeURIComponent(document.title);return true;" target="_blank" rel="noopener">𝕏 Twitter</a>
-    <a href="#" onclick="this.href='https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href);return true;" target="_blank" rel="noopener">Facebook</a>
-    <a href="#" onclick="this.href='mailto:?subject='+encodeURIComponent(document.title)+'&amp;body='+encodeURIComponent(location.href);return true;">Email</a>
-  </p>
-  <hr />
-
-  <nav class="navgrid" aria-label="Footer navigation" style="margin: 10px 0 0;">
-    <a class="btn" href="/Bible/">Bible Index</a>
-    <a class="btn" href="/Bible/Isaiah/index.html">Book Index</a>
-    <a class="btn" href="/Bible/Isaiah/isa11.html">Previous</a>
-    <a class="btn" href="/Bible/Isaiah/isa42.html">Next</a>
-    <a class="btn" href="#top">Top</a>
-  </nav>
-
-  <footer>
-    <div class="footrow">
-      <div>FPBible — World English Bible (WEB) text with fulfilled covenant-transition commentary (AD 30–70).</div>
-      <div><a href="#top">Back to top</a></div>
+    <div class="card">
+      <h1>Isaiah 40 — Comfort and the End of Exile</h1>
+      <p class="muted">Covenantal Fulfillment • WEB Scripture (verbatim) • Apostolic Interpretation</p>
     </div>
 
-    <!-- Ko-fi button widget (actual button) -->
-    <div class="kofi-wrap" aria-label="Support FPBible on Ko-fi">
-      <div id="kofi-button"></div>
-    </div>
-    <script src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"></script>
-    <script>
-      if (window.kofiwidget2) {
-        kofiwidget2.init('Support on Ko-fi', '#000000', 'fpbible');
-        kofiwidget2.draw('kofi-button');
-      }
-    </script>
-    <noscript>
-      <p><a href="https://ko-fi.com/fpbible" target="_blank" rel="noopener">Support FPBible on Ko-fi</a></p>
-    </noscript>
-  </footer>
+    <hr />
 
-</main>
+    <section class="card">
+      <h2>1. Immediate Context</h2>
+      <p>
+        Isaiah chapters 1 through 39 are heavily dominated by warnings of impending judgment, warfare, and the eventual Babylonian exile. But beginning in chapter 40, the tone radically shifts. Isaiah speaks across the centuries to the broken, exiled remnant of Israel, announcing that the long night of covenant discipline is over. God issues a legal decree of "comfort," declaring that the warfare is accomplished and the iniquity is pardoned. To prove this, God announces that He is personally coming back to Zion to shepherd His people. A herald is dispatched into the wilderness to prepare the highway for the King's arrival. This chapter is the magnificent prologue to the New Testament, laying the exact foundation for the ministry of John the Baptist.
+      </p>
+    </section>
+
+    <hr />
+
+    <section class="card">
+      <h2>2. Scripture (WEB)</h2>
+      <p class="muted">Source (verbatim): <a href="https://ebible.org/web/ISA40.htm" target="_blank">https://ebible.org/web/ISA40.htm</a></p>
+
+      <div class="scripture-text">
+        <span class="v-num">1</span> “Comfort, comfort my people,” says your God.<br />
+        <span class="v-num">2</span> “Speak comfortably to Jerusalem, and call out to her that her warfare is accomplished, that her iniquity is pardoned, that she has received of Yahweh’s hand double for all her sins.”<br />
+        <span class="v-num">3</span> The voice of one who calls out, “Prepare the way of Yahweh in the wilderness! Make a level highway in the desert for our God.<br />
+        <span class="v-num">4</span> Every valley shall be exalted, and every mountain and hill shall be made low. The uneven shall be made level, and the rough places a plain.<br />
+        <span class="v-num">5</span> Yahweh’s glory shall be revealed, and all flesh shall see it together; for the mouth of Yahweh has spoken it.”<br />
+        <span class="v-num">6</span> The voice of one saying, “Cry out!” One said, “What shall I cry?” “All flesh is like grass, and all its glory is like the flower of the field.<br />
+        <span class="v-num">7</span> The grass withers, the flower fades, because Yahweh’s breath blows on it. Surely the people are like grass.<br />
+        <span class="v-num">8</span> The grass withers, the flower fades; but the word of our God stands forever.”<br />
+        <span class="v-num">9</span> You who tell good news to Zion, go up on a high mountain. You who tell good news to Jerusalem, lift up your voice with strength! Lift it up! Don’t be afraid! Say to the cities of Judah, “Behold, your God!”<br />
+        <span class="v-num">10</span> Behold, the Lord Yahweh will come as a mighty one, and his arm will rule for him. Behold, his reward is with him, and his recompense before him.<br />
+        <span class="v-num">11</span> He will feed his flock like a shepherd. He will gather the lambs in his arm, and carry them in his bosom. He will gently lead those who have their young.<br />
+        <span class="v-num">12</span> Who has measured the waters in the hollow of his hand, and marked off the sky with his span, and calculated the dust of the earth in a measuring basket, and weighed the mountains in scales, and the hills in a balance?<br />
+        <span class="v-num">13</span> Who has directed Yahweh’s Spirit, or has taught him as his counselor?<br />
+        <span class="v-num">14</span> Who did he take counsel with, and who instructed him, and taught him in the path of justice, and taught him knowledge, and showed him the way of understanding?<br />
+        <span class="v-num">15</span> Behold, the nations are like a drop in a bucket, and are regarded as a speck of dust on a balance. Behold, he lifts up the islands like a very little thing.<br />
+        <span class="v-num">16</span> Lebanon is not sufficient to burn, nor its animals sufficient for a burnt offering.<br />
+        <span class="v-num">17</span> All the nations are like nothing before him. They are regarded by him as less than nothing, and vanity.<br />
+        <span class="v-num">18</span> To whom then will you liken God? Or what likeness will you compare to him?<br />
+        <span class="v-num">19</span> A workman has cast an image, and the goldsmith overlays it with gold, and casts silver chains for it.<br />
+        <span class="v-num">20</span> He who is too impoverished for such an offering chooses a tree that will not rot. He seeks a skillful workman to set up a carved image for him that will not be moved.<br />
+        <span class="v-num">21</span> Haven’t you known? Haven’t you heard? Haven’t you been told from the beginning? Haven’t you understood from the foundations of the earth?<br />
+        <span class="v-num">22</span> It is he who sits above the circle of the earth, and its inhabitants are like grasshoppers; who stretches out the heavens like a curtain, and spreads them out like a tent to dwell in,<br />
+        <span class="v-num">23</span> who brings princes to nothing, who makes the judges of the earth meaningless.<br />
+        <span class="v-num">24</span> They are planted scarcely. They are sown scarcely. Their stock has scarcely taken root in the ground. He merely blows on them, and they wither, and the whirlwind takes them away as stubble.<br />
+        <span class="v-num">25</span> “To whom then will you liken me? Who is my equal?” says the Holy One.<br />
+        <span class="v-num">26</span> Lift up your eyes on high, and see who has created these, who brings out their army by number. He calls them all by name. By the greatness of his might, and because he is strong in power, not one is lacking.<br />
+        <span class="v-num">27</span> Why do you say, Jacob, and speak, Israel, “My way is hidden from Yahweh, and the justice due me is disregarded by my God”?<br />
+        <span class="v-num">28</span> Haven’t you known? Haven’t you heard? The everlasting God, Yahweh, the Creator of the ends of the earth, doesn’t faint. He isn’t weary. His understanding is unsearchable.<br />
+        <span class="v-num">29</span> He gives power to the weak. He increases the strength of him who has no might.<br />
+        <span class="v-num">30</span> Even the youths faint and get weary, and the young men utterly fall;<br />
+        <span class="v-num">31</span> but those who wait for Yahweh will renew their strength. They will mount up with wings like eagles. They will run, and not be weary. They will walk, and not faint.
+      </div>
+    </section>
+
+    <hr />
+
+    <section class="card">
+      <h2>3. Fulfillment Notes</h2>
+      <ul>
+        <li><strong>Warfare Accomplished:</strong> Comfort is declared not as a vague emotional sentiment, but as a legal decree that the Old Covenant sentence of exile and separation is finished.</li>
+        <li><strong>The Voice in the Wilderness:</strong> Historically fulfilled by John the Baptist (Mark 1:3), who acted as the prophetic herald clearing the path for the King.</li>
+        <li><strong>The Fading Grass:</strong> The Apostle Peter quotes verses 6-8 (1 Peter 1:24) to prove that the fleshly, genealogical glory of the Old Covenant system was fading, while the "Word" of the Gospel established the eternal New Covenant.</li>
+        <li><strong>The Shepherd King:</strong> Jesus fulfills verse 11 directly, declaring Himself the "Good Shepherd" (John 10) who gathers the true remnant into His arms.</li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <section class="card">
+      <h2>4. Annotations</h2>
+      <ul>
+        <li><strong>comfort my people</strong> — A sudden, shocking shift in tone. After 39 chapters of litigation and wrath, God announces the resolution of the covenant crisis.</li>
+        <li><strong>double for all her sins</strong> — The discipline has done its work. The scales of justice are balanced, and pardon is freely granted.</li>
+        <li><strong>level highway in the desert</strong> — In the ancient world, before a king visited a region, a herald would be sent ahead to literally clear rocks and fill potholes on the royal road. It is the language of a sovereign's arrival.</li>
+        <li><strong>drop in a bucket</strong> — God's absolute sovereignty over the Gentile empires. They possess no true power to derail His redemptive plan.</li>
+        <li><strong>wings like eagles</strong> — The supernatural, Spirit-empowered endurance granted to the faithful remnant who waited for the Messiah's arrival, despite the crushing weight of the old system.</li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <section class="card">
+      <h2>5. Fulfillment Commentary</h2>
+
+      <h3>1) Comfort as Covenant Resolution, Not Emotion (vv. 1–2)</h3>
+      <p>
+        Isaiah 40 opens with a double command: “Comfort, comfort my people.” This is not a sentimental pat on the back. It is a legal, courtroom declaration that the crisis has reached its appointed end. The content of this comfort is specific: “her warfare is accomplished,” and “her iniquity is pardoned.” 
+      </p>
+      <p>
+        Isaiah is announcing that the conflict between God and His people—driven by centuries of covenant unfaithfulness—has a stated resolution. Comfort is not a promise of “one day later,” but a declaration that “God has spoken the end of the matter.” When Isaiah says Jerusalem has received “double,” he is announcing full measure: the discipline of exile has done its work, the sentence is completed, and the word now shifts from judgment to the arrival of grace.
+      </p>
+
+      <h3>2) The Wilderness Voice: Preparing the Arrival (vv. 3–5)</h3>
+      
+      <p>
+        The chapter immediately turns to a herald: “Prepare the way of Yahweh in the wilderness!” This is not municipal roadwork. It is the prophetic announcement that God Himself is coming, and the world must be made ready for His arrival. Valleys lifted and mountains lowered are kingdom images: the proud, towering obstacles to God’s revealed reign are removed, and the lowly are exalted. 
+      </p>
+      <p>
+        We do not have to guess who this voice was. All four Gospel writers explicitly identify John the Baptist as the fulfillment of Isaiah 40:3 (Matthew 3:3, Mark 1:3, Luke 3:4, John 1:23). John's baptism of repentance in the Jordan River was the spiritual "bulldozer" leveling the hearts of the people, preparing them to receive the incarnate God.
+      </p>
+
+      <h3>3) Flesh Fades, the Word Stands (vv. 6–8)</h3>
+      <p>
+        Isaiah’s next movement is ruthless clarity: “All flesh is like grass.” Human glory looks permanent until God speaks. The Apostle Peter quotes these exact verses in 1 Peter 1:24-25. Peter was writing to a first-century church watching the massive, intimidating structure of the Herodian Temple and the Levitical priesthood operating in Jerusalem. 
+      </p>
+      <p>
+        Peter tells them not to be intimidated by the "fleshly" glory of the Old Covenant system. It is just grass. It is going to wither and fade under the breath of God's impending judgment (AD 70). The promise does not stand because human institutions are strong; it stands because “the word of our God stands forever.” The Gospel is the imperishable seed that creates the New Covenant reality. When everything else shifts, God’s word remains the fixed centre.
+      </p>
+
+      <h3>4) “Behold Your God” is Gospel Announcement (vv. 9–11)</h3>
+      <p>
+        Isaiah commands the heralds to lift their voice: “Behold, your God!” Israel’s despair in exile said, “God is far away.” Isaiah’s message says, “Look again—God is present and acting.”
+      </p>
+      <p>
+        Isaiah then holds together two stunning realities: “the Lord Yahweh will come as a mighty one,” and “He will feed his flock like a shepherd.” God’s might is not separated from God’s gentleness. His arm rules the nations, yet His arm gathers lambs. He comes with recompense for His enemies, but He carries the weak in His bosom. Jesus Christ fulfills this perfectly. He is the Divine Warrior who judges the apostate system (Revelation 19), yet He is the Good Shepherd who lays down His life for the sheep (John 10:11).
+      </p>
+
+      <h3>5) Creation Language is Sovereignty Language (vv. 12–17)</h3>
+      <p>
+        Isaiah’s questions pile up: who measured the oceans, marked off the sky, weighed mountains, or directed the LORD’s Spirit? The point is not a science lesson; it is about supreme authority. If God is the Creator, then the terrifying Gentile empires of the ancient world (Babylon, Rome) are not true rivals. 
+      </p>
+      <p>
+        “The nations are like a drop in a bucket.” This demolishes political idolatry. No nation, no ruler, and no human system can carry ultimate weight. God’s sovereignty is the foundation for the "comfort" declared in verse 1. The One who speaks pardon is not fragile. He does not need counsel, and He does not lose control of human history.
+      </p>
+
+      <h3>6) Idols Exposed as Helpless Substitutes (vv. 18–20)</h3>
+      <p>
+        Isaiah turns from the living God to the dead substitute. A workman casts an image, and a goldsmith overlays it. Even the poor participate, choosing rot-resistant wood and hiring a carpenter so the idol “will not be moved.” The irony is sharp and mocking: the god must be stabilized so it doesn't fall over. 
+      </p>
+      <p>
+        It cannot act, speak, shepherd, pardon, or renew strength. Isaiah exposes idolatry as misplaced trust in what human hands can manufacture. "Haven’t you known?" (v. 21) is not scolding ignorance; it is exposing forgetfulness. Israel knew the true God, yet kept drifting toward lifeless props.
+      </p>
+
+      <h3>7) Renewing Strength in the Waiting (vv. 27–31)</h3>
+      <p>
+        The chapter ends exactly where people live: in discouragement, fatigue, and the feeling of being unseen. “My way is hidden from Yahweh” (v. 27). Isaiah answers with the everlasting God who “doesn’t faint” and “isn’t weary.” 
+      </p>
+      <p>
+        The promise is not that the weak will never feel weak; it is that God <em>gives power</em> to the weak. “Those who wait for Yahweh will renew their strength” (v. 31). Waiting here is not passive loafing; it is loyal, aligned trust. It is staying oriented to God’s word when the surrounding scenery still looks heavy. The imagery is concrete: mounting up with wings like eagles, running without collapse. This is New Creation endurance: strength supplied by God, not manufactured by human anxiety.
+      </p>
+    </section>
+
+    <hr />
+
+    <section class="card">
+      <h2>6. Prophecy Hub Links</h2>
+      <ul>
+        <li><a href="/Bible/Prophecy/day-of-the-lord.html">Day of Yahweh</a> — The arrival of the King for judgment and salvation</li>
+        <li><a href="/Bible/Prophecy/end-of-the-law.html">The End of the Law</a> — The fading of the fleshly glory (grass)</li>
+        <li><a href="/Bible/Prophecy/new-creation.html">The New Creation</a> — Living in the comfort of a finished warfare</li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <section class="card">
+      <h2>7. Cross-References</h2>
+      <ul>
+        <li><a href="https://ebible.org/web/MAT03.htm#MAT03V3" target="_blank">Matthew 3:3</a> — Matthew explicitly identifies John the Baptist as the voice crying in the wilderness.</li>
+        <li><a href="https://ebible.org/web/1PE01.htm#1PE01V24" target="_blank">1 Peter 1:24-25</a> — Peter quotes Isaiah 40 to contrast the fading Old Covenant with the eternal Word of the Gospel.</li>
+        <li><a href="https://ebible.org/web/JHN10.htm#JHN10V11" target="_blank">John 10:11-14</a> — Jesus claims the title of the Good Shepherd, fulfilling Isaiah's promise that God would come to feed His flock.</li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <section class="card">
+      <h2>8. New Creation Reality</h2>
+      <p>
+        You are not waiting for comfort to arrive in a distant millennium. The warfare is accomplished. The iniquity has been pardoned at the cross. The King has arrived, and the way has been prepared. The old, fading system of the flesh withered away exactly as the prophets promised. You are now held in the arms of the Good Shepherd, safely grazing in the New Creation. <strong>You are reading covenant history for assurance, not headlines for doom.</strong> When you feel faint or weary, lean entirely on the unsearchable understanding of the Creator, and He will renew your strength.
+      </p>
+    </section>
+
+    <hr />
+
+    <section class="card">
+      <h2>9. Reflection</h2>
+      <p><strong>Question:</strong> How does realizing that the "warfare is accomplished" change your daily relationship with God from one of striving for acceptance to resting in a finished pardon?</p>
+    </section>
+
+    <hr />
+
+    <div style="text-align: center; margin: 20px 0;">
+      <span class="muted" style="margin-right: 10px;">Share this study:</span>
+      <a class="btn" href="#" onclick="window.open('https://twitter.com/intent/tweet?text=Read this covenantal breakdown at The Fulfilled Prophecy Bible:&url=' + encodeURIComponent(window.location.href)); return false;" rel="noopener noreferrer">𝕏 Twitter</a>
+      <a class="btn" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href)); return false;" rel="noopener noreferrer">Facebook</a>
+      <a class="btn" href="#" onclick="window.location.href='mailto:?subject=Study from The Fulfilled Prophecy Bible&body=I thought you might find this commentary interesting: ' + encodeURIComponent(window.location.href); return false;">Email</a>
+    </div>
+
+    <hr />
+
+    <nav class="bottom">
+      <a href="/Bible/index.html">Bible Index</a> |
+      <a href="index.html">Book Index</a> |
+      <a href="isa34.html">Previous</a> |
+      <a href="isa42.html">Next</a> |
+      <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> |
+      <a href="#top">Top</a>
+    </nav>
+
+    <a href="https://ko-fi.com/B0B61QC1BU" target="_blank"><img src="https://storage.ko-fi.com/cdn/kofi2.png?v=3" alt="Support The Fulfilled Prophecy Bible on Ko-fi" style="height: 36px; width: auto; margin-top: 10px;"></a>
+
+    <footer>
+      <p><strong>The Fulfilled Prophecy Bible</strong> — Scripture text based on the <strong>World English Bible (WEB)</strong>, a public domain modern English translation.</p>
+      <p>Commentary honours audience relevance, time statements, and first-century fulfillment.</p>
+      <p><a href="/Bible/about.html">About</a> · <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> · <a href="https://ko-fi.com/fpbible" target="_blank">Support</a></p>
+    </footer>
+
+  </div>
 </body>
 </html>
