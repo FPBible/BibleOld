@@ -3,90 +3,251 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Revelation — Fulfilled Prophecy Bible (WEB)</title>
-  <meta name="description" content="Full Preterist study edition using the WEB translation." />
+  <title>Revelation Index — Fulfilled Prophecy Bible (WEB)</title>
+  <meta name="description" content="The Book of Revelation: A covenantal, first-century fulfillment commentary on the fall of Babylon, the vindication of the Bride, and the New Jerusalem." />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Revelation Index",
+    "description": "Index for the Book of Revelation, interpreted through a fulfilled, covenantal, and first-century framework.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "The Fulfilled Prophecy Bible"
+    }
+  }
+  </script>
 
   <style>
-    body{ font-family: system-ui, sans-serif; line-height: 1.6; margin: 1.5em; max-width: 900px; }
-    h1,h2,h3{ margin-top: 1.4em; margin-bottom: 0.4em; }
-    nav{ margin: 1em 0; font-size: 0.95em; }
-    nav a{ margin-right: 0.6em; text-decoration: underline; }
-    p{ margin: 0.6em 0; }
-    hr{ margin: 2em 0; }
-    ul{ margin: 0.6em 0 0.8em 1.2em; }
-    li{ margin: 0.35em 0; }
-    .note{ font-size: 0.95em; opacity: 0.9; }
-      footer{
-      margin-top: 2.2em;
-      padding-top: 1.2em;
+    :root{
+      --maxw: 980px;
+      --pad: 16px;
+      --line: rgba(0,0,0,0.12);
+      --muted: rgba(0,0,0,0.72);
+      --soft: rgba(0,0,0,0.05);
+      --soft2: rgba(0,0,0,0.03);
+      --radius: 14px;
+    }
+    body{
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.65;
+      margin: 0;
+      color: #111;
+      background: #fff;
+    }
+    .wrap{ max-width: var(--maxw); margin: 0 auto; padding: 18px; }
+    
+    /* PIPE-SEPARATED NAVIGATION STYLE */
+    nav.top, nav.bottom{ 
+      text-align: center;
+      font-size: 0.9rem;
+      margin: 15px 0 20px;
+      color: var(--muted);
+    }
+    nav.top a, nav.bottom a{
+      color: #0066cc;
+      text-decoration: none;
+      padding: 0 4px;
+    }
+    nav.top a:hover, nav.bottom a:hover{
+      text-decoration: underline;
+    }
+
+    h1{ margin: 0.2em 0 0.4em; font-size: 1.9rem; }
+    h2{ margin: 1.2em 0 0.4em; font-size: 1.4rem; }
+    h3{ margin: 1em 0 0.3em; font-size: 1.15rem; }
+    hr{ border: 0; border-top: 1px solid var(--line); margin: 20px 0; }
+    .card{
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 14px;
+      background: #fff;
+      margin-bottom: 1em;
+    }
+    .muted{ color: var(--muted); font-size: 0.95rem; }
+    
+    ul{ margin: 0.6em 0 0.4em 1.2em; padding:0; }
+    li{ margin: 0.45em 0; line-height: 1.5; }
+    
+    .chapter-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .chapter-link {
+      display: block;
+      padding: 10px;
+      text-align: center;
+      background: var(--soft);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      text-decoration: none;
+      color: #111;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+    .chapter-link:hover {
+      background: var(--soft2);
+      text-decoration: none;
+    }
+
+    footer{
+      margin-top: 2em;
+      padding-top: 1em;
       border-top: 1px solid var(--line);
       color: var(--muted);
-      font-size: 0.96em;
+      font-size: 0.92rem;
     }
-    footer .row{
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px 14px;
-      align-items: center;
-      justify-content: space-between;
+    a{ color: #0066cc; text-decoration: none; }
+    a:hover{ text-decoration: underline; }
+    strong{ font-weight: 600; }
+    
+    /* Pill Badges for summary points */
+    .pill {
+      display: inline-block;
+      background: var(--soft);
+      border: 1px solid var(--line);
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      margin-right: 5px;
+      margin-bottom: 10px;
+      font-weight: 600;
+      color: var(--muted);
     }
-  
-    /* Hide specific UI elements */
-    .hide-element { display: none; }
   </style>
+
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q22N178LJ8"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-Q22N178LJ8');
   </script>
+</head>
 
-  </head>
 <body>
+  <a id="top"></a>
+  <div class="wrap">
 
-<a id="top"></a>
+    <nav class="top">
+      <a href="/Bible/index.html">Bible Index</a> |
+      <a href="preface.html">Preface</a> |
+      <a href="appendix.html">Appendix</a> |
+      <a href="/Bible/Prophecy/index.html">Prophecy Hub</a>
+    </nav>
 
-<nav>
-  <a href="/Bible/index.html">The Fulfilled Prophecy Bible Index</a> |
-  <a href="index.html">Book Index</a> |
-  <a href="preface.html">Preface</a> |
-  <a href="appendix.html">Appendix</a> |
-  <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> |
-  <a href="rev1.html">Start</a> |
-  <a href="#top">Top</a>
-</nav>
+    <div class="card">
+      <h1>Revelation</h1>
+      <p class="muted">Apocalyptic Prophecy · Covenant Judgment · New Creation Unveiled</p>
+      
+      <div style="margin-top: 12px;">
+        <span class="pill">First-Century Fulfillment</span>
+        <span class="pill">AD 70 Destruction</span>
+        <span class="pill">Victory of the Bride</span>
+      </div>
+    </div>
 
-<h1>Revelation</h1>
-<h2>Fulfilled Prophecy · Covenant Judgment · New Creation Unveiled</h2>
+    <hr />
 
-<p>
-Revelation is apocalyptic covenant prophecy written to first-century churches under pressure.
-It unveils Jesus as present King, judges the persecuting old covenant order, and announces the public arrival
-of New Covenant reality. This book is not an end-times chart factory. It is a time-framed, audience-locked message
-of endurance, discernment, and vindication.
-</p>
+    <section class="card">
+      <h2>Orientation</h2>
+      <p>
+        Revelation is apocalyptic covenant prophecy written to first-century churches under intense pressure. It unveils Jesus as the present King, judges the persecuting Old Covenant order, and announces the public arrival of the New Covenant reality. 
+      </p>
+      <p>
+        <strong>This book is not an end-times chart factory.</strong> It is a time-framed, audience-locked message of endurance, discernment, and vindication. The churches were tempted to fear, blend in, or bow to Rome and apostate Jerusalem. Revelation does not offer escapism; it gives Christ-centered clarity. It uses prophetic idioms to declare covenant judgment on the old world, leaving the New Creation people standing in the Lamb’s victory.
+      </p>
+    </section>
 
-<p class="note">
-Key tension: the churches are tempted to fear, blend, or bow. Revelation does not give escapism.
-It gives Christ-centered clarity: “soon / near,” prophetic idioms, covenant judgment on the old world,
-and the New Creation people standing in the Lamb’s victory.
-</p>
+    <hr />
 
-<hr />
+    <section class="card">
+      <h2>Read First</h2>
+      <p class="muted">Essential reading before beginning the chapters.</p>
+      <ul>
+        <li>
+          <a href="preface.html"><strong>Preface to Revelation</strong></a><br />
+          How to read apocalyptic prophecy (Time-frames, Audience, Genre).
+        </li>
+        <li style="margin-top: 10px;">
+          <a href="appendix.html"><strong>Appendix</strong></a><br />
+          Idioms, Symbols, and Covenant Framework (Babylon, Beasts, Mark, Millennium, Lake of Fire).
+        </li>
+      </ul>
+    </section>
 
-<h2>Read First</h2>
-<ul>
-  <li><a href="preface.html">Preface — How to Read Revelation</a></li>
-  <li><a href="appendix.html">Appendix — Idioms, Symbols, and Covenant Framework (Babylon, Beasts, Mark, Millennium, Lake of Fire)</a></li>
-</ul>
+    <hr />
 
-<hr />
+    <section class="card">
+      <h2>Chapter Index</h2>
+      <p class="muted">The Book is structured as a divine covenant lawsuit against the unfaithful "Harlot" city, ultimately leading to the vindication of the faithful "Bride."</p>
 
-<h2>Chapter Index</h2>
-<ul>
-  <li><a href="rev1.html">Revelation 1 — The Unveiling of Jesus, Near and Present</a></li>
+      <h3>Part 1: The King and His Churches (Ch 1–3)</h3>
+      <p class="muted">Jesus inspects the first-century churches of Asia Minor, warning them of the "hour of trial" that is about to come upon the land.</p>
+      <div class="chapter-grid">
+        <a class="chapter-link" href="rev01.html">Chapter 1</a>
+        <a class="chapter-link" href="rev02.html">Chapter 2</a>
+        <a class="chapter-link" href="rev03.html">Chapter 3</a>
+      </div>
+
+      <h3 style="margin-top: 24px;">Part 2: The Heavenly Throne and the Seals (Ch 4–7)</h3>
+      <p class="muted">John is caught up to the heavenly courtroom to witness the unsealing of the covenant decree. The Lamb initiates the judgment upon the persecuting nation.</p>
+      <div class="chapter-grid">
+        <a class="chapter-link" href="rev04.html">Chapter 4</a>
+        <a class="chapter-link" href="rev05.html">Chapter 5</a>
+        <a class="chapter-link" href="rev06.html">Chapter 6</a>
+        <a class="chapter-link" href="rev07.html">Chapter 7</a>
+      </div>
+
+      <h3 style="margin-top: 24px;">Part 3: Trumpets, Beasts, and Bowls (Ch 8–18)</h3>
+      <p class="muted">The "Great Tribulation" of the first century. The Roman Beast is utilized as God's instrument to destroy the Harlot City (Jerusalem), bringing an end to the Old Covenant world.</p>
+      <div class="chapter-grid">
+        <a class="chapter-link" href="rev08.html">Chapter 8</a>
+        <a class="chapter-link" href="rev09.html">Chapter 9</a>
+        <a class="chapter-link" href="rev10.html">Chapter 10</a>
+        <a class="chapter-link" href="rev11.html">Chapter 11</a>
+        <a class="chapter-link" href="rev12.html">Chapter 12</a>
+        <a class="chapter-link" href="rev13.html">Chapter 13</a>
+        <a class="chapter-link" href="rev14.html">Chapter 14</a>
+        <a class="chapter-link" href="rev15.html">Chapter 15</a>
+        <a class="chapter-link" href="rev16.html">Chapter 16</a>
+        <a class="chapter-link" href="rev17.html">Chapter 17</a>
+        <a class="chapter-link" href="rev18.html">Chapter 18</a>
+      </div>
+
+      <h3 style="margin-top: 24px;">Part 4: The Kingdom Consummated (Ch 19–22)</h3>
+      <p class="muted">The Word of God rides out in victory. The old heaven and earth pass away, and the New Jerusalem descends, establishing the New Creation reality we live in today.</p>
+      <div class="chapter-grid">
+        <a class="chapter-link" href="rev19.html">Chapter 19</a>
+        <a class="chapter-link" href="rev20.html">Chapter 20</a>
+        <a class="chapter-link" href="rev21.html">Chapter 21</a>
+        <a class="chapter-link" href="rev22.html">Chapter 22</a>
+      </div>
+    </section>
+
+    <hr />
+
+    <nav class="bottom">
+      <a href="#top">Top</a> |
+      <a href="/Bible/index.html">Bible Index</a> |
+      <a href="preface.html">Preface</a> |
+      <a href="/Bible/Prophecy/index.html">Prophecy Hub</a>
+    </nav>
+
+    <a href="https://ko-fi.com/B0B61QC1BU" target="_blank"><img src="https://storage.ko-fi.com/cdn/kofi2.png?v=3" alt="Support The Fulfilled Prophecy Bible on Ko-fi" style="height: 36px; width: auto; margin-top: 10px;"></a>
+
+    <footer>
+      <p><strong>The Fulfilled Prophecy Bible</strong> — Scripture text based on the <strong>World English Bible (WEB)</strong>, a public domain modern English translation.</p>
+      <p>Commentary honours audience relevance, time statements, and first-century fulfillment.</p>
+      <p><a href="/Bible/about.html">About</a> · <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> · <a href="https://ko-fi.com/fpbible" target="_blank">Support</a></p>
+    </footer>
+
+  </div>
+</body>
+</html>  <li><a href="rev1.html">Revelation 1 — The Unveiling of Jesus, Near and Present</a></li>
   <li><a href="rev2.html">Revelation 2 — First Love, Faithful Under Pressure, No Compromise</a></li>
   <li><a href="rev3.html">Revelation 3 — Wake Up, Hold Fast, Open the Door</a></li>
   <li><a href="rev4.html">Revelation 4 — The Throne: Heaven’s Rule Revealed</a></li>
