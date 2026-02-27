@@ -1,220 +1,278 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Preface — Revelation — Fulfilled Prophecy Bible (WEB)</title>
-  <meta name="description" content="Preface to Revelation: reading rules, audience relevance, apocalyptic language, covenant judgment, and first-century fulfillment - Full Preterist study edition using the WEB translation." />
+  <title>Preface to Revelation — Fulfilled Prophecy Bible</title>
+  <meta name="description" content="The non-negotiable rules for reading the Book of Revelation: Audience relevance, time-frame locks, apocalyptic genre, and covenant judgment." />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Preface to Revelation",
+    "description": "An essential guide establishing the rules of interpretation for the Book of Revelation, prioritizing first-century audience relevance and biblical apocalyptic idiom.",
+    "author": {
+      "@type": "Organization",
+      "name": "The Fulfilled Prophecy Bible"
+    }
+  }
+  </script>
 
   <style>
     :root{
-      --bg:#0b0c10;
-      --panel:#11131a;
-      --text:#e9ecf1;
-      --muted:#b9c0cc;
-      --line:#232837;
-      --accent:#7aa7ff;
-      --maxw:900px;
-      --pad:18px;
-      --radius:14px;
+      --maxw: 980px;
+      --pad: 16px;
+      --line: rgba(0,0,0,0.12);
+      --muted: rgba(0,0,0,0.72);
+      --soft: rgba(0,0,0,0.05);
+      --soft2: rgba(0,0,0,0.03);
+      --radius: 14px;
     }
-    *{box-sizing:border-box}
     body{
-      margin:0;
-      font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
-      background:var(--bg);
-      color:var(--text);
-      line-height:1.55;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.65;
+      margin: 0;
+      color: #111;
+      background: #fff;
     }
-    a{color:var(--accent);text-decoration:none}
-    a:hover{text-decoration:underline}
-    header{
-      border-bottom:1px solid var(--line);
-      background:#0f1118;
+    .wrap{ max-width: var(--maxw); margin: 0 auto; padding: 18px; }
+    
+    /* PIPE-SEPARATED NAVIGATION STYLE */
+    nav.top, nav.bottom{ 
+      text-align: center;
+      font-size: 0.9rem;
+      margin: 15px 0 20px;
+      color: var(--muted);
     }
-    .wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--pad)}
-    .nav{
-      display:flex;justify-content:space-between;align-items:center;
-      padding:14px 0;gap:12px;flex-wrap:wrap;
+    nav.top a, nav.bottom a{
+      color: #0066cc;
+      text-decoration: none;
+      padding: 0 4px;
     }
-    main{padding:28px 0 40px}
-    h1{margin:0 0 6px;font-size:30px}
-    h2{margin:26px 0 10px;font-size:20px}
-    p{margin:10px 0}
-    ul{margin:8px 0 10px 22px}
-    li{margin:6px 0}
+    nav.top a:hover, nav.bottom a:hover{
+      text-decoration: underline;
+    }
+
+    h1{ margin: 0.2em 0 0.4em; font-size: 1.9rem; }
+    h2{ margin: 1.2em 0 0.4em; font-size: 1.4rem; }
+    h3{ margin: 1em 0 0.3em; font-size: 1.15rem; }
+    hr{ border: 0; border-top: 1px solid var(--line); margin: 20px 0; }
     .card{
-      background:var(--panel);
-      border:1px solid var(--line);
-      border-radius:var(--radius);
-      padding:18px;
-      margin:16px 0;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 14px;
+      background: #fff;
+      margin-bottom: 1em;
     }
-    .pill{
-      display:inline-block;
-      padding:6px 10px;
-      border:1px solid var(--line);
-      border-radius:999px;
-      font-size:13px;
-      color:var(--muted);
-      margin-right:6px;
-    }
-    .note{
-      border-left:3px solid var(--accent);
-      padding:10px 12px;
-      background:#0f1220;
-      margin:12px 0;
+    .muted{ color: var(--muted); font-size: 0.95rem; }
+    
+    ul{ margin: 0.6em 0 0.4em 1.2em; padding:0; }
+    li{ margin: 0.45em 0; line-height: 1.5; }
+    blockquote {
+      border-left: 4px solid var(--line);
+      margin: 1em 0;
+      padding-left: 1em;
+      font-style: italic;
+      color: var(--muted);
     }
     footer{
-      border-top:1px solid var(--line);
-      color:var(--muted);
-      font-size:13px;
-      padding:18px 0;
-      margin-top:40px;
+      margin-top: 2em;
+      padding-top: 1em;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    a{ color: #0066cc; text-decoration: none; }
+    a:hover{ text-decoration: underline; }
+    strong{ font-weight: 600; }
+    
+    /* Share Button Standard */
+    .btn{
+      display:inline-block;
+      padding: 7px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      text-decoration: none;
+      color: #111;
+      background: #fff;
+      margin: 0 4px;
+    }
+    .btn:hover{ background: var(--soft2); }
+
+    /* Pill Badges for summary points */
+    .pill {
+      display: inline-block;
+      background: var(--soft);
+      border: 1px solid var(--line);
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      margin-right: 5px;
+      margin-bottom: 10px;
+      font-weight: 600;
+      color: var(--muted);
     }
   </style>
+
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q22N178LJ8"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-Q22N178LJ8');
   </script>
-
-  </head>
+</head>
 
 <body>
-<header>
+  <a id="top"></a>
   <div class="wrap">
-    <div class="nav">
-      <strong><a href="/Bible/">The Fulfilled Prophecy Bible</a></strong>
-      <nav>
-        <a href="/Bible/Revelation/">Revelation Index</a> ·
-        <a href="/Bible/">Bible Index</a>
-      </nav>
-    </div>
-  </div>
-</header>
 
-<main>
-  <div class="wrap">
-    <h1>Preface to Revelation</h1>
-    <p>
-      This preface establishes the non-negotiable rules for reading the book of Revelation.
-      Everything that follows in this module is governed by these principles.
-    </p>
+    <nav class="top">
+      <a href="/Bible/index.html">Bible Index</a> |
+      <a href="index.html">Revelation Index</a> |
+      <a href="rev1.html">Start Chapter 1</a> |
+      <a href="/Bible/Prophecy/index.html">Prophecy Hub</a>
+    </nav>
 
-    <div>
-      <span class="pill">Audience relevance</span>
-      <span class="pill">Apocalyptic genre</span>
-      <span class="pill">Covenant judgment</span>
-      <span class="pill">Fulfilled transition</span>
-    </div>
-
-    <section class="card">
-      <h2>What Revelation is — and is not</h2>
-      <p>
-        Revelation is apocalyptic prophecy written to real first-century churches facing
-        persecution, compromise, and an approaching covenant crisis.
-      </p>
-      <p>
-        It is <strong>not</strong> a timeline of modern geopolitics, a prediction of future technology,
-        or a coded forecast of twenty-first-century events.
-      </p>
-      <div class="note">
-        When Revelation is removed from its original audience, it becomes infinitely flexible
-        and loses interpretive control.
+    <div class="card">
+      <h1>Preface to Revelation</h1>
+      <p class="muted">The non-negotiable rules for reading the Apocalypse.</p>
+      
+      <div style="margin-top: 12px;">
+        <span class="pill">Audience Relevance</span>
+        <span class="pill">Apocalyptic Genre</span>
+        <span class="pill">Covenant Judgment</span>
+        <span class="pill">Fulfilled Transition</span>
       </div>
-    </section>
+    </div>
+
+    <hr />
 
     <section class="card">
-      <h2>Time-frame lock</h2>
       <p>
-        Revelation explicitly states that its contents concern events that would happen
-        <strong>soon</strong> and that the time was <strong>near</strong>.
+        This preface establishes the non-negotiable rules for reading the Book of Revelation. Everything that follows in this commentary module is strictly governed by these principles.
+      </p>
+    </section>
+
+    <hr />
+
+    <section class="card">
+      <h2>1. What Revelation Is — And Is Not</h2>
+      <p>
+        Revelation is <strong>apocalyptic prophecy</strong> written to real, first-century churches located in Asia Minor. These historical congregations were facing imminent persecution, local compromise, and a massive approaching covenantal crisis.
+      </p>
+      <p>
+        It is <strong>not</strong> a timeline of modern geopolitics. It is <strong>not</strong> a prediction of future 21st-century technology (microchips, helicopters, or nuclear weapons). It is <strong>not</strong> a coded forecast of events happening in our modern news cycle.
+      </p>
+      <p>
+        When Revelation is divorced from its original historical audience, it becomes infinitely flexible. It loses all interpretive control and devolves into a tool for fearmongering and speculative fiction. We must respect the original audience.
+      </p>
+    </section>
+
+    <hr />
+
+    <section class="card">
+      <h2>2. Time-Frame Lock</h2>
+      <p>
+        The Book of Revelation explicitly states—in both its opening sentence and its closing chapter—that its contents concerned events that were going to happen <strong>soon</strong> and that the time was <strong>near</strong>.
       </p>
       <ul>
-        <li>Revelation 1:1–3 — “things which must happen soon”</li>
-        <li>Revelation 22:10 — “do not seal… the time is near”</li>
+        <li><strong>Revelation 1:1, 3:</strong> "things which must happen soon... for the time is near."</li>
+        <li><strong>Revelation 22:10:</strong> "Don't seal up the words of the prophecy of this book, for the time is near."</li>
       </ul>
       <p>
-        These statements are taken at face value. Fulfillment is anchored in the
-        first-century covenant transition culminating in the fall of the old covenant system.
+        If a modern prophet told you an event was going to happen "soon," but secretly meant it wouldn't happen for 2,000+ years, you would rightfully call him a false prophet. At FPBible, these divine time-statements are taken at face value. The fulfillment of Revelation is firmly anchored in the first-century covenant transition, culminating in the violent fall of the Old Covenant system in AD 70.
       </p>
     </section>
 
+    <hr />
+
     <section class="card">
-      <h2>Genre: apocalyptic language</h2>
+      <h2>3. Genre: Apocalyptic Language</h2>
       <p>
-        Revelation communicates through symbols, visions, numbers, and imagery drawn
-        from the Old Testament prophets.
+        Revelation communicates through signs, visions, numbers, and dense imagery drawn entirely from the Old Testament prophets. You cannot read it like a textbook or a modern historical narrative. 
       </p>
       <ul>
-        <li>Cosmic imagery describes covenant upheaval</li>
-        <li>Beasts represent kingdoms and power structures</li>
-        <li>Cities represent covenant identity (faithful or unfaithful)</li>
+        <li><strong>Cosmic Imagery</strong> (stars falling, sun darkening) describes political and covenantal upheaval, not literal astronomy.</li>
+        <li><strong>Beasts</strong> represent oppressive kingdoms, empires, and power structures.</li>
+        <li><strong>Cities</strong> represent covenant identity (the unfaithful Harlot City vs. the faithful Bride/New Jerusalem).</li>
       </ul>
       <p>
-        Literalism is applied only where the text demands it. Symbolism is the default mode.
+        Literalism is applied only where the text explicitly demands it. Symbolism based on Old Testament prophetic idiom is the default operating mode.
       </p>
     </section>
 
+    <hr />
+
     <section class="card">
-      <h2>Covenant framework</h2>
+      <h2>4. The Covenant Framework</h2>
       <p>
-        Revelation portrays the final confrontation between two covenant worlds:
+        Revelation is not a book about the end of the physical planet. It portrays the final, violent confrontation between two distinct covenant worlds:
       </p>
       <ul>
-        <li>The old covenant system — unfaithful, persecuting, and judged</li>
-        <li>The new covenant reality — faithful, vindicated, and established</li>
+        <li><strong>The Old Covenant System:</strong> Apostate, unfaithful, persecuting the early church, and ultimately judged by God.</li>
+        <li><strong>The New Covenant Reality:</strong> Faithful, persecuted but ultimately vindicated, and permanently established.</li>
       </ul>
       <p>
-        Judgment language refers to the removal of the old order, not the destruction of the planet.
-        Victory language refers to the public unveiling of Christ’s reign.
+        Judgment language in Revelation refers to the historical removal of the old order. Victory language refers to the public, undeniable unveiling of Christ’s established reign over the nations.
       </p>
     </section>
 
+    <hr />
+
     <section class="card">
-      <h2>Purpose of this module</h2>
+      <h2>5. The Purpose of this Commentary</h2>
       <p>
         This Revelation module exists to:
       </p>
       <ul>
-        <li>Clarify the meaning of apocalyptic imagery</li>
-        <li>Anchor interpretation in first-century fulfillment</li>
-        <li>Prevent futurist drift</li>
-        <li>Present Revelation as a book of victory, not fear</li>
+        <li>Clarify the meaning of ancient apocalyptic imagery using the rest of Scripture.</li>
+        <li>Anchor the interpretation firmly in first-century historical fulfillment.</li>
+        <li>Prevent futurist drift and end-times anxiety.</li>
+        <li>Present Revelation exactly as it was intended: as a book of absolute victory, assurance, and comfort for the believer, not a book of fear.</li>
       </ul>
-      <p>
-        Chapters explain the flow of the text.
-        The appendix explains recurring symbolic themes.
-      </p>
     </section>
+
+    <hr />
 
     <section class="card">
-      <h2>Reader responsibility</h2>
+      <h2>6. Reader Responsibility</h2>
       <p>
-        Readers are expected to approach Revelation on its own terms.
-        Importing modern assumptions, speculative timelines, or fear-based interpretations
-        undermines the text and obscures its message.
+        Readers are expected to approach Revelation on its own terms. Importing modern assumptions, speculative futuristic timelines, or fear-based interpretations undermines the authority of the text and completely obscures its message.
       </p>
-      <div class="note">
-        Revelation does not end in escape, destruction, or delay.
-        It ends in presence, restoration, and New Creation life.
-      </div>
+      <p>
+        <strong>Revelation does not end in escape, planetary destruction, or a 2,000-year delay. It ends in presence, restoration, and the unshakable reality of New Creation life.</strong>
+      </p>
     </section>
 
+    <hr />
+
+    <div style="text-align: center; margin: 20px 0;">
+      <span class="muted" style="margin-right: 10px;">Share this guide:</span>
+      <a class="btn" href="#" onclick="window.open('https://twitter.com/intent/tweet?text=The rules for reading the Book of Revelation at The Fulfilled Prophecy Bible:&url=' + encodeURIComponent(window.location.href)); return false;" rel="noopener noreferrer">𝕏 Twitter</a>
+      <a class="btn" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href)); return false;" rel="noopener noreferrer">Facebook</a>
+      <a class="btn" href="#" onclick="window.location.href='mailto:?subject=How to read the Book of Revelation&body=I thought you might find this framework for understanding biblical prophecy helpful: ' + encodeURIComponent(window.location.href); return false;">Email</a>
+    </div>
+
+    <hr />
+
+    <nav class="bottom">
+      <a href="/Bible/index.html">Bible Index</a> |
+      <a href="index.html">Revelation Index</a> |
+      <a href="rev1.html">Start Chapter 1</a> |
+      <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> |
+      <a href="#top">Top</a>
+    </nav>
+
+    <a href="https://ko-fi.com/B0B61QC1BU" target="_blank"><img src="https://storage.ko-fi.com/cdn/kofi2.png?v=3" alt="Support The Fulfilled Prophecy Bible on Ko-fi" style="height: 36px; width: auto; margin-top: 10px;"></a>
+
     <footer>
-      <div class="wrap">
-        <p>
-          The Fulfilled Prophecy Bible · Revelation Preface · WEB Bible ·
-          <a href="/Bible/Revelation/">Continue to Revelation Index</a>
-        </p>
-      </div>
+      <p><strong>The Fulfilled Prophecy Bible</strong> — Scripture text based on the <strong>World English Bible (WEB)</strong>, a public domain modern English translation.</p>
+      <p>Commentary honours audience relevance, time statements, and first-century fulfillment.</p>
+      <p><a href="/Bible/about.html">About</a> · <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> · <a href="https://ko-fi.com/fpbible" target="_blank">Support</a></p>
     </footer>
 
   </div>
-</main>
 </body>
 </html>
