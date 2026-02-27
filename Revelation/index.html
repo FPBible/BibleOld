@@ -70,27 +70,27 @@
     ul{ margin: 0.6em 0 0.4em 1.2em; padding:0; }
     li{ margin: 0.45em 0; line-height: 1.5; }
     
-    .chapter-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-      gap: 10px;
-      margin-top: 10px;
+    /* Custom List for Chapters */
+    .chapter-list {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0 0;
     }
-    .chapter-link {
-      display: block;
-      padding: 10px;
-      text-align: center;
-      background: var(--soft);
-      border: 1px solid var(--line);
+    .chapter-list li {
+      margin-bottom: 8px;
+      padding: 8px 12px;
       border-radius: 8px;
-      text-decoration: none;
-      color: #111;
-      font-weight: 600;
-      transition: background 0.2s;
-    }
-    .chapter-link:hover {
       background: var(--soft2);
+      border: 1px solid var(--line);
+    }
+    .chapter-list a {
+      font-weight: 600;
+      font-size: 1.05rem;
       text-decoration: none;
+      display: block;
+    }
+    .chapter-list a:hover {
+      text-decoration: underline;
     }
 
     footer{
@@ -134,8 +134,6 @@
 
     <nav class="top">
       <a href="/Bible/index.html">Bible Index</a> |
-      <a href="preface.html">Preface</a> |
-      <a href="appendix.html">Appendix</a> |
       <a href="/Bible/Prophecy/index.html">Prophecy Hub</a>
     </nav>
 
@@ -170,11 +168,11 @@
       <ul>
         <li>
           <a href="preface.html"><strong>Preface to Revelation</strong></a><br />
-          How to read apocalyptic prophecy (Time-frames, Audience, Genre).
+          <span class="muted">How to read apocalyptic prophecy (Time-frames, Audience, Genre).</span>
         </li>
         <li style="margin-top: 10px;">
           <a href="appendix.html"><strong>Appendix</strong></a><br />
-          Idioms, Symbols, and Covenant Framework (Babylon, Beasts, Mark, Millennium, Lake of Fire).
+          <span class="muted">Idioms, Symbols, and Covenant Framework (Babylon, Beasts, Mark, Millennium, Lake of Fire).</span>
         </li>
       </ul>
     </section>
@@ -187,45 +185,45 @@
 
       <h3>Part 1: The King and His Churches (Ch 1–3)</h3>
       <p class="muted">Jesus inspects the first-century churches of Asia Minor, warning them of the "hour of trial" that is about to come upon the land.</p>
-      <div class="chapter-grid">
-        <a class="chapter-link" href="rev01.html">Chapter 1</a>
-        <a class="chapter-link" href="rev02.html">Chapter 2</a>
-        <a class="chapter-link" href="rev03.html">Chapter 3</a>
-      </div>
+      <ul class="chapter-list">
+        <li><a href="rev1.html">Revelation 1 — The Unveiling of Jesus, Near and Present</a></li>
+        <li><a href="rev2.html">Revelation 2 — First Love, Faithful Under Pressure, No Compromise</a></li>
+        <li><a href="rev3.html">Revelation 3 — Wake Up, Hold Fast, Open the Door</a></li>
+      </ul>
 
       <h3 style="margin-top: 24px;">Part 2: The Heavenly Throne and the Seals (Ch 4–7)</h3>
       <p class="muted">John is caught up to the heavenly courtroom to witness the unsealing of the covenant decree. The Lamb initiates the judgment upon the persecuting nation.</p>
-      <div class="chapter-grid">
-        <a class="chapter-link" href="rev04.html">Chapter 4</a>
-        <a class="chapter-link" href="rev05.html">Chapter 5</a>
-        <a class="chapter-link" href="rev06.html">Chapter 6</a>
-        <a class="chapter-link" href="rev07.html">Chapter 7</a>
-      </div>
+      <ul class="chapter-list">
+        <li><a href="rev4.html">Revelation 4 — The Throne: Heaven’s Rule Revealed</a></li>
+        <li><a href="rev5.html">Revelation 5 — The Lamb: Worthy to Open the Scroll</a></li>
+        <li><a href="rev6.html">Revelation 6 — Seals: Covenant Upheaval Begins</a></li>
+        <li><a href="rev7.html">Revelation 7 — Sealed Servants and the Great Multitude</a></li>
+      </ul>
 
       <h3 style="margin-top: 24px;">Part 3: Trumpets, Beasts, and Bowls (Ch 8–18)</h3>
       <p class="muted">The "Great Tribulation" of the first century. The Roman Beast is utilized as God's instrument to destroy the Harlot City (Jerusalem), bringing an end to the Old Covenant world.</p>
-      <div class="chapter-grid">
-        <a class="chapter-link" href="rev08.html">Chapter 8</a>
-        <a class="chapter-link" href="rev09.html">Chapter 9</a>
-        <a class="chapter-link" href="rev10.html">Chapter 10</a>
-        <a class="chapter-link" href="rev11.html">Chapter 11</a>
-        <a class="chapter-link" href="rev12.html">Chapter 12</a>
-        <a class="chapter-link" href="rev13.html">Chapter 13</a>
-        <a class="chapter-link" href="rev14.html">Chapter 14</a>
-        <a class="chapter-link" href="rev15.html">Chapter 15</a>
-        <a class="chapter-link" href="rev16.html">Chapter 16</a>
-        <a class="chapter-link" href="rev17.html">Chapter 17</a>
-        <a class="chapter-link" href="rev18.html">Chapter 18</a>
-      </div>
+      <ul class="chapter-list">
+        <li><a href="rev8.html">Revelation 8 — Trumpets: Warning Intensifies</a></li>
+        <li><a href="rev9.html">Revelation 9 — Trumpets: Exposure and Hardness</a></li>
+        <li><a href="rev10.html">Revelation 10 — The Little Scroll: Sweet and Bitter</a></li>
+        <li><a href="rev11.html">Revelation 11 — Witness, Temple Measure, and the Great City</a></li>
+        <li><a href="rev12.html">Revelation 12 — Dragon and Child: Covenant Conflict</a></li>
+        <li><a href="rev13.html">Revelation 13 — The Beasts: Allegiance and the Mark</a></li>
+        <li><a href="rev14.html">Revelation 14 — Harvest: Vindication and Warning</a></li>
+        <li><a href="rev15.html">Revelation 15 — The Song: Wrath Prepared</a></li>
+        <li><a href="rev16.html">Revelation 16 — Bowls: Wrath Completed</a></li>
+        <li><a href="rev17.html">Revelation 17 — Babylon Unmasked</a></li>
+        <li><a href="rev18.html">Revelation 18 — Babylon Falls: Lament and Exit</a></li>
+      </ul>
 
       <h3 style="margin-top: 24px;">Part 4: The Kingdom Consummated (Ch 19–22)</h3>
       <p class="muted">The Word of God rides out in victory. The old heaven and earth pass away, and the New Jerusalem descends, establishing the New Creation reality we live in today.</p>
-      <div class="chapter-grid">
-        <a class="chapter-link" href="rev19.html">Chapter 19</a>
-        <a class="chapter-link" href="rev20.html">Chapter 20</a>
-        <a class="chapter-link" href="rev21.html">Chapter 21</a>
-        <a class="chapter-link" href="rev22.html">Chapter 22</a>
-      </div>
+      <ul class="chapter-list">
+        <li><a href="rev19.html">Revelation 19 — Victory: The True King and the Wedding</a></li>
+        <li><a href="rev20.html">Revelation 20 — The Thousand Years and Judgment Imagery</a></li>
+        <li><a href="rev21.html">Revelation 21 — New Heaven and New Earth: New Jerusalem</a></li>
+        <li><a href="rev22.html">Revelation 22 — River of Life and the Closing Witness</a></li>
+      </ul>
     </section>
 
     <hr />
@@ -233,7 +231,7 @@
     <nav class="bottom">
       <a href="#top">Top</a> |
       <a href="/Bible/index.html">Bible Index</a> |
-      <a href="preface.html">Preface</a> |
+      <a href="preface.html">Preface to Revelation</a> |
       <a href="/Bible/Prophecy/index.html">Prophecy Hub</a>
     </nav>
 
