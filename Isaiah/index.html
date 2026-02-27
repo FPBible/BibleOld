@@ -44,7 +44,24 @@
       align-items: center;
       justify-content: space-between;
     }
-  
+    
+    /* Responsive Video Styling */
+    .video-container {
+      margin: 2em 0;
+      padding: 56.25% 0 0 0;
+      position: relative;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
     /* Hide specific UI elements */
     .hide-element { display: none; }
   </style>
@@ -75,6 +92,15 @@ Isaiah supplies much of the prophetic language later used by Jesus
 and the New Testament — judgment, servant, Zion, new creation,
 and the renewal of covenant life.
 </p>
+
+<div class="video-container">
+  <iframe 
+    src="https://player.vimeo.com/video/YOUR_VIDEO_ID?title=0&byline=0&portrait=0" 
+    frameborder="0" 
+    allow="autoplay; fullscreen; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+</div>
 
 <hr />
 
