@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Daniel Index — Fulfilled Prophecy Bible (WEB)</title>
+  <meta name="description" content="The Book of Daniel: A covenantal commentary on the Four Empires, the 70 Weeks, the Son of Man, and the establishment of the indestructible Kingdom." />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Daniel Index",
+    "description": "Index for the Book of Daniel, interpreting the 70 Weeks and the Four Empires through a fulfilled, first-century framework.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "The Fulfilled Prophecy Bible"
+    }
+  }
+  </script>
+
+  <style>
+    :root{
+      --maxw: 980px;
+      --pad: 16px;
+      --line: rgba(0,0,0,0.12);
+      --muted: rgba(0,0,0,0.72);
+      --soft: rgba(0,0,0,0.05);
+      --soft2: rgba(0,0,0,0.03);
+      --radius: 14px;
+    }
+    body{
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.65;
+      margin: 0;
+      color: #111;
+      background: #fff;
+    }
+    .wrap{ max-width: var(--maxw); margin: 0 auto; padding: 18px; }
+    
+    /* PIPE-SEPARATED NAVIGATION STYLE */
+    nav.top, nav.bottom{ 
+      text-align: center;
+      font-size: 0.9rem;
+      margin: 15px 0 20px;
+      color: var(--muted);
+    }
+    nav.top a, nav.bottom a{
+      color: #0066cc;
+      text-decoration: none;
+      padding: 0 4px;
+    }
+    nav.top a:hover, nav.bottom a:hover{
+      text-decoration: underline;
+    }
+
+    h1{ margin: 0.2em 0 0.4em; font-size: 1.9rem; }
+    h2{ margin: 1.2em 0 0.4em; font-size: 1.4rem; }
+    h3{ margin: 1em 0 0.3em; font-size: 1.15rem; }
+    hr{ border: 0; border-top: 1px solid var(--line); margin: 20px 0; }
+    .card{
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 14px;
+      background: #fff;
+      margin-bottom: 1em;
+    }
+    .muted{ color: var(--muted); font-size: 0.95rem; }
+    
+    ul{ margin: 0.6em 0 0.4em 1.2em; padding:0; }
+    li{ margin: 0.45em 0; line-height: 1.5; }
+    
+    /* Custom List for Chapters */
+    .chapter-list {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0 0;
+    }
+    .chapter-list li {
+      margin-bottom: 8px;
+      padding: 8px 12px;
+      border-radius: 8px;
+      background: var(--soft2);
+      border: 1px solid var(--line);
+    }
+    .chapter-list a {
+      font-weight: 600;
+      font-size: 1.05rem;
+      text-decoration: none;
+      display: block;
+    }
+    .chapter-list a:hover {
+      text-decoration: underline;
+    }
+
+    footer{
+      margin-top: 2em;
+      padding-top: 1em;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    a{ color: #0066cc; text-decoration: none; }
+    a:hover{ text-decoration: underline; }
+    strong{ font-weight: 600; }
+    
+    /* Pill Badges for summary points */
+    .pill {
+      display: inline-block;
+      background: var(--soft);
+      border: 1px solid var(--line);
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      margin-right: 5px;
+      margin-bottom: 10px;
+      font-weight: 600;
+      color: var(--muted);
+    }
+  </style>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q22N178LJ8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Q22N178LJ8');
+  </script>
+</head>
+
+<body>
+  <a id="top"></a>
+  <div class="wrap">
+
+    <nav class="top">
+      <a href="/Bible/index.html">Bible Index</a> |
+      <a href="/Bible/Prophecy/index.html">Prophecy Hub</a>
+    </nav>
+
+    <div class="card">
+      <h1>Daniel</h1>
+      <p class="muted">The Four Empires · The 70 Weeks · The Indestructible Kingdom</p>
+      
+      <div style="margin-top: 12px;">
+        <span class="pill">No 2,000-Year Gap</span>
+        <span class="pill">First-Century Fulfillment</span>
+        <span class="pill">The Son of Man</span>
+      </div>
+    </div>
+
+    <hr />
+
+    <section class="card">
+      <h2>Orientation</h2>
+      <p>
+        The Book of Daniel is the prophetic bedrock of the New Testament. It provides the exact chronological roadmap from the Babylonian exile down to the arrival of the Messiah and the destruction of the Old Covenant temple system. 
+      </p>
+      <p>
+        <strong>Futurism shatters the timeline of Daniel</strong> by inserting an arbitrary, unbiblical 2,000-year "gap" into the 70 Weeks prophecy to delay the Kingdom of God. This module reclaims Daniel by demonstrating that the stone cut without hands (Christ's Kingdom) struck the statue exactly when Daniel said it would: in the days of the fourth empire (first-century Rome). The prophecies of Daniel were sealed until the time of the end—which arrived precisely in AD 70 when the power of the holy people was finally shattered.
+      </p>
+    </section>
+
+    <hr />
+
+    <section class="card">
+      <h2>Read First</h2>
+      <p class="muted">Essential reading before beginning the chapters.</p>
+      <ul>
+        <li>
+          <a href="preface.html"><strong>Preface to Daniel</strong></a><br />
+          <span class="muted">Understanding the Four Empires and why the "Gap Theory" destroys biblical prophecy.</span>
+        </li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <section class="card">
+      <h2>Chapter Index</h2>
+      <p class="muted">The book is divided into historical narratives of faithfulness in exile, followed by sweeping apocalyptic visions of covenant transition.</p>
+
+      <h3>Part 1: Faithfulness in the Exile (Ch 1–6)</h3>
+      <p class="muted">Daniel and his friends navigate the empires of Babylon and Medo-Persia, establishing the sovereignty of Yahweh over pagan kings.</p>
+      <ul class="chapter-list">
+        <li><a href="dan1.html">Daniel 1 — Exile and Faithfulness in Babylon</a></li>
+        <li><a href="dan2.html">Daniel 2 — Nebuchadnezzar's Dream: The Statue and the Stone</a></li>
+        <li><a href="dan3.html">Daniel 3 — The Fiery Furnace and the Fourth Man</a></li>
+        <li><a href="dan4.html">Daniel 4 — The Madness of the King</a></li>
+        <li><a href="dan5.html">Daniel 5 — The Writing on the Wall: Babylon Falls</a></li>
+        <li><a href="dan6.html">Daniel 6 — The Lion's Den and the Decree of Darius</a></li>
+      </ul>
+
+      <h3 style="margin-top: 24px;">Part 2: The Apocalyptic Visions (Ch 7–12)</h3>
+      <p class="muted">Prophetic visions outlining the succession of empires, the arrival of the Son of Man, the timing of the Messiah, and the end of the Old Covenant age.</p>
+      <ul class="chapter-list">
+        <li><a href="dan7.html">Daniel 7 — The Four Beasts and the Son of Man Approaching</a></li>
+        <li><a href="dan8.html">Daniel 8 — The Ram, the Goat, and the Little Horn</a></li>
+        <li><a href="dan9.html">Daniel 9 — The 70 Weeks: The Messiah's Arrival and the City's Destruction</a></li>
+        <li><a href="dan10.html">Daniel 10 — The Heavenly Conflict Behind Earthly History</a></li>
+        <li><a href="dan11.html">Daniel 11 — The Kings of the North and South</a></li>
+        <li><a href="dan12.html">Daniel 12 — The Time of the End and the Shattering of the Holy People</a></li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <nav class="bottom">
+      <a href="#top">Top</a> |
+      <a href="/Bible/index.html">Bible Index</a> |
+      <a href="preface.html">Preface to Daniel</a> |
+      <a href="/Bible/Prophecy/index.html">Prophecy Hub</a>
+    </nav>
+
+    <a href="https://ko-fi.com/B0B61QC1BU" target="_blank"><img src="https://storage.ko-fi.com/cdn/kofi2.png?v=3" alt="Support The Fulfilled Prophecy Bible on Ko-fi" style="height: 36px; width: auto; margin-top: 10px;"></a>
+
+    <footer>
+      <p><strong>The Fulfilled Prophecy Bible</strong> — Scripture text based on the <strong>World English Bible (WEB)</strong>, a public domain modern English translation.</p>
+      <p>Commentary honours audience relevance, time statements, and first-century fulfillment.</p>
+      <p><a href="/Bible/about.html">About</a> · <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> · <a href="https://ko-fi.com/fpbible" target="_blank">Support</a></p>
+    </footer>
+
+  </div>
+</body>
+</html>
