@@ -3,16 +3,19 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>FPBible | Fulfilled Prophecy Bible (WEB) — New Creation Commentary</title>
-  <meta name="description" content="The World English Bible (WEB) with study commentary reading Scripture through the lens of fulfilled, first-century covenant transition." />
+  <title>Daniel Index — Fulfilled Prophecy Bible (WEB)</title>
+  <meta name="description" content="The Book of Daniel: A covenantal commentary on the Four Empires, the 70 Weeks, the Son of Man, and the establishment of the indestructible Kingdom." />
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "The Fulfilled Prophecy Bible",
-    "url": "https://fpbible.github.io/",
-    "description": "Scripture through fulfillment. The World English Bible with covenantal commentary."
+    "@type": "WebPage",
+    "name": "Daniel Index",
+    "description": "Index for the Book of Daniel, interpreting the 70 Weeks and the Four Empires through a fulfilled, first-century framework.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "The Fulfilled Prophecy Bible"
+    }
   }
   </script>
 
@@ -25,7 +28,6 @@
       --soft: rgba(0,0,0,0.05);
       --soft2: rgba(0,0,0,0.03);
       --radius: 14px;
-      --accent: #0066cc;
     }
     body{
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -35,88 +37,87 @@
       background: #fff;
     }
     .wrap{ max-width: var(--maxw); margin: 0 auto; padding: 18px; }
-
-    /* Navigation */
-    nav.top { text-align: center; font-size: 0.95rem; margin: 15px 0 30px; }
-    nav.top a { color: var(--accent); text-decoration: none; padding: 0 8px; font-weight: 500;}
-    nav.top a:hover { text-decoration: underline; }
-
-    /* Typography */
-    h1{ margin: 0.2em 0 0.4em; font-size: 2.2rem; font-weight: 800;}
-    h2{ margin: 1.5em 0 0.5em; font-size: 1.6rem; border-bottom: 2px solid var(--soft); padding-bottom: 8px;}
-    h3{ margin: 1.2em 0 0.3em; font-size: 1.25rem; }
-    p{ margin-bottom: 1em; }
     
-    hr{ border: 0; border-top: 1px solid var(--line); margin: 40px 0; }
-    
-    /* Utility */
-    .muted{ color: var(--muted); font-size: 0.95rem; }
-    a{ color: var(--accent); text-decoration: none; }
-    a:hover{ text-decoration: underline; }
-    strong{ font-weight: 600; }
+    /* PIPE-SEPARATED NAVIGATION STYLE */
+    nav.top, nav.bottom{ 
+      text-align: center;
+      font-size: 0.9rem;
+      margin: 15px 0 20px;
+      color: var(--muted);
+    }
+    nav.top a, nav.bottom a{
+      color: #0066cc;
+      text-decoration: none;
+      padding: 0 4px;
+    }
+    nav.top a:hover, nav.bottom a:hover{
+      text-decoration: underline;
+    }
 
-    /* Banners & Cards */
-    .alert { background: #fff3cd; color: #856404; padding: 12px; border-radius: 8px; font-size: 0.9rem; margin-bottom: 20px; border: 1px solid #ffeeba;}
-    .hero { text-align: center; margin-bottom: 40px; }
-    .hero img { max-width: 250px; height: auto; margin-bottom: 15px; }
-    
+    h1{ margin: 0.2em 0 0.4em; font-size: 1.9rem; }
+    h2{ margin: 1.2em 0 0.4em; font-size: 1.4rem; }
+    h3{ margin: 1em 0 0.3em; font-size: 1.15rem; }
+    hr{ border: 0; border-top: 1px solid var(--line); margin: 20px 0; }
     .card{
       border: 1px solid var(--line);
       border-radius: var(--radius);
-      padding: 20px;
+      padding: 14px;
       background: #fff;
-      margin-bottom: 20px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+      margin-bottom: 1em;
+    }
+    .muted{ color: var(--muted); font-size: 0.95rem; }
+    
+    ul{ margin: 0.6em 0 0.4em 1.2em; padding: 0; }
+    li{ margin: 0.45em 0; line-height: 1.5; }
+    
+    /* Custom List for Chapters */
+    .chapter-list {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0 0;
+    }
+    .chapter-list li {
+      margin-bottom: 8px;
+      padding: 8px 12px;
+      border-radius: 8px;
+      background: var(--soft2);
+      border: 1px solid var(--line);
+    }
+    .chapter-list a {
+      font-weight: 600;
+      font-size: 1.05rem;
+      text-decoration: none;
+      display: block;
+      color: #0066cc;
+    }
+    .chapter-list a:hover {
+      text-decoration: underline;
     }
 
-    /* Grids */
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-    .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; text-align: center;}
-    
-    .feature-box { background: var(--soft2); border: 1px solid var(--line); border-radius: 8px; padding: 15px; }
-    .feature-box h4 { margin: 0 0 5px 0; font-size: 1.1rem; }
-    
     /* Pill Badges */
     .pill {
       display: inline-block;
       background: var(--soft);
       border: 1px solid var(--line);
-      padding: 3px 10px;
+      padding: 4px 12px;
       border-radius: 20px;
       font-size: 0.85rem;
-      margin-right: 5px;
-      margin-bottom: 10px;
+      margin-right: 6px;
+      margin-bottom: 8px;
       font-weight: 600;
       color: var(--muted);
     }
-    .pill.accent { background: #e6f2ff; color: var(--accent); border-color: #b3d9ff;}
-
-    /* Book List */
-    .book-list { list-style: none; padding: 0; margin: 0; }
-    .book-list li { margin-bottom: 10px; }
-    .book-list a { 
-      display: block; 
-      padding: 12px 16px; 
-      background: var(--soft2); 
-      border: 1px solid var(--line); 
-      border-radius: 8px; 
-      font-weight: 600; 
-      font-size: 1.1rem;
-      transition: background 0.2s;
-    }
-    .book-list a:hover { background: var(--soft); text-decoration: none; }
-    .book-desc { display: block; font-size: 0.85rem; color: var(--muted); font-weight: 400; margin-top: 4px;}
 
     footer{
-      margin-top: 3em;
-      padding-top: 2em;
+      margin-top: 2em;
+      padding-top: 1em;
       border-top: 1px solid var(--line);
       color: var(--muted);
       font-size: 0.92rem;
     }
-    .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; margin-bottom: 20px;}
-    .footer-grid ul { list-style: none; padding: 0; margin: 0;}
-    .footer-grid li { margin-bottom: 6px;}
+    a{ color: #0066cc; text-decoration: none; }
+    a:hover{ text-decoration: underline; }
+    strong{ font-weight: 600; }
   </style>
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q22N178LJ8"></script>
@@ -132,272 +133,97 @@
   <a id="top"></a>
   <div class="wrap">
 
-    <div class="alert">
-      <strong>Under Construction:</strong> FPBible is actively being built and expanded. Expect new books, rewrites, and layout refinements as the library grows. If a link 404s, it’s not published yet or it’s being rebuilt to the current standard.
-    </div>
-
     <nav class="top">
-      <a href="#start">Start</a> |
-      <a href="#books">Finished Books</a> |
-      <a href="#resources">Prophecy Hub</a> |
-      <a href="/Bible/about.html">About</a> |
-      <a href="#support">Support</a>
+      <a href="/Bible/index.html">Bible Index</a> |
+      <a href="/Bible/Prophecy/index.html">Prophecy Hub</a>
     </nav>
 
-    <div class="hero">
-      <img src="images/og-light.png" alt="FPBible Logo" onerror="this.style.display='none'">
-      <h1>Scripture Through Fulfillment</h1>
-      <p class="muted" style="font-size: 1.1rem; max-width: 600px; margin: 0 auto;">
-        The World English Bible (WEB) with study commentary that keeps Scripture inside its original covenant horizon — zero futurism, zero delay theology.
-      </p>
-    </div>
-
-    <div class="grid-3" style="margin-bottom: 40px;">
-      <div class="feature-box">
-        <h4>Zero Futurism</h4>
-        <span class="muted">No 2,000-year gaps</span>
-      </div>
-      <div class="feature-box">
-        <h4>WEB Base Text</h4>
-        <span class="muted">Modern English Public Domain</span>
-      </div>
-      <div class="feature-box">
-        <h4>AD 30–70</h4>
-        <span class="muted">Covenant Transition Context</span>
+    <div class="card">
+      <h1>Daniel</h1>
+      <p class="muted">The Four Empires · The 70 Weeks · The Indestructible Kingdom</p>
+      
+      <div style="margin-top: 12px;">
+        <span class="pill">No 2,000-Year Gap</span>
+        <span class="pill">First-Century Fulfillment</span>
+        <span class="pill">The Son of Man</span>
       </div>
     </div>
 
-    <hr />
+    <div style="margin-bottom: 20px; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
+      <img src="daniel-hero.jpg" alt="The Book of Daniel - A Covenantal Commentary" style="width: 100%; display: block; height: auto;">
+    </div>
 
-    <section id="start">
-      <h2>Start Here: The Foundation</h2>
-      <p>Christian faith is not defined by waiting, countdowns, or speculation. Its center is <strong>presence</strong> — a settled life grounded in what Christ has already accomplished in the first century.</p>
-      
-      <div class="grid">
-        <div class="card">
-          <h3><span class="pill accent">1</span> The Manifesto</h3>
-          <p class="muted">A 2-minute read on presence, settled life, and why we read Scripture through completion rather than postponement.</p>
-          <a href="/Bible/NewCreation/manifesto.html">Read the Manifesto →</a>
-        </div>
-        <div class="card">
-          <h3><span class="pill accent">2</span> The End of the Law</h3>
-          <p class="muted">Why Sinai has no jurisdiction in Christ, why AD 70 ended the Law system, and why "New Creation + Law" is a contradiction.</p>
-          <a href="/Bible/Prophecy/end-of-the-law.html">Read the Article →</a>
-        </div>
-        <div class="card">
-          <h3><span class="pill accent">3</span> The Resurrection</h3>
-          <p class="muted">Life now in Christ. How to understand resurrection not as a postponed physical event, but as spiritual life and vindication.</p>
-          <a href="/Bible/Resurrection/index.html">Read the Article →</a>
-        </div>
-        <div class="card">
-          <h3><span class="pill accent">4</span> The Day of Atonement</h3>
-          <p class="muted">Hebrews 9 read correctly: sanctuary logic, priestly “appearing”, covenant judgment, and salvation as public closure.</p>
-          <a href="/Bible/Prophecy/day-of-atonement.html">Read the Article →</a>
-        </div>
-      </div>
-    </section>
-
-    <hr />
-
-    <section id="books">
-      <h2>Finished Books</h2>
-      <p class="muted">Chapters present Scripture (WEB) followed by Fulfillment Notes and expanded commentary. These books are completely formatted to the FPBible standard.</p>
-      
-      <div class="grid">
-        <div>
-          <h3 style="margin-top:0; border-bottom: 1px solid var(--line); padding-bottom: 8px;">Old Testament</h3>
-          <ul class="book-list">
-            <li>
-              <a href="Isaiah/index.html">
-                Isaiah <span class="pill" style="margin-left:8px; font-size:0.7rem; padding: 2px 6px;">Highlights</span>
-                <span class="book-desc">Key apocalyptic chapters and New Creation promises.</span>
-              </a>
-            </li>
-            <li>
-              <a href="Daniel/index.html">
-                Daniel
-                <span class="book-desc">The Four Empires, the 70 Weeks, and the arrival of the Kingdom.</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <h3 style="margin-top:0; border-bottom: 1px solid var(--line); padding-bottom: 8px;">New Testament</h3>
-          <ul class="book-list">
-            <li>
-              <a href="Matthew/index.html">
-                Matthew
-                <span class="book-desc">The Kingdom inaugurated. Includes the Olivet Discourse (Ch 24).</span>
-              </a>
-            </li>
-            <li>
-              <a href="John/index.html">
-                John
-                <span class="book-desc">The Word made flesh and eternal life as a present possession.</span>
-              </a>
-            </li>
-            <li>
-              <a href="Romans/index.html">
-                Romans
-                <span class="book-desc">Justification, the groaning of creation, and the grafted olive tree.</span>
-              </a>
-            </li>
-            <li>
-              <a href="1Corinthians/index.html">
-                1 Corinthians
-                <span class="book-desc">The transformation of the body and the end of the Old Covenant age.</span>
-              </a>
-            </li>
-            <li>
-              <a href="2Corinthians/index.html">
-                2 Corinthians
-                <span class="book-desc">The fading glory of Moses vs. the eternal glory of the New Covenant.</span>
-              </a>
-            </li>
-            <li>
-              <a href="Galatians/index.html">
-                Galatians
-                <span class="book-desc">Freedom from the Law and the reality of the New Creation.</span>
-              </a>
-            </li>
-            <li>
-              <a href="Ephesians/index.html">
-                Ephesians
-                <span class="book-desc">The mystery revealed: Jew and Gentile made one new man in Christ.</span>
-              </a>
-            </li>
-            <li>
-              <a href="Philippians/index.html">
-                Philippians
-                <span class="book-desc">Joy, union with Christ, and the imminent vindication.</span>
-              </a>
-            </li>
-            <li>
-              <a href="Colossians/index.html">
-                Colossians
-                <span class="book-desc">The supremacy of Christ and the disarming of the spiritual rulers.</span>
-              </a>
-            </li>
-            <li>
-              <a href="1Thessalonians/index.html">
-                1 Thessalonians
-                <span class="book-desc">Comfort concerning those asleep and the imminent parousia.</span>
-              </a>
-            </li>
-            <li>
-              <a href="2Thessalonians/index.html">
-                2 Thessalonians
-                <span class="book-desc">The Man of Lawlessness and the imminent day of judgment.</span>
-              </a>
-            </li>
-            <li>
-              <a href="Hebrews/index.html">
-                Hebrews
-                <span class="book-desc">The obsolete priesthood and the "about to disappear" old order.</span>
-              </a>
-            </li>
-            <li>
-              <a href="James/index.html">
-                James
-                <span class="book-desc">Faith in action and the impending judgment upon the corrupt elite.</span>
-              </a>
-            </li>
-            <li>
-              <a href="Revelation/index.html">
-                Revelation
-                <span class="book-desc">The complete 22-chapter breakdown of AD 70 covenant judgment.</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <hr />
-
-    <section id="resources">
-      <h2>Resources & The Prophecy Hub</h2>
-      <p>Deep dives into key concepts. Start here when you encounter specific prophetic idioms in the text.</p>
-
-      <div class="grid">
-        <div class="card" style="margin-bottom: 0;">
-          <h3 style="margin-top:0;">The Prophecy Hub</h3>
-          <p class="muted">Centralized fulfillment explanations for recurring terms. The master dictionary for the FPBible project.</p>
-          <ul style="margin: 0; padding-left: 1.2em;">
-            <li><a href="appendix.html"><strong>Apocalyptic Dictionary (Start Here)</strong></a></li>
-            <li><a href="Prophecy/cosmic-language.html">Cosmic Collapse & De-creation</a></li>
-            <li><a href="Prophecy/heavens-and-earth.html">New Heaven and New Earth</a></li>
-            <li><a href="Prophecy/parousia.html">The Parousia (Presence/Coming)</a></li>
-            <li><a href="Prophecy/unquenchable-fire.html">Unquenchable Fire & Gehenna</a></li>
-            <li><a href="Prophecy/beast.html">The Beast & Babylon</a></li>
-          </ul>
-          <div style="margin-top: 15px;">
-            <a href="Prophecy/index.html"><strong>View Full Prophecy Hub →</strong></a>
-          </div>
-        </div>
-
-        <div class="card" style="margin-bottom: 0;">
-          <h3 style="margin-top:0;">Studies & Application</h3>
-          <p class="muted">Applying the New Creation reality to everyday life.</p>
-          <ul style="margin: 0; padding-left: 1.2em;">
-            <li><a href="Life/index.html"><strong>Life</strong></a> — Practical pages on living from union and peace.</li>
-            <li><a href="Thoughts/index.html"><strong>Thoughts</strong></a> — Short, direct clarifications for quick grounding.</li>
-            <li><a href="Salvation/index.html"><strong>Salvation</strong></a> — Defined in covenant terms (rescue into Christ).</li>
-            <li><a href="Audio/index.html"><strong>Audio</strong></a> — Proclamation and meditation tracks.</li>
-            <li><a href="Studies/index.html"><strong>Theological Studies</strong></a> — Deeper dives into audience relevance.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <hr />
-
-    <section id="support" style="text-align: center;">
-      <h2>Support The Project</h2>
-      <p style="max-width: 600px; margin: 0 auto 20px;">
-        FPBible is designed to stay free and accessible. If this work has helped ground you in the finished work of Christ and free you from end-times fear, you can support ongoing development:
+    <section class="card">
+      <h2>Orientation</h2>
+      <p>
+        The Book of Daniel is the prophetic bedrock of the New Testament. It provides the exact chronological roadmap from the Babylonian exile down to the arrival of the Messiah and the destruction of the Old Covenant temple system. 
       </p>
+      <p>
+        <strong>Futurism shatters the timeline of Daniel</strong> by inserting an arbitrary, unbiblical 2,000-year "gap" into the 70 Weeks prophecy to delay the Kingdom of God. This module reclaims Daniel by demonstrating that the stone cut without hands (Christ's Kingdom) struck the statue exactly when Daniel said it would: in the days of the fourth empire (first-century Rome). The prophecies of Daniel were sealed until the time of the end—which arrived precisely in AD 70 when the power of the holy people was finally shattered.
+      </p>
+    </section>
+
+    <hr />
+
+    <section class="card">
+      <h2>Read First</h2>
+      <p class="muted">Essential reading before beginning the chapters.</p>
+      <ul>
+        <li>
+          <a href="preface.html"><strong>Preface to Daniel</strong></a><br />
+          <span class="muted">Understanding the Four Empires and why the "Gap Theory" destroys biblical prophecy.</span>
+        </li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <section class="card">
+      <h2>Chapter Index</h2>
+      <p class="muted">The book is divided into historical narratives of faithfulness in exile, followed by sweeping apocalyptic visions of covenant transition.</p>
+
+      <h3>Part 1: Faithfulness in the Exile (Ch 1–6)</h3>
+      <p class="muted">Daniel and his friends navigate the empires of Babylon and Medo-Persia, establishing the sovereignty of Yahweh over pagan kings.</p>
+      <ul class="chapter-list">
+        <li><a href="dan1.html">Daniel 1 — Exile and Faithfulness in Babylon</a></li>
+        <li><a href="dan2.html">Daniel 2 — Nebuchadnezzar's Dream: The Statue and the Stone</a></li>
+        <li><a href="dan3.html">Daniel 3 — The Fiery Furnace and the Fourth Man</a></li>
+        <li><a href="dan4.html">Daniel 4 — The Madness of the King</a></li>
+        <li><a href="dan5.html">Daniel 5 — The Writing on the Wall: Babylon Falls</a></li>
+        <li><a href="dan6.html">Daniel 6 — The Lion's Den and the Decree of Darius</a></li>
+      </ul>
+
+      <h3 style="margin-top: 24px;">Part 2: The Apocalyptic Visions (Ch 7–12)</h3>
+      <p class="muted">Prophetic visions outlining the succession of empires, the arrival of the Son of Man, the timing of the Messiah, and the end of the Old Covenant age.</p>
+      <ul class="chapter-list">
+        <li><a href="dan7.html">Daniel 7 — The Four Beasts and the Son of Man Approaching</a></li>
+        <li><a href="dan8.html">Daniel 8 — The Ram, the Goat, and the Little Horn</a></li>
+        <li><a href="dan9.html">Daniel 9 — The 70 Weeks: The Messiah's Arrival and the City's Destruction</a></li>
+        <li><a href="dan10.html">Daniel 10 — The Heavenly Conflict Behind Earthly History</a></li>
+        <li><a href="dan11.html">Daniel 11 — The Kings of the North and South</a></li>
+        <li><a href="dan12.html">Daniel 12 — The Time of the End and the Shattering of the Holy People</a></li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <nav class="bottom">
+      <a href="#top">Top</a> |
+      <a href="/Bible/index.html">Bible Index</a> |
+      <a href="preface.html">Preface to Daniel</a> |
+      <a href="/Bible/Prophecy/index.html">Prophecy Hub</a>
+    </nav>
+
+    <div style="text-align: center;">
       <a href="https://ko-fi.com/B0B61QC1BU" target="_blank">
-        <img src="https://storage.ko-fi.com/cdn/kofi5.png?v=6" alt="Support on Ko-fi" style="height: 46px; width: auto; border: none;">
+        <img src="https://storage.ko-fi.com/cdn/kofi2.png?v=3" alt="Support The Fulfilled Prophecy Bible on Ko-fi" style="height: 36px; width: auto; margin-top: 10px; border: none;">
       </a>
-    </section>
+    </div>
 
     <footer>
-      <div class="footer-grid">
-        <div>
-          <strong>Quick Start</strong>
-          <ul>
-            <li><a href="/Bible/NewCreation/manifesto.html">Manifesto</a></li>
-            <li><a href="/Bible/Prophecy/end-of-the-law.html">End of the Law</a></li>
-            <li><a href="/Bible/Resurrection/index.html">Resurrection</a></li>
-            <li><a href="appendix.html">Apocalyptic Dictionary</a></li>
-          </ul>
-        </div>
-        <div>
-          <strong>Books</strong>
-          <ul>
-            <li><a href="Daniel/index.html">Daniel</a></li>
-            <li><a href="Revelation/index.html">Revelation</a></li>
-            <li><a href="Matthew/index.html">Matthew</a></li>
-            <li><a href="Hebrews/index.html">Hebrews</a></li>
-          </ul>
-        </div>
-        <div>
-          <strong>Resources</strong>
-          <ul>
-            <li><a href="/Bible/Prophecy/index.html">Prophecy Hub</a></li>
-            <li><a href="/Bible/Life/index.html">Life Application</a></li>
-            <li><a href="/Bible/Thoughts/index.html">Thoughts</a></li>
-            <li><a href="/Bible/about.html">About FPBible</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div style="text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid var(--soft);">
-        <p style="margin: 0;"><strong>The Fulfilled Prophecy Bible</strong> — Text based on the <strong>World English Bible (WEB)</strong></p>
-        <p style="margin: 5px 0 0 0;" class="muted">Notes are written to honour audience relevance, time statements, and first-century fulfillment.</p>
-      </div>
+      <p><strong>The Fulfilled Prophecy Bible</strong> — Scripture text based on the <strong>World English Bible (WEB)</strong>, a public domain modern English translation.</p>
+      <p>Commentary honours audience relevance, time statements, and first-century fulfillment.</p>
+      <p><a href="/Bible/about.html">About</a> · <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> · <a href="https://ko-fi.com/fpbible" target="_blank">Support</a></p>
     </footer>
 
   </div>
