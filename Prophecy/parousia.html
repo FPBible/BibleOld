@@ -3,45 +3,106 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Parousia — Presence, Authority, and Covenant Fulfillment — Fulfilled Prophecy Bible (WEB)</title>
-  <meta name="description" content="Full Preterist study edition using the WEB translation." />
+  <title>Parousia — Presence, Authority, and Covenant Fulfillment — FPBible</title>
+  <meta name="description" content="Full Preterist study edition explaining the Greek word Parousia as presence and royal visitation, rather than a delayed cosmic return." />
 
   <style>
+    :root{
+      --maxw: 980px;
+      --pad: 16px;
+      --line: rgba(0,0,0,0.12);
+      --muted: rgba(0,0,0,0.72);
+      --soft: rgba(0,0,0,0.05);
+      --soft2: rgba(0,0,0,0.03);
+      --radius: 14px;
+    }
     body{
-      font-family: system-ui, sans-serif;
-      line-height: 1.65;
-      margin: 1.5em;
-      max-width: 900px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.7;
+      margin: 0;
+      color: #111;
+      background: #fff;
     }
-    h1,h2,h3{
-      margin-top: 1.6em;
-      margin-bottom: 0.4em;
+    .wrap{ max-width: var(--maxw); margin: 0 auto; padding: 18px; }
+    
+    /* TOP NAV */
+    .topnav { 
+      position: sticky; 
+      top: 0; 
+      background: rgba(255,255,255,0.95); 
+      border-bottom: 1px solid var(--line); 
+      z-index: 100;
+    } 
+    .topnav .bar { 
+      max-width: var(--maxw); 
+      margin: 0 auto; 
+      padding: 12px var(--pad); 
+      display: flex; 
+      gap: 14px; 
+      flex-wrap: wrap; 
+      justify-content: center;
+    } 
+    .topnav a { 
+      text-decoration: none; 
+      color: #111; 
+      font-size: 0.95rem;
+      border-bottom: 2px solid transparent; 
+    } 
+    .topnav a:hover { border-bottom: 2px solid #111; } 
+
+    nav.bottom{ 
+      text-align: center;
+      font-size: 0.9rem;
+      margin: 15px 0 25px;
+      color: var(--muted);
     }
-    nav{
-      margin: 1em 0;
-      font-size: 0.95em;
+    nav.bottom a{
+      color: #0066cc;
+      text-decoration: none;
+      padding: 0 6px;
     }
-    nav a{
-      margin-right: 0.6em;
-      text-decoration: underline;
+    nav.bottom a:hover{ text-decoration: underline; }
+
+    h1{ margin: 0.2em 0 0.4em; font-size: 2.2rem; letter-spacing: -0.02em; }
+    h2{ margin: 1.5em 0 0.5em; font-size: 1.6rem; border-bottom: 2px solid var(--soft); padding-bottom: 10px; color: #333; }
+    h3{ margin: 1.2em 0 0.4em; font-size: 1.25rem; font-weight: 700; }
+    hr{ border: 0; border-top: 1px solid var(--line); margin: 30px 0; }
+    
+    .card{
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 24px;
+      background: #fff;
+      margin-bottom: 1.5em;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.03);
     }
-    p{ margin: 0.7em 0; }
-    ul{ margin: 0.6em 0 0.8em 1.2em; }
-    li{ margin: 0.4em 0; }
-    hr{ margin: 2.2em 0; }
-    .note{
-      font-size: 0.95em;
-      opacity: 0.9;
-    }
-    code{
+    .muted{ color: var(--muted); font-size: 0.95rem; }
+    
+    ul, ol{ margin: 0.8em 0 1em 1.4em; padding:0; }
+    li{ margin: 0.6em 0; }
+    
+    code {
       font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      background: var(--soft2);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.9em;
     }
-      footer{
-      margin-top: 2.2em;
-      padding-top: 1.2em;
+
+    .callout {
+      background: #f0f7ff;
+      border: 1px solid #cce3ff;
+      border-radius: 8px;
+      padding: 15px;
+      margin: 15px 0;
+    }
+
+    footer{
+      margin-top: 3em;
+      padding-top: 1.5em;
       border-top: 1px solid var(--line);
       color: var(--muted);
-      font-size: 0.96em;
+      font-size: 0.92rem;
     }
     footer .row{
       display: flex;
@@ -50,283 +111,250 @@
       align-items: center;
       justify-content: space-between;
     }
+    a{ color: #0066cc; text-decoration: none; font-weight: 500; }
+    a:hover{ text-decoration: underline; }
+    strong{ font-weight: 700; color: #000; }
+    
+    .pill {
+      display: inline-block;
+      background: #eef2ff;
+      border: 1px solid #d1d5db;
+      padding: 4px 14px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      margin: 0 8px 10px 0;
+      font-weight: 600;
+      color: #4b5563;
+    }
+
+    .btn{
+      display:inline-block;
+      padding: 9px 16px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      text-decoration: none;
+      color: #111;
+      background: #fff;
+      margin: 0 5px 10px;
+    }
+    .btn:hover{ background: var(--soft2); }
   </style>
+
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q22N178LJ8"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-Q22N178LJ8');
   </script>
+</head>
 
-  </head>
 <body>
+  <a id="top"></a>
 
-<a id="top"></a>
+  <div class="topnav">
+    <div class="bar">
+      <a href="/Bible/index.html">Main Index</a>
+      <a href="/Bible/Prophecy/index.html">Prophecy Hub</a>
+      <a href="/Bible/Studies/index.html">Studies</a>
+      <a href="/Bible/about.html">About</a>
+    </div>
+  </div>
 
-<nav>
-  <a href="/Bible/index.html">The Fulfilled Prophecy Bible Index</a> |
-  <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> |
-  <a href="#top">Top</a>
-</nav>
+  <div class="wrap">
 
-<h1>Parousia</h1>
-<h2>Presence, Authority, and Covenant Fulfillment</h2>
-
-<p class="note">
-Greek: <code>παρουσία</code> (parousia) — presence, arrival into presence, official visitation.
-A relational and governmental term, not a technical label for a distant cosmic return.
-</p>
-
-<hr />
-
-<h2>Why This Study Exists</h2>
-<p>
-Few biblical words have been reshaped more by later theology than <em>parousia</em>.
-In modern usage it is often treated as shorthand for a postponed event,
-detached from the people to whom it was written and the covenant crisis it addressed.
-</p>
-
-<p>
-This study restores <em>parousia</em> to its first-century setting:
-the public manifestation of Christ’s royal authority during the covenant transition
-from the old world to the New Creation.
-</p>
-
-<hr />
-
-<h2>Parousia in Ordinary Greek Usage</h2>
-<p>
-In everyday Greek, <em>parousia</em> described presence rather than absence.
-It was commonly used for the arrival of an authority figure whose presence
-now carried consequences.
-</p>
-
-<ul>
-  <li>arrival resulting in presence</li>
-  <li>official visitation of a ruler or king</li>
-  <li>authority exercised within a community</li>
-</ul>
-
-<p>
-A ruler’s parousia was not a momentary appearance.
-It meant governance, accountability, judgment, and reordering.
-</p>
-
-<hr />
-
-<h2>What Parousia Never Meant</h2>
-<p>
-Nothing in the word itself implies:
-</p>
-
-<ul>
-  <li>a delay spanning thousands of years</li>
-  <li>a physical descent through the sky</li>
-  <li>the end of the material universe</li>
-  <li>the removal of believers from the earth</li>
-</ul>
-
-<p>
-Those ideas come from later systems, not from the word or its biblical usage.
-</p>
-
-<hr />
-
-<h2>Audience Relevance Is the Control</h2>
-<p>
-Every New Testament reference to the parousia is addressed to living communities.
-The writers speak as participants, not distant observers.
-</p>
-
-<ul>
-  <li>“We who are alive and remain until the parousia of the Lord”
-    (<a href="https://ebible.org/eng-web/1TH04.htm" target="_blank">1 Thessalonians 4</a>)</li>
-  <li>“The parousia of the Lord has drawn near”
-    (<a href="https://ebible.org/eng-web/JAS05.htm" target="_blank">James 5</a>)</li>
-  <li>“This generation will not pass away”
-    (<a href="https://ebible.org/eng-web/MAT24.htm" target="_blank">Matthew 24</a>)</li>
-</ul>
-
-<p>
-These statements only make sense if the parousia belongs to their historical horizon.
-</p>
-
-<hr />
-
-<h2>Hebrew Background: “Coming” as Covenant Action</h2>
-<p>
-The prophets regularly described YHWH as “coming” in judgment
-without any expectation of physical appearance.
-</p>
-
-<ul>
-  <li>YHWH came against Egypt (<a href="https://ebible.org/eng-web/ISA19.htm" target="_blank">Isaiah 19</a>)</li>
-  <li>YHWH came against Babylon (<a href="https://ebible.org/eng-web/ISA13.htm" target="_blank">Isaiah 13</a>)</li>
-  <li>YHWH came against Jerusalem (<a href="https://ebible.org/eng-web/MIC01.htm" target="_blank">Micah 1</a>)</li>
-</ul>
-
-<p>
-This language described covenantal intervention within history.
-Jesus and the apostles inherit this framework — now centered on the Son.
-</p>
-
-<hr />
-
-<h2>Parousia and Kingship</h2>
-<p>
-In the ancient world, the parousia of a king announced that his authority
-was now operative.
-</p>
-
-<p>
-Cities prepared for a parousia by aligning loyalties and settling accounts.
-Resistance brought consequence; allegiance brought security.
-</p>
-
-<p>
-The parousia of Christ announces the same reality:
-His reign is not future — it is enforced.
-</p>
-
-<hr />
-
-<h2>Parousia Is Not Visibility Language</h2>
-<p>
-Biblical presence is measured by effect, not by eyesight.
-God is said to be present and to come in judgment without appearing physically.
-</p>
-
-<p>
-Parousia language functions the same way:
-effective authority made known through historical outcome.
-</p>
-
-<p class="note">
-Presence is demonstrated by impact.
-</p>
-
-<hr />
-
-<h2>Parousia and the Temple World</h2>
-<p>
-The parousia of Christ is inseparable from the fate of the Jerusalem temple.
-The temple represented the center of the old covenant world.
-</p>
-
-<p>
-Jesus tied His coming to the collapse of that system.
-When the temple fell, the old covenant world ended with it.
-</p>
-
-<ul>
-  <li>priesthood displaced</li>
-  <li>sacrifice ended</li>
-  <li>access to God confirmed in Christ</li>
-</ul>
-
-<hr />
-
-<h2>Parousia and Vindication</h2>
-<p>
-For first-century believers, the parousia was personal.
-They were accused of following a false messiah and abandoning Moses.
-</p>
-
-<p>
-History reversed the verdict.
-Jerusalem fell.
-Christ was vindicated.
-His people were proven faithful.
-</p>
-
-<hr />
-
-<h2>Parousia and “Delay” Language</h2>
-<p>
-Statements about delay reflect covenant patience, not postponement beyond the audience.
-Mercy preceded judgment within a single generation.
-</p>
-
-<p class="note">
-Delay is mercy within a generation — not delay across centuries.
-</p>
-
-<hr />
-
-<h2>Why Futurism Fails the Text</h2>
-<p>
-Futurist readings require <em>parousia</em> to mean what it never meant:
-</p>
-
-<ul>
-  <li>a silent two-millennia gap</li>
-  <li>an audience mistaken about timing</li>
-  <li>judgment language turned into astronomy</li>
-</ul>
-
-<p>
-None of this comes from the text.
-</p>
-
-<hr />
-
-<h2>Fulfillment and Ongoing Presence</h2>
-<p>
-The parousia is not something Christians await.
-It is something the first-century church lived through.
-</p>
-
-<p>
-Fulfillment does not remove Christ’s reign.
-It establishes it.
-</p>
-
-<hr />
-
-<h2>New Creation Reality</h2>
-<p>
-Christ is present.
-His authority is active.
-The old covenant world has passed.
-</p>
-
-<p>
-The question is no longer “when will He come?”
-but “are we living as people shaped by His reign?”
-</p>
-
-<hr />
-
-<p>
-  Share this study:
-  <a href="#" onclick="this.href='https://twitter.com/intent/tweet?url='+encodeURIComponent(location.href)+'&amp;text='+encodeURIComponent(document.title);return true;" target="_blank" rel="noopener">𝕏 Twitter</a>
-  <a href="#" onclick="this.href='https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href);return true;" target="_blank" rel="noopener">Facebook</a>
-  <a href="#" onclick="this.href='mailto:?subject='+encodeURIComponent(document.title)+'&amp;body='+encodeURIComponent(location.href);return true;">Email</a>
-</p>
-<hr />
-
-<nav>
-  <a href="/Bible/index.html">The Fulfilled Prophecy Bible Index</a> |
-  <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> |
-  <a href="#top">Top</a>
-</nav>
-
-  <footer>
-    <div class="row">
+    <div class="card" style="text-align: center; padding: 40px 20px;">
+      <h1 style="margin-bottom: 10px;">Parousia</h1>
+      <p class="muted" style="max-width: 700px; margin: 0 auto 20px; font-size: 1.1rem;">
+        Presence, Authority, and Covenant Fulfillment.
+      </p>
       <div>
-        <strong>The Fulfilled Prophecy Bible</strong> — Text based on the <strong>World English Bible (WEB)</strong> with Fulfilled Prophecy Study Commentary
-      </div>
-      <div>
-        <a href="https://ko-fi.com/fpbible" target="_blank" rel="noopener">Support</a> · <a href="#top">Back to top</a>
+        <span class="pill">Greek: παρουσία</span>
+        <span class="pill">Presence</span>
+        <span class="pill">Royal Visitation</span>
       </div>
     </div>
-    <p class="note">
-      Notes are written to honour audience relevance and time statements, and to avoid futurist drift.
-    </p>
-  </footer>
 
+    <div class="callout" style="border-color: #ffe4b3; background: #fff4e5;">
+      <strong>Related Study:</strong> Is the "Second Coming" an actual biblical phrase, or an invented label? <a href="/Bible/Studies/second-coming.html">Read the deep-dive here.</a>
+    </div>
 
+    <section class="card">
+      <h2>Why This Study Exists</h2>
+      <p>
+        Greek: <code>παρουσία</code> (parousia) — presence, arrival into presence, official visitation. It is a relational and governmental term, not a technical label for a distant cosmic return.
+      </p>
+      <p>
+        Few biblical words have been reshaped more by later theology than <em>parousia</em>. In modern usage, it is often treated as shorthand for a postponed event, detached from the people to whom it was written and the covenant crisis it addressed.
+      </p>
+      <p>
+        This study restores <em>parousia</em> to its first-century setting: the public manifestation of Christ’s royal authority during the covenant transition from the old world to the New Creation.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Parousia in Ordinary Greek Usage</h2>
+      <p>
+        In everyday Greek, <em>parousia</em> described presence rather than absence. It was commonly used for the arrival of an authority figure whose presence now carried consequences.
+      </p>
+      <ul>
+        <li>Arrival resulting in presence</li>
+        <li>Official visitation of a ruler or king</li>
+        <li>Authority exercised within a community</li>
+      </ul>
+      <p>
+        A ruler’s <em>parousia</em> was not a momentary appearance. It meant governance, accountability, judgment, and reordering.
+      </p>
+
+      <h3 style="margin-top: 30px;">What Parousia Never Meant</h3>
+      <p>Nothing in the word itself implies:</p>
+      <ul>
+        <li>A delay spanning thousands of years</li>
+        <li>A physical descent through the sky</li>
+        <li>The end of the material universe</li>
+        <li>The removal of believers from the earth</li>
+      </ul>
+      <p>
+        Those ideas come from later systems, not from the word or its biblical usage.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Audience Relevance Is the Control</h2>
+      <p>
+        Every New Testament reference to the <em>parousia</em> is addressed to living communities. The writers speak as participants, not distant observers.
+      </p>
+      <ul>
+        <li>“We who are alive and remain until the parousia of the Lord” (<a href="https://ebible.org/web/1TH04.htm" target="_blank">1 Thessalonians 4</a>)</li>
+        <li>“The parousia of the Lord has drawn near” (<a href="https://ebible.org/web/JAS05.htm" target="_blank">James 5</a>)</li>
+        <li>“This generation will not pass away” (<a href="https://ebible.org/web/MAT24.htm" target="_blank">Matthew 24</a>)</li>
+      </ul>
+      <p>
+        These statements only make sense if the <em>parousia</em> belongs to their historical horizon.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Hebrew Background: “Coming” as Covenant Action</h2>
+      <p>
+        The prophets regularly described YHWH as “coming” in judgment without any expectation of physical appearance.
+      </p>
+      <ul>
+        <li>YHWH came against Egypt (<a href="https://ebible.org/web/ISA19.htm" target="_blank">Isaiah 19</a>)</li>
+        <li>YHWH came against Babylon (<a href="https://ebible.org/web/ISA13.htm" target="_blank">Isaiah 13</a>)</li>
+        <li>YHWH came against Jerusalem (<a href="https://ebible.org/web/MIC01.htm" target="_blank">Micah 1</a>)</li>
+      </ul>
+      <p>
+        This language described covenantal intervention within history. Jesus and the apostles inherit this framework—now centered on the Son.
+      </p>
+
+      <h3 style="margin-top: 30px;">Parousia and Kingship</h3>
+      <p>
+        In the ancient world, the <em>parousia</em> of a king announced that his authority was now operative. Cities prepared for a <em>parousia</em> by aligning loyalties and settling accounts. Resistance brought consequence; allegiance brought security.
+      </p>
+      <p>
+        The <em>parousia</em> of Christ announces the same reality: His reign is not future—it is enforced.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Parousia Is Not Visibility Language</h2>
+      <p>
+        Biblical presence is measured by effect, not by eyesight. God is said to be present and to come in judgment without appearing physically.
+      </p>
+      <p>
+        <em>Parousia</em> language functions the same way: effective authority made known through historical outcome. <strong>Presence is demonstrated by impact.</strong>
+      </p>
+
+      <h3 style="margin-top: 30px;">Parousia and the Temple World</h3>
+      <p>
+        The <em>parousia</em> of Christ is inseparable from the fate of the Jerusalem temple. The temple represented the center of the old covenant world.  
+      </p>
+      <p>
+        Jesus tied His coming to the collapse of that system. When the temple fell, the old covenant world ended with it.
+      </p>
+      <ul>
+        <li>Priesthood displaced</li>
+        <li>Sacrifice ended</li>
+        <li>Access to God confirmed in Christ</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Vindication and "Delay"</h2>
+      <p>
+        For first-century believers, the <em>parousia</em> was personal. They were accused of following a false messiah and abandoning Moses. History reversed the verdict. Jerusalem fell. Christ was vindicated. His people were proven faithful.
+      </p>
+      
+      <h3 style="margin-top: 30px;">Parousia and “Delay” Language</h3>
+      <p>
+        Statements about delay reflect covenant patience, not postponement beyond the audience. Mercy preceded judgment within a single generation.
+      </p>
+      <div class="callout">
+        Delay is mercy <em>within</em> a generation—not delay across centuries.
+      </div>
+    </section>
+
+    <section class="card" style="background: #fdfaf5; border-color: #e5d9c5;">
+      <h2>Why Futurism Fails the Text</h2>
+      <p>
+        Futurist readings require <em>parousia</em> to mean what it never meant:
+      </p>
+      <ul>
+        <li>A silent two-millennia gap</li>
+        <li>An audience mistaken about timing</li>
+        <li>Judgment language turned into astronomy</li>
+      </ul>
+      <p>
+        None of this comes from the text. The <em>parousia</em> is not something Christians await. It is something the first-century church lived through.
+      </p>
+      
+      <h3 style="margin-top: 30px;">New Creation Reality</h3>
+      <p>
+        Fulfillment does not remove Christ’s reign. It establishes it. Christ is present. His authority is active. The old covenant world has passed.
+      </p>
+      <p style="font-size: 1.15rem; font-weight: 700; text-align: center; margin-top: 25px; color: #111;">
+        The question is no longer “when will He come?” but “are we living as people shaped by His reign?”
+      </p>
+    </section>
+
+    <hr />
+
+    <div style="text-align: center; margin: 20px 0;">
+      <span class="muted" style="margin-right: 10px;">Share this study:</span>
+      <a class="btn" href="#" onclick="window.open('https://twitter.com/intent/tweet?text=Parousia — Presence and Covenant Fulfillment at FPBible:&url=' + encodeURIComponent(window.location.href)); return false;" rel="noopener noreferrer">𝕏 Twitter</a>
+      <a class="btn" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href)); return false;" rel="noopener noreferrer">Facebook</a>
+      <a class="btn" href="#" onclick="window.location.href='mailto:?subject=Parousia Study&body=This clarifies what Christ meant by His coming: ' + encodeURIComponent(window.location.href); return false;">Email</a>
+    </div>
+
+    <hr />
+
+    <div style="text-align: center;">
+      <a href="https://ko-fi.com/B0B61QC1BU" target="_blank">
+        <img src="https://storage.ko-fi.com/cdn/kofi2.png?v=3" alt="Support on Ko-fi" style="height: 36px; width: auto; border: none;">
+      </a>
+    </div>
+
+    <nav class="bottom" style="margin-top: 25px;">
+      <a href="/Bible/index.html">Main Index</a> |
+      <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> |
+      <a href="#top">Top ↑</a>
+    </nav>
+
+    <footer>
+      <div class="row">
+        <div>
+          <strong>The Fulfilled Prophecy Bible</strong> — Text based on the <strong>World English Bible (WEB)</strong>.
+        </div>
+        <div>
+          <a href="/Bible/about.html">About</a> · <a href="https://ko-fi.com/fpbible" target="_blank" rel="noopener">Support</a>
+        </div>
+      </div>
+      <p class="muted" style="margin-top: 10px;">
+        Notes are written to honour audience relevance, time statements, and first-century fulfillment without futurist drift.
+      </p>
+    </footer>
+
+  </div>
 </body>
 </html>
