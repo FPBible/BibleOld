@@ -3,636 +3,320 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Resurrection — Fulfilled Prophecy Bible (WEB)</title>
-  <meta name="description" content="Full Preterist study edition using the WEB translation." />
+  <title>The Covenantal Resurrection — Fulfilled Prophecy Bible (WEB)</title>
+  <meta name="description" content="An exhaustive study on the biblical resurrection: the corporate transition from the Body of Moses to the Body of Christ in AD 70." />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Resurrection: The corporate transition from the Body of Moses to the Body of Christ",
+    "description": "A comprehensive deep-dive into the fulfilled, covenantal nature of resurrection as defined by the Hebrew prophets and the Apostles.",
+    "author": {
+      "@type": "Organization",
+      "name": "The Fulfilled Prophecy Bible"
+    }
+  }
+  </script>
 
   <style>
     :root{
-      --maxw: 1020px;
+      --maxw: 980px;
       --pad: 16px;
       --line: rgba(0,0,0,0.12);
-      --line2: rgba(0,0,0,0.18);
       --muted: rgba(0,0,0,0.72);
-      --soft: rgba(0,0,0,0.06);
-      --soft2: rgba(0,0,0,0.04);
+      --soft: rgba(0,0,0,0.05);
+      --soft2: rgba(0,0,0,0.03);
       --radius: 14px;
     }
     body{
-      font-family: system-ui, sans-serif;
-      line-height: 1.65;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.7;
       margin: 0;
       color: #111;
       background: #fff;
     }
-    .wrap{
-      max-width: var(--maxw);
-      margin: 0 auto;
-      padding: 18px var(--pad) 42px;
+    .wrap{ max-width: var(--maxw); margin: 0 auto; padding: 18px; }
+    
+    nav.top, nav.bottom{ 
+      text-align: center;
+      font-size: 0.9rem;
+      margin: 15px 0 25px;
+      color: var(--muted);
     }
-
-    h1,h2,h3{ margin-top: 1.6em; margin-bottom: 0.45em; line-height: 1.2; }
-    h1{ margin-top: 0.9em; font-size: 2.05rem; letter-spacing: -0.2px; }
-    h2{ font-size: 1.35rem; }
-    h3{ font-size: 1.08rem; }
-
-    p{ margin: 0.75em 0; }
-    ul{ margin: 0.6em 0 0.9em 1.15em; padding: 0; }
-    li{ margin: 0.42em 0; }
-
-    a{ color: inherit; text-decoration: underline; }
-    a:hover{ opacity: 0.85; }
-
-    hr{ margin: 2.0em 0; border: 0; border-top: 1px solid var(--line); }
-
-    .note{ font-size: 0.96em; color: var(--muted); }
-    .lead{ font-size: 1.06em; }
-
-    /* Top nav */
-    .topnav{
-      position: sticky;
-      top: 0;
-      z-index: 20;
-      background: rgba(255,255,255,0.92);
-      backdrop-filter: blur(8px);
-      border-bottom: 1px solid var(--line);
+    nav.top a, nav.bottom a{
+      color: #0066cc;
+      text-decoration: none;
+      padding: 0 6px;
     }
-    .topnav .bar{
-      max-width: var(--maxw);
-      margin: 0 auto;
-      padding: 10px var(--pad);
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px 12px;
-      align-items: center;
-    }
-    .topnav a{
+    nav.top a:hover, nav.bottom a:hover{
       text-decoration: underline;
-      font-size: 0.95em;
-      color: #111;
-      white-space: nowrap;
-    }
-    .topnav .sep{ opacity: 0.45; }
-
-    /* Pills */
-    .pill{
-      display: inline-block;
-      border: 1px solid var(--line2);
-      border-radius: 999px;
-      padding: 2px 10px;
-      font-size: 0.9em;
-      margin: 0 6px 6px 0;
-      background: var(--soft2);
     }
 
-    /* Cards / grids */
-    .grid{
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 14px;
-      margin-top: 12px;
-    }
-    @media(min-width: 900px){
-      .grid{ grid-template-columns: 1fr 1fr; }
-    }
+    h1{ margin: 0.2em 0 0.4em; font-size: 2.2rem; letter-spacing: -0.02em; }
+    h2{ margin: 1.5em 0 0.5em; font-size: 1.6rem; border-bottom: 2px solid var(--soft); padding-bottom: 10px; color: #333; }
+    h3{ margin: 1.2em 0 0.4em; font-size: 1.25rem; font-weight: 700; }
+    hr{ border: 0; border-top: 1px solid var(--line); margin: 30px 0; }
+    
     .card{
       border: 1px solid var(--line);
       border-radius: var(--radius);
-      padding: 14px 16px;
+      padding: 24px;
       background: #fff;
+      margin-bottom: 1.5em;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.03);
     }
-    .card h3{ margin-top: 0.2em; }
-    .card p{ margin: 0.35em 0 0.7em; }
-
-    /* Sections */
-    .section-head{
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px 10px;
-      align-items: baseline;
-      justify-content: space-between;
-      margin-top: 0.2em;
-    }
-    .section-head .hint{
-      font-size: 0.95em;
-      color: var(--muted);
-    }
-
-    /* Callouts */
-    .callout{
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      padding: 14px 16px;
+    .muted{ color: var(--muted); font-size: 0.95rem; }
+    
+    ul, ol{ margin: 0.8em 0 1em 1.4em; padding:0; }
+    li{ margin: 0.6em 0; }
+    
+    blockquote {
+      border-left: 5px solid #0066cc;
+      margin: 1.5em 0;
+      padding: 1em 1.5em;
+      font-style: italic;
       background: var(--soft2);
+      font-size: 1.1rem;
+      line-height: 1.6;
     }
 
-    /* Scripture links */
-    .refs a{ white-space: nowrap; }
-    .refline{ margin: 0.35em 0; }
-
-    /* Inline quotes (short, non-copying) */
-    blockquote{
-      margin: 0.9em 0;
-      padding: 0.6em 0.9em;
-      border-left: 4px solid var(--line2);
-      background: #fff;
+    .hero-img {
+      width: 100%;
+      height: auto;
       border-radius: 10px;
+      border: 1px solid var(--line);
+      margin-bottom: 20px;
+      display: block;
     }
 
-    code{
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-                   "Liberation Mono","Courier New", monospace;
-      font-size: 0.96em;
+    .callout {
+      background: #f0f7ff;
+      border: 1px solid #cce3ff;
+      border-radius: 8px;
+      padding: 15px;
+      margin: 15px 0;
     }
-      footer{
-      margin-top: 2.2em;
-      padding-top: 1.2em;
+
+    footer{
+      margin-top: 3em;
+      padding-top: 1.5em;
       border-top: 1px solid var(--line);
       color: var(--muted);
-      font-size: 0.96em;
+      font-size: 0.92rem;
     }
-    footer .row{
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px 14px;
-      align-items: center;
-      justify-content: space-between;
+    a{ color: #0066cc; text-decoration: none; font-weight: 500; }
+    a:hover{ text-decoration: underline; }
+    strong{ font-weight: 700; color: #000; }
+    
+    .btn{
+      display:inline-block;
+      padding: 9px 16px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      text-decoration: none;
+      color: #111;
+      background: #fff;
+      margin: 0 5px 10px;
     }
-  
-    /* Hide specific UI elements */
-    .hide-element { display: none; }
+    .btn:hover{ background: var(--soft2); }
+
+    .pill {
+      display: inline-block;
+      background: #eef2ff;
+      border: 1px solid #d1d5db;
+      padding: 4px 14px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      margin: 0 8px 10px 0;
+      font-weight: 600;
+      color: #4b5563;
+    }
   </style>
+
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q22N178LJ8"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-Q22N178LJ8');
   </script>
-
-  </head>
+</head>
 
 <body>
+  <a id="top"></a>
+  <div class="wrap">
 
-<a id="top"></a>
+    <nav class="top">
+      <a href="/Bible/index.html">Main Index</a> |
+      <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> |
+      <a href="/Bible/NewCreation/manifesto.html">The Manifesto</a> |
+      <a href="/Bible/Life/index.html">Life in the Spirit</a>
+    </nav>
 
-<div class="topnav">
-  <div class="bar">
-    <a href="/Bible/index.html">Index</a><span class="sep">|</span>
-    <a href="/Bible/Prophecy/index.html">Prophecy Hub</a><span class="sep">|</span>
-    <a href="/Bible/NewCreation/index.html">New Creation</a><span class="sep">|</span>
-    <a href="/Bible/Life/index.html">Life</a><span class="sep">|</span>
-    <a href="#start">Start</a><span class="sep">|</span>
-    <a href="#thesis">Thesis</a><span class="sep">|</span>
-    <a href="#body">The Body (1 Cor 15)</a><span class="sep">|</span>
-    <a href="#texts">Key Texts</a><span class="sep">|</span>
-    <a href="#logic">Logic</a><span class="sep">|</span>
-    <a href="#now">Now</a><span class="sep">|</span>
-    <a href="#top">Top</a>
+    <div class="card" style="text-align: center; padding: 40px 20px;">
+      <h1 style="margin-bottom: 10px;">The Covenantal Resurrection</h1>
+      <p class="muted" style="max-width: 700px; margin: 0 auto 20px; font-size: 1.1rem;">
+        Moving from the biological "corpse-view" of tradition to the corporate "covenant-view" of the Apostles.
+      </p>
+      
+      <div>
+        <span class="pill">CBV (Corporate Body View)</span>
+        <span class="pill">AD 70 Fulfillment</span>
+        <span class="pill">Covenant Victory</span>
+      </div>
+    </div>
+
+    <section class="card" id="misunderstanding">
+      <img src="unnamed (14).png" alt="Contrast: Biological Reanimation vs Covenantal Transformation" class="hero-img">
+      <h2>1. The Foundational Error: Greek Biology vs. Hebrew Covenant</h2>
+      <p>
+        Most modern readers approach the topic of "Resurrection" as if they were reading a medical textbook. They assume the primary problem Jesus came to solve was a biological one: human hearts stopping. This is **Greek Dualism**, which views the physical body as a cage for the soul that must be reanimated.
+      </p>
+      <p>
+        In contrast, the Bible defines "Death" as <strong>Covenant Separation</strong> from the presence of God. 
+      </p>
+      <ul>
+        <li><strong>Adam's Death:</strong> God said Adam would die "in the day" he sinned (<a href="https://ebible.org/web/GEN02.htm#GEN02V17" target="_blank">Gen 2:17</a>). Adam remained biologically alive for centuries, but he died <em>covenantally</em> the moment he was exiled from the Garden.</li>
+        <li><strong>The Solution:</strong> If the death was exile/separation, then the resurrection is <strong>access and restoration</strong>.</li>
+      </ul>
+      <div class="callout">
+        <strong>The FPBible Key:</strong> You cannot understand the Resurrection until you understand that physical death is merely the shadow of the true enemy: the "Ministry of Death" (the Law) that kept man separated from God.
+      </div>
+    </section>
+
+    <section class="card" id="sources">
+      <img src="unnamed (11).png" alt="Paul's Argument Flowchart" class="hero-img">
+      <h2>2. A Forensic Investigation into 1 Corinthians 15</h2>
+      <p>
+        Paul did not invent "resurrection" on the road to Damascus. In his master discourse (1 Cor 15), he explicitly states he is preaching what is written in the "Scriptures" (the Old Testament). To decode Paul's "Body" language, we must decode his sources:
+      </p>
+      
+      <h3>A. Hosea 13: Redemption from Idolatry</h3>
+      <p>
+        When Paul cries, <em>"O Death, where is your sting?"</em>, he is quoting <a href="https://ebible.org/web/HOS13.htm#HOS13V14" target="_blank">Hosea 13:14</a>. In Hosea, the "death" being discussed is the national, spiritual death of Northern Israel due to their idolatry. God was not promising to empty literal graveyards in Hosea; He was promising to restore the <strong>covenant life</strong> of His people.
+      </p>
+
+      <h3>B. Isaiah 25: The Feast on the Mountain</h3>
+      <p>
+        Paul quotes <a href="https://ebible.org/web/ISA25.htm#ISA25V8" target="_blank">Isaiah 25:8</a> ("Death is swallowed up in victory"). Isaiah places this event specifically when the "veil" is removed from the nations and when God judges the "city of the terrible ones." This is the transition from the Old City (Jerusalem) to the New City (The Church).
+      </p>
+    </section>
+
+    <section class="card" id="dry-bones">
+      <img src="unnamed (15).png" alt="Decoding the Dry Bones - Ezekiel 37" class="hero-img">
+      <h2>3. The Prophetic Blueprint: Ezekiel 37</h2>
+      <p>
+        Ezekiel 37 is the "dictionary" for biblical resurrection. The prophet sees a valley of dry bones raised to life. If you read this through a Greek lens, you see zombies. If you let God interpret it, you see **Fulfillment**.
+      </p>
+      <blockquote>
+        "Then he said to me, 'Son of man, **these bones are the whole house of Israel**. Behold, they say, "Our bones are dried up, and our hope is lost; we are completely cut off."'... I will open your graves and cause you to come up out of your graves, and bring you into the land of Israel." — <a href="https://ebible.org/web/EZE37.htm#EZE37V11" target="_blank">Ezekiel 37:11-12</a>
+      </blockquote>
+      <p>
+        Israel was physically alive but "dead" in exile. To "rise from the grave" meant to be restored to covenant status. This is the **Corporate Body View (CBV)**: resurrection is the raising of a people from one covenant order into another.
+      </p>
+    </section>
+
+    <section class="card" id="body">
+      <img src="unnamed (12).png" alt="Body of Moses vs. Body of Christ" class="hero-img">
+      <h2>4. Redefining &ldquo;The Body&rdquo; (Soma)</h2>
+      <p>
+        Traditional eschatology asks: "What happens to *my* body?" Paul's eschatology asks: "What happens to **The** Body?" 
+      </p>
+      <p>
+        In <a href="https://ebible.org/web/1CO12.htm#1CO12V27" target="_blank">1 Corinthians 12:27</a>, Paul defines the "Body" as the Church. In Chapter 15, he describes a transition between two corporate "Bodies" (two covenant identities):
+      </p>
+      <ul>
+        <li><strong>The Sown Body (Body of Moses):</strong> Sown in corruption, weakness, and the natural order. This was Israel under the Law, which could only produce death (<a href="https://ebible.org/web/ROM07.htm#ROM07V5" target="_blank">Rom 7:5</a>).</li>
+        <li><strong>The Raised Body (Body of Christ):</strong> Raised in incorruption, glory, and power. This is the Church, the "One New Man" (<a href="https://ebible.org/web/EPH02.htm#EPH02V15" target="_blank">Eph 2:15</a>), animated by the Spirit.</li>
+      </ul>
+
+      <h3 style="margin-top: 30px;">Natural vs. Spiritual (Psychikos vs. Pneumatikos)</h3>
+      <img src="unnamed (16).png" alt="Sources of Life Graphic" class="hero-img">
+      <p>
+        Paul's contrast in <a href="https://ebible.org/web/1CO15.htm#1CO15V44" target="_blank">verse 44</a> is the final blow to biological futurism. The Greek word <em>Psychikos</em> (Natural) means "of the soul/flesh/breath." The word <em>Pneumatikos</em> (Spiritual) means "driven by the Spirit." 
+      </p>
+      <p>
+        He is not contrasting "hard matter" vs. "ghostly vapor." He is contrasting <strong>Covenant Sources of Life</strong>. The Natural Body was the Law-system (flesh-driven). The Spiritual Body is the New Covenant system (Spirit-driven).
+      </p>
+    </section>
+
+    <section class="card" id="chain">
+      <img src="unnamed (17).png" alt="Sin, Law, Death Chain" class="hero-img">
+      <h2>5. Defeating the Last Enemy: The Logic of Victory</h2>
+      <p>
+        If resurrection is just biology, then <a href="https://ebible.org/web/1CO15.htm#1CO15V56" target="_blank">1 Corinthians 15:56</a> makes no sense. Why would the "power of sin" be the "Law" if the goal was just to restart physical hearts?
+      </p>
+      <p>
+        <strong>The Forensic Chain of 1 Cor 15:56:</strong>
+      </p>
+      <ol>
+        <li>The **Law** gives Sin its power to condemn.</li>
+        <li>**Sin** uses that power to produce the "Sting of Death" (Covenant Condemnation).</li>
+        <li>Therefore, to defeat **Death**, Christ had to fulfill and remove the **Law**.</li>
+      </ol>
+      <div class="callout" style="background: #fff4e5; border-color: #ffe4b3;">
+        <strong>The Victory:</strong> When the Law-system was definitively removed in AD 70, the "power of sin" was broken. Death was "swallowed up" because the mechanism for covenant condemnation no longer existed.
+      </div>
+    </section>
+
+    <section class="card" id="timestamp">
+      <h2>6. The AD 70 Timestamp: "All These Things"</h2>
+      <p>
+        The most vital question is *When?* The angel in Daniel 12 explicitly asked how long until the resurrection and the end. The answer is the "Silver Bullet" of eschatology:
+      </p>
+      <blockquote>
+        "It will be for a time, times, and a half; and **when they have made an end of breaking in pieces the power of the holy people, all these things will be finished.**" — <a href="https://ebible.org/web/DAN12.htm#DAN12V7" target="_blank">Daniel 12:7</a>
+      </blockquote>
+      <p>
+        The "power of the holy people" was the Temple, the City, and the Priesthood. These were shattered in AD 70. According to the angel's oath, the resurrection was *finished* when Jerusalem fell. The transition from the Body of Moses to the Body of Christ was complete.
+      </p>
+    </section>
+
+    <section class="card" id="victory">
+      <img src="unnamed (18).png" alt="Death HAS BEEN Swallowed Up" class="hero-img">
+      <h2>7. An Accomplished Reality</h2>
+      <p>
+        You are not living in a "postponed" reality. You are not waiting for a future event to make you "more alive" than you are right now in Christ. 
+      </p>
+      <p>
+        Resurrection is a **Settled Fact**. The veil is gone. The Law is gone. Death has lost its sting because condemnation has been removed forever. You live in the "Spirit-driven" body (the Church), which possesses eternal life as a present inheritance.
+      </p>
+      <p style="font-size: 1.2rem; font-weight: 700; text-align: center; margin-top: 25px;">
+        "He who has the Son has life." — <a href="https://ebible.org/web/1JN05.htm#1JN05V12" target="_blank">1 John 5:12</a>
+      </p>
+    </section>
+
+    <hr />
+
+    <div style="text-align: center; margin: 20px 0;">
+      <span class="muted" style="margin-right: 10px;">Share this study:</span>
+      <a class="btn" href="#" onclick="window.open('https://twitter.com/intent/tweet?text=The Truth about the Resurrection at FPBible:&url=' + encodeURIComponent(window.location.href)); return false;" rel="noopener noreferrer">𝕏 Twitter</a>
+      <a class="btn" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href)); return false;" rel="noopener noreferrer">Facebook</a>
+      <a class="btn" href="#" onclick="window.location.href='mailto:?subject=Covenantal Resurrection Study&body=This is a game-changer for biblical prophecy: ' + encodeURIComponent(window.location.href); return false;">Email</a>
+    </div>
+
+    <hr />
+
+    <nav class="bottom">
+      <a href="#top">Top ↑</a> |
+      <a href="/Bible/index.html">Main Index</a> |
+      <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> |
+      <a href="https://ko-fi.com/fpbible" target="_blank">Support the Project</a>
+    </nav>
+
+    <div style="text-align: center;">
+      <a href="https://ko-fi.com/B0B61QC1BU" target="_blank">
+        <img src="https://storage.ko-fi.com/cdn/kofi2.png?v=3" alt="Support on Ko-fi" style="height: 36px; width: auto; border: none;">
+      </a>
+    </div>
+
+    <footer>
+      <p><strong>The Fulfilled Prophecy Bible</strong> — Scripture text based on the <strong>World English Bible (WEB)</strong>.</p>
+      <p>Commentary honours audience relevance, time statements, and first-century fulfillment.</p>
+      <p><a href="/Bible/about.html">About</a> · <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> · <a href="https://ko-fi.com/fpbible" target="_blank">Support</a></p>
+    </footer>
+
   </div>
-</div>
-
-<div class="wrap">
-
-  <h1>Resurrection</h1>
-  <h2>From Covenant Death to Life in Christ · Fulfilled Horizon</h2>
-
-  <p class="lead">
-    Resurrection in Scripture is not treated as vague religious optimism.
-    It is God’s covenant victory in Christ: death (condemnation/exile under the Law) is ended,
-    and life (access/union by the Spirit) is established as present reality.
-  </p>
-
-  <p class="note">
-    The Fulfilled Prophecy Bible rule: if “resurrection” is pushed into an undefined future, it quietly rebuilds the distance Christ ended.
-    The apostles tie resurrection to the Bible’s stated horizon: the end of the age and the covenant transition.
-  </p>
-
-  <hr />
-
-  <section id="start">
-    <div class="section-head">
-      <h2>Start Here</h2>
-      <div class="hint">Read these first — they form the spine.</div>
-    </div>
-
-    <div class="callout refs">
-      <p class="refline"><span class="pill">Core</span>
-        <a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.1Co15" target="_blank" rel="noopener">1 Corinthians 15</a> ·
-        <a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Ro5" target="_blank" rel="noopener">Romans 5</a> ·
-        <a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Ro6" target="_blank" rel="noopener">Romans 6</a> ·
-        <a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Ro8" target="_blank" rel="noopener">Romans 8</a>
-      </p>
-      <p class="refline"><span class="pill">The Body</span>
-        <a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.1Co12" target="_blank" rel="noopener">1 Corinthians 12</a> ·
-        <a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Ro12" target="_blank" rel="noopener">Romans 12</a> ·
-        <a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Eph1" target="_blank" rel="noopener">Ephesians 1</a> ·
-        <a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Eph2" target="_blank" rel="noopener">Ephesians 2</a> ·
-        <a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Eph4" target="_blank" rel="noopener">Ephesians 4</a> ·
-        <a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Col1" target="_blank" rel="noopener">Colossians 1</a> ·
-        <a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Col2" target="_blank" rel="noopener">Colossians 2</a> ·
-        <a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Col3" target="_blank" rel="noopener">Colossians 3</a>
-      </p>
-      <p class="refline"><span class="pill">Covenant shift</span>
-        <a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Heb8" target="_blank" rel="noopener">Hebrews 8</a> ·
-        <a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Heb9" target="_blank" rel="noopener">Hebrews 9</a> ·
-        <a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Heb10" target="_blank" rel="noopener">Hebrews 10</a> ·
-        <a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Heb12" target="_blank" rel="noopener">Hebrews 12</a>
-      </p>
-      <p class="refline"><span class="pill">Prophets</span>
-        <a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Eze37" target="_blank" rel="noopener">Ezekiel 37</a> ·
-        <a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Isa25" target="_blank" rel="noopener">Isaiah 25</a> ·
-        <a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Isa26" target="_blank" rel="noopener">Isaiah 26</a> ·
-        <a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Da12" target="_blank" rel="noopener">Daniel 12</a>
-      </p>
-    </div>
-
-    <p class="note">
-      Tip: when you see “death,” “life,” “awake,” “sleep,” “inherit,” read the argument and covenant context before assuming biology.
-    </p>
-  </section>
-
-  <hr />
-
-  <section id="thesis">
-    <div class="section-head">
-      <h2>Thesis in One Paragraph</h2>
-      <div class="hint">What we mean by “resurrection” in this project.</div>
-    </div>
-
-    <div class="callout refs">
-      <p>
-        In Scripture, <strong>death</strong> is not only physical dying; it is covenant separation and condemnation under sin empowered by the Law
-        (<a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.1Co15.56" target="_blank" rel="noopener">1 Cor 15:56</a>,
-         <a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.2Co3.7-11" target="_blank" rel="noopener">2 Cor 3:7–11</a>,
-         <a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Eph2.1" target="_blank" rel="noopener">Eph 2:1</a>).
-        <strong>Resurrection</strong> is God raising His people from that death-order into Christ’s life-order—access, union, and Spirit-life as present reality
-        (<a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Eph2.5-6" target="_blank" rel="noopener">Eph 2:5–6</a>,
-         <a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Col2.12-13" target="_blank" rel="noopener">Col 2:12–13</a>,
-         <a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Col3.1" target="_blank" rel="noopener">Col 3:1</a>).
-        Paul ties the defeat of “death” to the end-of-the-age horizon and the removal of the Law’s condemning power
-        (<a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.1Co15.24-26" target="_blank" rel="noopener">1 Cor 15:24–26</a>,
-         <a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Heb9.26" target="_blank" rel="noopener">Heb 9:26</a>,
-         <a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Heb8.13" target="_blank" rel="noopener">Heb 8:13</a>,
-         <a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.1Co10.11" target="_blank" rel="noopener">1 Cor 10:11</a>).
-      </p>
-    </div>
-  </section>
-
-  <hr />
-
-  <section id="body">
-    <div class="section-head">
-      <h2>The Body in 1 Corinthians 15</h2>
-      <div class="hint">Paul’s “body” language is covenant-corporate — the old body dies; the new body rises.</div>
-    </div>
-
-    <div class="grid">
-
-      <div class="card refs">
-        <span class="pill">Paul’s categories</span>
-        <h3>He contrasts two “humanities”</h3>
-        <p>
-          Paul sets resurrection inside the Adam → Christ contrast. That is not a lab description of tissue;
-          it is a covenant identity contrast: the old humanity under sin/death versus the new humanity in Christ.
-        </p>
-        <ul>
-          <li><a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.1Co15.21-22" target="_blank" rel="noopener">1 Cor 15:21–22</a> (in Adam / in Christ)</li>
-          <li><a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.1Co15.45-49" target="_blank" rel="noopener">1 Cor 15:45–49</a> (first man / last man; image)</li>
-          <li><a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Ro5.12-21" target="_blank" rel="noopener">Rom 5:12–21</a> (two reigns)</li>
-          <li><a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Ro6.4-11" target="_blank" rel="noopener">Rom 6:4–11</a> (old man crucified; newness of life)</li>
-        </ul>
-        <p class="note">
-          Resurrection “body” sits inside this corporate storyline: an old order/personhood dies; a new one lives.
-        </p>
-      </div>
-
-      <div class="card refs">
-        <span class="pill">One Body</span>
-        <h3>The “resurrection body” is the Body of Christ</h3>
-        <p>
-          Paul does not invent “body” language in chapter 15. He has already defined the Church as Christ’s body:
-          one corporate people, animated by one Spirit, formed by union with the risen Lord.
-          The “new body” is not individual flesh upgraded; it is the new covenant people constituted in Christ.
-        </p>
-        <ul>
-          <li><a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.1Co12.12-27" target="_blank" rel="noopener">1 Cor 12:12–27</a> (you are the body of Christ)</li>
-          <li><a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Ro12.4-5" target="_blank" rel="noopener">Rom 12:4–5</a> (one body in Christ)</li>
-          <li><a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Eph1.22-23" target="_blank" rel="noopener">Eph 1:22–23</a> (Church as His body)</li>
-          <li><a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Eph2.14-16" target="_blank" rel="noopener">Eph 2:14–16</a> (one new man; hostility abolished)</li>
-          <li><a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Col1.18" target="_blank" rel="noopener">Col 1:18</a> (He is head of the body)</li>
-        </ul>
-        <p class="note">
-          If Paul’s “body” in 12 is covenant-corporate (it is), then his “body” in 15 must be read within the same framework.
-        </p>
-      </div>
-
-      <div class="card refs">
-        <span class="pill">Sowing / raising</span>
-        <h3>“Sown… raised” describes covenant transformation</h3>
-        <p>
-          Paul’s seed metaphor is about continuity-with-transformation: what is “sown” is not identical in form to what is “raised,”
-          but it is organically related. In covenant terms, the old covenant body (Israel under Law and condemnation) is “sown” in corruption;
-          the new covenant body (the Church in Christ) is “raised” in incorruption.
-        </p>
-        <ul>
-          <li><a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.1Co15.35-38" target="_blank" rel="noopener">1 Cor 15:35–38</a> (seed analogy)</li>
-          <li><a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.1Co15.42-44" target="_blank" rel="noopener">1 Cor 15:42–44</a> (sown/raised; natural/spiritual)</li>
-          <li><a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.2Co5.17" target="_blank" rel="noopener">2 Cor 5:17</a> (new creation)</li>
-          <li><a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Heb8.13" target="_blank" rel="noopener">Heb 8:13</a> (old covenant vanishing)</li>
-        </ul>
-        <p class="note">
-          Paul’s question is not “what will my atoms do?” but “how does God bring His people through death into life?”
-        </p>
-      </div>
-
-      <div class="card refs">
-        <span class="pill">“Flesh and blood”</span>
-        <h3>Not a denial of bodies — a denial of inheritance by old-order identity</h3>
-        <p>
-          “Flesh and blood cannot inherit the Kingdom” is covenant language: the old identity (Adam / Law / corruption)
-          cannot inherit the new order. Resurrection is the transition into a Spirit-governed inheritance.
-        </p>
-        <ul>
-          <li><a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.1Co15.50" target="_blank" rel="noopener">1 Cor 15:50</a> (flesh and blood)</li>
-          <li><a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Ga4.29-31" target="_blank" rel="noopener">Gal 4:29–31</a> (bondwoman/free; inheritance)</li>
-          <li><a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Ro8.14-17" target="_blank" rel="noopener">Rom 8:14–17</a> (sons; heirs)</li>
-          <li><a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Heb12.22-24" target="_blank" rel="noopener">Heb 12:22–24</a> (you have come…)</li>
-        </ul>
-      </div>
-
-    </div>
-
-    <div class="callout refs" style="margin-top:14px;">
-      <span class="pill">Covenant Body summary</span>
-      <p>
-        Paul’s “body” logic is consistent across his letters: <strong>one corporate people</strong>.
-        The old covenant body lived under condemnation and death’s reign; the new covenant body is Christ’s body, alive by the Spirit.
-        Resurrection, therefore, is not a detached future event — it is the covenant raising of God’s people into the Church of Christ.
-      </p>
-      <ul>
-        <li><a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.1Co15.56" target="_blank" rel="noopener">1 Cor 15:56</a> (death’s power defined)</li>
-        <li><a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Eph2.15-16" target="_blank" rel="noopener">Eph 2:15–16</a> (one new man)</li>
-        <li><a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Col2.14-15" target="_blank" rel="noopener">Col 2:14–15</a> (debt cancelled; powers disarmed)</li>
-        <li><a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.2Co3.6-11" target="_blank" rel="noopener">2 Cor 3:6–11</a> (death ministry fading; Spirit ministry remaining)</li>
-      </ul>
-      <p class="note">
-        This doesn’t deny that humans die physically. It denies that “resurrection” must be reduced to biology
-        when Paul locates death’s sting in sin empowered by the Law and describes resurrection life as present union in Christ.
-      </p>
-    </div>
-  </section>
-
-  <hr />
-
-  <section id="texts">
-    <div class="section-head">
-      <h2>Key Texts (What They Actually Say)</h2>
-      <div class="hint">Concise, but serious — follow the argument inside each text.</div>
-    </div>
-
-    <div class="grid">
-
-      <div class="card refs">
-        <span class="pill">1 Corinthians 15</span>
-        <h3>Death defeated where its power lives</h3>
-        <p>
-          Paul defines death’s sting and power: <strong>sin</strong> and <strong>Law</strong>.
-          Resurrection is framed as victory over condemnation/corruption — then “the end” within their horizon.
-        </p>
-        <ul>
-          <li><a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.1Co15.20-28" target="_blank" rel="noopener">1 Cor 15:20–28</a></li>
-          <li><a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.1Co15.42-50" target="_blank" rel="noopener">1 Cor 15:42–50</a></li>
-          <li><a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.1Co15.51-57" target="_blank" rel="noopener">1 Cor 15:51–57</a></li>
-        </ul>
-      </div>
-
-      <div class="card refs">
-        <span class="pill">Ephesians &amp; Colossians</span>
-        <h3>Raised with Christ — present tense reality</h3>
-        <p>
-          Ethics is grounded in a present “raised” identity: “if you were raised…”
-        </p>
-        <ul>
-          <li><a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Eph2.1-6" target="_blank" rel="noopener">Eph 2:1–6</a></li>
-          <li><a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Col2.12-15" target="_blank" rel="noopener">Col 2:12–15</a></li>
-          <li><a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Col3.1-4" target="_blank" rel="noopener">Col 3:1–4</a></li>
-        </ul>
-      </div>
-
-      <div class="card refs">
-        <span class="pill">Hebrews</span>
-        <h3>Covenant transition: access replaces shadow</h3>
-        <p>
-          The old covenant ages and vanishes; the “consummation of the ages” is in their time.
-        </p>
-        <ul>
-          <li><a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Heb8.13" target="_blank" rel="noopener">Heb 8:13</a></li>
-          <li><a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Heb9.8-10" target="_blank" rel="noopener">Heb 9:8–10</a></li>
-          <li><a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Heb9.26-28" target="_blank" rel="noopener">Heb 9:26–28</a></li>
-          <li><a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Heb12.22-24" target="_blank" rel="noopener">Heb 12:22–24</a></li>
-        </ul>
-      </div>
-
-      <div class="card refs">
-        <span class="pill">Prophets</span>
-        <h3>Resurrection language as corporate restoration</h3>
-        <p>
-          Prophets use “raise / live / awake” as covenant restoration imagery.
-        </p>
-        <ul>
-          <li><a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Eze37.1-14" target="_blank" rel="noopener">Ezek 37:1–14</a></li>
-          <li><a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Isa25.6-9" target="_blank" rel="noopener">Isa 25:6–9</a></li>
-          <li><a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Isa26.19" target="_blank" rel="noopener">Isa 26:19</a></li>
-          <li><a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Da12.1-3" target="_blank" rel="noopener">Dan 12:1–3</a></li>
-        </ul>
-      </div>
-
-      <div class="card refs">
-        <span class="pill">Jesus’ Horizon</span>
-        <h3>“This generation” and the end of the age</h3>
-        <p>
-          The crisis language is anchored inside that generation’s horizon.
-        </p>
-        <ul>
-          <li><a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Mt24.34" target="_blank" rel="noopener">Matt 24:34</a></li>
-          <li><a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Lk21.32" target="_blank" rel="noopener">Luke 21:32</a></li>
-          <li><a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Mt16.27-28" target="_blank" rel="noopener">Matt 16:27–28</a></li>
-          <li><a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Mt23.36" target="_blank" rel="noopener">Matt 23:36</a></li>
-        </ul>
-      </div>
-
-      <div class="card refs">
-        <span class="pill">Revelation</span>
-        <h3>Death removed as New Creation reality</h3>
-        <p>
-          Revelation moves from covenant judgment to New Jerusalem life, with “death” removed as an order.
-        </p>
-        <ul>
-          <li><a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Re20.6" target="_blank" rel="noopener">Rev 20:6</a></li>
-          <li><a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Re20.14" target="_blank" rel="noopener">Rev 20:14</a></li>
-          <li><a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Re21.3-5" target="_blank" rel="noopener">Rev 21:3–5</a></li>
-          <li><a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Re22.1-2" target="_blank" rel="noopener">Rev 22:1–2</a></li>
-        </ul>
-      </div>
-
-    </div>
-  </section>
-
-  <hr />
-
-  <section id="logic">
-    <div class="section-head">
-      <h2>Logic (No Hand-waving)</h2>
-      <div class="hint">If these links break, the doctrine drifts.</div>
-    </div>
-
-    <div class="callout refs">
-      <ul>
-        <li>
-          <strong>Death’s power is Law-based condemnation</strong>:
-          <a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.1Co15.56" target="_blank" rel="noopener">1 Cor 15:56</a>,
-          <a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.2Co3.7-11" target="_blank" rel="noopener">2 Cor 3:7–11</a>,
-          <a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Ro7.9-11" target="_blank" rel="noopener">Rom 7:9–11</a>.
-        </li>
-        <li>
-          <strong>The old covenant order “dies” and is replaced by Spirit-life</strong>:
-          <a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Heb8.13" target="_blank" rel="noopener">Heb 8:13</a>,
-          <a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Heb9.26" target="_blank" rel="noopener">Heb 9:26</a>,
-          <a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.2Co3.6-11" target="_blank" rel="noopener">2 Cor 3:6–11</a>.
-        </li>
-        <li>
-          <strong>Christ ends condemnation and introduces Spirit-life now</strong>:
-          <a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Ro8.1-4" target="_blank" rel="noopener">Rom 8:1–4</a>,
-          <a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Eph2.5-6" target="_blank" rel="noopener">Eph 2:5–6</a>,
-          <a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Col3.1-4" target="_blank" rel="noopener">Col 3:1–4</a>.
-        </li>
-        <li>
-          <strong>The “body” Paul preaches is one corporate people in Christ</strong>:
-          <a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.1Co12.27" target="_blank" rel="noopener">1 Cor 12:27</a>,
-          <a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Eph2.15-16" target="_blank" rel="noopener">Eph 2:15–16</a>,
-          <a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Col1.18" target="_blank" rel="noopener">Col 1:18</a>.
-        </li>
-        <li>
-          <strong>Therefore</strong>: resurrection is not a perpetual “almost.”
-          It is the covenant victory that makes New Creation life normal.
-        </li>
-      </ul>
-
-      <p class="note">
-        This does not deny that people physically die. It denies that “resurrection” must be reduced to biology,
-        when Paul defines death’s sting in sin empowered by the Law and describes resurrection life as present union in Christ.
-      </p>
-    </div>
-  </section>
-
-  <hr />
-
-  <section id="now">
-    <div class="section-head">
-      <h2>What This Means Now</h2>
-      <div class="hint">Resurrection is not trivia; it’s the foundation for living.</div>
-    </div>
-
-    <div class="grid">
-      <div class="card refs">
-        <span class="pill">Freedom</span>
-        <h3>No condemnation</h3>
-        <p>Resurrection life is lived without law-fear as the operating system.</p>
-        <ul>
-          <li><a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Ro8.1" target="_blank" rel="noopener">Rom 8:1</a></li>
-          <li><a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Ro6.11" target="_blank" rel="noopener">Rom 6:11</a></li>
-        </ul>
-      </div>
-
-      <div class="card refs">
-        <span class="pill">Identity</span>
-        <h3>New humanity</h3>
-        <p>You live from a raised identity, not to earn one.</p>
-        <ul>
-          <li><a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.2Co5.17" target="_blank" rel="noopener">2 Cor 5:17</a></li>
-          <li><a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Col3.1-3" target="_blank" rel="noopener">Col 3:1–3</a></li>
-        </ul>
-      </div>
-
-      <div class="card refs">
-        <span class="pill">Holiness</span>
-        <h3>Life expressed</h3>
-        <p>Holiness is life expressed, not fear-managed performance.</p>
-        <ul>
-          <li><a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Ro6.4" target="_blank" rel="noopener">Rom 6:4</a></li>
-          <li><a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Col3.5-10" target="_blank" rel="noopener">Col 3:5–10</a></li>
-        </ul>
-      </div>
-
-      <div class="card refs">
-        <span class="pill">Mission</span>
-        <h3>Reconciliation</h3>
-        <p>Resurrection life becomes reconciliation in the world.</p>
-        <ul>
-          <li><a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.2Co5.18-20" target="_blank" rel="noopener">2 Cor 5:18–20</a></li>
-          <li><a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.Ro5.10-11" target="_blank" rel="noopener">Rom 5:10–11</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <p class="note">
-      Resurrection means: you are not waiting to become alive.
-      You are called to live awake, because life has already been given in Christ.
-    </p>
-  </section>
-
-  <hr />
-
-  <section id="links">
-    <div class="section-head">
-      <h2>Related Links</h2>
-      <div class="hint">Use these when cross-linking other pages.</div>
-    </div>
-
-    <div class="callout">
-      <ul>
-        <li><a href="/Bible/Prophecy/death.html">Death (Prophecy Hub framework)</a></li>
-        <li><a href="/Bible/Prophecy/life.html">Life (Prophecy Hub framework)</a></li>
-        <li><a href="/Bible/Prophecy/new-creation.html">New Creation (Prophecy Hub)</a></li>
-        <li><a href="/Bible/Prophecy/parousia.html">Parousia (Presence, not delay)</a></li>
-        <li><a href="/Bible/Life/index.html">Life (practical living)</a></li>
-      </ul>
-      <p class="note">
-        If you arrive here through “resurrection” debates, don’t start with definitions.
-        Start with <a href="https://ref.ly/logosres/LLS:1.0.8?ref=Bible.1Co15" target="_blank" rel="noopener">1 Corinthians 15</a>
-        and follow Paul’s own logic: death’s power, then victory.
-      </p>
-    </div>
-  </section>
-
-  <hr />
-
-  <nav class="note">
-    <a href="#top">Top</a> ·
-    <a href="#start">Start</a> ·
-    <a href="#thesis">Thesis</a> ·
-    <a href="#body">The Body (1 Cor 15)</a> ·
-    <a href="#texts">Key Texts</a> ·
-    <a href="#logic">Logic</a> ·
-    <a href="#now">Now</a>
-  </nav>
-
-</div>
-  <footer>
-    <div class="row">
-      <div>
-        <strong>The Fulfilled Prophecy Bible</strong> — Text based on the <strong>World English Bible (WEB)</strong> with Fulfilled Prophecy Study Commentary
-      </div>
-      <div>
-        <a href="https://ko-fi.com/fpbible" target="_blank" rel="noopener">Support</a> · <a href="#top">Back to top</a>
-      </div>
-    </div>
-    <p class="note">
-      Notes are written to honour audience relevance and time statements, and to avoid futurist drift.
-    </p>
-  </footer>
-
-
 </body>
 </html>
