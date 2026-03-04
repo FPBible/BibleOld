@@ -1,513 +1,526 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>The Day of Atonement — From Restricted Access to Open Presence — Fulfilled Prophecy Bible (WEB)</title>
-  <meta name="description" content="The Day of Atonement fulfilled in Christ: from restricted access and provisional cleansing to completed atonement, open access, and New Creation presence - Full Preterist study edition using the WEB translation." />
+  <title>The Day of Atonement — From Restricted Access to Open Presence — FPBible</title>
+  <meta name="description" content="The Day of Atonement fulfilled in Christ: from restricted access and provisional cleansing to completed atonement, open access, and New Creation presence." />
 
   <style>
     :root{
-      --max: 980px;
-      --line: rgba(0,0,0,.12);
-      --muted: rgba(0,0,0,.72);
-      --soft: rgba(0,0,0,.04);
-      --soft2: rgba(0,0,0,.02);
+      --maxw: 980px;
+      --pad: 16px;
+      --line: rgba(0,0,0,0.12);
+      --muted: rgba(0,0,0,0.72);
+      --soft: rgba(0,0,0,0.05);
+      --soft2: rgba(0,0,0,0.03);
       --radius: 14px;
     }
     body{
-      margin:0;
-      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-      line-height:1.65;
-      color:#111;
-      background:#fff;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.7;
+      margin: 0;
+      color: #111;
+      background: #fff;
     }
-    header, main, footer{
-      max-width:var(--max);
-      margin:0 auto;
-      padding:18px;
+    .wrap{ max-width: var(--maxw); margin: 0 auto; padding: 18px; }
+    
+    /* TOP NAV */
+    .topnav { 
+      position: sticky; 
+      top: 0; 
+      background: rgba(255,255,255,0.95); 
+      border-bottom: 1px solid var(--line); 
+      z-index: 100;
+    } 
+    .topnav .bar { 
+      max-width: var(--maxw); 
+      margin: 0 auto; 
+      padding: 12px var(--pad); 
+      display: flex; 
+      gap: 14px; 
+      flex-wrap: wrap; 
+      justify-content: center;
+    } 
+    .topnav a { 
+      text-decoration: none; 
+      color: #111; 
+      font-size: 0.95rem;
+      border-bottom: 2px solid transparent; 
+    } 
+    .topnav a:hover { border-bottom: 2px solid #111; } 
+
+    nav.bottom{ 
+      text-align: center;
+      font-size: 0.9rem;
+      margin: 15px 0 25px;
+      color: var(--muted);
     }
-    nav a{margin-right:14px;text-decoration:none}
-    nav a:hover{text-decoration:underline}
-    h1{margin:10px 0 6px;letter-spacing:-.2px}
-    h2{margin:0 0 10px;letter-spacing:-.1px}
-    h3{margin:18px 0 8px}
-    p{margin:10px 0}
-    .kicker{color:var(--muted);margin:0 0 14px}
+    nav.bottom a{
+      color: #0066cc;
+      text-decoration: none;
+      padding: 0 6px;
+    }
+    nav.bottom a:hover{ text-decoration: underline; }
+
+    h1{ margin: 0.2em 0 0.4em; font-size: 2.2rem; letter-spacing: -0.02em; }
+    h2{ margin: 1.5em 0 0.5em; font-size: 1.6rem; border-bottom: 2px solid var(--soft); padding-bottom: 10px; color: #333; }
+    h3{ margin: 1.2em 0 0.4em; font-size: 1.25rem; font-weight: 700; }
+    hr{ border: 0; border-top: 1px solid var(--line); margin: 30px 0; }
+    
     .card{
-      border:1px solid var(--line);
-      border-radius:var(--radius);
-      padding:16px;
-      margin:14px 0;
-      background:#fff;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 24px;
+      background: #fff;
+      margin-bottom: 1.5em;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.03);
     }
-    .meta{color:var(--muted);font-size:.95rem;margin:10px 0 0}
-    .note{color:var(--muted)}
-    .callout{
-      border:1px solid var(--line);
-      border-radius:var(--radius);
-      background:var(--soft2);
-      padding:14px;
-      margin:14px 0;
+    .muted{ color: var(--muted); font-size: 0.95rem; }
+    
+    ul, ol{ margin: 0.8em 0 1em 1.4em; padding:0; }
+    li{ margin: 0.6em 0; }
+    
+    blockquote {
+      border-left: 5px solid #0066cc;
+      margin: 1.5em 0;
+      padding: 1em 1.5em;
+      font-style: italic;
+      background: var(--soft2);
+      font-size: 1.1rem;
+      line-height: 1.6;
     }
-    blockquote{
-      margin:12px 0;
-      padding:12px 14px;
-      border-left:4px solid rgba(0,0,0,.18);
-      background:var(--soft);
-      border-radius:12px;
+
+    .callout {
+      background: #f0f7ff;
+      border: 1px solid #cce3ff;
+      border-radius: 8px;
+      padding: 15px;
+      margin: 15px 0;
     }
-    ul{padding-left:18px;margin:10px 0}
-    li{margin:6px 0}
-    .links a{display:inline-block;margin:6px 10px 0 0}
-    .hr{height:1px;background:var(--line);margin:18px 0}
-    .toc a{display:inline-block;margin:6px 10px 0 0}
-    .ref a{word-break:break-word}
-    code{background:var(--soft);padding:2px 6px;border-radius:8px}
+
+    .toc a {
+      display: inline-block;
+      margin: 5px 12px 5px 0;
+      font-weight: 500;
+    }
+
+    footer{
+      margin-top: 3em;
+      padding-top: 1.5em;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    footer .row{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    a{ color: #0066cc; text-decoration: none; font-weight: 500; }
+    a:hover{ text-decoration: underline; }
+    strong{ font-weight: 700; color: #000; }
+    
+    .pill {
+      display: inline-block;
+      background: #eef2ff;
+      border: 1px solid #d1d5db;
+      padding: 4px 14px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      margin: 0 8px 10px 0;
+      font-weight: 600;
+      color: #4b5563;
+    }
+
+    .btn{
+      display:inline-block;
+      padding: 9px 16px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      text-decoration: none;
+      color: #111;
+      background: #fff;
+      margin: 0 5px 10px;
+    }
+    .btn:hover{ background: var(--soft2); }
   </style>
+
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q22N178LJ8"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-Q22N178LJ8');
   </script>
-
-  </head>
+</head>
 
 <body>
-<header>
-  <nav aria-label="Primary">
-    <a href="/Bible/index.html">Bible</a>
-    <a href="/Bible/Prophecy/index.html">Prophecy Hub</a>
-    <a href="/Bible/Prophecy/new-creation.html">New Creation</a>
-  </nav>
+  <a id="top"></a>
 
-  <h1>The Day of Atonement</h1>
-  <p class="kicker">
-    The central ritual of Israel’s covenant court — fulfilled in Christ and closed with the end of the first tabernacle.
-    The outcome is not “better ritual.” It is <strong>open access</strong> and <strong>present communion</strong>.
-  </p>
-
-  <div class="callout toc" aria-label="On this page">
-    <strong>On this page:</strong><br />
-    <a href="#plain">Plain</a>
-    <a href="#pattern">The Pattern</a>
-    <a href="#what-was-happening">What Was Happening</a>
-    <a href="#two-goats">The Two Goats</a>
-    <a href="#priest-comes-out">When the Priest Came Out</a>
-    <a href="#heb9">Hebrews 9</a>
-    <a href="#christ">Christ and the True Atonement</a>
-    <a href="#veil">The Veil and Access</a>
-    <a href="#shakable-unshakable">The Shakable and the Unshakable</a>
-    <a href="#day-of-redemption">The Day of Redemption</a>
-    <a href="#fulfilled">Fulfilled in AD 70</a>
-    <a href="#now">What This Means Now</a>
-    <a href="#not-saying">What This Is NOT Saying</a>
-    <a href="#new-creation-reality">New Creation Reality</a>
-    <a href="#summary">Summary</a>
-  </div>
-</header>
-
-<main>
-
-  <section class="card" id="plain">
-    <h2>Plain</h2>
-    <p>
-      The Day of Atonement (<em>Yom Kippur</em>) was Israel’s annual covenant “court day.” It did not exist because God
-      enjoyed ritual. It existed because the covenant had legal terms, and Israel had covenant guilt.
-    </p>
-    <p>
-      Once a year, the high priest entered the Most Holy Place with blood. That action temporarily covered covenant
-      defilement so the nation could continue under the Mosaic arrangement for another year. But the architecture of
-      distance remained. The people stayed outside. The veil stayed in place. The message was clear:
-      access was restricted and standing was maintained by a system, not by finished reconciliation.
-    </p>
-    <blockquote>
-      In plain terms: the Day of Atonement maintained the old order — it did not complete the relationship.
-    </blockquote>
-  </section>
-
-  <section class="card" id="pattern">
-    <h2>The Pattern</h2>
-    <p>
-      Leviticus 16 gives the core pattern. It is precise because it is covenantal. This is legal purification and
-      boundary-marking — who may draw near, when, and on what basis.
-    </p>
-    <ul>
-      <li>The high priest enters the Most Holy Place <strong>once a year</strong></li>
-      <li>Only with blood — never without it</li>
-      <li>The people remain outside (distance is built-in)</li>
-      <li>The sanctuary is cleansed because defilement is covenantal and communal</li>
-      <li>The scapegoat carries uncleanness away from the camp</li>
-    </ul>
-
-    <div class="callout">
-      <strong>Key point:</strong> the ritual preserves covenant life under a system of restricted access.
-      It is “one man, one day,” not “all may draw near always.”
-    </div>
-
-    <p class="meta ref">
-      <a href="https://ebible.org/lsv/LEV16.htm">Leviticus 16 (LSV)</a>
-    </p>
-  </section>
-
-  <section class="card" id="what-was-happening">
-    <h2>What Was Happening</h2>
-    <p>
-      The Day of Atonement was not primarily about individual feelings of guilt. It was about covenant standing.
-      Israel’s “sin” in this setting is not just moral failure; it is covenant breach that produces uncleanness
-      and threatens the covenant relationship itself.
-    </p>
-    <p>
-      That is why the ritual cleanses not only the people but the sanctuary: the system is saying,
-      “This covenant world is contaminated by covenant breach, and it requires purification to remain in force.”
-      If you read it as private therapy you miss it. If you read it as covenant court logic, it clicks.
-    </p>
-    <blockquote>
-      Atonement here is legal and relational: it addresses covenant breach, removes uncleanness, and preserves standing.
-      But it does not yet open the way.
-    </blockquote>
-  </section>
-
-  <section class="card" id="two-goats">
-    <h2>The Two Goats</h2>
-    <p>
-      The two-goat pattern is crucial because it shows what the old system could and could not do.
-      One goat is for death (blood brought into the holy place). The other is for removal (uncleanness carried away).
-    </p>
-
-    <h3>1) The Goat for YHWH: Blood and Purification</h3>
-    <p>
-      Blood is life given up. In covenant terms, it represents judgment falling on a representative life so that the
-      covenant can continue without immediate destruction. The blood is presented before God because the dispute is covenantal.
-    </p>
-
-    <h3>2) The Scapegoat: Removal and Exile Imagery</h3>
-    <p>
-      The scapegoat carries the iniquities “away” into the wilderness. That is exile language — removal from the camp,
-      removal from the presence, removal from the covenant center. It is an enacted picture that uncleanness belongs outside
-      the holy community.
-    </p>
-
-    <div class="callout">
-      The point is not “one goat equals Jesus, the other equals Satan.” The point is <strong>death + removal</strong>:
-      judgment borne and uncleanness taken away. Christ fulfills both realities in Himself.
-    </div>
-
-    <p class="meta ref">
-      <a href="https://ebible.org/lsv/LEV16.htm">Leviticus 16 (LSV)</a>
-    </p>
-  </section>
-
-  <section class="card" id="priest-comes-out">
-    <h2>When the Priest Came Out</h2>
-    <p>
-      This is the part most people skip — and Hebrews leans on it.
-      The people waited outside while the priest entered with blood. When he came out, it signified that the offering
-      had been presented and the covenant court had not broken out against the nation that day.
-    </p>
-    <p>
-      That “coming out” is not theatre. It’s resolution: the mediator reappears to the waiting people because the
-      atonement procedure has been completed as far as the old system could complete it.
-    </p>
-
-    <div class="callout">
-      In Hebrews terms: the high priest “appears” again to the people after presenting blood — that pattern is
-      deliberately applied to Christ, not as repeated sacrifice, but as completed atonement and public vindication.
-    </div>
-  </section>
-
-  <section class="card" id="heb9">
-    <h2>Hebrews 9: The Built-In Limitation</h2>
-    <p>
-      Hebrews does not treat the Day of Atonement as the finished model. It treats it as a shadow that proves,
-      by its very structure, that access was not yet open.
-    </p>
-
-    <blockquote>
-      “The Holy Spirit is showing this: the way into the holy places has not yet been manifested
-      while the first tabernacle is having standing,”
-      <br /><strong>— Hebrews 9:8 (LSV)</strong>
-    </blockquote>
-
-    <p class="meta ref">
-      <a href="https://ebible.org/lsv/HEB09.htm#8">Hebrews 9:8 (LSV)</a>
-    </p>
-
-    <p>
-      That line is a wrecking ball. It means the old arrangement, by design, could not be the final state of things.
-      As long as that first structure stood as the recognized covenant administration, the “way” was not fully manifested.
-      Not because God was reluctant, but because the covenant order itself communicated distance.
-    </p>
-
-    <blockquote>
-      “...not being able, according to conscience, to perfect him who is serving,”
-      <br /><strong>— Hebrews 9:9 (LSV)</strong>
-    </blockquote>
-
-    <p class="meta ref">
-      <a href="https://ebible.org/lsv/HEB09.htm#9">Hebrews 9:9 (LSV)</a>
-    </p>
-
-    <p>
-      So the limitation is not “they didn’t try hard enough.” The limitation is structural: repeated offerings,
-      restricted entry, mediated approach, and conscience still haunted by an unfinished case.
-    </p>
-  </section>
-
-  <section class="card" id="christ">
-    <h2>Christ and the True Day of Atonement</h2>
-    <p>
-      Jesus does not repeat the Day of Atonement. He fulfills it.
-      Not by upgrading rituals, but by completing what the rituals could only shadow: true cleansing and true access.
-    </p>
-
-    <blockquote>
-      “And Christ having come, High Priest of the coming good things,
-      through the greater and more perfect tent, not made with hands…
-      neither through blood of goats and calves, but through His own blood,
-      entered once into the holy places, having obtained continuous redemption,”
-      <br /><strong>— Hebrews 9:11–12 (LSV)</strong>
-    </blockquote>
-
-    <p class="meta ref">
-      <a href="https://ebible.org/lsv/HEB09.htm#11">Hebrews 9:11–12 (LSV)</a>
-    </p>
-
-    <p>
-      Notice what Hebrews is saying: Christ’s act is not annual, not repeatable, and not provisional.
-      It obtains redemption that does not need maintenance. That is why the old system must fade —
-      because its entire logic is repetition and restricted access.
-    </p>
-
-    <blockquote>
-      “How much more will the blood of Christ… cleanse our conscience from dead works,
-      to serve the living God?”
-      <br /><strong>— Hebrews 9:14 (LSV)</strong>
-    </blockquote>
-
-    <p class="meta ref">
-      <a href="https://ebible.org/lsv/HEB09.htm#14">Hebrews 9:14 (LSV)</a>
-    </p>
-
-    <div class="callout">
-      <strong>Big difference:</strong> the old system covers to preserve the covenant;
-      Christ cleanses to end the case and open the way.
-    </div>
-  </section>
-
-  <section class="card" id="veil">
-    <h2>The Veil and Access</h2>
-    <p>
-      The veil is covenant boundary in cloth form. It says, “Not yet.”
-      The Day of Atonement was the one annual exception that proved the rule: the people are still outside.
-    </p>
-
-    <blockquote>
-      “Having, therefore, brothers, boldness for the entrance into the holy places,
-      in the blood of Jesus… may we draw near with a true heart, in full assurance of faith…”
-      <br /><strong>— Hebrews 10:19–22 (LSV)</strong>
-    </blockquote>
-
-    <p class="meta ref">
-      <a href="https://ebible.org/lsv/HEB10.htm#19">Hebrews 10:19–22 (LSV)</a>
-    </p>
-
-    <p>
-      Hebrews does not say, “One day you might get access.” It says you have boldness now,
-      because the basis of approach has changed. The gospel is not a new ritual ladder.
-      It is the removal of distance.
-    </p>
-
-    <div class="callout">
-      <strong>Access is the point.</strong><br />
-      Atonement is not merely “forgiveness paperwork.” It is the removal of distance and the end of covenant exclusion.
-    </div>
-  </section>
-
-  <section class="card" id="shakable-unshakable">
-    <h2>The Shakable and the Unshakable</h2>
-    <p>
-      Hebrews does not speak about atonement in isolation. It frames the whole transition as a covenant shaking:
-      the things that belong to the former order are removed so what cannot be shaken remains.
-      The Day of Atonement belongs to the shakable world — repeated offerings, restricted access, mediated approach,
-      temple architecture, and a covenant court that must continually manage uncleanness.
-    </p>
-
-    <blockquote>
-      “Now once He has promised, saying, Yet once more I shake not only the earth, but also the heaven…
-      that the things shaken may be removed… and the things not shaken may remain.”
-      <br /><strong>— Hebrews 12:26–27 (LSV)</strong>
-    </blockquote>
-
-    <p class="meta ref">
-      <a href="https://ebible.org/lsv/HEB12.htm#26">Hebrews 12:26–27 (LSV)</a>
-    </p>
-
-    <p>
-      Then Hebrews tells you what the unshakable is: not a rebuilt temple, not a new ritual system, but a kingdom that cannot be shaken.
-      And it names where believers have come — not merely where they will go:
-    </p>
-
-    <blockquote>
-      “But you have come to Mount Zion, and to the city of the living God, the heavenly Jerusalem…”
-      <br /><strong>— Hebrews 12:22 (LSV)</strong>
-    </blockquote>
-
-    <p class="meta ref">
-      <a href="https://ebible.org/lsv/HEB12.htm#22">Hebrews 12:22 (LSV)</a>
-    </p>
-
-    <p>
-      That means the Day of Atonement was a shadow inside the shakable world. The New Covenant reality is the unshakable:
-      <strong>Mount Zion</strong>, the <strong>New Jerusalem</strong>, the gathered people of God in completed access.
-      Atonement fulfilled is not simply “sins covered.” It is the removal of the entire boundary-world that required annual maintenance.
-    </p>
-
-    <div class="callout">
-      The shakable was the old covenant architecture of distance.<br />
-      The unshakable is the kingdom and city you have come to: Mount Zion, the New Jerusalem.
-    </div>
-  </section>
-
-  <section class="card" id="day-of-redemption">
-    <h2>The Day of Redemption the Apostolic Age Awaited</h2>
-    <p>
-      The apostolic writings speak of a coming “day of redemption.” In their world, this is not a vague end-of-the-universe idea.
-      It is the covenant moment when the old administration would finally vanish and the completed work of Christ would stand alone,
-      publicly, without rival structure.
-    </p>
-
-    <blockquote>
-      “And do not grieve the Holy Spirit of God,
-      in whom you were sealed to a day of redemption.”
-      <br /><strong>— Ephesians 4:30 (LSV)</strong>
-    </blockquote>
-
-    <p class="meta ref">
-      <a href="https://ebible.org/lsv/EPH04.htm#30">Ephesians 4:30 (LSV)</a>
-    </p>
-
-    <p>
-      They were not waiting for Jesus to become sufficient. They were waiting for the covenant order that kept “first tabernacle standing”
-      to finally pass away — because Hebrews explicitly ties the manifestation of the way to the removal of that standing structure.
-    </p>
-
-    <blockquote>
-      The early church waited for the day.<br />
-      The New Creation lives in the result: open access and settled reconciliation.
-    </blockquote>
-  </section>
-
-  <section class="card" id="fulfilled">
-    <h2>Fulfilled in AD 70</h2>
-    <p>
-      Hebrews gives you a measurable covenant marker: access was not yet manifested while the first tabernacle had standing.
-      In AD 70 the temple fell — and with it, the last visible architecture of restricted access, Levitical mediation, and annual atonement.
-    </p>
-
-    <div class="callout">
-      <strong>No tabernacle. No veil. No priesthood. No annual atonement.</strong><br />
-      The shadow-system ended because the substance had already come in Christ.
-    </div>
-
-    <p class="note">
-      AD 70 is not “when Jesus finally became enough.” It is when the former covenant world was removed so the finished work
-      of Christ stood alone in history, without an operating rival administration.
-    </p>
-  </section>
-
-  <section class="card" id="now">
-    <h2>What This Means Now</h2>
-    <p>
-      If atonement is fulfilled, your life with God is not managed by distance, anxiety, or spiritual self-defense.
-      New Covenant life is lived from access.
-    </p>
-
-    <ul>
-      <li>You do not wait outside while someone else enters.</li>
-      <li>You do not approach through fear of rejection.</li>
-      <li>You are not under provisional forgiveness that needs annual maintenance.</li>
-      <li>You are not living under an active covenant prosecution.</li>
-      <li>You are not trying to build a shakable identity from a shakable system.</li>
-    </ul>
-
-    <blockquote>
-      Completed atonement means <strong>bold access</strong>, not timid distance.<br />
-      Presence is not the reward for performance — it is the ground of New Creation life.
-    </blockquote>
-
-    <p class="note">
-      This does not mean “no repentance” or “no growth.” It means repentance happens inside reconciliation, not to earn it.
-    </p>
-  </section>
-
-  <section class="card" id="not-saying">
-    <h2>What This Is NOT Saying</h2>
-    <ul>
-      <li><strong>Not</strong>: “Sin doesn’t matter.” It matters — but it is not prosecuted through an obsolete covenant court.</li>
-      <li><strong>Not</strong>: “God is distant unless you perform.” The whole point of atonement fulfilled is nearness.</li>
-      <li><strong>Not</strong>: “Atonement is endless re-cleansing.” Hebrews argues the opposite: once-for-all cleansing and access.</li>
-      <li><strong>Not</strong>: “We are still waiting for the day of redemption.” The apostolic age awaited it; we live in its result.</li>
-      <li><strong>Not</strong>: “Mount Zion and New Jerusalem are future geography.” Hebrews says, “you have come.”</li>
-    </ul>
-  </section>
-
-  <section class="card" id="new-creation-reality">
-    <h2>New Creation Reality</h2>
-    <p>
-      The Day of Atonement was the shadow of a world where access was restricted.
-      The New Creation is the world where access is normal — because the shakable world has been removed.
-    </p>
-
-    <div class="callout">
-      <strong>New Creation posture:</strong><br />
-      Not “How do I get close?”<br />
-      But “I am brought near — so I live from nearness.”
-    </div>
-
-    <p class="note">
-      If your spiritual life is still driven by distance, fear, and constant re-qualification,
-      you are living as if the veil still stands. Hebrews says it doesn’t — and the unshakable remains.
-    </p>
-  </section>
-
-  <section class="card" id="summary">
-    <h2>Summary</h2>
-    <ul>
-      <li>The Day of Atonement maintained the Old Covenant; it did not complete access.</li>
-      <li>Hebrews says the way was not yet manifested while the first tabernacle had standing (Heb 9:8).</li>
-      <li>Christ entered once and obtained continuous redemption (Heb 9:11–12).</li>
-      <li>Believers have boldness to enter and draw near (Heb 10:19–22).</li>
-      <li>Hebrews frames the transition as a shaking: the shakable removed so the unshakable remains (Heb 12:26–27).</li>
-      <li>You “have come” to Mount Zion and the heavenly Jerusalem — the New Jerusalem reality of open access (Heb 12:22).</li>
-      <li>The apostolic age was sealed to the day of redemption (Eph 4:30) — the public end of the old order.</li>
-      <li>With the temple’s fall (AD 70), the shadow-system ended; the New Creation lives in open presence.</li>
-    </ul>
-
-    <div class="links">
+  <div class="topnav">
+    <div class="bar">
+      <a href="/Bible/index.html">Main Index</a>
       <a href="/Bible/Prophecy/index.html">Prophecy Hub</a>
       <a href="/Bible/Prophecy/new-creation.html">New Creation</a>
-      <a href="/Bible/index.html">The Fulfilled Prophecy Bible Home</a>
+      <a href="/Bible/Studies/index.html">Studies</a>
     </div>
-  </section>
+  </div>
 
-  <div class="hr"></div>
+  <div class="wrap">
 
-  <section class="meta" id="related">
-    <p>
-      Related reading:
-      <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> ·
-      <a href="/Bible/Prophecy/new-creation.html">New Creation</a>
-    </p>
-  </section>
+    <div class="card" style="text-align: center; padding: 40px 20px;">
+      <h1 style="margin-bottom: 10px;">The Day of Atonement</h1>
+      <p class="muted" style="max-width: 750px; margin: 0 auto 20px; font-size: 1.1rem;">
+        The central ritual of Israel’s covenant court — fulfilled in Christ and closed with the end of the first tabernacle. 
+        The outcome is not “better ritual.” It is <strong>open access</strong> and <strong>present communion</strong>.
+      </p>
+      <div>
+        <span class="pill">Covenant Court Logic</span>
+        <span class="pill">Restricted Access</span>
+        <span class="pill">AD 70 Fulfillment</span>
+      </div>
+    </div>
 
-</main>
+    <div class="callout toc" style="background: #fff; border-color: var(--line);">
+      <strong>On this page:</strong><br />
+      <a href="#plain">Plain</a>
+      <a href="#pattern">The Pattern</a>
+      <a href="#what-was-happening">What Was Happening</a>
+      <a href="#two-goats">The Two Goats</a>
+      <a href="#priest-comes-out">When the Priest Came Out</a>
+      <a href="#heb9">Hebrews 9</a>
+      <a href="#christ">Christ & The True Atonement</a>
+      <a href="#veil">The Veil & Access</a>
+      <a href="#shakable-unshakable">The Shakable vs. Unshakable</a>
+      <a href="#day-of-redemption">The Day of Redemption</a>
+      <a href="#fulfilled">Fulfilled in AD 70</a>
+      <a href="#now">What This Means Now</a>
+      <a href="#not-saying">What This Is NOT Saying</a>
+      <a href="#new-creation-reality">New Creation Reality</a>
+    </div>
 
-<footer>
-  <p class="meta">The Fulfilled Prophecy Bible — From shadow to substance, from distance to presence.</p>
-</footer>
+    <section class="card" id="plain">
+      <h2>Plain</h2>
+      <p>
+        The Day of Atonement (<em>Yom Kippur</em>) was Israel’s annual covenant “court day.” It did not exist because God enjoyed ritual. It existed because the covenant had legal terms, and Israel had covenant guilt.
+      </p>
+      <p>
+        Once a year, the high priest entered the Most Holy Place with blood. That action temporarily covered covenant defilement so the nation could continue under the Mosaic arrangement for another year. But the architecture of distance remained. The people stayed outside. The veil stayed in place. The message was clear: access was restricted and standing was maintained by a system, not by finished reconciliation.
+      </p>
+      <blockquote style="border-color: #f59e0b; background: #fffbeb;">
+        In plain terms: the Day of Atonement maintained the old order — it did not complete the relationship.
+      </blockquote>
+    </section>
+
+    <section class="card" id="pattern">
+      <h2>The Pattern</h2>
+      <p>
+        Leviticus 16 gives the core pattern. It is precise because it is covenantal. This is legal purification and boundary-marking — who may draw near, when, and on what basis.
+      </p>
+      <ul>
+        <li>The high priest enters the Most Holy Place <strong>once a year</strong>.</li>
+        <li>Only with blood — never without it.</li>
+        <li>The people remain outside (distance is built-in).</li>
+        <li>The sanctuary is cleansed because defilement is covenantal and communal.</li>
+        <li>The scapegoat carries uncleanness away from the camp.</li>
+      </ul>
+
+      <div class="callout">
+        <strong>Key point:</strong> the ritual preserves covenant life under a system of restricted access. It is “one man, one day,” not “all may draw near always.”
+      </div>
+      <p class="muted">Ref: <a href="https://ebible.org/lsv/LEV16.htm" target="_blank">Leviticus 16 (LSV)</a></p>
+    </section>
+
+    <section class="card" id="what-was-happening">
+      <h2>What Was Happening</h2>
+      <p>
+        The Day of Atonement was not primarily about individual feelings of guilt. It was about covenant standing. Israel’s “sin” in this setting is not just moral failure; it is covenant breach that produces uncleanness and threatens the covenant relationship itself.
+      </p>
+      <p>
+        That is why the ritual cleanses not only the people but the sanctuary: the system is saying, “This covenant world is contaminated by covenant breach, and it requires purification to remain in force.” If you read it as private therapy you miss it. If you read it as covenant court logic, it clicks.
+      </p>
+      <blockquote>
+        Atonement here is legal and relational: it addresses covenant breach, removes uncleanness, and preserves standing. But it does not yet open the way.
+      </blockquote>
+    </section>
+
+    <section class="card" id="two-goats">
+      <h2>The Two Goats</h2>
+      <p>
+        The two-goat pattern is crucial because it shows what the old system could and could not do. One goat is for death (blood brought into the holy place). The other is for removal (uncleanness carried away).
+      </p>
+
+      <h3>1) The Goat for YHWH: Blood and Purification</h3>
+      <p>
+        Blood is life given up. In covenant terms, it represents judgment falling on a representative life so that the covenant can continue without immediate destruction. The blood is presented before God because the dispute is covenantal.
+      </p>
+
+      <h3>2) The Scapegoat: Removal and Exile Imagery</h3>
+      <p>
+        The scapegoat carries the iniquities “away” into the wilderness. That is exile language — removal from the camp, removal from the presence, removal from the covenant center. It is an enacted picture that uncleanness belongs outside the holy community.
+      </p>
+
+      <div class="callout">
+        The point is not “one goat equals Jesus, the other equals Satan.” The point is <strong>death + removal</strong>: judgment borne and uncleanness taken away. Christ fulfills both realities in Himself.
+      </div>
+    </section>
+
+    <section class="card" id="priest-comes-out">
+      <h2>When the Priest Came Out</h2>
+      <p>
+        This is the part most people skip — and Hebrews leans on it. The people waited outside while the priest entered with blood. When he came out, it signified that the offering had been presented and the covenant court had not broken out against the nation that day.
+      </p>
+      <p>
+        That “coming out” is not theatre. It’s resolution: the mediator reappears to the waiting people because the atonement procedure has been completed as far as the old system could complete it.
+      </p>
+
+      <div class="callout" style="border-color: #ffe4b3; background: #fff4e5;">
+        In Hebrews terms: the high priest “appears” again to the people after presenting blood — that pattern is deliberately applied to Christ, not as repeated sacrifice, but as completed atonement and public vindication. (See our study on <a href="/Bible/Studies/second-coming.html">the "Second Coming" and Hebrews 9:28</a>).
+      </div>
+    </section>
+
+    <section class="card" id="heb9">
+      <h2>Hebrews 9: The Built-In Limitation</h2>
+      <p>
+        Hebrews does not treat the Day of Atonement as the finished model. It treats it as a shadow that proves, by its very structure, that access was not yet open.
+      </p>
+
+      <blockquote>
+        “The Holy Spirit is showing this: the way into the holy places has not yet been manifested while the first tabernacle is having standing,”<br />
+        <strong>— <a href="https://ebible.org/lsv/HEB09.htm#8" target="_blank">Hebrews 9:8 (LSV)</a></strong>
+      </blockquote>
+
+      <p>
+        That line is a wrecking ball. It means the old arrangement, by design, could not be the final state of things. As long as that first structure stood as the recognized covenant administration, the “way” was not fully manifested. Not because God was reluctant, but because the covenant order itself communicated distance.
+      </p>
+
+      <blockquote>
+        “...not being able, according to conscience, to perfect him who is serving,”<br />
+        <strong>— <a href="https://ebible.org/lsv/HEB09.htm#9" target="_blank">Hebrews 9:9 (LSV)</a></strong>
+      </blockquote>
+
+      <p>
+        So the limitation is not “they didn’t try hard enough.” The limitation is structural: repeated offerings, restricted entry, mediated approach, and conscience still haunted by an unfinished case.
+      </p>
+    </section>
+
+    <section class="card" id="christ">
+      <h2>Christ and the True Day of Atonement</h2>
+      <p>
+        Jesus does not repeat the Day of Atonement. He fulfills it. Not by upgrading rituals, but by completing what the rituals could only shadow: true cleansing and true access.
+      </p>
+
+      <blockquote>
+        “And Christ having come, High Priest of the coming good things, through the greater and more perfect tent, not made with hands… neither through blood of goats and calves, but through His own blood, entered once into the holy places, having obtained continuous redemption,”<br />
+        <strong>— <a href="https://ebible.org/lsv/HEB09.htm#11" target="_blank">Hebrews 9:11–12 (LSV)</a></strong>
+      </blockquote>
+
+      <p>
+        Notice what Hebrews is saying: Christ’s act is not annual, not repeatable, and not provisional. It obtains redemption that does not need maintenance. That is why the old system must fade — because its entire logic is repetition and restricted access.
+      </p>
+
+      <blockquote>
+        “How much more will the blood of Christ… cleanse our conscience from dead works, to serve the living God?”<br />
+        <strong>— <a href="https://ebible.org/lsv/HEB09.htm#14" target="_blank">Hebrews 9:14 (LSV)</a></strong>
+      </blockquote>
+
+      <div class="callout">
+        <strong>Big difference:</strong> the old system covers to preserve the covenant; Christ cleanses to end the case and open the way.
+      </div>
+    </section>
+
+    <section class="card" id="veil">
+      <h2>The Veil and Access</h2>
+      <p>
+        The veil is covenant boundary in cloth form. It says, “Not yet.” The Day of Atonement was the one annual exception that proved the rule: the people are still outside.
+      </p>
+
+      <blockquote>
+        “Having, therefore, brothers, boldness for the entrance into the holy places, in the blood of Jesus… may we draw near with a true heart, in full assurance of faith…”<br />
+        <strong>— <a href="https://ebible.org/lsv/HEB10.htm#19" target="_blank">Hebrews 10:19–22 (LSV)</a></strong>
+      </blockquote>
+
+      <p>
+        Hebrews does not say, “One day you might get access.” It says you have boldness now, because the basis of approach has changed. The gospel is not a new ritual ladder. It is the removal of distance.
+      </p>
+
+      <div class="callout">
+        <strong>Access is the point.</strong><br />
+        Atonement is not merely “forgiveness paperwork.” It is the removal of distance and the end of covenant exclusion.
+      </div>
+    </section>
+
+    <section class="card" id="shakable-unshakable">
+      <h2>The Shakable and the Unshakable</h2>
+      <p>
+        Hebrews does not speak about atonement in isolation. It frames the whole transition as a covenant shaking: the things that belong to the former order are removed so what cannot be shaken remains. The Day of Atonement belongs to the shakable world — repeated offerings, restricted access, mediated approach, temple architecture, and a covenant court that must continually manage uncleanness.
+      </p>
+
+      <blockquote>
+        “Now once He has promised, saying, Yet once more I shake not only the earth, but also the heaven… that the things shaken may be removed… and the things not shaken may remain.”<br />
+        <strong>— <a href="https://ebible.org/lsv/HEB12.htm#26" target="_blank">Hebrews 12:26–27 (LSV)</a></strong>
+      </blockquote>
+
+      <p>
+        Then Hebrews tells you what the unshakable is: not a rebuilt temple, not a new ritual system, but a kingdom that cannot be shaken. And it names where believers have come — not merely where they will go:
+      </p>
+
+      <blockquote>
+        “But you have come to Mount Zion, and to the city of the living God, the heavenly Jerusalem…”<br />
+        <strong>— <a href="https://ebible.org/lsv/HEB12.htm#22" target="_blank">Hebrews 12:22 (LSV)</a></strong>
+      </blockquote>
+
+      <p>
+        That means the Day of Atonement was a shadow inside the shakable world. The New Covenant reality is the unshakable: <strong>Mount Zion</strong>, the <strong>New Jerusalem</strong>, the gathered people of God in completed access. Atonement fulfilled is not simply “sins covered.” It is the removal of the entire boundary-world that required annual maintenance.
+      </p>
+
+      <div class="callout">
+        The shakable was the old covenant architecture of distance.<br />
+        The unshakable is the kingdom and city you have come to: Mount Zion, the New Jerusalem.
+      </div>
+    </section>
+
+    <section class="card" id="day-of-redemption">
+      <h2>The Day of Redemption the Apostolic Age Awaited</h2>
+      <p>
+        The apostolic writings speak of a coming “day of redemption.” In their world, this is not a vague end-of-the-universe idea. It is the covenant moment when the old administration would finally vanish and the completed work of Christ would stand alone, publicly, without rival structure.
+      </p>
+
+      <blockquote>
+        “And do not grieve the Holy Spirit of God, in whom you were sealed to a day of redemption.”<br />
+        <strong>— <a href="https://ebible.org/lsv/EPH04.htm#30" target="_blank">Ephesians 4:30 (LSV)</a></strong>
+      </blockquote>
+
+      <p>
+        They were not waiting for Jesus to become sufficient. They were waiting for the covenant order that kept “first tabernacle standing” to finally pass away — because Hebrews explicitly ties the manifestation of the way to the removal of that standing structure.
+      </p>
+
+      <blockquote style="border-color: #f59e0b; background: #fffbeb;">
+        The early church waited for the day.<br />
+        The New Creation lives in the result: open access and settled reconciliation.
+      </blockquote>
+    </section>
+
+    <section class="card" id="fulfilled">
+      <h2>Fulfilled in AD 70</h2>
+      <p>
+        Hebrews gives you a measurable covenant marker: access was not yet manifested while the first tabernacle had standing. In AD 70 the temple fell — and with it, the last visible architecture of restricted access, Levitical mediation, and annual atonement.
+      </p>
+
+      <div class="callout">
+        <strong>No tabernacle. No veil. No priesthood. No annual atonement.</strong><br />
+        The shadow-system ended because the substance had already come in Christ.
+      </div>
+
+      <p class="muted">
+        AD 70 is not “when Jesus finally became enough.” It is when the former covenant world was removed so the finished work of Christ stood alone in history, without an operating rival administration.
+      </p>
+    </section>
+
+    <section class="card" id="now">
+      <h2>What This Means Now</h2>
+      <p>
+        If atonement is fulfilled, your life with God is not managed by distance, anxiety, or spiritual self-defense. New Covenant life is lived from access.
+      </p>
+      <ul>
+        <li>You do not wait outside while someone else enters.</li>
+        <li>You do not approach through fear of rejection.</li>
+        <li>You are not under provisional forgiveness that needs annual maintenance.</li>
+        <li>You are not living under an active covenant prosecution.</li>
+        <li>You are not trying to build a shakable identity from a shakable system.</li>
+      </ul>
+
+      <blockquote>
+        Completed atonement means <strong>bold access</strong>, not timid distance.<br />
+        Presence is not the reward for performance — it is the ground of New Creation life.
+      </blockquote>
+      
+      <p class="muted">
+        This does not mean “no repentance” or “no growth.” It means repentance happens inside reconciliation, not to earn it.
+      </p>
+    </section>
+
+    <section class="card" id="not-saying">
+      <h2>What This Is NOT Saying</h2>
+      <ul>
+        <li><strong>Not</strong>: “Sin doesn’t matter.” It matters — but it is not prosecuted through an obsolete covenant court.</li>
+        <li><strong>Not</strong>: “God is distant unless you perform.” The whole point of atonement fulfilled is nearness.</li>
+        <li><strong>Not</strong>: “Atonement is endless re-cleansing.” Hebrews argues the opposite: once-for-all cleansing and access.</li>
+        <li><strong>Not</strong>: “We are still waiting for the day of redemption.” The apostolic age awaited it; we live in its result.</li>
+        <li><strong>Not</strong>: “Mount Zion and New Jerusalem are future geography.” Hebrews says, “you have come.”</li>
+      </ul>
+    </section>
+
+    <section class="card" style="background: #fdfaf5; border-color: #e5d9c5;" id="new-creation-reality">
+      <h2 style="border-bottom-color: #e5d9c5;">New Creation Reality</h2>
+      <p>
+        The Day of Atonement was the shadow of a world where access was restricted. The New Creation is the world where access is normal — because the shakable world has been removed.
+      </p>
+
+      <div class="callout" style="background: #fff;">
+        <strong>New Creation posture:</strong><br />
+        Not “How do I get close?”<br />
+        But “I am brought near — so I live from nearness.”
+      </div>
+
+      <p style="font-size: 1.15rem; font-weight: 700; text-align: center; margin-top: 25px; color: #111;">
+        If your spiritual life is still driven by distance, fear, and constant re-qualification, you are living as if the veil still stands. Hebrews says it doesn’t — and the unshakable remains.
+      </p>
+    </section>
+
+    <section class="card" id="summary">
+      <h2>Summary</h2>
+      <ul>
+        <li>The Day of Atonement maintained the Old Covenant; it did not complete access.</li>
+        <li>Hebrews says the way was not yet manifested while the first tabernacle had standing (Heb 9:8).</li>
+        <li>Christ entered once and obtained continuous redemption (Heb 9:11–12).</li>
+        <li>Believers have boldness to enter and draw near (Heb 10:19–22).</li>
+        <li>Hebrews frames the transition as a shaking: the shakable removed so the unshakable remains (Heb 12:26–27).</li>
+        <li>You “have come” to Mount Zion and the heavenly Jerusalem — the New Jerusalem reality of open access (Heb 12:22).</li>
+        <li>The apostolic age was sealed to the day of redemption (Eph 4:30) — the public end of the old order.</li>
+        <li>With the temple’s fall (AD 70), the shadow-system ended; the New Creation lives in open presence.</li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <div style="text-align: center; margin: 20px 0;">
+      <span class="muted" style="margin-right: 10px;">Share this framework:</span>
+      <a class="btn" href="#" onclick="window.open('https://twitter.com/intent/tweet?text=The Day of Atonement: From Restricted Access to Open Presence at FPBible:&url=' + encodeURIComponent(window.location.href)); return false;" rel="noopener noreferrer">𝕏 Twitter</a>
+      <a class="btn" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href)); return false;" rel="noopener noreferrer">Facebook</a>
+      <a class="btn" href="#" onclick="window.location.href='mailto:?subject=Day of Atonement Framework&body=Covenant Court Logic and Fulfilled Atonement: ' + encodeURIComponent(window.location.href); return false;">Email</a>
+    </div>
+
+    <div style="text-align: center; margin-bottom: 30px;">
+      <a href="https://ko-fi.com/B0B61QC1BU" target="_blank">
+        <img src="https://storage.ko-fi.com/cdn/kofi2.png?v=3" alt="Support on Ko-fi" style="height: 36px; width: auto; border: none;">
+      </a>
+    </div>
+
+    <nav class="bottom">
+      <a href="/Bible/index.html">Main Index</a> |
+      <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> |
+      <a href="/Bible/Prophecy/new-creation.html">New Creation</a> |
+      <a href="#top">Top ↑</a>
+    </nav>
+
+    <footer>
+      <div class="row">
+        <div>
+          <strong>The Fulfilled Prophecy Bible</strong> — From shadow to substance, from distance to presence.
+        </div>
+        <div>
+          <a href="/Bible/about.html">About</a> · <a href="https://ko-fi.com/fpbible" target="_blank" rel="noopener">Support</a>
+        </div>
+      </div>
+      <p class="muted" style="margin-top: 10px;">
+        Notes are written to honour audience relevance, time statements, and first-century fulfillment without futurist drift.
+      </p>
+    </footer>
+
+  </div>
 </body>
 </html>
