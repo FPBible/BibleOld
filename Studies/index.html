@@ -1,59 +1,173 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Studies — FPBible</title>
-  <meta name="description" content="FPBible doctrinal and covenant studies." />
+  <title>Studies — Fulfilled Prophecy Bible (WEB)</title>
+  <meta name="description" content="Doctrinal clarifications, covenantal studies, and deep-dives into fulfilled eschatology." />
+
   <style>
-    :root{ --maxw: 980px; --pad: 16px; --line: rgba(0,0,0,0.12); --muted: rgba(0,0,0,0.72); }
-    body{ font-family: system-ui, sans-serif; line-height: 1.65; margin: 0; color:#111; }
-    .topnav{ position: sticky; top:0; background: rgba(255,255,255,0.95); border-bottom:1px solid var(--line); }
-    .topnav .bar{ max-width: var(--maxw); margin:0 auto; padding: 12px var(--pad); display:flex; gap:14px; flex-wrap:wrap; }
-    .topnav a{ text-decoration:none; color:#111; border-bottom:2px solid transparent; }
-    .topnav a:hover{ border-bottom:2px solid #111; }
-    .wrap{ max-width: var(--maxw); margin:0 auto; padding: 22px var(--pad) 48px; }
-    .muted{ color: var(--muted); }
-    .box{ border:1px solid var(--line); border-radius: 14px; padding: 16px 18px; }
-    .study-list{ list-style:none; padding-left:0; }
-    .study-list li{ margin-bottom:14px; }
-    .study-list a{ font-weight:600; text-decoration:none; color:#111; }
-    .study-list a:hover{ text-decoration:underline; }
-    .desc{ margin:4px 0 0 0; color: var(--muted); font-size:0.95em; }
-  </style>  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q22N178LJ8"></script>  <script>
+    :root{
+      --maxw: 980px;
+      --pad: 16px;
+      --line: rgba(0,0,0,0.12);
+      --muted: rgba(0,0,0,0.72);
+      --soft: rgba(0,0,0,0.05);
+      --soft2: rgba(0,0,0,0.03);
+      --radius: 14px;
+    }
+    body{
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.7;
+      margin: 0;
+      color: #111;
+      background: #fff;
+    }
+    .wrap{ max-width: var(--maxw); margin: 0 auto; padding: 18px; }
+    
+    nav.top, nav.bottom{ 
+      text-align: center;
+      font-size: 0.9rem;
+      margin: 15px 0 25px;
+      color: var(--muted);
+    }
+    nav.top a, nav.bottom a{
+      color: #0066cc;
+      text-decoration: none;
+      padding: 0 6px;
+    }
+    nav.top a:hover, nav.bottom a:hover{
+      text-decoration: underline;
+    }
+
+    h1{ margin: 0.2em 0 0.4em; font-size: 2.2rem; }
+    h2{ margin: 1.5em 0 0.5em; font-size: 1.6rem; border-bottom: 2px solid var(--soft); padding-bottom: 10px; }
+    h3{ margin: 0 0 0.4em; font-size: 1.25rem; font-weight: 700; color: #111; }
+    
+    .card{
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 24px;
+      background: #fff;
+      margin-bottom: 1.5em;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    }
+
+    .card:hover {
+      border-color: rgba(0,0,0,0.25);
+    }
+
+    .muted{ color: var(--muted); font-size: 0.95rem; }
+
+    footer{
+      margin-top: 3em;
+      padding-top: 1.5em;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    a{ color: #0066cc; text-decoration: none; font-weight: 500; }
+    a:hover{ text-decoration: underline; }
+    strong{ font-weight: 700; }
+    
+    .pill {
+      display: inline-block;
+      background: #eef2ff;
+      border: 1px solid #d1d5db;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.82rem;
+      margin-right: 8px;
+      margin-bottom: 10px;
+      font-weight: 600;
+      color: #4b5563;
+    }
+
+    .study-link {
+      color: #111; 
+      text-decoration: none;
+    }
+    .study-link:hover {
+      color: #0066cc;
+    }
+  </style>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q22N178LJ8"></script>
+  <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);} 
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-Q22N178LJ8');
-  </script></head>
+  </script>
+</head>
+
 <body>
-  <div class="topnav">
-    <div class="bar">
-      <a href="/Bible/">Home</a>
-      <a href="/Bible/Prophecy/index.html">Prophecy Hub</a>
-      <a href="/Bible/Resurrection/index.html">Resurrection</a>
+  <div class="wrap">
+
+    <nav class="top">
+      <a href="/Bible/index.html">Main Index</a> |
+      <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> |
+      <a href="/Bible/Life/index.html">Life</a> |
       <a href="/Bible/about.html">About</a>
-      <a href="/Bible/standard.html">Standard</a>
+    </nav>
+
+    <div class="card" style="text-align: center; padding: 40px 20px;">
+      <h1 style="margin-bottom: 10px;">FPBible Studies</h1>
+      <p class="muted" style="max-width: 600px; margin: 0 auto 20px; font-size: 1.05rem;">
+        Doctrinal clarifications, topical deep-dives, and covenantal explorations.
+      </p>
+      <div>
+        <span class="pill">Covenant Framework</span>
+        <span class="pill">Eschatology</span>
+        <span class="pill">Audience Relevance</span>
+      </div>
     </div>
-  </div>  <div class="wrap">
-    <h1>Studies</h1><div class="box">
-  <p class="muted">Doctrinal clarifications and covenant studies.</p>
 
-  <ul class="study-list">
-    <li>
-      <a href="/Bible/Studies/second-coming.html">Is the “Second Coming” a Biblical Phrase?</a>
-      <p class="desc">Examines the absence of the phrase in Scripture, clarifies biblical terminology, and establishes the covenantal fulfillment of Christ’s coming in AD 70.</p>
-    </li>
-  </ul>
+    <h2>Available Studies</h2>
 
-  <hr />
+    <div class="card">
+      <h3>
+        <a href="/Bible/Studies/second-coming.html" class="study-link">Is the "Second Coming" a Biblical Phrase?</a>
+      </h3>
+      <p style="margin-top: 5px; margin-bottom: 15px;">
+        Examines the absence of the phrase in Scripture, clarifies biblical terminology regarding the <em>Parousia</em>, and establishes the covenantal fulfillment of Christ’s coming in AD 70.
+      </p>
+      <div>
+        <span class="pill" style="background: #fdfdfd;">Terminology</span>
+        <span class="pill" style="background: #fdfdfd;">Parousia</span>
+      </div>
+    </div>
 
-  <p class="muted">Core study pathways:</p>
-  <ul>
-    <li><a href="/Bible/Prophecy/index.html">Prophecy Hub</a></li>
-    <li><a href="/Bible/Resurrection/index.html">Resurrection</a></li>
-    <li><a href="/Bible/Matthew/matt24.html">Matthew 24</a></li>
-  </ul>
-</div>
+    <h2 style="margin-top: 40px;">Core Framework Anchors</h2>
+    <div class="card" style="background: var(--soft2);">
+      <p style="margin-top: 0;">If you are new to the completed covenant framework, start with these core pathways:</p>
+      <ul style="line-height: 1.8; margin-bottom: 0;">
+        <li><strong><a href="/Bible/Prophecy/index.html">Prophecy Hub</a>:</strong> Centralized explanations for apocalyptic language.</li>
+        <li><strong><a href="/Bible/Resurrection/index.html">The Covenantal Resurrection</a>:</strong> Moving from biological reanimation to covenantal life.</li>
+        <li><strong><a href="/Bible/Matthew/matt24.html">Matthew 24</a>:</strong> The Olivet Discourse and the fall of the Old World.</li>
+        <li><strong><a href="/Bible/Prophecy/end-of-the-law.html">The End of the Law</a>:</strong> Why Sinai has no jurisdiction in Christ.</li>
+      </ul>
+    </div>
+
+    <hr style="border: 0; border-top: 1px solid var(--line); margin: 30px 0;" />
+
+    <div style="text-align: center;">
+      <a href="https://ko-fi.com/B0B61QC1BU" target="_blank">
+        <img src="https://storage.ko-fi.com/cdn/kofi2.png?v=3" alt="Support on Ko-fi" style="height: 36px; width: auto; border: none;">
+      </a>
+    </div>
+
+    <nav class="bottom" style="margin-top: 25px;">
+      <a href="/Bible/index.html">Main Index</a> |
+      <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> |
+      <a href="/Bible/Studies/index.html">Top ↑</a>
+    </nav>
+
+    <footer>
+      <p><strong>The Fulfilled Prophecy Bible</strong> — Scripture text based on the <strong>World English Bible (WEB)</strong>.</p>
+      <p>Commentary honours audience relevance, time statements, and first-century fulfillment.</p>
+      <p><a href="/Bible/about.html">About</a> · <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> · <a href="https://ko-fi.com/fpbible" target="_blank">Support</a></p>
+    </footer>
 
   </div>
 </body>
