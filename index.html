@@ -55,11 +55,6 @@
     hr{ margin: 2.8em 0; border: 0; border-top: 1px solid var(--line); }
     .note{ font-size: 0.96em; color: var(--muted); }
 
-    /* TOP NAV — now matches manifesto behavior:
-       - sticky
-       - grouped
-       - wraps on mobile (NO horizontal scrolling)
-    */
     .topnav{
       position: sticky;
       top: 0;
@@ -73,12 +68,12 @@
       margin: 0 auto;
       padding: 10px var(--pad);
       display: flex;
-      flex-wrap: wrap;            /* ✅ allow wrapping */
-      gap: 10px 12px;             /* ✅ nice spacing */
+      flex-wrap: wrap;
+      gap: 10px 12px;
       align-items: center;
-      justify-content: center;    /* ✅ centered rows */
-      white-space: normal;        /* ✅ allow line breaks */
-      overflow-x: visible;        /* ✅ no sideways scroll */
+      justify-content: center;
+      white-space: normal;
+      overflow-x: visible;
     }
     .topnav a{
       text-decoration: underline;
@@ -88,7 +83,6 @@
     }
     .topnav a:hover{ opacity: 0.85; }
 
-    /* Under construction banner */
     .banner{
       margin: 14px 0 0;
       border: 1px solid rgba(0,0,0,0.12);
@@ -100,7 +94,6 @@
     .banner strong{ font-weight: 650; }
     .banner .small{ color: var(--muted); font-size: 0.95em; margin-top: 6px; }
 
-    /* Hero */
     .hero{
       text-align: center;
       padding: 2em 0 1.5em;
@@ -134,7 +127,6 @@
       opacity: 1;
     }
 
-    /* Stats */
     .stats{
       display: flex;
       justify-content: center;
@@ -158,7 +150,6 @@
       margin-top: 0.3em;
     }
 
-    /* Pills */
     .pill{
       display: inline-block;
       border: 1px solid var(--line2);
@@ -169,7 +160,6 @@
       background: var(--soft2);
     }
 
-    /* Grids */
     .grid{
       display: grid;
       grid-template-columns: 1fr;
@@ -195,14 +185,12 @@
     .card p{ margin: 0.4em 0 0.8em; }
     .card ul{ margin-top: 0.6em; }
 
-    /* Pathway cards */
     .pathway{
       background: linear-gradient(135deg, var(--soft2) 0%, transparent 100%);
       border-left: 3px solid var(--accent);
     }
     .pathway h3{ font-size: 1.15rem; }
 
-    /* Featured */
     .featured{
       background: var(--soft2);
       border-radius: var(--radius);
@@ -224,7 +212,6 @@
       color: var(--muted);
     }
 
-    /* Manifesto */
     .manifesto{
       border: 1px solid var(--line);
       border-radius: var(--radius);
@@ -237,7 +224,6 @@
     .manifesto ul{ margin-top: 1em; }
     .manifesto li{ margin: 0.65em 0; }
 
-    /* Search */
     .searchrow{
       display: flex;
       flex-wrap: wrap;
@@ -259,7 +245,6 @@
       font-size: 0.95em;
     }
 
-    /* Ko-fi */
     .kofi{
       display: inline-flex;
       align-items: center;
@@ -280,7 +265,6 @@
       font-size: 0.95em;
     }
 
-    /* Quick box */
     .quick{
       border: 1px solid var(--line);
       border-radius: var(--radius);
@@ -290,7 +274,6 @@
     .quick ul{ margin: 0.6em 0 0.2em 1.15em; }
     .quick li{ margin: 0.35em 0; }
 
-    /* Footer */
     footer{
       margin-top: 3em;
       padding-top: 2em;
@@ -326,32 +309,14 @@
       padding-top: 1.5em;
       border-top: 1px solid var(--line);
     }
-
-    @media (max-width: 768px){
-      .hero h1{ font-size: 1.9rem; }
-      .stats{ gap: 15px 25px; }
-      .card{ padding: 14px 16px; }
-    }
-    @media (max-width: 520px){
-      .hero h1{ font-size: 1.75rem; }
-      .stats .stat-value{ font-size: 1.5rem; }
-    }
-
-    @media (prefers-reduced-motion: reduce){
-      * { scroll-behavior: auto !important; }
-      .card, .hero .cta a, .kofi { transition: none !important; }
-      .hero .cta a:hover, .kofi:hover { transform: none !important; }
-    }
   </style>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q22N178LJ8"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-Q22N178LJ8');
   </script>
-
 </head>
 
 <body>
@@ -458,10 +423,6 @@
         <li><strong>Use "Scripture (WEB)" links</strong> in chapters to verify the base text.</li>
         <li><strong>Use the Prophecy Hub</strong> when you hit “coming / wrath / day / fire / resurrection / heaven &amp; earth”.</li>
       </ul>
-
-      <p class="note" style="margin-top: 1.2em;">
-        Build notes (contributors): <a href="/Bible/standard.html">FPBible Chapter Standard</a>
-      </p>
     </div>
   </section>
 
@@ -502,20 +463,12 @@
       <div class="hint">What’s listed here is complete and readable end-to-end</div>
     </div>
 
-    <p class="note">
-      Chapters present <strong>Scripture (WEB)</strong> followed by <strong>Fulfillment Notes</strong> and expanded commentary.
-    </p>
-
     <div class="searchrow">
       <input id="bookSearch" type="search" placeholder="Search finished books…" aria-label="Search finished books" />
       <div class="muted"><span id="bookCountInline">—</span> listed</div>
     </div>
 
     <div id="bookGrid" class="grid" style="margin-top: 1em;"></div>
-
-    <p class="note" style="margin-top: 1.2em;">
-      Missing books are not “hidden”—they’re simply not published yet or are being rebuilt to the current layout.
-    </p>
   </section>
 
   <hr />
@@ -526,40 +479,6 @@
       <div class="hint">Prophecy Hub, Studies, and Core Topics</div>
     </div>
 
-    <h3 style="margin-top: 1.2em;">Framework Anchors</h3>
-    <div class="grid">
-      <div class="card">
-        <span class="pill">Essential</span>
-        <h3>The End of the Law</h3>
-        <p>Why Sinai has no jurisdiction in Christ, why AD 70 ended the Law system, and why “New Creation + Law” is a contradiction.</p>
-        <ul><li><a href="/Bible/Prophecy/end-of-the-law.html">Open Article</a></li></ul>
-      </div>
-
-      <div class="card">
-        <span class="pill">Essential</span>
-        <h3>The Day of Atonement</h3>
-        <p>Hebrews 9 read correctly: sanctuary logic, priestly “appearing”, covenant judgment, and salvation as public closure.</p>
-        <ul><li><a href="/Bible/Prophecy/day-of-atonement.html">Open Article</a></li></ul>
-      </div>
-
-      <div class="card">
-        <span class="pill">Core</span>
-        <h3>Death — Covenant Death</h3>
-        <p>Death in Scripture as covenant separation and condemnation, and Christ’s finished victory over it.</p>
-        <ul><li><a href="/Bible/Prophecy/death.html">Open Article</a></li></ul>
-      </div>
-
-      <div class="card">
-        <span class="pill">Core</span>
-        <h3>Life — Eternal Life as Present Reality</h3>
-        <p>Eternal life defined covenantally: access, union, and life in the Spirit now (not a postponed reward).</p>
-        <ul><li><a href="/Bible/Prophecy/life.html">Open Article</a></li></ul>
-      </div>
-    </div>
-
-    <h3 style="margin-top: 2em;">Prophecy Hub</h3>
-    <p class="note">Centralized fulfillment explanations for recurring terms: coming, wrath, fire, resurrection, heaven &amp; earth, clouds.</p>
-
     <div class="grid">
       <div class="card">
         <span class="pill">Hub Index</span>
@@ -569,76 +488,10 @@
       </div>
 
       <div class="card">
-        <span class="pill">New Creation</span>
-        <h3>New Creation — Living From What’s Finished</h3>
-        <p>Present reality, covenant shift, and life in the Spirit without “almost” language.</p>
-        <ul><li><a href="/Bible/Prophecy/new-creation.html">Open</a></li></ul>
-      </div>
-
-      <div class="card">
-        <span class="pill">Presence</span>
-        <h3>Parousia — Presence, Not Delay</h3>
-        <p>Presence replaces anticipation. Time-texts handled plainly. No futurist drift.</p>
-        <ul><li><a href="/Bible/Prophecy/parousia.html">Open</a></li></ul>
-      </div>
-
-      <div class="card">
-        <span class="pill">Apocalyptic</span>
-        <h3>Revelation — Symbol, Judgment, Victory</h3>
-        <p>First-century apocalyptic language: covenant judgment, vindication, and New Jerusalem reality.</p>
-        <ul><li><a href="/Bible/Prophecy/revelation.html">Open Article</a></li></ul>
-      </div>
-
-      <div class="card">
-        <span class="pill">Key Terms</span>
-        <h3>Hell — Word Origins</h3>
-        <p>Gehenna / Hades language handled covenantally, not as eternal-torture theatre.</p>
-        <ul><li><a href="/Bible/Prophecy/hell.html">Open</a></li></ul>
-      </div>
-
-      <div class="card">
-        <span class="pill">Key Terms</span>
-        <h3>Satan — Adversary Language</h3>
-        <p>Adversary imagery in its covenant-historical context.</p>
-        <ul><li><a href="/Bible/Prophecy/satan.html">Open</a></li></ul>
-      </div>
-    </div>
-
-    <h3 style="margin-top: 2em;">Studies &amp; Life Application</h3>
-    <div class="grid">
-      <div class="card">
         <span class="pill">Study</span>
         <h3>Studies</h3>
         <p>Audience relevance, covenant idiom, and first-century fulfillment—kept readable and verifiable.</p>
         <ul><li><a href="/Bible/Studies/index.html">Open Studies</a></li></ul>
-      </div>
-
-      <div class="card">
-        <span class="pill">Life</span>
-        <h3>Life — Practical Pages</h3>
-        <p>Living from union: presence, peace, and Spirit-led normal life.</p>
-        <ul><li><a href="/Bible/Life/index.html">Open</a></li></ul>
-      </div>
-
-      <div class="card">
-        <span class="pill">Thoughts</span>
-        <h3>Thoughts</h3>
-        <p>Short, direct clarifications—designed for sharing and quick grounding.</p>
-        <ul><li><a href="/Bible/Thoughts/index.html">Open Thoughts</a></li></ul>
-      </div>
-
-      <div class="card">
-        <span class="pill">Audio</span>
-        <h3>Audio</h3>
-        <p>Proclamation and meditation tracks aimed at mind-renewal and presence.</p>
-        <ul><li><a href="/Bible/Audio/index.html">Open Audio</a></li></ul>
-      </div>
-
-      <div class="card">
-        <span class="pill">Core</span>
-        <h3>Salvation — What It Means</h3>
-        <p>Salvation defined in covenant terms: rescue into Christ, into life, into the New Covenant reality now.</p>
-        <ul><li><a href="/Bible/Salvation/index.html">Open Salvation</a></li></ul>
       </div>
     </div>
   </section>
@@ -652,20 +505,11 @@
     </div>
 
     <div class="quick">
-      <p>
-        FPBible is designed to stay free and accessible.
-        If this work has been helpful, you can support ongoing development:
-      </p>
-
       <p style="margin-top: 1.2em;">
-        <a class="kofi" href="https://ko-fi.com/B0B61QC1BU" target="_blank" rel="noopener noreferrer" aria-label="Support this project on Ko-fi">
+        <a class="kofi" href="https://ko-fi.com/B0B61QC1BU" target="_blank" rel="noopener noreferrer">
           <img height="36" style="border:0;height:36px;" src="https://storage.ko-fi.com/cdn/kofi5.png?v=6" alt="Ko-fi" />
           <span>Support on Ko-fi</span>
         </a>
-      </p>
-
-      <p class="note" style="margin-top: 0.8em;">
-        If the button doesn't load: <a href="https://ko-fi.com/B0B61QC1BU" target="_blank" rel="noopener noreferrer">ko-fi.com/B0B61QC1BU</a>
       </p>
     </div>
   </section>
@@ -680,7 +524,6 @@
           <li><a href="#manifesto">New Creation Manifesto</a></li>
           <li><a href="/Bible/Resurrection/">Resurrection</a></li>
           <li><a href="/Bible/Prophecy/end-of-the-law.html">End of the Law</a></li>
-          <li><a href="/Bible/Prophecy/day-of-atonement.html">Day of Atonement</a></li>
         </ul>
       </div>
       <div>
@@ -688,7 +531,6 @@
         <ul>
           <li><a href="/Bible/Matthew/">Matthew</a></li>
           <li><a href="/Bible/Daniel/">Daniel</a></li>
-          <li><a href="/Bible/John/">John</a></li>
           <li><a href="/Bible/Romans/">Romans</a></li>
           <li><a href="/Bible/Hebrews/">Hebrews</a></li>
           <li><a href="/Bible/Revelation/">Revelation</a></li>
@@ -699,219 +541,156 @@
         <ul>
           <li><a href="/Bible/Prophecy/">Prophecy Hub</a></li>
           <li><a href="/Bible/Studies/">Studies</a></li>
-          <li><a href="/Bible/Life/">Life</a></li>
-          <li><a href="/Bible/Audio/">Audio</a></li>
-          <li><a href="/Bible/standard.html">Build notes (contributors)</a></li>
         </ul>
       </div>
     </div>
 
     <div class="row">
       <div>
-        <strong>The Fulfilled Prophecy Bible</strong> — Text based on the <strong>World English Bible (WEB)</strong> with Fulfilled Prophecy Study Commentary
+        <strong>The Fulfilled Prophecy Bible</strong> — Text based on the <strong>World English Bible (WEB)</strong>
       </div>
       <div>
         <a href="https://ko-fi.com/fpbible" target="_blank" rel="noopener">Support</a> · <a href="#top">Back to top</a>
       </div>
     </div>
-    <p class="note" style="margin-top: 1em;">
-      Notes are written to honour audience relevance and time statements, and to avoid futurist drift.
-    </p>
   </footer>
 
 </div>
 
 <script>
-/* -----------------------------
-   Finished books list (edit once)
-   ----------------------------- */
 const FINISHED_BOOKS = [
   {
     title: "Isaiah (Selected)",
     pill: "Prophet",
     desc: "Key covenant-world passages and New Creation anchors (selected chapters).",
-    links: [
-      ["/Bible/Isaiah/index.html","Book Index"],
-      ["/Bible/Isaiah/preface.html","Preface"]
-    ]
+    links: [["/Bible/Isaiah/index.html","Book Index"], ["/Bible/Isaiah/preface.html","Preface"]]
   },
   {
     title: "Daniel",
     pill: "Prophet",
     desc: "The Four Empires, the 70 Weeks, and the arrival of the indestructible Kingdom.",
-    links: [
-      ["/Bible/Daniel/index.html","Book Index"],
-      ["/Bible/Daniel/preface.html","Preface"]
-    ]
+    links: [["/Bible/Daniel/index.html","Book Index"], ["/Bible/Daniel/preface.html","Preface"]]
   },
   {
     title: "Matthew",
     pill: "Gospel",
     desc: "Jesus, covenant crisis, the Olivet Discourse, and the end of the Mosaic age.",
-    links: [
-      ["/Bible/Matthew/index.html","Book Index"],
-      ["/Bible/Matthew/preface.html","Preface"]
-    ]
+    links: [["/Bible/Matthew/index.html","Book Index"], ["/Bible/Matthew/preface.html","Preface"]]
   },
   {
     title: "John",
     pill: "Gospel",
     desc: "Light vs darkness, sonship vs slavery, temple replacement, and life already present in Him.",
-    links: [
-      ["/Bible/John/index.html","Book Index"],
-      ["/Bible/John/preface.html","Preface"]
-    ]
+    links: [["/Bible/John/index.html","Book Index"], ["/Bible/John/preface.html","Preface"]]
   },
   {
     title: "Romans",
     pill: "Epistle",
     desc: "Righteousness apart from Law, condemnation dismantled, Spirit-life as present identity.",
-    links: [
-      ["/Bible/Romans/index.html","Book Index"],
-      ["/Bible/Romans/preface.html","Preface"]
-    ]
+    links: [["/Bible/Romans/index.html","Book Index"], ["/Bible/Romans/preface.html","Preface"]]
   },
   {
     title: "1 Corinthians",
     pill: "Epistle",
     desc: "One-body life, holiness without legalism, and resurrection as covenant victory in Christ.",
-    links: [
-      ["/Bible/1Corinthians/index.html","Book Index"],
-      ["/Bible/1Corinthians/preface.html","Preface"]
-    ]
+    links: [["/Bible/1Corinthians/index.html","Book Index"], ["/Bible/1Corinthians/preface.html","Preface"]]
   },
   {
     title: "2 Corinthians",
     pill: "Epistle",
     desc: "Veil removed, reconciliation proclaimed, true authority revealed through weakness.",
-    links: [
-      ["/Bible/2Corinthians/index.html","Book Index"]
-    ]
+    links: [["/Bible/2Corinthians/index.html","Book Index"]]
   },
   {
     title: "Galatians",
     pill: "Epistle",
     desc: "Freedom from Torah-identity, sonship by promise, Spirit as operating reality.",
-    links: [
-      ["/Bible/Galatians/index.html","Book Index"]
-    ]
+    links: [["/Bible/Galatians/index.html","Book Index"]]
   },
   {
     title: "Ephesians",
     pill: "Epistle",
     desc: "Union with Christ, one new humanity, Spirit-filled life as normal reality.",
-    links: [
-      ["/Bible/Ephesians/index.html","Book Index"]
-    ]
+    links: [["/Bible/Ephesians/index.html","Book Index"]]
   },
   {
     title: "Philippians",
     pill: "Epistle",
     desc: "Joy in pressure, the mind of Christ, and a life that shines as New Creation reality.",
-    links: [
-      ["/Bible/Philippians/index.html","Book Index"]
-    ]
+    links: [["/Bible/Philippians/index.html","Book Index"]]
   },
   {
     title: "Colossians",
     pill: "Epistle",
     desc: "Christ as fullness, old humanity stripped off, new humanity lived now.",
-    links: [
-      ["/Bible/Colossians/index.html","Book Index"]
-    ]
+    links: [["/Bible/Colossians/index.html","Book Index"]]
   },
   {
     title: "1 Thessalonians",
     pill: "Epistle",
     desc: "A New Creation church under pressure: faith, love, holiness, and the Lord’s royal presence.",
-    links: [
-      ["/Bible/1Thessalonians/index.html","Book Index"]
-    ]
+    links: [["/Bible/1Thessalonians/index.html","Book Index"]]
   },
   {
     title: "2 Thessalonians",
     pill: "Epistle",
     desc: "Panic corrected, lawlessness exposed, steady New Creation life restored.",
-    links: [
-      ["/Bible/2Thessalonians/index.html","Book Index"]
-    ]
+    links: [["/Bible/2Thessalonians/index.html","Book Index"]]
   },
   {
     title: "Hebrews",
     pill: "Epistle",
     desc: "End of sacrifice and priesthood, access secured, transition from shadow to substance.",
-    links: [
-      ["/Bible/Hebrews/index.html","Book Index"],
-      ["/Bible/Hebrews/preface.html","Preface"]
-    ]
+    links: [["/Bible/Hebrews/index.html","Book Index"], ["/Bible/Hebrews/preface.html","Preface"]]
   },
   {
     title: "James",
     pill: "Epistle",
     desc: "Undivided loyalty, wisdom from above, mercy over status, integrity of speech.",
-    links: [
-      ["/Bible/James/index.html","Book Index"]
-    ]
+    links: [["/Bible/James/index.html","Book Index"]]
   },
   {
     title: "1 Peter",
     pill: "Epistle",
     desc: "Living as exiles, sharing in Christ's sufferings, and the imminent end of the Old Covenant age.",
-    links: [
-      ["/Bible/1Peter/index.html","Book Index"]
-    ]
+    links: [["/Bible/1Peter/index.html","Book Index"], ["/Bible/1Peter/preface.html","Preface"]]
   },
   {
     title: "2 Peter",
     pill: "Epistle",
     desc: "Scoffers, the melting of the covenantal elements (stoicheia), and the New Heavens and New Earth.",
-    links: [
-      ["/Bible/2Peter/index.html","Book Index"],
-      ["/Bible/2Peter/preface.html","Preface"]
-    ]
+    links: [["/Bible/2Peter/index.html","Book Index"], ["/Bible/2Peter/preface.html","Preface"]]
+  },
+  {
+    title: "Jude",
+    pill: "Epistle",
+    desc: "Tactical emergency broadcast: contending for the faith and the certain judgment of the first-century apostasy.",
+    links: [["/Bible/Jude/index.html","Book Index"], ["/Bible/Jude/preface.html","Preface"]]
   },
   {
     title: "Revelation",
     pill: "Apocalypse",
     desc: "Symbolic first-century apocalyptic language unveiling covenant judgment and New Jerusalem reality.",
-    links: [
-      ["/Bible/Revelation/index.html","Book Index"],
-      ["/Bible/Revelation/preface.html","Preface"]
-    ]
+    links: [["/Bible/Revelation/index.html","Book Index"], ["/Bible/Revelation/preface.html","Preface"]]
   }
 ];
 
 function esc(s){
-  return String(s).replace(/[&<>"']/g, m => ({
-    "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
-  }[m]));
+  return String(s).replace(/[&<>"']/g, m => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
 }
 
 function renderBooks(filterText=""){
   const q = filterText.trim().toLowerCase();
   const grid = document.getElementById("bookGrid");
-
-  const filtered = FINISHED_BOOKS.filter(b => {
-    if (!q) return true;
-    return (b.title + " " + b.pill + " " + b.desc).toLowerCase().includes(q);
-  });
+  const filtered = FINISHED_BOOKS.filter(b => !q || (b.title + " " + b.pill + " " + b.desc).toLowerCase().includes(q));
 
   grid.innerHTML = filtered.map(b => {
     const links = b.links.map(([href,label]) => `<a href="${esc(href)}">${esc(label)}</a>`).join(" · ");
-    return `
-      <div class="card">
-        <span class="pill">${esc(b.pill)}</span>
-        <h3>${esc(b.title)}</h3>
-        <p>${esc(b.desc)}</p>
-        <ul><li>${links}</li></ul>
-      </div>
-    `;
+    return `<div class="card"><span class="pill">${esc(b.pill)}</span><h3>${esc(b.title)}</h3><p>${esc(b.desc)}</p><ul><li>${links}</li></ul></div>`;
   }).join("");
 
-  const bookCount = document.getElementById("bookCount");
-  const bookCountInline = document.getElementById("bookCountInline");
-  if (bookCount) bookCount.textContent = String(FINISHED_BOOKS.length);
-  if (bookCountInline) bookCountInline.textContent = String(FINISHED_BOOKS.length);
+  document.getElementById("bookCount").textContent = String(FINISHED_BOOKS.length);
+  document.getElementById("bookCountInline").textContent = String(FINISHED_BOOKS.length);
 }
 
 document.addEventListener("DOMContentLoaded", () => {
