@@ -22,16 +22,22 @@
     .topnav { position: sticky; top: 0; background: #fff; border-bottom: 1px solid var(--line); z-index: 100; }
     .topnav .bar { max-width: var(--maxw); margin: 0 auto; padding: 12px var(--pad); display: flex; gap: 16px; justify-content: center; }
     .topnav a { text-decoration: none; color: var(--muted); font-size: 0.9rem; font-weight: 600; }
-    h1{ font-size: 2.6rem; letter-spacing: -0.04em; text-align: center; line-height: 1.1; }
+    h1{ font-size: 2.6rem; letter-spacing: -0.04em; text-align: center; line-height: 1.1; margin: 0.2em 0 0.4em; }
     .card{ border: 1px solid var(--line); border-radius: var(--radius); padding: 35px; margin-bottom: 2em; box-shadow: 0 4px 15px rgba(0,0,0,0.04); }
     blockquote { border-left: 5px solid var(--danger); margin: 2em 0; padding: 1.5em 2em; background: #fffcfc; font-style: italic; border-radius: 0 10px 10px 0; }
-    .btn{ display:inline-block; padding: 10px 20px; border: 1px solid var(--line); border-radius: 999px; text-decoration: none; color: #111; font-weight: 600; }
-    .btn:hover{ background: #eee; }
+    .btn{ display:inline-block; padding: 10px 20px; border: 1px solid var(--line); border-radius: 999px; text-decoration: none; color: #111; font-weight: 600; background: #fff; margin: 0 5px 10px; }
+    .btn:hover{ background: #f0f0f0; }
     footer{ margin-top: 5em; padding: 3em 1em; border-top: 1px solid var(--line); text-align: center; color: var(--muted); font-size: 0.95rem; }
   </style>
 </head>
 <body>
-  <div class="topnav"><div class="bar"><a href="/Bible/index.html">Index</a><a href="index.html">Jude Index</a><a href="/Bible/Prophecy/index.html">Prophecy Hub</a></div></div>
+  <div class="topnav">
+    <div class="bar">
+      <a href="/Bible/index.html">Index</a>
+      <a href="index.html">Jude Index</a>
+      <a href="/Bible/Prophecy/index.html">Prophecy Hub</a>
+    </div>
+  </div>
   <div class="wrap">
     <div class="card" style="text-align: center; padding: 60px 20px; border-top: 8px solid var(--danger);">
       <h1>Preface to Jude</h1>
@@ -52,21 +58,24 @@
       <p>Jude anchors his warnings in historical examples: Egypt, the rebellious Angels, and Sodom. These aren't just stories; they are legal precedents. Just as Sodom was physically and eternally removed, the "Sodom" of Jude's day (Apostate Jerusalem, <a href="https://ebible.org/web/REV11.htm#8" target="_blank">Rev 11:8</a>) was facing the same **Seated Verdict** of the King.</p>
     </section>
 
-    <hr style="border: 0; border-top: 1px solid var(--line); margin: 30px 0;" />
+    <hr style="border: 0; border-top: 1px solid var(--line); margin: 40px 0;" />
 
     <div style="text-align: center; margin: 20px 0;">
-      <span class="muted" style="margin-right: 10px;">Share this preface:</span>
-      <a class="btn" href="#" onclick="window.open('https://twitter.com/intent/tweet?text=Preface to Jude: The Final Alert at FPBible:&url=' + encodeURIComponent(window.location.href)); return false;">𝕏 Twitter</a>
-      <a class="btn" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href)); return false;">Facebook</a>
+      <span class="muted" style="display: block; margin-bottom: 15px;">Share this study:</span>
+      <a class="btn" href="#" onclick="window.open('https://twitter.com/intent/tweet?text=Preface to Jude: The Final Alert at FPBible:&url=' + encodeURIComponent(window.location.href)); return false;" rel="noopener noreferrer">𝕏 Twitter</a>
+      <a class="btn" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href)); return false;" rel="noopener noreferrer">Facebook</a>
+      <a class="btn" href="#" onclick="window.location.href='mailto:?subject=Preface to Jude&body=Check out the context of Jude at FPBible: ' + encodeURIComponent(window.location.href); return false;">Email</a>
     </div>
 
     <div style="text-align: center; margin-bottom: 30px;">
-      <a href="https://ko-fi.com/B0B61QC1BU" target="_blank"><img src="https://storage.ko-fi.com/cdn/kofi2.png?v=3" alt="Support on Ko-fi" style="height: 36px;"></a>
+      <a href="https://ko-fi.com/B0B61QC1BU" target="_blank">
+        <img src="https://storage.ko-fi.com/cdn/kofi2.png?v=3" alt="Support on Ko-fi" style="height: 36px; width: auto; border: none;">
+      </a>
     </div>
 
     <footer>
-      <p><strong>The Fulfilled Prophecy Bible</strong> — World English Bible (WEB)</p>
-      <p><a href="/Bible/about.html">About</a> · <a href="https://ko-fi.com/fpbible" target="_blank">Support</a></p>
+      <p><strong>The Fulfilled Prophecy Bible</strong> — World English Bible (WEB).</p>
+      <p style="margin-top: 15px;"><a href="/Bible/about.html">About</a> · <a href="https://ko-fi.com/fpbible" target="_blank">Support</a></p>
     </footer>
   </div>
 </body>
