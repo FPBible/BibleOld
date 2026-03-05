@@ -4,43 +4,189 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>1 Peter Index — Fulfilled Prophecy Bible (WEB)</title>
+  <meta name="description" content="Index of 1 Peter with covenantal insights into the living temple, the royal priesthood, and the judgment that began at the house of God in AD 70." />
+
   <style>
-    :root{ --maxw: 980px; --line: rgba(0,0,0,0.12); --muted: rgba(0,0,0,0.72); --soft: rgba(0,0,0,0.05); --soft2: rgba(0,0,0,0.03); --radius: 14px; }
-    body{ font-family: system-ui, sans-serif; line-height: 1.65; margin: 0; color: #111; background: #fff; }
+    :root{
+      --maxw: 980px;
+      --pad: 16px;
+      --line: rgba(0,0,0,0.12);
+      --muted: rgba(0,0,0,0.72);
+      --soft: rgba(0,0,0,0.05);
+      --soft2: rgba(0,0,0,0.03);
+      --radius: 14px;
+    }
+    body{
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.7;
+      margin: 0;
+      color: #111;
+      background: #fff;
+    }
     .wrap{ max-width: var(--maxw); margin: 0 auto; padding: 18px; }
-    nav.top, nav.bottom{ text-align: center; font-size: 0.9rem; margin: 15px 0 20px; color: var(--muted); }
-    nav.top a, nav.bottom a{ color: #0066cc; text-decoration: none; padding: 0 4px; }
-    h1{ margin: 0.2em 0 0.4em; font-size: 1.9rem; }
-    h2{ margin: 1.2em 0 0.4em; font-size: 1.4rem; }
-    .card{ border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; background: #fff; margin-bottom: 1em; }
-    .chapter-list { list-style: none; padding: 0; margin: 10px 0 0 0; }
-    .chapter-list li { margin-bottom: 8px; padding: 10px; border-radius: 8px; background: var(--soft2); border: 1px solid var(--line); }
-    .chapter-list a { font-weight: 600; text-decoration: none; color: #0066cc; }
-    .muted{ color: var(--muted); font-size: 0.95rem; }
+    
+    .topnav { 
+      position: sticky; 
+      top: 0; 
+      background: rgba(255,255,255,0.95); 
+      border-bottom: 1px solid var(--line); 
+      z-index: 100;
+    } 
+    .topnav .bar { 
+      max-width: var(--maxw); 
+      margin: 0 auto; 
+      padding: 12px var(--pad); 
+      display: flex; 
+      gap: 14px; 
+      flex-wrap: wrap; 
+      justify-content: center;
+    } 
+    .topnav a { 
+      text-decoration: none; 
+      color: #111; 
+      font-size: 0.95rem;
+      border-bottom: 2px solid transparent; 
+    } 
+    .topnav a:hover { border-bottom: 2px solid #111; } 
+
+    h1{ margin: 0.2em 0 0.4em; font-size: 2.5rem; letter-spacing: -0.03em; }
+    h2{ margin: 1.5em 0 0.5em; font-size: 1.8rem; border-bottom: 2px solid var(--soft); padding-bottom: 10px; }
+    h3{ margin: 1.2em 0 0.4em; font-size: 1.2rem; font-weight: 700; }
+    
+    .card{
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 24px;
+      background: #fff;
+      margin-bottom: 2em;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+    }
+
+    .chapter-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .chapter-card {
+      padding: 20px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      text-align: center;
+      text-decoration: none;
+      color: #111;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+    .chapter-card:hover {
+      background: var(--soft);
+      border-color: #0066cc;
+    }
+    
+    .btn{
+      display:inline-block;
+      padding: 9px 16px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      text-decoration: none;
+      color: #111;
+      background: #fff;
+      margin: 0 5px 10px;
+    }
+    .btn:hover{ background: var(--soft2); }
+
+    footer{
+      margin-top: 3em;
+      padding-top: 1.5em;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.92rem;
+      text-align: center;
+    }
+    footer .row{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+      align-items: center;
+      justify-content: center;
+    }
+    a{ color: #0066cc; text-decoration: none; font-weight: 500; }
+    a:hover{ text-decoration: underline; }
   </style>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q22N178LJ8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Q22N178LJ8');
+  </script>
 </head>
+
 <body>
-  <div class="wrap">
-    <nav class="top"><a href="/Bible/index.html">Bible Index</a> | <a href="/Bible/Prophecy/index.html">Prophecy Hub</a></nav>
-    <div class="card">
-      <h1>1 Peter</h1>
-      <p class="muted">Exiles, Identity, and the Imminent Judgment</p>
+  <div class="topnav">
+    <div class="bar">
+      <a href="/Bible/index.html">Main Index</a>
+      <a href="/Bible/Prophecy/index.html">Prophecy Hub</a>
+      <a href="/Bible/Studies/index.html">Studies</a>
     </div>
+  </div>
+
+  <div class="wrap">
+    <div class="card" style="border-top: 6px solid #0066cc; text-align: center;">
+      <h1>1 Peter</h1>
+      <p class="muted">Exiles, Royal Identity, and the Fiery Trial of the Transition.</p>
+    </div>
+
     <section class="card">
-      <h2>Read First</h2>
-      <ul><li><a href="preface.html"><strong>Preface to 1 Peter</strong></a> — Understanding the "at hand" horizon.</li></ul>
+      <h2>Book Summary</h2>
+      <p>
+        1 Peter is a "wartime" epistle written to the Jewish remnant (the Diaspora) as they navigated the final decade before the fall of Jerusalem. Peter prepares them for a "fiery trial"—the covenantal pressure that would consume the old world. He redefines their identity not by the physical Temple in Jerusalem, but as "living stones" in a spiritual house that no Roman legion could destroy.
+      </p>
     </section>
+
     <section class="card">
-      <h2>Chapter Index</h2>
-      <ul class="chapter-list">
-        <li><a href="pet1.html">Chapter 1</a> — A living hope and the salvation ready to be revealed.</li>
-        <li><a href="pet2.html">Chapter 2</a> — The chosen generation and the living stones of the new Temple.</li>
-        <li><a href="pet3.html">Chapter 3</a> — Suffering for righteousness and the antitype of baptism.</li>
-        <li><a href="pet4.html">Chapter 4</a> — The end of all things is at hand; judgment begins at the house of God.</li>
-        <li><a href="pet5.html">Chapter 5</a> — Shepherding the flock and the appearing of the Chief Shepherd.</li>
+      <h3>Covenantal Keys for 1 Peter</h3>
+      <ul>
+        <li><strong>The "At Hand" Horizon:</strong> Peter explicitly states that "the end of all things is at hand" (1 Pet 4:7), locking the fulfillment to his own generation.</li>
+        <li><strong>The Living Temple:</strong> Christ is the cornerstone of a new priesthood that replaces the Levitical system, which Peter saw as nearing its end (1 Pet 2:4-9).</li>
+        <li><strong>Judgment at the House of God:</strong> Peter identifies the AD 70 destruction of the Temple as the point where judgment begins with the "house of God" (the apostate Old Covenant establishment) before moving to the nations (1 Pet 4:17).</li>
+        <li><strong>The Fiery Trial:</strong> Rather than a global apocalypse, this refers to the local persecution and the literal fire that would consume the Jerusalem Temple.</li>
       </ul>
     </section>
-    <footer><p><strong>The Fulfilled Prophecy Bible</strong> — World English Bible (WEB)</p></footer>
+
+    <section class="card">
+      <h2>Select a Chapter</h2>
+      <div class="chapter-list">
+        <a href="pet1.html" class="chapter-card">Chapter 1<br><small class="muted">Salvation Ready to be Revealed</small></a>
+        <a href="pet2.html" class="chapter-card" style="border-color: #0066cc; background: #f0f7ff;">Chapter 2<br><small style="color: #0066cc;">The Royal Priesthood</small></a>
+        <a href="pet3.html" class="chapter-card">Chapter 3<br><small class="muted">Suffering and the Antitype</small></a>
+        <a href="pet4.html" class="chapter-card" style="border-color: #d32f2f; background: #fffcfc;">Chapter 4<br><small style="color: #d32f2f;">The End is At Hand</small></a>
+        <a href="pet5.html" class="chapter-card">Chapter 5<br><small class="muted">The Chief Shepherd's Appearing</small></a>
+      </div>
+    </section>
+
+    <hr style="border: 0; border-top: 1px solid var(--line); margin: 30px 0;" />
+
+    <div style="text-align: center; margin: 20px 0;">
+      <span class="muted" style="margin-right: 10px;">Share this index:</span>
+      <a class="btn" href="#" onclick="window.open('https://twitter.com/intent/tweet?text=Read 1 Peter through the lens of audience relevance and covenantal fulfillment at FPBible:&url=' + encodeURIComponent(window.location.href)); return false;" rel="noopener noreferrer">𝕏 Twitter</a>
+      <a class="btn" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href)); return false;" rel="noopener noreferrer">Facebook</a>
+      <a class="btn" href="#" onclick="window.location.href='mailto:?subject=1 Peter Bible Study&body=Check out the covenantal insights on 1 Peter: ' + encodeURIComponent(window.location.href); return false;">Email</a>
+    </div>
+
+    <div style="text-align: center; margin-bottom: 30px;">
+      <a href="https://ko-fi.com/B0B61QC1BU" target="_blank">
+        <img src="https://storage.ko-fi.com/cdn/kofi2.png?v=3" alt="Support on Ko-fi" style="height: 36px; width: auto; border: none;">
+      </a>
+    </div>
+
+    <footer>
+      <div class="row">
+        <div><strong>The Fulfilled Prophecy Bible</strong> — World English Bible (WEB) Translation.</div>
+        <div><a href="/Bible/about.html">About</a> · <a href="https://ko-fi.com/fpbible" target="_blank">Support</a></div>
+      </div>
+    </footer>
   </div>
 </body>
 </html>
