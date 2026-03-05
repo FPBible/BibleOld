@@ -50,7 +50,7 @@
     .topnav a:hover { border-bottom: 2px solid #111; } 
 
     h1{ margin: 0.2em 0 0.4em; font-size: 2.5rem; letter-spacing: -0.03em; }
-    h2{ margin: 1.5em 0 0.5em; font-size: 1.8rem; }
+    h2{ margin: 1.5em 0 0.5em; font-size: 1.8rem; border-bottom: 2px solid var(--soft); padding-bottom: 10px; }
     h3{ margin: 1.2em 0 0.4em; font-size: 1.2rem; font-weight: 700; }
     
     .card{
@@ -83,6 +83,18 @@
       border-color: #0066cc;
     }
     
+    .btn{
+      display:inline-block;
+      padding: 9px 16px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      text-decoration: none;
+      color: #111;
+      background: #fff;
+      margin: 0 5px 10px;
+    }
+    .btn:hover{ background: var(--soft2); }
+
     footer{
       margin-top: 3em;
       padding-top: 1.5em;
@@ -90,6 +102,13 @@
       color: var(--muted);
       font-size: 0.92rem;
       text-align: center;
+    }
+    footer .row{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+      align-items: center;
+      justify-content: center;
     }
     a{ color: #0066cc; text-decoration: none; font-weight: 500; }
     a:hover{ text-decoration: underline; }
@@ -106,7 +125,7 @@
   </div>
 
   <div class="wrap">
-    <div class="card" style="border-top: 6px solid #d32f2f;">
+    <div class="card" style="border-top: 6px solid #d32f2f; text-align: center;">
       <h1>2 Peter</h1>
       <p class="muted">The Dissolution of the Elements and the New Covenant Hope.</p>
     </div>
@@ -136,9 +155,26 @@
       </div>
     </section>
 
+    <hr style="border: 0; border-top: 1px solid var(--line); margin: 30px 0;" />
+
+    <div style="text-align: center; margin: 20px 0;">
+      <span class="muted" style="margin-right: 10px;">Share this index:</span>
+      <a class="btn" href="#" onclick="window.open('https://twitter.com/intent/tweet?text=Study the Book of 2 Peter through a fulfilled lens at FPBible:&url=' + encodeURIComponent(window.location.href)); return false;" rel="noopener noreferrer">𝕏 Twitter</a>
+      <a class="btn" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href)); return false;" rel="noopener noreferrer">Facebook</a>
+      <a class="btn" href="#" onclick="window.location.href='mailto:?subject=2 Peter Bible Study&body=Check out the covenantal insights on 2 Peter: ' + encodeURIComponent(window.location.href); return false;">Email</a>
+    </div>
+
+    <div style="text-align: center; margin-bottom: 30px;">
+      <a href="https://ko-fi.com/B0B61QC1BU" target="_blank">
+        <img src="https://storage.ko-fi.com/cdn/kofi2.png?v=3" alt="Support on Ko-fi" style="height: 36px; width: auto; border: none;">
+      </a>
+    </div>
+
     <footer>
-      <p><strong>The Fulfilled Prophecy Bible</strong> — World English Bible (WEB) Translation.</p>
-      <p><a href="https://ko-fi.com/B0B61QC1BU" target="_blank">Support on Ko-fi</a></p>
+      <div class="row">
+        <div><strong>The Fulfilled Prophecy Bible</strong> — World English Bible (WEB) Translation.</div>
+        <div><a href="/Bible/about.html">About</a> · <a href="https://ko-fi.com/fpbible" target="_blank">Support</a></div>
+      </div>
     </footer>
   </div>
 </body>
