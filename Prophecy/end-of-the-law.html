@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>The End of the Law: From Shadow to Substance — FPBible</title>
-  <meta name="description" content="A covenantal study on the legal termination of the Mosaic Law and the establishment of the New Covenant in AD 70." />
+  <title>The End of the Law: Covenant Jurisdiction — FPBible</title>
+  <meta name="description" content="A study on the legal termination of the Mosaic Law and the establishment of New Creation life." />
 
   <style>
     :root{
@@ -15,107 +15,121 @@
       --soft: rgba(0,0,0,0.05);
       --soft2: rgba(0,0,0,0.03);
       --radius: 14px;
+      --accent: #0066cc;
+      --danger: #d32f2f;
     }
     body{
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       line-height: 1.75;
       margin: 0;
       color: #111;
-      background: #fff;
+      background: #f9f9f9;
     }
     .wrap{ max-width: var(--maxw); margin: 0 auto; padding: 18px; }
     
     .topnav { 
       position: sticky; 
       top: 0; 
-      background: rgba(255,255,255,0.95); 
+      background: rgba(255,255,255,0.98); 
       border-bottom: 1px solid var(--line); 
       z-index: 100;
+      backdrop-filter: blur(8px);
     } 
     .topnav .bar { 
       max-width: var(--maxw); 
       margin: 0 auto; 
       padding: 12px var(--pad); 
       display: flex; 
-      gap: 14px; 
+      gap: 16px; 
       flex-wrap: wrap; 
       justify-content: center;
     } 
     .topnav a { 
       text-decoration: none; 
-      color: #111; 
-      font-size: 0.95rem;
-      border-bottom: 2px solid transparent; 
+      color: var(--muted); 
+      font-size: 0.9rem;
+      font-weight: 500;
     } 
-    .topnav a:hover { border-bottom: 2px solid #111; } 
+    .topnav a:hover { color: #111; } 
 
-    h1{ margin: 0.2em 0 0.4em; font-size: 2.5rem; letter-spacing: -0.03em; line-height: 1.1; }
-    h2{ margin: 1.8em 0 0.6em; font-size: 1.8rem; border-bottom: 2px solid var(--soft); padding-bottom: 10px; color: #333; }
-    h3{ margin: 1.4em 0 0.5em; font-size: 1.35rem; font-weight: 700; color: #444; }
+    h1{ margin: 0.2em 0 0.4em; font-size: 2.8rem; letter-spacing: -0.04em; line-height: 1.1; }
+    h2{ margin: 2em 0 0.8em; font-size: 1.8rem; border-bottom: 2px solid var(--soft); padding-bottom: 12px; color: #111; }
+    h3{ margin: 1.5em 0 0.5em; font-size: 1.35rem; font-weight: 700; color: #333; }
     
     .card{
       border: 1px solid var(--line);
       border-radius: var(--radius);
-      padding: 30px;
+      padding: 35px;
       background: #fff;
       margin-bottom: 2em;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.04);
     }
-    .muted{ color: var(--muted); font-size: 1rem; }
+    .muted{ color: var(--muted); font-size: 1.1rem; }
     
     blockquote {
-      border-left: 5px solid #0066cc;
-      margin: 2em 0;
-      padding: 1.5em 2em;
+      border-left: 4px solid var(--accent);
+      margin: 2.5em 0;
+      padding: 1.5em 2.5em;
       font-style: italic;
-      background: #f0f7ff;
-      border-radius: 0 8px 8px 0;
-      font-size: 1.15rem;
+      background: #f8fbff;
+      border-radius: 0 10px 10px 0;
+      font-size: 1.2rem;
       line-height: 1.6;
     }
 
     .callout {
-      background: #fff8e1;
-      border: 1px solid #ffe082;
-      border-radius: 8px;
-      padding: 20px;
-      margin: 20px 0;
+      background: #fff9eb;
+      border: 1px solid #ffeeba;
+      border-radius: 10px;
+      padding: 25px;
+      margin: 25px 0;
+      font-size: 1.1rem;
     }
 
+    .pill-box { margin-top: 25px; }
     .pill {
       display: inline-block;
-      background: #eef2ff;
-      border: 1px solid #d1d5db;
-      padding: 5px 15px;
-      border-radius: 20px;
+      background: #f0f4f8;
+      border: 1px solid var(--line);
+      padding: 6px 16px;
+      border-radius: 30px;
       font-size: 0.85rem;
       margin: 0 8px 10px 0;
       font-weight: 700;
-      color: #374151;
+      color: #444;
       text-transform: uppercase;
       letter-spacing: 0.05em;
     }
 
     .btn{
       display:inline-block;
-      padding: 9px 16px;
+      padding: 10px 20px;
       border: 1px solid var(--line);
       border-radius: 999px;
       text-decoration: none;
       color: #111;
       background: #fff;
-      margin: 0 5px 10px;
+      margin: 0 5px 15px;
+      font-weight: 600;
+      transition: all 0.2s ease;
     }
-    .btn:hover{ background: var(--soft2); }
+    .btn:hover{ background: #f0f0f0; border-color: #888; }
 
     footer{
-      margin-top: 4em;
-      padding-top: 2em;
+      margin-top: 5em;
+      padding: 3em 1em;
       border-top: 1px solid var(--line);
       color: var(--muted);
       font-size: 0.95rem;
       text-align: center;
+      background: #fff;
     }
+
+    ul { margin-left: 1.5em; }
+    li { margin-bottom: 1em; }
+    strong { color: #000; }
+    
+    .highlight-red { color: var(--danger); font-weight: 800; border-bottom: 2px solid #fee2e2; }
   </style>
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q22N178LJ8"></script>
@@ -130,100 +144,123 @@
 <body>
   <div class="topnav">
     <div class="bar">
-      <a href="/Bible/index.html">Main Index</a>
+      <a href="/Bible/index.html">Bible Index</a>
       <a href="/Bible/Prophecy/index.html">Prophecy Hub</a>
-      <a href="/Bible/Studies/index.html">Studies Index</a>
+      <a href="/Bible/Hebrews/index.html">Hebrews 8</a>
+      <a href="/Bible/Galatians/index.html">Galatians 3</a>
     </div>
   </div>
 
   <div class="wrap">
-    <div class="card" style="text-align: center; padding: 60px 20px; border-top: 6px solid #0066cc;">
+    <div class="card" style="text-align: center; padding: 70px 25px; border-top: 8px solid var(--accent);">
       <h1>The End of the Law</h1>
-      <p class="muted" style="font-size: 1.2rem; margin-top: 15px;">Understanding the legal termination of the Old Covenant in AD 70.</p>
-      <div style="margin-top: 25px;">
-        <span class="pill">Covenantal Fulfillment</span>
-        <span class="pill">Hebrews 10:9</span>
-        <span class="pill">AD 70</span>
+      <p class="muted">Covenant Jurisdiction • The AD 30-70 Overlap • New Creation Life</p>
+      <div class="pill-box">
+        <span class="pill">Jurisdiction</span>
+        <span class="pill">Romans 7</span>
+        <span class="pill">AD 70 Removal</span>
       </div>
     </div>
 
     <section class="card">
-      <h2>1. The Misunderstood "Jot and Tittle"</h2>
-      <p>
-        The most common argument against the "End of the Law" is a misreading of Matthew 5:17-18.
+      <p style="font-size: 1.15rem;">This page exists to settle a question that controls how the entire Bible is read: <strong>Are believers in Christ still under the jurisdiction of the Mosaic Law?</strong></p>
+      <p style="font-size: 1.6rem; text-align: center; margin: 1.5em 0;">
+        The biblical answer is direct and non-negotiable: <span class="highlight-red">No.</span>
       </p>
-      <blockquote>
-        "Don’t think that I came to destroy the law or the prophets. I didn’t come to destroy, but to fulfill. For most certainly I tell you, until heaven and earth pass away, not even one smallest letter or one tiny pen stroke shall in any way pass away from the law, **until all things are accomplished**." (WEB)
-      </blockquote>
-      <p>
-        Notice the condition: the Law remains <strong>until</strong> all is accomplished. If any part of the Law (temple, priesthood, sacrifice) is still binding today, it means Christ failed to "accomplish all." But if all was accomplished in His finished work and the destruction of the Old World in AD 70, then the Law has legally passed away.
-      </p>
+      <p>"Not under law" does not mean "less serious faith," "lower standards," or "moral chaos." It means a change of covenant world, a change of legal authority, and a change of operating power in the people of God.</p>
+      
+      <div class="callout">
+        <strong>Core Thesis:</strong> The Mosaic Law was a temporary covenant administration given to Israel. It was tied to temple, priesthood, sacrifice, land, and national identity. It was never presented as an eternal moral constitution for the nations or the church.
+      </div>
     </section>
 
     <section class="card">
-      <h2>2. The Legal Mechanism: Removal to Establish</h2>
-      <p>
-        The New Testament does not describe a "patch" or an "update" to the Law. It describes a total replacement.
-      </p>
-      <blockquote>
-        "He takes away the first, that he may establish the second."<br />
-        <strong>— Hebrews 10:9</strong>
-      </blockquote>
-      <p>
-        The High Priestly logic of Hebrews is clear: the two covenants cannot legally occupy the same space. The "first" (the Law) had to be <strong>taken away</strong> to make room for the "second" (the New Covenant). As long as the physical Temple stood and the Levitical priests served, the "first" was still "having standing." The fall of the Temple in AD 70 was the final, historical eviction of the "first."
-      </p>
-    </section>
+      <h2>What “Not Under Law” Actually Means</h2>
+      
+      <h3>1) Jurisdiction Has Changed (Legal Authority)</h3>
+      <p>Paul’s statement “you are not under law but under grace” (Romans 6:14) is not a bumper sticker slogan. It is strict covenant-legal language. A law has authority only within its covenant domain. When that covenant ends, its authority ends with it.</p>
+      <p>Paul proves this with courtroom logic in Romans 7:1-6. Law has dominion only while the covenant subject lives. Through union with Christ’s death, believers have become <strong>“dead to the law”</strong> in order to belong to Another. If you are “dead to the law,” you are not partially under it, not spiritually under it, and not under a “moral slice” of it. You are outside its covenant courtroom entirely.</p>
 
-    <section class="card" style="text-align: center;">
-      <h2>Historical Receipt: The Arch of Titus</h2>
-      <img src="/Bible/images/arch-of-titus.png" alt="Arch of Titus relief showing Temple spoils" style="max-width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--line); margin-bottom: 20px;">
-      <p class="muted" style="max-width: 800px; margin: 0 auto; text-align: left;">
-        This historical relief is the visual proof of the <strong>End of the Law</strong>. The physical instruments of the Law—the Menorah and the Table of Showbread—were carried into exile, never to return to a functioning Mosaic system. This was the public manifestation that the "first" had been taken away.
-      </p>
+      <h3>2) Condemnation Has Ended (Prosecution Power)</h3>
+      <p>The Law’s unique covenant power was not transformation. It was prosecution. Paul calls it “the ministry of death” and “the ministry of condemnation” (2 Corinthians 3:7–9).</p>
+      <p>That is why “death” in Paul is not merely biological—it is covenantal: separation, accusation, exclusion, and condemnation. In Christ, the prosecuting verdict is canceled: <strong>“no condemnation”</strong> (Romans 8:1).</p>
+
+      <h3>3) Identity Has Changed (People Definition)</h3>
+      <p>Under Sinai, identity was maintained by boundary markers (circumcision, food laws, calendar observance, temple access). In Christ, identity is defined by union and new humanity. The dividing wall is removed and Jew/Gentile are made one (Ephesians 2:11–22). This is why Paul treats Law-return as rebuilding what Christ destroyed. It is regression, not depth.</p>
     </section>
 
     <section class="card">
-      <h2>3. The Dissolution of the Elements (Stoicheia)</h2>
-      <p>
-        In 2 Peter 3, the "elements" (<em>stoicheia</em>) that melt with fervent heat are not atoms or molecules. In the Greek of the New Testament, <em>stoicheia</em> consistently refers to the **elementary principles of the Law**.
-      </p>
+      <h2>Walking by the Spirit Is Walking in Love</h2>
+      <p>Paul’s contrast between <strong>Law</strong> and <strong>Spirit</strong> is not obedience vs. disobedience. It is external covenant enforcement vs. internal covenant life. The New Covenant does not produce holiness by threatening the flesh; it produces holiness by sharing life.</p>
+      <p>“Walk by the Spirit” is not vague, mystical spirituality. Paul defines it clearly: the fruit of the Spirit is love (Galatians 5:22). This is why Paul says, “He who loves another has fulfilled the Law” (Romans 13:8), and “all the Law is fulfilled in one word: you shall love your neighbor as yourself” (Galatians 5:14).</p>
+      
+      <blockquote style="background: #fdfaf5; border-color: #f59e0b;">
+        <strong>Note:</strong> Love does not <em>revive</em> Sinai. Love <em>fulfills</em> Sinai. Fulfillment means the Law’s intended outcome is reached, and its jurisdiction is no longer needed. The Spirit produces what the Law demanded but could never generate.
+      </blockquote>
+    </section>
+
+    <section class="card">
+      <h2>The AD 30–70 Overlap Period</h2>
+      <p>The cross legally disarmed the Law (Colossians 2:14), but the old covenant world still stood institutionally for forty years. From AD 30 to AD 70, two covenant realities overlapped: the New Covenant was inaugurated, while the Old Covenant still existed publicly through temple administration in Jerusalem.</p>
+      <p>That is why apostolic writings sound like a war zone. The letters contain sharp warnings about “returning,” “being bewitched,” and “falling from grace.” The Apostles were not writing into a peaceful theological debate. They were writing inside a live covenant collision where Torah-identity still claimed authority and demanded submission.</p>
+    </section>
+
+    <section class="card">
+      <h2>AD 70: The Total End of the Law System</h2>
+      
+      
+      <p>AD 70 was the historical termination of the Mosaic covenant world’s public center. Jerusalem fell, the Temple was destroyed, sacrifice ceased, the Levitical priesthood ended, genealogical authority collapsed, and the covenant enforcement system lost its operating infrastructure.</p>
+      <p>This is not symbolic language. It is the real-world annihilation of the Law system as an administration. You cannot “go back” to what was dismantled. You can only reenact it as a religious imitation. Hebrews describes the old covenant as obsolete and “ready to vanish away” (Hebrews 8:13), perfectly matching Jesus’ time-statements regarding that generation (Matthew 24:34).</p>
+    </section>
+
+    <section class="card">
+      <h2>Where Covenant Theology and Theonomy Go Wrong</h2>
+      <h3>1) They Redefine Fulfillment to Preserve Sinai</h3>
+      <p>Covenant theology often says the Law is “fulfilled” while still functioning as the Christian rule of life. That is not fulfillment; it is reinstallation. It turns the gospel into “forgiven so you can go back to law.” When Sinai becomes the baseline of Christian life, assurance is quietly tied to performance, and holiness becomes fear-driven maintenance.</p>
+      <h3>2) Theonomy Turns Sinai Into a Political Program</h3>
+      <p>Theonomy attempts to universalize Israel’s covenant charter and enforce it through modern geopolitical states. Jesus completely rejects this: His kingdom is not from this world (John 18:36).</p>
+      <p>The popular "moral / civil / ceremonial" division is a later theological strategy to preserve Sinai while discarding what cannot be kept. That grid is not how the Apostles argue. Scripture treats the Law as a unified package (James 2:10).</p>
+    </section>
+
+    <section class="card" style="background: #111; color: #fff; border: none;">
+      <h2 style="color: #fff; border-bottom-color: #333;">New Creation Reality</h2>
+      <p style="font-size: 1.1rem;">In the New Creation, righteousness is not a demand hanging over you. It is a shared life in Christ. You are complete in Him (Colossians 2:10), led by the Spirit, and entirely free from the Law’s jurisdiction. Love is not law-lite; love is law transcended. Against such things there is no law—not because standards were lowered, but because the Law has nothing left to prosecute where life reigns.</p>
+      <p style="text-align: center; font-weight: 700; font-size: 1.3rem; margin-top: 2em; color: var(--accent);">You are reading covenant history for assurance, not headlines for doom.</p>
+    </section>
+
+    <section class="card" style="border-style: dashed;">
+      <h3>Reflection</h3>
       <ul>
-        <li><strong>Galatians 4:3, 9:</strong> Paul refers to the Law as "weak and miserable elementary principles."</li>
-        <li><strong>Colossians 2:8, 20:</strong> He warns against being subject to the "elements of the world."</li>
+        <li>Where have you measured your standing with God by Sinai-based categories rather than union with Christ?</li>
+        <li>What changes when holiness is treated as Spirit-produced love rather than law-driven pressure?</li>
+        <li>Which parts of your thinking are still stuck in the AD 30–70 overlap rather than the finished New Creation?</li>
       </ul>
-      <p>
-        The "melting" was the fiery judgment of AD 70 that dissolved the religious building blocks of the Mosaic age, leaving only the "unshakable" New Covenant reality.
-      </p>
     </section>
 
-    <section class="card" style="background: #fdfaf5; border-left: 6px solid #0066cc;">
-      <h2>4. Living Outside the Law</h2>
-      <p>
-        The "End of the Law" means that your standing with God is no longer managed by a system of distance, ritual, or performance. You do not live under a covenant that is "ready to vanish" (Heb 8:13); you live in a Kingdom that has already been established.
-      </p>
-      <div class="callout" style="background: #fff; border-color: #0066cc;">
-        <strong>The Reality:</strong> If the Law ended in AD 70, then the "accuser of the brothers" lost his legal standing. There is no Law to prosecute you, and no Temple to keep you out. Access is finished. Presence is constant.
-      </div>
-    </section>
+    <hr style="border: 0; border-top: 1px solid var(--line); margin: 40px 0;" />
 
-    <hr style="border: 0; border-top: 1px solid var(--line); margin: 30px 0;" />
-
-    <div style="text-align: center; margin: 20px 0;">
-      <span class="muted" style="margin-right: 10px;">Share this study:</span>
-      <a class="btn" href="#" onclick="window.open('https://twitter.com/intent/tweet?text=The End of the Law: From Shadow to Substance at FPBible:&url=' + encodeURIComponent(window.location.href)); return false;" rel="noopener noreferrer">𝕏 Twitter</a>
+    <div style="text-align: center; margin: 30px 0;">
+      <span class="muted" style="display: block; margin-bottom: 15px;">Share this study:</span>
+      <a class="btn" href="#" onclick="window.open('https://twitter.com/intent/tweet?text=The End of the Law: Covenant Jurisdiction at FPBible:&url=' + encodeURIComponent(window.location.href)); return false;" rel="noopener noreferrer">𝕏 Twitter</a>
       <a class="btn" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href)); return false;" rel="noopener noreferrer">Facebook</a>
-      <a class="btn" href="#" onclick="window.location.href='mailto:?subject=Study: The End of the Law&body=Check out this covenantal study on the termination of the Mosaic Law: ' + encodeURIComponent(window.location.href); return false;">Email</a>
+      <a class="btn" href="#" onclick="window.location.href='mailto:?subject=Study: The End of the Law&body=Check out this study on the legal termination of the Law: ' + encodeURIComponent(window.location.href); return false;">Email</a>
     </div>
 
-    <div style="text-align: center; margin-bottom: 30px;">
+    <div style="text-align: center; margin-bottom: 50px;">
       <a href="https://ko-fi.com/B0B61QC1BU" target="_blank">
-        <img src="https://storage.ko-fi.com/cdn/kofi2.png?v=3" alt="Support on Ko-fi" style="height: 36px; width: auto; border: none;">
+        <img src="https://storage.ko-fi.com/cdn/kofi2.png?v=3" alt="Support on Ko-fi" style="height: 40px; width: auto; border: none;">
       </a>
     </div>
 
     <footer>
-      <p><strong>The Fulfilled Prophecy Bible</strong> — From Shadow to Substance.</p>
-      <p><a href="/Bible/about.html">About</a> · <a href="https://ko-fi.com/fpbible" target="_blank">Support</a></p>
+      <div style="margin-bottom: 25px;">
+        <a href="/Bible/index.html">Bible Index</a> · 
+        <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> · 
+        <a href="/Bible/Hebrews/index.html">Hebrews 8</a> · 
+        <a href="/Bible/Galatians/index.html">Galatians 3</a>
+      </div>
+      <p><strong>The Fulfilled Prophecy Bible</strong> — World English Bible (WEB). <br>Commentary honours audience relevance, time statements, and first-century fulfillment.</p>
+      <p style="margin-top: 15px;"><a href="/Bible/about.html">About</a> · <a href="https://ko-fi.com/fpbible" target="_blank">Support</a></p>
     </footer>
   </div>
 </body>
