@@ -90,6 +90,13 @@
       font-size: 0.95rem;
       text-align: center;
     }
+    footer .row{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+      align-items: center;
+      justify-content: space-between;
+    }
     a{ color: #0066cc; text-decoration: none; font-weight: 600; }
     a:hover{ text-decoration: underline; }
     
@@ -106,6 +113,18 @@
       text-transform: uppercase;
       letter-spacing: 0.05em;
     }
+
+    .btn{
+      display:inline-block;
+      padding: 9px 16px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      text-decoration: none;
+      color: #111;
+      background: #fff;
+      margin: 0 5px 10px;
+    }
+    .btn:hover{ background: var(--soft2); }
 
     ul { margin-left: 1.2em; }
     li { margin-bottom: 0.8em; }
@@ -220,14 +239,31 @@
       <p>
         But the Preterist view recognizes that the High Priest <strong>has emerged</strong>. The <em>Parousia</em> has been manifested. The Old World is gone, and we now live in the **unshakable Kingdom** (Hebrews 12:28). We do not live in a state of "waiting for a return"; we live in a state of "abiding in a Presence."
       </p>
-      <div class="callout">
+      <div class="callout" style="background: #fff; border-color: #f59e0b;">
         <strong>The Shift:</strong> Tradition says "He is coming." Scripture says "He is here." New Creation life begins when you stop looking at the horizon for a rescue and start looking at the Throne for your current reality.
       </div>
     </section>
 
+    <hr />
+
+    <div style="text-align: center; margin: 20px 0;">
+      <span class="muted" style="margin-right: 10px;">Share this study:</span>
+      <a class="btn" href="#" onclick="window.open('https://twitter.com/intent/tweet?text=Is the Second Coming a Biblical Phrase? Deep-dive at FPBible:&url=' + encodeURIComponent(window.location.href)); return false;" rel="noopener noreferrer">𝕏 Twitter</a>
+      <a class="btn" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href)); return false;" rel="noopener noreferrer">Facebook</a>
+      <a class="btn" href="#" onclick="window.location.href='mailto:?subject=Biblical Study: The Second Coming&body=Check out this deep-dive into the terminology of Christ return: ' + encodeURIComponent(window.location.href); return false;">Email</a>
+    </div>
+
+    <div style="text-align: center; margin-bottom: 30px;">
+      <a href="https://ko-fi.com/B0B61QC1BU" target="_blank">
+        <img src="https://storage.ko-fi.com/cdn/kofi2.png?v=3" alt="Support on Ko-fi" style="height: 36px; width: auto; border: none;">
+      </a>
+    </div>
+
     <footer>
-      <p><strong>The Fulfilled Prophecy Bible</strong> — From Shadow to Substance.</p>
-      <p style="margin-top: 10px;"><a href="https://ko-fi.com/B0B61QC1BU" target="_blank">Support this work on Ko-fi</a></p>
+      <div class="row" style="justify-content: center; gap: 20px; display: flex;">
+        <div><strong>The Fulfilled Prophecy Bible</strong> — From Shadow to Substance.</div>
+        <div><a href="/Bible/about.html">About</a> · <a href="https://ko-fi.com/fpbible" target="_blank">Support</a></div>
+      </div>
     </footer>
   </div>
 </body>
