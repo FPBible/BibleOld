@@ -15,44 +15,122 @@
       --soft: rgba(0,0,0,0.05);
       --radius: 14px;
       --accent: #0066cc;
+      --danger: #d32f2f;
+      --warn: #f59e0b;
     }
-    body{ font-family: system-ui, -apple-system, sans-serif; line-height: 1.7; margin: 0; background: #fff; }
+    body{ font-family: system-ui, -apple-system, sans-serif; line-height: 1.7; margin: 0; background: #fff; color: #111; }
     .wrap{ max-width: var(--maxw); margin: 0 auto; padding: 18px; }
-    .topnav { position: sticky; top: 0; background: #fff; border-bottom: 1px solid var(--line); z-index: 100; }
-    .topnav .bar { max-width: var(--maxw); margin: 0 auto; padding: 12px var(--pad); display: flex; gap: 16px; justify-content: center; }
+    
+    .topnav { 
+      position: sticky; 
+      top: 0; 
+      background: rgba(255,255,255,0.98); 
+      border-bottom: 1px solid var(--line); 
+      z-index: 100;
+      backdrop-filter: blur(8px);
+    } 
+    .topnav .bar { 
+      max-width: var(--maxw); 
+      margin: 0 auto; 
+      padding: 12px var(--pad); 
+      display: flex; 
+      gap: 16px; 
+      justify-content: center;
+    } 
     .topnav a { text-decoration: none; color: var(--muted); font-size: 0.9rem; font-weight: 600; }
-    h1{ font-size: 2.5rem; letter-spacing: -0.03em; text-align: center; }
-    .card{ border: 1px solid var(--line); border-radius: var(--radius); padding: 30px; margin-bottom: 2em; box-shadow: 0 4px 12px rgba(0,0,0,0.03); }
-    .btn{ display:inline-block; padding: 10px 20px; border: 1px solid var(--line); border-radius: 999px; text-decoration: none; color: #111; font-weight: 600; background: #f9f9f9; }
-    .btn:hover{ background: #eee; }
-    footer{ margin-top: 4em; padding: 2em; border-top: 1px solid var(--line); text-align: center; color: var(--muted); font-size: 0.9rem; }
+    .topnav a:hover { color: #111; }
+
+    h1{ margin: 0.2em 0 0.4em; font-size: 2.5rem; letter-spacing: -0.03em; text-align: center; }
+    h2{ margin: 1.5em 0 0.8em; font-size: 1.8rem; border-bottom: 2px solid var(--soft); padding-bottom: 10px; }
+    h3{ margin: 1.2em 0 0.4em; font-size: 1.2rem; font-weight: 700; }
+
+    .card{ 
+      border: 1px solid var(--line); 
+      border-radius: var(--radius); 
+      padding: 30px; 
+      margin-bottom: 2em; 
+      box-shadow: 0 4px 12px rgba(0,0,0,0.03); 
+      background: #fff;
+    }
+    
+    .btn{ 
+      display:inline-block; 
+      padding: 12px 20px; 
+      border: 1px solid var(--line); 
+      border-radius: 999px; 
+      text-decoration: none; 
+      color: #111; 
+      font-weight: 600; 
+      background: #fff; 
+      margin: 0 5px 10px;
+    }
+    .btn:hover{ background: #f0f0f0; }
+
+    footer{ 
+      margin-top: 5em; 
+      padding: 3em 1em; 
+      border-top: 1px solid var(--line); 
+      text-align: center; 
+      color: var(--muted); 
+      font-size: 0.95rem; 
+    }
   </style>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q22N178LJ8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Q22N178LJ8');
+  </script>
 </head>
 <body>
-  <div class="topnav"><div class="bar"><a href="/Bible/index.html">Main Index</a><a href="/Bible/Prophecy/index.html">Prophecy Hub</a></div></div>
+  <div class="topnav">
+    <div class="bar">
+      <a href="/Bible/index.html">Main Index</a>
+      <a href="/Bible/Prophecy/index.html">Prophecy Hub</a>
+      <a href="/Bible/about.html">About</a>
+    </div>
+  </div>
+
   <div class="wrap">
-    <div class="card" style="border-top: 8px solid #d32f2f;">
+    <div class="card" style="border-top: 8px solid var(--danger);">
       <h1>Jude</h1>
-      <p style="text-align:center;" class="muted">The Emergency Broadcast of the New Testament</p>
+      <p style="text-align:center;" class="muted">Emergency Broadcast • Contending for the Transition</p>
     </div>
 
-    <div class="card" style="background: #fff8e1; border-color: #ffe082; text-align: center;">
+    <div class="card" style="background: linear-gradient(135deg, rgba(245,158,11,0.08) 0%, transparent 100%); border-left: 4px solid var(--warn); text-align: center;">
       <h3>Strategic Context</h3>
-      <p>Establish the AD 60s emergency before reading the verdict.</p>
-      <a href="preface.html" class="btn">Read Preface to Jude</a>
+      <p>Identify the first-century infiltrators before reading the verdict.</p>
+      <a href="preface.html" class="btn" style="border-color: var(--warn); background: #fff;">Read Preface to Jude</a>
     </div>
 
-    <div class="card">
-      <h2>Select Chapter</h2>
-      <a href="jude1.html" class="btn" style="width: 100%; text-align: left; padding: 20px; border-color: #d32f2f; background: #fffcfc;">
+    <section class="card">
+      <h2>Read the Epistle</h2>
+      <a href="jude1.html" class="btn" style="width: 100%; text-align: left; padding: 25px; border-color: var(--danger); background: #fffcfc; box-sizing: border-box; margin: 0;">
         <strong>The Epistle of Jude</strong><br>
-        <small>Contending for the Faith • The Doom of the Apostates</small>
+        <small class="muted">Contending for the Faith • The Doom of the Apostates • Once for All Delivered</small>
+      </a>
+    </section>
+
+    <hr style="border: 0; border-top: 1px solid var(--line); margin: 40px 0;" />
+
+    <div style="text-align: center; margin: 20px 0;">
+      <span class="muted" style="display: block; margin-bottom: 15px;">Share this study index:</span>
+      <a class="btn" href="#" onclick="window.open('https://twitter.com/intent/tweet?text=Jude: The Emergency Broadcast at FPBible:&url=' + encodeURIComponent(window.location.href)); return false;" rel="noopener noreferrer">𝕏 Twitter</a>
+      <a class="btn" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href)); return false;" rel="noopener noreferrer">Facebook</a>
+      <a class="btn" href="#" onclick="window.location.href='mailto:?subject=Jude Bible Study Index&body=Explore the Jude study at FPBible: ' + encodeURIComponent(window.location.href); return false;">Email</a>
+    </div>
+
+    <div style="text-align: center; margin-bottom: 30px;">
+      <a href="https://ko-fi.com/B0B61QC1BU" target="_blank">
+        <img src="https://storage.ko-fi.com/cdn/kofi2.png?v=3" alt="Support on Ko-fi" style="height: 36px; width: auto; border: none;">
       </a>
     </div>
 
     <footer>
       <p><strong>The Fulfilled Prophecy Bible</strong> — World English Bible (WEB)</p>
-      <p><a href="/Bible/about.html">About</a> · <a href="https://ko-fi.com/fpbible" target="_blank">Support</a></p>
+      <p><a href="/Bible/about.html">About Project</a> · <a href="https://ko-fi.com/fpbible" target="_blank">Support</a> · <a href="#top">Back to top</a></p>
     </footer>
   </div>
 </body>
