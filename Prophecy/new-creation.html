@@ -3,261 +3,327 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>New Creation — Fulfilled Covenant Reality — Fulfilled Prophecy Bible (WEB)</title>
-  <meta name="description" content="Full Preterist study edition using the WEB translation." />
+  <title>New Creation — Fulfilled Covenant Reality — The Fulfilled Prophecy Bible Project</title>
+  <meta name="description" content="New Creation is not a future world. It is the present covenantal reality inaugurated by Christ and sealed in AD 70 — the ground on which life is lived now." />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "New Creation — Fulfilled Covenant Reality",
+    "description": "New Creation is not a future world. It is the present covenantal reality inaugurated by Christ and sealed in AD 70.",
+    "author": { "@type": "Organization", "name": "The Fulfilled Prophecy Bible Project" }
+  }
+  </script>
 
   <style>
-    body{
-      font-family: system-ui, sans-serif;
+    :root {
+      --accent: #2a6496;
+      --accent-light: #e8f1f8;
+      --text: #1a1a1a;
+      --muted: #555;
+      --line: rgba(0,0,0,0.11);
+      --soft: rgba(0,0,0,0.04);
+      --radius: 14px;
+      --maxw: 860px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.75;
+      margin: 0;
+      color: var(--text);
+      background: #fff;
+      font-size: 1.04rem;
+    }
+
+    .topnav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255,255,255,0.96);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--line);
+      text-align: center;
+      font-size: 0.875rem;
+      padding: 10px 16px;
+      color: var(--muted);
+    }
+    .topnav a { color: var(--accent); text-decoration: none; padding: 0 5px; }
+    .topnav a:hover { text-decoration: underline; }
+
+    .wrap { max-width: var(--maxw); margin: 0 auto; padding: 28px 18px 40px; }
+
+    .hero {
+      text-align: center;
+      padding: 40px 20px 32px;
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 36px;
+    }
+    .hero .label {
+      display: inline-block;
+      background: var(--accent-light);
+      color: var(--accent);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 999px;
+      margin-bottom: 16px;
+    }
+    .hero h1 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      margin: 0 0 14px;
+      line-height: 1.2;
+    }
+    .hero .sub {
+      font-size: 1.1rem;
+      color: var(--muted);
+      max-width: 620px;
+      margin: 0 auto;
       line-height: 1.6;
-      margin: 1.5em;
-      max-width: 900px;
     }
-    h1, h2, h3{
-      margin-top: 1.4em;
-      margin-bottom: 0.6em;
+
+    h2 {
+      font-size: 1.45rem;
+      font-weight: 700;
+      margin: 2.2em 0 0.5em;
+      color: var(--text);
     }
-    nav{
-      margin: 1em 0;
-      font-size: 0.95em;
+    h3 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin: 1.6em 0 0.4em;
+      color: var(--accent);
     }
-    nav a{
-      margin-right: 0.6em;
-      text-decoration: underline;
+    p { margin: 0 0 1.1em; }
+
+    hr { border: 0; border-top: 1px solid var(--line); margin: 40px 0; }
+
+    .pullquote {
+      border-left: 4px solid var(--accent);
+      background: var(--accent-light);
+      padding: 18px 22px;
+      border-radius: 0 var(--radius) var(--radius) 0;
+      margin: 2em 0;
+      font-size: 1.08rem;
+      color: var(--text);
+      font-style: italic;
     }
-    p{ margin: 0.6em 0; }
-    ul{ margin: 0.6em 0 1em 1.2em; }
-    li{ margin: 0.45em 0; }
-    hr{ margin: 2em 0; }
-    .note{
-      font-size: 0.95em;
-      opacity: 0.9;
-      margin: 1em 0;
+
+    .highlight {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--soft);
+      padding: 20px 24px;
+      margin: 2em 0;
     }
-      footer{
-      margin-top: 2.2em;
+    .highlight h3 { margin-top: 0; }
+
+    .reflection {
+      border: 2px solid var(--accent);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      margin: 2.5em 0;
+      background: var(--accent-light);
+    }
+    .reflection h3 { margin-top: 0; color: var(--accent); }
+
+    .share-row {
+      text-align: center;
+      margin: 36px 0 20px;
+    }
+    .share-row .label-sm {
+      display: block;
+      color: var(--muted);
+      font-size: 0.88rem;
+      margin-bottom: 10px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 8px 16px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      text-decoration: none;
+      color: var(--text);
+      background: #fff;
+      font-size: 0.9rem;
+      margin: 0 4px;
+      transition: background 0.15s;
+    }
+    .btn:hover { background: var(--soft); }
+
+    nav.bottom {
+      text-align: center;
+      font-size: 0.88rem;
+      margin: 28px 0 16px;
+      color: var(--muted);
+    }
+    nav.bottom a { color: var(--accent); text-decoration: none; padding: 0 5px; }
+    nav.bottom a:hover { text-decoration: underline; }
+
+    .kofi-wrap { text-align: center; margin: 20px 0; }
+
+    footer {
+      margin-top: 2.5em;
       padding-top: 1.2em;
       border-top: 1px solid var(--line);
       color: var(--muted);
-      font-size: 0.96em;
+      font-size: 0.88rem;
+      text-align: center;
     }
-    footer .row{
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px 14px;
-      align-items: center;
-      justify-content: space-between;
+
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 1.8rem; }
+      h2 { font-size: 1.25rem; }
     }
   </style>
+
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q22N178LJ8"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-Q22N178LJ8');</script>
+</head>
 
-    gtag('config', 'G-Q22N178LJ8');
-  </script>
-
-  </head>
 <body>
-
 <a id="top"></a>
 
-<nav>
-  <a href="/Bible/">Bible Index</a> |
+<nav class="topnav">
+  <a href="/Bible/index.html">Bible Index</a> |
   <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> |
   <a href="#top">Top</a>
 </nav>
 
-<h1>New Creation</h1>
-<h2>Fulfilled Covenant Reality — Not a Future World</h2>
+<div class="wrap">
 
-<p class="note">
-“New creation” language in Scripture does not describe the renovation or replacement
-of the physical universe. It announces the arrival of a new covenant order,
-a new mode of life, and a new humanity in Christ.
-</p>
+  <div class="hero">
+    <span class="label">Foundational Study</span>
+    <h1>New Creation</h1>
+    <p class="sub">Not a future renovation of the universe. Not a distant hope still on the horizon. The New Creation is the present covenantal reality in which life is lived now.</p>
+  </div>
 
-<hr />
+  <p>Few phrases in the New Testament carry more weight — or have been more persistently misunderstood — than "new creation." In most modern readings, the phrase evokes images of a future world: a renovated earth, a renewed cosmos, something spectacular still to come. The present world is treated as a placeholder, and the new creation as the destination.</p>
 
-<h2>1. What “New Creation” Means in Scripture</h2>
+  <p>But this reading imports assumptions that the biblical writers did not share. When Paul writes that anyone in Christ is a new creation (2 Corinthians 5:17), he does not use future tense. When John's Revelation speaks of a new heaven and a new earth, it is drawing on Isaiah's covenantal imagery, not speculating about planetary physics. The category being invoked is not cosmological renovation. It is covenant transition.</p>
 
-<p>
-In the Bible, “creation” language is often covenantal.
-“Heavens and earth” describe an ordered world of authority, worship,
-identity, and relationship with God.
-When Scripture speaks of a “new creation,”
-it is declaring the establishment of a new covenant world.
-</p>
+  <p>To understand what new creation means, you have to understand what it replaced.</p>
 
-<p>
-This new world is not postponed.
-It arrives through Christ’s death, resurrection,
-and the outpouring of the Spirit.
-Paul speaks of it in present terms:
-“If anyone is in Christ — new creation” (2 Cor 5:17).
-</p>
+  <hr />
 
-<hr />
+  <h2>What "Creation" Meant in the Covenant World</h2>
 
-<h2>2. Old Creation vs New Creation</h2>
+  <p>In the ancient biblical imagination, "heavens and earth" was not primarily a description of the physical universe. It was the language of ordered reality — the framework of authority, worship, identity, and relationship that constituted a people's world. When God established his covenant with Israel, he was creating a world: a structured order of priests and kings, of law and sacrifice, of temple and presence, of boundaries and belonging.</p>
 
-<ul>
-  <li><strong>Old Creation</strong> — Adamic identity, Law-based righteousness, condemnation, distance, mediated access.</li>
-  <li><strong>New Creation</strong> — Christ-centered identity, Spirit life, justification, nearness, direct access.</li>
-</ul>
+  <p>This is why the Hebrew prophets could speak of covenantal judgment in the language of cosmic collapse — the sun going dark, the stars falling, the heavens being rolled up like a scroll. They were not predicting astronomical events. They were announcing the unraveling of an ordered world, the collapse of a covenant arrangement that had reached its end.</p>
 
-<p>
-The contrast is not between “material” and “spiritual” worlds,
-but between covenant orders.
-One was marked by death and accusation.
-The other is marked by life and sonship.
-</p>
+  <p>Equally, when a new covenant world was promised, it came in the language of new creation: new heavens and a new earth, a new Jerusalem, a new humanity. The scale of the language matched the scale of the transition, not the scale of any physical event.</p>
 
-<hr />
+  <div class="pullquote">
+    Every sacrifice under the old order was an implicit confession that the real solution had not yet arrived. The new creation is the announcement that it has.
+  </div>
 
-<h2>3. Prophetic Roots (Isaiah)</h2>
+  <hr />
 
-<p>
-Isaiah announces “new heavens and a new earth” (Isa 65–66),
-but the context is unmistakably covenantal:
-Jerusalem, joy, longevity, peace, and restored relationship with God.
-There is no concern for planetary destruction.
-The concern is the replacement of a broken covenant world.
-</p>
+  <h2>The Old Order and Its Limits</h2>
 
-<p>
-John and the New Testament writers inherit this language
-and apply it directly to the work of Christ.
-The new world Isaiah anticipated is revealed,
-not delayed.
-</p>
+  <p>The Old Covenant world was not a mistake. It was a purposeful, carefully designed arrangement — given by God, sustained by God, and pointing, in every detail, beyond itself. But it was constitutionally limited. Its priesthood had to be continually renewed because its priests died. Its sacrifices had to be continually repeated because they could not permanently remove what caused the need for them. Its temple, for all its grandeur, was a structure of barriers: courts that divided Jew from Gentile, men from women, Israel from the nations, and humanity from the presence of God.</p>
 
-<hr />
+  <p>The most telling detail of the old order was the innermost chamber of the temple — the Holy of Holies, entered by one man, once a year, on pain of death if he did so improperly. Every element of that arrangement was a declaration: you are not yet at home here. The way to God is not yet fully open.</p>
 
-<h2>4. Jesus and the New Creation</h2>
+  <p>The writer of Hebrews makes the point with characteristic directness: the existence of that structure was itself a sign that the time of full access had not yet come. The old creation was not the destination. It was the waiting room.</p>
 
-<p>
-Jesus speaks constantly in new-creation terms:
-new birth,
-new wine,
-true worship,
-living water,
-abiding life.
-He does not announce a future escape,
-but a present arrival.
-</p>
+  <hr />
 
-<p>
-His resurrection marks the beginning of this new order.
-He appears not merely as a revived individual,
-but as the firstborn of a new humanity.
-</p>
+  <h2>What Christ Opened</h2>
 
-<hr />
+  <p>The New Testament consistently presents the work of Christ not as the modification of the old order but as its fulfillment and supersession. His death tears the temple veil — the boundary between the human and the divine — from top to bottom. His resurrection inaugurates a new kind of humanity: not a revived individual but a firstborn among many, the beginning of a new order of existence. His ascension and the outpouring of the Spirit are the arrival of what the old order had anticipated but could never deliver.</p>
 
-<h2>5. Paul’s Framework</h2>
+  <p>Paul's entire theological framework is built on this transition. To be "in Christ" is to be in the new creation — not waiting for it, not moving toward it, but inhabiting it as a present reality. The old identity — defined by Adamic failure, by law-based standing, by the perpetual accusation of a covenant that demanded what no one could consistently provide — has been set aside. The new identity is defined by union with Christ: justified, reconciled, indwelt by the Spirit, and given direct access to the Father without a human mediator standing between.</p>
 
-<p>
-Paul never treats “new creation” as speculative or distant.
-It is the settled reality of those who are in Christ.
-</p>
+  <div class="highlight">
+    <h3>The Covenantal Contrast in Brief</h3>
+    <p>The old creation was marked by distance, mediation, condemnation, and death — not because God was cruel, but because the arrangement was designed to make its own inadequacy visible. The new creation is marked by nearness, direct access, justification, and life. The contrast is not between the material and the spiritual. It is between two covenant orders, one of which has been superseded and one of which now stands without a challenger.</p>
+  </div>
 
-<ul>
-  <li>New identity — not “in Adam,” but “in Christ”</li>
-  <li>New standing — no condemnation</li>
-  <li>New vocation — reconciliation, not law-keeping</li>
-</ul>
+  <hr />
 
-<p>
-For Paul, the old world is passing,
-and the new world is already operative.
-Believers do not wait to enter it;
-they live from it.
-</p>
+  <h2>Isaiah's Vision and Its Fulfilment</h2>
 
-<hr />
+  <p>The prophetic roots of new creation language go deepest in Isaiah, particularly in chapters 65 and 66. There Isaiah announces new heavens and a new earth — but the content of that announcement is unmistakably covenantal and communal rather than cosmological. He describes Jerusalem rejoicing, longevity restored, peace between former enemies, and a restored relationship between God and his people. There is no concern for planetary mechanics. The concern is the replacement of a broken covenantal world with one where God's presence is no longer mediated through structures that simultaneously invite and exclude.</p>
 
-<h2>6. New Creation and Judgment</h2>
+  <p>The New Testament writers treat this vision not as a distant future hope but as something being fulfilled in their own generation. Peter announces that they are waiting for new heavens and a new earth in which righteousness dwells — but the context of his letter is the imminent judgment of the old order, not a cosmic renovation thousands of years away. John's Revelation draws on Isaiah's imagery to describe the arrival of the new Jerusalem from heaven, the removal of the sea (the symbol of chaos and separation), and the declaration that the dwelling of God is now with humanity. These are covenantal images, resolved in covenantal history.</p>
 
-<p>
-New creation does not deny judgment.
-It presupposes it.
-The old covenant world had to be judged and removed
-for the new to stand unchallenged.
-</p>
+  <hr />
 
-<p>
-This is why New Testament writers can speak simultaneously of:
-life now,
-access now,
-and judgment occurring within their generation.
-The removal of the old order clears the ground
-for the unopposed reign of the new.
-</p>
+  <h2>AD 70 and the Clearing of the Ground</h2>
 
-<hr />
+  <p>The New Testament writers consistently locate the final removal of the old covenant world within their own generation. Jesus himself, in the Olivet Discourse, speaks of the destruction of the temple and the judgment of Jerusalem as the event that would bring the old age to its close. The writer of Hebrews, addressing believers who still lived in the shadow of a functioning temple and its ongoing sacrificial system, urges them to recognise that what they see is already obsolete, already aging, already near to disappearing.</p>
 
-<h2>7. New Creation Today</h2>
+  <p>When Jerusalem fell and the temple was destroyed in AD 70, this was not a political accident. It was the covenantal end of the old order — the removal of the last visible structure through which the old world maintained its claim on those who were already, in Christ, living in the new. The ground was cleared. The new creation no longer stood alongside the old in an awkward overlap. It stood alone.</p>
 
-<p>
-New creation is not an abstract doctrine.
-It is lived reality.
-It means:
-</p>
+  <p>This is why new creation is not a promise for the future. It is the name of where we already are.</p>
 
-<ul>
-  <li>you are not defined by sin or law</li>
-  <li>you are not awaiting acceptance</li>
-  <li>you are not under threat of condemnation</li>
-  <li>you live from union, not distance</li>
-</ul>
+  <hr />
 
-<p>
-The Gospel does not announce a better future world.
-It announces a finished transition
-and invites people to live accordingly.
-</p>
+  <h2>What New Creation Means for Life Now</h2>
 
-<hr />
+  <p>None of this is abstract. If the new creation is a present reality — if the transition is finished, the old order removed, and the ground of life permanently altered — then it has direct consequences for how human existence is understood and lived.</p>
 
-<h3>Summary</h3>
-<p>
-New creation is the name Scripture gives to life in Christ
-after the old covenant world has been judged and replaced.
-It is present.
-It is secure.
-It is not postponed.
-</p>
+  <p>It means that the fundamental question of human standing before God has been answered, and the answer is not conditional on performance. You do not relate to God from a position of ongoing evaluation, bringing each day's record to a heavenly tribunal and hoping it adds up. The record has been addressed in Christ, and the verdict — righteous, accepted, welcomed — was announced in the resurrection. What remains is not a verdict still pending but a life to be lived from within an already-established welcome.</p>
 
-<p>
-  Share this study:
-  <a href="#" onclick="this.href='https://twitter.com/intent/tweet?url='+encodeURIComponent(location.href)+'&amp;text='+encodeURIComponent(document.title);return true;" target="_blank" rel="noopener">𝕏 Twitter</a>
-  <a href="#" onclick="this.href='https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href);return true;" target="_blank" rel="noopener">Facebook</a>
-  <a href="#" onclick="this.href='mailto:?subject='+encodeURIComponent(document.title)+'&amp;body='+encodeURIComponent(location.href);return true;">Email</a>
-</p>
-<hr />
+  <p>It means that the alienation that runs through human experience — the sense of being separated from something you were made for, the guilt that does not quite go away, the fear that at some level you are not enough — has been named and addressed at its root. The wall that declared human separation from the divine has come down. Not modified. Not made more navigable. Down.</p>
 
-<nav>
-  <a href="/Bible/">Bible Index</a> |
-  <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> |
-  <a href="#top">Top</a>
-</nav>
+  <p>It means that community, in the new creation, is not defined by the boundaries of the old order: not by ethnic or national identity, not by religious pedigree, not by ritual compliance. The dividing wall between Jew and Gentile that Paul describes in Ephesians is not a social problem to be managed. It is a covenantal reality that has been demolished. The new humanity is one, not because its members are sufficiently similar, but because they share the same ground.</p>
+
+  <div class="pullquote">
+    The gospel does not announce a better world still coming. It announces a finished transition and invites people to live accordingly — not striving toward the new creation, but from within it.
+  </div>
+
+  <hr />
+
+  <h2>What New Creation Does Not Mean</h2>
+
+  <p>It is worth being clear about what this framework does not collapse into. When Paul writes of creation groaning in Romans 8, he is not describing a permanent condition of the universe. He is describing the old covenant world straining toward a specific, imminent resolution — the revealing of the sons of God, the arrival of the inheritance that had been promised. That groaning had an object. It was not endless. The new creation is the answer to it, not the context in which it continues.</p>
+
+  <p>The groaning is over. What remains is not an aching world waiting for redemption but a redeemed world in which people still suffer, still face injustice, still carry real weight — but no longer from within an unredeemed order. The new creation does not remove human difficulty. It changes the ground on which difficulty is faced. Struggle is now engaged from a place of settled identity rather than anxious uncertainty. The person who knows they are not under condemnation does not thereby cease to face hardship. They face it differently — not fighting to establish their worth, but from within a worth already established.</p>
+
+  <p>Equally, the new creation is not an excuse for moral passivity. The freedom from the law as a system of condemnation does not dissolve the call to love, to serve, to pursue justice, to bear one another's burdens. It relocates the motivation. You do not love in order to secure your standing. You love because the love you have received is the most real thing about you, and it moves outward naturally — not under compulsion, but from abundance.</p>
+
+  <hr />
+
+  <div class="reflection">
+    <h3>A Question Worth Sitting With</h3>
+    <p>If the new creation is not coming but present — if the transition is finished and the ground has already been laid — what does it mean to live as though that were actually true? Not as a doctrine to defend, but as the atmosphere you breathe, the reality you move within, the word that has already been spoken over your existence?</p>
+  </div>
+
+  <hr />
+
+  <div class="share-row">
+    <span class="label-sm">Share this study:</span>
+    <a class="btn" href="#" onclick="window.open('https://twitter.com/intent/tweet?text=New Creation is not a future hope — it is a present reality. Read the study at The Fulfilled Prophecy Bible:&url=' + encodeURIComponent(window.location.href)); return false;">𝕏 Twitter</a>
+    <a class="btn" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href)); return false;">Facebook</a>
+    <a class="btn" href="#" onclick="window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&body=' + encodeURIComponent(window.location.href)); return false;">Email</a>
+  </div>
+
+  <nav class="bottom">
+    <a href="/Bible/index.html">Bible Index</a> |
+    <a href="/Bible/Prophecy/index.html">Prophecy Hub</a> |
+    <a href="#top">Top</a>
+  </nav>
+
+  <div class="kofi-wrap">
+    <a href="https://ko-fi.com/fpbible" target="_blank">
+      <img src="https://storage.ko-fi.com/cdn/kofi2.png?v=3" alt="Support the Project on Ko-fi" style="height: 36px; width: auto;" />
+    </a>
+  </div>
 
   <footer>
-    <div class="row">
-      <div>
-        <strong>The Fulfilled Prophecy Bible</strong> — Text based on the <strong>World English Bible (WEB)</strong> with Fulfilled Prophecy Study Commentary
-      </div>
-      <div>
-        <a href="https://ko-fi.com/fpbible" target="_blank" rel="noopener">Support</a> · <a href="#top">Back to top</a>
-      </div>
-    </div>
-    <p class="note">
-      Notes are written to honour audience relevance and time statements, and to avoid futurist drift.
-    </p>
+    <p><strong>The Fulfilled Prophecy Bible Project</strong> — Scripture: WEB</p>
+    <p>Restoring audience relevance and the AD 70 horizon to the message of life.</p>
   </footer>
 
-
+</div>
 </body>
 </html>
